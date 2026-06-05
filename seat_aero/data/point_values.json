@@ -1,0 +1,35 @@
+{
+  "default_cents_per_point": 2.0,
+  "programs": {
+    "aeroplan": {
+      "label": "Air Canada Aeroplan",
+      "cents_per_point": 1.1,
+      "aliases": ["Aeroplan"]
+    },
+    "alaska": {
+      "label": "Alaska Atmos Rewards",
+      "cents_per_point": 1.5,
+      "aliases": ["Alaska"]
+    },
+    "delta": {
+      "label": "Delta SkyMiles",
+      "cents_per_point": 1.2,
+      "aliases": ["Delta", "DL"]
+    },
+    "flyingblue": {
+      "label": "Air France/KLM Flying Blue",
+      "cents_per_point": 1.1,
+      "aliases": ["Flying Blue"]
+    },
+    "united": {
+      "label": "United MileagePlus",
+      "cents_per_point": 1.2,
+      "aliases": ["United", "UA"]
+    },
+    "virginatlantic": {
+      "label": "Virgin Atlantic Flying Club",
+      "cents_per_point": 1.0,
+      "aliases": ["Virgin Atlantic", "VS"]
+    }
+  }
+}

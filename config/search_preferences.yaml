@@ -1,0 +1,132 @@
+# Shared ranking and valuation preferences for the flight-search pipeline.
+# Relative paths in this file are resolved from the workspace root.
+version: 1
+
+# Traveler assumptions used when deciding whether a result is bookable and
+# when applying soft preference flags. These apply to award and cash scoring
+# where the field is available.
+traveler:
+  # Number of travelers in the search party.
+  passengers: 1
+  # Cabins that should be treated as preferred in award ranking output.
+  preferred_cabins:
+    - economy
+    - business
+  # Award rows with fewer seats than this are kept in full output but excluded
+  # from best-flight recommendations.
+  minimum_remaining_seats: 1
+  # Rows above this stop count are kept, but marked as exceeding preference.
+  max_stops_preference: 1
+
+# Foreign-exchange behavior for converting taxes and fees into the base
+# comparison currency. Used mostly by award rows because taxes can be non-USD.
+currency:
+  # Currency used for effective_usd and score comparisons.
+  base: USD
+  # FX service used by the award pipeline.
+  provider: frankfurter
+  # Live FX endpoint. If unavailable, the latest cached snapshot is used.
+  latest_url: https://api.frankfurter.dev/v2/rates
+  # Cache directory for FX snapshots, relative to the workspace root.
+  cache_dir: data/fx
+  # Maximum seconds to wait for the FX provider.
+  timeout_seconds: 20
+
+# Point valuations used to turn award prices into comparable effective USD:
+# effective_usd = points * cents_per_point / 100 + taxes_usd.
+points:
+  # Used for mileage programs not explicitly listed below.
+  default_cents_per_point: 2.0
+  programs:
+    aeroplan:
+      # Human-readable name shown in reports.
+      label: Air Canada Aeroplan
+      # Subjective redemption value for this program.
+      cents_per_point: 1.1
+      # Names or codes that may appear in outside data or reports.
+      aliases:
+        - Aeroplan
+    alaska:
+      label: Alaska Atmos Rewards
+      cents_per_point: 1.5
+      aliases:
+        - Alaska
+    delta:
+      label: Delta SkyMiles
+      cents_per_point: 1.2
+      aliases:
+        - Delta
+        - DL
+    flyingblue:
+      label: Air France/KLM Flying Blue
+      cents_per_point: 1.1
+      aliases:
+        - Flying Blue
+    united:
+      label: United MileagePlus
+      cents_per_point: 1.2
+      aliases:
+        - United
+        - UA
+    virginatlantic:
+      label: Virgin Atlantic Flying Club
+      cents_per_point: 1.0
+      aliases:
+        - Virgin Atlantic
+        - VS
+
+# Soft scoring penalties. Scores are not cash prices; they are comparison
+# values that add inconvenience penalties to effective USD. Lower is better.
+ranking:
+  # Added per stop for both cash and award rows.
+  stop_penalty_usd: 50
+  # Added per travel hour. Example: 6 hours * 5 = 30 score points.
+  duration_penalty_usd_per_hour: 5
+  # Added when the arrival is marked as next-day.
+  next_day_arrival_penalty_usd: 75
+  # Award-only credit that rewards more remaining award seats.
+  seat_credit_usd: 2
+  # Maximum number of seats eligible for the award seat credit.
+  seat_credit_cap: 9
+  # Local wall-clock time windows that add extra inconvenience penalties.
+  # Seats.aero timestamps are treated as displayed wall-clock strings.
+  time_penalties:
+    departure:
+      - label: very early departure
+        start: "00:00"
+        end: "05:59"
+        penalty_usd: 100
+      - label: early departure
+        start: "06:00"
+        end: "06:59"
+        penalty_usd: 50
+      - label: late departure
+        start: "22:00"
+        end: "23:59"
+        penalty_usd: 75
+    arrival:
+      - label: after-midnight arrival
+        start: "00:00"
+        end: "04:59"
+        penalty_usd: 100
+      - label: late arrival
+        start: "23:00"
+        end: "23:59"
+        penalty_usd: 50
+
+# Report filtering. Expensive rows are preserved in full normalized output but
+# hidden from best-flight award reports when they exceed the dynamic threshold.
+filtering:
+  dynamic_price:
+    # Disable this to show all bookable comparable award rows in best reports.
+    enabled: true
+    # Cabin-level percentile used as one side of the price threshold.
+    percentile: 75
+    # Alternative threshold: best award effective_usd * multiplier + buffer.
+    best_multiplier: 2.0
+    best_buffer_usd: 100
+
+# Presentation defaults.
+outputs:
+  # Maximum rows in the award best-flight report. Use 0 for no limit.
+  best_report_limit: 40

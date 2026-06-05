@@ -1,0 +1,852 @@
+{
+  "booking_links": [
+    {
+      "label": "Book via Air France/KLM Flying Blue",
+      "link": "https://wwws.airfrance.us/search/offers?activeConnection=0&bookingFlow=REWARD&cabinClass=ECONOMY&pax=1:0:0:0:0:0:0:0&connections=SFO%3AC%3A20261114%3EDTW%3AA&utm_source=seatsaero",
+      "primary": true
+    },
+    {
+      "label": "Book via Delta SkyMiles",
+      "link": "https://www.delta.com/flight-search/search?action=findFlights&searchByCabin=true&deltaOnlySearch=false&deltaOnly=off&go=Find%20Flights&tripType=ONE_WAY&passengerInfo=ADT:1&priceSchedule=price&awardTravel=true&originCity=SFO&destinationCity=DTW&departureDate=11/14/2026&returnDate=&forceMiles=true&utm_source=seatsaero",
+      "primary": false
+    },
+    {
+      "label": "Book via Virgin Atlantic",
+      "link": "https://www.virginatlantic.com/flight-search/search?action=findFlights&searchByCabin=true&deltaOnlySearch=false&deltaOnly=off&go=Find%20Flights&tripType=ONE_WAY&passengerInfo=ADT:1|GBE:0|CNN:0|INF:0&priceSchedule=price&awardTravel=true&originCity=SFO&destinationCity=DTW&departureDate=11/14/2026&returnDate=&forceMiles=true&utm_source=seatsaero",
+      "primary": false
+    }
+  ],
+  "carriers": {
+    "DL": "Delta"
+  },
+  "data": [
+    {
+      "Aircraft": [
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-11-14T22:00:00Z",
+      "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-11-14T22:00:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3AkXcGIh0gCYEFf4SMhS2hG8kMQ",
+          "Cabin": "economy",
+          "CreatedAt": "2026-03-10T10:13:39.666746Z",
+          "DepartsAt": "2026-11-14T14:25:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 2076,
+          "Duration": 275,
+          "FareClass": "N",
+          "FlightNumber": "DL1927",
+          "ID": "3AkXcDzpt035azmp7o0KpFL0tN6",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL",
+      "CreatedAt": "2026-03-10T10:13:39.666746Z",
+      "DepartsAt": "2026-11-14T14:25:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "N"
+      ],
+      "FlightNumbers": "DL1927",
+      "ID": "3AkXcGIh0gCYEFf4SMhS2hG8kMQ",
+      "MileageCost": 16000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+      "Source": "flyingblue",
+      "Stops": 0,
+      "TaxesCurrency": "USD",
+      "TotalDuration": 275,
+      "TotalSegmentDistance": 2076,
+      "TotalTaxes": 2044,
+      "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-11-15T06:20:00Z",
+      "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-11-15T06:20:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3E0bDbune1hN19AL6XlNIQxQa0U",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T23:05:14.996599Z",
+          "DepartsAt": "2026-11-14T22:45:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 2076,
+          "Duration": 275,
+          "FareClass": "N",
+          "FlightNumber": "DL335",
+          "ID": "3E0bDbmv1X92U8HAUY354cWMC52",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL",
+      "CreatedAt": "2026-05-20T23:05:14.996599Z",
+      "DepartsAt": "2026-11-14T22:45:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "N"
+      ],
+      "FlightNumbers": "DL335",
+      "ID": "3E0bDbune1hN19AL6XlNIQxQa0U",
+      "MileageCost": 16000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 4,
+      "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+      "Source": "flyingblue",
+      "Stops": 0,
+      "TaxesCurrency": "USD",
+      "TotalDuration": 275,
+      "TotalSegmentDistance": 2076,
+      "TotalTaxes": 2044,
+      "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A319",
+        "Airbus A321"
+      ],
+      "ArrivesAt": "2026-11-14T19:10:00Z",
+      "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "319",
+          "AircraftName": "Airbus A319",
+          "ArrivesAt": "2026-11-14T12:50:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3E0bDg5zpE7tzMC8db8SWEX3gEW",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T23:05:14.996599Z",
+          "DepartsAt": "2026-11-14T10:00:00Z",
+          "DestinationAirport": "SLC",
+          "Distance": 599,
+          "Duration": 110,
+          "FareClass": "N",
+          "FlightNumber": "DL920",
+          "ID": "3E0bDfzhvt2C15kJ875lEkEduAh",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        },
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2026-11-14T19:10:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3E0bDg5zpE7tzMC8db8SWEX3gEW",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T23:05:14.996599Z",
+          "DepartsAt": "2026-11-14T13:40:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1479,
+          "Duration": 210,
+          "FareClass": "N",
+          "FlightNumber": "DL2244",
+          "ID": "3E0bDbDrhpLjp5n2LP6muj2pORm",
+          "Order": 1,
+          "OriginAirport": "SLC",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "SLC"
+      ],
+      "CreatedAt": "2026-05-20T23:05:14.996599Z",
+      "DepartsAt": "2026-11-14T10:00:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "N",
+        "N"
+      ],
+      "FlightNumbers": "DL920, DL2244",
+      "ID": "3E0bDg5zpE7tzMC8db8SWEX3gEW",
+      "MileageCost": 19000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+      "Source": "flyingblue",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TotalDuration": 370,
+      "TotalSegmentDistance": 2078,
+      "TotalTaxes": 3024,
+      "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A321",
+        "Airbus A321"
+      ],
+      "ArrivesAt": "2026-11-14T15:30:00Z",
+      "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2026-11-14T11:58:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3AkXcIX83s42v3ftTPevKB1N8NE",
+          "Cabin": "economy",
+          "CreatedAt": "2026-03-10T10:13:39.666746Z",
+          "DepartsAt": "2026-11-14T06:15:00Z",
+          "DestinationAirport": "MSP",
+          "Distance": 1588,
+          "Duration": 223,
+          "FareClass": "N",
+          "FlightNumber": "DL2178",
+          "ID": "3AkXcG8rMNis5Bi8sC52raiG53p",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        },
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2026-11-14T15:30:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3AkXcIX83s42v3ftTPevKB1N8NE",
+          "Cabin": "economy",
+          "CreatedAt": "2026-03-10T10:13:39.666746Z",
+          "DepartsAt": "2026-11-14T12:45:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 527,
+          "Duration": 105,
+          "FareClass": "N",
+          "FlightNumber": "DL1519",
+          "ID": "3AkXcGjw5jFcgGaQIBrERvoV3kX",
+          "Order": 1,
+          "OriginAirport": "MSP",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "MSP"
+      ],
+      "CreatedAt": "2026-03-10T10:13:39.666746Z",
+      "DepartsAt": "2026-11-14T06:15:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "N",
+        "N"
+      ],
+      "FlightNumbers": "DL2178, DL1519",
+      "ID": "3AkXcIX83s42v3ftTPevKB1N8NE",
+      "MileageCost": 19000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+      "Source": "flyingblue",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TotalDuration": 375,
+      "TotalSegmentDistance": 2115,
+      "TotalTaxes": 3024,
+      "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-800",
+        "Airbus A321neo"
+      ],
+      "ArrivesAt": "2026-11-14T23:06:00Z",
+      "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "738",
+          "AircraftName": "Boeing 737-800",
+          "ArrivesAt": "2026-11-14T14:32:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3AkXcKQzlLFfQk9M8GOAweglkVs",
+          "Cabin": "economy",
+          "CreatedAt": "2026-03-10T10:13:39.666746Z",
+          "DepartsAt": "2026-11-14T13:00:00Z",
+          "DestinationAirport": "LAX",
+          "Distance": 338,
+          "Duration": 92,
+          "FareClass": "N",
+          "FlightNumber": "DL2272",
+          "ID": "3AkXcKM07LXfJXZmqYrxMtJkeuH",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        },
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A321neo",
+          "ArrivesAt": "2026-11-14T23:06:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3AkXcKQzlLFfQk9M8GOAweglkVs",
+          "Cabin": "economy",
+          "CreatedAt": "2026-03-10T10:13:39.666746Z",
+          "DepartsAt": "2026-11-14T15:36:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1976,
+          "Duration": 270,
+          "FareClass": "N",
+          "FlightNumber": "DL708",
+          "ID": "3AkXcI4Nb78iBrB4WayMQfS52Yk",
+          "Order": 1,
+          "OriginAirport": "LAX",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "LAX"
+      ],
+      "CreatedAt": "2026-03-10T10:13:39.666746Z",
+      "DepartsAt": "2026-11-14T13:00:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "N",
+        "N"
+      ],
+      "FlightNumbers": "DL2272, DL708",
+      "ID": "3AkXcKQzlLFfQk9M8GOAweglkVs",
+      "MileageCost": 18000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 7,
+      "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+      "Source": "flyingblue",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TotalDuration": 426,
+      "TotalSegmentDistance": 2314,
+      "TotalTaxes": 3024,
+      "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-800",
+        "Boeing 757-300"
+      ],
+      "ArrivesAt": "2026-11-14T19:14:00Z",
+      "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "738",
+          "AircraftName": "Boeing 737-800",
+          "ArrivesAt": "2026-11-14T10:31:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3E0bDgRk6LHRugh0yQER3nAIOAl",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T23:05:14.996599Z",
+          "DepartsAt": "2026-11-14T08:55:00Z",
+          "DestinationAirport": "LAX",
+          "Distance": 338,
+          "Duration": 96,
+          "FareClass": "N",
+          "FlightNumber": "DL1421",
+          "ID": "3E0bDg9seHPhATrs58HVlxueEsr",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        },
+        {
+          "AircraftCode": "753",
+          "AircraftName": "Boeing 757-300",
+          "ArrivesAt": "2026-11-14T19:14:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3E0bDgRk6LHRugh0yQER3nAIOAl",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T23:05:14.996599Z",
+          "DepartsAt": "2026-11-14T11:45:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1976,
+          "Duration": 269,
+          "FareClass": "N",
+          "FlightNumber": "DL802",
+          "ID": "3E0bDePbPakxLKi7br42FgWDAT2",
+          "Order": 1,
+          "OriginAirport": "LAX",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "LAX"
+      ],
+      "CreatedAt": "2026-05-20T23:05:14.996599Z",
+      "DepartsAt": "2026-11-14T08:55:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "N",
+        "N"
+      ],
+      "FlightNumbers": "DL1421, DL802",
+      "ID": "3E0bDgRk6LHRugh0yQER3nAIOAl",
+      "MileageCost": 18000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 2,
+      "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+      "Source": "flyingblue",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TotalDuration": 439,
+      "TotalSegmentDistance": 2314,
+      "TotalTaxes": 3024,
+      "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A220",
+        "Airbus A321"
+      ],
+      "ArrivesAt": "2026-11-14T23:18:00Z",
+      "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "223",
+          "AircraftName": "Airbus A220",
+          "ArrivesAt": "2026-11-14T15:25:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3E0bDgkw6xrbZmsF4Af6uXF1gsy",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T23:05:14.996599Z",
+          "DepartsAt": "2026-11-14T13:05:00Z",
+          "DestinationAirport": "SEA",
+          "Distance": 679,
+          "Duration": 140,
+          "FareClass": "N",
+          "FlightNumber": "DL1412",
+          "ID": "3E0bDg7OD8S8v95o9K19CCoe1Tl",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        },
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2026-11-14T23:18:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3E0bDgkw6xrbZmsF4Af6uXF1gsy",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T23:05:14.996599Z",
+          "DepartsAt": "2026-11-14T15:55:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1923,
+          "Duration": 263,
+          "FareClass": "N",
+          "FlightNumber": "DL533",
+          "ID": "3E0bDhrcCSe33ZRrkzUVdEZVkPs",
+          "Order": 1,
+          "OriginAirport": "SEA",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "SEA"
+      ],
+      "CreatedAt": "2026-05-20T23:05:14.996599Z",
+      "DepartsAt": "2026-11-14T13:05:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "N",
+        "N"
+      ],
+      "FlightNumbers": "DL1412, DL533",
+      "ID": "3E0bDgkw6xrbZmsF4Af6uXF1gsy",
+      "MileageCost": 19500,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+      "Source": "flyingblue",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TotalDuration": 433,
+      "TotalSegmentDistance": 2602,
+      "TotalTaxes": 3050,
+      "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A220",
+        "Airbus A321"
+      ],
+      "ArrivesAt": "2026-11-15T00:03:00Z",
+      "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "223",
+          "AircraftName": "Airbus A220",
+          "ArrivesAt": "2026-11-14T16:33:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3E0bDd0YniWWO7Pl0PmJpJNOQ03",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T23:05:14.996599Z",
+          "DepartsAt": "2026-11-14T13:35:00Z",
+          "DestinationAirport": "SLC",
+          "Distance": 599,
+          "Duration": 118,
+          "FareClass": "N",
+          "FlightNumber": "DL902",
+          "ID": "3E0bDb55cInsj0vIAC0NiA7velo",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        },
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2026-11-15T00:03:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3E0bDd0YniWWO7Pl0PmJpJNOQ03",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T23:05:14.996599Z",
+          "DepartsAt": "2026-11-14T18:30:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1479,
+          "Duration": 213,
+          "FareClass": "N",
+          "FlightNumber": "DL2255",
+          "ID": "3E0bDbwWHm5GjAy32qN18NUBm5v",
+          "Order": 1,
+          "OriginAirport": "SLC",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "SLC"
+      ],
+      "CreatedAt": "2026-05-20T23:05:14.996599Z",
+      "DepartsAt": "2026-11-14T13:35:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "N",
+        "N"
+      ],
+      "FlightNumbers": "DL902, DL2255",
+      "ID": "3E0bDd0YniWWO7Pl0PmJpJNOQ03",
+      "MileageCost": 19000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 4,
+      "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+      "Source": "flyingblue",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TotalDuration": 448,
+      "TotalSegmentDistance": 2078,
+      "TotalTaxes": 3024,
+      "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A319",
+        "Airbus A319"
+      ],
+      "ArrivesAt": "2026-11-14T20:38:00Z",
+      "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "319",
+          "AircraftName": "Airbus A319",
+          "ArrivesAt": "2026-11-14T15:33:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3E0bDdla1oesvFBilPEmYt0Lvb7",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T23:05:14.996599Z",
+          "DepartsAt": "2026-11-14T09:53:00Z",
+          "DestinationAirport": "AUS",
+          "Distance": 1503,
+          "Duration": 220,
+          "FareClass": "N",
+          "FlightNumber": "DL381",
+          "ID": "3E0bDbZwrxNrL8eIllcerDKPeEd",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        },
+        {
+          "AircraftCode": "319",
+          "AircraftName": "Airbus A319",
+          "ArrivesAt": "2026-11-14T20:38:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3E0bDdla1oesvFBilPEmYt0Lvb7",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T23:05:14.996599Z",
+          "DepartsAt": "2026-11-14T16:40:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1149,
+          "Duration": 178,
+          "FareClass": "N",
+          "FlightNumber": "DL2736",
+          "ID": "3E0bDb7g4PuHrdOKVCkzzhDiikg",
+          "Order": 1,
+          "OriginAirport": "AUS",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "AUS"
+      ],
+      "CreatedAt": "2026-05-20T23:05:14.996599Z",
+      "DepartsAt": "2026-11-14T09:53:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "N",
+        "N"
+      ],
+      "FlightNumbers": "DL381, DL2736",
+      "ID": "3E0bDdla1oesvFBilPEmYt0Lvb7",
+      "MileageCost": 25000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+      "Source": "flyingblue",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TotalDuration": 465,
+      "TotalSegmentDistance": 2652,
+      "TotalTaxes": 3075,
+      "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-900",
+        "Airbus A321"
+      ],
+      "ArrivesAt": "2026-11-14T11:39:00Z",
+      "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-11-14T06:20:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3E0bDb4OKO649BVbrsOMXzWAFYp",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T23:05:14.996599Z",
+          "DepartsAt": "2026-11-14T00:40:00Z",
+          "DestinationAirport": "MSP",
+          "Distance": 1588,
+          "Duration": 220,
+          "FareClass": "N",
+          "FlightNumber": "DL2789",
+          "ID": "3E0bDcFRWS8JvtTPCQDuLug2WOF",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        },
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2026-11-14T11:39:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3E0bDb4OKO649BVbrsOMXzWAFYp",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T23:05:14.996599Z",
+          "DepartsAt": "2026-11-14T08:50:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 527,
+          "Duration": 109,
+          "FareClass": "N",
+          "FlightNumber": "DL1433",
+          "ID": "3E0bDhoqjj3TNp8Mq5UJJcKuxtv",
+          "Order": 1,
+          "OriginAirport": "MSP",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "MSP"
+      ],
+      "CreatedAt": "2026-05-20T23:05:14.996599Z",
+      "DepartsAt": "2026-11-14T00:40:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "N",
+        "N"
+      ],
+      "FlightNumbers": "DL2789, DL1433",
+      "ID": "3E0bDb4OKO649BVbrsOMXzWAFYp",
+      "MileageCost": 19000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+      "Source": "flyingblue",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TotalDuration": 479,
+      "TotalSegmentDistance": 2115,
+      "TotalTaxes": 3024,
+      "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-11-14T13:36:00Z",
+      "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-11-14T13:36:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3AkXcHwOPPHeMB3f4EpE7RuPIPg",
+          "Cabin": "economy",
+          "CreatedAt": "2026-03-10T10:13:39.666746Z",
+          "DepartsAt": "2026-11-14T06:00:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 2076,
+          "Duration": 276,
+          "FareClass": "N",
+          "FlightNumber": "DL772",
+          "ID": "3AkXcJN74PrLwRhbx4Sy3Ha7cN3",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL",
+      "CreatedAt": "2026-03-10T10:13:39.666746Z",
+      "DepartsAt": "2026-11-14T06:00:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "N"
+      ],
+      "FlightNumbers": "DL772",
+      "ID": "3AkXcHwOPPHeMB3f4EpE7RuPIPg",
+      "MileageCost": 16000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+      "Source": "flyingblue",
+      "Stops": 0,
+      "TaxesCurrency": "USD",
+      "TotalDuration": 276,
+      "TotalSegmentDistance": 2076,
+      "TotalTaxes": 2044,
+      "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-11-14T19:11:00Z",
+      "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-11-14T19:11:00Z",
+          "AvailabilityID": "35nta4V4CgT1ETMQz3gh5wqpTI6",
+          "AvailabilityTripID": "3E0bDgAu8ESPc3uP2hVLvIDFZFN",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T23:05:14.996599Z",
+          "DepartsAt": "2026-11-14T11:35:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 2076,
+          "Duration": 276,
+          "FareClass": "N",
+          "FlightNumber": "DL361",
+          "ID": "3E0bDd0FL120zHwE9JhetpFEwly",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+          "Source": "flyingblue",
+          "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL",
+      "CreatedAt": "2026-05-20T23:05:14.996599Z",
+      "DepartsAt": "2026-11-14T11:35:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "N"
+      ],
+      "FlightNumbers": "DL361",
+      "ID": "3E0bDgAu8ESPc3uP2hVLvIDFZFN",
+      "MileageCost": 16000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 3,
+      "RouteID": "2Vf4pAO5sdf23zkMvs2U6t3E0Db",
+      "Source": "flyingblue",
+      "Stops": 0,
+      "TaxesCurrency": "USD",
+      "TotalDuration": 276,
+      "TotalSegmentDistance": 2076,
+      "TotalTaxes": 2044,
+      "UpdatedAt": "2026-05-20T23:05:14.996599Z"
+    }
+  ],
+  "destination_coordinates": {
+    "Lat": 42.207808,
+    "Lon": -83.356048
+  },
+  "origin_coordinates": {
+    "Lat": 37.615215,
+    "Lon": -122.389881
+  }
+}

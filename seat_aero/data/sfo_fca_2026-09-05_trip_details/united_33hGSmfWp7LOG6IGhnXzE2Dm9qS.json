@@ -1,0 +1,188 @@
+{
+  "booking_links": [
+    {
+      "label": "Book via United MileagePlus",
+      "link": "https://www.united.com/en/us/fsr/choose-flights?f=SFO&t=FCA&d=2026-09-05&sc=7&st=bestmatches&cbm=-1&cbm2=-1&ft=0&cp=0&tt=1&at=1&rm=1&act=0&px=1&taxng=1&clm=7&tqp=A&utm_source=seatsaero",
+      "primary": true
+    },
+    {
+      "label": "Book via Air Canada Aeroplan",
+      "link": "https://www.aircanada.com/aeroplan/redeem/availability/outbound?org0=SFO&dest0=FCA&departureDate0=2026-09-05&lang=en-CA&tripType=O&ADT=1&YTH=0&CHD=0&INF=0&INS=0&marketCode=INT",
+      "primary": false
+    },
+    {
+      "label": "Book via Copa ConnectMiles",
+      "link": "https://shopping.copaair.com/miles?roundtrip=false&area1=SFO&area2=FCA&date1=2026-09-05&date2=&flexible_dates_v2=false&adults=1&children=0&infants=0&isMiles=true&advanced_air_search=false&stopover=false&sf=gs&langid=en&promocode=",
+      "primary": false
+    }
+  ],
+  "carriers": {
+    "UA": "United Airlines"
+  },
+  "data": [
+    {
+      "Aircraft": [
+        "Boeing 757-300",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-09-05T15:54:00Z",
+      "AvailabilityID": "33hGSmfWp7LOG6IGhnXzE2Dm9qS",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "753",
+          "AircraftName": "Boeing 757-300",
+          "ArrivesAt": "2026-09-05T12:36:00Z",
+          "AvailabilityID": "33hGSmfWp7LOG6IGhnXzE2Dm9qS",
+          "AvailabilityTripID": "3E1MG4gUoLNxk2c9IACcyuUYVbx",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-21T05:32:03.042526Z",
+          "DepartsAt": "2026-09-05T08:45:00Z",
+          "DestinationAirport": "DEN",
+          "Distance": 966,
+          "Duration": 171,
+          "FareClass": "YN",
+          "FlightNumber": "UA1469",
+          "ID": "3E1MG5CpvNiixNFlT8e5ZmKO8WA",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2vVgIxLN3Dg54WLKZMWM6LyW3Tb",
+          "Source": "united",
+          "UpdatedAt": "2026-05-21T05:32:03.042526Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-05T15:54:00Z",
+          "AvailabilityID": "33hGSmfWp7LOG6IGhnXzE2Dm9qS",
+          "AvailabilityTripID": "3E1MG4gUoLNxk2c9IACcyuUYVbx",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-21T05:32:03.042526Z",
+          "DepartsAt": "2026-09-05T13:40:00Z",
+          "DestinationAirport": "FCA",
+          "Distance": 752,
+          "Duration": 134,
+          "FareClass": "YN",
+          "FlightNumber": "UA2246",
+          "ID": "3E1MG51KRwyrtJyBr1lMG5HCcAi",
+          "Order": 1,
+          "OriginAirport": "DEN",
+          "RouteID": "2vVgIxLN3Dg54WLKZMWM6LyW3Tb",
+          "Source": "united",
+          "UpdatedAt": "2026-05-21T05:32:03.042526Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "DEN"
+      ],
+      "CreatedAt": "2026-05-21T05:32:03.042526Z",
+      "DepartsAt": "2026-09-05T08:45:00Z",
+      "DestinationAirport": "FCA",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA1469, UA2246",
+      "ID": "3E1MG4gUoLNxk2c9IACcyuUYVbx",
+      "MileageCost": 37000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2vVgIxLN3Dg54WLKZMWM6LyW3Tb",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 369,
+      "TotalSegmentDistance": 1718,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-05-21T05:32:03.042526Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 757-300",
+        "Boeing 737 MAX 9"
+      ],
+      "ArrivesAt": "2026-09-05T21:21:00Z",
+      "AvailabilityID": "33hGSmfWp7LOG6IGhnXzE2Dm9qS",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "753",
+          "AircraftName": "Boeing 757-300",
+          "ArrivesAt": "2026-09-05T18:09:00Z",
+          "AvailabilityID": "33hGSmfWp7LOG6IGhnXzE2Dm9qS",
+          "AvailabilityTripID": "3E1MG9KCgtJwNKIeeuE6fWBD0yA",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-21T05:32:03.042526Z",
+          "DepartsAt": "2026-09-05T14:20:00Z",
+          "DestinationAirport": "DEN",
+          "Distance": 966,
+          "Duration": 169,
+          "FareClass": "YN",
+          "FlightNumber": "UA1596",
+          "ID": "3E1MG6zaWfxUUtNjinZTI3Hz05V",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2vVgIxLN3Dg54WLKZMWM6LyW3Tb",
+          "Source": "united",
+          "UpdatedAt": "2026-05-21T05:32:03.042526Z"
+        },
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T21:21:00Z",
+          "AvailabilityID": "33hGSmfWp7LOG6IGhnXzE2Dm9qS",
+          "AvailabilityTripID": "3E1MG9KCgtJwNKIeeuE6fWBD0yA",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-21T05:32:03.042526Z",
+          "DepartsAt": "2026-09-05T19:05:00Z",
+          "DestinationAirport": "FCA",
+          "Distance": 752,
+          "Duration": 136,
+          "FareClass": "YN",
+          "FlightNumber": "UA696",
+          "ID": "3E1MG5gGfrCShV0rbNpTIddorzP",
+          "Order": 1,
+          "OriginAirport": "DEN",
+          "RouteID": "2vVgIxLN3Dg54WLKZMWM6LyW3Tb",
+          "Source": "united",
+          "UpdatedAt": "2026-05-21T05:32:03.042526Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "DEN"
+      ],
+      "CreatedAt": "2026-05-21T05:32:03.042526Z",
+      "DepartsAt": "2026-09-05T14:20:00Z",
+      "DestinationAirport": "FCA",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA1596, UA696",
+      "ID": "3E1MG9KCgtJwNKIeeuE6fWBD0yA",
+      "MileageCost": 28100,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2vVgIxLN3Dg54WLKZMWM6LyW3Tb",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 361,
+      "TotalSegmentDistance": 1718,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-05-21T05:32:03.042526Z"
+    }
+  ],
+  "destination_coordinates": {
+    "Lat": 48.307304,
+    "Lon": -114.253152
+  },
+  "origin_coordinates": {
+    "Lat": 37.615215,
+    "Lon": -122.389881
+  }
+}

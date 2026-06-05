@@ -1,0 +1,318 @@
+{
+  "booking_links": [
+    {
+      "label": "Book via Virgin Australia Velocity",
+      "link": "https://book.virginaustralia.com/dx/VADX/#/flight-selection?journeyType=one-way&activeMonth=10-14-2026&awardBooking=true&class=First&ADT=1&CHD=0&INF=0&origin=SFO&destination=DTW&date=10-14-2026&promoCode=&utm_source=seatsaero",
+      "primary": true
+    },
+    {
+      "label": "Book via Air Canada Aeroplan",
+      "link": "https://www.aircanada.com/aeroplan/redeem/availability/outbound?org0=SFO&dest0=DTW&departureDate0=2026-10-14&lang=en-CA&tripType=O&ADT=1&YTH=0&CHD=0&INF=0&INS=0&marketCode=INT",
+      "primary": false
+    },
+    {
+      "label": "Book via United MileagePlus",
+      "link": "https://www.united.com/en/us/fsr/choose-flights?f=SFO&t=DTW&d=2026-10-14&sc=7&st=bestmatches&cbm=-1&cbm2=-1&ft=0&cp=0&tt=1&at=1&rm=1&act=0&px=1&taxng=1&clm=7&tqp=A&utm_source=seatsaero",
+      "primary": false
+    }
+  ],
+  "carriers": {
+    "UA": "United Airlines"
+  },
+  "data": [
+    {
+      "Aircraft": [
+        "Airbus A320"
+      ],
+      "ArrivesAt": "2026-10-15T06:26:00Z",
+      "AvailabilityID": "34dZKhmd44E5SskHLkPZHXwKhFs",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "320",
+          "AircraftName": "Airbus A320",
+          "ArrivesAt": "2026-10-15T06:26:00Z",
+          "AvailabilityID": "34dZKhmd44E5SskHLkPZHXwKhFs",
+          "AvailabilityTripID": "3DfmxcnRVSxsc7jsQpvp0uNdaab",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-13T14:15:45.561833Z",
+          "DepartsAt": "2026-10-14T22:35:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 2076,
+          "Duration": 291,
+          "FareClass": "X",
+          "FlightNumber": "UA1986",
+          "ID": "3DfmxfgUrfqnwmWCR2S91f44Epz",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2Wnm5EWlZwmueSCcojzhzLDVFpV",
+          "Source": "velocity",
+          "UpdatedAt": "2026-05-20T06:50:09.737164Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA",
+      "CreatedAt": "2026-05-13T14:15:45.561833Z",
+      "DepartsAt": "2026-10-14T22:35:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "X"
+      ],
+      "FlightNumbers": "UA1986",
+      "ID": "3DfmxcnRVSxsc7jsQpvp0uNdaab",
+      "MileageCost": 19000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2Wnm5EWlZwmueSCcojzhzLDVFpV",
+      "Source": "velocity",
+      "Stops": 0,
+      "TaxesCurrency": "AUD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 291,
+      "TotalSegmentDistance": 2076,
+      "TotalTaxes": 1420,
+      "UpdatedAt": "2026-05-20T06:50:09.737164Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A320",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-10-14T13:04:00Z",
+      "AvailabilityID": "34dZKhmd44E5SskHLkPZHXwKhFs",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A320",
+          "ArrivesAt": "2026-10-14T06:56:00Z",
+          "AvailabilityID": "34dZKhmd44E5SskHLkPZHXwKhFs",
+          "AvailabilityTripID": "3DygdO2UApZggCSt17KuBXUfcTO",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T06:50:09.737164Z",
+          "DepartsAt": "2026-10-14T00:35:00Z",
+          "DestinationAirport": "ORD",
+          "Distance": 1844,
+          "Duration": 261,
+          "FareClass": "X",
+          "FlightNumber": "UA2847",
+          "ID": "3DygdMUv6piJBahg4RUN7zd2Zae",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2Wnm5EWlZwmueSCcojzhzLDVFpV",
+          "Source": "velocity",
+          "UpdatedAt": "2026-05-20T06:50:09.737164Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-10-14T13:04:00Z",
+          "AvailabilityID": "34dZKhmd44E5SskHLkPZHXwKhFs",
+          "AvailabilityTripID": "3DygdO2UApZggCSt17KuBXUfcTO",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T06:50:09.737164Z",
+          "DepartsAt": "2026-10-14T10:30:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 234,
+          "Duration": 94,
+          "FareClass": "X",
+          "FlightNumber": "UA5756",
+          "ID": "3DygdIUcixysRYaEk6nkA8H0Cms",
+          "Order": 1,
+          "OriginAirport": "ORD",
+          "RouteID": "2Wnm5EWlZwmueSCcojzhzLDVFpV",
+          "Source": "velocity",
+          "UpdatedAt": "2026-05-20T06:50:09.737164Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA",
+      "Connections": [
+        "ORD"
+      ],
+      "CreatedAt": "2026-05-20T06:50:09.737164Z",
+      "DepartsAt": "2026-10-14T00:35:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "X",
+        "X"
+      ],
+      "FlightNumbers": "UA2847, UA5756",
+      "ID": "3DygdO2UApZggCSt17KuBXUfcTO",
+      "MileageCost": 19000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 1,
+      "RouteID": "2Wnm5EWlZwmueSCcojzhzLDVFpV",
+      "Source": "velocity",
+      "Stops": 1,
+      "TaxesCurrency": "AUD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 569,
+      "TotalSegmentDistance": 2078,
+      "TotalTaxes": 2050,
+      "UpdatedAt": "2026-05-20T06:50:09.737164Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A320",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-10-14T15:27:00Z",
+      "AvailabilityID": "34dZKhmd44E5SskHLkPZHXwKhFs",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A320",
+          "ArrivesAt": "2026-10-14T11:25:00Z",
+          "AvailabilityID": "34dZKhmd44E5SskHLkPZHXwKhFs",
+          "AvailabilityTripID": "3DygdJLCPTnIMUZtwnbjIFwWTuz",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T06:50:09.737164Z",
+          "DepartsAt": "2026-10-14T05:00:00Z",
+          "DestinationAirport": "ORD",
+          "Distance": 1844,
+          "Duration": 265,
+          "FareClass": "X",
+          "FlightNumber": "UA2343",
+          "ID": "3DygdKQc8UINCEbucO1v06FrIfD",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2Wnm5EWlZwmueSCcojzhzLDVFpV",
+          "Source": "velocity",
+          "UpdatedAt": "2026-05-20T06:50:09.737164Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-10-14T15:27:00Z",
+          "AvailabilityID": "34dZKhmd44E5SskHLkPZHXwKhFs",
+          "AvailabilityTripID": "3DygdJLCPTnIMUZtwnbjIFwWTuz",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T06:50:09.737164Z",
+          "DepartsAt": "2026-10-14T12:49:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 234,
+          "Duration": 98,
+          "FareClass": "X",
+          "FlightNumber": "UA5882",
+          "ID": "3DygdMO3wCGDoQmroJw0fXKbfLC",
+          "Order": 1,
+          "OriginAirport": "ORD",
+          "RouteID": "2Wnm5EWlZwmueSCcojzhzLDVFpV",
+          "Source": "velocity",
+          "UpdatedAt": "2026-05-20T06:50:09.737164Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA",
+      "Connections": [
+        "ORD"
+      ],
+      "CreatedAt": "2026-05-20T06:50:09.737164Z",
+      "DepartsAt": "2026-10-14T05:00:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "X",
+        "X"
+      ],
+      "FlightNumbers": "UA2343, UA5882",
+      "ID": "3DygdJLCPTnIMUZtwnbjIFwWTuz",
+      "MileageCost": 19000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2Wnm5EWlZwmueSCcojzhzLDVFpV",
+      "Source": "velocity",
+      "Stops": 1,
+      "TaxesCurrency": "AUD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 447,
+      "TotalSegmentDistance": 2078,
+      "TotalTaxes": 2050,
+      "UpdatedAt": "2026-05-20T06:50:09.737164Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A320",
+        "Airbus A319"
+      ],
+      "ArrivesAt": "2026-10-14T18:05:00Z",
+      "AvailabilityID": "34dZKhmd44E5SskHLkPZHXwKhFs",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A320",
+          "ArrivesAt": "2026-10-14T11:25:00Z",
+          "AvailabilityID": "34dZKhmd44E5SskHLkPZHXwKhFs",
+          "AvailabilityTripID": "3DygdPQqWOgCSMacGCLJ1RsZ45t",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T06:50:09.737164Z",
+          "DepartsAt": "2026-10-14T05:00:00Z",
+          "DestinationAirport": "ORD",
+          "Distance": 1844,
+          "Duration": 265,
+          "FareClass": "X",
+          "FlightNumber": "UA2343",
+          "ID": "3DygdKBGTw61dwXuSOHFDYVakPz",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2Wnm5EWlZwmueSCcojzhzLDVFpV",
+          "Source": "velocity",
+          "UpdatedAt": "2026-05-20T06:50:09.737164Z"
+        },
+        {
+          "AircraftCode": "319",
+          "AircraftName": "Airbus A319",
+          "ArrivesAt": "2026-10-14T18:05:00Z",
+          "AvailabilityID": "34dZKhmd44E5SskHLkPZHXwKhFs",
+          "AvailabilityTripID": "3DygdPQqWOgCSMacGCLJ1RsZ45t",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-20T06:50:09.737164Z",
+          "DepartsAt": "2026-10-14T15:35:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 234,
+          "Duration": 90,
+          "FareClass": "X",
+          "FlightNumber": "UA2632",
+          "ID": "3DygdMcBEsL9j9DNhLAxFXueJiR",
+          "Order": 1,
+          "OriginAirport": "ORD",
+          "RouteID": "2Wnm5EWlZwmueSCcojzhzLDVFpV",
+          "Source": "velocity",
+          "UpdatedAt": "2026-05-20T06:50:09.737164Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA",
+      "Connections": [
+        "ORD"
+      ],
+      "CreatedAt": "2026-05-20T06:50:09.737164Z",
+      "DepartsAt": "2026-10-14T05:00:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "X",
+        "X"
+      ],
+      "FlightNumbers": "UA2343, UA2632",
+      "ID": "3DygdPQqWOgCSMacGCLJ1RsZ45t",
+      "MileageCost": 19000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2Wnm5EWlZwmueSCcojzhzLDVFpV",
+      "Source": "velocity",
+      "Stops": 1,
+      "TaxesCurrency": "AUD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 605,
+      "TotalSegmentDistance": 2078,
+      "TotalTaxes": 2840,
+      "UpdatedAt": "2026-05-20T06:50:09.737164Z"
+    }
+  ],
+  "destination_coordinates": {
+    "Lat": 42.207808,
+    "Lon": -83.356048
+  },
+  "origin_coordinates": {
+    "Lat": 37.615215,
+    "Lon": -122.389881
+  }
+}

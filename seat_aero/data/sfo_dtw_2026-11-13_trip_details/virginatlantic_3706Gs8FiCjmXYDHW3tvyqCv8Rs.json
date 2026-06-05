@@ -1,0 +1,84 @@
+{
+  "booking_links": [
+    {
+      "label": "Book via Virgin Atlantic",
+      "link": "https://www.virginatlantic.com/flights/search/slice?origin=SFO&destination=DTW&departing=2026-11-13&passengers=a1t0c0i0&awardSearch=true&utm_source=seatsaero",
+      "primary": true
+    },
+    {
+      "label": "Book via Delta SkyMiles",
+      "link": "https://www.delta.com/flight-search/search?action=findFlights&searchByCabin=true&deltaOnlySearch=false&deltaOnly=off&go=Find%20Flights&tripType=ONE_WAY&passengerInfo=ADT:1&priceSchedule=price&awardTravel=true&originCity=SFO&destinationCity=DTW&departureDate=11/13/2026&returnDate=&forceMiles=true&utm_source=seatsaero",
+      "primary": false
+    },
+    {
+      "label": "Book via Air France/KLM Flying Blue",
+      "link": "https://wwws.airfrance.us/search/offers?activeConnection=0&bookingFlow=REWARD&cabinClass=ECONOMY&pax=1:0:0:0:0:0:0:0&connections=SFO%3AC%3A20261113%3EDTW%3AA&utm_source=seatsaero",
+      "primary": false
+    }
+  ],
+  "carriers": {
+    "DL": "Delta"
+  },
+  "data": [
+    {
+      "Aircraft": [
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-11-13T22:00:00Z",
+      "AvailabilityID": "3706Gs8FiCjmXYDHW3tvyqCv8Rs",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-11-13T22:00:00Z",
+          "AvailabilityID": "3706Gs8FiCjmXYDHW3tvyqCv8Rs",
+          "AvailabilityTripID": "379knZhaoXljFlhvsbF1Ys3WM0J",
+          "Cabin": "economy",
+          "CreatedAt": "2025-12-21T13:14:01.510965Z",
+          "DepartsAt": "2026-11-13T14:25:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 2076,
+          "Duration": 275,
+          "FareClass": "N",
+          "FlightNumber": "DL1927",
+          "ID": "379knbz49m4iW82hRX91GGBVJyx",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2EUpHD8TRaxHoMwMU4VbGSkvAtW",
+          "Source": "virginatlantic",
+          "UpdatedAt": "2026-04-14T18:02:18.333389Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL",
+      "CreatedAt": "2025-12-21T13:14:01.510965Z",
+      "DepartsAt": "2026-11-13T14:25:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "N"
+      ],
+      "FlightNumbers": "DL1927",
+      "ID": "379knZhaoXljFlhvsbF1Ys3WM0J",
+      "MileageCost": 22000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2EUpHD8TRaxHoMwMU4VbGSkvAtW",
+      "Source": "virginatlantic",
+      "Stops": 0,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 275,
+      "TotalSegmentDistance": 2076,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-04-14T18:02:18.333389Z"
+    }
+  ],
+  "destination_coordinates": {
+    "Lat": 42.207808,
+    "Lon": -83.356048
+  },
+  "origin_coordinates": {
+    "Lat": 37.615215,
+    "Lon": -122.389881
+  }
+}

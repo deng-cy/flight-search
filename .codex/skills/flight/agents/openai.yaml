@@ -1,0 +1,4 @@
+interface:
+  display_name: "Flight"
+  short_description: "Run this project flight search workflow"
+  default_prompt: "Use $flight to search and summarize flight options."

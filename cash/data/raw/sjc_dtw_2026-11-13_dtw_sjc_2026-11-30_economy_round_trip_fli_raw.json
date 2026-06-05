@@ -1,0 +1,295 @@
+{
+  "evidence": {
+    "result_count": 2,
+    "top_n": 1,
+    "transport": "fli"
+  },
+  "provider": "fli",
+  "provider_api_variant": "python-api",
+  "provider_package": "flights",
+  "provider_version": "0.9.0",
+  "request": {
+    "adults": 1,
+    "cabin": "economy",
+    "currency": "USD",
+    "departure_date": "2026-11-13",
+    "destination": "DTW",
+    "fetch_mode": "fallback",
+    "max_stops": null,
+    "origin": "SJC",
+    "return_date": "2026-11-30",
+    "return_destination": "SJC",
+    "return_origin": "DTW",
+    "trip_type": "round-trip"
+  },
+  "result": {
+    "current_price": "",
+    "flights": [
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": true,
+        "legs": [
+          {
+            "arrival": "22:20",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-13",
+            "departure": "11:55",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "7h 25m",
+            "duration_minutes": 445,
+            "flight_numbers": "WN 2638 / WN 1843 / WN 4960",
+            "layovers": [
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 55,
+                "overnight": false
+              },
+              {
+                "airport": "STL",
+                "change_of_airport": false,
+                "duration_minutes": 40,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T15:25:00",
+                "arrive_time": "15:25",
+                "depart_datetime": "2026-11-13T11:55:00",
+                "depart_time": "11:55",
+                "destination": "DEN",
+                "duration_minutes": 150,
+                "flight_number": "2638",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T19:15:00",
+                "arrive_time": "19:15",
+                "depart_datetime": "2026-11-13T16:20:00",
+                "depart_time": "16:20",
+                "destination": "STL",
+                "duration_minutes": 115,
+                "flight_number": "1843",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T22:20:00",
+                "arrive_time": "22:20",
+                "depart_datetime": "2026-11-13T19:55:00",
+                "depart_time": "19:55",
+                "destination": "DTW",
+                "duration_minutes": 85,
+                "flight_number": "4960",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "STL"
+              }
+            ],
+            "stops": 2
+          },
+          {
+            "arrival": "13:45",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-30",
+            "departure": "06:05",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "10h 40m",
+            "duration_minutes": 640,
+            "flight_numbers": "WN 1874 / WN 1796",
+            "layovers": [
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 275,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-30T07:30:00",
+                "arrive_time": "07:30",
+                "depart_datetime": "2026-11-30T06:05:00",
+                "depart_time": "06:05",
+                "destination": "DEN",
+                "duration_minutes": 205,
+                "flight_number": "1874",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-30T13:45:00",
+                "arrive_time": "13:45",
+                "depart_datetime": "2026-11-30T12:05:00",
+                "depart_time": "12:05",
+                "destination": "SJC",
+                "duration_minutes": 160,
+                "flight_number": "1796",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 617.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:20",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-13",
+            "departure": "11:55",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "7h 25m",
+            "duration_minutes": 445,
+            "flight_numbers": "WN 2638 / WN 1843 / WN 4960",
+            "layovers": [
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 55,
+                "overnight": false
+              },
+              {
+                "airport": "STL",
+                "change_of_airport": false,
+                "duration_minutes": 40,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T15:25:00",
+                "arrive_time": "15:25",
+                "depart_datetime": "2026-11-13T11:55:00",
+                "depart_time": "11:55",
+                "destination": "DEN",
+                "duration_minutes": 150,
+                "flight_number": "2638",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T19:15:00",
+                "arrive_time": "19:15",
+                "depart_datetime": "2026-11-13T16:20:00",
+                "depart_time": "16:20",
+                "destination": "STL",
+                "duration_minutes": 115,
+                "flight_number": "1843",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T22:20:00",
+                "arrive_time": "22:20",
+                "depart_datetime": "2026-11-13T19:55:00",
+                "depart_time": "19:55",
+                "destination": "DTW",
+                "duration_minutes": 85,
+                "flight_number": "4960",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "STL"
+              }
+            ],
+            "stops": 2
+          },
+          {
+            "arrival": "14:40",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-30",
+            "departure": "10:40",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "7h",
+            "duration_minutes": 420,
+            "flight_numbers": "WN 1076 / WN 2445",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 45,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-30T12:20:00",
+                "arrive_time": "12:20",
+                "depart_datetime": "2026-11-30T10:40:00",
+                "depart_time": "10:40",
+                "destination": "LAS",
+                "duration_minutes": 280,
+                "flight_number": "1076",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-30T14:40:00",
+                "arrive_time": "14:40",
+                "depart_datetime": "2026-11-30T13:05:00",
+                "depart_time": "13:05",
+                "destination": "SJC",
+                "duration_minutes": 95,
+                "flight_number": "2445",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 651.00"
+      }
+    ]
+  },
+  "searched_at": "2026-06-03T06:46:12.912631+00:00"
+}

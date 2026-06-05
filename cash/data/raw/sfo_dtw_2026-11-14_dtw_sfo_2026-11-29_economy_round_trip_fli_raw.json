@@ -1,0 +1,703 @@
+{
+  "evidence": {
+    "result_count": 6,
+    "top_n": 1,
+    "transport": "fli"
+  },
+  "provider": "fli",
+  "provider_api_variant": "python-api",
+  "provider_package": "flights",
+  "provider_version": "0.9.0",
+  "request": {
+    "adults": 1,
+    "cabin": "economy",
+    "currency": "USD",
+    "departure_date": "2026-11-14",
+    "destination": "DTW",
+    "fetch_mode": "fallback",
+    "max_stops": null,
+    "origin": "SFO",
+    "return_date": "2026-11-29",
+    "return_destination": "SFO",
+    "return_origin": "DTW",
+    "trip_type": "round-trip"
+  },
+  "result": {
+    "current_price": "",
+    "flights": [
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": true,
+        "legs": [
+          {
+            "arrival": "16:47",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-11-14",
+            "departure": "06:05",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "7h 42m",
+            "duration_minutes": 462,
+            "flight_numbers": "AS 68 / AS 313",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 60,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-14T08:22:00",
+                "arrive_time": "08:22",
+                "depart_datetime": "2026-11-14T06:05:00",
+                "depart_time": "06:05",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "68",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-14T16:47:00",
+                "arrive_time": "16:47",
+                "depart_datetime": "2026-11-14T09:22:00",
+                "depart_time": "09:22",
+                "destination": "DTW",
+                "duration_minutes": 265,
+                "flight_number": "313",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "10:15",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-29",
+            "departure": "06:10",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "7h 5m",
+            "duration_minutes": 425,
+            "flight_numbers": "WN 1880 / WN 2723",
+            "layovers": [
+              {
+                "airport": "STL",
+                "change_of_airport": false,
+                "duration_minutes": 45,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T07:10:00",
+                "arrive_time": "07:10",
+                "depart_datetime": "2026-11-29T06:10:00",
+                "depart_time": "06:10",
+                "destination": "STL",
+                "duration_minutes": 120,
+                "flight_number": "1880",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T10:15:00",
+                "arrive_time": "10:15",
+                "depart_datetime": "2026-11-29T07:55:00",
+                "depart_time": "07:55",
+                "destination": "SFO",
+                "duration_minutes": 260,
+                "flight_number": "2723",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "STL"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 642.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "16:47",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-11-14",
+            "departure": "06:05",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "7h 42m",
+            "duration_minutes": 462,
+            "flight_numbers": "AS 68 / AS 313",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 60,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-14T08:22:00",
+                "arrive_time": "08:22",
+                "depart_datetime": "2026-11-14T06:05:00",
+                "depart_time": "06:05",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "68",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-14T16:47:00",
+                "arrive_time": "16:47",
+                "depart_datetime": "2026-11-14T09:22:00",
+                "depart_time": "09:22",
+                "destination": "DTW",
+                "duration_minutes": 265,
+                "flight_number": "313",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "13:48",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-11-29",
+            "departure": "07:00",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "9h 48m",
+            "duration_minutes": 588,
+            "flight_numbers": "AS 313 / AS 1364",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 150,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-29T09:01:00",
+                "arrive_time": "09:01",
+                "depart_datetime": "2026-11-29T07:00:00",
+                "depart_time": "07:00",
+                "destination": "SEA",
+                "duration_minutes": 301,
+                "flight_number": "313",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-29T13:48:00",
+                "arrive_time": "13:48",
+                "depart_datetime": "2026-11-29T11:31:00",
+                "depart_time": "11:31",
+                "destination": "SFO",
+                "duration_minutes": 137,
+                "flight_number": "1364",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1211.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "16:47",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-11-14",
+            "departure": "06:05",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "7h 42m",
+            "duration_minutes": 462,
+            "flight_numbers": "AS 68 / AS 313",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 60,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-14T08:22:00",
+                "arrive_time": "08:22",
+                "depart_datetime": "2026-11-14T06:05:00",
+                "depart_time": "06:05",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "68",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-14T16:47:00",
+                "arrive_time": "16:47",
+                "depart_datetime": "2026-11-14T09:22:00",
+                "depart_time": "09:22",
+                "destination": "DTW",
+                "duration_minutes": 265,
+                "flight_number": "313",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:09",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-11-29",
+            "departure": "16:46",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "8h 23m",
+            "duration_minutes": 503,
+            "flight_numbers": "AS 327 / AS 1318",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 68,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-29T18:47:00",
+                "arrive_time": "18:47",
+                "depart_datetime": "2026-11-29T16:46:00",
+                "depart_time": "16:46",
+                "destination": "SEA",
+                "duration_minutes": 301,
+                "flight_number": "327",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-29T22:09:00",
+                "arrive_time": "22:09",
+                "depart_datetime": "2026-11-29T19:55:00",
+                "depart_time": "19:55",
+                "destination": "SFO",
+                "duration_minutes": 134,
+                "flight_number": "1318",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1211.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "16:47",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-11-14",
+            "departure": "06:05",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "7h 42m",
+            "duration_minutes": 462,
+            "flight_numbers": "AS 68 / AS 313",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 60,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-14T08:22:00",
+                "arrive_time": "08:22",
+                "depart_datetime": "2026-11-14T06:05:00",
+                "depart_time": "06:05",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "68",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-14T16:47:00",
+                "arrive_time": "16:47",
+                "depart_datetime": "2026-11-14T09:22:00",
+                "depart_time": "09:22",
+                "destination": "DTW",
+                "duration_minutes": 265,
+                "flight_number": "313",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "23:59",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-11-29",
+            "departure": "16:46",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "10h 13m",
+            "duration_minutes": 613,
+            "flight_numbers": "AS 327 / AS 417",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 173,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-29T18:47:00",
+                "arrive_time": "18:47",
+                "depart_datetime": "2026-11-29T16:46:00",
+                "depart_time": "16:46",
+                "destination": "SEA",
+                "duration_minutes": 301,
+                "flight_number": "327",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-29T23:59:00",
+                "arrive_time": "23:59",
+                "depart_datetime": "2026-11-29T21:40:00",
+                "depart_time": "21:40",
+                "destination": "SFO",
+                "duration_minutes": 139,
+                "flight_number": "417",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1211.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "16:47",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-11-14",
+            "departure": "06:05",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "7h 42m",
+            "duration_minutes": 462,
+            "flight_numbers": "AS 68 / AS 313",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 60,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-14T08:22:00",
+                "arrive_time": "08:22",
+                "depart_datetime": "2026-11-14T06:05:00",
+                "depart_time": "06:05",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "68",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-14T16:47:00",
+                "arrive_time": "16:47",
+                "depart_datetime": "2026-11-14T09:22:00",
+                "depart_time": "09:22",
+                "destination": "DTW",
+                "duration_minutes": 265,
+                "flight_number": "313",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "15:49",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-11-29",
+            "departure": "07:00",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "11h 49m",
+            "duration_minutes": 709,
+            "flight_numbers": "AS 313 / AS 1379",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 274,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-29T09:01:00",
+                "arrive_time": "09:01",
+                "depart_datetime": "2026-11-29T07:00:00",
+                "depart_time": "07:00",
+                "destination": "SEA",
+                "duration_minutes": 301,
+                "flight_number": "313",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-29T15:49:00",
+                "arrive_time": "15:49",
+                "depart_datetime": "2026-11-29T13:35:00",
+                "depart_time": "13:35",
+                "destination": "SFO",
+                "duration_minutes": 134,
+                "flight_number": "1379",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1231.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "16:47",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-11-14",
+            "departure": "06:05",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "7h 42m",
+            "duration_minutes": 462,
+            "flight_numbers": "AS 68 / AS 313",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 60,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-14T08:22:00",
+                "arrive_time": "08:22",
+                "depart_datetime": "2026-11-14T06:05:00",
+                "depart_time": "06:05",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "68",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-14T16:47:00",
+                "arrive_time": "16:47",
+                "depart_datetime": "2026-11-14T09:22:00",
+                "depart_time": "09:22",
+                "destination": "DTW",
+                "duration_minutes": 265,
+                "flight_number": "313",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "17:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-11-29",
+            "departure": "07:00",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "13h 56m",
+            "duration_minutes": 836,
+            "flight_numbers": "AS 313 / AS 1463",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 403,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-29T09:01:00",
+                "arrive_time": "09:01",
+                "depart_datetime": "2026-11-29T07:00:00",
+                "depart_time": "07:00",
+                "destination": "SEA",
+                "duration_minutes": 301,
+                "flight_number": "313",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-11-29T17:56:00",
+                "arrive_time": "17:56",
+                "depart_datetime": "2026-11-29T15:44:00",
+                "depart_time": "15:44",
+                "destination": "SFO",
+                "duration_minutes": 132,
+                "flight_number": "1463",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1231.00"
+      }
+    ]
+  },
+  "searched_at": "2026-06-03T06:42:04.743641+00:00"
+}

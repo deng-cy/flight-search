@@ -1,0 +1,30 @@
+{
+  "evidence": {
+    "result_count": 0,
+    "top_n": 3,
+    "transport": "fli"
+  },
+  "provider": "fli",
+  "provider_api_variant": "python-api",
+  "provider_package": "flights",
+  "provider_version": "0.9.0",
+  "request": {
+    "adults": 1,
+    "cabin": "economy",
+    "currency": "USD",
+    "departure_date": "2026-09-05",
+    "destination": "MSO",
+    "fetch_mode": "fallback",
+    "max_stops": null,
+    "origin": "SFO",
+    "return_date": "2026-09-07",
+    "return_destination": "SJC",
+    "return_origin": "MSO",
+    "trip_type": "multi-city"
+  },
+  "result": {
+    "current_price": "",
+    "flights": []
+  },
+  "searched_at": "2026-06-04T16:55:36.625640+00:00"
+}

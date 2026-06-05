@@ -1,0 +1,470 @@
+{
+  "booking_links": [
+    {
+      "label": "Book via Air Canada Aeroplan",
+      "link": "https://www.aircanada.com/aeroplan/redeem/availability/outbound?org0=SFO&dest0=FCA&departureDate0=2026-09-05&lang=en-CA&tripType=O&ADT=1&YTH=0&CHD=0&INF=0&INS=0&marketCode=INT",
+      "primary": true
+    },
+    {
+      "label": "Book via United MileagePlus",
+      "link": "https://www.united.com/en/us/fsr/choose-flights?f=SFO&t=FCA&d=2026-09-05&sc=7&st=bestmatches&cbm=-1&cbm2=-1&ft=0&cp=0&tt=1&at=1&rm=1&act=0&px=1&taxng=1&clm=7&tqp=A",
+      "primary": false
+    },
+    {
+      "label": "Book via Copa ConnectMiles",
+      "link": "https://shopping.copaair.com/miles?roundtrip=false&area1=SFO&area2=FCA&date1=2026-09-05&date2=&flexible_dates_v2=false&adults=1&children=0&infants=0&isMiles=true&advanced_air_search=false&stopover=false&sf=gs&langid=en&promocode=",
+      "primary": false
+    }
+  ],
+  "carriers": {
+    "UA": "United Airlines"
+  },
+  "data": [
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 8",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-09-06T10:04:00Z",
+      "AvailabilityID": "32l6uDM3RW2J5VAZ1NF5ogAWOUB",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M8",
+          "AircraftName": "Boeing 737 MAX 8",
+          "ArrivesAt": "2026-09-06T00:59:00Z",
+          "AvailabilityID": "32l6uDM3RW2J5VAZ1NF5ogAWOUB",
+          "AvailabilityTripID": "3DU5W5tJ0hD1oVoEdcrO4G8sldl",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-09T10:50:35.335981Z",
+          "DepartsAt": "2026-09-05T21:13:00Z",
+          "DestinationAirport": "DEN",
+          "Distance": 966,
+          "Duration": 166,
+          "FareClass": "X",
+          "FlightNumber": "UA301",
+          "ID": "3DU5W2hyXhBoOGDziTyDmVjx4mn",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2jArO1dPTS0fqQj5ZISYqBljAEP",
+          "Source": "aeroplan",
+          "UpdatedAt": "2026-05-21T05:32:05.574054Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-09-06T10:04:00Z",
+          "AvailabilityID": "32l6uDM3RW2J5VAZ1NF5ogAWOUB",
+          "AvailabilityTripID": "3DU5W5tJ0hD1oVoEdcrO4G8sldl",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-09T10:50:35.335981Z",
+          "DepartsAt": "2026-09-06T07:40:00Z",
+          "DestinationAirport": "FCA",
+          "Distance": 752,
+          "Duration": 144,
+          "FareClass": "X",
+          "FlightNumber": "UA5476",
+          "ID": "3DU5W4DEt8CJ2OtCfifKrOFHxFV",
+          "Order": 1,
+          "OriginAirport": "DEN",
+          "RouteID": "2jArO1dPTS0fqQj5ZISYqBljAEP",
+          "Source": "aeroplan",
+          "UpdatedAt": "2026-05-21T05:32:05.574054Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA",
+      "Connections": [
+        "DEN"
+      ],
+      "CreatedAt": "2026-05-09T10:50:35.335981Z",
+      "DepartsAt": "2026-09-05T21:13:00Z",
+      "DestinationAirport": "FCA",
+      "FareClasses": [
+        "X",
+        "X"
+      ],
+      "FlightNumbers": "UA301, UA5476",
+      "ID": "3DU5W5tJ0hD1oVoEdcrO4G8sldl",
+      "MileageCost": 15000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2jArO1dPTS0fqQj5ZISYqBljAEP",
+      "Source": "aeroplan",
+      "Stops": 1,
+      "TaxesCurrency": "CAD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 711,
+      "TotalSegmentDistance": 1718,
+      "TotalTaxes": 5440,
+      "UpdatedAt": "2026-05-21T05:32:05.574054Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-09-06T10:04:00Z",
+      "AvailabilityID": "32l6uDM3RW2J5VAZ1NF5ogAWOUB",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T22:08:00Z",
+          "AvailabilityID": "32l6uDM3RW2J5VAZ1NF5ogAWOUB",
+          "AvailabilityTripID": "3DU5VyJsejHtYbFuy4L3EJR3mKZ",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-09T10:50:35.335981Z",
+          "DepartsAt": "2026-09-05T18:25:00Z",
+          "DestinationAirport": "DEN",
+          "Distance": 966,
+          "Duration": 163,
+          "FareClass": "X",
+          "FlightNumber": "UA2436",
+          "ID": "3DU5W3j2MmUigl3Ioy44zgCBTkf",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2jArO1dPTS0fqQj5ZISYqBljAEP",
+          "Source": "aeroplan",
+          "UpdatedAt": "2026-05-21T05:32:05.574054Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-09-06T10:04:00Z",
+          "AvailabilityID": "32l6uDM3RW2J5VAZ1NF5ogAWOUB",
+          "AvailabilityTripID": "3DU5VyJsejHtYbFuy4L3EJR3mKZ",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-09T10:50:35.335981Z",
+          "DepartsAt": "2026-09-06T07:40:00Z",
+          "DestinationAirport": "FCA",
+          "Distance": 752,
+          "Duration": 144,
+          "FareClass": "X",
+          "FlightNumber": "UA5476",
+          "ID": "3DU5W1j55RxcUKEXDSb2WJb7swA",
+          "Order": 1,
+          "OriginAirport": "DEN",
+          "RouteID": "2jArO1dPTS0fqQj5ZISYqBljAEP",
+          "Source": "aeroplan",
+          "UpdatedAt": "2026-05-21T05:32:05.574054Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA",
+      "Connections": [
+        "DEN"
+      ],
+      "CreatedAt": "2026-05-09T10:50:35.335981Z",
+      "DepartsAt": "2026-09-05T18:25:00Z",
+      "DestinationAirport": "FCA",
+      "FareClasses": [
+        "X",
+        "X"
+      ],
+      "FlightNumbers": "UA2436, UA5476",
+      "ID": "3DU5VyJsejHtYbFuy4L3EJR3mKZ",
+      "MileageCost": 15000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2jArO1dPTS0fqQj5ZISYqBljAEP",
+      "Source": "aeroplan",
+      "Stops": 1,
+      "TaxesCurrency": "CAD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 879,
+      "TotalSegmentDistance": 1718,
+      "TotalTaxes": 5440,
+      "UpdatedAt": "2026-05-21T05:32:05.574054Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 8",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-09-06T10:04:00Z",
+      "AvailabilityID": "32l6uDM3RW2J5VAZ1NF5ogAWOUB",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M8",
+          "AircraftName": "Boeing 737 MAX 8",
+          "ArrivesAt": "2026-09-05T21:13:00Z",
+          "AvailabilityID": "32l6uDM3RW2J5VAZ1NF5ogAWOUB",
+          "AvailabilityTripID": "3DU5VyRsDzSIgjuu4GEge7hBd0Y",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-09T10:50:35.335981Z",
+          "DepartsAt": "2026-09-05T17:25:00Z",
+          "DestinationAirport": "DEN",
+          "Distance": 966,
+          "Duration": 168,
+          "FareClass": "X",
+          "FlightNumber": "UA1312",
+          "ID": "3DU5W1oh6qPFYyKyvA9ZTSNbD0j",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2jArO1dPTS0fqQj5ZISYqBljAEP",
+          "Source": "aeroplan",
+          "UpdatedAt": "2026-05-21T05:32:05.574054Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-09-06T10:04:00Z",
+          "AvailabilityID": "32l6uDM3RW2J5VAZ1NF5ogAWOUB",
+          "AvailabilityTripID": "3DU5VyRsDzSIgjuu4GEge7hBd0Y",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-09T10:50:35.335981Z",
+          "DepartsAt": "2026-09-06T07:40:00Z",
+          "DestinationAirport": "FCA",
+          "Distance": 752,
+          "Duration": 144,
+          "FareClass": "X",
+          "FlightNumber": "UA5476",
+          "ID": "3DU5W5Yze1c0eh6smtVlSpl86VX",
+          "Order": 1,
+          "OriginAirport": "DEN",
+          "RouteID": "2jArO1dPTS0fqQj5ZISYqBljAEP",
+          "Source": "aeroplan",
+          "UpdatedAt": "2026-05-21T05:32:05.574054Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA",
+      "Connections": [
+        "DEN"
+      ],
+      "CreatedAt": "2026-05-09T10:50:35.335981Z",
+      "DepartsAt": "2026-09-05T17:25:00Z",
+      "DestinationAirport": "FCA",
+      "FareClasses": [
+        "X",
+        "X"
+      ],
+      "FlightNumbers": "UA1312, UA5476",
+      "ID": "3DU5VyRsDzSIgjuu4GEge7hBd0Y",
+      "MileageCost": 15000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2jArO1dPTS0fqQj5ZISYqBljAEP",
+      "Source": "aeroplan",
+      "Stops": 1,
+      "TaxesCurrency": "CAD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 939,
+      "TotalSegmentDistance": 1718,
+      "TotalTaxes": 5440,
+      "UpdatedAt": "2026-05-21T05:32:05.574054Z"
+    },
+    {
+      "Aircraft": [
+        "Embraer E175",
+        "Embraer E175",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-09-06T10:04:00Z",
+      "AvailabilityID": "32l6uDM3RW2J5VAZ1NF5ogAWOUB",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-09-05T23:54:00Z",
+          "AvailabilityID": "32l6uDM3RW2J5VAZ1NF5ogAWOUB",
+          "AvailabilityTripID": "3E1MGLKY6QfGfOBjPKvMhRAMJAZ",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-21T05:32:05.574054Z",
+          "DepartsAt": "2026-09-05T20:48:00Z",
+          "DestinationAirport": "SLC",
+          "Distance": 599,
+          "Duration": 126,
+          "FareClass": "X",
+          "FlightNumber": "UA5753",
+          "ID": "3E1MGNFMPyPjo4XKbRMR5HQkN9x",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2jArO1dPTS0fqQj5ZISYqBljAEP",
+          "Source": "aeroplan",
+          "UpdatedAt": "2026-05-21T05:32:05.574054Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-09-06T06:41:00Z",
+          "AvailabilityID": "32l6uDM3RW2J5VAZ1NF5ogAWOUB",
+          "AvailabilityTripID": "3E1MGLKY6QfGfOBjPKvMhRAMJAZ",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-21T05:32:05.574054Z",
+          "DepartsAt": "2026-09-06T05:05:00Z",
+          "DestinationAirport": "DEN",
+          "Distance": 390,
+          "Duration": 96,
+          "FareClass": "X",
+          "FlightNumber": "UA5683",
+          "ID": "3E1MGLI71YXgAIBsR5XfFTbTOyU",
+          "Order": 1,
+          "OriginAirport": "SLC",
+          "RouteID": "2jArO1dPTS0fqQj5ZISYqBljAEP",
+          "Source": "aeroplan",
+          "UpdatedAt": "2026-05-21T05:32:05.574054Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-09-06T10:04:00Z",
+          "AvailabilityID": "32l6uDM3RW2J5VAZ1NF5ogAWOUB",
+          "AvailabilityTripID": "3E1MGLKY6QfGfOBjPKvMhRAMJAZ",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-21T05:32:05.574054Z",
+          "DepartsAt": "2026-09-06T07:40:00Z",
+          "DestinationAirport": "FCA",
+          "Distance": 752,
+          "Duration": 144,
+          "FareClass": "X",
+          "FlightNumber": "UA5476",
+          "ID": "3E1MGQA1cuUxdDpi9Gc1ws5N6Bd",
+          "Order": 2,
+          "OriginAirport": "DEN",
+          "RouteID": "2jArO1dPTS0fqQj5ZISYqBljAEP",
+          "Source": "aeroplan",
+          "UpdatedAt": "2026-05-21T05:32:05.574054Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA",
+      "Connections": [
+        "SLC",
+        "DEN"
+      ],
+      "CreatedAt": "2026-05-21T05:32:05.574054Z",
+      "DepartsAt": "2026-09-05T20:48:00Z",
+      "DestinationAirport": "FCA",
+      "FareClasses": [
+        "X",
+        "X",
+        "X"
+      ],
+      "FlightNumbers": "UA5753, UA5683, UA5476",
+      "ID": "3E1MGLKY6QfGfOBjPKvMhRAMJAZ",
+      "MileageCost": 15000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 4,
+      "RouteID": "2jArO1dPTS0fqQj5ZISYqBljAEP",
+      "Source": "aeroplan",
+      "Stops": 2,
+      "TaxesCurrency": "CAD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 736,
+      "TotalSegmentDistance": 1741,
+      "TotalTaxes": 5440,
+      "UpdatedAt": "2026-05-21T05:32:05.574054Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 757-300",
+        "Airbus A321neo",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-09-06T10:04:00Z",
+      "AvailabilityID": "32l6uDM3RW2J5VAZ1NF5ogAWOUB",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "753",
+          "AircraftName": "Boeing 757-300",
+          "ArrivesAt": "2026-09-06T00:59:00Z",
+          "AvailabilityID": "32l6uDM3RW2J5VAZ1NF5ogAWOUB",
+          "AvailabilityTripID": "3DU5W4m5JPJRrCaN9SAEO37lgUF",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-09T10:50:35.335981Z",
+          "DepartsAt": "2026-09-05T18:38:00Z",
+          "DestinationAirport": "ORD",
+          "Distance": 1844,
+          "Duration": 261,
+          "FareClass": "X",
+          "FlightNumber": "UA1958",
+          "ID": "3DU5W1hSyvV3EtPPCH6od6UZ3un",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2jArO1dPTS0fqQj5ZISYqBljAEP",
+          "Source": "aeroplan",
+          "UpdatedAt": "2026-05-21T05:32:05.574054Z"
+        },
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A321neo",
+          "ArrivesAt": "2026-09-06T06:39:00Z",
+          "AvailabilityID": "32l6uDM3RW2J5VAZ1NF5ogAWOUB",
+          "AvailabilityTripID": "3DU5W4m5JPJRrCaN9SAEO37lgUF",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-09T10:50:35.335981Z",
+          "DepartsAt": "2026-09-06T05:00:00Z",
+          "DestinationAirport": "DEN",
+          "Distance": 887,
+          "Duration": 159,
+          "FareClass": "X",
+          "FlightNumber": "UA2666",
+          "ID": "3DU5W0K6Tw87sHH8z7CkoKpwgVL",
+          "Order": 1,
+          "OriginAirport": "ORD",
+          "RouteID": "2jArO1dPTS0fqQj5ZISYqBljAEP",
+          "Source": "aeroplan",
+          "UpdatedAt": "2026-05-21T05:32:05.574054Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-09-06T10:04:00Z",
+          "AvailabilityID": "32l6uDM3RW2J5VAZ1NF5ogAWOUB",
+          "AvailabilityTripID": "3DU5W4m5JPJRrCaN9SAEO37lgUF",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-09T10:50:35.335981Z",
+          "DepartsAt": "2026-09-06T07:40:00Z",
+          "DestinationAirport": "FCA",
+          "Distance": 752,
+          "Duration": 144,
+          "FareClass": "X",
+          "FlightNumber": "UA5476",
+          "ID": "3DU5W19egkRl7SGp4zdR9gIdLdF",
+          "Order": 2,
+          "OriginAirport": "DEN",
+          "RouteID": "2jArO1dPTS0fqQj5ZISYqBljAEP",
+          "Source": "aeroplan",
+          "UpdatedAt": "2026-05-21T05:32:05.574054Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA",
+      "Connections": [
+        "ORD",
+        "DEN"
+      ],
+      "CreatedAt": "2026-05-09T10:50:35.335981Z",
+      "DepartsAt": "2026-09-05T18:38:00Z",
+      "DestinationAirport": "FCA",
+      "FareClasses": [
+        "X",
+        "X",
+        "X"
+      ],
+      "FlightNumbers": "UA1958, UA2666, UA5476",
+      "ID": "3DU5W4m5JPJRrCaN9SAEO37lgUF",
+      "MileageCost": 25000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2jArO1dPTS0fqQj5ZISYqBljAEP",
+      "Source": "aeroplan",
+      "Stops": 2,
+      "TaxesCurrency": "CAD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 866,
+      "TotalSegmentDistance": 3483,
+      "TotalTaxes": 5440,
+      "UpdatedAt": "2026-05-21T05:32:05.574054Z"
+    }
+  ],
+  "destination_coordinates": {
+    "Lat": 48.307304,
+    "Lon": -114.253152
+  },
+  "origin_coordinates": {
+    "Lat": 37.615215,
+    "Lon": -122.389881
+  }
+}

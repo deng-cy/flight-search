@@ -1,0 +1,500 @@
+{
+  "booking_links": [
+    {
+      "label": "Book via Delta SkyMiles",
+      "link": "https://www.delta.com/flight-search/search?action=findFlights&searchByCabin=true&deltaOnlySearch=false&deltaOnly=off&go=Find%20Flights&tripType=ONE_WAY&passengerInfo=ADT:1&priceSchedule=price&awardTravel=true&originCity=DTW&destinationCity=SJC&departureDate=11/29/2026&returnDate=&forceMiles=true&utm_source=seatsaero",
+      "primary": true
+    },
+    {
+      "label": "Book via Virgin Atlantic",
+      "link": "https://www.virginatlantic.com/flight-search/search?action=findFlights&searchByCabin=true&deltaOnlySearch=false&deltaOnly=off&go=Find%20Flights&tripType=ONE_WAY&passengerInfo=ADT:1|GBE:0|CNN:0|INF:0&priceSchedule=price&awardTravel=true&originCity=DTW&destinationCity=SJC&departureDate=11/29/2026&returnDate=&forceMiles=true&utm_source=seatsaero",
+      "primary": false
+    },
+    {
+      "label": "Book via Air France/KLM Flying Blue",
+      "link": "https://wwws.airfrance.us/search/offers?activeConnection=0&bookingFlow=REWARD&cabinClass=ECONOMY&pax=1:0:0:0:0:0:0:0&connections=DTW%3AC%3A20261129%3ESJC%3AA&utm_source=seatsaero",
+      "primary": false
+    }
+  ],
+  "carriers": {
+    "DL": "Delta"
+  },
+  "data": [
+    {
+      "Aircraft": [
+        "Airbus A321",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-11-29T14:09:00Z",
+      "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2026-11-29T10:42:00Z",
+          "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+          "AvailabilityTripID": "3A61zcEkMCixxFUXwezpqrBsl4T",
+          "Cabin": "business",
+          "CreatedAt": "2026-02-24T02:01:09.167188Z",
+          "DepartsAt": "2026-11-29T08:25:00Z",
+          "DestinationAirport": "SEA",
+          "Distance": 1923,
+          "Duration": 0,
+          "FareClass": "OD",
+          "FlightNumber": "DL734",
+          "ID": "3A61zhVuue9zOqIUHbKmu7LseQX",
+          "Order": 0,
+          "OriginAirport": "DTW",
+          "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+          "Source": "delta",
+          "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-11-29T14:09:00Z",
+          "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+          "AvailabilityTripID": "3A61zcEkMCixxFUXwezpqrBsl4T",
+          "Cabin": "business",
+          "CreatedAt": "2026-02-24T02:01:09.167188Z",
+          "DepartsAt": "2026-11-29T11:45:00Z",
+          "DestinationAirport": "SJC",
+          "Distance": 697,
+          "Duration": 0,
+          "FareClass": "OD",
+          "FlightNumber": "DL3789",
+          "ID": "3A61zdNNaH654imaDubKAJliaiH",
+          "Order": 1,
+          "OriginAirport": "SEA",
+          "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+          "Source": "delta",
+          "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "SEA"
+      ],
+      "CreatedAt": "2026-02-24T02:01:09.167188Z",
+      "DepartsAt": "2026-11-29T08:25:00Z",
+      "DestinationAirport": "SJC",
+      "FareClasses": [
+        "OD",
+        "OD"
+      ],
+      "FlightNumbers": "DL734, DL3789",
+      "ID": "3A61zcEkMCixxFUXwezpqrBsl4T",
+      "MileageCost": 136400,
+      "OriginAirport": "DTW",
+      "RemainingSeats": 7,
+      "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 524,
+      "TotalSegmentDistance": 2620,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A321",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-11-29T18:52:00Z",
+      "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2026-11-29T14:21:00Z",
+          "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+          "AvailabilityTripID": "3DuWAaXw2cEm0S6A6Q6irO6In38",
+          "Cabin": "business",
+          "CreatedAt": "2026-05-18T19:24:51.917522Z",
+          "DepartsAt": "2026-11-29T12:15:00Z",
+          "DestinationAirport": "ATL",
+          "Distance": 595,
+          "Duration": 0,
+          "FareClass": "OD",
+          "FlightNumber": "DL2188",
+          "ID": "3DuWAe2am0M2BDiGewrCF6JREs5",
+          "Order": 0,
+          "OriginAirport": "DTW",
+          "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+          "Source": "delta",
+          "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-11-29T18:52:00Z",
+          "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+          "AvailabilityTripID": "3DuWAaXw2cEm0S6A6Q6irO6In38",
+          "Cabin": "business",
+          "CreatedAt": "2026-05-18T19:24:51.917522Z",
+          "DepartsAt": "2026-11-29T16:40:00Z",
+          "DestinationAirport": "SJC",
+          "Distance": 2112,
+          "Duration": 0,
+          "FareClass": "OD",
+          "FlightNumber": "DL2136",
+          "ID": "3DuWAdu3714Gk3upfsGBPEoFNRo",
+          "Order": 1,
+          "OriginAirport": "ATL",
+          "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+          "Source": "delta",
+          "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "ATL"
+      ],
+      "CreatedAt": "2026-05-18T19:24:51.917522Z",
+      "DepartsAt": "2026-11-29T12:15:00Z",
+      "DestinationAirport": "SJC",
+      "FareClasses": [
+        "OD",
+        "OD"
+      ],
+      "FlightNumbers": "DL2188, DL2136",
+      "ID": "3DuWAaXw2cEm0S6A6Q6irO6In38",
+      "MileageCost": 136400,
+      "OriginAirport": "DTW",
+      "RemainingSeats": 9,
+      "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 577,
+      "TotalSegmentDistance": 2707,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-900",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-11-29T22:11:00Z",
+      "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-11-29T18:38:00Z",
+          "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+          "AvailabilityTripID": "3A61zcS9xzXl4oN9TFNxAjzKhEH",
+          "Cabin": "business",
+          "CreatedAt": "2026-02-24T02:01:09.167188Z",
+          "DepartsAt": "2026-11-29T16:35:00Z",
+          "DestinationAirport": "SEA",
+          "Distance": 1923,
+          "Duration": 0,
+          "FareClass": "OD",
+          "FlightNumber": "DL944",
+          "ID": "3A61zhxumSZj57mbteG56C8UHXo",
+          "Order": 0,
+          "OriginAirport": "DTW",
+          "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+          "Source": "delta",
+          "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-11-29T22:11:00Z",
+          "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+          "AvailabilityTripID": "3A61zcS9xzXl4oN9TFNxAjzKhEH",
+          "Cabin": "business",
+          "CreatedAt": "2026-02-24T02:01:09.167188Z",
+          "DepartsAt": "2026-11-29T19:50:00Z",
+          "DestinationAirport": "SJC",
+          "Distance": 697,
+          "Duration": 0,
+          "FareClass": "OD",
+          "FlightNumber": "DL3956",
+          "ID": "3A61zgMrDZXZk5kEPTbHTwI4nBk",
+          "Order": 1,
+          "OriginAirport": "SEA",
+          "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+          "Source": "delta",
+          "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "SEA"
+      ],
+      "CreatedAt": "2026-02-24T02:01:09.167188Z",
+      "DepartsAt": "2026-11-29T16:35:00Z",
+      "DestinationAirport": "SJC",
+      "FareClasses": [
+        "OD",
+        "OD"
+      ],
+      "FlightNumbers": "DL944, DL3956",
+      "ID": "3A61zcS9xzXl4oN9TFNxAjzKhEH",
+      "MileageCost": 136400,
+      "OriginAirport": "DTW",
+      "RemainingSeats": 9,
+      "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 516,
+      "TotalSegmentDistance": 2620,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A321",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-11-29T18:52:00Z",
+      "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2026-11-29T15:50:00Z",
+          "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+          "AvailabilityTripID": "3DHXU10xULyTtY7TnsZZYQQpKCg",
+          "Cabin": "business",
+          "CreatedAt": "2026-05-05T00:12:59.955098Z",
+          "DepartsAt": "2026-11-29T13:45:00Z",
+          "DestinationAirport": "ATL",
+          "Distance": 595,
+          "Duration": 0,
+          "FareClass": "OD",
+          "FlightNumber": "DL1983",
+          "ID": "3DHXU1ZMV6mjevpgsl9URz0sLjp",
+          "Order": 0,
+          "OriginAirport": "DTW",
+          "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+          "Source": "delta",
+          "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-11-29T18:52:00Z",
+          "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+          "AvailabilityTripID": "3DHXU10xULyTtY7TnsZZYQQpKCg",
+          "Cabin": "business",
+          "CreatedAt": "2026-05-05T00:12:59.955098Z",
+          "DepartsAt": "2026-11-29T16:40:00Z",
+          "DestinationAirport": "SJC",
+          "Distance": 2112,
+          "Duration": 0,
+          "FareClass": "OD",
+          "FlightNumber": "DL2136",
+          "ID": "3DHXU2cArljQPY9N6fMITWz4xMy",
+          "Order": 1,
+          "OriginAirport": "ATL",
+          "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+          "Source": "delta",
+          "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "ATL"
+      ],
+      "CreatedAt": "2026-05-05T00:12:59.955098Z",
+      "DepartsAt": "2026-11-29T13:45:00Z",
+      "DestinationAirport": "SJC",
+      "FareClasses": [
+        "OD",
+        "OD"
+      ],
+      "FlightNumbers": "DL1983, DL2136",
+      "ID": "3DHXU10xULyTtY7TnsZZYQQpKCg",
+      "MileageCost": 136400,
+      "OriginAirport": "DTW",
+      "RemainingSeats": 9,
+      "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 487,
+      "TotalSegmentDistance": 2707,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A321",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-11-29T16:57:00Z",
+      "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2026-11-29T10:42:00Z",
+          "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+          "AvailabilityTripID": "3A61zfFD8llqJp4qpEZusG0Q5aa",
+          "Cabin": "business",
+          "CreatedAt": "2026-02-24T02:01:09.167188Z",
+          "DepartsAt": "2026-11-29T08:25:00Z",
+          "DestinationAirport": "SEA",
+          "Distance": 1923,
+          "Duration": 0,
+          "FareClass": "OI",
+          "FlightNumber": "DL734",
+          "ID": "3A61zhnZpxWGzIH8qw3LrQop1nZ",
+          "Order": 0,
+          "OriginAirport": "DTW",
+          "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+          "Source": "delta",
+          "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-11-29T16:57:00Z",
+          "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+          "AvailabilityTripID": "3A61zfFD8llqJp4qpEZusG0Q5aa",
+          "Cabin": "business",
+          "CreatedAt": "2026-02-24T02:01:09.167188Z",
+          "DepartsAt": "2026-11-29T14:42:00Z",
+          "DestinationAirport": "SJC",
+          "Distance": 697,
+          "Duration": 0,
+          "FareClass": "OI",
+          "FlightNumber": "DL3897",
+          "ID": "3A61zdRwfrpb36exR6RiYp6gJD7",
+          "Order": 1,
+          "OriginAirport": "SEA",
+          "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+          "Source": "delta",
+          "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "SEA"
+      ],
+      "CreatedAt": "2026-02-24T02:01:09.167188Z",
+      "DepartsAt": "2026-11-29T08:25:00Z",
+      "DestinationAirport": "SJC",
+      "FareClasses": [
+        "OI",
+        "OI"
+      ],
+      "FlightNumbers": "DL734, DL3897",
+      "ID": "3A61zfFD8llqJp4qpEZusG0Q5aa",
+      "MileageCost": 119100,
+      "OriginAirport": "DTW",
+      "RemainingSeats": 1,
+      "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 692,
+      "TotalSegmentDistance": 2620,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A321",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-11-29T18:58:00Z",
+      "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2026-11-29T14:23:00Z",
+          "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+          "AvailabilityTripID": "3A61zcTfAlPXZEV5JoN9k94F2iR",
+          "Cabin": "business",
+          "CreatedAt": "2026-02-24T02:01:09.167188Z",
+          "DepartsAt": "2026-11-29T12:15:00Z",
+          "DestinationAirport": "SEA",
+          "Distance": 1923,
+          "Duration": 0,
+          "FareClass": "OD",
+          "FlightNumber": "DL728",
+          "ID": "3A61zg0kgIxuDkPq68qaSBFtNxC",
+          "Order": 0,
+          "OriginAirport": "DTW",
+          "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+          "Source": "delta",
+          "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-11-29T18:58:00Z",
+          "AvailabilityID": "37ixtMVqHA60bZXuk0V8tyJ1cwJ",
+          "AvailabilityTripID": "3A61zcTfAlPXZEV5JoN9k94F2iR",
+          "Cabin": "business",
+          "CreatedAt": "2026-02-24T02:01:09.167188Z",
+          "DepartsAt": "2026-11-29T16:43:00Z",
+          "DestinationAirport": "SJC",
+          "Distance": 697,
+          "Duration": 0,
+          "FareClass": "OD",
+          "FlightNumber": "DL4132",
+          "ID": "3A61zdT1VZiZpROZNdJFpqzvk7c",
+          "Order": 1,
+          "OriginAirport": "SEA",
+          "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+          "Source": "delta",
+          "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "SEA"
+      ],
+      "CreatedAt": "2026-02-24T02:01:09.167188Z",
+      "DepartsAt": "2026-11-29T12:15:00Z",
+      "DestinationAirport": "SJC",
+      "FareClasses": [
+        "OD",
+        "OD"
+      ],
+      "FlightNumbers": "DL728, DL4132",
+      "ID": "3A61zcTfAlPXZEV5JoN9k94F2iR",
+      "MileageCost": 136400,
+      "OriginAirport": "DTW",
+      "RemainingSeats": 7,
+      "RouteID": "2ob2hIbIwmfNHDgw8xi7No3RuEs",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 583,
+      "TotalSegmentDistance": 2620,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-05-20T20:57:06.720487Z"
+    }
+  ],
+  "destination_coordinates": {
+    "Lat": 37.366736,
+    "Lon": -121.926375
+  },
+  "origin_coordinates": {
+    "Lat": 42.207808,
+    "Lon": -83.356048
+  }
+}

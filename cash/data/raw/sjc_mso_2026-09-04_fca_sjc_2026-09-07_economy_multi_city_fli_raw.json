@@ -1,0 +1,2047 @@
+{
+  "evidence": {
+    "result_count": 18,
+    "top_n": 3,
+    "transport": "fli"
+  },
+  "provider": "fli",
+  "provider_api_variant": "python-api",
+  "provider_package": "flights",
+  "provider_version": "0.9.0",
+  "request": {
+    "adults": 1,
+    "cabin": "economy",
+    "currency": "USD",
+    "departure_date": "2026-09-04",
+    "destination": "MSO",
+    "fetch_mode": "fallback",
+    "max_stops": null,
+    "origin": "SJC",
+    "return_date": "2026-09-07",
+    "return_destination": "SJC",
+    "return_origin": "FCA",
+    "trip_type": "multi-city"
+  },
+  "result": {
+    "current_price": "",
+    "flights": [
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": true,
+        "legs": [
+          {
+            "arrival": "15:17",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "6h 15m",
+            "duration_minutes": 375,
+            "flight_numbers": "AS 1304 / AS 660",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 146,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T15:17:00",
+                "arrive_time": "15:17",
+                "depart_datetime": "2026-09-04T12:45:00",
+                "depart_time": "12:45",
+                "destination": "MSO",
+                "duration_minutes": 92,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "12:48",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "06:15",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "7h 33m",
+            "duration_minutes": 453,
+            "flight_numbers": "AS 2244 / AS 658",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 219,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T06:49:00",
+                "arrive_time": "06:49",
+                "depart_datetime": "2026-09-07T06:15:00",
+                "depart_time": "06:15",
+                "destination": "SEA",
+                "duration_minutes": 94,
+                "flight_number": "2244",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T12:48:00",
+                "arrive_time": "12:48",
+                "depart_datetime": "2026-09-07T10:28:00",
+                "depart_time": "10:28",
+                "destination": "SJC",
+                "duration_minutes": 140,
+                "flight_number": "658",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 793.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "15:17",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "6h 15m",
+            "duration_minutes": 375,
+            "flight_numbers": "AS 1304 / AS 660",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 146,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T15:17:00",
+                "arrive_time": "15:17",
+                "depart_datetime": "2026-09-04T12:45:00",
+                "depart_time": "12:45",
+                "destination": "MSO",
+                "duration_minutes": 92,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:27",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "13:08",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "10h 19m",
+            "duration_minutes": 619,
+            "flight_numbers": "AS 2229 / AS 755",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 407,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T13:08:00",
+                "depart_time": "13:08",
+                "destination": "PDX",
+                "duration_minutes": 102,
+                "flight_number": "2229",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T22:27:00",
+                "arrive_time": "22:27",
+                "depart_datetime": "2026-09-07T20:37:00",
+                "depart_time": "20:37",
+                "destination": "SJC",
+                "duration_minutes": 110,
+                "flight_number": "755",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 876.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "15:17",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "6h 15m",
+            "duration_minutes": 375,
+            "flight_numbers": "AS 1304 / AS 660",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 146,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T15:17:00",
+                "arrive_time": "15:17",
+                "depart_datetime": "2026-09-04T12:45:00",
+                "depart_time": "12:45",
+                "destination": "MSO",
+                "duration_minutes": 92,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:57",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "14:08",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "9h 49m",
+            "duration_minutes": 589,
+            "flight_numbers": "AS 2372 / AS 1444",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 356,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:47:00",
+                "arrive_time": "14:47",
+                "depart_datetime": "2026-09-07T14:08:00",
+                "depart_time": "14:08",
+                "destination": "SEA",
+                "duration_minutes": 99,
+                "flight_number": "2372",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T22:57:00",
+                "arrive_time": "22:57",
+                "depart_datetime": "2026-09-07T20:43:00",
+                "depart_time": "20:43",
+                "destination": "SJC",
+                "duration_minutes": 134,
+                "flight_number": "1444",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 964.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "15:17",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "6h 15m",
+            "duration_minutes": 375,
+            "flight_numbers": "AS 1304 / AS 660",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 146,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T15:17:00",
+                "arrive_time": "15:17",
+                "depart_datetime": "2026-09-04T12:45:00",
+                "depart_time": "12:45",
+                "destination": "MSO",
+                "duration_minutes": 92,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:57",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "18:08",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "5h 49m",
+            "duration_minutes": 349,
+            "flight_numbers": "AS 2310 / AS 1444",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 118,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T18:45:00",
+                "arrive_time": "18:45",
+                "depart_datetime": "2026-09-07T18:08:00",
+                "depart_time": "18:08",
+                "destination": "SEA",
+                "duration_minutes": 97,
+                "flight_number": "2310",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T22:57:00",
+                "arrive_time": "22:57",
+                "depart_datetime": "2026-09-07T20:43:00",
+                "depart_time": "20:43",
+                "destination": "SJC",
+                "duration_minutes": 134,
+                "flight_number": "1444",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 964.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "15:17",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "6h 15m",
+            "duration_minutes": 375,
+            "flight_numbers": "AS 1304 / AS 660",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 146,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T15:17:00",
+                "arrive_time": "15:17",
+                "depart_datetime": "2026-09-04T12:45:00",
+                "depart_time": "12:45",
+                "destination": "MSO",
+                "duration_minutes": 92,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "16:24",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "13:08",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "4h 16m",
+            "duration_minutes": 256,
+            "flight_numbers": "AS 2229 / AS 2324",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 41,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T13:08:00",
+                "depart_time": "13:08",
+                "destination": "PDX",
+                "duration_minutes": 102,
+                "flight_number": "2229",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T16:24:00",
+                "arrive_time": "16:24",
+                "depart_datetime": "2026-09-07T14:31:00",
+                "depart_time": "14:31",
+                "destination": "SJC",
+                "duration_minutes": 113,
+                "flight_number": "2324",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 972.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "15:17",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "6h 15m",
+            "duration_minutes": 375,
+            "flight_numbers": "AS 1304 / AS 660",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 146,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T15:17:00",
+                "arrive_time": "15:17",
+                "depart_datetime": "2026-09-04T12:45:00",
+                "depart_time": "12:45",
+                "destination": "MSO",
+                "duration_minutes": 92,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "19:40",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "13:08",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "7h 32m",
+            "duration_minutes": 452,
+            "flight_numbers": "AS 2229 / AS 3001",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 224,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T13:08:00",
+                "depart_time": "13:08",
+                "destination": "PDX",
+                "duration_minutes": 102,
+                "flight_number": "2229",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T19:40:00",
+                "arrive_time": "19:40",
+                "depart_datetime": "2026-09-07T17:34:00",
+                "depart_time": "17:34",
+                "destination": "SJC",
+                "duration_minutes": 126,
+                "flight_number": "3001",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 992.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "15:17",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "6h 15m",
+            "duration_minutes": 375,
+            "flight_numbers": "AS 1304 / AS 660",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 146,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T15:17:00",
+                "arrive_time": "15:17",
+                "depart_datetime": "2026-09-04T12:45:00",
+                "depart_time": "12:45",
+                "destination": "MSO",
+                "duration_minutes": 92,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "18:45",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "14:08",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "5h 37m",
+            "duration_minutes": 337,
+            "flight_numbers": "AS 2372 / AS 521",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 105,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:47:00",
+                "arrive_time": "14:47",
+                "depart_datetime": "2026-09-07T14:08:00",
+                "depart_time": "14:08",
+                "destination": "SEA",
+                "duration_minutes": 99,
+                "flight_number": "2372",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T18:45:00",
+                "arrive_time": "18:45",
+                "depart_datetime": "2026-09-07T16:32:00",
+                "depart_time": "16:32",
+                "destination": "SJC",
+                "duration_minutes": 133,
+                "flight_number": "521",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1017.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "15:17",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "6h 15m",
+            "duration_minutes": 375,
+            "flight_numbers": "AS 1304 / AS 660",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 146,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T15:17:00",
+                "arrive_time": "15:17",
+                "depart_datetime": "2026-09-04T12:45:00",
+                "depart_time": "12:45",
+                "destination": "MSO",
+                "duration_minutes": 92,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "20:00",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "14:08",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "6h 52m",
+            "duration_minutes": 412,
+            "flight_numbers": "AS 2372 / AS 1303",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 179,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:47:00",
+                "arrive_time": "14:47",
+                "depart_datetime": "2026-09-07T14:08:00",
+                "depart_time": "14:08",
+                "destination": "SEA",
+                "duration_minutes": 99,
+                "flight_number": "2372",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T20:00:00",
+                "arrive_time": "20:00",
+                "depart_datetime": "2026-09-07T17:46:00",
+                "depart_time": "17:46",
+                "destination": "SJC",
+                "duration_minutes": 134,
+                "flight_number": "1303",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1017.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "15:17",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "6h 15m",
+            "duration_minutes": 375,
+            "flight_numbers": "AS 1304 / AS 660",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 146,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T15:17:00",
+                "arrive_time": "15:17",
+                "depart_datetime": "2026-09-04T12:45:00",
+                "depart_time": "12:45",
+                "destination": "MSO",
+                "duration_minutes": 92,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "16:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "06:15",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "11h 41m",
+            "duration_minutes": 701,
+            "flight_numbers": "AS 2244 / AS 657",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 473,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T06:49:00",
+                "arrive_time": "06:49",
+                "depart_datetime": "2026-09-07T06:15:00",
+                "depart_time": "06:15",
+                "destination": "SEA",
+                "duration_minutes": 94,
+                "flight_number": "2244",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T16:56:00",
+                "arrive_time": "16:56",
+                "depart_datetime": "2026-09-07T14:42:00",
+                "depart_time": "14:42",
+                "destination": "SJC",
+                "duration_minutes": 134,
+                "flight_number": "657",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1076.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "13h 54m",
+            "duration_minutes": 834,
+            "flight_numbers": "AS 1304 / AS 1435",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 606,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-04T20:25:00",
+                "depart_time": "20:25",
+                "destination": "MSO",
+                "duration_minutes": 91,
+                "flight_number": "1435",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "12:48",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "06:15",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "7h 33m",
+            "duration_minutes": 453,
+            "flight_numbers": "AS 2244 / AS 658",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 219,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T06:49:00",
+                "arrive_time": "06:49",
+                "depart_datetime": "2026-09-07T06:15:00",
+                "depart_time": "06:15",
+                "destination": "SEA",
+                "duration_minutes": 94,
+                "flight_number": "2244",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T12:48:00",
+                "arrive_time": "12:48",
+                "depart_datetime": "2026-09-07T10:28:00",
+                "depart_time": "10:28",
+                "destination": "SJC",
+                "duration_minutes": 140,
+                "flight_number": "658",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 793.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "13h 54m",
+            "duration_minutes": 834,
+            "flight_numbers": "AS 1304 / AS 1435",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 606,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-04T20:25:00",
+                "depart_time": "20:25",
+                "destination": "MSO",
+                "duration_minutes": 91,
+                "flight_number": "1435",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:27",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "13:08",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "10h 19m",
+            "duration_minutes": 619,
+            "flight_numbers": "AS 2229 / AS 755",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 407,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T13:08:00",
+                "depart_time": "13:08",
+                "destination": "PDX",
+                "duration_minutes": 102,
+                "flight_number": "2229",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T22:27:00",
+                "arrive_time": "22:27",
+                "depart_datetime": "2026-09-07T20:37:00",
+                "depart_time": "20:37",
+                "destination": "SJC",
+                "duration_minutes": 110,
+                "flight_number": "755",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 876.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "13h 54m",
+            "duration_minutes": 834,
+            "flight_numbers": "AS 1304 / AS 1435",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 606,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-04T20:25:00",
+                "depart_time": "20:25",
+                "destination": "MSO",
+                "duration_minutes": 91,
+                "flight_number": "1435",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:57",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "14:08",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "9h 49m",
+            "duration_minutes": 589,
+            "flight_numbers": "AS 2372 / AS 1444",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 356,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:47:00",
+                "arrive_time": "14:47",
+                "depart_datetime": "2026-09-07T14:08:00",
+                "depart_time": "14:08",
+                "destination": "SEA",
+                "duration_minutes": 99,
+                "flight_number": "2372",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T22:57:00",
+                "arrive_time": "22:57",
+                "depart_datetime": "2026-09-07T20:43:00",
+                "depart_time": "20:43",
+                "destination": "SJC",
+                "duration_minutes": 134,
+                "flight_number": "1444",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 964.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "13h 54m",
+            "duration_minutes": 834,
+            "flight_numbers": "AS 1304 / AS 1435",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 606,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-04T20:25:00",
+                "depart_time": "20:25",
+                "destination": "MSO",
+                "duration_minutes": 91,
+                "flight_number": "1435",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:57",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "18:08",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "5h 49m",
+            "duration_minutes": 349,
+            "flight_numbers": "AS 2310 / AS 1444",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 118,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T18:45:00",
+                "arrive_time": "18:45",
+                "depart_datetime": "2026-09-07T18:08:00",
+                "depart_time": "18:08",
+                "destination": "SEA",
+                "duration_minutes": 97,
+                "flight_number": "2310",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T22:57:00",
+                "arrive_time": "22:57",
+                "depart_datetime": "2026-09-07T20:43:00",
+                "depart_time": "20:43",
+                "destination": "SJC",
+                "duration_minutes": 134,
+                "flight_number": "1444",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 964.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "13h 54m",
+            "duration_minutes": 834,
+            "flight_numbers": "AS 1304 / AS 1435",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 606,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-04T20:25:00",
+                "depart_time": "20:25",
+                "destination": "MSO",
+                "duration_minutes": 91,
+                "flight_number": "1435",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "16:24",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "13:08",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "4h 16m",
+            "duration_minutes": 256,
+            "flight_numbers": "AS 2229 / AS 2324",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 41,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T13:08:00",
+                "depart_time": "13:08",
+                "destination": "PDX",
+                "duration_minutes": 102,
+                "flight_number": "2229",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T16:24:00",
+                "arrive_time": "16:24",
+                "depart_datetime": "2026-09-07T14:31:00",
+                "depart_time": "14:31",
+                "destination": "SJC",
+                "duration_minutes": 113,
+                "flight_number": "2324",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 972.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "13h 54m",
+            "duration_minutes": 834,
+            "flight_numbers": "AS 1304 / AS 1435",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 606,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-04T20:25:00",
+                "depart_time": "20:25",
+                "destination": "MSO",
+                "duration_minutes": 91,
+                "flight_number": "1435",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "19:40",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "13:08",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "7h 32m",
+            "duration_minutes": 452,
+            "flight_numbers": "AS 2229 / AS 3001",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 224,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T13:08:00",
+                "depart_time": "13:08",
+                "destination": "PDX",
+                "duration_minutes": 102,
+                "flight_number": "2229",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T19:40:00",
+                "arrive_time": "19:40",
+                "depart_datetime": "2026-09-07T17:34:00",
+                "depart_time": "17:34",
+                "destination": "SJC",
+                "duration_minutes": 126,
+                "flight_number": "3001",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 992.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "13h 54m",
+            "duration_minutes": 834,
+            "flight_numbers": "AS 1304 / AS 1435",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 606,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-04T20:25:00",
+                "depart_time": "20:25",
+                "destination": "MSO",
+                "duration_minutes": 91,
+                "flight_number": "1435",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "18:45",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "14:08",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "5h 37m",
+            "duration_minutes": 337,
+            "flight_numbers": "AS 2372 / AS 521",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 105,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:47:00",
+                "arrive_time": "14:47",
+                "depart_datetime": "2026-09-07T14:08:00",
+                "depart_time": "14:08",
+                "destination": "SEA",
+                "duration_minutes": 99,
+                "flight_number": "2372",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T18:45:00",
+                "arrive_time": "18:45",
+                "depart_datetime": "2026-09-07T16:32:00",
+                "depart_time": "16:32",
+                "destination": "SJC",
+                "duration_minutes": 133,
+                "flight_number": "521",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1017.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "13h 54m",
+            "duration_minutes": 834,
+            "flight_numbers": "AS 1304 / AS 1435",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 606,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-04T20:25:00",
+                "depart_time": "20:25",
+                "destination": "MSO",
+                "duration_minutes": 91,
+                "flight_number": "1435",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "20:00",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "14:08",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "6h 52m",
+            "duration_minutes": 412,
+            "flight_numbers": "AS 2372 / AS 1303",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 179,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:47:00",
+                "arrive_time": "14:47",
+                "depart_datetime": "2026-09-07T14:08:00",
+                "depart_time": "14:08",
+                "destination": "SEA",
+                "duration_minutes": 99,
+                "flight_number": "2372",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T20:00:00",
+                "arrive_time": "20:00",
+                "depart_datetime": "2026-09-07T17:46:00",
+                "depart_time": "17:46",
+                "destination": "SJC",
+                "duration_minutes": 134,
+                "flight_number": "1303",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1017.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-04",
+            "departure": "08:02",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "13h 54m",
+            "duration_minutes": 834,
+            "flight_numbers": "AS 1304 / AS 1435",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 606,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T10:19:00",
+                "arrive_time": "10:19",
+                "depart_datetime": "2026-09-04T08:02:00",
+                "depart_time": "08:02",
+                "destination": "SEA",
+                "duration_minutes": 137,
+                "flight_number": "1304",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-04T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-04T20:25:00",
+                "depart_time": "20:25",
+                "destination": "MSO",
+                "duration_minutes": 91,
+                "flight_number": "1435",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "16:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "06:15",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "11h 41m",
+            "duration_minutes": 701,
+            "flight_numbers": "AS 2244 / AS 657",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 473,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T06:49:00",
+                "arrive_time": "06:49",
+                "depart_datetime": "2026-09-07T06:15:00",
+                "depart_time": "06:15",
+                "destination": "SEA",
+                "duration_minutes": 94,
+                "flight_number": "2244",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T16:56:00",
+                "arrive_time": "16:56",
+                "depart_datetime": "2026-09-07T14:42:00",
+                "depart_time": "14:42",
+                "destination": "SJC",
+                "duration_minutes": 134,
+                "flight_number": "657",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1076.00"
+      }
+    ]
+  },
+  "searched_at": "2026-06-04T16:59:41.301133+00:00"
+}

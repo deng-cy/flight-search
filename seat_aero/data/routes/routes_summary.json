@@ -1,0 +1,80 @@
+{
+  "aeroplan": {
+    "first_route": {
+      "DestinationAirport": "WDH",
+      "DestinationRegion": "Africa",
+      "Distance": 724,
+      "ID": "2VHiUX9hFviTCFXG2FlIPPguEzy",
+      "OriginAirport": "JNB",
+      "OriginRegion": "Africa",
+      "Source": "aeroplan"
+    },
+    "raw_file": "data/routes/aeroplan_routes_raw.json",
+    "route_count": 8190
+  },
+  "alaska": {
+    "first_route": {
+      "DestinationAirport": "DSS",
+      "DestinationRegion": "Africa",
+      "Distance": 0,
+      "ID": "2YoYw9aMorCp4NezhCKZhQni906",
+      "OriginAirport": "CMN",
+      "OriginRegion": "Africa",
+      "Source": "alaska"
+    },
+    "raw_file": "data/routes/alaska_routes_raw.json",
+    "route_count": 7850
+  },
+  "american": {
+    "first_route": {
+      "DestinationAirport": "SAN",
+      "DestinationRegion": "North America",
+      "Distance": 446,
+      "ID": "2i1u9UW4xT5XIaLZOvQdZt9GCdk",
+      "OriginAirport": "OAK",
+      "OriginRegion": "North America",
+      "Source": "american"
+    },
+    "raw_file": "data/routes/american_routes_raw.json",
+    "route_count": 7034
+  },
+  "azul": {
+    "first_route": {
+      "DestinationAirport": "AUH",
+      "DestinationRegion": "Asia",
+      "Distance": 3737,
+      "ID": "33GASPGCE2k4v4KYyKCMi5arz1d",
+      "OriginAirport": "HKG",
+      "OriginRegion": "Asia",
+      "Source": "azul"
+    },
+    "raw_file": "data/routes/azul_routes_raw.json",
+    "route_count": 2974
+  },
+  "delta": {
+    "first_route": {
+      "DestinationAirport": "GRU",
+      "DestinationRegion": "South America",
+      "Distance": 1194,
+      "ID": "2fxrFw5XONLeZRpzNccwQuAEBhP",
+      "OriginAirport": "MCZ",
+      "OriginRegion": "South America",
+      "Source": "delta"
+    },
+    "raw_file": "data/routes/delta_routes_raw.json",
+    "route_count": 7304
+  },
+  "united": {
+    "first_route": {
+      "DestinationAirport": "ZTH",
+      "DestinationRegion": "Europe",
+      "Distance": 916,
+      "ID": "2wvuw9vH2XoxA3jNpobPsZb06Y7",
+      "OriginAirport": "ZRH",
+      "OriginRegion": "Europe",
+      "Source": "united"
+    },
+    "raw_file": "data/routes/united_routes_raw.json",
+    "route_count": 8148
+  }
+}

@@ -1,0 +1,6 @@
+# flights/fli requires Python >=3.10.
+flights>=0.9,<1.0
+# flights 0.9.0 imports click directly from its CLI utilities but does not
+# install it in this environment through typer.
+click>=8,<9
+PyYAML>=6,<7

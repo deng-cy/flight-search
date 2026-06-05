@@ -1,0 +1,30 @@
+{
+  "evidence": {
+    "result_count": 0,
+    "top_n": 1,
+    "transport": "fli"
+  },
+  "provider": "fli",
+  "provider_api_variant": "python-api",
+  "provider_package": "flights",
+  "provider_version": "0.9.0",
+  "request": {
+    "adults": 1,
+    "cabin": "economy",
+    "currency": "USD",
+    "departure_date": "2026-11-13",
+    "destination": "DTW",
+    "fetch_mode": "fallback",
+    "max_stops": null,
+    "origin": "SJC",
+    "return_date": "2026-11-30",
+    "return_destination": "SFO",
+    "return_origin": "DTW",
+    "trip_type": "multi-city"
+  },
+  "result": {
+    "current_price": "",
+    "flights": []
+  },
+  "searched_at": "2026-06-03T06:46:04.703386+00:00"
+}

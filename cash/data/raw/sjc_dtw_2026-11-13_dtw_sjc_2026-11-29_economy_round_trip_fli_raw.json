@@ -1,0 +1,947 @@
+{
+  "evidence": {
+    "result_count": 8,
+    "top_n": 1,
+    "transport": "fli"
+  },
+  "provider": "fli",
+  "provider_api_variant": "python-api",
+  "provider_package": "flights",
+  "provider_version": "0.9.0",
+  "request": {
+    "adults": 1,
+    "cabin": "economy",
+    "currency": "USD",
+    "departure_date": "2026-11-13",
+    "destination": "DTW",
+    "fetch_mode": "fallback",
+    "max_stops": null,
+    "origin": "SJC",
+    "return_date": "2026-11-29",
+    "return_destination": "SJC",
+    "return_origin": "DTW",
+    "trip_type": "round-trip"
+  },
+  "result": {
+    "current_price": "",
+    "flights": [
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": true,
+        "legs": [
+          {
+            "arrival": "19:00",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-13",
+            "departure": "10:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "6h",
+            "duration_minutes": 360,
+            "flight_numbers": "WN 759 / WN 759",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 40,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T11:30:00",
+                "arrive_time": "11:30",
+                "depart_datetime": "2026-11-13T10:00:00",
+                "depart_time": "10:00",
+                "destination": "LAS",
+                "duration_minutes": 90,
+                "flight_number": "759",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T19:00:00",
+                "arrive_time": "19:00",
+                "depart_datetime": "2026-11-13T12:10:00",
+                "depart_time": "12:10",
+                "destination": "DTW",
+                "duration_minutes": 230,
+                "flight_number": "759",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "23:15",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-29",
+            "departure": "14:50",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 1929 / WN 2448",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 320,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T16:25:00",
+                "arrive_time": "16:25",
+                "depart_datetime": "2026-11-29T14:50:00",
+                "depart_time": "14:50",
+                "destination": "LAS",
+                "duration_minutes": 275,
+                "flight_number": "1929",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T23:15:00",
+                "arrive_time": "23:15",
+                "depart_datetime": "2026-11-29T21:45:00",
+                "depart_time": "21:45",
+                "destination": "SJC",
+                "duration_minutes": 90,
+                "flight_number": "2448",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 702.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "19:00",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-13",
+            "departure": "10:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "6h",
+            "duration_minutes": 360,
+            "flight_numbers": "WN 759 / WN 759",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 40,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T11:30:00",
+                "arrive_time": "11:30",
+                "depart_datetime": "2026-11-13T10:00:00",
+                "depart_time": "10:00",
+                "destination": "LAS",
+                "duration_minutes": 90,
+                "flight_number": "759",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T19:00:00",
+                "arrive_time": "19:00",
+                "depart_datetime": "2026-11-13T12:10:00",
+                "depart_time": "12:10",
+                "destination": "DTW",
+                "duration_minutes": 230,
+                "flight_number": "759",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "21:40",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-29",
+            "departure": "14:50",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "9h 50m",
+            "duration_minutes": 590,
+            "flight_numbers": "WN 1929 / WN 2447",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 225,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T16:25:00",
+                "arrive_time": "16:25",
+                "depart_datetime": "2026-11-29T14:50:00",
+                "depart_time": "14:50",
+                "destination": "LAS",
+                "duration_minutes": 275,
+                "flight_number": "1929",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T21:40:00",
+                "arrive_time": "21:40",
+                "depart_datetime": "2026-11-29T20:10:00",
+                "depart_time": "20:10",
+                "destination": "SJC",
+                "duration_minutes": 90,
+                "flight_number": "2447",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 745.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "19:00",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-13",
+            "departure": "10:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "6h",
+            "duration_minutes": 360,
+            "flight_numbers": "WN 759 / WN 759",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 40,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T11:30:00",
+                "arrive_time": "11:30",
+                "depart_datetime": "2026-11-13T10:00:00",
+                "depart_time": "10:00",
+                "destination": "LAS",
+                "duration_minutes": 90,
+                "flight_number": "759",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T19:00:00",
+                "arrive_time": "19:00",
+                "depart_datetime": "2026-11-13T12:10:00",
+                "depart_time": "12:10",
+                "destination": "DTW",
+                "duration_minutes": 230,
+                "flight_number": "759",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "12:40",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-29",
+            "departure": "06:45",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "8h 55m",
+            "duration_minutes": 535,
+            "flight_numbers": "WN 1577 / WN 1796",
+            "layovers": [
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 175,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T08:05:00",
+                "arrive_time": "08:05",
+                "depart_datetime": "2026-11-29T06:45:00",
+                "depart_time": "06:45",
+                "destination": "DEN",
+                "duration_minutes": 200,
+                "flight_number": "1577",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T12:40:00",
+                "arrive_time": "12:40",
+                "depart_datetime": "2026-11-29T11:00:00",
+                "depart_time": "11:00",
+                "destination": "SJC",
+                "duration_minutes": 160,
+                "flight_number": "1796",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 760.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "19:00",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-13",
+            "departure": "10:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "6h",
+            "duration_minutes": 360,
+            "flight_numbers": "WN 759 / WN 759",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 40,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T11:30:00",
+                "arrive_time": "11:30",
+                "depart_datetime": "2026-11-13T10:00:00",
+                "depart_time": "10:00",
+                "destination": "LAS",
+                "duration_minutes": 90,
+                "flight_number": "759",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T19:00:00",
+                "arrive_time": "19:00",
+                "depart_datetime": "2026-11-13T12:10:00",
+                "depart_time": "12:10",
+                "destination": "DTW",
+                "duration_minutes": 230,
+                "flight_number": "759",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "20:30",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-29",
+            "departure": "14:50",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "8h 40m",
+            "duration_minutes": 520,
+            "flight_numbers": "WN 1929 / WN 879",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 155,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T16:25:00",
+                "arrive_time": "16:25",
+                "depart_datetime": "2026-11-29T14:50:00",
+                "depart_time": "14:50",
+                "destination": "LAS",
+                "duration_minutes": 275,
+                "flight_number": "1929",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T20:30:00",
+                "arrive_time": "20:30",
+                "depart_datetime": "2026-11-29T19:00:00",
+                "depart_time": "19:00",
+                "destination": "SJC",
+                "duration_minutes": 90,
+                "flight_number": "879",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 760.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "19:00",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-13",
+            "departure": "10:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "6h",
+            "duration_minutes": 360,
+            "flight_numbers": "WN 759 / WN 759",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 40,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T11:30:00",
+                "arrive_time": "11:30",
+                "depart_datetime": "2026-11-13T10:00:00",
+                "depart_time": "10:00",
+                "destination": "LAS",
+                "duration_minutes": 90,
+                "flight_number": "759",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T19:00:00",
+                "arrive_time": "19:00",
+                "depart_datetime": "2026-11-13T12:10:00",
+                "depart_time": "12:10",
+                "destination": "DTW",
+                "duration_minutes": 230,
+                "flight_number": "759",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "18:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-29",
+            "departure": "14:50",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "7h",
+            "duration_minutes": 420,
+            "flight_numbers": "WN 1929 / WN 207",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 50,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T16:25:00",
+                "arrive_time": "16:25",
+                "depart_datetime": "2026-11-29T14:50:00",
+                "depart_time": "14:50",
+                "destination": "LAS",
+                "duration_minutes": 275,
+                "flight_number": "1929",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T18:50:00",
+                "arrive_time": "18:50",
+                "depart_datetime": "2026-11-29T17:15:00",
+                "depart_time": "17:15",
+                "destination": "SJC",
+                "duration_minutes": 95,
+                "flight_number": "207",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 812.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "19:00",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-13",
+            "departure": "10:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "6h",
+            "duration_minutes": 360,
+            "flight_numbers": "WN 759 / WN 759",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 40,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T11:30:00",
+                "arrive_time": "11:30",
+                "depart_datetime": "2026-11-13T10:00:00",
+                "depart_time": "10:00",
+                "destination": "LAS",
+                "duration_minutes": 90,
+                "flight_number": "759",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T19:00:00",
+                "arrive_time": "19:00",
+                "depart_datetime": "2026-11-13T12:10:00",
+                "depart_time": "12:10",
+                "destination": "DTW",
+                "duration_minutes": 230,
+                "flight_number": "759",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "13:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-29",
+            "departure": "08:25",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "8h 25m",
+            "duration_minutes": 505,
+            "flight_numbers": "WN 1877 / WN 2986 / WN 3204",
+            "layovers": [
+              {
+                "airport": "MDW",
+                "change_of_airport": false,
+                "duration_minutes": 45,
+                "overnight": false
+              },
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 40,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T08:50:00",
+                "arrive_time": "08:50",
+                "depart_datetime": "2026-11-29T08:25:00",
+                "depart_time": "08:25",
+                "destination": "MDW",
+                "duration_minutes": 85,
+                "flight_number": "1877",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T12:10:00",
+                "arrive_time": "12:10",
+                "depart_datetime": "2026-11-29T09:35:00",
+                "depart_time": "09:35",
+                "destination": "SLC",
+                "duration_minutes": 215,
+                "flight_number": "2986",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MDW"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-11-29T12:50:00",
+                "depart_time": "12:50",
+                "destination": "SJC",
+                "duration_minutes": 120,
+                "flight_number": "3204",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 822.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "19:00",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-13",
+            "departure": "10:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "6h",
+            "duration_minutes": 360,
+            "flight_numbers": "WN 759 / WN 759",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 40,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T11:30:00",
+                "arrive_time": "11:30",
+                "depart_datetime": "2026-11-13T10:00:00",
+                "depart_time": "10:00",
+                "destination": "LAS",
+                "duration_minutes": 90,
+                "flight_number": "759",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T19:00:00",
+                "arrive_time": "19:00",
+                "depart_datetime": "2026-11-13T12:10:00",
+                "depart_time": "12:10",
+                "destination": "DTW",
+                "duration_minutes": 230,
+                "flight_number": "759",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "12:20",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-29",
+            "departure": "08:25",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "6h 55m",
+            "duration_minutes": 415,
+            "flight_numbers": "WN 1877 / WN 1150",
+            "layovers": [
+              {
+                "airport": "MDW",
+                "change_of_airport": false,
+                "duration_minutes": 45,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T08:50:00",
+                "arrive_time": "08:50",
+                "depart_datetime": "2026-11-29T08:25:00",
+                "depart_time": "08:25",
+                "destination": "MDW",
+                "duration_minutes": 85,
+                "flight_number": "1877",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T12:20:00",
+                "arrive_time": "12:20",
+                "depart_datetime": "2026-11-29T09:35:00",
+                "depart_time": "09:35",
+                "destination": "SJC",
+                "duration_minutes": 285,
+                "flight_number": "1150",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MDW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 867.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "19:00",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-13",
+            "departure": "10:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "6h",
+            "duration_minutes": 360,
+            "flight_numbers": "WN 759 / WN 759",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 40,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T11:30:00",
+                "arrive_time": "11:30",
+                "depart_datetime": "2026-11-13T10:00:00",
+                "depart_time": "10:00",
+                "destination": "LAS",
+                "duration_minutes": 90,
+                "flight_number": "759",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-13T19:00:00",
+                "arrive_time": "19:00",
+                "depart_datetime": "2026-11-13T12:10:00",
+                "depart_time": "12:10",
+                "destination": "DTW",
+                "duration_minutes": 230,
+                "flight_number": "759",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:55",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-29",
+            "departure": "19:05",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "6h 50m",
+            "duration_minutes": 410,
+            "flight_numbers": "WN 557 / WN 2771",
+            "layovers": [
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 60,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T20:20:00",
+                "arrive_time": "20:20",
+                "depart_datetime": "2026-11-29T19:05:00",
+                "depart_time": "19:05",
+                "destination": "DEN",
+                "duration_minutes": 195,
+                "flight_number": "557",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T22:55:00",
+                "arrive_time": "22:55",
+                "depart_datetime": "2026-11-29T21:20:00",
+                "depart_time": "21:20",
+                "destination": "SJC",
+                "duration_minutes": 155,
+                "flight_number": "2771",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 867.00"
+      }
+    ]
+  },
+  "searched_at": "2026-06-03T06:46:04.702604+00:00"
+}

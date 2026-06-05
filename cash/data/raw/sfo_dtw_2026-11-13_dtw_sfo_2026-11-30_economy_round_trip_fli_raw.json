@@ -1,0 +1,570 @@
+{
+  "evidence": {
+    "result_count": 5,
+    "top_n": 1,
+    "transport": "fli"
+  },
+  "provider": "fli",
+  "provider_api_variant": "python-api",
+  "provider_package": "flights",
+  "provider_version": "0.9.0",
+  "request": {
+    "adults": 1,
+    "cabin": "economy",
+    "currency": "USD",
+    "departure_date": "2026-11-13",
+    "destination": "DTW",
+    "fetch_mode": "fallback",
+    "max_stops": null,
+    "origin": "SFO",
+    "return_date": "2026-11-30",
+    "return_destination": "SFO",
+    "return_origin": "DTW",
+    "trip_type": "round-trip"
+  },
+  "result": {
+    "current_price": "",
+    "flights": [
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": true,
+        "legs": [
+          {
+            "arrival": "23:59",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-11-13",
+            "departure": "13:10",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "7h 49m",
+            "duration_minutes": 469,
+            "flight_numbers": "UA 755 / UA 4024",
+            "layovers": [
+              {
+                "airport": "IAD",
+                "change_of_airport": false,
+                "duration_minutes": 53,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 777",
+                "airline": "UA",
+                "arrive_datetime": "2026-11-13T21:27:00",
+                "arrive_time": "21:27",
+                "depart_datetime": "2026-11-13T13:10:00",
+                "depart_time": "13:10",
+                "destination": "IAD",
+                "duration_minutes": 317,
+                "flight_number": "755",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "UA",
+                "arrive_datetime": "2026-11-13T23:59:00",
+                "arrive_time": "23:59",
+                "depart_datetime": "2026-11-13T22:20:00",
+                "depart_time": "22:20",
+                "destination": "DTW",
+                "duration_minutes": 99,
+                "flight_number": "4024",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAD"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "01:57",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-11-30",
+            "departure": "19:30",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "9h 27m",
+            "duration_minutes": 567,
+            "flight_numbers": "UA 426 / UA 2817",
+            "layovers": [
+              {
+                "airport": "ORD",
+                "change_of_airport": false,
+                "duration_minutes": 177,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Airbus A319",
+                "airline": "UA",
+                "arrive_datetime": "2026-11-30T20:03:00",
+                "arrive_time": "20:03",
+                "depart_datetime": "2026-11-30T19:30:00",
+                "depart_time": "19:30",
+                "destination": "ORD",
+                "duration_minutes": 93,
+                "flight_number": "426",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "UA",
+                "arrive_datetime": "2026-12-01T01:57:00",
+                "arrive_time": "01:57",
+                "depart_datetime": "2026-11-30T23:00:00",
+                "depart_time": "23:00",
+                "destination": "SFO",
+                "duration_minutes": 297,
+                "flight_number": "2817",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ORD"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 369.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "23:59",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-11-13",
+            "departure": "13:10",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "7h 49m",
+            "duration_minutes": 469,
+            "flight_numbers": "UA 755 / UA 4024",
+            "layovers": [
+              {
+                "airport": "IAD",
+                "change_of_airport": false,
+                "duration_minutes": 53,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 777",
+                "airline": "UA",
+                "arrive_datetime": "2026-11-13T21:27:00",
+                "arrive_time": "21:27",
+                "depart_datetime": "2026-11-13T13:10:00",
+                "depart_time": "13:10",
+                "destination": "IAD",
+                "duration_minutes": 317,
+                "flight_number": "755",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "UA",
+                "arrive_datetime": "2026-11-13T23:59:00",
+                "arrive_time": "23:59",
+                "depart_datetime": "2026-11-13T22:20:00",
+                "depart_time": "22:20",
+                "destination": "DTW",
+                "duration_minutes": 99,
+                "flight_number": "4024",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAD"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "01:57",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-11-30",
+            "departure": "21:12",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "7h 45m",
+            "duration_minutes": 465,
+            "flight_numbers": "UA 3556 / UA 2817",
+            "layovers": [
+              {
+                "airport": "ORD",
+                "change_of_airport": false,
+                "duration_minutes": 71,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "UA",
+                "arrive_datetime": "2026-11-30T21:49:00",
+                "arrive_time": "21:49",
+                "depart_datetime": "2026-11-30T21:12:00",
+                "depart_time": "21:12",
+                "destination": "ORD",
+                "duration_minutes": 97,
+                "flight_number": "3556",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "UA",
+                "arrive_datetime": "2026-12-01T01:57:00",
+                "arrive_time": "01:57",
+                "depart_datetime": "2026-11-30T23:00:00",
+                "depart_time": "23:00",
+                "destination": "SFO",
+                "duration_minutes": 297,
+                "flight_number": "2817",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ORD"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 369.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "23:59",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-11-13",
+            "departure": "13:10",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "7h 49m",
+            "duration_minutes": 469,
+            "flight_numbers": "UA 755 / UA 4024",
+            "layovers": [
+              {
+                "airport": "IAD",
+                "change_of_airport": false,
+                "duration_minutes": 53,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 777",
+                "airline": "UA",
+                "arrive_datetime": "2026-11-13T21:27:00",
+                "arrive_time": "21:27",
+                "depart_datetime": "2026-11-13T13:10:00",
+                "depart_time": "13:10",
+                "destination": "IAD",
+                "duration_minutes": 317,
+                "flight_number": "755",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "UA",
+                "arrive_datetime": "2026-11-13T23:59:00",
+                "arrive_time": "23:59",
+                "depart_datetime": "2026-11-13T22:20:00",
+                "depart_time": "22:20",
+                "destination": "DTW",
+                "duration_minutes": 99,
+                "flight_number": "4024",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAD"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "01:57",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-11-30",
+            "departure": "18:00",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "10h 57m",
+            "duration_minutes": 657,
+            "flight_numbers": "UA 630 / UA 2817",
+            "layovers": [
+              {
+                "airport": "ORD",
+                "change_of_airport": false,
+                "duration_minutes": 279,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Airbus A319",
+                "airline": "UA",
+                "arrive_datetime": "2026-11-30T18:21:00",
+                "arrive_time": "18:21",
+                "depart_datetime": "2026-11-30T18:00:00",
+                "depart_time": "18:00",
+                "destination": "ORD",
+                "duration_minutes": 81,
+                "flight_number": "630",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "UA",
+                "arrive_datetime": "2026-12-01T01:57:00",
+                "arrive_time": "01:57",
+                "depart_datetime": "2026-11-30T23:00:00",
+                "depart_time": "23:00",
+                "destination": "SFO",
+                "duration_minutes": 297,
+                "flight_number": "2817",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ORD"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 504.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "23:59",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-11-13",
+            "departure": "13:10",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "7h 49m",
+            "duration_minutes": 469,
+            "flight_numbers": "UA 755 / UA 4024",
+            "layovers": [
+              {
+                "airport": "IAD",
+                "change_of_airport": false,
+                "duration_minutes": 53,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 777",
+                "airline": "UA",
+                "arrive_datetime": "2026-11-13T21:27:00",
+                "arrive_time": "21:27",
+                "depart_datetime": "2026-11-13T13:10:00",
+                "depart_time": "13:10",
+                "destination": "IAD",
+                "duration_minutes": 317,
+                "flight_number": "755",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "UA",
+                "arrive_datetime": "2026-11-13T23:59:00",
+                "arrive_time": "23:59",
+                "depart_datetime": "2026-11-13T22:20:00",
+                "depart_time": "22:20",
+                "destination": "DTW",
+                "duration_minutes": 99,
+                "flight_number": "4024",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAD"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "09:16",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-11-30",
+            "departure": "21:12",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "15h 4m",
+            "duration_minutes": 904,
+            "flight_numbers": "UA 3556 / UA 246",
+            "layovers": [
+              {
+                "airport": "ORD",
+                "change_of_airport": false,
+                "duration_minutes": 516,
+                "overnight": true
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "UA",
+                "arrive_datetime": "2026-11-30T21:49:00",
+                "arrive_time": "21:49",
+                "depart_datetime": "2026-11-30T21:12:00",
+                "depart_time": "21:12",
+                "destination": "ORD",
+                "duration_minutes": 97,
+                "flight_number": "3556",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "UA",
+                "arrive_datetime": "2026-12-01T09:16:00",
+                "arrive_time": "09:16",
+                "depart_datetime": "2026-12-01T06:25:00",
+                "depart_time": "06:25",
+                "destination": "SFO",
+                "duration_minutes": 291,
+                "flight_number": "246",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ORD"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 775.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "23:59",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-11-13",
+            "departure": "13:10",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "7h 49m",
+            "duration_minutes": 469,
+            "flight_numbers": "UA 755 / UA 4024",
+            "layovers": [
+              {
+                "airport": "IAD",
+                "change_of_airport": false,
+                "duration_minutes": 53,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 777",
+                "airline": "UA",
+                "arrive_datetime": "2026-11-13T21:27:00",
+                "arrive_time": "21:27",
+                "depart_datetime": "2026-11-13T13:10:00",
+                "depart_time": "13:10",
+                "destination": "IAD",
+                "duration_minutes": 317,
+                "flight_number": "755",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "UA",
+                "arrive_datetime": "2026-11-13T23:59:00",
+                "arrive_time": "23:59",
+                "depart_datetime": "2026-11-13T22:20:00",
+                "depart_time": "22:20",
+                "destination": "DTW",
+                "duration_minutes": 99,
+                "flight_number": "4024",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAD"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "09:23",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-11-30",
+            "departure": "07:00",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "5h 23m",
+            "duration_minutes": 323,
+            "flight_numbers": "UA 1550",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Airbus A319",
+                "airline": "UA",
+                "arrive_datetime": "2026-11-30T09:23:00",
+                "arrive_time": "09:23",
+                "depart_datetime": "2026-11-30T07:00:00",
+                "depart_time": "07:00",
+                "destination": "SFO",
+                "duration_minutes": 323,
+                "flight_number": "1550",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          }
+        ],
+        "price": "USD 815.00"
+      }
+    ]
+  },
+  "searched_at": "2026-06-03T06:40:49.750352+00:00"
+}

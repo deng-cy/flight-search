@@ -1,0 +1,143 @@
+{
+  "evidence": {
+    "result_count": 1,
+    "top_n": 1,
+    "transport": "fli"
+  },
+  "provider": "fli",
+  "provider_api_variant": "python-api",
+  "provider_package": "flights",
+  "provider_version": "0.9.0",
+  "request": {
+    "adults": 1,
+    "cabin": "economy",
+    "currency": "USD",
+    "departure_date": "2026-11-13",
+    "destination": "DTW",
+    "fetch_mode": "fallback",
+    "max_stops": null,
+    "origin": "SFO",
+    "return_date": "2026-11-29",
+    "return_destination": "SFO",
+    "return_origin": "DTW",
+    "trip_type": "round-trip"
+  },
+  "result": {
+    "current_price": "",
+    "flights": [
+      {
+        "carriers": "F9",
+        "cash_detail_source": "fli",
+        "is_best": true,
+        "legs": [
+          {
+            "arrival": "12:58",
+            "arrival_time_ahead": "+1",
+            "carrier": "F9",
+            "date": "2026-11-13",
+            "departure": "21:27",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "12h 31m",
+            "duration_minutes": 751,
+            "flight_numbers": "F9 2638 / F9 4392",
+            "layovers": [
+              {
+                "airport": "PHX",
+                "change_of_airport": false,
+                "duration_minutes": 387,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "F9",
+                "arrive_datetime": "2026-11-14T00:33:00",
+                "arrive_time": "00:33",
+                "depart_datetime": "2026-11-13T21:27:00",
+                "depart_time": "21:27",
+                "destination": "PHX",
+                "duration_minutes": 126,
+                "flight_number": "2638",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "F9",
+                "arrive_datetime": "2026-11-14T12:58:00",
+                "arrive_time": "12:58",
+                "depart_datetime": "2026-11-14T07:00:00",
+                "depart_time": "07:00",
+                "destination": "DTW",
+                "duration_minutes": 238,
+                "flight_number": "4392",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PHX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "10:15",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-11-29",
+            "departure": "06:10",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "7h 5m",
+            "duration_minutes": 425,
+            "flight_numbers": "WN 1880 / WN 2723",
+            "layovers": [
+              {
+                "airport": "STL",
+                "change_of_airport": false,
+                "duration_minutes": 45,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T07:10:00",
+                "arrive_time": "07:10",
+                "depart_datetime": "2026-11-29T06:10:00",
+                "depart_time": "06:10",
+                "destination": "STL",
+                "duration_minutes": 120,
+                "flight_number": "1880",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-11-29T10:15:00",
+                "arrive_time": "10:15",
+                "depart_datetime": "2026-11-29T07:55:00",
+                "depart_time": "07:55",
+                "destination": "SFO",
+                "duration_minutes": 260,
+                "flight_number": "2723",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "STL"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 632.00"
+      }
+    ]
+  },
+  "searched_at": "2026-06-03T04:48:04.507480+00:00"
+}

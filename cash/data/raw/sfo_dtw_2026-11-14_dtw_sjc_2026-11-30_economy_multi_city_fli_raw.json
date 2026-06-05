@@ -1,0 +1,1123 @@
+{
+  "evidence": {
+    "result_count": 12,
+    "top_n": 1,
+    "transport": "fli"
+  },
+  "provider": "fli",
+  "provider_api_variant": "python-api",
+  "provider_package": "flights",
+  "provider_version": "0.9.0",
+  "request": {
+    "adults": 1,
+    "cabin": "economy",
+    "currency": "USD",
+    "departure_date": "2026-11-14",
+    "destination": "DTW",
+    "fetch_mode": "fallback",
+    "max_stops": null,
+    "origin": "SFO",
+    "return_date": "2026-11-30",
+    "return_destination": "SJC",
+    "return_origin": "DTW",
+    "trip_type": "multi-city"
+  },
+  "result": {
+    "current_price": "",
+    "flights": [
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": true,
+        "legs": [
+          {
+            "arrival": "13:36",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-14",
+            "departure": "06:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "4h 36m",
+            "duration_minutes": 276,
+            "flight_numbers": "DL 772",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-14T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-11-14T06:00:00",
+                "depart_time": "06:00",
+                "destination": "DTW",
+                "duration_minutes": 276,
+                "flight_number": "772",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "23:54",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-30",
+            "departure": "20:05",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "6h 49m",
+            "duration_minutes": 409,
+            "flight_numbers": "DL 2753 / DL 1272",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 45,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T22:10:00",
+                "arrive_time": "22:10",
+                "depart_datetime": "2026-11-30T20:05:00",
+                "depart_time": "20:05",
+                "destination": "SLC",
+                "duration_minutes": 245,
+                "flight_number": "2753",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T23:54:00",
+                "arrive_time": "23:54",
+                "depart_datetime": "2026-11-30T22:55:00",
+                "depart_time": "22:55",
+                "destination": "SJC",
+                "duration_minutes": 119,
+                "flight_number": "1272",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 693.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:36",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-14",
+            "departure": "06:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "4h 36m",
+            "duration_minutes": 276,
+            "flight_numbers": "DL 772",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-14T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-11-14T06:00:00",
+                "depart_time": "06:00",
+                "destination": "DTW",
+                "duration_minutes": 276,
+                "flight_number": "772",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "21:47",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-30",
+            "departure": "15:50",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "8h 57m",
+            "duration_minutes": 537,
+            "flight_numbers": "DL 883 / DL 2318",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 153,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T17:57:00",
+                "arrive_time": "17:57",
+                "depart_datetime": "2026-11-30T15:50:00",
+                "depart_time": "15:50",
+                "destination": "LAX",
+                "duration_minutes": 307,
+                "flight_number": "883",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Airbus A319",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T21:47:00",
+                "arrive_time": "21:47",
+                "depart_datetime": "2026-11-30T20:30:00",
+                "depart_time": "20:30",
+                "destination": "SJC",
+                "duration_minutes": 77,
+                "flight_number": "2318",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 785.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:36",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-14",
+            "departure": "06:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "4h 36m",
+            "duration_minutes": 276,
+            "flight_numbers": "DL 772",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-14T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-11-14T06:00:00",
+                "depart_time": "06:00",
+                "destination": "DTW",
+                "duration_minutes": 276,
+                "flight_number": "772",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "20:58",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-30",
+            "departure": "16:20",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "7h 38m",
+            "duration_minutes": 458,
+            "flight_numbers": "DL 2203 / DL 2087",
+            "layovers": [
+              {
+                "airport": "MSP",
+                "change_of_airport": false,
+                "duration_minutes": 92,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T17:14:00",
+                "arrive_time": "17:14",
+                "depart_datetime": "2026-11-30T16:20:00",
+                "depart_time": "16:20",
+                "destination": "MSP",
+                "duration_minutes": 114,
+                "flight_number": "2203",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T20:58:00",
+                "arrive_time": "20:58",
+                "depart_datetime": "2026-11-30T18:46:00",
+                "depart_time": "18:46",
+                "destination": "SJC",
+                "duration_minutes": 252,
+                "flight_number": "2087",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSP"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 785.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:36",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-14",
+            "departure": "06:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "4h 36m",
+            "duration_minutes": 276,
+            "flight_numbers": "DL 772",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-14T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-11-14T06:00:00",
+                "depart_time": "06:00",
+                "destination": "DTW",
+                "duration_minutes": 276,
+                "flight_number": "772",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "23:54",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-30",
+            "departure": "17:45",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "9h 9m",
+            "duration_minutes": 549,
+            "flight_numbers": "DL 765 / DL 1272",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 184,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T19:51:00",
+                "arrive_time": "19:51",
+                "depart_datetime": "2026-11-30T17:45:00",
+                "depart_time": "17:45",
+                "destination": "SLC",
+                "duration_minutes": 246,
+                "flight_number": "765",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T23:54:00",
+                "arrive_time": "23:54",
+                "depart_datetime": "2026-11-30T22:55:00",
+                "depart_time": "22:55",
+                "destination": "SJC",
+                "duration_minutes": 119,
+                "flight_number": "1272",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 785.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:36",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-14",
+            "departure": "06:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "4h 36m",
+            "duration_minutes": 276,
+            "flight_numbers": "DL 772",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-14T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-11-14T06:00:00",
+                "depart_time": "06:00",
+                "destination": "DTW",
+                "duration_minutes": 276,
+                "flight_number": "772",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "12:21",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-30",
+            "departure": "07:00",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "8h 21m",
+            "duration_minutes": 501,
+            "flight_numbers": "DL 1746 / DL 2383",
+            "layovers": [
+              {
+                "airport": "MSP",
+                "change_of_airport": false,
+                "duration_minutes": 127,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T08:03:00",
+                "arrive_time": "08:03",
+                "depart_datetime": "2026-11-30T07:00:00",
+                "depart_time": "07:00",
+                "destination": "MSP",
+                "duration_minutes": 123,
+                "flight_number": "1746",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T12:21:00",
+                "arrive_time": "12:21",
+                "depart_datetime": "2026-11-30T10:10:00",
+                "depart_time": "10:10",
+                "destination": "SJC",
+                "duration_minutes": 251,
+                "flight_number": "2383",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSP"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 903.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:36",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-14",
+            "departure": "06:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "4h 36m",
+            "duration_minutes": 276,
+            "flight_numbers": "DL 772",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-14T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-11-14T06:00:00",
+                "depart_time": "06:00",
+                "destination": "DTW",
+                "duration_minutes": 276,
+                "flight_number": "772",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "12:28",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-30",
+            "departure": "08:00",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "7h 28m",
+            "duration_minutes": 448,
+            "flight_numbers": "DL 698 / DL 1254",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 76,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T10:14:00",
+                "arrive_time": "10:14",
+                "depart_datetime": "2026-11-30T08:00:00",
+                "depart_time": "08:00",
+                "destination": "SLC",
+                "duration_minutes": 254,
+                "flight_number": "698",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T12:28:00",
+                "arrive_time": "12:28",
+                "depart_datetime": "2026-11-30T11:30:00",
+                "depart_time": "11:30",
+                "destination": "SJC",
+                "duration_minutes": 118,
+                "flight_number": "1254",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 903.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:36",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-14",
+            "departure": "06:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "4h 36m",
+            "duration_minutes": 276,
+            "flight_numbers": "DL 772",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-14T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-11-14T06:00:00",
+                "depart_time": "06:00",
+                "destination": "DTW",
+                "duration_minutes": 276,
+                "flight_number": "772",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "16:16",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-30",
+            "departure": "12:25",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "6h 51m",
+            "duration_minutes": 411,
+            "flight_numbers": "DL 935 / DL 1260",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 50,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T14:30:00",
+                "arrive_time": "14:30",
+                "depart_datetime": "2026-11-30T12:25:00",
+                "depart_time": "12:25",
+                "destination": "SLC",
+                "duration_minutes": 245,
+                "flight_number": "935",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T16:16:00",
+                "arrive_time": "16:16",
+                "depart_datetime": "2026-11-30T15:20:00",
+                "depart_time": "15:20",
+                "destination": "SJC",
+                "duration_minutes": 116,
+                "flight_number": "1260",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 903.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:36",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-14",
+            "departure": "06:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "4h 36m",
+            "duration_minutes": 276,
+            "flight_numbers": "DL 772",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-14T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-11-14T06:00:00",
+                "depart_time": "06:00",
+                "destination": "DTW",
+                "duration_minutes": 276,
+                "flight_number": "772",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "18:20",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-30",
+            "departure": "12:25",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "8h 55m",
+            "duration_minutes": 535,
+            "flight_numbers": "DL 935 / DL 3937",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 165,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T14:30:00",
+                "arrive_time": "14:30",
+                "depart_datetime": "2026-11-30T12:25:00",
+                "depart_time": "12:25",
+                "destination": "SLC",
+                "duration_minutes": 245,
+                "flight_number": "935",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T18:20:00",
+                "arrive_time": "18:20",
+                "depart_datetime": "2026-11-30T17:15:00",
+                "depart_time": "17:15",
+                "destination": "SJC",
+                "duration_minutes": 125,
+                "flight_number": "3937",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 903.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:36",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-14",
+            "departure": "06:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "4h 36m",
+            "duration_minutes": 276,
+            "flight_numbers": "DL 772",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-14T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-11-14T06:00:00",
+                "depart_time": "06:00",
+                "destination": "DTW",
+                "duration_minutes": 276,
+                "flight_number": "772",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "18:52",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-30",
+            "departure": "13:45",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "8h 7m",
+            "duration_minutes": 487,
+            "flight_numbers": "DL 1983 / DL 2136",
+            "layovers": [
+              {
+                "airport": "ATL",
+                "change_of_airport": false,
+                "duration_minutes": 50,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T15:50:00",
+                "arrive_time": "15:50",
+                "depart_datetime": "2026-11-30T13:45:00",
+                "depart_time": "13:45",
+                "destination": "ATL",
+                "duration_minutes": 125,
+                "flight_number": "1983",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T18:52:00",
+                "arrive_time": "18:52",
+                "depart_datetime": "2026-11-30T16:40:00",
+                "depart_time": "16:40",
+                "destination": "SJC",
+                "duration_minutes": 312,
+                "flight_number": "2136",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ATL"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 903.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:36",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-14",
+            "departure": "06:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "4h 36m",
+            "duration_minutes": 276,
+            "flight_numbers": "DL 772",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-14T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-11-14T06:00:00",
+                "depart_time": "06:00",
+                "destination": "DTW",
+                "duration_minutes": 276,
+                "flight_number": "772",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "12:21",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-30",
+            "departure": "08:30",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "6h 51m",
+            "duration_minutes": 411,
+            "flight_numbers": "DL 2258 / DL 2383",
+            "layovers": [
+              {
+                "airport": "MSP",
+                "change_of_airport": false,
+                "duration_minutes": 40,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T09:30:00",
+                "arrive_time": "09:30",
+                "depart_datetime": "2026-11-30T08:30:00",
+                "depart_time": "08:30",
+                "destination": "MSP",
+                "duration_minutes": 120,
+                "flight_number": "2258",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T12:21:00",
+                "arrive_time": "12:21",
+                "depart_datetime": "2026-11-30T10:10:00",
+                "depart_time": "10:10",
+                "destination": "SJC",
+                "duration_minutes": 251,
+                "flight_number": "2383",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSP"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1115.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:36",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-14",
+            "departure": "06:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "4h 36m",
+            "duration_minutes": 276,
+            "flight_numbers": "DL 772",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-14T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-11-14T06:00:00",
+                "depart_time": "06:00",
+                "destination": "DTW",
+                "duration_minutes": 276,
+                "flight_number": "772",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "14:32",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-30",
+            "departure": "08:32",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "9h",
+            "duration_minutes": 540,
+            "flight_numbers": "DL 523 / DL 3842",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 150,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 757",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T10:45:00",
+                "arrive_time": "10:45",
+                "depart_datetime": "2026-11-30T08:32:00",
+                "depart_time": "08:32",
+                "destination": "LAX",
+                "duration_minutes": 313,
+                "flight_number": "523",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T14:32:00",
+                "arrive_time": "14:32",
+                "depart_datetime": "2026-11-30T13:15:00",
+                "depart_time": "13:15",
+                "destination": "SJC",
+                "duration_minutes": 77,
+                "flight_number": "3842",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1115.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:36",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-14",
+            "departure": "06:00",
+            "destination": "DTW",
+            "direction": "outbound",
+            "duration": "4h 36m",
+            "duration_minutes": 276,
+            "flight_numbers": "DL 772",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-14T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-11-14T06:00:00",
+                "depart_time": "06:00",
+                "destination": "DTW",
+                "duration_minutes": 276,
+                "flight_number": "772",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "17:00",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-11-30",
+            "departure": "12:40",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "7h 20m",
+            "duration_minutes": 440,
+            "flight_numbers": "DL 634 / DL 1438",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 59,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T14:46:00",
+                "arrive_time": "14:46",
+                "depart_datetime": "2026-11-30T12:40:00",
+                "depart_time": "12:40",
+                "destination": "LAX",
+                "duration_minutes": 306,
+                "flight_number": "634",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Airbus A319",
+                "airline": "DL",
+                "arrive_datetime": "2026-11-30T17:00:00",
+                "arrive_time": "17:00",
+                "depart_datetime": "2026-11-30T15:45:00",
+                "depart_time": "15:45",
+                "destination": "SJC",
+                "duration_minutes": 75,
+                "flight_number": "1438",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1115.00"
+      }
+    ]
+  },
+  "searched_at": "2026-06-03T06:43:06.823258+00:00"
+}
