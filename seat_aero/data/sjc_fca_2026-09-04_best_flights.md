@@ -2,7 +2,7 @@
 
 ## Ranking Rules
 
-- FX source: `live:2026-06-04`
+- FX source: `cache:2026-06-04`
 - Score starts with effective USD, then adds 50 per stop.
 - Duration penalty: 5 per travel hour.
 - Next-day arrival penalty: 75.

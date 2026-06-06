@@ -733,6 +733,18 @@
     "award_legs": [
       {
         "arrive": "21:31",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 33.63,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05",
         "depart": "10:17",
         "destination": "MSO",
@@ -775,6 +787,18 @@
       },
       {
         "arrive": "15:17",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 5.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05",
         "depart": "08:20",
         "destination": "MSO",
@@ -817,6 +841,18 @@
       },
       {
         "arrive": "15:17",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 5.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05",
         "depart": "07:20",
         "destination": "MSO",
@@ -859,6 +895,18 @@
       },
       {
         "arrive": "10:04 +1",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 39.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05",
         "depart": "21:13",
         "destination": "FCA",
@@ -901,6 +949,18 @@
       },
       {
         "arrive": "10:01 +1",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 39.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04",
         "depart": "21:05",
         "destination": "MSO",
@@ -943,6 +1003,18 @@
       },
       {
         "arrive": "10:01 +1",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 39.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04",
         "depart": "19:56",
         "destination": "MSO",
@@ -985,6 +1057,18 @@
       },
       {
         "arrive": "10:04 +1",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 39.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05",
         "depart": "18:25",
         "destination": "FCA",
@@ -1027,6 +1111,18 @@
       },
       {
         "arrive": "13:27 +1",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 39.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04",
         "depart": "21:05",
         "destination": "MSO",
@@ -1069,6 +1165,18 @@
       },
       {
         "arrive": "10:04 +1",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 39.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05",
         "depart": "17:25",
         "destination": "FCA",
@@ -1111,6 +1219,18 @@
       },
       {
         "arrive": "14:52",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 27500.0,
+        "cash_component_usd": 5.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-07",
         "depart": "07:15",
         "destination": "SFO",
@@ -1153,6 +1273,18 @@
       },
       {
         "arrive": "16:31",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 32500.0
+          }
+        ],
+        "award_points": 32500.0,
+        "cash_component_usd": 5.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-07",
         "depart": "13:05",
         "destination": "SFO",
@@ -1195,6 +1327,18 @@
       },
       {
         "arrive": "23:36",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 27500.0,
+        "cash_component_usd": 11.2,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-07",
         "depart": "16:13",
         "destination": "SFO",
@@ -1239,8 +1383,13 @@
     "cash_one_way_legs": [
       {
         "arrive": "15:24",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 254.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05",
         "depart": "12:00",
         "destination": "MSO",
@@ -1296,8 +1445,13 @@
       },
       {
         "arrive": "17:46",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 194.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05",
         "depart": "09:51",
         "destination": "MSO",
@@ -1353,8 +1507,13 @@
       },
       {
         "arrive": "13:25",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 204.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05",
         "depart": "07:23",
         "destination": "MSO",
@@ -1410,8 +1569,13 @@
       },
       {
         "arrive": "13:25",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 216.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05",
         "depart": "07:02",
         "destination": "MSO",
@@ -1467,8 +1631,13 @@
       },
       {
         "arrive": "15:21",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 290.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05",
         "depart": "12:00",
         "destination": "FCA",
@@ -1524,8 +1693,13 @@
       },
       {
         "arrive": "13:28",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 260.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05",
         "depart": "08:23",
         "destination": "FCA",
@@ -1581,8 +1755,13 @@
       },
       {
         "arrive": "13:28",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 254.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05",
         "depart": "07:02",
         "destination": "FCA",
@@ -1638,8 +1817,13 @@
       },
       {
         "arrive": "08:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 216.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-07",
         "depart": "05:30",
         "destination": "SJC",
@@ -1695,8 +1879,13 @@
       },
       {
         "arrive": "15:21",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 389.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04",
         "depart": "12:00",
         "destination": "FCA",
@@ -1752,8 +1941,13 @@
       },
       {
         "arrive": "15:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 327.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05",
         "depart": "08:45",
         "destination": "FCA",
@@ -1809,8 +2003,13 @@
       },
       {
         "arrive": "08:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 264.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-07",
         "depart": "05:30",
         "destination": "SFO",
@@ -1866,8 +2065,13 @@
       },
       {
         "arrive": "10:58",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 365.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-07",
         "depart": "07:15",
         "destination": "SFO",
@@ -1923,8 +2127,13 @@
       },
       {
         "arrive": "15:24",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 427.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04",
         "depart": "12:00",
         "destination": "MSO",
@@ -1980,8 +2189,13 @@
       },
       {
         "arrive": "13:25",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 365.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04",
         "depart": "07:23",
         "destination": "MSO",
@@ -2037,8 +2251,13 @@
       },
       {
         "arrive": "13:25",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 379.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04",
         "depart": "07:02",
         "destination": "MSO",
@@ -2094,8 +2313,13 @@
       },
       {
         "arrive": "15:17",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 379.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04",
         "depart": "08:02",
         "destination": "MSO",
@@ -2151,8 +2375,13 @@
       },
       {
         "arrive": "22:57",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 379.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-07",
         "depart": "16:16",
         "destination": "SJC",
@@ -2208,8 +2437,13 @@
       },
       {
         "arrive": "23:40",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 364.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-07",
         "depart": "20:01",
         "destination": "SFO",
@@ -2265,8 +2499,13 @@
       },
       {
         "arrive": "22:53",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 429.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04",
         "depart": "17:10",
         "destination": "FCA",
@@ -2322,8 +2561,13 @@
       },
       {
         "arrive": "23:56",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 358.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04",
         "depart": "13:24",
         "destination": "FCA",
@@ -2379,8 +2623,13 @@
       },
       {
         "arrive": "22:53",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 363.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04",
         "depart": "11:38",
         "destination": "FCA",
@@ -2436,8 +2685,13 @@
       },
       {
         "arrive": "17:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 518.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-07",
         "depart": "16:17",
         "destination": "SFO",
@@ -2493,8 +2747,13 @@
       },
       {
         "arrive": "12:48",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 444.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-07",
         "depart": "06:15",
         "destination": "SJC",
@@ -2550,8 +2809,13 @@
       },
       {
         "arrive": "13:17 +1",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 369.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-07",
         "depart": "20:01",
         "destination": "SJC",
@@ -2609,11 +2873,16 @@
     "complete_plans": [
       {
         "arrive": "17:46 / 08:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 314.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
         "cash_strategy_comparison": "cheaper",
         "cash_strategy_comparison_price": "$468.00",
         "cash_strategy_delta_usd": -154.0,
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "09:41 / 05:30",
         "destination": "MSO",
@@ -2681,11 +2950,16 @@
       },
       {
         "arrive": "00:18 +1 / 08:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 289.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
         "cash_strategy_comparison": "cheaper",
         "cash_strategy_comparison_price": "$629.00",
         "cash_strategy_delta_usd": -340.0,
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "19:25 / 05:30",
         "destination": "MSO",
@@ -2753,8 +3027,13 @@
       },
       {
         "arrive": "15:24 / 08:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 470.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 05:30",
         "destination": "MSO",
@@ -2795,8 +3074,13 @@
       },
       {
         "arrive": "17:46 / 08:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 410.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "09:51 / 05:30",
         "destination": "MSO",
@@ -2837,8 +3121,13 @@
       },
       {
         "arrive": "13:25 / 08:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 420.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:23 / 05:30",
         "destination": "MSO",
@@ -2879,8 +3168,13 @@
       },
       {
         "arrive": "13:25 / 08:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 432.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 05:30",
         "destination": "MSO",
@@ -2921,8 +3215,13 @@
       },
       {
         "arrive": "15:21 / 08:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 506.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 05:30",
         "destination": "FCA",
@@ -2963,9 +3262,14 @@
       },
       {
         "arrive": "13:28 / 13:17 +1",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 617.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 20:01",
         "destination": "FCA",
@@ -3033,11 +3337,16 @@
       },
       {
         "arrive": "13:28 / 23:40",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 623.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
         "cash_strategy_comparison": "cheaper",
         "cash_strategy_comparison_price": "$624.00",
         "cash_strategy_delta_usd": -1.0,
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:23 / 20:01",
         "destination": "FCA",
@@ -3105,10 +3414,15 @@
       },
       {
         "arrive": "15:24 / 08:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 518.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "more_expensive",
         "cash_strategy_comparison_price": "$314.00",
         "cash_strategy_delta_usd": 204.0,
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 05:30",
         "destination": "MSO",
@@ -3149,10 +3463,15 @@
       },
       {
         "arrive": "15:24 / 10:58",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 619.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "more_expensive",
         "cash_strategy_comparison_price": "$314.00",
         "cash_strategy_delta_usd": 305.0,
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 07:15",
         "destination": "MSO",
@@ -3193,8 +3512,13 @@
       },
       {
         "arrive": "17:46 / 08:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 458.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "09:51 / 05:30",
         "destination": "MSO",
@@ -3235,10 +3559,15 @@
       },
       {
         "arrive": "13:25 / 08:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 468.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "more_expensive",
         "cash_strategy_comparison_price": "$314.00",
         "cash_strategy_delta_usd": 154.0,
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:23 / 05:30",
         "destination": "MSO",
@@ -3279,8 +3608,13 @@
       },
       {
         "arrive": "17:46 / 10:58",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 559.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "09:51 / 07:15",
         "destination": "MSO",
@@ -3321,10 +3655,15 @@
       },
       {
         "arrive": "13:25 / 10:58",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 569.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "more_expensive",
         "cash_strategy_comparison_price": "$314.00",
         "cash_strategy_delta_usd": 255.0,
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:23 / 07:15",
         "destination": "MSO",
@@ -3365,8 +3704,13 @@
       },
       {
         "arrive": "13:28 / 08:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 476.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:23 / 05:30",
         "destination": "FCA",
@@ -3407,8 +3751,13 @@
       },
       {
         "arrive": "13:28 / 08:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 470.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 05:30",
         "destination": "FCA",
@@ -3449,6 +3798,18 @@
       },
       {
         "arrive": "21:31 / 08:54",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 249.63,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "10:17 / 05:30",
         "destination": "MSO",
@@ -3489,8 +3850,13 @@
       },
       {
         "arrive": "13:25 / 08:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 480.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 05:30",
         "destination": "MSO",
@@ -3531,6 +3897,18 @@
       },
       {
         "arrive": "15:17 / 08:54",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 221.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:20 / 05:30",
         "destination": "MSO",
@@ -3571,8 +3949,13 @@
       },
       {
         "arrive": "13:25 / 10:58",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 581.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 07:15",
         "destination": "MSO",
@@ -3613,8 +3996,13 @@
       },
       {
         "arrive": "15:24 / 22:57",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 633.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 16:16",
         "destination": "MSO",
@@ -3655,6 +4043,18 @@
       },
       {
         "arrive": "15:17 / 08:54",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 221.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:20 / 05:30",
         "destination": "MSO",
@@ -3695,8 +4095,13 @@
       },
       {
         "arrive": "15:21 / 08:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 554.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 05:30",
         "destination": "FCA",
@@ -3737,8 +4142,13 @@
       },
       {
         "arrive": "15:21 / 10:58",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 655.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 07:15",
         "destination": "FCA",
@@ -3779,8 +4189,13 @@
       },
       {
         "arrive": "17:46 / 22:57",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 573.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "09:51 / 16:16",
         "destination": "MSO",
@@ -3821,8 +4236,13 @@
       },
       {
         "arrive": "13:25 / 22:57",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 583.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:23 / 16:16",
         "destination": "MSO",
@@ -3863,8 +4283,13 @@
       },
       {
         "arrive": "15:24 / 23:40",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 618.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 20:01",
         "destination": "MSO",
@@ -3905,6 +4330,18 @@
       },
       {
         "arrive": "10:04 +1 / 08:54",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 255.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "21:13 / 05:30",
         "destination": "FCA",
@@ -3945,6 +4382,18 @@
       },
       {
         "arrive": "10:01 +1 / 08:54",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 255.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 05:30",
         "destination": "MSO",
@@ -3985,8 +4434,13 @@
       },
       {
         "arrive": "13:25 / 22:57",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 595.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 16:16",
         "destination": "MSO",
@@ -4027,6 +4481,18 @@
       },
       {
         "arrive": "10:01 +1 / 08:54",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 255.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "19:56 / 05:30",
         "destination": "MSO",
@@ -4067,8 +4533,13 @@
       },
       {
         "arrive": "17:46 / 23:40",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 558.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "09:51 / 20:01",
         "destination": "MSO",
@@ -4109,8 +4580,13 @@
       },
       {
         "arrive": "13:28 / 08:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 524.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:23 / 05:30",
         "destination": "FCA",
@@ -4151,8 +4627,13 @@
       },
       {
         "arrive": "13:25 / 23:40",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 568.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:23 / 20:01",
         "destination": "MSO",
@@ -4193,8 +4674,13 @@
       },
       {
         "arrive": "13:28 / 08:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 518.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 05:30",
         "destination": "FCA",
@@ -4235,8 +4721,13 @@
       },
       {
         "arrive": "13:28 / 10:58",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 625.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:23 / 07:15",
         "destination": "FCA",
@@ -4277,8 +4768,13 @@
       },
       {
         "arrive": "15:21 / 22:57",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 669.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 16:16",
         "destination": "FCA",
@@ -4319,8 +4815,13 @@
       },
       {
         "arrive": "13:28 / 10:58",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 619.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 07:15",
         "destination": "FCA",
@@ -4361,6 +4862,18 @@
       },
       {
         "arrive": "10:04 +1 / 08:54",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 255.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "18:25 / 05:30",
         "destination": "FCA",
@@ -4401,6 +4914,18 @@
       },
       {
         "arrive": "21:31 / 08:50",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 297.63,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "10:17 / 05:30",
         "destination": "MSO",
@@ -4441,6 +4966,18 @@
       },
       {
         "arrive": "13:27 +1 / 08:54",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 255.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 05:30",
         "destination": "MSO",
@@ -4481,6 +5018,18 @@
       },
       {
         "arrive": "10:04 +1 / 08:54",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 255.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "17:25 / 05:30",
         "destination": "FCA",
@@ -4521,6 +5070,18 @@
       },
       {
         "arrive": "15:17 / 08:50",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 269.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:20 / 05:30",
         "destination": "MSO",
@@ -4561,6 +5122,18 @@
       },
       {
         "arrive": "21:31 / 10:58",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 398.63,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "10:17 / 07:15",
         "destination": "MSO",
@@ -4601,8 +5174,13 @@
       },
       {
         "arrive": "13:25 / 23:40",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 580.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 20:01",
         "destination": "MSO",
@@ -4643,6 +5221,18 @@
       },
       {
         "arrive": "15:17 / 10:58",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 370.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:20 / 07:15",
         "destination": "MSO",
@@ -4683,6 +5273,18 @@
       },
       {
         "arrive": "15:17 / 08:50",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 269.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:20 / 05:30",
         "destination": "MSO",
@@ -4723,6 +5325,18 @@
       },
       {
         "arrive": "15:17 / 10:58",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 370.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:20 / 07:15",
         "destination": "MSO",
@@ -4763,8 +5377,13 @@
       },
       {
         "arrive": "15:21 / 08:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 605.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "12:00 / 05:30",
         "destination": "FCA",
@@ -4805,10 +5424,15 @@
       },
       {
         "arrive": "15:21 / 23:40",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 654.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "more_expensive",
         "cash_strategy_comparison_price": "$623.00",
         "cash_strategy_delta_usd": 31.0,
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 20:01",
         "destination": "FCA",
@@ -4849,8 +5473,13 @@
       },
       {
         "arrive": "15:54 / 08:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 543.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:45 / 05:30",
         "destination": "FCA",
@@ -4891,8 +5520,13 @@
       },
       {
         "arrive": "15:24 / 17:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 772.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 16:17",
         "destination": "MSO",
@@ -4933,8 +5567,13 @@
       },
       {
         "arrive": "13:28 / 22:57",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 639.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:23 / 16:16",
         "destination": "FCA",
@@ -4975,8 +5614,13 @@
       },
       {
         "arrive": "13:28 / 22:57",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 633.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 16:16",
         "destination": "FCA",
@@ -5017,6 +5661,18 @@
       },
       {
         "arrive": "10:04 +1 / 08:50",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 303.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "21:13 / 05:30",
         "destination": "FCA",
@@ -5057,6 +5713,18 @@
       },
       {
         "arrive": "10:01 +1 / 08:50",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 303.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 05:30",
         "destination": "MSO",
@@ -5097,6 +5765,18 @@
       },
       {
         "arrive": "21:31 / 22:57",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 412.63,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "10:17 / 16:16",
         "destination": "MSO",
@@ -5137,6 +5817,18 @@
       },
       {
         "arrive": "10:04 +1 / 10:58",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 404.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "21:13 / 07:15",
         "destination": "FCA",
@@ -5177,6 +5869,18 @@
       },
       {
         "arrive": "15:24 / 14:52",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 27500.0,
+        "cash_component_usd": 259.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 07:15",
         "destination": "MSO",
@@ -5217,8 +5921,13 @@
       },
       {
         "arrive": "17:46 / 17:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 712.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "09:51 / 16:17",
         "destination": "MSO",
@@ -5259,6 +5968,18 @@
       },
       {
         "arrive": "10:01 +1 / 10:58",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 404.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 07:15",
         "destination": "MSO",
@@ -5299,6 +6020,18 @@
       },
       {
         "arrive": "15:17 / 22:57",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 384.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:20 / 16:16",
         "destination": "MSO",
@@ -5339,8 +6072,13 @@
       },
       {
         "arrive": "13:25 / 17:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 722.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:23 / 16:17",
         "destination": "MSO",
@@ -5381,6 +6119,18 @@
       },
       {
         "arrive": "10:01 +1 / 08:50",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 303.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "19:56 / 05:30",
         "destination": "MSO",
@@ -5421,6 +6171,18 @@
       },
       {
         "arrive": "15:24 / 16:31",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 32500.0
+          }
+        ],
+        "award_points": 32500.0,
+        "cash_component_usd": 259.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 13:05",
         "destination": "MSO",
@@ -5461,6 +6223,18 @@
       },
       {
         "arrive": "15:24 / 23:36",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 27500.0,
+        "cash_component_usd": 265.2,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 16:13",
         "destination": "MSO",
@@ -5501,6 +6275,18 @@
       },
       {
         "arrive": "15:17 / 22:57",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 384.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:20 / 16:16",
         "destination": "MSO",
@@ -5541,6 +6327,18 @@
       },
       {
         "arrive": "10:01 +1 / 10:58",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 404.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "19:56 / 07:15",
         "destination": "MSO",
@@ -5581,10 +6379,15 @@
       },
       {
         "arrive": "13:28 / 23:40",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 624.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "more_expensive",
         "cash_strategy_comparison_price": "$623.00",
         "cash_strategy_delta_usd": 1.0,
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:23 / 20:01",
         "destination": "FCA",
@@ -5625,8 +6428,13 @@
       },
       {
         "arrive": "13:28 / 23:40",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 618.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 20:01",
         "destination": "FCA",
@@ -5667,6 +6475,18 @@
       },
       {
         "arrive": "10:04 +1 / 08:50",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 303.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "18:25 / 05:30",
         "destination": "FCA",
@@ -5707,6 +6527,18 @@
       },
       {
         "arrive": "17:46 / 14:52",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 27500.0,
+        "cash_component_usd": 199.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "09:51 / 07:15",
         "destination": "MSO",
@@ -5747,6 +6579,18 @@
       },
       {
         "arrive": "13:25 / 14:52",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 27500.0,
+        "cash_component_usd": 209.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:23 / 07:15",
         "destination": "MSO",
@@ -5787,6 +6631,18 @@
       },
       {
         "arrive": "10:04 +1 / 10:58",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 404.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "18:25 / 07:15",
         "destination": "FCA",
@@ -5827,8 +6683,13 @@
       },
       {
         "arrive": "13:25 / 17:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 734.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 16:17",
         "destination": "MSO",
@@ -5869,6 +6730,18 @@
       },
       {
         "arrive": "13:27 +1 / 08:50",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 303.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 05:30",
         "destination": "MSO",
@@ -5909,6 +6782,18 @@
       },
       {
         "arrive": "10:04 +1 / 08:50",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 303.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "17:25 / 05:30",
         "destination": "FCA",
@@ -5949,6 +6834,18 @@
       },
       {
         "arrive": "17:46 / 16:31",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 32500.0
+          }
+        ],
+        "award_points": 32500.0,
+        "cash_component_usd": 199.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "09:51 / 13:05",
         "destination": "MSO",
@@ -5989,6 +6886,18 @@
       },
       {
         "arrive": "17:46 / 23:36",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 27500.0,
+        "cash_component_usd": 205.2,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "09:51 / 16:13",
         "destination": "MSO",
@@ -6029,6 +6938,18 @@
       },
       {
         "arrive": "13:25 / 16:31",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 32500.0
+          }
+        ],
+        "award_points": 32500.0,
+        "cash_component_usd": 209.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:23 / 13:05",
         "destination": "MSO",
@@ -6069,6 +6990,18 @@
       },
       {
         "arrive": "13:27 +1 / 10:58",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 404.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 07:15",
         "destination": "MSO",
@@ -6109,6 +7042,18 @@
       },
       {
         "arrive": "13:25 / 23:36",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 27500.0,
+        "cash_component_usd": 215.2,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:23 / 16:13",
         "destination": "MSO",
@@ -6149,8 +7094,13 @@
       },
       {
         "arrive": "15:24 / 08:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 643.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "12:00 / 05:30",
         "destination": "MSO",
@@ -6191,6 +7141,18 @@
       },
       {
         "arrive": "21:31 / 23:40",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 397.63,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "10:17 / 20:01",
         "destination": "MSO",
@@ -6231,6 +7193,18 @@
       },
       {
         "arrive": "10:04 +1 / 10:58",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 404.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "17:25 / 07:15",
         "destination": "FCA",
@@ -6271,8 +7245,13 @@
       },
       {
         "arrive": "13:25 / 08:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 581.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "07:23 / 05:30",
         "destination": "MSO",
@@ -6313,6 +7292,18 @@
       },
       {
         "arrive": "15:17 / 23:40",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 369.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:20 / 20:01",
         "destination": "MSO",
@@ -6353,10 +7344,15 @@
       },
       {
         "arrive": "15:21 / 17:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 808.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "more_expensive",
         "cash_strategy_comparison_price": "$623.00",
         "cash_strategy_delta_usd": 185.0,
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 16:17",
         "destination": "FCA",
@@ -6397,6 +7393,18 @@
       },
       {
         "arrive": "15:17 / 23:40",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 369.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:20 / 20:01",
         "destination": "MSO",
@@ -6437,6 +7445,18 @@
       },
       {
         "arrive": "13:25 / 14:52",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 27500.0,
+        "cash_component_usd": 221.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 07:15",
         "destination": "MSO",
@@ -6477,8 +7497,13 @@
       },
       {
         "arrive": "15:21 / 08:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 653.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "12:00 / 05:30",
         "destination": "FCA",
@@ -6519,6 +7544,18 @@
       },
       {
         "arrive": "10:04 +1 / 22:57",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 418.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "21:13 / 16:16",
         "destination": "FCA",
@@ -6559,6 +7596,18 @@
       },
       {
         "arrive": "10:01 +1 / 22:57",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 418.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 16:16",
         "destination": "MSO",
@@ -6599,8 +7648,13 @@
       },
       {
         "arrive": "15:21 / 10:58",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 754.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "12:00 / 07:15",
         "destination": "FCA",
@@ -6641,6 +7695,18 @@
       },
       {
         "arrive": "13:25 / 16:31",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 32500.0
+          }
+        ],
+        "award_points": 32500.0,
+        "cash_component_usd": 221.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 13:05",
         "destination": "MSO",
@@ -6681,6 +7747,18 @@
       },
       {
         "arrive": "13:25 / 23:36",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 27500.0,
+        "cash_component_usd": 227.2,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 16:13",
         "destination": "MSO",
@@ -6721,8 +7799,13 @@
       },
       {
         "arrive": "15:54 / 08:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 591.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:45 / 05:30",
         "destination": "FCA",
@@ -6763,8 +7846,13 @@
       },
       {
         "arrive": "13:25 / 08:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 595.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "07:02 / 05:30",
         "destination": "MSO",
@@ -6805,6 +7893,18 @@
       },
       {
         "arrive": "10:01 +1 / 22:57",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 418.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "19:56 / 16:16",
         "destination": "MSO",
@@ -6845,6 +7945,18 @@
       },
       {
         "arrive": "15:21 / 14:52",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 27500.0,
+        "cash_component_usd": 295.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 07:15",
         "destination": "FCA",
@@ -6885,8 +7997,13 @@
       },
       {
         "arrive": "15:54 / 10:58",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 692.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:45 / 07:15",
         "destination": "FCA",
@@ -6927,8 +8044,13 @@
       },
       {
         "arrive": "15:24 / 12:48",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 698.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 06:15",
         "destination": "MSO",
@@ -6969,8 +8091,13 @@
       },
       {
         "arrive": "15:17 / 08:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 595.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "08:02 / 05:30",
         "destination": "MSO",
@@ -7011,6 +8138,18 @@
       },
       {
         "arrive": "15:21 / 16:31",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 32500.0
+          }
+        ],
+        "award_points": 32500.0,
+        "cash_component_usd": 295.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 13:05",
         "destination": "FCA",
@@ -7051,6 +8190,18 @@
       },
       {
         "arrive": "15:21 / 23:36",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 27500.0,
+        "cash_component_usd": 301.2,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 16:13",
         "destination": "FCA",
@@ -7091,8 +8242,13 @@
       },
       {
         "arrive": "15:24 / 13:17 +1",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 623.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 20:01",
         "destination": "MSO",
@@ -7133,6 +8289,18 @@
       },
       {
         "arrive": "10:04 +1 / 22:57",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 418.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "18:25 / 16:16",
         "destination": "FCA",
@@ -7173,6 +8341,18 @@
       },
       {
         "arrive": "13:27 +1 / 22:57",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 418.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 16:16",
         "destination": "MSO",
@@ -7213,6 +8393,18 @@
       },
       {
         "arrive": "10:04 +1 / 22:57",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 418.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "17:25 / 16:16",
         "destination": "FCA",
@@ -7253,6 +8445,18 @@
       },
       {
         "arrive": "10:04 +1 / 23:40",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 403.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "21:13 / 20:01",
         "destination": "FCA",
@@ -7293,6 +8497,18 @@
       },
       {
         "arrive": "10:01 +1 / 23:40",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 403.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 20:01",
         "destination": "MSO",
@@ -7333,8 +8549,13 @@
       },
       {
         "arrive": "17:46 / 12:48",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 638.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "09:51 / 06:15",
         "destination": "MSO",
@@ -7375,8 +8596,13 @@
       },
       {
         "arrive": "13:25 / 12:48",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 648.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:23 / 06:15",
         "destination": "MSO",
@@ -7417,10 +8643,15 @@
       },
       {
         "arrive": "13:28 / 17:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 778.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "more_expensive",
         "cash_strategy_comparison_price": "$623.00",
         "cash_strategy_delta_usd": 155.0,
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:23 / 16:17",
         "destination": "FCA",
@@ -7461,8 +8692,13 @@
       },
       {
         "arrive": "13:28 / 17:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 772.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 16:17",
         "destination": "FCA",
@@ -7503,6 +8739,18 @@
       },
       {
         "arrive": "10:01 +1 / 23:40",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 403.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "19:56 / 20:01",
         "destination": "MSO",
@@ -7543,8 +8791,13 @@
       },
       {
         "arrive": "17:46 / 13:17 +1",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 563.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "09:51 / 20:01",
         "destination": "MSO",
@@ -7585,8 +8838,13 @@
       },
       {
         "arrive": "13:25 / 13:17 +1",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 573.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:23 / 20:01",
         "destination": "MSO",
@@ -7627,11 +8885,16 @@
       },
       {
         "arrive": "13:28 +1 / 23:40",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 663.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
         "cash_strategy_comparison": "cheaper",
         "cash_strategy_comparison_price": "$753.00",
         "cash_strategy_delta_usd": -90.0,
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:02 / 20:01",
         "destination": "FCA",
@@ -7699,8 +8962,13 @@
       },
       {
         "arrive": "15:21 / 22:57",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 768.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "12:00 / 16:16",
         "destination": "FCA",
@@ -7741,6 +9009,18 @@
       },
       {
         "arrive": "21:31 / 17:50",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 551.63,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "10:17 / 16:17",
         "destination": "MSO",
@@ -7781,6 +9061,18 @@
       },
       {
         "arrive": "10:04 +1 / 23:40",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 403.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "18:25 / 20:01",
         "destination": "FCA",
@@ -7821,6 +9113,18 @@
       },
       {
         "arrive": "15:17 / 17:50",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 523.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:20 / 16:17",
         "destination": "MSO",
@@ -7861,6 +9165,18 @@
       },
       {
         "arrive": "13:28 / 14:52",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 27500.0,
+        "cash_component_usd": 265.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:23 / 07:15",
         "destination": "FCA",
@@ -7901,9 +9217,14 @@
       },
       {
         "arrive": "15:17 / 12:48",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 793.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "08:02 / 06:15",
         "destination": "MSO",
@@ -7971,6 +9292,18 @@
       },
       {
         "arrive": "13:28 / 14:52",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 27500.0,
+        "cash_component_usd": 259.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 07:15",
         "destination": "FCA",
@@ -8011,8 +9344,13 @@
       },
       {
         "arrive": "13:25 / 12:48",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 660.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 06:15",
         "destination": "MSO",
@@ -8053,10 +9391,15 @@
       },
       {
         "arrive": "15:24 / 08:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 691.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "more_expensive",
         "cash_strategy_comparison_price": "$289.00",
         "cash_strategy_delta_usd": 402.0,
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "12:00 / 05:30",
         "destination": "MSO",
@@ -8097,8 +9440,13 @@
       },
       {
         "arrive": "15:54 / 22:57",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 706.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:45 / 16:16",
         "destination": "FCA",
@@ -8139,6 +9487,18 @@
       },
       {
         "arrive": "13:27 +1 / 23:40",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 403.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 20:01",
         "destination": "MSO",
@@ -8179,10 +9539,15 @@
       },
       {
         "arrive": "13:25 / 08:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 629.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "more_expensive",
         "cash_strategy_comparison_price": "$289.00",
         "cash_strategy_delta_usd": 340.0,
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "07:23 / 05:30",
         "destination": "MSO",
@@ -8223,6 +9588,18 @@
       },
       {
         "arrive": "10:04 +1 / 23:40",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 403.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "17:25 / 20:01",
         "destination": "FCA",
@@ -8263,10 +9640,15 @@
       },
       {
         "arrive": "15:24 / 10:58",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 792.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "more_expensive",
         "cash_strategy_comparison_price": "$289.00",
         "cash_strategy_delta_usd": 503.0,
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "12:00 / 07:15",
         "destination": "MSO",
@@ -8307,6 +9689,18 @@
       },
       {
         "arrive": "13:28 / 16:31",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 32500.0
+          }
+        ],
+        "award_points": 32500.0,
+        "cash_component_usd": 265.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:23 / 13:05",
         "destination": "FCA",
@@ -8347,6 +9741,18 @@
       },
       {
         "arrive": "13:28 / 23:36",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 27500.0,
+        "cash_component_usd": 271.2,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:23 / 16:13",
         "destination": "FCA",
@@ -8387,6 +9793,18 @@
       },
       {
         "arrive": "15:17 / 17:50",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 523.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:20 / 16:17",
         "destination": "MSO",
@@ -8427,8 +9845,13 @@
       },
       {
         "arrive": "13:25 / 13:17 +1",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 585.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 20:01",
         "destination": "MSO",
@@ -8469,6 +9892,18 @@
       },
       {
         "arrive": "13:28 / 16:31",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 32500.0
+          }
+        ],
+        "award_points": 32500.0,
+        "cash_component_usd": 259.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 13:05",
         "destination": "FCA",
@@ -8509,10 +9944,15 @@
       },
       {
         "arrive": "13:25 / 10:58",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 730.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "more_expensive",
         "cash_strategy_comparison_price": "$289.00",
         "cash_strategy_delta_usd": 441.0,
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "07:23 / 07:15",
         "destination": "MSO",
@@ -8553,6 +9993,18 @@
       },
       {
         "arrive": "13:28 / 23:36",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 27500.0,
+        "cash_component_usd": 265.2,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:02 / 16:13",
         "destination": "FCA",
@@ -8593,6 +10045,24 @@
       },
       {
         "arrive": "21:31 / 14:52",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 39.230000000000004,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3588235294117648,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "10:17 / 07:15",
         "destination": "MSO",
@@ -8633,8 +10103,13 @@
       },
       {
         "arrive": "15:21 / 12:48",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 734.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 06:15",
         "destination": "FCA",
@@ -8675,6 +10150,24 @@
       },
       {
         "arrive": "15:17 / 14:52",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 11.2,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:20 / 07:15",
         "destination": "MSO",
@@ -8715,6 +10208,24 @@
       },
       {
         "arrive": "21:31 / 16:31",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 32500.0
+          }
+        ],
+        "award_points": 47500.0,
+        "cash_component_usd": 39.230000000000004,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3736842105263158,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "10:17 / 13:05",
         "destination": "MSO",
@@ -8755,8 +10266,13 @@
       },
       {
         "arrive": "15:21 / 13:17 +1",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 659.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "12:00 / 20:01",
         "destination": "FCA",
@@ -8797,6 +10313,24 @@
       },
       {
         "arrive": "21:31 / 23:36",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 44.83,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3588235294117648,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "10:17 / 16:13",
         "destination": "MSO",
@@ -8837,10 +10371,15 @@
       },
       {
         "arrive": "15:21 / 23:40",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 753.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "more_expensive",
         "cash_strategy_comparison_price": "$663.00",
         "cash_strategy_delta_usd": 90.0,
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "12:00 / 20:01",
         "destination": "FCA",
@@ -8881,6 +10420,24 @@
       },
       {
         "arrive": "15:17 / 16:31",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 32500.0
+          }
+        ],
+        "award_points": 47500.0,
+        "cash_component_usd": 11.2,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:20 / 13:05",
         "destination": "MSO",
@@ -8921,6 +10478,24 @@
       },
       {
         "arrive": "15:17 / 23:36",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 16.799999999999997,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:20 / 16:13",
         "destination": "MSO",
@@ -8961,6 +10536,24 @@
       },
       {
         "arrive": "15:17 / 14:52",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 11.2,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:20 / 07:15",
         "destination": "MSO",
@@ -9001,8 +10594,13 @@
       },
       {
         "arrive": "22:53 / 08:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 645.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "17:10 / 05:30",
         "destination": "FCA",
@@ -9043,8 +10641,13 @@
       },
       {
         "arrive": "13:25 / 08:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 643.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "07:02 / 05:30",
         "destination": "MSO",
@@ -9085,8 +10688,13 @@
       },
       {
         "arrive": "23:56 / 08:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 574.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "13:24 / 05:30",
         "destination": "FCA",
@@ -9127,8 +10735,13 @@
       },
       {
         "arrive": "13:25 / 10:58",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 744.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "07:02 / 07:15",
         "destination": "MSO",
@@ -9169,6 +10782,24 @@
       },
       {
         "arrive": "15:17 / 16:31",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 32500.0
+          }
+        ],
+        "award_points": 47500.0,
+        "cash_component_usd": 11.2,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:20 / 13:05",
         "destination": "MSO",
@@ -9209,6 +10840,24 @@
       },
       {
         "arrive": "15:17 / 23:36",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 16.799999999999997,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:20 / 16:13",
         "destination": "MSO",
@@ -9249,8 +10898,13 @@
       },
       {
         "arrive": "15:54 / 23:40",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 691.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:45 / 20:01",
         "destination": "FCA",
@@ -9291,8 +10945,13 @@
       },
       {
         "arrive": "15:17 / 08:50",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 643.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "08:02 / 05:30",
         "destination": "MSO",
@@ -9333,8 +10992,13 @@
       },
       {
         "arrive": "15:17 / 10:58",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 744.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "08:02 / 07:15",
         "destination": "MSO",
@@ -9375,6 +11039,18 @@
       },
       {
         "arrive": "10:04 +1 / 17:50",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 557.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "21:13 / 16:17",
         "destination": "FCA",
@@ -9415,6 +11091,18 @@
       },
       {
         "arrive": "10:01 +1 / 17:50",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 557.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 16:17",
         "destination": "MSO",
@@ -9455,8 +11143,13 @@
       },
       {
         "arrive": "22:53 / 08:54",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 579.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "11:38 / 05:30",
         "destination": "FCA",
@@ -9497,8 +11190,13 @@
       },
       {
         "arrive": "15:24 / 22:57",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 806.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "12:00 / 16:16",
         "destination": "MSO",
@@ -9539,6 +11237,18 @@
       },
       {
         "arrive": "10:01 +1 / 17:50",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 557.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "19:56 / 16:17",
         "destination": "MSO",
@@ -9579,8 +11289,13 @@
       },
       {
         "arrive": "13:25 / 22:57",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 744.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "07:23 / 16:16",
         "destination": "MSO",
@@ -9621,8 +11336,13 @@
       },
       {
         "arrive": "13:28 / 12:48",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 704.0,
         "cash_flex_recommended": false,
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:23 / 06:15",
         "destination": "FCA",
@@ -9663,6 +11383,24 @@
       },
       {
         "arrive": "10:04 +1 / 14:52",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 44.78,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3588235294117648,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "21:13 / 07:15",
         "destination": "FCA",
@@ -9703,6 +11441,24 @@
       },
       {
         "arrive": "10:01 +1 / 14:52",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 44.78,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3588235294117648,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 07:15",
         "destination": "MSO",
@@ -9743,6 +11499,18 @@
       },
       {
         "arrive": "10:04 +1 / 17:50",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 557.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "18:25 / 16:17",
         "destination": "FCA",
@@ -9783,6 +11551,24 @@
       },
       {
         "arrive": "10:04 +1 / 16:31",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 32500.0
+          }
+        ],
+        "award_points": 47500.0,
+        "cash_component_usd": 44.78,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3736842105263158,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "21:13 / 13:05",
         "destination": "FCA",
@@ -9823,6 +11609,24 @@
       },
       {
         "arrive": "10:04 +1 / 23:36",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 50.379999999999995,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3588235294117648,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "21:13 / 16:13",
         "destination": "FCA",
@@ -9863,6 +11667,24 @@
       },
       {
         "arrive": "10:01 +1 / 16:31",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 32500.0
+          }
+        ],
+        "award_points": 47500.0,
+        "cash_component_usd": 44.78,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3736842105263158,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 13:05",
         "destination": "MSO",
@@ -9903,6 +11725,24 @@
       },
       {
         "arrive": "10:01 +1 / 23:36",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 50.379999999999995,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3588235294117648,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 16:13",
         "destination": "MSO",
@@ -9943,6 +11783,18 @@
       },
       {
         "arrive": "13:27 +1 / 17:50",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 557.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 16:17",
         "destination": "MSO",
@@ -9983,6 +11835,24 @@
       },
       {
         "arrive": "10:01 +1 / 14:52",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 44.78,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3588235294117648,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "19:56 / 07:15",
         "destination": "MSO",
@@ -10023,6 +11893,18 @@
       },
       {
         "arrive": "10:04 +1 / 17:50",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 557.18,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "17:25 / 16:17",
         "destination": "FCA",
@@ -10063,6 +11945,18 @@
       },
       {
         "arrive": "21:31 / 12:48",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 477.63,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "10:17 / 06:15",
         "destination": "MSO",
@@ -10103,6 +11997,24 @@
       },
       {
         "arrive": "10:01 +1 / 16:31",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 32500.0
+          }
+        ],
+        "award_points": 47500.0,
+        "cash_component_usd": 44.78,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3736842105263158,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "19:56 / 13:05",
         "destination": "MSO",
@@ -10143,6 +12055,18 @@
       },
       {
         "arrive": "15:17 / 12:48",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 449.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:20 / 06:15",
         "destination": "MSO",
@@ -10183,6 +12107,24 @@
       },
       {
         "arrive": "10:01 +1 / 23:36",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 50.379999999999995,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3588235294117648,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "19:56 / 16:13",
         "destination": "MSO",
@@ -10223,6 +12165,18 @@
       },
       {
         "arrive": "21:31 / 13:17 +1",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 402.63,
+        "cpp": "1.10 cpp",
+        "cpp_num": 1.1,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "10:17 / 20:01",
         "destination": "MSO",
@@ -10263,6 +12217,24 @@
       },
       {
         "arrive": "10:04 +1 / 14:52",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 44.78,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3588235294117648,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "18:25 / 07:15",
         "destination": "FCA",
@@ -10303,6 +12275,18 @@
       },
       {
         "arrive": "15:17 / 13:17 +1",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 374.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "08:20 / 20:01",
         "destination": "MSO",
@@ -10343,6 +12327,18 @@
       },
       {
         "arrive": "15:17 / 12:48",
+        "award_components": [
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 15000.0
+          }
+        ],
+        "award_points": 15000.0,
+        "cash_component_usd": 449.6,
+        "cpp": "1.50 cpp",
+        "cpp_num": 1.5,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "07:20 / 06:15",
         "destination": "MSO",
@@ -10383,6 +12379,24 @@
       },
       {
         "arrive": "13:27 +1 / 14:52",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 44.78,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3588235294117648,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 07:15",
         "destination": "MSO",
@@ -10423,6 +12437,24 @@
       },
       {
         "arrive": "10:04 +1 / 16:31",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 32500.0
+          }
+        ],
+        "award_points": 47500.0,
+        "cash_component_usd": 44.78,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3736842105263158,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "18:25 / 13:05",
         "destination": "FCA",
@@ -10463,6 +12495,24 @@
       },
       {
         "arrive": "10:04 +1 / 23:36",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 50.379999999999995,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3588235294117648,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "18:25 / 16:13",
         "destination": "FCA",
@@ -10503,6 +12553,24 @@
       },
       {
         "arrive": "10:04 +1 / 14:52",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 44.78,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3588235294117648,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "17:25 / 07:15",
         "destination": "FCA",
@@ -10543,6 +12611,24 @@
       },
       {
         "arrive": "13:27 +1 / 16:31",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 32500.0
+          }
+        ],
+        "award_points": 47500.0,
+        "cash_component_usd": 44.78,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3736842105263158,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 13:05",
         "destination": "MSO",
@@ -10583,6 +12669,24 @@
       },
       {
         "arrive": "13:27 +1 / 23:36",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 50.379999999999995,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3588235294117648,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "21:05 / 16:13",
         "destination": "MSO",
@@ -10623,9 +12727,14 @@
       },
       {
         "arrive": "13:28 +1 / 13:17 +1",
+        "award_components": [],
+        "award_points": 0.0,
+        "cash_component_usd": 702.0,
         "cash_detail_source": "fli",
         "cash_detail_status": "complete",
         "cash_strategy_comparison": "no_exact_match",
+        "cpp": "",
+        "cpp_num": 0.0,
         "dates": "2026-09-04 / 2026-09-07",
         "depart": "14:40 / 20:01",
         "destination": "FCA",
@@ -10693,6 +12802,24 @@
       },
       {
         "arrive": "10:04 +1 / 16:31",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 32500.0
+          }
+        ],
+        "award_points": 47500.0,
+        "cash_component_usd": 44.78,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3736842105263158,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "17:25 / 13:05",
         "destination": "FCA",
@@ -10733,6 +12860,24 @@
       },
       {
         "arrive": "10:04 +1 / 23:36",
+        "award_components": [
+          {
+            "cpp": 1.1,
+            "key": "aeroplan",
+            "label": "Air Canada Aeroplan",
+            "points": 15000.0
+          },
+          {
+            "cpp": 1.5,
+            "key": "alaska",
+            "label": "Alaska Atmos Rewards",
+            "points": 27500.0
+          }
+        ],
+        "award_points": 42500.0,
+        "cash_component_usd": 50.379999999999995,
+        "cpp": "1.10 cpp / 1.50 cpp",
+        "cpp_num": 1.3588235294117648,
         "dates": "2026-09-05 / 2026-09-07",
         "depart": "17:25 / 16:13",
         "destination": "FCA",
@@ -10785,7 +12930,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-04",
+          "fx_source": "cache:2026-06-04",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_fca_2026-09-04_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_fca_2026-09-04_best_flights.json",
@@ -10807,7 +12952,7 @@
         "summary": {
           "best_count": 5,
           "full_count": 7,
-          "fx_source": "live:2026-06-04",
+          "fx_source": "cache:2026-06-04",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_fca_2026-09-05_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_fca_2026-09-05_best_flights.json",
@@ -10829,7 +12974,7 @@
         "summary": {
           "best_count": 40,
           "full_count": 74,
-          "fx_source": "live:2026-06-04",
+          "fx_source": "cache:2026-06-04",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_mso_2026-09-04_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_mso_2026-09-04_best_flights.json",
@@ -10851,7 +12996,7 @@
         "summary": {
           "best_count": 40,
           "full_count": 73,
-          "fx_source": "live:2026-06-04",
+          "fx_source": "cache:2026-06-04",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_mso_2026-09-05_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_mso_2026-09-05_best_flights.json",
@@ -10873,7 +13018,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-04",
+          "fx_source": "cache:2026-06-04",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_fca_2026-09-04_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_fca_2026-09-04_best_flights.json",
@@ -10895,7 +13040,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-04",
+          "fx_source": "cache:2026-06-04",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_fca_2026-09-05_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_fca_2026-09-05_best_flights.json",
@@ -10917,7 +13062,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-04",
+          "fx_source": "cache:2026-06-04",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_mso_2026-09-04_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_mso_2026-09-04_best_flights.json",
@@ -10939,7 +13084,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-04",
+          "fx_source": "cache:2026-06-04",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_mso_2026-09-05_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_mso_2026-09-05_best_flights.json",
@@ -10961,7 +13106,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-04",
+          "fx_source": "cache:2026-06-04",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/fca_sfo_2026-09-07_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/fca_sfo_2026-09-07_best_flights.json",
@@ -10983,7 +13128,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-04",
+          "fx_source": "cache:2026-06-04",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/fca_sjc_2026-09-07_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/fca_sjc_2026-09-07_best_flights.json",
@@ -11005,7 +13150,7 @@
         "summary": {
           "best_count": 40,
           "full_count": 70,
-          "fx_source": "live:2026-06-04",
+          "fx_source": "cache:2026-06-04",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/mso_sfo_2026-09-07_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/mso_sfo_2026-09-07_best_flights.json",
@@ -11027,7 +13172,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-04",
+          "fx_source": "cache:2026-06-04",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/mso_sjc_2026-09-07_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/mso_sjc_2026-09-07_best_flights.json",
