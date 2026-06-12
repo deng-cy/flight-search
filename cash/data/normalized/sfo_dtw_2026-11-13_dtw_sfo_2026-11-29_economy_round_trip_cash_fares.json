@@ -32,7 +32,37 @@
         "duration_display": "12h 31m",
         "duration_minutes": 751,
         "flight_numbers": "F9 2638 / F9 4392",
+        "layovers": [
+          {
+            "airport": "PHX",
+            "change_of_airport": false,
+            "duration_minutes": 387,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "F9",
+            "arrive_time": "00:33",
+            "depart_time": "21:27",
+            "destination": "PHX",
+            "duration_minutes": 126,
+            "flight_number": "2638",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "F9",
+            "arrive_time": "12:58",
+            "depart_time": "07:00",
+            "destination": "DTW",
+            "duration_minutes": 238,
+            "flight_number": "4392",
+            "origin": "PHX"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -45,7 +75,37 @@
         "duration_display": "7h 5m",
         "duration_minutes": 425,
         "flight_numbers": "WN 1880 / WN 2723",
+        "layovers": [
+          {
+            "airport": "STL",
+            "change_of_airport": false,
+            "duration_minutes": 45,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "07:10",
+            "depart_time": "06:10",
+            "destination": "STL",
+            "duration_minutes": 120,
+            "flight_number": "1880",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "10:15",
+            "depart_time": "07:55",
+            "destination": "SFO",
+            "duration_minutes": 260,
+            "flight_number": "2723",
+            "origin": "STL"
+          }
+        ],
         "stops": 1
       }
     },

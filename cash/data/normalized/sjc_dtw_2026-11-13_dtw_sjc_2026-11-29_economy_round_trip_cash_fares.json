@@ -32,7 +32,37 @@
         "duration_display": "6h",
         "duration_minutes": 360,
         "flight_numbers": "WN 759 / WN 759",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 40,
+            "overnight": false
+          }
+        ],
         "origin": "SJC",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "11:30",
+            "depart_time": "10:00",
+            "destination": "LAS",
+            "duration_minutes": 90,
+            "flight_number": "759",
+            "origin": "SJC"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "19:00",
+            "depart_time": "12:10",
+            "destination": "DTW",
+            "duration_minutes": 230,
+            "flight_number": "759",
+            "origin": "LAS"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -45,7 +75,37 @@
         "duration_display": "11h 25m",
         "duration_minutes": 685,
         "flight_numbers": "WN 1929 / WN 2448",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 320,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "16:25",
+            "depart_time": "14:50",
+            "destination": "LAS",
+            "duration_minutes": 275,
+            "flight_number": "1929",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "23:15",
+            "depart_time": "21:45",
+            "destination": "SJC",
+            "duration_minutes": 90,
+            "flight_number": "2448",
+            "origin": "LAS"
+          }
+        ],
         "stops": 1
       }
     },
@@ -119,7 +179,37 @@
         "duration_display": "6h",
         "duration_minutes": 360,
         "flight_numbers": "WN 759 / WN 759",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 40,
+            "overnight": false
+          }
+        ],
         "origin": "SJC",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "11:30",
+            "depart_time": "10:00",
+            "destination": "LAS",
+            "duration_minutes": 90,
+            "flight_number": "759",
+            "origin": "SJC"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "19:00",
+            "depart_time": "12:10",
+            "destination": "DTW",
+            "duration_minutes": 230,
+            "flight_number": "759",
+            "origin": "LAS"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -132,7 +222,37 @@
         "duration_display": "9h 50m",
         "duration_minutes": 590,
         "flight_numbers": "WN 1929 / WN 2447",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 225,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "16:25",
+            "depart_time": "14:50",
+            "destination": "LAS",
+            "duration_minutes": 275,
+            "flight_number": "1929",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "21:40",
+            "depart_time": "20:10",
+            "destination": "SJC",
+            "duration_minutes": 90,
+            "flight_number": "2447",
+            "origin": "LAS"
+          }
+        ],
         "stops": 1
       }
     },
@@ -206,7 +326,37 @@
         "duration_display": "6h",
         "duration_minutes": 360,
         "flight_numbers": "WN 759 / WN 759",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 40,
+            "overnight": false
+          }
+        ],
         "origin": "SJC",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "11:30",
+            "depart_time": "10:00",
+            "destination": "LAS",
+            "duration_minutes": 90,
+            "flight_number": "759",
+            "origin": "SJC"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "19:00",
+            "depart_time": "12:10",
+            "destination": "DTW",
+            "duration_minutes": 230,
+            "flight_number": "759",
+            "origin": "LAS"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -219,7 +369,37 @@
         "duration_display": "8h 55m",
         "duration_minutes": 535,
         "flight_numbers": "WN 1577 / WN 1796",
+        "layovers": [
+          {
+            "airport": "DEN",
+            "change_of_airport": false,
+            "duration_minutes": 175,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "08:05",
+            "depart_time": "06:45",
+            "destination": "DEN",
+            "duration_minutes": 200,
+            "flight_number": "1577",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "12:40",
+            "depart_time": "11:00",
+            "destination": "SJC",
+            "duration_minutes": 160,
+            "flight_number": "1796",
+            "origin": "DEN"
+          }
+        ],
         "stops": 1
       }
     },
@@ -293,7 +473,37 @@
         "duration_display": "6h",
         "duration_minutes": 360,
         "flight_numbers": "WN 759 / WN 759",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 40,
+            "overnight": false
+          }
+        ],
         "origin": "SJC",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "11:30",
+            "depart_time": "10:00",
+            "destination": "LAS",
+            "duration_minutes": 90,
+            "flight_number": "759",
+            "origin": "SJC"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "19:00",
+            "depart_time": "12:10",
+            "destination": "DTW",
+            "duration_minutes": 230,
+            "flight_number": "759",
+            "origin": "LAS"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -306,7 +516,37 @@
         "duration_display": "8h 40m",
         "duration_minutes": 520,
         "flight_numbers": "WN 1929 / WN 879",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 155,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "16:25",
+            "depart_time": "14:50",
+            "destination": "LAS",
+            "duration_minutes": 275,
+            "flight_number": "1929",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "20:30",
+            "depart_time": "19:00",
+            "destination": "SJC",
+            "duration_minutes": 90,
+            "flight_number": "879",
+            "origin": "LAS"
+          }
+        ],
         "stops": 1
       }
     },
@@ -380,7 +620,37 @@
         "duration_display": "6h",
         "duration_minutes": 360,
         "flight_numbers": "WN 759 / WN 759",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 40,
+            "overnight": false
+          }
+        ],
         "origin": "SJC",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "11:30",
+            "depart_time": "10:00",
+            "destination": "LAS",
+            "duration_minutes": 90,
+            "flight_number": "759",
+            "origin": "SJC"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "19:00",
+            "depart_time": "12:10",
+            "destination": "DTW",
+            "duration_minutes": 230,
+            "flight_number": "759",
+            "origin": "LAS"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -393,7 +663,37 @@
         "duration_display": "7h",
         "duration_minutes": 420,
         "flight_numbers": "WN 1929 / WN 207",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 50,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "16:25",
+            "depart_time": "14:50",
+            "destination": "LAS",
+            "duration_minutes": 275,
+            "flight_number": "1929",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "18:50",
+            "depart_time": "17:15",
+            "destination": "SJC",
+            "duration_minutes": 95,
+            "flight_number": "207",
+            "origin": "LAS"
+          }
+        ],
         "stops": 1
       }
     },
@@ -467,7 +767,37 @@
         "duration_display": "6h",
         "duration_minutes": 360,
         "flight_numbers": "WN 759 / WN 759",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 40,
+            "overnight": false
+          }
+        ],
         "origin": "SJC",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "11:30",
+            "depart_time": "10:00",
+            "destination": "LAS",
+            "duration_minutes": 90,
+            "flight_number": "759",
+            "origin": "SJC"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "19:00",
+            "depart_time": "12:10",
+            "destination": "DTW",
+            "duration_minutes": 230,
+            "flight_number": "759",
+            "origin": "LAS"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -480,7 +810,53 @@
         "duration_display": "8h 25m",
         "duration_minutes": 505,
         "flight_numbers": "WN 1877 / WN 2986 / WN 3204",
+        "layovers": [
+          {
+            "airport": "MDW",
+            "change_of_airport": false,
+            "duration_minutes": 45,
+            "overnight": false
+          },
+          {
+            "airport": "SLC",
+            "change_of_airport": false,
+            "duration_minutes": 40,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "08:50",
+            "depart_time": "08:25",
+            "destination": "MDW",
+            "duration_minutes": 85,
+            "flight_number": "1877",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "12:10",
+            "depart_time": "09:35",
+            "destination": "SLC",
+            "duration_minutes": 215,
+            "flight_number": "2986",
+            "origin": "MDW"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "13:50",
+            "depart_time": "12:50",
+            "destination": "SJC",
+            "duration_minutes": 120,
+            "flight_number": "3204",
+            "origin": "SLC"
+          }
+        ],
         "stops": 2
       }
     },
@@ -554,7 +930,37 @@
         "duration_display": "6h",
         "duration_minutes": 360,
         "flight_numbers": "WN 759 / WN 759",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 40,
+            "overnight": false
+          }
+        ],
         "origin": "SJC",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "11:30",
+            "depart_time": "10:00",
+            "destination": "LAS",
+            "duration_minutes": 90,
+            "flight_number": "759",
+            "origin": "SJC"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "19:00",
+            "depart_time": "12:10",
+            "destination": "DTW",
+            "duration_minutes": 230,
+            "flight_number": "759",
+            "origin": "LAS"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -567,7 +973,37 @@
         "duration_display": "6h 55m",
         "duration_minutes": 415,
         "flight_numbers": "WN 1877 / WN 1150",
+        "layovers": [
+          {
+            "airport": "MDW",
+            "change_of_airport": false,
+            "duration_minutes": 45,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "08:50",
+            "depart_time": "08:25",
+            "destination": "MDW",
+            "duration_minutes": 85,
+            "flight_number": "1877",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "12:20",
+            "depart_time": "09:35",
+            "destination": "SJC",
+            "duration_minutes": 285,
+            "flight_number": "1150",
+            "origin": "MDW"
+          }
+        ],
         "stops": 1
       }
     },
@@ -641,7 +1077,37 @@
         "duration_display": "6h",
         "duration_minutes": 360,
         "flight_numbers": "WN 759 / WN 759",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 40,
+            "overnight": false
+          }
+        ],
         "origin": "SJC",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "11:30",
+            "depart_time": "10:00",
+            "destination": "LAS",
+            "duration_minutes": 90,
+            "flight_number": "759",
+            "origin": "SJC"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "19:00",
+            "depart_time": "12:10",
+            "destination": "DTW",
+            "duration_minutes": 230,
+            "flight_number": "759",
+            "origin": "LAS"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -654,7 +1120,37 @@
         "duration_display": "6h 50m",
         "duration_minutes": 410,
         "flight_numbers": "WN 557 / WN 2771",
+        "layovers": [
+          {
+            "airport": "DEN",
+            "change_of_airport": false,
+            "duration_minutes": 60,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "20:20",
+            "depart_time": "19:05",
+            "destination": "DEN",
+            "duration_minutes": 195,
+            "flight_number": "557",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "22:55",
+            "depart_time": "21:20",
+            "destination": "SJC",
+            "duration_minutes": 155,
+            "flight_number": "2771",
+            "origin": "DEN"
+          }
+        ],
         "stops": 1
       }
     },

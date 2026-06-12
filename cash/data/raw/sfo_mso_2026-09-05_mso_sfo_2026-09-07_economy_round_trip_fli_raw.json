@@ -1,6 +1,6 @@
 {
   "evidence": {
-    "result_count": 19,
+    "result_count": 29,
     "top_n": 3,
     "transport": "fli"
   },
@@ -135,271 +135,7 @@
             "stops": 1
           }
         ],
-        "price": "USD 289.00"
-      },
-      {
-        "carriers": "DL",
-        "cash_detail_source": "fli",
-        "is_best": false,
-        "legs": [
-          {
-            "arrival": "23:12",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-05",
-            "departure": "17:16",
-            "destination": "MSO",
-            "direction": "outbound",
-            "duration": "4h 56m",
-            "duration_minutes": 296,
-            "flight_numbers": "DL 1088 / DL 1723",
-            "layovers": [
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 90,
-                "overnight": false
-              }
-            ],
-            "origin": "SFO",
-            "segments": [
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T20:10:00",
-                "arrive_time": "20:10",
-                "depart_datetime": "2026-09-05T17:16:00",
-                "depart_time": "17:16",
-                "destination": "SLC",
-                "duration_minutes": 114,
-                "flight_number": "1088",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SFO"
-              },
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T23:12:00",
-                "arrive_time": "23:12",
-                "depart_datetime": "2026-09-05T21:40:00",
-                "depart_time": "21:40",
-                "destination": "MSO",
-                "duration_minutes": 92,
-                "flight_number": "1723",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SLC"
-              }
-            ],
-            "stops": 1
-          },
-          {
-            "arrival": "10:49",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-07",
-            "departure": "05:30",
-            "destination": "SFO",
-            "direction": "return",
-            "duration": "6h 19m",
-            "duration_minutes": 379,
-            "flight_numbers": "DL 2795 / DL 1087 / DL 1715",
-            "layovers": [
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 44,
-                "overnight": false
-              },
-              {
-                "airport": "LAX",
-                "change_of_airport": false,
-                "duration_minutes": 48,
-                "overnight": false
-              }
-            ],
-            "origin": "MSO",
-            "segments": [
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T07:01:00",
-                "arrive_time": "07:01",
-                "depart_datetime": "2026-09-07T05:30:00",
-                "depart_time": "05:30",
-                "destination": "SLC",
-                "duration_minutes": 91,
-                "flight_number": "2795",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "MSO"
-              },
-              {
-                "aircraft": "Airbus A321neo",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T08:42:00",
-                "arrive_time": "08:42",
-                "depart_datetime": "2026-09-07T07:45:00",
-                "depart_time": "07:45",
-                "destination": "LAX",
-                "duration_minutes": 117,
-                "flight_number": "1087",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SLC"
-              },
-              {
-                "aircraft": "Boeing 737",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T10:49:00",
-                "arrive_time": "10:49",
-                "depart_datetime": "2026-09-07T09:30:00",
-                "depart_time": "09:30",
-                "destination": "SFO",
-                "duration_minutes": 79,
-                "flight_number": "1715",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "LAX"
-              }
-            ],
-            "stops": 2
-          }
-        ],
-        "price": "USD 538.00"
-      },
-      {
-        "carriers": "DL",
-        "cash_detail_source": "fli",
-        "is_best": false,
-        "legs": [
-          {
-            "arrival": "23:12",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-05",
-            "departure": "17:16",
-            "destination": "MSO",
-            "direction": "outbound",
-            "duration": "4h 56m",
-            "duration_minutes": 296,
-            "flight_numbers": "DL 1088 / DL 1723",
-            "layovers": [
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 90,
-                "overnight": false
-              }
-            ],
-            "origin": "SFO",
-            "segments": [
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T20:10:00",
-                "arrive_time": "20:10",
-                "depart_datetime": "2026-09-05T17:16:00",
-                "depart_time": "17:16",
-                "destination": "SLC",
-                "duration_minutes": 114,
-                "flight_number": "1088",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SFO"
-              },
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T23:12:00",
-                "arrive_time": "23:12",
-                "depart_datetime": "2026-09-05T21:40:00",
-                "depart_time": "21:40",
-                "destination": "MSO",
-                "duration_minutes": 92,
-                "flight_number": "1723",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SLC"
-              }
-            ],
-            "stops": 1
-          },
-          {
-            "arrival": "13:31",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-07",
-            "departure": "05:30",
-            "destination": "SFO",
-            "direction": "return",
-            "duration": "9h 1m",
-            "duration_minutes": 541,
-            "flight_numbers": "DL 2795 / DL 1095 / DL 2725",
-            "layovers": [
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 145,
-                "overnight": false
-              },
-              {
-                "airport": "LAX",
-                "change_of_airport": false,
-                "duration_minutes": 100,
-                "overnight": false
-              }
-            ],
-            "origin": "MSO",
-            "segments": [
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T07:01:00",
-                "arrive_time": "07:01",
-                "depart_datetime": "2026-09-07T05:30:00",
-                "depart_time": "05:30",
-                "destination": "SLC",
-                "duration_minutes": 91,
-                "flight_number": "2795",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "MSO"
-              },
-              {
-                "aircraft": "Airbus A321neo",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T10:25:00",
-                "arrive_time": "10:25",
-                "depart_datetime": "2026-09-07T09:26:00",
-                "depart_time": "09:26",
-                "destination": "LAX",
-                "duration_minutes": 119,
-                "flight_number": "1095",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SLC"
-              },
-              {
-                "aircraft": "Boeing 737",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T13:31:00",
-                "arrive_time": "13:31",
-                "depart_datetime": "2026-09-07T12:05:00",
-                "depart_time": "12:05",
-                "destination": "SFO",
-                "duration_minutes": 86,
-                "flight_number": "2725",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "LAX"
-              }
-            ],
-            "stops": 2
-          }
-        ],
-        "price": "USD 538.00"
+        "price": "USD 454.00"
       },
       {
         "carriers": "DL",
@@ -531,7 +267,7 @@
             "stops": 2
           }
         ],
-        "price": "USD 538.00"
+        "price": "USD 559.00"
       },
       {
         "carriers": "DL",
@@ -643,7 +379,7 @@
             "stops": 1
           }
         ],
-        "price": "USD 623.00"
+        "price": "USD 754.00"
       },
       {
         "carriers": "DL",
@@ -755,7 +491,7 @@
             "stops": 1
           }
         ],
-        "price": "USD 623.00"
+        "price": "USD 754.00"
       },
       {
         "carriers": "DL",
@@ -815,21 +551,21 @@
             "stops": 1
           },
           {
-            "arrival": "23:52",
+            "arrival": "23:57",
             "arrival_time_ahead": "",
             "carrier": "DL",
             "date": "2026-09-07",
             "departure": "18:36",
             "destination": "SFO",
             "direction": "return",
-            "duration": "6h 16m",
-            "duration_minutes": 376,
+            "duration": "6h 21m",
+            "duration_minutes": 381,
             "flight_numbers": "DL 3808 / DL 1091",
             "layovers": [
               {
                 "airport": "SLC",
                 "change_of_airport": false,
-                "duration_minutes": 152,
+                "duration_minutes": 157,
                 "overnight": false
               }
             ],
@@ -852,10 +588,10 @@
               {
                 "aircraft": "Airbus A321",
                 "airline": "DL",
-                "arrive_datetime": "2026-09-07T23:52:00",
-                "arrive_time": "23:52",
-                "depart_datetime": "2026-09-07T22:50:00",
-                "depart_time": "22:50",
+                "arrive_datetime": "2026-09-07T23:57:00",
+                "arrive_time": "23:57",
+                "depart_datetime": "2026-09-07T22:55:00",
+                "depart_time": "22:55",
                 "destination": "SFO",
                 "duration_minutes": 122,
                 "flight_number": "1091",
@@ -867,1258 +603,2226 @@
             "stops": 1
           }
         ],
-        "price": "USD 623.00"
+        "price": "USD 754.00"
       },
       {
-        "carriers": "DL",
+        "carriers": "AS",
         "cash_detail_source": "fli",
         "is_best": false,
         "legs": [
           {
-            "arrival": "23:12",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
             "date": "2026-09-05",
-            "departure": "17:16",
+            "departure": "15:03",
             "destination": "MSO",
             "direction": "outbound",
-            "duration": "4h 56m",
-            "duration_minutes": 296,
-            "flight_numbers": "DL 1088 / DL 1723",
+            "duration": "21h 22m",
+            "duration_minutes": 1282,
+            "flight_numbers": "AS 1302 / AS 2146",
             "layovers": [
               {
-                "airport": "SLC",
+                "airport": "PDX",
                 "change_of_airport": false,
-                "duration_minutes": 90,
-                "overnight": false
+                "duration_minutes": 1078,
+                "overnight": true
               }
             ],
             "origin": "SFO",
             "segments": [
               {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T20:10:00",
-                "arrive_time": "20:10",
-                "depart_datetime": "2026-09-05T17:16:00",
-                "depart_time": "17:16",
-                "destination": "SLC",
-                "duration_minutes": 114,
-                "flight_number": "1088",
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:50:00",
+                "arrive_time": "16:50",
+                "depart_datetime": "2026-09-05T15:03:00",
+                "depart_time": "15:03",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "1302",
                 "operating_airline": "",
                 "operating_flight_number": "",
                 "origin": "SFO"
               },
               {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T23:12:00",
-                "arrive_time": "23:12",
-                "depart_datetime": "2026-09-05T21:40:00",
-                "depart_time": "21:40",
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
                 "destination": "MSO",
-                "duration_minutes": 92,
-                "flight_number": "1723",
+                "duration_minutes": 97,
+                "flight_number": "2146",
                 "operating_airline": "",
                 "operating_flight_number": "",
-                "origin": "SLC"
+                "origin": "PDX"
               }
             ],
             "stops": 1
           },
           {
-            "arrival": "12:57",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
+            "arrival": "09:37",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
             "date": "2026-09-07",
-            "departure": "05:30",
+            "departure": "16:16",
             "destination": "SFO",
             "direction": "return",
-            "duration": "8h 27m",
-            "duration_minutes": 507,
-            "flight_numbers": "DL 2795 / DL 2874 / DL 1412",
+            "duration": "18h 21m",
+            "duration_minutes": 1101,
+            "flight_numbers": "AS 660 / AS 725",
             "layovers": [
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 44,
-                "overnight": false
-              },
               {
                 "airport": "SEA",
                 "change_of_airport": false,
-                "duration_minutes": 98,
-                "overnight": false
+                "duration_minutes": 858,
+                "overnight": true
               }
             ],
             "origin": "MSO",
             "segments": [
               {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T07:01:00",
-                "arrive_time": "07:01",
-                "depart_datetime": "2026-09-07T05:30:00",
-                "depart_time": "05:30",
-                "destination": "SLC",
-                "duration_minutes": 91,
-                "flight_number": "2795",
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T17:00:00",
+                "arrive_time": "17:00",
+                "depart_datetime": "2026-09-07T16:16:00",
+                "depart_time": "16:16",
+                "destination": "SEA",
+                "duration_minutes": 104,
+                "flight_number": "660",
                 "operating_airline": "",
                 "operating_flight_number": "",
                 "origin": "MSO"
               },
               {
-                "aircraft": "Boeing 737",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T08:57:00",
-                "arrive_time": "08:57",
-                "depart_datetime": "2026-09-07T07:45:00",
-                "depart_time": "07:45",
-                "destination": "SEA",
-                "duration_minutes": 132,
-                "flight_number": "2874",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SLC"
-              },
-              {
-                "aircraft": "Airbus A220-300 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T12:57:00",
-                "arrive_time": "12:57",
-                "depart_datetime": "2026-09-07T10:35:00",
-                "depart_time": "10:35",
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-08T09:37:00",
+                "arrive_time": "09:37",
+                "depart_datetime": "2026-09-08T07:18:00",
+                "depart_time": "07:18",
                 "destination": "SFO",
-                "duration_minutes": 142,
-                "flight_number": "1412",
+                "duration_minutes": 139,
+                "flight_number": "725",
                 "operating_airline": "",
                 "operating_flight_number": "",
                 "origin": "SEA"
               }
             ],
-            "stops": 2
+            "stops": 1
           }
         ],
-        "price": "USD 628.00"
+        "price": "USD 482.00"
       },
       {
-        "carriers": "DL",
+        "carriers": "AS",
         "cash_detail_source": "fli",
         "is_best": false,
         "legs": [
           {
-            "arrival": "17:46",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
             "date": "2026-09-05",
-            "departure": "09:41",
+            "departure": "15:03",
             "destination": "MSO",
             "direction": "outbound",
-            "duration": "7h 5m",
-            "duration_minutes": 425,
-            "flight_numbers": "DL 920 / DL 3808",
+            "duration": "21h 22m",
+            "duration_minutes": 1282,
+            "flight_numbers": "AS 1302 / AS 2146",
             "layovers": [
               {
-                "airport": "SLC",
+                "airport": "PDX",
                 "change_of_airport": false,
-                "duration_minutes": 214,
-                "overnight": false
+                "duration_minutes": 1078,
+                "overnight": true
               }
             ],
             "origin": "SFO",
             "segments": [
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T12:31:00",
-                "arrive_time": "12:31",
-                "depart_datetime": "2026-09-05T09:41:00",
-                "depart_time": "09:41",
-                "destination": "SLC",
-                "duration_minutes": 110,
-                "flight_number": "920",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SFO"
-              },
-              {
-                "aircraft": "Embraer 175",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T17:46:00",
-                "arrive_time": "17:46",
-                "depart_datetime": "2026-09-05T16:05:00",
-                "depart_time": "16:05",
-                "destination": "MSO",
-                "duration_minutes": 101,
-                "flight_number": "3808",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SLC"
-              }
-            ],
-            "stops": 1
-          },
-          {
-            "arrival": "08:50",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-07",
-            "departure": "05:30",
-            "destination": "SFO",
-            "direction": "return",
-            "duration": "4h 20m",
-            "duration_minutes": 260,
-            "flight_numbers": "DL 2795 / DL 920",
-            "layovers": [
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 47,
-                "overnight": false
-              }
-            ],
-            "origin": "MSO",
-            "segments": [
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T07:01:00",
-                "arrive_time": "07:01",
-                "depart_datetime": "2026-09-07T05:30:00",
-                "depart_time": "05:30",
-                "destination": "SLC",
-                "duration_minutes": 91,
-                "flight_number": "2795",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "MSO"
-              },
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T08:50:00",
-                "arrive_time": "08:50",
-                "depart_datetime": "2026-09-07T07:48:00",
-                "depart_time": "07:48",
-                "destination": "SFO",
-                "duration_minutes": 122,
-                "flight_number": "920",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SLC"
-              }
-            ],
-            "stops": 1
-          }
-        ],
-        "price": "USD 314.00"
-      },
-      {
-        "carriers": "DL",
-        "cash_detail_source": "fli",
-        "is_best": false,
-        "legs": [
-          {
-            "arrival": "17:46",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-05",
-            "departure": "09:41",
-            "destination": "MSO",
-            "direction": "outbound",
-            "duration": "7h 5m",
-            "duration_minutes": 425,
-            "flight_numbers": "DL 920 / DL 3808",
-            "layovers": [
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 214,
-                "overnight": false
-              }
-            ],
-            "origin": "SFO",
-            "segments": [
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T12:31:00",
-                "arrive_time": "12:31",
-                "depart_datetime": "2026-09-05T09:41:00",
-                "depart_time": "09:41",
-                "destination": "SLC",
-                "duration_minutes": 110,
-                "flight_number": "920",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SFO"
-              },
-              {
-                "aircraft": "Embraer 175",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T17:46:00",
-                "arrive_time": "17:46",
-                "depart_datetime": "2026-09-05T16:05:00",
-                "depart_time": "16:05",
-                "destination": "MSO",
-                "duration_minutes": 101,
-                "flight_number": "3808",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SLC"
-              }
-            ],
-            "stops": 1
-          },
-          {
-            "arrival": "10:49",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-07",
-            "departure": "05:30",
-            "destination": "SFO",
-            "direction": "return",
-            "duration": "6h 19m",
-            "duration_minutes": 379,
-            "flight_numbers": "DL 2795 / DL 1087 / DL 1715",
-            "layovers": [
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 44,
-                "overnight": false
-              },
-              {
-                "airport": "LAX",
-                "change_of_airport": false,
-                "duration_minutes": 48,
-                "overnight": false
-              }
-            ],
-            "origin": "MSO",
-            "segments": [
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T07:01:00",
-                "arrive_time": "07:01",
-                "depart_datetime": "2026-09-07T05:30:00",
-                "depart_time": "05:30",
-                "destination": "SLC",
-                "duration_minutes": 91,
-                "flight_number": "2795",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "MSO"
-              },
-              {
-                "aircraft": "Airbus A321neo",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T08:42:00",
-                "arrive_time": "08:42",
-                "depart_datetime": "2026-09-07T07:45:00",
-                "depart_time": "07:45",
-                "destination": "LAX",
-                "duration_minutes": 117,
-                "flight_number": "1087",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SLC"
-              },
               {
                 "aircraft": "Boeing 737",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T10:49:00",
-                "arrive_time": "10:49",
-                "depart_datetime": "2026-09-07T09:30:00",
-                "depart_time": "09:30",
-                "destination": "SFO",
-                "duration_minutes": 79,
-                "flight_number": "1715",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "LAX"
-              }
-            ],
-            "stops": 2
-          }
-        ],
-        "price": "USD 563.00"
-      },
-      {
-        "carriers": "DL",
-        "cash_detail_source": "fli",
-        "is_best": false,
-        "legs": [
-          {
-            "arrival": "17:46",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-05",
-            "departure": "09:41",
-            "destination": "MSO",
-            "direction": "outbound",
-            "duration": "7h 5m",
-            "duration_minutes": 425,
-            "flight_numbers": "DL 920 / DL 3808",
-            "layovers": [
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 214,
-                "overnight": false
-              }
-            ],
-            "origin": "SFO",
-            "segments": [
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T12:31:00",
-                "arrive_time": "12:31",
-                "depart_datetime": "2026-09-05T09:41:00",
-                "depart_time": "09:41",
-                "destination": "SLC",
-                "duration_minutes": 110,
-                "flight_number": "920",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:50:00",
+                "arrive_time": "16:50",
+                "depart_datetime": "2026-09-05T15:03:00",
+                "depart_time": "15:03",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "1302",
                 "operating_airline": "",
                 "operating_flight_number": "",
                 "origin": "SFO"
               },
               {
                 "aircraft": "Embraer 175",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T17:46:00",
-                "arrive_time": "17:46",
-                "depart_datetime": "2026-09-05T16:05:00",
-                "depart_time": "16:05",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
                 "destination": "MSO",
-                "duration_minutes": 101,
-                "flight_number": "3808",
+                "duration_minutes": 97,
+                "flight_number": "2146",
                 "operating_airline": "",
                 "operating_flight_number": "",
-                "origin": "SLC"
+                "origin": "PDX"
               }
             ],
             "stops": 1
           },
           {
-            "arrival": "13:31",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
+            "arrival": "10:59",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
             "date": "2026-09-07",
-            "departure": "05:30",
+            "departure": "16:16",
             "destination": "SFO",
             "direction": "return",
-            "duration": "9h 1m",
-            "duration_minutes": 541,
-            "flight_numbers": "DL 2795 / DL 1095 / DL 2725",
-            "layovers": [
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 145,
-                "overnight": false
-              },
-              {
-                "airport": "LAX",
-                "change_of_airport": false,
-                "duration_minutes": 100,
-                "overnight": false
-              }
-            ],
-            "origin": "MSO",
-            "segments": [
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T07:01:00",
-                "arrive_time": "07:01",
-                "depart_datetime": "2026-09-07T05:30:00",
-                "depart_time": "05:30",
-                "destination": "SLC",
-                "duration_minutes": 91,
-                "flight_number": "2795",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "MSO"
-              },
-              {
-                "aircraft": "Airbus A321neo",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T10:25:00",
-                "arrive_time": "10:25",
-                "depart_datetime": "2026-09-07T09:26:00",
-                "depart_time": "09:26",
-                "destination": "LAX",
-                "duration_minutes": 119,
-                "flight_number": "1095",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SLC"
-              },
-              {
-                "aircraft": "Boeing 737",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T13:31:00",
-                "arrive_time": "13:31",
-                "depart_datetime": "2026-09-07T12:05:00",
-                "depart_time": "12:05",
-                "destination": "SFO",
-                "duration_minutes": 86,
-                "flight_number": "2725",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "LAX"
-              }
-            ],
-            "stops": 2
-          }
-        ],
-        "price": "USD 563.00"
-      },
-      {
-        "carriers": "DL",
-        "cash_detail_source": "fli",
-        "is_best": false,
-        "legs": [
-          {
-            "arrival": "17:46",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-05",
-            "departure": "09:41",
-            "destination": "MSO",
-            "direction": "outbound",
-            "duration": "7h 5m",
-            "duration_minutes": 425,
-            "flight_numbers": "DL 920 / DL 3808",
-            "layovers": [
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 214,
-                "overnight": false
-              }
-            ],
-            "origin": "SFO",
-            "segments": [
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T12:31:00",
-                "arrive_time": "12:31",
-                "depart_datetime": "2026-09-05T09:41:00",
-                "depart_time": "09:41",
-                "destination": "SLC",
-                "duration_minutes": 110,
-                "flight_number": "920",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SFO"
-              },
-              {
-                "aircraft": "Embraer 175",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T17:46:00",
-                "arrive_time": "17:46",
-                "depart_datetime": "2026-09-05T16:05:00",
-                "depart_time": "16:05",
-                "destination": "MSO",
-                "duration_minutes": 101,
-                "flight_number": "3808",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SLC"
-              }
-            ],
-            "stops": 1
-          },
-          {
-            "arrival": "13:31",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-07",
-            "departure": "05:30",
-            "destination": "SFO",
-            "direction": "return",
-            "duration": "9h 1m",
-            "duration_minutes": 541,
-            "flight_numbers": "DL 2795 / DL 1087 / DL 2725",
-            "layovers": [
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 44,
-                "overnight": false
-              },
-              {
-                "airport": "LAX",
-                "change_of_airport": false,
-                "duration_minutes": 203,
-                "overnight": false
-              }
-            ],
-            "origin": "MSO",
-            "segments": [
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T07:01:00",
-                "arrive_time": "07:01",
-                "depart_datetime": "2026-09-07T05:30:00",
-                "depart_time": "05:30",
-                "destination": "SLC",
-                "duration_minutes": 91,
-                "flight_number": "2795",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "MSO"
-              },
-              {
-                "aircraft": "Airbus A321neo",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T08:42:00",
-                "arrive_time": "08:42",
-                "depart_datetime": "2026-09-07T07:45:00",
-                "depart_time": "07:45",
-                "destination": "LAX",
-                "duration_minutes": 117,
-                "flight_number": "1087",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SLC"
-              },
-              {
-                "aircraft": "Boeing 737",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T13:31:00",
-                "arrive_time": "13:31",
-                "depart_datetime": "2026-09-07T12:05:00",
-                "depart_time": "12:05",
-                "destination": "SFO",
-                "duration_minutes": 86,
-                "flight_number": "2725",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "LAX"
-              }
-            ],
-            "stops": 2
-          }
-        ],
-        "price": "USD 563.00"
-      },
-      {
-        "carriers": "DL",
-        "cash_detail_source": "fli",
-        "is_best": false,
-        "legs": [
-          {
-            "arrival": "17:46",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-05",
-            "departure": "09:41",
-            "destination": "MSO",
-            "direction": "outbound",
-            "duration": "7h 5m",
-            "duration_minutes": 425,
-            "flight_numbers": "DL 920 / DL 3808",
-            "layovers": [
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 214,
-                "overnight": false
-              }
-            ],
-            "origin": "SFO",
-            "segments": [
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T12:31:00",
-                "arrive_time": "12:31",
-                "depart_datetime": "2026-09-05T09:41:00",
-                "depart_time": "09:41",
-                "destination": "SLC",
-                "duration_minutes": 110,
-                "flight_number": "920",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SFO"
-              },
-              {
-                "aircraft": "Embraer 175",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T17:46:00",
-                "arrive_time": "17:46",
-                "depart_datetime": "2026-09-05T16:05:00",
-                "depart_time": "16:05",
-                "destination": "MSO",
-                "duration_minutes": 101,
-                "flight_number": "3808",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SLC"
-              }
-            ],
-            "stops": 1
-          },
-          {
-            "arrival": "13:09",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-07",
-            "departure": "06:00",
-            "destination": "SFO",
-            "direction": "return",
-            "duration": "8h 9m",
-            "duration_minutes": 489,
-            "flight_numbers": "DL 2907 / DL 2074",
-            "layovers": [
-              {
-                "airport": "MSP",
-                "change_of_airport": false,
-                "duration_minutes": 90,
-                "overnight": false
-              }
-            ],
-            "origin": "MSO",
-            "segments": [
-              {
-                "aircraft": "Airbus A320",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T09:30:00",
-                "arrive_time": "09:30",
-                "depart_datetime": "2026-09-07T06:00:00",
-                "depart_time": "06:00",
-                "destination": "MSP",
-                "duration_minutes": 150,
-                "flight_number": "2907",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "MSO"
-              },
-              {
-                "aircraft": "Boeing 737",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T13:09:00",
-                "arrive_time": "13:09",
-                "depart_datetime": "2026-09-07T11:00:00",
-                "depart_time": "11:00",
-                "destination": "SFO",
-                "duration_minutes": 249,
-                "flight_number": "2074",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "MSP"
-              }
-            ],
-            "stops": 1
-          }
-        ],
-        "price": "USD 648.00"
-      },
-      {
-        "carriers": "DL",
-        "cash_detail_source": "fli",
-        "is_best": false,
-        "legs": [
-          {
-            "arrival": "17:46",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-05",
-            "departure": "09:41",
-            "destination": "MSO",
-            "direction": "outbound",
-            "duration": "7h 5m",
-            "duration_minutes": 425,
-            "flight_numbers": "DL 920 / DL 3808",
-            "layovers": [
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 214,
-                "overnight": false
-              }
-            ],
-            "origin": "SFO",
-            "segments": [
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T12:31:00",
-                "arrive_time": "12:31",
-                "depart_datetime": "2026-09-05T09:41:00",
-                "depart_time": "09:41",
-                "destination": "SLC",
-                "duration_minutes": 110,
-                "flight_number": "920",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SFO"
-              },
-              {
-                "aircraft": "Embraer 175",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T17:46:00",
-                "arrive_time": "17:46",
-                "depart_datetime": "2026-09-05T16:05:00",
-                "depart_time": "16:05",
-                "destination": "MSO",
-                "duration_minutes": 101,
-                "flight_number": "3808",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SLC"
-              }
-            ],
-            "stops": 1
-          },
-          {
-            "arrival": "21:59",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-07",
-            "departure": "18:36",
-            "destination": "SFO",
-            "direction": "return",
-            "duration": "4h 23m",
-            "duration_minutes": 263,
-            "flight_numbers": "DL 3808 / DL 2762",
-            "layovers": [
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 41,
-                "overnight": false
-              }
-            ],
-            "origin": "MSO",
-            "segments": [
-              {
-                "aircraft": "Embraer 175",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T20:18:00",
-                "arrive_time": "20:18",
-                "depart_datetime": "2026-09-07T18:36:00",
-                "depart_time": "18:36",
-                "destination": "SLC",
-                "duration_minutes": 102,
-                "flight_number": "3808",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "MSO"
-              },
-              {
-                "aircraft": "Boeing 737",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T21:59:00",
-                "arrive_time": "21:59",
-                "depart_datetime": "2026-09-07T20:59:00",
-                "depart_time": "20:59",
-                "destination": "SFO",
-                "duration_minutes": 120,
-                "flight_number": "2762",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SLC"
-              }
-            ],
-            "stops": 1
-          }
-        ],
-        "price": "USD 648.00"
-      },
-      {
-        "carriers": "DL",
-        "cash_detail_source": "fli",
-        "is_best": false,
-        "legs": [
-          {
-            "arrival": "17:46",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-05",
-            "departure": "09:41",
-            "destination": "MSO",
-            "direction": "outbound",
-            "duration": "7h 5m",
-            "duration_minutes": 425,
-            "flight_numbers": "DL 920 / DL 3808",
-            "layovers": [
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 214,
-                "overnight": false
-              }
-            ],
-            "origin": "SFO",
-            "segments": [
-              {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T12:31:00",
-                "arrive_time": "12:31",
-                "depart_datetime": "2026-09-05T09:41:00",
-                "depart_time": "09:41",
-                "destination": "SLC",
-                "duration_minutes": 110,
-                "flight_number": "920",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SFO"
-              },
-              {
-                "aircraft": "Embraer 175",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T17:46:00",
-                "arrive_time": "17:46",
-                "depart_datetime": "2026-09-05T16:05:00",
-                "depart_time": "16:05",
-                "destination": "MSO",
-                "duration_minutes": 101,
-                "flight_number": "3808",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SLC"
-              }
-            ],
-            "stops": 1
-          },
-          {
-            "arrival": "23:52",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-07",
-            "departure": "18:36",
-            "destination": "SFO",
-            "direction": "return",
-            "duration": "6h 16m",
-            "duration_minutes": 376,
-            "flight_numbers": "DL 3808 / DL 1091",
-            "layovers": [
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 152,
-                "overnight": false
-              }
-            ],
-            "origin": "MSO",
-            "segments": [
-              {
-                "aircraft": "Embraer 175",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T20:18:00",
-                "arrive_time": "20:18",
-                "depart_datetime": "2026-09-07T18:36:00",
-                "depart_time": "18:36",
-                "destination": "SLC",
-                "duration_minutes": 102,
-                "flight_number": "3808",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "MSO"
-              },
-              {
-                "aircraft": "Airbus A321",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T23:52:00",
-                "arrive_time": "23:52",
-                "depart_datetime": "2026-09-07T22:50:00",
-                "depart_time": "22:50",
-                "destination": "SFO",
-                "duration_minutes": 122,
-                "flight_number": "1091",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SLC"
-              }
-            ],
-            "stops": 1
-          }
-        ],
-        "price": "USD 648.00"
-      },
-      {
-        "carriers": "DL",
-        "cash_detail_source": "fli",
-        "is_best": false,
-        "legs": [
-          {
-            "arrival": "17:46",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-05",
-            "departure": "06:00",
-            "destination": "MSO",
-            "direction": "outbound",
-            "duration": "10h 46m",
-            "duration_minutes": 646,
-            "flight_numbers": "DL 2721 / DL 1016 / DL 3808",
+            "duration": "19h 43m",
+            "duration_minutes": 1183,
+            "flight_numbers": "AS 660 / AS 528",
             "layovers": [
               {
                 "airport": "SEA",
                 "change_of_airport": false,
-                "duration_minutes": 84,
-                "overnight": false
+                "duration_minutes": 941,
+                "overnight": true
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T17:00:00",
+                "arrive_time": "17:00",
+                "depart_datetime": "2026-09-07T16:16:00",
+                "depart_time": "16:16",
+                "destination": "SEA",
+                "duration_minutes": 104,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
               },
               {
-                "airport": "SLC",
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-08T10:59:00",
+                "arrive_time": "10:59",
+                "depart_datetime": "2026-09-08T08:41:00",
+                "depart_time": "08:41",
+                "destination": "SFO",
+                "duration_minutes": 138,
+                "flight_number": "528",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 482.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "15:03",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "21h 22m",
+            "duration_minutes": 1282,
+            "flight_numbers": "AS 1302 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
                 "change_of_airport": false,
-                "duration_minutes": 204,
-                "overnight": false
+                "duration_minutes": 1078,
+                "overnight": true
               }
             ],
             "origin": "SFO",
             "segments": [
               {
-                "aircraft": "Airbus A220-300 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T08:11:00",
-                "arrive_time": "08:11",
-                "depart_datetime": "2026-09-05T06:00:00",
-                "depart_time": "06:00",
-                "destination": "SEA",
-                "duration_minutes": 131,
-                "flight_number": "2721",
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:50:00",
+                "arrive_time": "16:50",
+                "depart_datetime": "2026-09-05T15:03:00",
+                "depart_time": "15:03",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "1302",
                 "operating_airline": "",
                 "operating_flight_number": "",
                 "origin": "SFO"
               },
               {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "10:58",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "4h 43m",
+            "duration_minutes": 283,
+            "flight_numbers": "AS 722 / AS 528",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 42,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
                 "aircraft": "Boeing 737",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T12:41:00",
-                "arrive_time": "12:41",
-                "depart_datetime": "2026-09-05T09:35:00",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T10:58:00",
+                "arrive_time": "10:58",
+                "depart_datetime": "2026-09-07T08:40:00",
+                "depart_time": "08:40",
+                "destination": "SFO",
+                "duration_minutes": 138,
+                "flight_number": "528",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 580.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "15:03",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "21h 22m",
+            "duration_minutes": 1282,
+            "flight_numbers": "AS 1302 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 1078,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:50:00",
+                "arrive_time": "16:50",
+                "depart_datetime": "2026-09-05T15:03:00",
+                "depart_time": "15:03",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "1302",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:40",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "16:16",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "7h 24m",
+            "duration_minutes": 444,
+            "flight_numbers": "AS 660 / AS 590",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 205,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T17:00:00",
+                "arrive_time": "17:00",
+                "depart_datetime": "2026-09-07T16:16:00",
+                "depart_time": "16:16",
+                "destination": "SEA",
+                "duration_minutes": 104,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T22:40:00",
+                "arrive_time": "22:40",
+                "depart_datetime": "2026-09-07T20:25:00",
+                "depart_time": "20:25",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "590",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 580.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "15:03",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "21h 22m",
+            "duration_minutes": 1282,
+            "flight_numbers": "AS 1302 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 1078,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:50:00",
+                "arrive_time": "16:50",
+                "depart_datetime": "2026-09-05T15:03:00",
+                "depart_time": "15:03",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "1302",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:40",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "16h 25m",
+            "duration_minutes": 985,
+            "flight_numbers": "AS 722 / AS 590",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 747,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T22:40:00",
+                "arrive_time": "22:40",
+                "depart_datetime": "2026-09-07T20:25:00",
+                "depart_time": "20:25",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "590",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 583.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "15:03",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "21h 22m",
+            "duration_minutes": 1282,
+            "flight_numbers": "AS 1302 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 1078,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:50:00",
+                "arrive_time": "16:50",
+                "depart_datetime": "2026-09-05T15:03:00",
+                "depart_time": "15:03",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "1302",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "23:40",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "17h 25m",
+            "duration_minutes": 1045,
+            "flight_numbers": "AS 722 / AS 411",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 807,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T23:40:00",
+                "arrive_time": "23:40",
+                "depart_datetime": "2026-09-07T21:25:00",
+                "depart_time": "21:25",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "411",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 583.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "15:03",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "21h 22m",
+            "duration_minutes": 1282,
+            "flight_numbers": "AS 1302 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 1078,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:50:00",
+                "arrive_time": "16:50",
+                "depart_datetime": "2026-09-05T15:03:00",
+                "depart_time": "15:03",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "1302",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "16:17",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "10h 2m",
+            "duration_minutes": 602,
+            "flight_numbers": "AS 722 / AS 1306 / AS 91",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 97,
+                "overnight": false
+              },
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 149,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T12:27:00",
+                "arrive_time": "12:27",
+                "depart_datetime": "2026-09-07T09:35:00",
                 "depart_time": "09:35",
-                "destination": "SLC",
-                "duration_minutes": 126,
-                "flight_number": "1016",
+                "destination": "LAX",
+                "duration_minutes": 172,
+                "flight_number": "1306",
                 "operating_airline": "",
                 "operating_flight_number": "",
                 "origin": "SEA"
               },
               {
-                "aircraft": "Embraer 175",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T17:46:00",
-                "arrive_time": "17:46",
-                "depart_datetime": "2026-09-05T16:05:00",
-                "depart_time": "16:05",
-                "destination": "MSO",
-                "duration_minutes": 101,
-                "flight_number": "3808",
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T16:17:00",
+                "arrive_time": "16:17",
+                "depart_datetime": "2026-09-07T14:56:00",
+                "depart_time": "14:56",
+                "destination": "SFO",
+                "duration_minutes": 81,
+                "flight_number": "91",
                 "operating_airline": "",
                 "operating_flight_number": "",
-                "origin": "SLC"
+                "origin": "LAX"
               }
             ],
             "stops": 2
-          },
+          }
+        ],
+        "price": "USD 609.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
           {
-            "arrival": "08:50",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
-            "date": "2026-09-07",
-            "departure": "05:30",
-            "destination": "SFO",
-            "direction": "return",
-            "duration": "4h 20m",
-            "duration_minutes": 260,
-            "flight_numbers": "DL 2795 / DL 920",
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "15:03",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "21h 22m",
+            "duration_minutes": 1282,
+            "flight_numbers": "AS 1302 / AS 2146",
             "layovers": [
               {
-                "airport": "SLC",
+                "airport": "PDX",
                 "change_of_airport": false,
-                "duration_minutes": 47,
+                "duration_minutes": 1078,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:50:00",
+                "arrive_time": "16:50",
+                "depart_datetime": "2026-09-05T15:03:00",
+                "depart_time": "15:03",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "1302",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "14:45",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "8h 30m",
+            "duration_minutes": 510,
+            "flight_numbers": "AS 722 / AS 650 / AS 3211",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 50,
+                "overnight": false
+              },
+              {
+                "airport": "SAN",
+                "change_of_airport": false,
+                "duration_minutes": 75,
                 "overnight": false
               }
             ],
             "origin": "MSO",
             "segments": [
               {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T07:01:00",
-                "arrive_time": "07:01",
-                "depart_datetime": "2026-09-07T05:30:00",
-                "depart_time": "05:30",
-                "destination": "SLC",
-                "duration_minutes": 91,
-                "flight_number": "2795",
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
                 "operating_airline": "",
                 "operating_flight_number": "",
                 "origin": "MSO"
               },
               {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T08:50:00",
-                "arrive_time": "08:50",
-                "depart_datetime": "2026-09-07T07:48:00",
-                "depart_time": "07:48",
-                "destination": "SFO",
-                "duration_minutes": 122,
-                "flight_number": "920",
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T11:45:00",
+                "arrive_time": "11:45",
+                "depart_datetime": "2026-09-07T08:48:00",
+                "depart_time": "08:48",
+                "destination": "SAN",
+                "duration_minutes": 177,
+                "flight_number": "650",
                 "operating_airline": "",
                 "operating_flight_number": "",
-                "origin": "SLC"
+                "origin": "SEA"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:45:00",
+                "arrive_time": "14:45",
+                "depart_datetime": "2026-09-07T13:00:00",
+                "depart_time": "13:00",
+                "destination": "SFO",
+                "duration_minutes": 105,
+                "flight_number": "3211",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SAN"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 622.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "15:03",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "21h 22m",
+            "duration_minutes": 1282,
+            "flight_numbers": "AS 1302 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 1078,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:50:00",
+                "arrive_time": "16:50",
+                "depart_datetime": "2026-09-05T15:03:00",
+                "depart_time": "15:03",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "1302",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "17:22",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "11h 7m",
+            "duration_minutes": 667,
+            "flight_numbers": "AS 722 / AS 650 / AS 1450",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 50,
+                "overnight": false
+              },
+              {
+                "airport": "SAN",
+                "change_of_airport": false,
+                "duration_minutes": 238,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T11:45:00",
+                "arrive_time": "11:45",
+                "depart_datetime": "2026-09-07T08:48:00",
+                "depart_time": "08:48",
+                "destination": "SAN",
+                "duration_minutes": 177,
+                "flight_number": "650",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T17:22:00",
+                "arrive_time": "17:22",
+                "depart_datetime": "2026-09-07T15:43:00",
+                "depart_time": "15:43",
+                "destination": "SFO",
+                "duration_minutes": 99,
+                "flight_number": "1450",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SAN"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 622.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "15:03",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "21h 22m",
+            "duration_minutes": 1282,
+            "flight_numbers": "AS 1302 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 1078,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:50:00",
+                "arrive_time": "16:50",
+                "depart_datetime": "2026-09-05T15:03:00",
+                "depart_time": "15:03",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "1302",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "14:52",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "8h 37m",
+            "duration_minutes": 517,
+            "flight_numbers": "AS 722 / AS 1306 / AS 1406",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 97,
+                "overnight": false
+              },
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 63,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T12:27:00",
+                "arrive_time": "12:27",
+                "depart_datetime": "2026-09-07T09:35:00",
+                "depart_time": "09:35",
+                "destination": "LAX",
+                "duration_minutes": 172,
+                "flight_number": "1306",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:52:00",
+                "arrive_time": "14:52",
+                "depart_datetime": "2026-09-07T13:30:00",
+                "depart_time": "13:30",
+                "destination": "SFO",
+                "duration_minutes": 82,
+                "flight_number": "1406",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 637.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "15:03",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "21h 22m",
+            "duration_minutes": 1282,
+            "flight_numbers": "AS 1302 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 1078,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:50:00",
+                "arrive_time": "16:50",
+                "depart_datetime": "2026-09-05T15:03:00",
+                "depart_time": "15:03",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "1302",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:40",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "14:05",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "9h 35m",
+            "duration_minutes": 575,
+            "flight_numbers": "AS 2219 / AS 590",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 345,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:40:00",
+                "arrive_time": "14:40",
+                "depart_datetime": "2026-09-07T14:05:00",
+                "depart_time": "14:05",
+                "destination": "SEA",
+                "duration_minutes": 95,
+                "flight_number": "2219",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T22:40:00",
+                "arrive_time": "22:40",
+                "depart_datetime": "2026-09-07T20:25:00",
+                "depart_time": "20:25",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "590",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
               }
             ],
             "stops": 1
           }
         ],
-        "price": "USD 349.00"
+        "price": "USD 673.00"
       },
       {
-        "carriers": "DL",
+        "carriers": "AS",
         "cash_detail_source": "fli",
         "is_best": false,
         "legs": [
           {
-            "arrival": "17:46",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
             "date": "2026-09-05",
-            "departure": "06:00",
+            "departure": "15:03",
             "destination": "MSO",
             "direction": "outbound",
-            "duration": "10h 46m",
-            "duration_minutes": 646,
-            "flight_numbers": "DL 2721 / DL 1016 / DL 3808",
+            "duration": "21h 22m",
+            "duration_minutes": 1282,
+            "flight_numbers": "AS 1302 / AS 2146",
             "layovers": [
               {
-                "airport": "SEA",
+                "airport": "PDX",
                 "change_of_airport": false,
-                "duration_minutes": 84,
-                "overnight": false
-              },
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 204,
-                "overnight": false
+                "duration_minutes": 1078,
+                "overnight": true
               }
             ],
             "origin": "SFO",
             "segments": [
               {
-                "aircraft": "Airbus A220-300 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T08:11:00",
-                "arrive_time": "08:11",
-                "depart_datetime": "2026-09-05T06:00:00",
-                "depart_time": "06:00",
-                "destination": "SEA",
-                "duration_minutes": 131,
-                "flight_number": "2721",
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:50:00",
+                "arrive_time": "16:50",
+                "depart_datetime": "2026-09-05T15:03:00",
+                "depart_time": "15:03",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "1302",
                 "operating_airline": "",
                 "operating_flight_number": "",
                 "origin": "SFO"
               },
               {
-                "aircraft": "Boeing 737",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T12:41:00",
-                "arrive_time": "12:41",
-                "depart_datetime": "2026-09-05T09:35:00",
-                "depart_time": "09:35",
-                "destination": "SLC",
-                "duration_minutes": 126,
-                "flight_number": "1016",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SEA"
-              },
-              {
                 "aircraft": "Embraer 175",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T17:46:00",
-                "arrive_time": "17:46",
-                "depart_datetime": "2026-09-05T16:05:00",
-                "depart_time": "16:05",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
                 "destination": "MSO",
-                "duration_minutes": 101,
-                "flight_number": "3808",
+                "duration_minutes": 97,
+                "flight_number": "2146",
                 "operating_airline": "",
                 "operating_flight_number": "",
-                "origin": "SLC"
+                "origin": "PDX"
               }
             ],
-            "stops": 2
+            "stops": 1
           },
           {
-            "arrival": "10:49",
+            "arrival": "23:40",
             "arrival_time_ahead": "",
-            "carrier": "DL",
+            "carrier": "AS",
             "date": "2026-09-07",
-            "departure": "05:30",
+            "departure": "14:05",
             "destination": "SFO",
             "direction": "return",
-            "duration": "6h 19m",
-            "duration_minutes": 379,
-            "flight_numbers": "DL 2795 / DL 1087 / DL 1715",
+            "duration": "10h 35m",
+            "duration_minutes": 635,
+            "flight_numbers": "AS 2219 / AS 411",
             "layovers": [
               {
-                "airport": "SLC",
+                "airport": "SEA",
                 "change_of_airport": false,
-                "duration_minutes": 44,
-                "overnight": false
-              },
-              {
-                "airport": "LAX",
-                "change_of_airport": false,
-                "duration_minutes": 48,
+                "duration_minutes": 405,
                 "overnight": false
               }
             ],
             "origin": "MSO",
             "segments": [
               {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T07:01:00",
-                "arrive_time": "07:01",
-                "depart_datetime": "2026-09-07T05:30:00",
-                "depart_time": "05:30",
-                "destination": "SLC",
-                "duration_minutes": 91,
-                "flight_number": "2795",
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:40:00",
+                "arrive_time": "14:40",
+                "depart_datetime": "2026-09-07T14:05:00",
+                "depart_time": "14:05",
+                "destination": "SEA",
+                "duration_minutes": 95,
+                "flight_number": "2219",
                 "operating_airline": "",
                 "operating_flight_number": "",
                 "origin": "MSO"
               },
               {
-                "aircraft": "Airbus A321neo",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T08:42:00",
-                "arrive_time": "08:42",
-                "depart_datetime": "2026-09-07T07:45:00",
-                "depart_time": "07:45",
-                "destination": "LAX",
-                "duration_minutes": 117,
-                "flight_number": "1087",
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T23:40:00",
+                "arrive_time": "23:40",
+                "depart_datetime": "2026-09-07T21:25:00",
+                "depart_time": "21:25",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "411",
                 "operating_airline": "",
                 "operating_flight_number": "",
-                "origin": "SLC"
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 673.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "18:59",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "17h 26m",
+            "duration_minutes": 1046,
+            "flight_numbers": "AS 525 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 837,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T20:51:00",
+                "arrive_time": "20:51",
+                "depart_datetime": "2026-09-05T18:59:00",
+                "depart_time": "18:59",
+                "destination": "PDX",
+                "duration_minutes": 112,
+                "flight_number": "525",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "09:37",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "16:16",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "18h 21m",
+            "duration_minutes": 1101,
+            "flight_numbers": "AS 660 / AS 725",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 858,
+                "overnight": true
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T17:00:00",
+                "arrive_time": "17:00",
+                "depart_datetime": "2026-09-07T16:16:00",
+                "depart_time": "16:16",
+                "destination": "SEA",
+                "duration_minutes": 104,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-08T09:37:00",
+                "arrive_time": "09:37",
+                "depart_datetime": "2026-09-08T07:18:00",
+                "depart_time": "07:18",
+                "destination": "SFO",
+                "duration_minutes": 139,
+                "flight_number": "725",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 482.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "18:59",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "17h 26m",
+            "duration_minutes": 1046,
+            "flight_numbers": "AS 525 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 837,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T20:51:00",
+                "arrive_time": "20:51",
+                "depart_datetime": "2026-09-05T18:59:00",
+                "depart_time": "18:59",
+                "destination": "PDX",
+                "duration_minutes": 112,
+                "flight_number": "525",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "10:59",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "16:16",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "19h 43m",
+            "duration_minutes": 1183,
+            "flight_numbers": "AS 660 / AS 528",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 941,
+                "overnight": true
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T17:00:00",
+                "arrive_time": "17:00",
+                "depart_datetime": "2026-09-07T16:16:00",
+                "depart_time": "16:16",
+                "destination": "SEA",
+                "duration_minutes": 104,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
               },
               {
                 "aircraft": "Boeing 737",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T10:49:00",
-                "arrive_time": "10:49",
-                "depart_datetime": "2026-09-07T09:30:00",
-                "depart_time": "09:30",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-08T10:59:00",
+                "arrive_time": "10:59",
+                "depart_datetime": "2026-09-08T08:41:00",
+                "depart_time": "08:41",
                 "destination": "SFO",
-                "duration_minutes": 79,
-                "flight_number": "1715",
+                "duration_minutes": 138,
+                "flight_number": "528",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 482.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "18:59",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "17h 26m",
+            "duration_minutes": 1046,
+            "flight_numbers": "AS 525 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 837,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T20:51:00",
+                "arrive_time": "20:51",
+                "depart_datetime": "2026-09-05T18:59:00",
+                "depart_time": "18:59",
+                "destination": "PDX",
+                "duration_minutes": 112,
+                "flight_number": "525",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "10:58",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "4h 43m",
+            "duration_minutes": 283,
+            "flight_numbers": "AS 722 / AS 528",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 42,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T10:58:00",
+                "arrive_time": "10:58",
+                "depart_datetime": "2026-09-07T08:40:00",
+                "depart_time": "08:40",
+                "destination": "SFO",
+                "duration_minutes": 138,
+                "flight_number": "528",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 580.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "18:59",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "17h 26m",
+            "duration_minutes": 1046,
+            "flight_numbers": "AS 525 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 837,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T20:51:00",
+                "arrive_time": "20:51",
+                "depart_datetime": "2026-09-05T18:59:00",
+                "depart_time": "18:59",
+                "destination": "PDX",
+                "duration_minutes": 112,
+                "flight_number": "525",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:40",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "16:16",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "7h 24m",
+            "duration_minutes": 444,
+            "flight_numbers": "AS 660 / AS 590",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 205,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T17:00:00",
+                "arrive_time": "17:00",
+                "depart_datetime": "2026-09-07T16:16:00",
+                "depart_time": "16:16",
+                "destination": "SEA",
+                "duration_minutes": 104,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T22:40:00",
+                "arrive_time": "22:40",
+                "depart_datetime": "2026-09-07T20:25:00",
+                "depart_time": "20:25",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "590",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 580.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "18:59",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "17h 26m",
+            "duration_minutes": 1046,
+            "flight_numbers": "AS 525 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 837,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T20:51:00",
+                "arrive_time": "20:51",
+                "depart_datetime": "2026-09-05T18:59:00",
+                "depart_time": "18:59",
+                "destination": "PDX",
+                "duration_minutes": 112,
+                "flight_number": "525",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:40",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "16h 25m",
+            "duration_minutes": 985,
+            "flight_numbers": "AS 722 / AS 590",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 747,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T22:40:00",
+                "arrive_time": "22:40",
+                "depart_datetime": "2026-09-07T20:25:00",
+                "depart_time": "20:25",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "590",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 583.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "18:59",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "17h 26m",
+            "duration_minutes": 1046,
+            "flight_numbers": "AS 525 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 837,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T20:51:00",
+                "arrive_time": "20:51",
+                "depart_datetime": "2026-09-05T18:59:00",
+                "depart_time": "18:59",
+                "destination": "PDX",
+                "duration_minutes": 112,
+                "flight_number": "525",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "23:40",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "17h 25m",
+            "duration_minutes": 1045,
+            "flight_numbers": "AS 722 / AS 411",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 807,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T23:40:00",
+                "arrive_time": "23:40",
+                "depart_datetime": "2026-09-07T21:25:00",
+                "depart_time": "21:25",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "411",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 583.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "18:59",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "17h 26m",
+            "duration_minutes": 1046,
+            "flight_numbers": "AS 525 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 837,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T20:51:00",
+                "arrive_time": "20:51",
+                "depart_datetime": "2026-09-05T18:59:00",
+                "depart_time": "18:59",
+                "destination": "PDX",
+                "duration_minutes": 112,
+                "flight_number": "525",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "16:17",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "10h 2m",
+            "duration_minutes": 602,
+            "flight_numbers": "AS 722 / AS 1306 / AS 91",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 97,
+                "overnight": false
+              },
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 149,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T12:27:00",
+                "arrive_time": "12:27",
+                "depart_datetime": "2026-09-07T09:35:00",
+                "depart_time": "09:35",
+                "destination": "LAX",
+                "duration_minutes": 172,
+                "flight_number": "1306",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T16:17:00",
+                "arrive_time": "16:17",
+                "depart_datetime": "2026-09-07T14:56:00",
+                "depart_time": "14:56",
+                "destination": "SFO",
+                "duration_minutes": 81,
+                "flight_number": "91",
                 "operating_airline": "",
                 "operating_flight_number": "",
                 "origin": "LAX"
@@ -2127,150 +2831,394 @@
             "stops": 2
           }
         ],
-        "price": "USD 634.00"
+        "price": "USD 609.00"
       },
       {
-        "carriers": "DL",
+        "carriers": "AS",
         "cash_detail_source": "fli",
         "is_best": false,
         "legs": [
           {
-            "arrival": "17:46",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
             "date": "2026-09-05",
-            "departure": "06:00",
+            "departure": "18:59",
             "destination": "MSO",
             "direction": "outbound",
-            "duration": "10h 46m",
-            "duration_minutes": 646,
-            "flight_numbers": "DL 2721 / DL 1016 / DL 3808",
+            "duration": "17h 26m",
+            "duration_minutes": 1046,
+            "flight_numbers": "AS 525 / AS 2146",
             "layovers": [
               {
-                "airport": "SEA",
+                "airport": "PDX",
                 "change_of_airport": false,
-                "duration_minutes": 84,
-                "overnight": false
-              },
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 204,
-                "overnight": false
+                "duration_minutes": 837,
+                "overnight": true
               }
             ],
             "origin": "SFO",
             "segments": [
               {
-                "aircraft": "Airbus A220-300 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T08:11:00",
-                "arrive_time": "08:11",
-                "depart_datetime": "2026-09-05T06:00:00",
-                "depart_time": "06:00",
-                "destination": "SEA",
-                "duration_minutes": 131,
-                "flight_number": "2721",
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T20:51:00",
+                "arrive_time": "20:51",
+                "depart_datetime": "2026-09-05T18:59:00",
+                "depart_time": "18:59",
+                "destination": "PDX",
+                "duration_minutes": 112,
+                "flight_number": "525",
                 "operating_airline": "",
                 "operating_flight_number": "",
                 "origin": "SFO"
               },
               {
-                "aircraft": "Boeing 737",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T12:41:00",
-                "arrive_time": "12:41",
-                "depart_datetime": "2026-09-05T09:35:00",
-                "depart_time": "09:35",
-                "destination": "SLC",
-                "duration_minutes": 126,
-                "flight_number": "1016",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SEA"
-              },
-              {
                 "aircraft": "Embraer 175",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T17:46:00",
-                "arrive_time": "17:46",
-                "depart_datetime": "2026-09-05T16:05:00",
-                "depart_time": "16:05",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
                 "destination": "MSO",
-                "duration_minutes": 101,
-                "flight_number": "3808",
+                "duration_minutes": 97,
+                "flight_number": "2146",
                 "operating_airline": "",
                 "operating_flight_number": "",
-                "origin": "SLC"
+                "origin": "PDX"
               }
             ],
-            "stops": 2
+            "stops": 1
           },
           {
-            "arrival": "13:31",
+            "arrival": "14:45",
             "arrival_time_ahead": "",
-            "carrier": "DL",
+            "carrier": "AS",
             "date": "2026-09-07",
-            "departure": "05:30",
+            "departure": "07:15",
             "destination": "SFO",
             "direction": "return",
-            "duration": "9h 1m",
-            "duration_minutes": 541,
-            "flight_numbers": "DL 2795 / DL 1095 / DL 2725",
+            "duration": "8h 30m",
+            "duration_minutes": 510,
+            "flight_numbers": "AS 722 / AS 650 / AS 3211",
             "layovers": [
               {
-                "airport": "SLC",
+                "airport": "SEA",
                 "change_of_airport": false,
-                "duration_minutes": 145,
+                "duration_minutes": 50,
                 "overnight": false
               },
               {
-                "airport": "LAX",
+                "airport": "SAN",
                 "change_of_airport": false,
-                "duration_minutes": 100,
+                "duration_minutes": 75,
                 "overnight": false
               }
             ],
             "origin": "MSO",
             "segments": [
               {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T07:01:00",
-                "arrive_time": "07:01",
-                "depart_datetime": "2026-09-07T05:30:00",
-                "depart_time": "05:30",
-                "destination": "SLC",
-                "duration_minutes": 91,
-                "flight_number": "2795",
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
                 "operating_airline": "",
                 "operating_flight_number": "",
                 "origin": "MSO"
               },
               {
-                "aircraft": "Airbus A321neo",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T10:25:00",
-                "arrive_time": "10:25",
-                "depart_datetime": "2026-09-07T09:26:00",
-                "depart_time": "09:26",
-                "destination": "LAX",
-                "duration_minutes": 119,
-                "flight_number": "1095",
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T11:45:00",
+                "arrive_time": "11:45",
+                "depart_datetime": "2026-09-07T08:48:00",
+                "depart_time": "08:48",
+                "destination": "SAN",
+                "duration_minutes": 177,
+                "flight_number": "650",
                 "operating_airline": "",
                 "operating_flight_number": "",
-                "origin": "SLC"
+                "origin": "SEA"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:45:00",
+                "arrive_time": "14:45",
+                "depart_datetime": "2026-09-07T13:00:00",
+                "depart_time": "13:00",
+                "destination": "SFO",
+                "duration_minutes": 105,
+                "flight_number": "3211",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SAN"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 622.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "18:59",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "17h 26m",
+            "duration_minutes": 1046,
+            "flight_numbers": "AS 525 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 837,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T20:51:00",
+                "arrive_time": "20:51",
+                "depart_datetime": "2026-09-05T18:59:00",
+                "depart_time": "18:59",
+                "destination": "PDX",
+                "duration_minutes": 112,
+                "flight_number": "525",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "17:22",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "11h 7m",
+            "duration_minutes": 667,
+            "flight_numbers": "AS 722 / AS 650 / AS 1450",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 50,
+                "overnight": false
+              },
+              {
+                "airport": "SAN",
+                "change_of_airport": false,
+                "duration_minutes": 238,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
               },
               {
                 "aircraft": "Boeing 737",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T13:31:00",
-                "arrive_time": "13:31",
-                "depart_datetime": "2026-09-07T12:05:00",
-                "depart_time": "12:05",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T11:45:00",
+                "arrive_time": "11:45",
+                "depart_datetime": "2026-09-07T08:48:00",
+                "depart_time": "08:48",
+                "destination": "SAN",
+                "duration_minutes": 177,
+                "flight_number": "650",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T17:22:00",
+                "arrive_time": "17:22",
+                "depart_datetime": "2026-09-07T15:43:00",
+                "depart_time": "15:43",
                 "destination": "SFO",
-                "duration_minutes": 86,
-                "flight_number": "2725",
+                "duration_minutes": 99,
+                "flight_number": "1450",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SAN"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 622.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "18:59",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "17h 26m",
+            "duration_minutes": 1046,
+            "flight_numbers": "AS 525 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 837,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T20:51:00",
+                "arrive_time": "20:51",
+                "depart_datetime": "2026-09-05T18:59:00",
+                "depart_time": "18:59",
+                "destination": "PDX",
+                "duration_minutes": 112,
+                "flight_number": "525",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "14:52",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "8h 37m",
+            "duration_minutes": 517,
+            "flight_numbers": "AS 722 / AS 1306 / AS 1406",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 97,
+                "overnight": false
+              },
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 63,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T12:27:00",
+                "arrive_time": "12:27",
+                "depart_datetime": "2026-09-07T09:35:00",
+                "depart_time": "09:35",
+                "destination": "LAX",
+                "duration_minutes": 172,
+                "flight_number": "1306",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:52:00",
+                "arrive_time": "14:52",
+                "depart_datetime": "2026-09-07T13:30:00",
+                "depart_time": "13:30",
+                "destination": "SFO",
+                "duration_minutes": 82,
+                "flight_number": "1406",
                 "operating_airline": "",
                 "operating_flight_number": "",
                 "origin": "LAX"
@@ -2279,161 +3227,233 @@
             "stops": 2
           }
         ],
-        "price": "USD 634.00"
+        "price": "USD 637.00"
       },
       {
-        "carriers": "DL",
+        "carriers": "AS",
         "cash_detail_source": "fli",
         "is_best": false,
         "legs": [
           {
-            "arrival": "17:46",
-            "arrival_time_ahead": "",
-            "carrier": "DL",
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
             "date": "2026-09-05",
-            "departure": "06:00",
+            "departure": "18:59",
             "destination": "MSO",
             "direction": "outbound",
-            "duration": "10h 46m",
-            "duration_minutes": 646,
-            "flight_numbers": "DL 2721 / DL 1016 / DL 3808",
+            "duration": "17h 26m",
+            "duration_minutes": 1046,
+            "flight_numbers": "AS 525 / AS 2146",
             "layovers": [
               {
-                "airport": "SEA",
+                "airport": "PDX",
                 "change_of_airport": false,
-                "duration_minutes": 84,
-                "overnight": false
-              },
-              {
-                "airport": "SLC",
-                "change_of_airport": false,
-                "duration_minutes": 204,
-                "overnight": false
+                "duration_minutes": 837,
+                "overnight": true
               }
             ],
             "origin": "SFO",
             "segments": [
               {
-                "aircraft": "Airbus A220-300 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T08:11:00",
-                "arrive_time": "08:11",
-                "depart_datetime": "2026-09-05T06:00:00",
-                "depart_time": "06:00",
-                "destination": "SEA",
-                "duration_minutes": 131,
-                "flight_number": "2721",
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T20:51:00",
+                "arrive_time": "20:51",
+                "depart_datetime": "2026-09-05T18:59:00",
+                "depart_time": "18:59",
+                "destination": "PDX",
+                "duration_minutes": 112,
+                "flight_number": "525",
                 "operating_airline": "",
                 "operating_flight_number": "",
                 "origin": "SFO"
               },
               {
-                "aircraft": "Boeing 737",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T12:41:00",
-                "arrive_time": "12:41",
-                "depart_datetime": "2026-09-05T09:35:00",
-                "depart_time": "09:35",
-                "destination": "SLC",
-                "duration_minutes": 126,
-                "flight_number": "1016",
-                "operating_airline": "",
-                "operating_flight_number": "",
-                "origin": "SEA"
-              },
-              {
                 "aircraft": "Embraer 175",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-05T17:46:00",
-                "arrive_time": "17:46",
-                "depart_datetime": "2026-09-05T16:05:00",
-                "depart_time": "16:05",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
                 "destination": "MSO",
-                "duration_minutes": 101,
-                "flight_number": "3808",
+                "duration_minutes": 97,
+                "flight_number": "2146",
                 "operating_airline": "",
                 "operating_flight_number": "",
-                "origin": "SLC"
+                "origin": "PDX"
               }
             ],
-            "stops": 2
+            "stops": 1
           },
           {
-            "arrival": "13:31",
+            "arrival": "22:40",
             "arrival_time_ahead": "",
-            "carrier": "DL",
+            "carrier": "AS",
             "date": "2026-09-07",
-            "departure": "05:30",
+            "departure": "14:05",
             "destination": "SFO",
             "direction": "return",
-            "duration": "9h 1m",
-            "duration_minutes": 541,
-            "flight_numbers": "DL 2795 / DL 1087 / DL 2725",
+            "duration": "9h 35m",
+            "duration_minutes": 575,
+            "flight_numbers": "AS 2219 / AS 590",
             "layovers": [
               {
-                "airport": "SLC",
+                "airport": "SEA",
                 "change_of_airport": false,
-                "duration_minutes": 44,
-                "overnight": false
-              },
-              {
-                "airport": "LAX",
-                "change_of_airport": false,
-                "duration_minutes": 203,
+                "duration_minutes": 345,
                 "overnight": false
               }
             ],
             "origin": "MSO",
             "segments": [
               {
-                "aircraft": "Airbus A220-100 Passenger",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T07:01:00",
-                "arrive_time": "07:01",
-                "depart_datetime": "2026-09-07T05:30:00",
-                "depart_time": "05:30",
-                "destination": "SLC",
-                "duration_minutes": 91,
-                "flight_number": "2795",
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:40:00",
+                "arrive_time": "14:40",
+                "depart_datetime": "2026-09-07T14:05:00",
+                "depart_time": "14:05",
+                "destination": "SEA",
+                "duration_minutes": 95,
+                "flight_number": "2219",
                 "operating_airline": "",
                 "operating_flight_number": "",
                 "origin": "MSO"
               },
               {
-                "aircraft": "Airbus A321neo",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T08:42:00",
-                "arrive_time": "08:42",
-                "depart_datetime": "2026-09-07T07:45:00",
-                "depart_time": "07:45",
-                "destination": "LAX",
-                "duration_minutes": 117,
-                "flight_number": "1087",
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T22:40:00",
+                "arrive_time": "22:40",
+                "depart_datetime": "2026-09-07T20:25:00",
+                "depart_time": "20:25",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "590",
                 "operating_airline": "",
                 "operating_flight_number": "",
-                "origin": "SLC"
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 673.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "18:59",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "17h 26m",
+            "duration_minutes": 1046,
+            "flight_numbers": "AS 525 / AS 2146",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 837,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T20:51:00",
+                "arrive_time": "20:51",
+                "depart_datetime": "2026-09-05T18:59:00",
+                "depart_time": "18:59",
+                "destination": "PDX",
+                "duration_minutes": 112,
+                "flight_number": "525",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-06T13:25:00",
+                "arrive_time": "13:25",
+                "depart_datetime": "2026-09-06T10:48:00",
+                "depart_time": "10:48",
+                "destination": "MSO",
+                "duration_minutes": 97,
+                "flight_number": "2146",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "23:40",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "14:05",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "10h 35m",
+            "duration_minutes": 635,
+            "flight_numbers": "AS 2219 / AS 411",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 405,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:40:00",
+                "arrive_time": "14:40",
+                "depart_datetime": "2026-09-07T14:05:00",
+                "depart_time": "14:05",
+                "destination": "SEA",
+                "duration_minutes": 95,
+                "flight_number": "2219",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
               },
               {
                 "aircraft": "Boeing 737",
-                "airline": "DL",
-                "arrive_datetime": "2026-09-07T13:31:00",
-                "arrive_time": "13:31",
-                "depart_datetime": "2026-09-07T12:05:00",
-                "depart_time": "12:05",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T23:40:00",
+                "arrive_time": "23:40",
+                "depart_datetime": "2026-09-07T21:25:00",
+                "depart_time": "21:25",
                 "destination": "SFO",
-                "duration_minutes": 86,
-                "flight_number": "2725",
+                "duration_minutes": 135,
+                "flight_number": "411",
                 "operating_airline": "",
                 "operating_flight_number": "",
-                "origin": "LAX"
+                "origin": "SEA"
               }
             ],
-            "stops": 2
+            "stops": 1
           }
         ],
-        "price": "USD 634.00"
+        "price": "USD 673.00"
       }
     ]
   },
-  "searched_at": "2026-06-04T16:55:32.695362+00:00"
+  "searched_at": "2026-06-11T06:25:40.497170+00:00"
 }

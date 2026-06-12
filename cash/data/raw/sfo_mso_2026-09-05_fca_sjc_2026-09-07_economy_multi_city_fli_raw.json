@@ -1,6 +1,6 @@
 {
   "evidence": {
-    "result_count": 0,
+    "result_count": 15,
     "top_n": 3,
     "transport": "fli"
   },
@@ -24,7 +24,1688 @@
   },
   "result": {
     "current_price": "",
-    "flights": []
+    "flights": [
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": true,
+        "legs": [
+          {
+            "arrival": "23:12",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-05",
+            "departure": "17:16",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "4h 56m",
+            "duration_minutes": 296,
+            "flight_numbers": "DL 1088 / DL 1723",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T20:10:00",
+                "arrive_time": "20:10",
+                "depart_datetime": "2026-09-05T17:16:00",
+                "depart_time": "17:16",
+                "destination": "SLC",
+                "duration_minutes": 114,
+                "flight_number": "1088",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T23:12:00",
+                "arrive_time": "23:12",
+                "depart_datetime": "2026-09-05T21:40:00",
+                "depart_time": "21:40",
+                "destination": "MSO",
+                "duration_minutes": 92,
+                "flight_number": "1723",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "16:06",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-07",
+            "departure": "12:02",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "5h 4m",
+            "duration_minutes": 304,
+            "flight_numbers": "DL 2813 / DL 1260",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 83,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T13:49:00",
+                "arrive_time": "13:49",
+                "depart_datetime": "2026-09-07T12:02:00",
+                "depart_time": "12:02",
+                "destination": "SLC",
+                "duration_minutes": 107,
+                "flight_number": "2813",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T16:06:00",
+                "arrive_time": "16:06",
+                "depart_datetime": "2026-09-07T15:12:00",
+                "depart_time": "15:12",
+                "destination": "SJC",
+                "duration_minutes": 114,
+                "flight_number": "1260",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 715.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "23:12",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-05",
+            "departure": "17:16",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "4h 56m",
+            "duration_minutes": 296,
+            "flight_numbers": "DL 1088 / DL 1723",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T20:10:00",
+                "arrive_time": "20:10",
+                "depart_datetime": "2026-09-05T17:16:00",
+                "depart_time": "17:16",
+                "destination": "SLC",
+                "duration_minutes": 114,
+                "flight_number": "1088",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T23:12:00",
+                "arrive_time": "23:12",
+                "depart_datetime": "2026-09-05T21:40:00",
+                "depart_time": "21:40",
+                "destination": "MSO",
+                "duration_minutes": 92,
+                "flight_number": "1723",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "12:27",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-07",
+            "departure": "06:20",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "7h 7m",
+            "duration_minutes": 427,
+            "flight_numbers": "DL 1578 / DL 2383",
+            "layovers": [
+              {
+                "airport": "MSP",
+                "change_of_airport": false,
+                "duration_minutes": 37,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T09:55:00",
+                "arrive_time": "09:55",
+                "depart_datetime": "2026-09-07T06:20:00",
+                "depart_time": "06:20",
+                "destination": "MSP",
+                "duration_minutes": 155,
+                "flight_number": "1578",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Airbus A320",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T12:27:00",
+                "arrive_time": "12:27",
+                "depart_datetime": "2026-09-07T10:32:00",
+                "depart_time": "10:32",
+                "destination": "SJC",
+                "duration_minutes": 235,
+                "flight_number": "2383",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSP"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 815.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "23:12",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-05",
+            "departure": "17:16",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "4h 56m",
+            "duration_minutes": 296,
+            "flight_numbers": "DL 1088 / DL 1723",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T20:10:00",
+                "arrive_time": "20:10",
+                "depart_datetime": "2026-09-05T17:16:00",
+                "depart_time": "17:16",
+                "destination": "SLC",
+                "duration_minutes": 114,
+                "flight_number": "1088",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T23:12:00",
+                "arrive_time": "23:12",
+                "depart_datetime": "2026-09-05T21:40:00",
+                "depart_time": "21:40",
+                "destination": "MSO",
+                "duration_minutes": 92,
+                "flight_number": "1723",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "18:29",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-07",
+            "departure": "12:02",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "7h 27m",
+            "duration_minutes": 447,
+            "flight_numbers": "DL 2813 / DL 3937",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 218,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T13:49:00",
+                "arrive_time": "13:49",
+                "depart_datetime": "2026-09-07T12:02:00",
+                "depart_time": "12:02",
+                "destination": "SLC",
+                "duration_minutes": 107,
+                "flight_number": "2813",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T18:29:00",
+                "arrive_time": "18:29",
+                "depart_datetime": "2026-09-07T17:27:00",
+                "depart_time": "17:27",
+                "destination": "SJC",
+                "duration_minutes": 122,
+                "flight_number": "3937",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 815.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "23:12",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-05",
+            "departure": "17:16",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "4h 56m",
+            "duration_minutes": 296,
+            "flight_numbers": "DL 1088 / DL 1723",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T20:10:00",
+                "arrive_time": "20:10",
+                "depart_datetime": "2026-09-05T17:16:00",
+                "depart_time": "17:16",
+                "destination": "SLC",
+                "duration_minutes": 114,
+                "flight_number": "1088",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T23:12:00",
+                "arrive_time": "23:12",
+                "depart_datetime": "2026-09-05T21:40:00",
+                "depart_time": "21:40",
+                "destination": "MSO",
+                "duration_minutes": 92,
+                "flight_number": "1723",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "08:54",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-07",
+            "departure": "05:15",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "4h 39m",
+            "duration_minutes": 279,
+            "flight_numbers": "DL 2201 / DL 4026",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 53,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T06:58:00",
+                "arrive_time": "06:58",
+                "depart_datetime": "2026-09-07T05:15:00",
+                "depart_time": "05:15",
+                "destination": "SLC",
+                "duration_minutes": 103,
+                "flight_number": "2201",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T08:54:00",
+                "arrive_time": "08:54",
+                "depart_datetime": "2026-09-07T07:51:00",
+                "depart_time": "07:51",
+                "destination": "SJC",
+                "duration_minutes": 123,
+                "flight_number": "4026",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 995.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "23:12",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-05",
+            "departure": "17:16",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "4h 56m",
+            "duration_minutes": 296,
+            "flight_numbers": "DL 1088 / DL 1723",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T20:10:00",
+                "arrive_time": "20:10",
+                "depart_datetime": "2026-09-05T17:16:00",
+                "depart_time": "17:16",
+                "destination": "SLC",
+                "duration_minutes": 114,
+                "flight_number": "1088",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T23:12:00",
+                "arrive_time": "23:12",
+                "depart_datetime": "2026-09-05T21:40:00",
+                "depart_time": "21:40",
+                "destination": "MSO",
+                "duration_minutes": 92,
+                "flight_number": "1723",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "23:44",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-07",
+            "departure": "18:09",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "6h 35m",
+            "duration_minutes": 395,
+            "flight_numbers": "DL 3798 / DL 1272",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 172,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T19:58:00",
+                "arrive_time": "19:58",
+                "depart_datetime": "2026-09-07T18:09:00",
+                "depart_time": "18:09",
+                "destination": "SLC",
+                "duration_minutes": 109,
+                "flight_number": "3798",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T23:44:00",
+                "arrive_time": "23:44",
+                "depart_datetime": "2026-09-07T22:50:00",
+                "depart_time": "22:50",
+                "destination": "SJC",
+                "duration_minutes": 114,
+                "flight_number": "1272",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 995.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "23:12",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-05",
+            "departure": "17:16",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "4h 56m",
+            "duration_minutes": 296,
+            "flight_numbers": "DL 1088 / DL 1723",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T20:10:00",
+                "arrive_time": "20:10",
+                "depart_datetime": "2026-09-05T17:16:00",
+                "depart_time": "17:16",
+                "destination": "SLC",
+                "duration_minutes": 114,
+                "flight_number": "1088",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T23:12:00",
+                "arrive_time": "23:12",
+                "depart_datetime": "2026-09-05T21:40:00",
+                "depart_time": "21:40",
+                "destination": "MSO",
+                "duration_minutes": 92,
+                "flight_number": "1723",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "18:29",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-07",
+            "departure": "13:34",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "5h 55m",
+            "duration_minutes": 355,
+            "flight_numbers": "DL 3804 / DL 3937",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 122,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T15:25:00",
+                "arrive_time": "15:25",
+                "depart_datetime": "2026-09-07T13:34:00",
+                "depart_time": "13:34",
+                "destination": "SLC",
+                "duration_minutes": 111,
+                "flight_number": "3804",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T18:29:00",
+                "arrive_time": "18:29",
+                "depart_datetime": "2026-09-07T17:27:00",
+                "depart_time": "17:27",
+                "destination": "SJC",
+                "duration_minutes": 122,
+                "flight_number": "3937",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1377.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "17:46",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-05",
+            "departure": "09:41",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "7h 5m",
+            "duration_minutes": 425,
+            "flight_numbers": "DL 920 / DL 3808",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 214,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T12:31:00",
+                "arrive_time": "12:31",
+                "depart_datetime": "2026-09-05T09:41:00",
+                "depart_time": "09:41",
+                "destination": "SLC",
+                "duration_minutes": 110,
+                "flight_number": "920",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T17:46:00",
+                "arrive_time": "17:46",
+                "depart_datetime": "2026-09-05T16:05:00",
+                "depart_time": "16:05",
+                "destination": "MSO",
+                "duration_minutes": 101,
+                "flight_number": "3808",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "16:06",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-07",
+            "departure": "12:02",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "5h 4m",
+            "duration_minutes": 304,
+            "flight_numbers": "DL 2813 / DL 1260",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 83,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T13:49:00",
+                "arrive_time": "13:49",
+                "depart_datetime": "2026-09-07T12:02:00",
+                "depart_time": "12:02",
+                "destination": "SLC",
+                "duration_minutes": 107,
+                "flight_number": "2813",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T16:06:00",
+                "arrive_time": "16:06",
+                "depart_datetime": "2026-09-07T15:12:00",
+                "depart_time": "15:12",
+                "destination": "SJC",
+                "duration_minutes": 114,
+                "flight_number": "1260",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 750.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "17:46",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-05",
+            "departure": "09:41",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "7h 5m",
+            "duration_minutes": 425,
+            "flight_numbers": "DL 920 / DL 3808",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 214,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T12:31:00",
+                "arrive_time": "12:31",
+                "depart_datetime": "2026-09-05T09:41:00",
+                "depart_time": "09:41",
+                "destination": "SLC",
+                "duration_minutes": 110,
+                "flight_number": "920",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T17:46:00",
+                "arrive_time": "17:46",
+                "depart_datetime": "2026-09-05T16:05:00",
+                "depart_time": "16:05",
+                "destination": "MSO",
+                "duration_minutes": 101,
+                "flight_number": "3808",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "12:27",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-07",
+            "departure": "06:20",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "7h 7m",
+            "duration_minutes": 427,
+            "flight_numbers": "DL 1578 / DL 2383",
+            "layovers": [
+              {
+                "airport": "MSP",
+                "change_of_airport": false,
+                "duration_minutes": 37,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T09:55:00",
+                "arrive_time": "09:55",
+                "depart_datetime": "2026-09-07T06:20:00",
+                "depart_time": "06:20",
+                "destination": "MSP",
+                "duration_minutes": 155,
+                "flight_number": "1578",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Airbus A320",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T12:27:00",
+                "arrive_time": "12:27",
+                "depart_datetime": "2026-09-07T10:32:00",
+                "depart_time": "10:32",
+                "destination": "SJC",
+                "duration_minutes": 235,
+                "flight_number": "2383",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSP"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 850.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "17:46",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-05",
+            "departure": "09:41",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "7h 5m",
+            "duration_minutes": 425,
+            "flight_numbers": "DL 920 / DL 3808",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 214,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T12:31:00",
+                "arrive_time": "12:31",
+                "depart_datetime": "2026-09-05T09:41:00",
+                "depart_time": "09:41",
+                "destination": "SLC",
+                "duration_minutes": 110,
+                "flight_number": "920",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T17:46:00",
+                "arrive_time": "17:46",
+                "depart_datetime": "2026-09-05T16:05:00",
+                "depart_time": "16:05",
+                "destination": "MSO",
+                "duration_minutes": 101,
+                "flight_number": "3808",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "18:29",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-07",
+            "departure": "12:02",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "7h 27m",
+            "duration_minutes": 447,
+            "flight_numbers": "DL 2813 / DL 3937",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 218,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T13:49:00",
+                "arrive_time": "13:49",
+                "depart_datetime": "2026-09-07T12:02:00",
+                "depart_time": "12:02",
+                "destination": "SLC",
+                "duration_minutes": 107,
+                "flight_number": "2813",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T18:29:00",
+                "arrive_time": "18:29",
+                "depart_datetime": "2026-09-07T17:27:00",
+                "depart_time": "17:27",
+                "destination": "SJC",
+                "duration_minutes": 122,
+                "flight_number": "3937",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 850.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "17:46",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-05",
+            "departure": "09:41",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "7h 5m",
+            "duration_minutes": 425,
+            "flight_numbers": "DL 920 / DL 3808",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 214,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T12:31:00",
+                "arrive_time": "12:31",
+                "depart_datetime": "2026-09-05T09:41:00",
+                "depart_time": "09:41",
+                "destination": "SLC",
+                "duration_minutes": 110,
+                "flight_number": "920",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T17:46:00",
+                "arrive_time": "17:46",
+                "depart_datetime": "2026-09-05T16:05:00",
+                "depart_time": "16:05",
+                "destination": "MSO",
+                "duration_minutes": 101,
+                "flight_number": "3808",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "08:54",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-07",
+            "departure": "05:15",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "4h 39m",
+            "duration_minutes": 279,
+            "flight_numbers": "DL 2201 / DL 4026",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 53,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T06:58:00",
+                "arrive_time": "06:58",
+                "depart_datetime": "2026-09-07T05:15:00",
+                "depart_time": "05:15",
+                "destination": "SLC",
+                "duration_minutes": 103,
+                "flight_number": "2201",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T08:54:00",
+                "arrive_time": "08:54",
+                "depart_datetime": "2026-09-07T07:51:00",
+                "depart_time": "07:51",
+                "destination": "SJC",
+                "duration_minutes": 123,
+                "flight_number": "4026",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1030.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "17:46",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-05",
+            "departure": "09:41",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "7h 5m",
+            "duration_minutes": 425,
+            "flight_numbers": "DL 920 / DL 3808",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 214,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T12:31:00",
+                "arrive_time": "12:31",
+                "depart_datetime": "2026-09-05T09:41:00",
+                "depart_time": "09:41",
+                "destination": "SLC",
+                "duration_minutes": 110,
+                "flight_number": "920",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T17:46:00",
+                "arrive_time": "17:46",
+                "depart_datetime": "2026-09-05T16:05:00",
+                "depart_time": "16:05",
+                "destination": "MSO",
+                "duration_minutes": 101,
+                "flight_number": "3808",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "23:44",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-07",
+            "departure": "18:09",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "6h 35m",
+            "duration_minutes": 395,
+            "flight_numbers": "DL 3798 / DL 1272",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 172,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T19:58:00",
+                "arrive_time": "19:58",
+                "depart_datetime": "2026-09-07T18:09:00",
+                "depart_time": "18:09",
+                "destination": "SLC",
+                "duration_minutes": 109,
+                "flight_number": "3798",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T23:44:00",
+                "arrive_time": "23:44",
+                "depart_datetime": "2026-09-07T22:50:00",
+                "depart_time": "22:50",
+                "destination": "SJC",
+                "duration_minutes": 114,
+                "flight_number": "1272",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1030.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "17:46",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-05",
+            "departure": "09:41",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "7h 5m",
+            "duration_minutes": 425,
+            "flight_numbers": "DL 920 / DL 3808",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 214,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-100 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T12:31:00",
+                "arrive_time": "12:31",
+                "depart_datetime": "2026-09-05T09:41:00",
+                "depart_time": "09:41",
+                "destination": "SLC",
+                "duration_minutes": 110,
+                "flight_number": "920",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-05T17:46:00",
+                "arrive_time": "17:46",
+                "depart_datetime": "2026-09-05T16:05:00",
+                "depart_time": "16:05",
+                "destination": "MSO",
+                "duration_minutes": 101,
+                "flight_number": "3808",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "18:29",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2026-09-07",
+            "departure": "13:34",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "5h 55m",
+            "duration_minutes": 355,
+            "flight_numbers": "DL 3804 / DL 3937",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 122,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T15:25:00",
+                "arrive_time": "15:25",
+                "depart_datetime": "2026-09-07T13:34:00",
+                "depart_time": "13:34",
+                "destination": "SLC",
+                "duration_minutes": 111,
+                "flight_number": "3804",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2026-09-07T18:29:00",
+                "arrive_time": "18:29",
+                "depart_datetime": "2026-09-07T17:27:00",
+                "depart_time": "17:27",
+                "destination": "SJC",
+                "duration_minutes": 122,
+                "flight_number": "3937",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1412.00"
+      },
+      {
+        "carriers": "AA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:35",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-05",
+            "departure": "15:38",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "19h 57m",
+            "duration_minutes": 1197,
+            "flight_numbers": "AA 2205 / AA 851",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 767,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-05T21:23:00",
+                "arrive_time": "21:23",
+                "depart_datetime": "2026-09-05T15:38:00",
+                "depart_time": "15:38",
+                "destination": "DFW",
+                "duration_minutes": 225,
+                "flight_number": "2205",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-06T12:35:00",
+                "arrive_time": "12:35",
+                "depart_datetime": "2026-09-06T10:10:00",
+                "depart_time": "10:10",
+                "destination": "MSO",
+                "duration_minutes": 205,
+                "flight_number": "851",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "10:50",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "15:24",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "20h 26m",
+            "duration_minutes": 1226,
+            "flight_numbers": "AA 1337 / AA 2046",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 798,
+                "overnight": true
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T20:00:00",
+                "arrive_time": "20:00",
+                "depart_datetime": "2026-09-07T15:24:00",
+                "depart_time": "15:24",
+                "destination": "DFW",
+                "duration_minutes": 216,
+                "flight_number": "1337",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-08T10:50:00",
+                "arrive_time": "10:50",
+                "depart_datetime": "2026-09-08T09:18:00",
+                "depart_time": "09:18",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "2046",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 760.00"
+      },
+      {
+        "carriers": "AA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:35",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-05",
+            "departure": "15:38",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "19h 57m",
+            "duration_minutes": 1197,
+            "flight_numbers": "AA 2205 / AA 851",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 767,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-05T21:23:00",
+                "arrive_time": "21:23",
+                "depart_datetime": "2026-09-05T15:38:00",
+                "depart_time": "15:38",
+                "destination": "DFW",
+                "duration_minutes": 225,
+                "flight_number": "2205",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-06T12:35:00",
+                "arrive_time": "12:35",
+                "depart_datetime": "2026-09-06T10:10:00",
+                "depart_time": "10:10",
+                "destination": "MSO",
+                "duration_minutes": 205,
+                "flight_number": "851",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:32",
+            "arrival_time_ahead": "",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "15:24",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "8h 8m",
+            "duration_minutes": 488,
+            "flight_numbers": "AA 1337 / AA 364",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 60,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T20:00:00",
+                "arrive_time": "20:00",
+                "depart_datetime": "2026-09-07T15:24:00",
+                "depart_time": "15:24",
+                "destination": "DFW",
+                "duration_minutes": 216,
+                "flight_number": "1337",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T22:32:00",
+                "arrive_time": "22:32",
+                "depart_datetime": "2026-09-07T21:00:00",
+                "depart_time": "21:00",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "364",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1130.00"
+      },
+      {
+        "carriers": "AA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:35",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-05",
+            "departure": "15:38",
+            "destination": "MSO",
+            "direction": "outbound",
+            "duration": "19h 57m",
+            "duration_minutes": 1197,
+            "flight_numbers": "AA 2205 / AA 851",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 767,
+                "overnight": true
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-05T21:23:00",
+                "arrive_time": "21:23",
+                "depart_datetime": "2026-09-05T15:38:00",
+                "depart_time": "15:38",
+                "destination": "DFW",
+                "duration_minutes": 225,
+                "flight_number": "2205",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-06T12:35:00",
+                "arrive_time": "12:35",
+                "depart_datetime": "2026-09-06T10:10:00",
+                "depart_time": "10:10",
+                "destination": "MSO",
+                "duration_minutes": 205,
+                "flight_number": "851",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:32",
+            "arrival_time_ahead": "",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "12:30",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "11h 2m",
+            "duration_minutes": 662,
+            "flight_numbers": "AA 2939 / AA 364",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 233,
+                "overnight": false
+              }
+            ],
+            "origin": "FCA",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T17:07:00",
+                "arrive_time": "17:07",
+                "depart_datetime": "2026-09-07T12:30:00",
+                "depart_time": "12:30",
+                "destination": "DFW",
+                "duration_minutes": 217,
+                "flight_number": "2939",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "FCA"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T22:32:00",
+                "arrive_time": "22:32",
+                "depart_datetime": "2026-09-07T21:00:00",
+                "depart_time": "21:00",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "364",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1262.00"
+      }
+    ]
   },
-  "searched_at": "2026-06-04T16:55:28.908782+00:00"
+  "searched_at": "2026-06-11T06:25:33.532571+00:00"
 }

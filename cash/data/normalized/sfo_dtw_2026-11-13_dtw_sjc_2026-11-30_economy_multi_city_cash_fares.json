@@ -32,7 +32,20 @@
         "duration_display": "4h 36m",
         "duration_minutes": 276,
         "flight_numbers": "DL 772",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "13:36",
+            "depart_time": "06:00",
+            "destination": "DTW",
+            "duration_minutes": 276,
+            "flight_number": "772",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -45,7 +58,37 @@
         "duration_display": "6h 49m",
         "duration_minutes": 409,
         "flight_numbers": "DL 2753 / DL 1272",
+        "layovers": [
+          {
+            "airport": "SLC",
+            "change_of_airport": false,
+            "duration_minutes": 45,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "22:10",
+            "depart_time": "20:05",
+            "destination": "SLC",
+            "duration_minutes": 245,
+            "flight_number": "2753",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Airbus A220-100 Passenger",
+            "airline": "DL",
+            "arrive_time": "23:54",
+            "depart_time": "22:55",
+            "destination": "SJC",
+            "duration_minutes": 119,
+            "flight_number": "1272",
+            "origin": "SLC"
+          }
+        ],
         "stops": 1
       }
     },
@@ -119,7 +162,20 @@
         "duration_display": "4h 36m",
         "duration_minutes": 276,
         "flight_numbers": "DL 772",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "13:36",
+            "depart_time": "06:00",
+            "destination": "DTW",
+            "duration_minutes": 276,
+            "flight_number": "772",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -132,7 +188,37 @@
         "duration_display": "8h 57m",
         "duration_minutes": 537,
         "flight_numbers": "DL 883 / DL 2318",
+        "layovers": [
+          {
+            "airport": "LAX",
+            "change_of_airport": false,
+            "duration_minutes": 153,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "DL",
+            "arrive_time": "17:57",
+            "depart_time": "15:50",
+            "destination": "LAX",
+            "duration_minutes": 307,
+            "flight_number": "883",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "DL",
+            "arrive_time": "21:47",
+            "depart_time": "20:30",
+            "destination": "SJC",
+            "duration_minutes": 77,
+            "flight_number": "2318",
+            "origin": "LAX"
+          }
+        ],
         "stops": 1
       }
     },
@@ -206,7 +292,20 @@
         "duration_display": "4h 36m",
         "duration_minutes": 276,
         "flight_numbers": "DL 772",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "13:36",
+            "depart_time": "06:00",
+            "destination": "DTW",
+            "duration_minutes": 276,
+            "flight_number": "772",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -219,7 +318,37 @@
         "duration_display": "7h 38m",
         "duration_minutes": 458,
         "flight_numbers": "DL 2203 / DL 2087",
+        "layovers": [
+          {
+            "airport": "MSP",
+            "change_of_airport": false,
+            "duration_minutes": 92,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "17:14",
+            "depart_time": "16:20",
+            "destination": "MSP",
+            "duration_minutes": 114,
+            "flight_number": "2203",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Airbus A220-100 Passenger",
+            "airline": "DL",
+            "arrive_time": "20:58",
+            "depart_time": "18:46",
+            "destination": "SJC",
+            "duration_minutes": 252,
+            "flight_number": "2087",
+            "origin": "MSP"
+          }
+        ],
         "stops": 1
       }
     },
@@ -293,7 +422,20 @@
         "duration_display": "4h 36m",
         "duration_minutes": 276,
         "flight_numbers": "DL 772",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "13:36",
+            "depart_time": "06:00",
+            "destination": "DTW",
+            "duration_minutes": 276,
+            "flight_number": "772",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -306,7 +448,37 @@
         "duration_display": "9h 9m",
         "duration_minutes": 549,
         "flight_numbers": "DL 765 / DL 1272",
+        "layovers": [
+          {
+            "airport": "SLC",
+            "change_of_airport": false,
+            "duration_minutes": 184,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "19:51",
+            "depart_time": "17:45",
+            "destination": "SLC",
+            "duration_minutes": 246,
+            "flight_number": "765",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Airbus A220-100 Passenger",
+            "airline": "DL",
+            "arrive_time": "23:54",
+            "depart_time": "22:55",
+            "destination": "SJC",
+            "duration_minutes": 119,
+            "flight_number": "1272",
+            "origin": "SLC"
+          }
+        ],
         "stops": 1
       }
     },
@@ -380,7 +552,20 @@
         "duration_display": "4h 36m",
         "duration_minutes": 276,
         "flight_numbers": "DL 772",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "13:36",
+            "depart_time": "06:00",
+            "destination": "DTW",
+            "duration_minutes": 276,
+            "flight_number": "772",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -393,7 +578,37 @@
         "duration_display": "8h 21m",
         "duration_minutes": 501,
         "flight_numbers": "DL 1746 / DL 2383",
+        "layovers": [
+          {
+            "airport": "MSP",
+            "change_of_airport": false,
+            "duration_minutes": 127,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "08:03",
+            "depart_time": "07:00",
+            "destination": "MSP",
+            "duration_minutes": 123,
+            "flight_number": "1746",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Airbus A220-100 Passenger",
+            "airline": "DL",
+            "arrive_time": "12:21",
+            "depart_time": "10:10",
+            "destination": "SJC",
+            "duration_minutes": 251,
+            "flight_number": "2383",
+            "origin": "MSP"
+          }
+        ],
         "stops": 1
       }
     },
@@ -467,7 +682,20 @@
         "duration_display": "4h 36m",
         "duration_minutes": 276,
         "flight_numbers": "DL 772",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "13:36",
+            "depart_time": "06:00",
+            "destination": "DTW",
+            "duration_minutes": 276,
+            "flight_number": "772",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -480,7 +708,37 @@
         "duration_display": "7h 28m",
         "duration_minutes": 448,
         "flight_numbers": "DL 698 / DL 1254",
+        "layovers": [
+          {
+            "airport": "SLC",
+            "change_of_airport": false,
+            "duration_minutes": 76,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "10:14",
+            "depart_time": "08:00",
+            "destination": "SLC",
+            "duration_minutes": 254,
+            "flight_number": "698",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Airbus A220-100 Passenger",
+            "airline": "DL",
+            "arrive_time": "12:28",
+            "depart_time": "11:30",
+            "destination": "SJC",
+            "duration_minutes": 118,
+            "flight_number": "1254",
+            "origin": "SLC"
+          }
+        ],
         "stops": 1
       }
     },
@@ -554,7 +812,20 @@
         "duration_display": "4h 36m",
         "duration_minutes": 276,
         "flight_numbers": "DL 772",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "13:36",
+            "depart_time": "06:00",
+            "destination": "DTW",
+            "duration_minutes": 276,
+            "flight_number": "772",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -567,7 +838,37 @@
         "duration_display": "6h 51m",
         "duration_minutes": 411,
         "flight_numbers": "DL 935 / DL 1260",
+        "layovers": [
+          {
+            "airport": "SLC",
+            "change_of_airport": false,
+            "duration_minutes": 50,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "14:30",
+            "depart_time": "12:25",
+            "destination": "SLC",
+            "duration_minutes": 245,
+            "flight_number": "935",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Airbus A220-100 Passenger",
+            "airline": "DL",
+            "arrive_time": "16:16",
+            "depart_time": "15:20",
+            "destination": "SJC",
+            "duration_minutes": 116,
+            "flight_number": "1260",
+            "origin": "SLC"
+          }
+        ],
         "stops": 1
       }
     },
@@ -641,7 +942,20 @@
         "duration_display": "4h 36m",
         "duration_minutes": 276,
         "flight_numbers": "DL 772",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "13:36",
+            "depart_time": "06:00",
+            "destination": "DTW",
+            "duration_minutes": 276,
+            "flight_number": "772",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -654,7 +968,37 @@
         "duration_display": "8h 55m",
         "duration_minutes": 535,
         "flight_numbers": "DL 935 / DL 3937",
+        "layovers": [
+          {
+            "airport": "SLC",
+            "change_of_airport": false,
+            "duration_minutes": 165,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "14:30",
+            "depart_time": "12:25",
+            "destination": "SLC",
+            "duration_minutes": 245,
+            "flight_number": "935",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "DL",
+            "arrive_time": "18:20",
+            "depart_time": "17:15",
+            "destination": "SJC",
+            "duration_minutes": 125,
+            "flight_number": "3937",
+            "origin": "SLC"
+          }
+        ],
         "stops": 1
       }
     },
@@ -728,7 +1072,20 @@
         "duration_display": "4h 36m",
         "duration_minutes": 276,
         "flight_numbers": "DL 772",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "13:36",
+            "depart_time": "06:00",
+            "destination": "DTW",
+            "duration_minutes": 276,
+            "flight_number": "772",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -741,7 +1098,37 @@
         "duration_display": "8h 7m",
         "duration_minutes": 487,
         "flight_numbers": "DL 1983 / DL 2136",
+        "layovers": [
+          {
+            "airport": "ATL",
+            "change_of_airport": false,
+            "duration_minutes": 50,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "15:50",
+            "depart_time": "13:45",
+            "destination": "ATL",
+            "duration_minutes": 125,
+            "flight_number": "1983",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "18:52",
+            "depart_time": "16:40",
+            "destination": "SJC",
+            "duration_minutes": 312,
+            "flight_number": "2136",
+            "origin": "ATL"
+          }
+        ],
         "stops": 1
       }
     },
@@ -815,7 +1202,20 @@
         "duration_display": "4h 36m",
         "duration_minutes": 276,
         "flight_numbers": "DL 772",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "13:36",
+            "depart_time": "06:00",
+            "destination": "DTW",
+            "duration_minutes": 276,
+            "flight_number": "772",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -828,7 +1228,37 @@
         "duration_display": "6h 51m",
         "duration_minutes": 411,
         "flight_numbers": "DL 2258 / DL 2383",
+        "layovers": [
+          {
+            "airport": "MSP",
+            "change_of_airport": false,
+            "duration_minutes": 40,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "09:30",
+            "depart_time": "08:30",
+            "destination": "MSP",
+            "duration_minutes": 120,
+            "flight_number": "2258",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Airbus A220-100 Passenger",
+            "airline": "DL",
+            "arrive_time": "12:21",
+            "depart_time": "10:10",
+            "destination": "SJC",
+            "duration_minutes": 251,
+            "flight_number": "2383",
+            "origin": "MSP"
+          }
+        ],
         "stops": 1
       }
     },
@@ -902,7 +1332,20 @@
         "duration_display": "4h 36m",
         "duration_minutes": 276,
         "flight_numbers": "DL 772",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "13:36",
+            "depart_time": "06:00",
+            "destination": "DTW",
+            "duration_minutes": 276,
+            "flight_number": "772",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -915,7 +1358,37 @@
         "duration_display": "9h",
         "duration_minutes": 540,
         "flight_numbers": "DL 523 / DL 3842",
+        "layovers": [
+          {
+            "airport": "LAX",
+            "change_of_airport": false,
+            "duration_minutes": 150,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 757",
+            "airline": "DL",
+            "arrive_time": "10:45",
+            "depart_time": "08:32",
+            "destination": "LAX",
+            "duration_minutes": 313,
+            "flight_number": "523",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "DL",
+            "arrive_time": "14:32",
+            "depart_time": "13:15",
+            "destination": "SJC",
+            "duration_minutes": 77,
+            "flight_number": "3842",
+            "origin": "LAX"
+          }
+        ],
         "stops": 1
       }
     },
@@ -989,7 +1462,20 @@
         "duration_display": "4h 36m",
         "duration_minutes": 276,
         "flight_numbers": "DL 772",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "13:36",
+            "depart_time": "06:00",
+            "destination": "DTW",
+            "duration_minutes": 276,
+            "flight_number": "772",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -1002,7 +1488,37 @@
         "duration_display": "7h 20m",
         "duration_minutes": 440,
         "flight_numbers": "DL 634 / DL 1438",
+        "layovers": [
+          {
+            "airport": "LAX",
+            "change_of_airport": false,
+            "duration_minutes": 59,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "14:46",
+            "depart_time": "12:40",
+            "destination": "LAX",
+            "duration_minutes": 306,
+            "flight_number": "634",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "DL",
+            "arrive_time": "17:00",
+            "depart_time": "15:45",
+            "destination": "SJC",
+            "duration_minutes": 75,
+            "flight_number": "1438",
+            "origin": "LAX"
+          }
+        ],
         "stops": 1
       }
     },

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import json
 import re
 import sys
@@ -27,6 +28,15 @@ from flight_search_common.io import load_json, write_json
 DEFAULT_BASE_URL = "http://127.0.0.1:8001"
 DEFAULT_OUTPUT_DIR = WORKSPACE_ROOT / "reports"
 CASH_PRICE_TOLERANCE_USD = 0.01
+ASSET_ROOT = WORKSPACE_ROOT / "assets"
+AIRLINE_LOGO_FILES = {
+    "AA": "american.png",
+    "AS": "alaska.png",
+    "DL": "delta.jpeg",
+    "F9": "frontier.jpeg",
+    "UA": "united.png",
+    "WN": "southwest.jpeg",
+}
 AWARD_PROGRAM_CODES = {
     "aeroplan": "AC",
     "alaska": "AS",
@@ -182,6 +192,30 @@ def search_stem(origins: list[str], destinations: list[str], outbound_dates: lis
     )
 
 
+def mime_type_for_asset(path: Path) -> str:
+    suffix = path.suffix.lower()
+    if suffix in {".jpg", ".jpeg"}:
+        return "image/jpeg"
+    if suffix == ".png":
+        return "image/png"
+    if suffix == ".svg":
+        return "image/svg+xml"
+    if suffix == ".webp":
+        return "image/webp"
+    return "application/octet-stream"
+
+
+def airline_logo_data_uris(asset_root: Path = ASSET_ROOT) -> dict[str, str]:
+    logos: dict[str, str] = {}
+    for code, filename in AIRLINE_LOGO_FILES.items():
+        path = asset_root / filename
+        if not path.exists():
+            continue
+        encoded = base64.b64encode(path.read_bytes()).decode("ascii")
+        logos[code] = f"data:{mime_type_for_asset(path)};base64,{encoded}"
+    return logos
+
+
 def numeric(value: Any, default: float = 10**12) -> float:
     if value in (None, ""):
         return default
@@ -237,6 +271,8 @@ def award_component(row: dict[str, Any]) -> dict[str, Any]:
         "label": str(row.get("program") or award_program_code(row)),
         "points": numeric(row.get("mileage_cost"), 0),
         "cpp": numeric(row.get("cents_per_point"), 0),
+        "taxes": compact_money(row.get("taxes_amount"), row.get("taxes_currency") or "USD"),
+        "taxesUsd": numeric(row.get("taxes_usd"), 0),
     }
 
 
@@ -357,6 +393,116 @@ def point_value_controls(rows: list[dict[str, Any]]) -> str:
 
 def hour_options() -> str:
     return "".join(f'<option value="{hour}">{hour:02d}:00</option>' for hour in range(24))
+
+
+def date_constraint_summary(plan: TripSearchPlan) -> str:
+    outbound_dates = sorted({leg.date for leg in plan.outbound_legs})
+    return_dates = sorted({leg.date for leg in plan.return_legs})
+    outbound_label = ", ".join(outbound_dates) if outbound_dates else "none"
+    return_label = ", ".join(return_dates) if return_dates else "none"
+    return f"Outbound dates: {outbound_label} · Return dates: {return_label}"
+
+
+def normalized_list(value: Any) -> list[dict[str, Any]]:
+    if not isinstance(value, list):
+        return []
+    return [item for item in value if isinstance(item, dict)]
+
+
+def split_codes(value: Any) -> list[str]:
+    text = str(value or "")
+    codes = re.findall(r"\b[A-Z0-9]{2}\b(?=\s?\d|\b)", text)
+    return [code for code in dict.fromkeys(codes) if any(char.isalpha() for char in code)]
+
+
+def carrier_codes_for_leg(leg: dict[str, Any] | None) -> list[str]:
+    if not isinstance(leg, dict):
+        return []
+    codes: list[str] = []
+    for segment in normalized_list(leg.get("segments")):
+        codes.extend(split_codes(segment.get("airline")))
+    codes.extend(split_codes(leg.get("carriers")))
+    codes.extend(split_codes(leg.get("flight_numbers")))
+    return list(dict.fromkeys(codes))
+
+
+def carrier_codes_for_row(row: dict[str, Any]) -> list[str]:
+    codes: list[str] = []
+    for key in ("outbound_leg_detail", "return_leg_detail", "leg_detail"):
+        codes.extend(carrier_codes_for_leg(row.get(key) if isinstance(row.get(key), dict) else None))
+    for key in ("flight", "provider", "outbound_cell", "return_cell", "outbound_detail", "return_detail"):
+        codes.extend(split_codes(row.get(key)))
+    return list(dict.fromkeys(codes))
+
+
+def leg_detail_payload(row: dict[str, Any], direction: str) -> dict[str, Any]:
+    detail = row.get(f"{direction}_leg_detail")
+    if not isinstance(detail, dict):
+        row_direction = row.get("direction")
+        one_way_detail = row.get("leg_detail")
+        if row_direction == direction and isinstance(one_way_detail, dict):
+            detail = one_way_detail
+        else:
+            detail = {}
+    cell_key = "outbound_cell" if direction == "outbound" else "return_cell"
+    label = str(row.get(cell_key) or row.get(f"{direction}_detail") or "")
+    route = " -> ".join(
+        value
+        for value in [
+            str(detail.get("origin") or ""),
+            str(detail.get("destination") or ""),
+        ]
+        if value
+    )
+    if not route and label:
+        route = label.splitlines()[0]
+    return {
+        "direction": direction,
+        "origin": str(detail.get("origin") or ""),
+        "destination": str(detail.get("destination") or ""),
+        "route": route,
+        "date": str(detail.get("date") or ""),
+        "depart": str(detail.get("depart_time") or ""),
+        "arrive": str(detail.get("arrive_time") or ""),
+        "flightNumbers": str(detail.get("flight_numbers") or ""),
+        "carriers": str(detail.get("carriers") or ""),
+        "stops": detail.get("stops", ""),
+        "duration": str(detail.get("duration_display") or duration_label(detail.get("duration_minutes"))),
+        "durationMinutes": detail.get("duration_minutes", ""),
+        "segments": normalized_list(detail.get("segments")),
+        "layovers": normalized_list(detail.get("layovers")),
+        "connections": str(detail.get("connections") or ""),
+        "aircraft": str(detail.get("aircraft") or ""),
+        "program": str(detail.get("program") or ""),
+        "points": detail.get("points", ""),
+        "taxes": str(detail.get("taxes") or ""),
+        "label": label,
+    }
+
+
+def leg_stop_value(row: dict[str, Any], direction: str) -> float:
+    detail = row.get(f"{direction}_leg_detail")
+    if isinstance(detail, dict) and detail.get("stops") not in ("", None):
+        return numeric(detail.get("stops"), 0)
+    if row.get("direction") == direction and row.get("stops_num") not in ("", None):
+        return numeric(row.get("stops_num"), 0)
+    text = str(row.get("outbound_cell" if direction == "outbound" else "return_cell") or "")
+    match = re.search(r"(\d+(?:\.\d+)?)\s+stop", text)
+    if match:
+        return float(match.group(1))
+    return numeric(row.get("stops_num"), 0)
+
+
+def row_composition_payload(row: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "kind": str(row.get("kind") or ""),
+        "price": str(row.get("price") or ""),
+        "effective": str(row.get("effective") or ""),
+        "provider": str(row.get("provider") or ""),
+        "cash": component_value(row.get("cash_component_usd")),
+        "award": row.get("award_components") or [],
+        "points": numeric(row.get("award_points"), 0),
+    }
 
 
 def short_notes(flags: Any, *, trip_type: str | None = None, open_jaw: bool = False) -> str:
@@ -529,6 +675,8 @@ def blank_leg(direction: str, origin: str, destination: str, date: str) -> dict[
         "stops": "",
         "duration_minutes": "",
         "duration_display": "",
+        "segments": [],
+        "layovers": [],
     }
 
 
@@ -830,12 +978,41 @@ def cash_one_way_leg_rows(cash_leg_runs: list[dict[str, Any]], *, per_leg_limit:
                     "outbound_cell": leg_cell_text(detail) if leg["direction"] == "outbound" else "",
                     "return_cell": leg_cell_text(detail) if leg["direction"] == "return" else "",
                     "leg_detail": detail,
+                    "outbound_leg_detail": detail if leg["direction"] == "outbound" else {},
+                    "return_leg_detail": detail if leg["direction"] == "return" else {},
                     "source_status": "ok",
                     "raw": row,
                     "leg": leg,
                 }
             )
     return sorted(rows, key=lambda row: (row["score"], row["effective_num"], row["duration_minutes"]))
+
+
+def award_leg_detail(row: dict[str, Any], leg: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "direction": leg.get("direction", ""),
+        "origin": leg.get("origin", ""),
+        "destination": leg.get("destination", ""),
+        "date": leg.get("date", ""),
+        "depart_time": row.get("depart_time", ""),
+        "arrive_time": row.get("arrive_time", ""),
+        "flight_numbers": row.get("flight_numbers", ""),
+        "carriers": row.get("carriers", ""),
+        "stops": row.get("stops", ""),
+        "duration_minutes": row.get("duration_minutes", ""),
+        "duration_display": duration_label(row.get("duration_minutes")),
+        "connections": row.get("connections", ""),
+        "aircraft": row.get("aircraft", ""),
+        "program": row.get("program", row.get("source", "")),
+        "points": row.get("mileage_cost", ""),
+        "taxes": compact_money(row.get("taxes_amount"), row.get("taxes_currency") or "USD"),
+        "segments": [],
+        "layovers": [
+            {"airport": airport.strip(), "duration_minutes": "", "overnight": False, "change_of_airport": False}
+            for airport in str(row.get("connections") or "").split(",")
+            if airport.strip()
+        ],
+    }
 
 
 def award_leg_rows(award_runs: list[dict[str, Any]], *, cabin: str, per_leg_limit: int) -> list[dict[str, Any]]:
@@ -852,6 +1029,7 @@ def award_leg_rows(award_runs: list[dict[str, Any]], *, cabin: str, per_leg_limi
             and row.get("effective_usd") not in ("", None)
         ][:per_leg_limit]
         for row in candidates:
+            detail = award_leg_detail(row, leg)
             rows.append(
                 {
                     "kind": f"{leg['direction']} award",
@@ -917,6 +1095,9 @@ def award_leg_rows(award_runs: list[dict[str, Any]], *, cabin: str, per_leg_limi
                     )
                     if leg["direction"] == "return"
                     else "",
+                    "leg_detail": detail,
+                    "outbound_leg_detail": detail if leg["direction"] == "outbound" else {},
+                    "return_leg_detail": detail if leg["direction"] == "return" else {},
                     "source_status": "ok",
                     "raw": row,
                     "leg": leg,
@@ -1002,6 +1183,8 @@ def award_pair_rows(award_rows: list[dict[str, Any]], *, limit: int) -> list[dic
                     "return_detail": return_row.get("outbound_detail", return_row["route"]),
                     "outbound_cell": outbound.get("outbound_cell") or outbound.get("outbound_detail", outbound["route"]),
                     "return_cell": return_row.get("return_cell") or return_row.get("outbound_detail", return_row["route"]),
+                    "outbound_leg_detail": outbound.get("outbound_leg_detail") or outbound.get("leg_detail") or {},
+                    "return_leg_detail": return_row.get("return_leg_detail") or return_row.get("leg_detail") or {},
                     "source_status": "ok",
                 }
             )
@@ -1067,6 +1250,8 @@ def cash_one_way_pair_rows(cash_leg_rows: list[dict[str, Any]], *, limit: int) -
                     "return_detail": return_row.get("return_detail", return_row["route"]),
                     "outbound_cell": outbound.get("outbound_cell") or outbound.get("outbound_detail", outbound["route"]),
                     "return_cell": return_row.get("return_cell") or return_row.get("return_detail", return_row["route"]),
+                    "outbound_leg_detail": outbound.get("outbound_leg_detail") or outbound.get("leg_detail") or {},
+                    "return_leg_detail": return_row.get("return_leg_detail") or return_row.get("leg_detail") or {},
                     "source_status": "ok",
                 }
             )
@@ -1255,6 +1440,8 @@ def mixed_pair_row(
         "return_detail": return_row.get("return_detail") or return_row.get("outbound_detail") or return_row["route"],
         "outbound_cell": outbound.get("outbound_cell") or outbound.get("outbound_detail") or outbound["route"],
         "return_cell": return_row.get("return_cell") or return_row.get("outbound_detail") or return_row["route"],
+        "outbound_leg_detail": outbound.get("outbound_leg_detail") or outbound.get("leg_detail") or {},
+        "return_leg_detail": return_row.get("return_leg_detail") or return_row.get("leg_detail") or {},
         "source_status": "ok",
     }
 
@@ -1473,6 +1660,28 @@ def unique_options(rows: list[dict[str, Any]], key: str) -> str:
     return "\n".join(f'<option value="{escape(value)}">{escape(value)}</option>' for value in values)
 
 
+def filter_values(rows: list[dict[str, Any]], key: str) -> list[str]:
+    return sorted({str(row.get(key, "")) for row in rows if row.get(key, "") not in ("", None)})
+
+
+def checkbox_filter_group(label: str, key: str, values: list[str]) -> str:
+    if len(values) <= 1:
+        return ""
+    options = "".join(
+        '<label class="check-option">'
+        f'<input type="checkbox" data-filter-key="{escape(key, quote=True)}" value="{escape(value, quote=True)}" checked>'
+        f'<span>{escape(value)}</span>'
+        '</label>'
+        for value in values
+    )
+    return (
+        f'<fieldset class="check-filter" data-filter-group="{escape(key, quote=True)}">'
+        f'<legend>{escape(label)}</legend>'
+        f'<div class="check-options">{options}</div>'
+        '</fieldset>'
+    )
+
+
 def row_badges(row: dict[str, Any]) -> list[str]:
     badges = []
     if row.get("kind") == "cash":
@@ -1628,9 +1837,15 @@ def row_data_attrs(row: dict[str, Any], *, section: str) -> str:
         "award-components": json.dumps(row.get("award_components") or [], ensure_ascii=True, sort_keys=True),
         "time-hours": json.dumps(time_hour_counts(row), ensure_ascii=True),
         "stops": row.get("stops_num", ""),
+        "outbound-stops": leg_stop_value(row, "outbound"),
+        "return-stops": leg_stop_value(row, "return"),
         "duration": row.get("duration_minutes", ""),
         "stop-penalty": component_value(row.get("stop_penalty_base")),
         "duration-penalty": component_value(row.get("duration_penalty_base")),
+        "carrier-codes": json.dumps(carrier_codes_for_row(row), ensure_ascii=True, sort_keys=True),
+        "outbound-leg": json.dumps(leg_detail_payload(row, "outbound"), ensure_ascii=True, sort_keys=True),
+        "return-leg": json.dumps(leg_detail_payload(row, "return"), ensure_ascii=True, sort_keys=True),
+        "composition": json.dumps(row_composition_payload(row), ensure_ascii=True, sort_keys=True),
     }
     return " ".join(
         f'data-{name}="{escape(str(value), quote=True)}"'
@@ -1816,6 +2031,18 @@ def write_master_html(
     preferences = load_preferences(preferences_path)
     score_defaults = score_defaults_from_preferences(preferences)
     point_controls = point_value_controls(all_rows)
+    date_constraints = date_constraint_summary(plan)
+    checkbox_filters = "\n".join(
+        item
+        for item in [
+            checkbox_filter_group("Route Origin", "origin", filter_values(complete_rows, "origin")),
+            checkbox_filter_group("Route Destination", "destination", filter_values(complete_rows, "destination")),
+            checkbox_filter_group("Outbound Date", "outboundDate", filter_values(complete_rows, "outbound_date")),
+            checkbox_filter_group("Return Date", "returnDate", filter_values(complete_rows, "return_date")),
+        ]
+        if item
+    )
+    airline_logo_config_json = script_json({"airlineLogos": airline_logo_data_uris()})
     score_config_json = script_json({"scoreDefaults": score_defaults})
     error_tags = "".join(f"<li>{escape(error)}</li>" for error in errors)
     cash_issue_text = f"; {cash_failures} no-result/provider issues" if cash_failures else ""
@@ -1836,11 +2063,18 @@ def write_master_html(
         f"mixed cash+award plans: {mixed_priced}. "
         f"Award legs shown: {len(award_rows)}. Provider issues: {len(errors)}."
     )
+    error_section = (
+        "        "
+        f'<section class="errors"><strong>Partial results:</strong> {escape(error_summary)}'
+        f"<details><summary>Show provider details</summary><ul>{error_tags}</ul></details></section>"
+        if errors
+        else ""
+    )
     complete_tags = table_rows(complete_rows, section="complete")
     outbound_tags = table_rows([row for row in award_rows if row["direction"] == "outbound"], section="outbound")
     return_tags = table_rows([row for row in award_rows if row["direction"] == "return"], section="return")
     cash_one_way_tags = table_rows(cash_one_way_rows, section="cash-one-way")
-    flight_cards = flight_result_cards(complete_rows)
+    flight_cards = flight_result_cards(complete_rows).strip()
     html = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -1869,8 +2103,9 @@ def write_master_html(
       letter-spacing: 0;
     }}
     header {{
-      padding: 30px 32px 18px;
-      background: var(--surface);
+      margin: 0 0 14px;
+      padding: 0 0 14px;
+      background: transparent;
       border-bottom: 1px solid var(--line);
     }}
     .eyebrow {{
@@ -1886,7 +2121,27 @@ def write_master_html(
       line-height: 1.2;
       font-weight: 780;
     }}
-    main {{ padding: 22px 32px 36px; }}
+    .search-constraints {{
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.35;
+      font-weight: 650;
+    }}
+    .report-shell {{
+      display: grid;
+      grid-template-columns: minmax(320px, 390px) minmax(0, 1fr);
+      gap: 24px;
+      align-items: start;
+      padding: 22px 32px 36px;
+    }}
+    .report-shell.drawer-collapsed {{
+      grid-template-columns: 46px minmax(0, 1fr);
+      gap: 12px;
+    }}
+    .report-content {{
+      min-width: 0;
+    }}
     .stats, .recommendations {{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -1981,38 +2236,97 @@ def write_master_html(
       flex-wrap: wrap;
       gap: 8px;
       margin: 0 0 14px;
+      position: relative;
+      z-index: 5;
     }}
     .view-tabs button {{
       min-width: 118px;
       background: var(--surface);
+      position: relative;
+      z-index: 6;
+    }}
+    [hidden] {{
+      display: none !important;
     }}
     .view-panel[hidden] {{
-      display: none;
+      display: none !important;
+    }}
+    #planResults,
+    #planResultsTemplate {{
+      display: none !important;
+      pointer-events: none;
     }}
     .global-controls {{
-      margin: 0 0 14px;
+      position: sticky;
+      top: 22px;
+      min-width: 0;
+      width: 100%;
+      max-height: calc(100vh - 44px);
+      margin: 0;
       background: var(--surface);
       border: 1px solid var(--line);
       border-radius: 8px;
+      overflow: auto;
+    }}
+    .control-drawer-header {{
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto auto;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 16px 10px 22px;
+      border-bottom: 1px solid var(--line);
+    }}
+    .control-drawer-title {{
+      margin: 0;
+      color: var(--ink);
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 780;
+    }}
+    .control-reset-button {{
+      min-height: 30px;
+      padding: 5px 9px;
+      color: #8a1f1f;
+      border-color: #fecaca;
+      background: #fff5f5;
+    }}
+    .control-drawer-toggle {{
+      width: 32px;
+      min-width: 32px;
+      padding: 0;
+      font-size: 18px;
+      line-height: 1;
+    }}
+    .report-shell.drawer-collapsed .global-controls {{
       overflow: hidden;
     }}
-    .global-controls summary {{
-      cursor: pointer;
-      padding: 13px 16px;
-      color: var(--ink);
-      font-size: 14px;
-      font-weight: 780;
+    .report-shell.drawer-collapsed .control-drawer-header {{
+      grid-template-columns: 1fr;
+      justify-items: center;
+      padding: 8px 6px;
+      border-bottom: 0;
+    }}
+    .report-shell.drawer-collapsed .control-drawer-title,
+    .report-shell.drawer-collapsed .control-reset-button,
+    .report-shell.drawer-collapsed .global-controls-inner {{
+      display: none;
     }}
     .global-controls-inner {{
       display: grid;
-      grid-template-columns: minmax(280px, 0.8fr) minmax(320px, 1.2fr);
       gap: 16px;
-      padding: 0 16px 16px;
+      min-width: 0;
+      padding: 16px 22px 22px;
     }}
     .control-block {{
       display: grid;
       gap: 10px;
       min-width: 0;
+    }}
+    .score-controls {{
+      order: 1;
+    }}
+    .selection-controls {{
+      order: 2;
     }}
     .control-block h2 {{
       margin: 0;
@@ -2100,11 +2414,16 @@ def write_master_html(
       padding-top: 10px;
       border-top: 1px solid var(--line);
     }}
-    .time-editor-header,
-    .time-hour-controls {{
-      display: flex;
+    .time-editor-header {{
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
       align-items: center;
-      justify-content: space-between;
+      gap: 8px;
+    }}
+    .time-hour-controls {{
+      display: grid;
+      grid-template-columns: minmax(92px, 130px) minmax(0, 1fr);
+      align-items: end;
       gap: 10px;
     }}
     .time-editor-header strong {{
@@ -2122,6 +2441,42 @@ def write_master_html(
       background: #fbfdff;
       touch-action: none;
       user-select: none;
+    }}
+    .time-plot-wrap {{
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 48px;
+      gap: 8px;
+      align-items: stretch;
+    }}
+    .time-scale-control {{
+      display: grid;
+      align-content: center;
+      justify-items: center;
+      gap: 6px;
+      min-width: 0;
+      height: 112px;
+      padding: 8px 6px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfdff;
+    }}
+    .score-lab .time-scale-control span {{
+      display: grid;
+      gap: 2px;
+      justify-items: center;
+      text-align: center;
+    }}
+    .time-scale-control output {{
+      color: var(--ink);
+      font-weight: 780;
+      text-transform: none;
+    }}
+    .time-scale-control input[type="range"] {{
+      width: 24px;
+      height: 76px;
+      min-height: 76px;
+      writing-mode: vertical-lr;
+      direction: rtl;
     }}
     .hour-bar {{
       min-width: 0;
@@ -2147,10 +2502,6 @@ def write_master_html(
     .hour-bar.active span {{
       background: var(--accent);
     }}
-    .time-hour-controls {{
-      display: grid;
-      grid-template-columns: minmax(92px, 130px) minmax(0, 1fr);
-    }}
     .unit-note {{
       margin: 0;
       color: var(--muted);
@@ -2170,7 +2521,48 @@ def write_master_html(
       list-style-position: inside;
     }}
     .control-details .controls {{
+      grid-template-columns: minmax(0, 1fr);
       margin-top: 10px;
+      margin-bottom: 0;
+      min-width: 0;
+    }}
+    .check-filter {{
+      min-width: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }}
+    .check-filter legend {{
+      margin: 0 0 6px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 760;
+      text-transform: uppercase;
+    }}
+    .check-options {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }}
+    .check-option {{
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 32px;
+      padding: 6px 8px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fbfdff;
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 720;
+      text-transform: none;
+    }}
+    .check-option input {{
+      width: auto;
+      min-height: auto;
+      margin: 0;
+      accent-color: var(--accent);
     }}
     .results-board {{
       min-width: 0;
@@ -2399,7 +2791,7 @@ def write_master_html(
     }}
     .builder-header {{
       display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(180px, 240px);
+      grid-template-columns: minmax(0, 1fr);
       gap: 12px;
       align-items: end;
       padding: 14px 16px;
@@ -2419,7 +2811,7 @@ def write_master_html(
     }}
     .builder-grid {{
       display: grid;
-      grid-template-columns: minmax(220px, 0.95fr) minmax(220px, 0.95fr) minmax(260px, 1.25fr);
+      grid-template-columns: minmax(180px, 0.85fr) minmax(180px, 0.85fr) minmax(320px, 1.6fr);
       gap: 12px;
       align-items: start;
     }}
@@ -2432,10 +2824,20 @@ def write_master_html(
     }}
     .builder-column h3 {{
       margin: 0;
-      padding: 12px 14px;
-      border-bottom: 1px solid var(--line);
       font-size: 15px;
       line-height: 1.2;
+    }}
+    .builder-column-head {{
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(128px, 160px);
+      gap: 10px;
+      align-items: end;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      background: #fbfdff;
+    }}
+    .builder-column-head label {{
+      gap: 4px;
     }}
     .choice-list,
     .builder-results {{
@@ -2446,43 +2848,193 @@ def write_master_html(
       padding: 10px;
     }}
     .leg-choice {{
-      display: grid;
-      gap: 4px;
+      display: block;
       width: 100%;
       min-height: 0;
       text-align: left;
       background: #fbfdff;
       border: 1px solid var(--line);
       border-radius: 6px;
-      padding: 9px 10px;
+      padding: 0;
+      overflow: hidden;
     }}
     .leg-choice.active {{
       border-color: var(--accent);
       background: #e8f1fb;
       color: #123c69;
     }}
-    .leg-choice strong {{
-      font-size: 13px;
-      line-height: 1.25;
+    .leg-choice.muted {{
+      border: 2px dashed #b45309;
+      background: #fff7ed;
+      color: #7c2d12;
+      opacity: 1;
     }}
-    .leg-choice span {{
-      color: var(--muted);
+    .leg-choice.muted:hover {{
+      border-color: #92400e;
+      background: #ffedd5;
+    }}
+    .choice-compact {{
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      min-width: 0;
+      padding: 10px 11px;
+    }}
+    .choice-logo-cell {{
+      display: flex;
+      align-items: center;
+      width: 44px;
+      min-height: 40px;
+    }}
+    .choice-logo-cell .logo-row {{
+      flex-wrap: nowrap;
+      gap: 0;
+    }}
+    .choice-logo-cell .airline-logo {{
+      width: 30px;
+      height: 30px;
+      border-radius: 999px;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.18);
+    }}
+    .choice-logo-cell .airline-logo + .airline-logo {{
+      margin-left: -10px;
+    }}
+    .choice-summary {{
+      display: grid;
+      gap: 6px;
+      min-width: 0;
+    }}
+    .choice-title {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: baseline;
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 840;
+    }}
+    .choice-title small {{
+      color: #5f6f81;
+      font-size: 12px;
+      line-height: 1.2;
+      font-weight: 760;
+    }}
+    .choice-subtitle {{
+      color: #5f6f81;
       font-size: 12px;
       line-height: 1.25;
+      font-weight: 620;
+    }}
+    .choice-facts {{
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }}
+    .choice-fact {{
+      display: grid;
+      gap: 2px;
+      min-width: 0;
+    }}
+    .choice-fact strong {{
+      color: var(--ink);
+      font-size: 13px;
+      line-height: 1.2;
+      font-weight: 820;
+    }}
+    .choice-fact small {{
+      color: #5f6f81;
+      font-size: 12px;
+      line-height: 1.2;
+      font-weight: 620;
+    }}
+    .choice-metric-strip {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+    }}
+    .choice-mini-metric {{
+      display: inline-flex;
+      align-items: baseline;
+      gap: 4px;
+      border: 1px solid #bbf7d0;
+      border-radius: 999px;
+      padding: 3px 8px;
+      background: #f0fdf4;
+      color: #14532d;
+    }}
+    .choice-mini-metric span {{
+      color: #557064;
+      font-size: 10px;
+      font-weight: 820;
+      line-height: 1;
+      text-transform: uppercase;
+    }}
+    .choice-mini-metric strong {{
+      color: #14532d;
+      font-size: 15px;
+      line-height: 1;
+      font-weight: 880;
+    }}
+    .choice-switch {{
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid #b45309;
+      border-radius: 999px;
+      padding: 3px 8px;
+      background: #9a3412;
+      color: #ffffff;
+      font-size: 11px;
+      line-height: 1;
+      font-weight: 840;
+    }}
+    .leg-choice.muted .choice-title,
+    .leg-choice.muted .choice-fact strong {{
+      color: #7c2d12;
+    }}
+    .leg-choice.muted .choice-subtitle,
+    .leg-choice.muted .choice-title small,
+    .leg-choice.muted .choice-fact small {{
+      color: #9a3412;
+    }}
+    .leg-choice.muted .choice-mini-metric {{
+      border-color: #fdba74;
+      background: #fffbeb;
+      color: #7c2d12;
+    }}
+    .leg-choice.muted .choice-mini-metric strong,
+    .leg-choice.muted .choice-mini-metric span {{
+      color: #7c2d12;
+    }}
+    .choice-icon-cell {{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }}
+    .leg-choice .plan-icon {{
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 1;
     }}
     .builder-card {{
       display: grid;
-      gap: 8px;
+      gap: 10px;
       padding: 11px 12px;
       border: 1px solid var(--line);
       border-radius: 8px;
       background: #fff;
     }}
+    .plan-card {{
+      gap: 12px;
+      padding: 14px;
+    }}
     .builder-card h3 {{
       margin: 0;
       padding: 0;
       border: 0;
-      font-size: 15px;
+      font-size: 17px;
       line-height: 1.25;
     }}
     .builder-card p {{
@@ -2491,19 +3043,235 @@ def write_master_html(
       font-size: 12px;
       line-height: 1.35;
     }}
-    .builder-meta {{
-      display: flex;
+    .logo-row {{
+      display: inline-flex;
       flex-wrap: wrap;
-      gap: 6px;
+      gap: 5px;
+      align-items: center;
+      min-width: 0;
     }}
-    .builder-meta span {{
+    .airline-logo {{
+      display: inline-grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      overflow: hidden;
       border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 3px 7px;
+      border-radius: 6px;
+      background: #ffffff;
       color: #334252;
-      background: #f8fafc;
+      font-size: 10px;
+      font-weight: 800;
+      flex: 0 0 auto;
+    }}
+    .airline-logo img {{
+      width: 100%;
+      height: 100%;
+      padding: 3px;
+      object-fit: contain;
+      display: block;
+    }}
+    .plan-icon {{
+      display: inline-grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.32), 0 1px 3px rgba(15, 23, 42, 0.24);
+      font-size: 14px;
+      line-height: 1;
+      font-weight: 900;
+      flex: 0 0 auto;
+    }}
+    .plan-icon.cash {{ background: #064e3b; }}
+    .plan-icon.award {{ background: #4c1d95; }}
+    .plan-icon.mixed {{ background: #9f1239; }}
+    .plan-icons {{
+      display: inline-flex;
+      gap: 4px;
+      align-items: center;
+      justify-content: end;
+    }}
+    .plan-card-head {{
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: start;
+    }}
+    .plan-card-title {{
+      display: grid;
+      gap: 5px;
+      min-width: 0;
+    }}
+    .plan-metrics {{
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 7px;
+    }}
+    .plan-chip {{
+      display: grid;
+      gap: 2px;
+      min-width: 0;
+      border: 1px solid #d7e3ef;
+      border-radius: 7px;
+      padding: 7px 8px;
+      background: #f8fbff;
+    }}
+    .plan-chip span {{
+      color: #607084;
+      font-size: 10px;
+      line-height: 1.1;
+      font-weight: 820;
+      text-transform: uppercase;
+    }}
+    .plan-chip strong {{
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.1;
+      font-weight: 860;
+    }}
+    .composition {{
+      display: grid;
+      gap: 5px;
+      padding: 8px 9px;
+      border: 1px solid #e4e9ef;
+      border-radius: 6px;
+      background: #fbfdff;
+      color: #334252;
       font-size: 12px;
+      line-height: 1.35;
+    }}
+    .plan-timeline-list {{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }}
+    .flight-timeline {{
+      display: grid;
+      gap: 10px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #ffffff;
+    }}
+    .timeline-heading {{
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+      margin: 0;
+    }}
+    .timeline-title {{
+      display: grid;
+      gap: 3px;
+      min-width: 0;
+    }}
+    .timeline-title strong {{
+      color: var(--ink);
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 850;
+    }}
+    .timeline-title span {{
+      color: #607084;
+      font-size: 12px;
+      line-height: 1.25;
+      font-weight: 650;
+    }}
+    .timeline-body {{
+      display: grid;
+      gap: 0;
+    }}
+    .timeline-segment {{
+      display: grid;
+      grid-template-columns: 18px minmax(0, 1fr);
+      gap: 12px;
+      padding: 2px 0;
+    }}
+    .timeline-rail {{
+      position: relative;
+      min-height: 122px;
+    }}
+    .timeline-rail::before {{
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 16px;
+      bottom: 16px;
+      border-left: 3px dotted #d5dbe3;
+    }}
+    .timeline-dot {{
+      position: absolute;
+      left: 2px;
+      width: 14px;
+      height: 14px;
+      border: 3px solid #d5dbe3;
+      border-radius: 999px;
+      background: #fff;
+    }}
+    .timeline-dot.start {{ top: 3px; }}
+    .timeline-dot.end {{ bottom: 3px; }}
+    .timeline-content {{
+      display: grid;
+      gap: 9px;
+      min-width: 0;
+      padding-bottom: 10px;
+    }}
+    .timeline-point {{
+      display: grid;
+      grid-template-columns: minmax(58px, auto) minmax(0, 1fr);
+      gap: 8px;
+      align-items: baseline;
+      color: var(--ink);
+      font-size: 14px;
+      line-height: 1.2;
+    }}
+    .timeline-time {{
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.15;
+      font-weight: 840;
+      white-space: nowrap;
+    }}
+    .timeline-airport {{
+      color: var(--ink);
       font-weight: 720;
+    }}
+    .timeline-duration {{
+      color: #6b7280;
+      font-size: 12px;
+      line-height: 1.3;
+      font-weight: 700;
+    }}
+    .timeline-meta {{
+      color: #6b7280;
+      font-size: 12px;
+      line-height: 1.45;
+      font-weight: 650;
+    }}
+    .timeline-layover {{
+      margin: 2px 0 12px 30px;
+      border-top: 1px solid #d9dee6;
+      border-bottom: 1px solid #d9dee6;
+      padding: 9px 0;
+      color: #1f2937;
+      font-size: 13px;
+      line-height: 1.25;
+      font-weight: 740;
+    }}
+    .timeline-fallback .timeline-rail::before {{
+      border-left-style: dotted;
+    }}
+    @media (max-width: 1180px) {{
+      .plan-metrics {{ grid-template-columns: repeat(2, minmax(0, 1fr)); }}
+    }}
+    @media (max-width: 760px) {{
+      .choice-compact {{ grid-template-columns: auto minmax(0, 1fr); }}
+      .choice-icon-cell {{ grid-column: 1 / -1; justify-content: start; }}
+      .choice-facts {{ grid-template-columns: 1fr; }}
+      .plan-metrics {{ grid-template-columns: 1fr; }}
     }}
     .controls {{
       display: grid;
@@ -2514,6 +3282,7 @@ def write_master_html(
     label {{
       display: grid;
       gap: 6px;
+      min-width: 0;
       color: var(--muted);
       font-size: 12px;
       font-weight: 760;
@@ -2521,6 +3290,7 @@ def write_master_html(
     }}
     input, select {{
       min-height: 34px;
+      min-width: 0;
       width: 100%;
       border: 1px solid var(--line);
       border-radius: 6px;
@@ -2657,9 +3427,10 @@ def write_master_html(
     .trip-card[data-kind="award pair"] .pill,
     .trip-card[data-kind$="award"] .pill {{ background: var(--award); }}
     @media (max-width: 900px) {{
-      header, main {{ padding-left: 16px; padding-right: 16px; }}
+      .report-shell {{ grid-template-columns: 1fr; padding-left: 16px; padding-right: 16px; }}
+      .report-shell.drawer-collapsed {{ grid-template-columns: 1fr; }}
+      .global-controls {{ position: static; max-height: none; }}
       .stats, .recommendations, .controls {{ grid-template-columns: 1fr 1fr; }}
-      .global-controls-inner {{ grid-template-columns: 1fr; }}
       .builder-grid {{ grid-template-columns: 1fr; }}
       .builder-header {{ grid-template-columns: 1fr; }}
       .card-main {{ grid-template-columns: 1fr; }}
@@ -2669,29 +3440,34 @@ def write_master_html(
     @media (max-width: 620px) {{
       .stats, .recommendations, .controls {{ grid-template-columns: 1fr; }}
       .rec-legs {{ grid-template-columns: 1fr; }}
-      .quick-tabs, .result-toolbar, .card-legs, .cpp-grid, .time-hour-controls {{ grid-template-columns: 1fr; }}
+      .quick-tabs, .result-toolbar, .card-legs, .cpp-grid, .time-hour-controls, .time-plot-wrap {{ grid-template-columns: 1fr; }}
       .time-penalty-plot {{ gap: 2px; padding: 6px; }}
+      .time-scale-control {{
+        height: auto;
+      }}
+      .time-scale-control input[type="range"] {{
+        width: 100%;
+        height: auto;
+        min-height: 20px;
+        writing-mode: horizontal-tb;
+        direction: ltr;
+      }}
     }}
   </style>
 </head>
 <body>
   <script id="score-config" type="application/json">{score_config_json}</script>
-  <header>
-    <p class="eyebrow">{escape(cabin)} · multi-airport trip search</p>
-    <h1>{escape(title)}</h1>
-  </header>
-  <main>
-    <nav class="view-tabs" aria-label="Report views">
-      <button type="button" class="active" data-view-tab="summary">Summary</button>
-      <button type="button" data-view-tab="plans">Plans</button>
-      <button type="button" data-view-tab="build">Build Trip</button>
-      <button type="button" data-view-tab="data">Data</button>
-    </nav>
-    <details class="global-controls">
-      <summary>Trip Controls</summary>
-      <div class="global-controls-inner">
-        <section class="control-block" aria-label="Score knobs">
-          <h2>Score Knobs</h2>
+  <script id="airline-logo-config" type="application/json">{airline_logo_config_json}</script>
+  <main class="report-shell">
+    <aside class="global-controls" aria-label="Trip controls">
+      <div class="control-drawer-header">
+        <h2 class="control-drawer-title">Trip Controls</h2>
+        <button id="controlReset" class="control-reset-button" type="button">Reset</button>
+        <button id="controlDrawerToggle" class="control-drawer-toggle" type="button" aria-controls="controlDrawerBody" aria-expanded="true" aria-label="Hide trip controls">&lsaquo;</button>
+      </div>
+      <div id="controlDrawerBody" class="global-controls-inner">
+        <section class="control-block score-controls" aria-label="Score knobs">
+          <h2>Score Weights</h2>
           <section class="score-lab">
             <div class="knob-grid">
               <label><span>Stops <output id="stopPenaltyValue"></output></span><input id="stopPenalty" type="range" min="0" max="200" step="5" value="{score_defaults["stopPenalty"]}"></label>
@@ -2700,7 +3476,10 @@ def write_master_html(
             <div class="time-editor">
               <div class="time-editor-header"><strong>Bad Times Per Event</strong><output id="timePenaltySelectedValue"></output></div>
               <p class="unit-note">Applied once for each departure or arrival in that hour.</p>
-              <div id="timePenaltyPlot" class="time-penalty-plot" aria-label="Hourly bad-time penalties"></div>
+              <div class="time-plot-wrap">
+                <div id="timePenaltyPlot" class="time-penalty-plot" aria-label="Hourly bad-time penalties"></div>
+                <label class="time-scale-control"><span>Max<output id="timePenaltyMaxValue"></output></span><input id="timePenaltyMax" type="range" min="50" max="500" step="10" value="200"></label>
+              </div>
               <div class="time-hour-controls">
                 <label>Hour<select id="timeHourSelect">{hour_options()}</select></label>
                 <label><span>Penalty per event <output id="timeHourPenaltyValue"></output></span><input id="timeHourPenalty" type="range" min="0" max="200" step="5" value="0"></label>
@@ -2709,7 +3488,7 @@ def write_master_html(
           </section>
           {point_controls}
         </section>
-        <section class="control-block" aria-label="Filters">
+        <section class="control-block selection-controls" aria-label="Filters">
           <h2>Filters</h2>
           <label>Search<input id="search" type="search" placeholder="Airport, carrier, program, warning"></label>
           <div class="quick-tabs" role="group" aria-label="Quick plan filters">
@@ -2721,21 +3500,32 @@ def write_master_html(
           <details class="control-details">
             <summary>More filters</summary>
             <section class="controls" aria-label="More filters">
-              <label>Kind<select id="kindFilter"><option value="">All</option><option value="cash">Cash</option><option value="cash + award">Cash + award</option><option value="cash one-ways">Cash one-ways</option><option value="award pair">Award pair</option><option value="outbound cash">Outbound cash</option><option value="return cash">Return cash</option><option value="outbound award">Outbound award</option><option value="return award">Return award</option></select></label>
-              <label>Trip Type<select id="tripFilter"><option value="">All</option><option value="round-trip">Round trip</option><option value="multi-city">Multi-city</option><option value="mixed cash-award">Mixed cash-award</option><option value="two one-ways">Two one-ways</option><option value="award pair">Award pair</option><option value="cash one-way">Cash one-way</option><option value="award one-way">Award one-way</option></select></label>
-              <label>Route Origin<select id="originFilter"><option value="">All</option>{unique_options(all_rows, "origin")}</select></label>
-              <label>Route Destination<select id="destinationFilter"><option value="">All</option>{unique_options(all_rows, "destination")}</select></label>
-              <label>Outbound Date<select id="outboundDateFilter"><option value="">All</option>{unique_options(all_rows, "outbound_date")}</select></label>
-              <label>Return Date<select id="returnDateFilter"><option value="">All</option>{unique_options(all_rows, "return_date")}</select></label>
+              {checkbox_filters}
               <label>Max Score<input id="scoreFilter" type="number" min="0" step="1" placeholder="Any"></label>
               <label>Max Effective USD<input id="effectiveFilter" type="number" min="0" step="1" placeholder="Any"></label>
-              <label>Max Stops<input id="stopsFilter" type="number" min="0" step="1" placeholder="Any"></label>
-              <label>Late Arrival<select id="lateFilter"><option value="">All</option><option value="false">Hide late/overnight</option><option value="true">Only late/overnight</option></select></label>
+              <label>Max Stops Per Leg<input id="stopsFilter" type="number" min="0" step="1" placeholder="Any"></label>
             </section>
           </details>
         </section>
       </div>
-    </details>
+    </aside>
+    <section class="report-content">
+      <header>
+        <p class="eyebrow">{escape(cabin)} · multi-airport trip search</p>
+        <h1>{escape(title)}</h1>
+        <p class="search-constraints">{escape(date_constraints)}</p>
+      </header>
+      <nav class="view-tabs" aria-label="Report views">
+        <button type="button" class="active" data-view-tab="summary" onclick="window.tripReportShowView && window.tripReportShowView('summary')">Summary</button>
+        <button type="button" data-view-tab="build" onclick="window.tripReportShowView && window.tripReportShowView('build')">Build Trip</button>
+        <button type="button" data-view-tab="data" onclick="window.tripReportShowView && window.tripReportShowView('data')">Data</button>
+      </nav>
+      <span id="visiblePlanCount" hidden>0</span>
+      <div id="compareTray" hidden><div id="compareList"></div></div>
+      <div id="planResults" class="trip-results" hidden></div>
+      <template id="planResultsTemplate">
+{flight_cards}
+      </template>
     <section id="summaryView" class="view-panel">
       <section class="summary-body">
         <section class="stats" aria-label="Search counts">
@@ -2754,29 +3544,12 @@ def write_master_html(
           {"".join(card_tags) if card_tags else '<article class="recommendation"><span>No complete plans</span><h2>Refresh data or check provider errors</h2><p>The report still lists attempted searches below.</p><strong></strong><em></em></article>'}
         </section>
         <section class="guide">
-          <strong>How to read this:</strong> <code>A &lt;-&gt; B</code> means round trip, and <code>A -&gt; B -&gt; C</code> means different return airport. Cash rows are true two-leg fares; <code>2x cash</code> rows add two one-way fares for comparison. Point value sliders change award effective USD. Score is lower-is-better and includes price plus timing, duration, and stop penalties.
+          <strong>How to read this:</strong> <code>A &lt;-&gt; B</code> means round trip, and <code>A -&gt; B -&gt; C</code> means different return airport. Cash rows are true two-leg fares; <code>2x cash</code> rows add two one-way fares for comparison. Point value inputs change award effective USD. Score is lower-is-better and includes price plus timing, duration, and stop penalties.
         </section>
         <section class="quality" aria-label="Data quality">
           {escape(quality_summary)}
         </section>
-        {f'<section class="errors"><strong>Partial results:</strong> {escape(error_summary)}<details><summary>Show provider details</summary><ul>{error_tags}</ul></details></section>' if errors else ''}
-      </section>
-    </section>
-    <section id="plansView" class="view-panel" hidden>
-      <section aria-label="Interactive trip explorer">
-        <section class="results-board">
-          <div class="result-toolbar">
-            <div>
-              <h2>Recommended Plans</h2>
-              <p><span id="visiblePlanCount">0</span> of {len(complete_rows)} complete plans visible</p>
-            </div>
-            <label>Sort<select id="sortMode"><option value="score">Adjusted score</option><option value="effective">Effective USD</option><option value="duration">Duration</option><option value="stops">Stops</option></select></label>
-          </div>
-          <div id="compareTray" class="compare-tray"><strong>Compare</strong><div id="compareList" class="compare-list"></div></div>
-          <div id="planResults" class="trip-results">
-            {flight_cards}
-          </div>
-        </section>
+{error_section}
       </section>
     </section>
     <section id="buildView" class="view-panel" hidden>
@@ -2786,15 +3559,20 @@ def write_master_html(
             <h2>Build Trip</h2>
             <p>Select an outbound first, then choose a return from matching complete plans.</p>
           </div>
-          <label>Plan Type<select id="buildKindFilter"><option value="">All</option><option value="cash">Cash</option><option value="cash + award">Cash + award</option><option value="cash one-ways">Two cash one-ways</option><option value="award pair">Award pair</option></select></label>
         </div>
         <div class="builder-grid">
           <section class="builder-column">
-            <h3>1. Outbound <span id="outboundChoiceCount"></span></h3>
+            <div class="builder-column-head">
+              <h3>1. Outbound <span id="outboundChoiceCount"></span></h3>
+              <label>Sort<select id="outboundSort"><option value="score">Score</option><option value="effective">Effective USD</option><option value="duration">Duration</option><option value="depart">Departure time</option><option value="arrive">Arrival time</option><option value="convenience">Convenience</option></select></label>
+            </div>
             <div id="outboundChoices" class="choice-list"></div>
           </section>
           <section class="builder-column">
-            <h3>2. Return <span id="returnChoiceCount"></span></h3>
+            <div class="builder-column-head">
+              <h3>2. Inbound <span id="returnChoiceCount"></span></h3>
+              <label>Sort<select id="returnSort"><option value="score">Score</option><option value="effective">Effective USD</option><option value="duration">Duration</option><option value="depart">Departure time</option><option value="arrive">Arrival time</option><option value="convenience">Convenience</option></select></label>
+            </div>
             <div id="returnChoices" class="choice-list"></div>
           </section>
           <section class="builder-column">
@@ -2810,22 +3588,38 @@ def write_master_html(
       {html_table('Outbound Award Options', outbound_tags)}
       {html_table('Return Award Options', return_tags)}
     </section>
+    </section>
   </main>
   <script>
+    window.tripReportShowView = function(name) {{
+      document.querySelectorAll("[data-view-tab]").forEach(button => {{
+        button.classList.toggle("active", button.dataset.viewTab === name);
+      }});
+      document.querySelectorAll(".view-panel").forEach(panel => {{
+        panel.hidden = panel.id !== `${{name}}View`;
+      }});
+      if (name === "build" && typeof window.renderTripBuilder === "function") {{
+        window.renderTripBuilder();
+      }}
+    }};
+    document.querySelectorAll("[data-view-tab]").forEach(button => {{
+      button.dataset.viewBound = "true";
+      button.addEventListener("click", () => window.tripReportShowView(button.dataset.viewTab));
+    }});
+  </script>
+  <script>
     const scoreConfig = JSON.parse(document.querySelector("#score-config").textContent).scoreDefaults;
+    const airlineLogos = JSON.parse(document.querySelector("#airline-logo-config").textContent).airlineLogos || {{}};
+    const reportShell = document.querySelector(".report-shell");
+    const controlDrawerToggle = document.querySelector("#controlDrawerToggle");
+    const controlReset = document.querySelector("#controlReset");
     const controls = {{
       search: document.querySelector("#search"),
-      kind: document.querySelector("#kindFilter"),
-      trip: document.querySelector("#tripFilter"),
-      origin: document.querySelector("#originFilter"),
-      destination: document.querySelector("#destinationFilter"),
-      outboundDate: document.querySelector("#outboundDateFilter"),
-      returnDate: document.querySelector("#returnDateFilter"),
       score: document.querySelector("#scoreFilter"),
       effective: document.querySelector("#effectiveFilter"),
-      stops: document.querySelector("#stopsFilter"),
-      late: document.querySelector("#lateFilter")
+      stops: document.querySelector("#stopsFilter")
     }};
+    const checkboxFilters = Array.from(document.querySelectorAll("[data-filter-key]"));
     const scoreControls = {{
       stop: document.querySelector("#stopPenalty"),
       stopOut: document.querySelector("#stopPenaltyValue"),
@@ -2837,11 +3631,17 @@ def write_master_html(
     const timeHourSelect = document.querySelector("#timeHourSelect");
     const timeHourPenalty = document.querySelector("#timeHourPenalty");
     const timeHourPenaltyValue = document.querySelector("#timeHourPenaltyValue");
+    const timePenaltyMax = document.querySelector("#timePenaltyMax");
+    const timePenaltyMaxValue = document.querySelector("#timePenaltyMaxValue");
     const timePenaltySelectedValue = document.querySelector("#timePenaltySelectedValue");
-    const sortMode = document.querySelector("#sortMode");
-    const buildKindFilter = document.querySelector("#buildKindFilter");
+    const outboundSort = document.querySelector("#outboundSort");
+    const returnSort = document.querySelector("#returnSort");
     const visiblePlanCount = document.querySelector("#visiblePlanCount");
     const planResults = document.querySelector("#planResults");
+    const planTemplate = document.querySelector("#planResultsTemplate");
+    if (planTemplate && planResults && !planResults.children.length) {{
+      planResults.appendChild(planTemplate.content.cloneNode(true));
+    }}
     const compareTray = document.querySelector("#compareTray");
     const compareList = document.querySelector("#compareList");
     const outboundChoices = document.querySelector("#outboundChoices");
@@ -2852,15 +3652,30 @@ def write_master_html(
     const buildResultCount = document.querySelector("#buildResultCount");
     const tables = Array.from(document.querySelectorAll("table"));
     const rows = Array.from(document.querySelectorAll("tbody tr"));
-    const cards = Array.from(document.querySelectorAll(".trip-card"));
+    const cards = Array.from(planResults ? planResults.querySelectorAll(".trip-card") : []);
     const recommendations = Array.from(document.querySelectorAll(".recommendation[data-section='summary']"));
     const scoreItems = [...rows, ...cards, ...recommendations];
     const filterItems = [...rows, ...cards];
     let selectedOutboundKey = "";
     let selectedReturnKey = "";
     let selectedTimeHour = 0;
-    let hourlyPenalties = [...(scoreConfig.timePenaltyDefaults || Array(24).fill(0))];
+    let currentKindPreset = "";
+    const defaultScoreValues = {{
+      stop: scoreControls.stop.value,
+      duration: scoreControls.duration.value
+    }};
+    const defaultCppValues = cppControls.map(control => [control, control.value]);
+    const defaultFilterValues = Object.values(controls).map(control => [control, control.value]);
+    const defaultCheckboxValues = checkboxFilters.map(control => [control, control.checked]);
+    const defaultKindPreset = currentKindPreset;
+    const defaultOutboundSort = outboundSort.value;
+    const defaultReturnSort = returnSort.value;
+    const defaultHourlyPenalties = [...(scoreConfig.timePenaltyDefaults || Array(24).fill(0))];
+    const defaultTimeScaleMax = Number(timePenaltyMax.value || 200);
+    let hourlyPenalties = [...defaultHourlyPenalties];
     let draggingTimePlot = false;
+    let timeDragStarted = false;
+    let timePointerStart = null;
 
     function itemText(item) {{
       return item.innerText.toLowerCase();
@@ -2971,17 +3786,32 @@ def write_master_html(
       scoreControls.durationOut.textContent = moneyValue(rangeNumber(scoreControls.duration));
       syncTimeEditor();
     }}
+    function timeScaleMax() {{
+      const fallback = Number(timePenaltyMax.max || 200);
+      const value = Number(timePenaltyMax.value || fallback);
+      return Number.isFinite(value) && value > 0 ? value : fallback;
+    }}
+    function syncTimeScale() {{
+      const maxPenalty = timeScaleMax();
+      timePenaltyMaxValue.textContent = moneyValue(maxPenalty);
+      timeHourPenalty.max = String(maxPenalty);
+      hourlyPenalties = hourlyPenalties.map(penalty => clamp(Number(penalty || 0), 0, maxPenalty));
+      return maxPenalty;
+    }}
     function renderTimePlot() {{
-      const maxPenalty = Math.max(100, ...hourlyPenalties);
+      const maxPenalty = timeScaleMax();
       timePenaltyPlot.innerHTML = hourlyPenalties.map((penalty, hour) => {{
-        const height = Math.max(4, Math.round(Number(penalty || 0) / maxPenalty * 100));
+        const boundedPenalty = clamp(Number(penalty || 0), 0, maxPenalty);
+        const height = Math.max(4, Math.round(boundedPenalty / maxPenalty * 100));
         const active = hour === selectedTimeHour ? " active" : "";
-        const label = `${{String(hour).padStart(2, "0")}}:00 ${{moneyValue(Number(penalty || 0))}} per departure/arrival`;
+        const label = `${{String(hour).padStart(2, "0")}}:00 ${{moneyValue(boundedPenalty)}} per departure/arrival`;
         return `<button type="button" class="hour-bar${{active}}" data-hour="${{hour}}" title="${{escapeHtml(label)}}" aria-label="${{escapeHtml(label)}}" aria-pressed="${{hour === selectedTimeHour}}"><span style="--bar-height:${{height}}%"></span></button>`;
       }}).join("");
     }}
     function syncTimeEditor() {{
-      const value = Number(hourlyPenalties[selectedTimeHour] || 0);
+      const maxPenalty = syncTimeScale();
+      const value = clamp(Number(hourlyPenalties[selectedTimeHour] || 0), 0, maxPenalty);
+      hourlyPenalties[selectedTimeHour] = value;
       timeHourSelect.value = String(selectedTimeHour);
       timeHourPenalty.value = String(value);
       timeHourPenaltyValue.textContent = moneyValue(value);
@@ -2996,9 +3826,9 @@ def write_master_html(
       const x = clamp(event.clientX - rect.left, 0, Math.max(1, rect.width - 1));
       const y = clamp(event.clientY - rect.top, 0, rect.height);
       const hour = clamp(Math.floor(x / Math.max(1, rect.width) * 24), 0, 23);
-      const rawPenalty = (1 - y / Math.max(1, rect.height)) * Number(timeHourPenalty.max || 200);
+      const rawPenalty = (1 - y / Math.max(1, rect.height)) * timeScaleMax();
       const step = Number(timeHourPenalty.step || 5);
-      const penalty = clamp(Math.round(rawPenalty / step) * step, Number(timeHourPenalty.min || 0), Number(timeHourPenalty.max || 200));
+      const penalty = clamp(Math.round(rawPenalty / step) * step, Number(timeHourPenalty.min || 0), timeScaleMax());
       return {{ hour, penalty }};
     }}
     function applyTimePointer(event) {{
@@ -3006,6 +3836,58 @@ def write_master_html(
       selectedTimeHour = edit.hour;
       hourlyPenalties[selectedTimeHour] = edit.penalty;
       refreshScoresAndViews();
+    }}
+    function selectTimeHourFromPointer(event) {{
+      const edit = timeEditFromPointer(event);
+      selectedTimeHour = edit.hour;
+      syncTimeEditor();
+    }}
+    function timePointerDistance(event) {{
+      if (!timePointerStart) return 0;
+      const dx = event.clientX - timePointerStart.x;
+      const dy = event.clientY - timePointerStart.y;
+      return Math.sqrt(dx * dx + dy * dy);
+    }}
+    function releaseTimePointer(event) {{
+      if (timePenaltyPlot.hasPointerCapture(event.pointerId)) {{
+        timePenaltyPlot.releasePointerCapture(event.pointerId);
+      }}
+      draggingTimePlot = false;
+      timeDragStarted = false;
+      timePointerStart = null;
+    }}
+    function setControlDrawerCollapsed(collapsed) {{
+      reportShell.classList.toggle("drawer-collapsed", collapsed);
+      controlDrawerToggle.setAttribute("aria-expanded", String(!collapsed));
+      controlDrawerToggle.setAttribute("aria-label", collapsed ? "Show trip controls" : "Hide trip controls");
+      controlDrawerToggle.textContent = collapsed ? ">" : "<";
+    }}
+    function resetTripControls() {{
+      scoreControls.stop.value = defaultScoreValues.stop;
+      scoreControls.duration.value = defaultScoreValues.duration;
+      defaultCppValues.forEach(([control, value]) => {{
+        control.value = value;
+      }});
+      defaultFilterValues.forEach(([control, value]) => {{
+        control.value = value;
+      }});
+      defaultCheckboxValues.forEach(([control, checked]) => {{
+        control.checked = checked;
+      }});
+      currentKindPreset = defaultKindPreset;
+      outboundSort.value = defaultOutboundSort;
+      returnSort.value = defaultReturnSort;
+      selectedOutboundKey = "";
+      selectedReturnKey = "";
+      selectedTimeHour = 0;
+      hourlyPenalties = [...defaultHourlyPenalties];
+      timePenaltyMax.value = String(defaultTimeScaleMax);
+      cards.forEach(card => {{
+        const checkbox = card.querySelector("[data-compare-plan]");
+        if (checkbox) checkbox.checked = false;
+      }});
+      refreshScoresAndViews();
+      renderBuilder();
     }}
     function refreshScoresAndViews() {{
       syncScoreOutputs();
@@ -3018,6 +3900,20 @@ def write_master_html(
       const value = Number(control.value);
       return Number.isFinite(value) ? value : Infinity;
     }}
+    function checkboxAllows(row, key, datasetKey) {{
+      const inputs = checkboxFilters.filter(input => input.dataset.filterKey === key);
+      if (!inputs.length) return true;
+      const checked = inputs.filter(input => input.checked).map(input => input.value);
+      if (checked.length === inputs.length) return true;
+      if (!checked.length) return false;
+      return checked.includes(row.dataset[datasetKey] || "");
+    }}
+    function legStopValue(row, key) {{
+      const value = Number(row.dataset[key]);
+      if (Number.isFinite(value)) return value;
+      const total = Number(row.dataset.stops);
+      return Number.isFinite(total) ? total : 0;
+    }}
     function matchesGlobalFilters(row) {{
       const query = controls.search.value.trim().toLowerCase();
       const maxScore = numberLimit(controls.score);
@@ -3025,16 +3921,15 @@ def write_master_html(
       const maxStops = numberLimit(controls.stops);
       return (
         (!query || itemText(row).includes(query)) &&
-        (!controls.kind.value || row.dataset.kind === controls.kind.value) &&
-        (!controls.trip.value || row.dataset.tripType === controls.trip.value) &&
-        (!controls.origin.value || row.dataset.origin === controls.origin.value) &&
-        (!controls.destination.value || row.dataset.destination === controls.destination.value) &&
-        (!controls.outboundDate.value || row.dataset.outboundDate === controls.outboundDate.value) &&
-        (!controls.returnDate.value || row.dataset.returnDate === controls.returnDate.value) &&
+        (!currentKindPreset || row.dataset.kind === currentKindPreset) &&
+        checkboxAllows(row, "origin", "origin") &&
+        checkboxAllows(row, "destination", "destination") &&
+        checkboxAllows(row, "outboundDate", "outboundDate") &&
+        checkboxAllows(row, "returnDate", "returnDate") &&
         (Number(row.dataset.score) <= maxScore) &&
         (Number(row.dataset.effective) <= maxEffective) &&
-        (Number(row.dataset.stops) <= maxStops) &&
-        (!controls.late.value || row.dataset.late === controls.late.value)
+        (legStopValue(row, "outboundStops") <= maxStops) &&
+        (legStopValue(row, "returnStops") <= maxStops)
       );
     }}
     function applyFilters() {{
@@ -3056,17 +3951,16 @@ def write_master_html(
       return Number.isNaN(numeric) ? raw.toLowerCase() : numeric;
     }}
     function sortCards() {{
-      const mode = sortMode.value;
       const sorted = [...cards].sort((a, b) => {{
-        const av = Number(a.dataset[mode === "score" ? "adjustedScore" : mode] || 0);
-        const bv = Number(b.dataset[mode === "score" ? "adjustedScore" : mode] || 0);
+        const av = Number(a.dataset.adjustedScore || 0);
+        const bv = Number(b.dataset.adjustedScore || 0);
         return av - bv;
       }});
       sorted.forEach(card => planResults.appendChild(card));
     }}
     function syncQuickTabs() {{
       document.querySelectorAll("[data-kind-preset]").forEach(button => {{
-        button.classList.toggle("active", button.dataset.kindPreset === controls.kind.value);
+        button.classList.toggle("active", button.dataset.kindPreset === currentKindPreset);
       }});
     }}
     function updateCompareTray() {{
@@ -3110,7 +4004,7 @@ def write_master_html(
       return `<div class="compare-leg"><strong>${{escapeHtml(label)}}</strong>${{rendered}}</div>`;
     }}
     function builderPool() {{
-      return cards.filter(card => matchesGlobalFilters(card) && (!buildKindFilter.value || card.dataset.kind === buildKindFilter.value));
+      return cards.filter(card => matchesGlobalFilters(card));
     }}
     function bestByKey(items, keyName) {{
       const groups = new Map();
@@ -3124,73 +4018,384 @@ def write_master_html(
       }});
       return [...groups.entries()].sort((a, b) => Number(a[1].dataset.adjustedScore) - Number(b[1].dataset.adjustedScore));
     }}
-    function choiceButton(key, sampleCard, keyName, selectedKey) {{
-      const labelName = keyName === "outboundKey" ? "outboundLabel" : "returnLabel";
-      const parts = labelParts(sampleCard.dataset[labelName]);
-      const count = builderPool().filter(card => card.dataset[keyName] === key).length;
+    const outboundDateOptions = new Set(cards.map(card => card.dataset.outboundDate).filter(Boolean));
+    const returnDateOptions = new Set(cards.map(card => card.dataset.returnDate).filter(Boolean));
+    function integerMoney(value) {{
+      const number = Number(value || 0);
+      return "$" + Math.round(Number.isFinite(number) ? number : 0).toLocaleString();
+    }}
+    function integerValue(value) {{
+      const number = Number(value || 0);
+      return Math.round(Number.isFinite(number) ? number : 0).toLocaleString();
+    }}
+    function splitCarrierCodes(value) {{
+      const matches = String(value || "").match(/\\b[A-Z0-9]{{2}}\\b(?=\\s?\\d|\\b)/g) || [];
+      return matches.filter(code => /[A-Z]/.test(code));
+    }}
+    function legDetailForCard(card, keyName) {{
+      return dataJson(card, keyName === "outboundKey" ? "outboundLeg" : "returnLeg", {{}});
+    }}
+    function carrierCodesFromDetail(detail) {{
+      const codes = [];
+      const segments = Array.isArray(detail.segments) ? detail.segments : [];
+      segments.forEach(segment => {{
+        codes.push(...splitCarrierCodes(segment.airline || segment.carrier || ""));
+        codes.push(...splitCarrierCodes(segment.flight_number || segment.flightNumbers || ""));
+      }});
+      codes.push(...splitCarrierCodes(detail.carriers || ""));
+      codes.push(...splitCarrierCodes(detail.flightNumbers || detail.flight_numbers || ""));
+      return Array.from(new Set(codes));
+    }}
+    function logoHtmlForCodes(codes) {{
+      const uniqueCodes = Array.from(new Set((codes || []).filter(Boolean)));
+      if (!uniqueCodes.length) return "";
+      return '<span class="logo-row">' + uniqueCodes.slice(0, 4).map(code => {{
+        const src = airlineLogos[code];
+        return src
+          ? `<span class="airline-logo" title="${{escapeHtml(code)}}"><img src="${{src}}" alt="${{escapeHtml(code)}} logo"></span>`
+          : `<span class="airline-logo">${{escapeHtml(code)}}</span>`;
+      }}).join("") + "</span>";
+    }}
+    function carrierLogosHtml(card) {{
+      return logoHtmlForCodes(dataJson(card, "carrierCodes", []));
+    }}
+    function legLogosHtml(detail) {{
+      return logoHtmlForCodes(carrierCodesFromDetail(detail));
+    }}
+    function planIconBadge(type, label) {{
+      const title = escapeHtml(label || (type === "award" ? "points" : "cash"));
+      if (type === "award") return `<span class="plan-icon award" aria-label="${{title}}" title="${{title}}">P</span>`;
+      return `<span class="plan-icon cash" aria-label="${{title}}" title="${{title}}">$</span>`;
+    }}
+    function legPaymentType(detail) {{
+      return String(detail.program || "").trim() ? "award" : "cash";
+    }}
+    function legPaymentLabel(type, label) {{
+      return `${{label}} ${{type === "award" ? "points" : "cash"}}`;
+    }}
+    function legPaymentIconHtml(detail, label) {{
+      const type = legPaymentType(detail || {{}});
+      return `<span class="plan-icons">${{planIconBadge(type, legPaymentLabel(type, label))}}</span>`;
+    }}
+    function legPairIconsHtml(outboundDetail, returnDetail) {{
+      const outboundType = legPaymentType(outboundDetail || {{}});
+      const returnType = legPaymentType(returnDetail || {{}});
+      return `<span class="plan-icons">${{planIconBadge(outboundType, legPaymentLabel(outboundType, "outbound"))}}${{planIconBadge(returnType, legPaymentLabel(returnType, "inbound"))}}</span>`;
+    }}
+    function matchingCount(pool, keyName, key, otherKeyName, otherKey) {{
+      return pool.filter(card => card.dataset[keyName] === key && (!otherKey || card.dataset[otherKeyName] === otherKey)).length;
+    }}
+    function formatMonthDay(value) {{
+      const match = /^\\d{{4}}-(\\d{{2}})-(\\d{{2}})/.exec(String(value || ""));
+      return match ? `${{match[1]}}-${{match[2]}}` : String(value || "");
+    }}
+    function choiceDateText(card, detail, keyName) {{
+      const choices = keyName === "outboundKey" ? outboundDateOptions : returnDateOptions;
+      if (choices.size <= 1) return "";
+      const fallback = keyName === "outboundKey" ? card.dataset.outboundDate : card.dataset.returnDate;
+      return formatMonthDay(detail.date || fallback);
+    }}
+    function clockMinutes(value) {{
+      const match = /(\\d{{1,2}}):(\\d{{2}})(?:\\s*\\+(\\d+))?/.exec(String(value || ""));
+      if (!match) return Infinity;
+      const dayOffset = Number(match[3] || 0) * 1440;
+      return dayOffset + Number(match[1]) * 60 + Number(match[2]);
+    }}
+    function legDurationMinutes(detail) {{
+      const direct = Number(detail.durationMinutes || detail.duration_minutes || "");
+      if (Number.isFinite(direct) && direct > 0) return direct;
+      const segments = Array.isArray(detail.segments) ? detail.segments : [];
+      const total = segments.reduce((sum, segment) => sum + Number(segment.duration_minutes || 0), 0);
+      if (total > 0) {{
+        const layoverTotal = (Array.isArray(detail.layovers) ? detail.layovers : []).reduce((sum, layover) => sum + Number(layover.duration_minutes || 0), 0);
+        return total + layoverTotal;
+      }}
+      const text = String(detail.duration || "");
+      const hours = /(\\d+)h/.exec(text);
+      const minutes = /(\\d+)m/.exec(text);
+      const parsed = Number(hours?.[1] || 0) * 60 + Number(minutes?.[1] || 0);
+      return parsed || Infinity;
+    }}
+    function legConvenienceValue(detail) {{
+      const stops = Number(detail.stops || 0);
+      const duration = legDurationMinutes(detail);
+      const durationPenalty = Number.isFinite(duration) ? duration / 60 * rangeNumber(scoreControls.duration) : 0;
+      const stopPenalty = Number.isFinite(stops) ? stops * rangeNumber(scoreControls.stop) : 0;
+      const hours = [detail.depart, detail.arrive].map(clockMinutes).filter(Number.isFinite).map(value => Math.floor((value % 1440) / 60));
+      const timePenalty = hours.reduce((sum, hour) => sum + Number(hourlyPenalties[hour] || 0), 0);
+      return stopPenalty + durationPenalty + timePenalty;
+    }}
+    function choiceSortValue(entry, keyName, mode) {{
+      const card = entry[1];
+      const detail = legDetailForCard(card, keyName);
+      if (mode === "effective") return Number(card.dataset.effective || Infinity);
+      if (mode === "duration") return legDurationMinutes(detail);
+      if (mode === "depart") return clockMinutes(detail.depart);
+      if (mode === "arrive") return clockMinutes(detail.arrive);
+      if (mode === "convenience") return legConvenienceValue(detail);
+      return Number(card.dataset.adjustedScore || Infinity);
+    }}
+    function sortChoiceGroups(groups, keyName, mode) {{
+      return [...groups].sort((a, b) => {{
+        const av = choiceSortValue(a, keyName, mode);
+        const bv = choiceSortValue(b, keyName, mode);
+        if (av !== bv) return av - bv;
+        return Number(a[1].dataset.adjustedScore || 0) - Number(b[1].dataset.adjustedScore || 0);
+      }});
+    }}
+    function stopsLabel(value) {{
+      const stops = Number(value || 0);
+      if (!Number.isFinite(stops)) return "";
+      return `${{Math.round(stops)}} stop${{Math.round(stops) === 1 ? "" : "s"}}`;
+    }}
+    function routeText(detail) {{
+      const origin = String(detail.origin || "").trim();
+      const destination = String(detail.destination || "").trim();
+      const route = [origin, destination].filter(Boolean).join(" -> ");
+      return route || String(detail.route || "").trim();
+    }}
+    function routeParts(detail) {{
+      const explicit = [String(detail.origin || "").trim(), String(detail.destination || "").trim()];
+      if (explicit[0] || explicit[1]) return explicit;
+      const parts = String(detail.route || "").split("->").map(part => part.trim());
+      return [parts[0] || "", parts[1] || ""];
+    }}
+    function detailFlightNumbers(detail) {{
+      const direct = String(detail.flightNumbers || detail.flight_numbers || "").trim();
+      if (direct) return direct;
+      const segments = Array.isArray(detail.segments) ? detail.segments : [];
+      return segments.map(flightLabel).filter(Boolean).join(", ");
+    }}
+    function carrierLine(detail) {{
+      const segments = Array.isArray(detail.segments) ? detail.segments : [];
+      const segmentAirlines = Array.from(new Set(segments.map(segment => String(segment.airline || segment.carrier || "").trim()).filter(Boolean)));
+      const carrierText = segmentAirlines.join(", ") || String(detail.carriers || "").trim();
+      const program = String(detail.program || "").trim();
+      const flightText = detailFlightNumbers(detail);
+      const aircraft = String(detail.aircraft || "").trim();
+      return [carrierText || program, program && program !== carrierText ? program : "", flightText, aircraft]
+        .filter(Boolean)
+        .join(" · ") || "Flight details unavailable";
+    }}
+    function layoverAirports(detail) {{
+      const layovers = Array.isArray(detail.layovers) ? detail.layovers.map(layover => layover.airport).filter(Boolean) : [];
+      if (layovers.length) return layovers.join(", ");
+      return String(detail.connections || "").split(",").map(item => item.trim()).filter(Boolean).join(", ");
+    }}
+    function layoverSummary(detail) {{
+      const layovers = Array.isArray(detail.layovers) ? detail.layovers : [];
+      const detailed = layovers
+        .map(layover => [minutesLabel(layover.duration_minutes), layover.airport].filter(Boolean).join(" "))
+        .filter(Boolean);
+      if (detailed.length) return detailed.join(", ");
+      const airports = layoverAirports(detail);
+      if (airports) return airports;
+      const stops = Number(detail.stops || 0);
+      return Number.isFinite(stops) && stops > 0 ? "Connection details" : "Nonstop";
+    }}
+    function choiceButton(key, sampleCard, keyName, selectedKey, compatibleCount, totalCount, compatible) {{
+      const detail = legDetailForCard(sampleCard, keyName);
+      const timeText = [detail.depart || "", detail.arrive || ""].filter(Boolean).join(" -> ") || "Timing unavailable";
+      const dateText = choiceDateText(sampleCard, detail, keyName);
+      const durationText = detail.duration || minutesLabel(legDurationMinutes(detail));
+      const flightText = detailFlightNumbers(detail) || "Flight TBD";
+      const stopsText = stopsLabel(detail.stops) || "Stops TBD";
+      const layoverText = layoverSummary(detail);
+      const titleText = [dateText, timeText].filter(Boolean).join(" · ");
+      const route = routeText(detail) || "Route TBD";
+      const className = ["leg-choice", key === selectedKey ? "active" : "", compatible ? "" : "muted"].filter(Boolean).join(" ");
+      const switchLabel = keyName === "returnKey" ? "outbound" : "inbound";
+      const countText = compatible
+        ? `${{compatibleCount}} matching plan${{compatibleCount === 1 ? "" : "s"}}`
+        : `No match with selected ${{switchLabel}} · click to switch`;
+      const switchBadge = compatible ? "" : `<span class="choice-switch">Switches ${{escapeHtml(switchLabel)}}</span>`;
       return (
-        `<button type="button" class="leg-choice ${{key === selectedKey ? "active" : ""}}" data-choice-key="${{escapeHtml(key)}}">` +
-        `<strong>${{escapeHtml(parts.title)}}</strong>` +
-        `<span>${{escapeHtml(parts.detail || "Best score " + sampleCard.dataset.adjustedScore)}}</span>` +
-        `<span>${{count}} plan${{count === 1 ? "" : "s"}} · best score ${{escapeHtml(sampleCard.dataset.adjustedScore || "")}}</span>` +
+        `<button type="button" class="${{className}}" data-choice-key="${{escapeHtml(key)}}" data-compatible="${{compatible ? "true" : "false"}}" title="${{escapeHtml(countText)}}">` +
+        '<span class="choice-compact">' +
+        '<span class="choice-logo-cell">' +
+        legLogosHtml(detail) +
+        '</span>' +
+        '<span class="choice-summary">' +
+        `<span class="choice-title"><strong>${{escapeHtml(titleText)}}</strong>${{durationText ? `<small>${{escapeHtml(durationText)}}</small>` : ""}}</span>` +
+        `<span class="choice-subtitle">${{escapeHtml(carrierLine(detail))}}</span>` +
+        '<span class="choice-facts">' +
+        `<span class="choice-fact"><strong>${{escapeHtml(route)}}</strong><small>${{escapeHtml(flightText)}}</small></span>` +
+        `<span class="choice-fact"><strong>${{escapeHtml(stopsText)}}</strong><small>${{escapeHtml(layoverText)}}</small></span>` +
+        '</span>' +
+        '<span class="choice-metric-strip">' +
+        `<span class="choice-mini-metric"><span>USD</span><strong>${{integerMoney(sampleCard.dataset.effective)}}</strong></span>` +
+        `<span class="choice-mini-metric"><span>Score</span><strong>${{integerValue(sampleCard.dataset.adjustedScore)}}</strong></span>` +
+        switchBadge +
+        '</span>' +
+        '</span>' +
+        '<span class="choice-icon-cell">' +
+        legPaymentIconHtml(detail, keyName === "outboundKey" ? "outbound" : "inbound") +
+        '</span>' +
+        '</span>' +
         `</button>`
+      );
+    }}
+    function minutesLabel(value) {{
+      const minutes = Number(value);
+      if (!Number.isFinite(minutes) || minutes <= 0) return "";
+      const hours = Math.floor(minutes / 60);
+      const remainder = Math.round(minutes % 60);
+      if (hours && remainder) return `${{hours}}h ${{remainder}}m`;
+      if (hours) return `${{hours}}h`;
+      return `${{remainder}}m`;
+    }}
+    function flightLabel(segment) {{
+      const airline = segment.airline || segment.carrier || "";
+      const number = segment.flight_number || segment.flightNumbers || "";
+      return [airline, number].filter(Boolean).join(" ");
+    }}
+    function pointsLabel(value) {{
+      const number = Number(value || 0);
+      if (!Number.isFinite(number) || number <= 0) return "";
+      return `${{Math.round(number).toLocaleString()}} pts`;
+    }}
+    function timelineMeta(detail, segment, fallback) {{
+      const flightText = fallback ? detailFlightNumbers(detail) : flightLabel(segment);
+      const aircraft = String(segment.aircraft || detail.aircraft || "").trim();
+      const program = String(detail.program || "").trim();
+      const pointText = fallback ? pointsLabel(detail.points) : "";
+      const taxes = fallback && detail.taxes ? `${{detail.taxes}} taxes` : "";
+      return [flightText, program ? `Program: ${{program}}` : "", aircraft, pointText, taxes]
+        .filter(Boolean)
+        .join(" · ");
+    }}
+    function timelineSegmentHtml(segment, detail, fallback) {{
+      const parts = routeParts(detail);
+      const origin = segment.origin || parts[0] || "";
+      const destination = segment.destination || parts[1] || "";
+      const depart = segment.depart_time || segment.depart || detail.depart || "";
+      const arrive = segment.arrive_time || segment.arrive || detail.arrive || "";
+      const duration = minutesLabel(segment.duration_minutes) || detail.duration || "";
+      const meta = timelineMeta(detail, segment, fallback);
+      const classes = ["timeline-segment", fallback ? "timeline-fallback" : ""].filter(Boolean).join(" ");
+      return (
+        `<div class="${{classes}}">` +
+        '<div class="timeline-rail" aria-hidden="true"><span class="timeline-dot start"></span><span class="timeline-dot end"></span></div>' +
+        '<div class="timeline-content">' +
+        `<div class="timeline-point"><span class="timeline-time">${{escapeHtml(depart || "TBD")}}</span><span class="timeline-airport">${{escapeHtml(origin || "Origin TBD")}}</span></div>` +
+        (duration ? `<div class="timeline-duration">Travel time: ${{escapeHtml(duration)}}</div>` : "") +
+        `<div class="timeline-point"><span class="timeline-time">${{escapeHtml(arrive || "TBD")}}</span><span class="timeline-airport">${{escapeHtml(destination || "Destination TBD")}}</span></div>` +
+        (meta ? `<div class="timeline-meta">${{escapeHtml(meta)}}</div>` : "") +
+        '</div>' +
+        '</div>'
+      );
+    }}
+    function timelineLayoverHtml(layover) {{
+      const duration = minutesLabel(layover.duration_minutes);
+      const label = duration ? `${{duration}} layover` : "Layover";
+      const notes = [label, layover.airport || "", layover.overnight ? "overnight" : "", layover.change_of_airport ? "airport change" : ""].filter(Boolean).join(" · ");
+      return `<div class="timeline-layover">${{escapeHtml(notes)}}</div>`;
+    }}
+    function renderLegTimeline(label, detail) {{
+      const segments = Array.isArray(detail.segments) ? detail.segments : [];
+      const layovers = Array.isArray(detail.layovers) ? detail.layovers : [];
+      const timeRange = [detail.depart || "", detail.arrive || ""].filter(Boolean).join(" -> ");
+      const header = [routeText(detail) || "", detail.date || "", timeRange, detail.duration || ""]
+        .filter(Boolean)
+        .join(" · ");
+      let body = "";
+      if (segments.length) {{
+        body = segments.map((segment, index) => timelineSegmentHtml(segment, detail, false) + (layovers[index] ? timelineLayoverHtml(layovers[index]) : "")).join("");
+      }} else {{
+        body = timelineSegmentHtml({{}}, detail, true);
+        if (layovers.length) body += layovers.map(timelineLayoverHtml).join("");
+      }}
+      return `<section class="flight-timeline"><div class="timeline-heading"><div class="timeline-title"><strong>${{escapeHtml(label)}}</strong><span>${{escapeHtml(header || detail.label || "Timing unavailable")}}</span></div>${{legLogosHtml(detail)}}</div><div class="timeline-body">${{body}}</div></section>`;
+    }}
+    function compositionHtml(card) {{
+      const composition = dataJson(card, "composition", {{}});
+      const award = Array.isArray(composition.award) ? composition.award : [];
+      const cashLine = Number(composition.cash || 0) > 0 ? `<span>Cash component ${{moneyExact(Number(composition.cash || 0))}}</span>` : "";
+      const awardLines = award.map(component => {{
+        const points = Number(component.points || 0).toLocaleString();
+        const taxes = component.taxes ? ` + ${{component.taxes}} taxes` : "";
+        return `<span>${{escapeHtml(component.label || "Award")}}: ${{points}} pts${{escapeHtml(taxes)}}</span>`;
+      }}).join("");
+      return `<div class="composition">${{cashLine || ""}}${{awardLines || ""}}${{cashLine || awardLines ? "" : "<span>No separate cash or award components.</span>"}}</div>`;
+    }}
+    function builderCardHtml(card) {{
+      const text = compactCardText(card);
+      const note = card.querySelector(".card-note")?.textContent || "";
+      const outboundDetail = dataJson(card, "outboundLeg", {{}});
+      const returnDetail = dataJson(card, "returnLeg", {{}});
+      return (
+        '<article class="builder-card plan-card">' +
+        '<div class="plan-card-head">' +
+        '<div class="plan-card-title">' +
+        `<h3>${{escapeHtml(text.route)}}</h3>` +
+        `<p>${{escapeHtml(text.date)}}</p>` +
+        '</div>' +
+        legPairIconsHtml(outboundDetail, returnDetail) +
+        '</div>' +
+        '<div class="plan-metrics">' +
+        `<span class="plan-chip"><span>Type</span><strong>${{escapeHtml(card.dataset.kind || "")}}</strong></span>` +
+        `<span class="plan-chip"><span>Price</span><strong>${{escapeHtml(text.price)}}</strong></span>` +
+        `<span class="plan-chip"><span>Effective USD</span><strong>${{integerMoney(card.dataset.effective)}}</strong></span>` +
+        `<span class="plan-chip"><span>Score</span><strong>${{integerValue(card.dataset.adjustedScore)}}</strong></span>` +
+        '</div>' +
+        compositionHtml(card) +
+        '<div class="plan-timeline-list">' +
+        renderLegTimeline("Outbound flight", outboundDetail) +
+        renderLegTimeline("Inbound flight", returnDetail) +
+        '</div>' +
+        (note ? `<p>${{escapeHtml(note)}}</p>` : '') +
+        '</article>'
       );
     }}
     function renderBuilder() {{
       const pool = builderPool();
-      const outboundGroups = bestByKey(pool, "outboundKey");
+      const outboundGroups = sortChoiceGroups(bestByKey(pool, "outboundKey"), "outboundKey", outboundSort.value);
+      const returnGroups = sortChoiceGroups(bestByKey(pool, "returnKey"), "returnKey", returnSort.value);
       if (selectedOutboundKey && !outboundGroups.some(([key]) => key === selectedOutboundKey)) {{
         selectedOutboundKey = "";
+      }}
+      if (selectedReturnKey && !returnGroups.some(([key]) => key === selectedReturnKey)) {{
         selectedReturnKey = "";
       }}
-      if (!selectedOutboundKey && outboundGroups.length) selectedOutboundKey = outboundGroups[0][0];
+      if (!selectedOutboundKey && !selectedReturnKey && outboundGroups.length) selectedOutboundKey = outboundGroups[0][0];
+      if (selectedOutboundKey && selectedReturnKey && !pool.some(card => card.dataset.outboundKey === selectedOutboundKey && card.dataset.returnKey === selectedReturnKey)) {{
+        selectedReturnKey = "";
+      }}
+      if (selectedOutboundKey && !selectedReturnKey) {{
+        const compatibleReturns = returnGroups.filter(([key]) => matchingCount(pool, "returnKey", key, "outboundKey", selectedOutboundKey) > 0);
+        if (compatibleReturns.length) selectedReturnKey = compatibleReturns[0][0];
+      }}
       outboundChoiceCount.textContent = outboundGroups.length ? `(${{outboundGroups.length}})` : "";
       outboundChoices.innerHTML = outboundGroups.length
-        ? outboundGroups.map(([key, card]) => choiceButton(key, card, "outboundKey", selectedOutboundKey)).join("")
+        ? outboundGroups.map(([key, card]) => {{
+            const compatibleCount = matchingCount(pool, "outboundKey", key, "returnKey", selectedReturnKey);
+            const totalCount = matchingCount(pool, "outboundKey", key, "", "");
+            return choiceButton(key, card, "outboundKey", selectedOutboundKey, compatibleCount, totalCount, !selectedReturnKey || compatibleCount > 0);
+          }}).join("")
         : '<div class="empty-results">No outbound choices match this plan type.</div>';
 
-      const returnPool = selectedOutboundKey ? pool.filter(card => card.dataset.outboundKey === selectedOutboundKey) : [];
-      const returnGroups = bestByKey(returnPool, "returnKey");
-      if (selectedReturnKey && !returnGroups.some(([key]) => key === selectedReturnKey)) selectedReturnKey = "";
-      if (!selectedReturnKey && returnGroups.length) selectedReturnKey = returnGroups[0][0];
       returnChoiceCount.textContent = returnGroups.length ? `(${{returnGroups.length}})` : "";
-      returnChoices.innerHTML = selectedOutboundKey
-        ? (returnGroups.length ? returnGroups.map(([key, card]) => choiceButton(key, card, "returnKey", selectedReturnKey)).join("") : '<div class="empty-results">No return choices match this outbound.</div>')
-        : '<div class="empty-results">Choose an outbound first.</div>';
+      returnChoices.innerHTML = returnGroups.length
+        ? returnGroups.map(([key, card]) => {{
+            const compatibleCount = matchingCount(pool, "returnKey", key, "outboundKey", selectedOutboundKey);
+            const totalCount = matchingCount(pool, "returnKey", key, "", "");
+            return choiceButton(key, card, "returnKey", selectedReturnKey, compatibleCount, totalCount, !selectedOutboundKey || compatibleCount > 0);
+          }}).join("")
+        : '<div class="empty-results">No return choices match this plan type.</div>';
 
       const matches = pool
         .filter(card => (!selectedOutboundKey || card.dataset.outboundKey === selectedOutboundKey) && (!selectedReturnKey || card.dataset.returnKey === selectedReturnKey))
         .sort((a, b) => Number(a.dataset.adjustedScore) - Number(b.dataset.adjustedScore));
       buildResultCount.textContent = matches.length ? `(${{matches.length}})` : "";
       builderResults.innerHTML = matches.length
-        ? matches.slice(0, 30).map(card => {{
-            const text = compactCardText(card);
-            const note = card.querySelector(".card-note")?.textContent || "";
-            return (
-              '<article class="builder-card">' +
-              `<h3>${{escapeHtml(text.route)}}</h3>` +
-              `<p>${{escapeHtml(text.date)}}</p>` +
-              '<div class="builder-meta">' +
-              `<span>${{escapeHtml(card.dataset.kind || "")}}</span>` +
-              `<span>${{escapeHtml(text.price)}}</span>` +
-              `<span>${{escapeHtml(text.effective)}}</span>` +
-              `<span>score ${{escapeHtml(card.dataset.adjustedScore || "")}}</span>` +
-              '</div>' +
-              (note ? `<p>${{escapeHtml(note)}}</p>` : '') +
-              '</article>'
-            );
-          }}).join("")
-        : '<div class="empty-results">No complete plans match this outbound and return pair.</div>';
+        ? matches.slice(0, 30).map(builderCardHtml).join("")
+        : '<div class="empty-results">No complete plans match the selected outbound and return.</div>';
     }}
     function showView(name) {{
-      document.querySelectorAll("[data-view-tab]").forEach(button => {{
-        button.classList.toggle("active", button.dataset.viewTab === name);
-      }});
-      document.querySelectorAll(".view-panel").forEach(panel => {{
-        panel.hidden = panel.id !== `${{name}}View`;
-      }});
+      window.tripReportShowView(name);
       if (name === "build") renderBuilder();
     }}
+    window.renderTripBuilder = renderBuilder;
     tables.forEach(table => {{
       const body = table.querySelector("tbody");
       table.querySelectorAll("th").forEach((th, index) => {{
@@ -3214,6 +4419,9 @@ def write_master_html(
       control.addEventListener("input", applyFilters);
       control.addEventListener("change", applyFilters);
     }});
+    checkboxFilters.forEach(control => {{
+      control.addEventListener("change", applyFilters);
+    }});
     Object.values(scoreControls).filter(control => control instanceof HTMLInputElement).forEach(control => {{
       control.addEventListener("input", refreshScoresAndViews);
     }});
@@ -3221,65 +4429,83 @@ def write_master_html(
       control.addEventListener("input", refreshScoresAndViews);
       control.addEventListener("change", refreshScoresAndViews);
     }});
+    controlDrawerToggle.addEventListener("click", () => {{
+      setControlDrawerCollapsed(!reportShell.classList.contains("drawer-collapsed"));
+    }});
+    controlReset.addEventListener("click", resetTripControls);
     timeHourSelect.addEventListener("change", () => {{
       selectedTimeHour = Number(timeHourSelect.value || 0);
       syncTimeEditor();
     }});
     timeHourPenalty.addEventListener("input", () => {{
-      hourlyPenalties[selectedTimeHour] = rangeNumber(timeHourPenalty);
+      hourlyPenalties[selectedTimeHour] = clamp(rangeNumber(timeHourPenalty), 0, timeScaleMax());
+      timeHourPenalty.value = String(hourlyPenalties[selectedTimeHour]);
+      refreshScoresAndViews();
+    }});
+    timePenaltyMax.addEventListener("input", () => {{
       refreshScoresAndViews();
     }});
     timePenaltyPlot.addEventListener("pointerdown", event => {{
       draggingTimePlot = true;
+      timeDragStarted = false;
+      timePointerStart = {{ x: event.clientX, y: event.clientY }};
       timePenaltyPlot.setPointerCapture(event.pointerId);
       event.preventDefault();
-      applyTimePointer(event);
     }});
     timePenaltyPlot.addEventListener("pointermove", event => {{
       if (!draggingTimePlot) return;
       event.preventDefault();
+      if (!timeDragStarted && timePointerDistance(event) < 4) return;
+      timeDragStarted = true;
       applyTimePointer(event);
     }});
     timePenaltyPlot.addEventListener("pointerup", event => {{
-      draggingTimePlot = false;
-      if (timePenaltyPlot.hasPointerCapture(event.pointerId)) {{
-        timePenaltyPlot.releasePointerCapture(event.pointerId);
+      event.preventDefault();
+      if (draggingTimePlot && timeDragStarted) {{
+        applyTimePointer(event);
+      }} else if (draggingTimePlot) {{
+        selectTimeHourFromPointer(event);
       }}
+      releaseTimePointer(event);
     }});
     timePenaltyPlot.addEventListener("pointercancel", event => {{
-      draggingTimePlot = false;
-      if (timePenaltyPlot.hasPointerCapture(event.pointerId)) {{
-        timePenaltyPlot.releasePointerCapture(event.pointerId);
-      }}
+      releaseTimePointer(event);
     }});
-    sortMode.addEventListener("change", () => {{
-      sortCards();
-      applyFilters();
+    outboundSort.addEventListener("change", () => {{
+      selectedOutboundKey = "";
+      selectedReturnKey = "";
+      renderBuilder();
     }});
-    buildKindFilter.addEventListener("change", () => {{
+    returnSort.addEventListener("change", () => {{
       selectedOutboundKey = "";
       selectedReturnKey = "";
       renderBuilder();
     }});
     document.querySelectorAll("[data-kind-preset]").forEach(button => {{
       button.addEventListener("click", () => {{
-        controls.kind.value = button.dataset.kindPreset;
+        currentKindPreset = button.dataset.kindPreset;
         applyFilters();
       }});
     }});
     document.querySelectorAll("[data-view-tab]").forEach(button => {{
+      if (button.dataset.viewBound === "true") return;
       button.addEventListener("click", () => showView(button.dataset.viewTab));
     }});
     outboundChoices.addEventListener("click", event => {{
       const button = event.target.closest("[data-choice-key]");
       if (!button) return;
+      if (selectedReturnKey && button.dataset.compatible === "false") {{
+        selectedReturnKey = "";
+      }}
       selectedOutboundKey = button.dataset.choiceKey;
-      selectedReturnKey = "";
       renderBuilder();
     }});
     returnChoices.addEventListener("click", event => {{
       const button = event.target.closest("[data-choice-key]");
       if (!button) return;
+      if (selectedOutboundKey && button.dataset.compatible === "false") {{
+        selectedOutboundKey = "";
+      }}
       selectedReturnKey = button.dataset.choiceKey;
       renderBuilder();
     }});

@@ -32,7 +32,37 @@
         "duration_display": "7h 30m",
         "duration_minutes": 450,
         "flight_numbers": "AA 2114 / AA 1287",
+        "layovers": [
+          {
+            "airport": "PHX",
+            "change_of_airport": false,
+            "duration_minutes": 99,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "AA",
+            "arrive_time": "15:23",
+            "depart_time": "12:20",
+            "destination": "PHX",
+            "duration_minutes": 123,
+            "flight_number": "2114",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AA",
+            "arrive_time": "22:50",
+            "depart_time": "17:02",
+            "destination": "DTW",
+            "duration_minutes": 228,
+            "flight_number": "1287",
+            "origin": "PHX"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -45,7 +75,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -119,7 +151,20 @@
         "duration_display": "4h 35m",
         "duration_minutes": 275,
         "flight_numbers": "DL 1927",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "22:00",
+            "depart_time": "14:25",
+            "destination": "DTW",
+            "duration_minutes": 275,
+            "flight_number": "1927",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -132,7 +177,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -206,7 +253,20 @@
         "duration_display": "4h 36m",
         "duration_minutes": 276,
         "flight_numbers": "DL 361",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "19:11",
+            "depart_time": "11:35",
+            "destination": "DTW",
+            "duration_minutes": 276,
+            "flight_number": "361",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -219,7 +279,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -293,7 +355,37 @@
         "duration_display": "7h 45m",
         "duration_minutes": 465,
         "flight_numbers": "AA 3047 / AA 245",
+        "layovers": [
+          {
+            "airport": "DFW",
+            "change_of_airport": false,
+            "duration_minutes": 84,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "AA",
+            "arrive_time": "12:32",
+            "depart_time": "07:00",
+            "destination": "DFW",
+            "duration_minutes": 212,
+            "flight_number": "3047",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "AA",
+            "arrive_time": "17:45",
+            "depart_time": "13:56",
+            "destination": "DTW",
+            "duration_minutes": 169,
+            "flight_number": "245",
+            "origin": "DFW"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -306,7 +398,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -380,7 +474,20 @@
         "duration_display": "4h 55m",
         "duration_minutes": 295,
         "flight_numbers": "UA 743",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "20:40",
+            "depart_time": "12:45",
+            "destination": "DTW",
+            "duration_minutes": 295,
+            "flight_number": "743",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -393,7 +500,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -467,7 +576,37 @@
         "duration_display": "8h 40m",
         "duration_minutes": 520,
         "flight_numbers": "AA 1878 / AA 1297",
+        "layovers": [
+          {
+            "airport": "CLT",
+            "change_of_airport": false,
+            "duration_minutes": 103,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "AA",
+            "arrive_time": "15:18",
+            "depart_time": "07:15",
+            "destination": "CLT",
+            "duration_minutes": 303,
+            "flight_number": "1878",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "AA",
+            "arrive_time": "18:55",
+            "depart_time": "17:01",
+            "destination": "DTW",
+            "duration_minutes": 114,
+            "flight_number": "1297",
+            "origin": "CLT"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -480,7 +619,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -554,7 +695,37 @@
         "duration_display": "8h 43m",
         "duration_minutes": 523,
         "flight_numbers": "AA 3047 / AA 1860",
+        "layovers": [
+          {
+            "airport": "DFW",
+            "change_of_airport": false,
+            "duration_minutes": 156,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "AA",
+            "arrive_time": "12:32",
+            "depart_time": "07:00",
+            "destination": "DFW",
+            "duration_minutes": 212,
+            "flight_number": "3047",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AA",
+            "arrive_time": "18:43",
+            "depart_time": "15:08",
+            "destination": "DTW",
+            "duration_minutes": 155,
+            "flight_number": "1860",
+            "origin": "DFW"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -567,7 +738,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -641,7 +814,37 @@
         "duration_display": "6h 15m",
         "duration_minutes": 375,
         "flight_numbers": "WN 2989 / WN 4960",
+        "layovers": [
+          {
+            "airport": "STL",
+            "change_of_airport": false,
+            "duration_minutes": 60,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "18:55",
+            "depart_time": "13:05",
+            "destination": "STL",
+            "duration_minutes": 230,
+            "flight_number": "2989",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "22:20",
+            "depart_time": "19:55",
+            "destination": "DTW",
+            "duration_minutes": 85,
+            "flight_number": "4960",
+            "origin": "STL"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -654,7 +857,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -728,7 +933,37 @@
         "duration_display": "10h 30m",
         "duration_minutes": 630,
         "flight_numbers": "AA 1146 / AA 2559",
+        "layovers": [
+          {
+            "airport": "CLT",
+            "change_of_airport": false,
+            "duration_minutes": 208,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "AA",
+            "arrive_time": "17:07",
+            "depart_time": "09:00",
+            "destination": "CLT",
+            "duration_minutes": 307,
+            "flight_number": "1146",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "AA",
+            "arrive_time": "22:30",
+            "depart_time": "20:35",
+            "destination": "DTW",
+            "duration_minutes": 115,
+            "flight_number": "2559",
+            "origin": "CLT"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -741,7 +976,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -815,7 +1052,37 @@
         "duration_display": "7h 40m",
         "duration_minutes": 460,
         "flight_numbers": "WN 2500 / WN 4534",
+        "layovers": [
+          {
+            "airport": "BNA",
+            "change_of_airport": false,
+            "duration_minutes": 110,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "18:25",
+            "depart_time": "12:10",
+            "destination": "BNA",
+            "duration_minutes": 255,
+            "flight_number": "2500",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "22:50",
+            "depart_time": "20:15",
+            "destination": "DTW",
+            "duration_minutes": 95,
+            "flight_number": "4534",
+            "origin": "BNA"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -828,7 +1095,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -902,7 +1171,37 @@
         "duration_display": "7h 43m",
         "duration_minutes": 463,
         "flight_numbers": "AA 2904 / AA 1860",
+        "layovers": [
+          {
+            "airport": "DFW",
+            "change_of_airport": false,
+            "duration_minutes": 94,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AA",
+            "arrive_time": "13:34",
+            "depart_time": "08:00",
+            "destination": "DFW",
+            "duration_minutes": 214,
+            "flight_number": "2904",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AA",
+            "arrive_time": "18:43",
+            "depart_time": "15:08",
+            "destination": "DTW",
+            "duration_minutes": 155,
+            "flight_number": "1860",
+            "origin": "DFW"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -915,7 +1214,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -989,7 +1290,37 @@
         "duration_display": "10h 1m",
         "duration_minutes": 601,
         "flight_numbers": "AA 2904 / AA 2826",
+        "layovers": [
+          {
+            "airport": "DFW",
+            "change_of_airport": false,
+            "duration_minutes": 233,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AA",
+            "arrive_time": "13:34",
+            "depart_time": "08:00",
+            "destination": "DFW",
+            "duration_minutes": 214,
+            "flight_number": "2904",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AA",
+            "arrive_time": "21:01",
+            "depart_time": "17:27",
+            "destination": "DTW",
+            "duration_minutes": 154,
+            "flight_number": "2826",
+            "origin": "DFW"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -1002,7 +1333,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -1076,7 +1409,37 @@
         "duration_display": "9h 47m",
         "duration_minutes": 587,
         "flight_numbers": "AA 2614 / AA 6246",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 235,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AA",
+            "arrive_time": "12:23",
+            "depart_time": "06:00",
+            "destination": "ORD",
+            "duration_minutes": 263,
+            "flight_number": "2614",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Canadair RJ 700",
+            "airline": "AA",
+            "arrive_time": "18:47",
+            "depart_time": "16:18",
+            "destination": "DTW",
+            "duration_minutes": 89,
+            "flight_number": "6246",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -1089,7 +1452,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -1163,7 +1528,37 @@
         "duration_display": "12h 31m",
         "duration_minutes": 751,
         "flight_numbers": "F9 2638 / F9 4392",
+        "layovers": [
+          {
+            "airport": "PHX",
+            "change_of_airport": false,
+            "duration_minutes": 387,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "F9",
+            "arrive_time": "00:33",
+            "depart_time": "21:27",
+            "destination": "PHX",
+            "duration_minutes": 126,
+            "flight_number": "2638",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "F9",
+            "arrive_time": "12:58",
+            "depart_time": "07:00",
+            "destination": "DTW",
+            "duration_minutes": 238,
+            "flight_number": "4392",
+            "origin": "PHX"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -1176,7 +1571,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -1250,7 +1647,20 @@
         "duration_display": "4h 36m",
         "duration_minutes": 276,
         "flight_numbers": "DL 772",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "13:36",
+            "depart_time": "06:00",
+            "destination": "DTW",
+            "duration_minutes": 276,
+            "flight_number": "772",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -1263,7 +1673,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -1337,7 +1749,53 @@
         "duration_display": "9h 30m",
         "duration_minutes": 570,
         "flight_numbers": "WN 3086 / WN 1156 / WN 2932",
+        "layovers": [
+          {
+            "airport": "SAN",
+            "change_of_airport": false,
+            "duration_minutes": 90,
+            "overnight": false
+          },
+          {
+            "airport": "MDW",
+            "change_of_airport": false,
+            "duration_minutes": 70,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "10:15",
+            "depart_time": "08:30",
+            "destination": "SAN",
+            "duration_minutes": 105,
+            "flight_number": "3086",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "17:40",
+            "depart_time": "11:45",
+            "destination": "MDW",
+            "duration_minutes": 235,
+            "flight_number": "1156",
+            "origin": "SAN"
+          },
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "21:00",
+            "depart_time": "18:50",
+            "destination": "DTW",
+            "duration_minutes": 70,
+            "flight_number": "2932",
+            "origin": "MDW"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -1350,7 +1808,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -1424,7 +1884,37 @@
         "duration_display": "8h 45m",
         "duration_minutes": 525,
         "flight_numbers": "AA 402 / AA 245",
+        "layovers": [
+          {
+            "airport": "DFW",
+            "change_of_airport": false,
+            "duration_minutes": 143,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "AA",
+            "arrive_time": "11:33",
+            "depart_time": "06:00",
+            "destination": "DFW",
+            "duration_minutes": 213,
+            "flight_number": "402",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "AA",
+            "arrive_time": "17:45",
+            "depart_time": "13:56",
+            "destination": "DTW",
+            "duration_minutes": 169,
+            "flight_number": "245",
+            "origin": "DFW"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -1437,7 +1927,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -1511,7 +2003,37 @@
         "duration_display": "9h 43m",
         "duration_minutes": 583,
         "flight_numbers": "AA 402 / AA 1860",
+        "layovers": [
+          {
+            "airport": "DFW",
+            "change_of_airport": false,
+            "duration_minutes": 215,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "AA",
+            "arrive_time": "11:33",
+            "depart_time": "06:00",
+            "destination": "DFW",
+            "duration_minutes": 213,
+            "flight_number": "402",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AA",
+            "arrive_time": "18:43",
+            "depart_time": "15:08",
+            "destination": "DTW",
+            "duration_minutes": 155,
+            "flight_number": "1860",
+            "origin": "DFW"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -1524,7 +2046,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -1598,7 +2122,37 @@
         "duration_display": "6h 55m",
         "duration_minutes": 415,
         "flight_numbers": "WN 1652 / WN 1348",
+        "layovers": [
+          {
+            "airport": "DEN",
+            "change_of_airport": false,
+            "duration_minutes": 100,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "17:25",
+            "depart_time": "13:45",
+            "destination": "DEN",
+            "duration_minutes": 160,
+            "flight_number": "1652",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "23:40",
+            "depart_time": "19:05",
+            "destination": "DTW",
+            "duration_minutes": 155,
+            "flight_number": "1348",
+            "origin": "DEN"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -1611,7 +2165,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -1685,7 +2241,37 @@
         "duration_display": "7h",
         "duration_minutes": 420,
         "flight_numbers": "WN 4578 / WN 1124",
+        "layovers": [
+          {
+            "airport": "DEN",
+            "change_of_airport": false,
+            "duration_minutes": 110,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "09:30",
+            "depart_time": "06:00",
+            "destination": "DEN",
+            "duration_minutes": 150,
+            "flight_number": "4578",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "16:00",
+            "depart_time": "11:20",
+            "destination": "DTW",
+            "duration_minutes": 160,
+            "flight_number": "1124",
+            "origin": "DEN"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -1698,7 +2284,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -1772,7 +2360,53 @@
         "duration_display": "9h 50m",
         "duration_minutes": 590,
         "flight_numbers": "WN 3839 / WN 858 / WN 4534",
+        "layovers": [
+          {
+            "airport": "BUR",
+            "change_of_airport": false,
+            "duration_minutes": 130,
+            "overnight": false
+          },
+          {
+            "airport": "BNA",
+            "change_of_airport": false,
+            "duration_minutes": 45,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "11:25",
+            "depart_time": "10:00",
+            "destination": "BUR",
+            "duration_minutes": 85,
+            "flight_number": "3839",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "19:30",
+            "depart_time": "13:35",
+            "destination": "BNA",
+            "duration_minutes": 235,
+            "flight_number": "858",
+            "origin": "BUR"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "22:50",
+            "depart_time": "20:15",
+            "destination": "DTW",
+            "duration_minutes": 95,
+            "flight_number": "4534",
+            "origin": "BNA"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -1785,7 +2419,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -1859,7 +2495,37 @@
         "duration_display": "6h 10m",
         "duration_minutes": 370,
         "flight_numbers": "DL 920 / DL 2244",
+        "layovers": [
+          {
+            "airport": "SLC",
+            "change_of_airport": false,
+            "duration_minutes": 50,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A319",
+            "airline": "DL",
+            "arrive_time": "12:50",
+            "depart_time": "10:00",
+            "destination": "SLC",
+            "duration_minutes": 110,
+            "flight_number": "920",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "19:10",
+            "depart_time": "13:40",
+            "destination": "DTW",
+            "duration_minutes": 210,
+            "flight_number": "2244",
+            "origin": "SLC"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -1872,7 +2538,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -1946,7 +2614,37 @@
         "duration_display": "9h 15m",
         "duration_minutes": 555,
         "flight_numbers": "WN 2906 / WN 1348",
+        "layovers": [
+          {
+            "airport": "DEN",
+            "change_of_airport": false,
+            "duration_minutes": 240,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "15:05",
+            "depart_time": "11:25",
+            "destination": "DEN",
+            "duration_minutes": 160,
+            "flight_number": "2906",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "23:40",
+            "depart_time": "19:05",
+            "destination": "DTW",
+            "duration_minutes": 155,
+            "flight_number": "1348",
+            "origin": "DEN"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -1959,7 +2657,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -2033,7 +2733,37 @@
         "duration_display": "7h 19m",
         "duration_minutes": 439,
         "flight_numbers": "DL 1421 / DL 802",
+        "layovers": [
+          {
+            "airport": "LAX",
+            "change_of_airport": false,
+            "duration_minutes": 74,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "10:31",
+            "depart_time": "08:55",
+            "destination": "LAX",
+            "duration_minutes": 96,
+            "flight_number": "1421",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 757",
+            "airline": "DL",
+            "arrive_time": "19:14",
+            "depart_time": "11:45",
+            "destination": "DTW",
+            "duration_minutes": 269,
+            "flight_number": "802",
+            "origin": "LAX"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -2046,7 +2776,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -2120,7 +2852,37 @@
         "duration_display": "7h 41m",
         "duration_minutes": 461,
         "flight_numbers": "AA 1996 / AA 2508",
+        "layovers": [
+          {
+            "airport": "DFW",
+            "change_of_airport": false,
+            "duration_minutes": 89,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "AA",
+            "arrive_time": "17:46",
+            "depart_time": "12:11",
+            "destination": "DFW",
+            "duration_minutes": 215,
+            "flight_number": "1996",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "AA",
+            "arrive_time": "22:52",
+            "depart_time": "19:15",
+            "destination": "DTW",
+            "duration_minutes": 157,
+            "flight_number": "2508",
+            "origin": "DFW"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -2133,7 +2895,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -2207,7 +2971,37 @@
         "duration_display": "7h 45m",
         "duration_minutes": 465,
         "flight_numbers": "DL 381 / DL 2736",
+        "layovers": [
+          {
+            "airport": "AUS",
+            "change_of_airport": false,
+            "duration_minutes": 67,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A319",
+            "airline": "DL",
+            "arrive_time": "15:33",
+            "depart_time": "09:53",
+            "destination": "AUS",
+            "duration_minutes": 220,
+            "flight_number": "381",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "DL",
+            "arrive_time": "20:38",
+            "depart_time": "16:40",
+            "destination": "DTW",
+            "duration_minutes": 178,
+            "flight_number": "2736",
+            "origin": "AUS"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -2220,7 +3014,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -2294,7 +3090,37 @@
         "duration_display": "7h 53m",
         "duration_minutes": 473,
         "flight_numbers": "DL 2078 / DL 1484",
+        "layovers": [
+          {
+            "airport": "MSP",
+            "change_of_airport": false,
+            "duration_minutes": 142,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "17:23",
+            "depart_time": "11:40",
+            "destination": "MSP",
+            "duration_minutes": 223,
+            "flight_number": "2078",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "22:33",
+            "depart_time": "19:45",
+            "destination": "DTW",
+            "duration_minutes": 108,
+            "flight_number": "1484",
+            "origin": "MSP"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -2307,7 +3133,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -2381,7 +3209,37 @@
         "duration_display": "9h 14m",
         "duration_minutes": 554,
         "flight_numbers": "DL 1598 / DL 802",
+        "layovers": [
+          {
+            "airport": "LAX",
+            "change_of_airport": false,
+            "duration_minutes": 196,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "08:29",
+            "depart_time": "07:00",
+            "destination": "LAX",
+            "duration_minutes": 89,
+            "flight_number": "1598",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 757",
+            "airline": "DL",
+            "arrive_time": "19:14",
+            "depart_time": "11:45",
+            "destination": "DTW",
+            "duration_minutes": 269,
+            "flight_number": "802",
+            "origin": "LAX"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -2394,7 +3252,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -2468,7 +3328,37 @@
         "duration_display": "7h 42m",
         "duration_minutes": 462,
         "flight_numbers": "AS 68 / AS 313",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 60,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "08:22",
+            "depart_time": "06:05",
+            "destination": "SEA",
+            "duration_minutes": 137,
+            "flight_number": "68",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "16:47",
+            "depart_time": "09:22",
+            "destination": "DTW",
+            "duration_minutes": 265,
+            "flight_number": "313",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -2481,7 +3371,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -2555,7 +3447,37 @@
         "duration_display": "11h 42m",
         "duration_minutes": 702,
         "flight_numbers": "DL 405 / DL 1253",
+        "layovers": [
+          {
+            "airport": "JFK",
+            "change_of_airport": false,
+            "duration_minutes": 229,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 767",
+            "airline": "DL",
+            "arrive_time": "15:36",
+            "depart_time": "07:00",
+            "destination": "JFK",
+            "duration_minutes": 336,
+            "flight_number": "405",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "DL",
+            "arrive_time": "21:42",
+            "depart_time": "19:25",
+            "destination": "DTW",
+            "duration_minutes": 137,
+            "flight_number": "1253",
+            "origin": "JFK"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -2568,7 +3490,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -2642,7 +3566,53 @@
         "duration_display": "10h 47m",
         "duration_minutes": 647,
         "flight_numbers": "AS 586 / AS 1478 / AA 4927",
+        "layovers": [
+          {
+            "airport": "SAN",
+            "change_of_airport": false,
+            "duration_minutes": 56,
+            "overnight": false
+          },
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 133,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "11:43",
+            "depart_time": "10:02",
+            "destination": "SAN",
+            "duration_minutes": 101,
+            "flight_number": "586",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "19:00",
+            "depart_time": "12:39",
+            "destination": "ORD",
+            "duration_minutes": 261,
+            "flight_number": "1478",
+            "origin": "SAN"
+          },
+          {
+            "aircraft": "Canadair RJ 700",
+            "airline": "AA",
+            "arrive_time": "23:49",
+            "depart_time": "21:13",
+            "destination": "DTW",
+            "duration_minutes": 96,
+            "flight_number": "4927",
+            "origin": "ORD"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -2655,7 +3625,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -2729,7 +3701,53 @@
         "duration_display": "12h 10m",
         "duration_minutes": 730,
         "flight_numbers": "WN 3086 / WN 3700 / WN 1348",
+        "layovers": [
+          {
+            "airport": "SAN",
+            "change_of_airport": false,
+            "duration_minutes": 190,
+            "overnight": false
+          },
+          {
+            "airport": "DEN",
+            "change_of_airport": false,
+            "duration_minutes": 140,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "10:15",
+            "depart_time": "08:30",
+            "destination": "SAN",
+            "duration_minutes": 105,
+            "flight_number": "3086",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "16:45",
+            "depart_time": "13:25",
+            "destination": "DEN",
+            "duration_minutes": 140,
+            "flight_number": "3700",
+            "origin": "SAN"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "23:40",
+            "depart_time": "19:05",
+            "destination": "DTW",
+            "duration_minutes": 155,
+            "flight_number": "1348",
+            "origin": "DEN"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -2742,7 +3760,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -2816,7 +3836,37 @@
         "duration_display": "7h 46m",
         "duration_minutes": 466,
         "flight_numbers": "AA 1476 / AA 3195",
+        "layovers": [
+          {
+            "airport": "CLT",
+            "change_of_airport": false,
+            "duration_minutes": 55,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "AA",
+            "arrive_time": "08:25",
+            "depart_time": "00:27",
+            "destination": "CLT",
+            "duration_minutes": 298,
+            "flight_number": "1476",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A320",
+            "airline": "AA",
+            "arrive_time": "11:13",
+            "depart_time": "09:20",
+            "destination": "DTW",
+            "duration_minutes": 113,
+            "flight_number": "3195",
+            "origin": "CLT"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -2829,7 +3879,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -2903,7 +3955,53 @@
         "duration_display": "11h 10m",
         "duration_minutes": 670,
         "flight_numbers": "WN 3853 / WN 1156 / WN 2932",
+        "layovers": [
+          {
+            "airport": "SAN",
+            "change_of_airport": false,
+            "duration_minutes": 200,
+            "overnight": false
+          },
+          {
+            "airport": "MDW",
+            "change_of_airport": false,
+            "duration_minutes": 70,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "08:25",
+            "depart_time": "06:50",
+            "destination": "SAN",
+            "duration_minutes": 95,
+            "flight_number": "3853",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "17:40",
+            "depart_time": "11:45",
+            "destination": "MDW",
+            "duration_minutes": 235,
+            "flight_number": "1156",
+            "origin": "SAN"
+          },
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "21:00",
+            "depart_time": "18:50",
+            "destination": "DTW",
+            "duration_minutes": 70,
+            "flight_number": "2932",
+            "origin": "MDW"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -2916,7 +4014,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -2990,7 +4090,53 @@
         "duration_display": "13h 29m",
         "duration_minutes": 809,
         "flight_numbers": "AS 1450 / AS 1478 / AA 4927",
+        "layovers": [
+          {
+            "airport": "SAN",
+            "change_of_airport": false,
+            "duration_minutes": 217,
+            "overnight": false
+          },
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 133,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "09:02",
+            "depart_time": "07:20",
+            "destination": "SAN",
+            "duration_minutes": 102,
+            "flight_number": "1450",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "19:00",
+            "depart_time": "12:39",
+            "destination": "ORD",
+            "duration_minutes": 261,
+            "flight_number": "1478",
+            "origin": "SAN"
+          },
+          {
+            "aircraft": "Canadair RJ 700",
+            "airline": "AA",
+            "arrive_time": "23:49",
+            "depart_time": "21:13",
+            "destination": "DTW",
+            "duration_minutes": 96,
+            "flight_number": "4927",
+            "origin": "ORD"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -3003,7 +4149,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -3077,7 +4225,37 @@
         "duration_display": "6h 15m",
         "duration_minutes": 375,
         "flight_numbers": "DL 2178 / DL 1519",
+        "layovers": [
+          {
+            "airport": "MSP",
+            "change_of_airport": false,
+            "duration_minutes": 47,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "11:58",
+            "depart_time": "06:15",
+            "destination": "MSP",
+            "duration_minutes": 223,
+            "flight_number": "2178",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "15:30",
+            "depart_time": "12:45",
+            "destination": "DTW",
+            "duration_minutes": 105,
+            "flight_number": "1519",
+            "origin": "MSP"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -3090,7 +4268,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -3164,7 +4344,53 @@
         "duration_display": "12h 10m",
         "duration_minutes": 730,
         "flight_numbers": "WN 3086 / WN 1094 / WN 1348",
+        "layovers": [
+          {
+            "airport": "SAN",
+            "change_of_airport": false,
+            "duration_minutes": 265,
+            "overnight": false
+          },
+          {
+            "airport": "DEN",
+            "change_of_airport": false,
+            "duration_minutes": 65,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "10:15",
+            "depart_time": "08:30",
+            "destination": "SAN",
+            "duration_minutes": 105,
+            "flight_number": "3086",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "18:00",
+            "depart_time": "14:40",
+            "destination": "DEN",
+            "duration_minutes": 140,
+            "flight_number": "1094",
+            "origin": "SAN"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "23:40",
+            "depart_time": "19:05",
+            "destination": "DTW",
+            "duration_minutes": 155,
+            "flight_number": "1348",
+            "origin": "DEN"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -3177,7 +4403,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -3251,7 +4479,37 @@
         "duration_display": "8h 35m",
         "duration_minutes": 515,
         "flight_numbers": "WN 2331 / WN 1638",
+        "layovers": [
+          {
+            "airport": "MDW",
+            "change_of_airport": false,
+            "duration_minutes": 200,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "11:45",
+            "depart_time": "05:40",
+            "destination": "MDW",
+            "duration_minutes": 245,
+            "flight_number": "2331",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "17:15",
+            "depart_time": "15:05",
+            "destination": "DTW",
+            "duration_minutes": 70,
+            "flight_number": "1638",
+            "origin": "MDW"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -3264,7 +4522,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -3338,7 +4598,37 @@
         "duration_display": "12h 35m",
         "duration_minutes": 755,
         "flight_numbers": "WN 3547 / WN 1003",
+        "layovers": [
+          {
+            "airport": "BWI",
+            "change_of_airport": false,
+            "duration_minutes": 355,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "05:30",
+            "depart_time": "21:25",
+            "destination": "BWI",
+            "duration_minutes": 305,
+            "flight_number": "3547",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "13:00",
+            "depart_time": "11:25",
+            "destination": "DTW",
+            "duration_minutes": 95,
+            "flight_number": "1003",
+            "origin": "BWI"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -3351,7 +4641,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -3425,7 +4717,53 @@
         "duration_display": "10h 40m",
         "duration_minutes": 640,
         "flight_numbers": "WN 3839 / WN 864 / WN 1348",
+        "layovers": [
+          {
+            "airport": "BUR",
+            "change_of_airport": false,
+            "duration_minutes": 110,
+            "overnight": false
+          },
+          {
+            "airport": "DEN",
+            "change_of_airport": false,
+            "duration_minutes": 150,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "11:25",
+            "depart_time": "10:00",
+            "destination": "BUR",
+            "duration_minutes": 85,
+            "flight_number": "3839",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "16:35",
+            "depart_time": "13:15",
+            "destination": "DEN",
+            "duration_minutes": 140,
+            "flight_number": "864",
+            "origin": "BUR"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "23:40",
+            "depart_time": "19:05",
+            "destination": "DTW",
+            "duration_minutes": 155,
+            "flight_number": "1348",
+            "origin": "DEN"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -3438,7 +4776,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -3512,7 +4852,53 @@
         "duration_display": "11h",
         "duration_minutes": 660,
         "flight_numbers": "WN 3807 / WN 2496 / WN 1348",
+        "layovers": [
+          {
+            "airport": "LAX",
+            "change_of_airport": false,
+            "duration_minutes": 190,
+            "overnight": false
+          },
+          {
+            "airport": "DEN",
+            "change_of_airport": false,
+            "duration_minutes": 80,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "11:15",
+            "depart_time": "09:40",
+            "destination": "LAX",
+            "duration_minutes": 95,
+            "flight_number": "3807",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "17:45",
+            "depart_time": "14:25",
+            "destination": "DEN",
+            "duration_minutes": 140,
+            "flight_number": "2496",
+            "origin": "LAX"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "23:40",
+            "depart_time": "19:05",
+            "destination": "DTW",
+            "duration_minutes": 155,
+            "flight_number": "1348",
+            "origin": "DEN"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -3525,7 +4911,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -3599,7 +4987,37 @@
         "duration_display": "7h 6m",
         "duration_minutes": 426,
         "flight_numbers": "DL 2272 / DL 708",
+        "layovers": [
+          {
+            "airport": "LAX",
+            "change_of_airport": false,
+            "duration_minutes": 64,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "14:32",
+            "depart_time": "13:00",
+            "destination": "LAX",
+            "duration_minutes": 92,
+            "flight_number": "2272",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "DL",
+            "arrive_time": "23:06",
+            "depart_time": "15:36",
+            "destination": "DTW",
+            "duration_minutes": 270,
+            "flight_number": "708",
+            "origin": "LAX"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -3612,7 +5030,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -3686,7 +5106,37 @@
         "duration_display": "7h 13m",
         "duration_minutes": 433,
         "flight_numbers": "DL 1412 / DL 533",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 30,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A220-300 Passenger",
+            "airline": "DL",
+            "arrive_time": "15:25",
+            "depart_time": "13:05",
+            "destination": "SEA",
+            "duration_minutes": 140,
+            "flight_number": "1412",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "23:18",
+            "depart_time": "15:55",
+            "destination": "DTW",
+            "duration_minutes": 263,
+            "flight_number": "533",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -3699,7 +5149,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -3773,7 +5225,37 @@
         "duration_display": "7h 22m",
         "duration_minutes": 442,
         "flight_numbers": "UA 2091 / UA 1215",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 88,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "13:02",
+            "depart_time": "06:35",
+            "destination": "ORD",
+            "duration_minutes": 267,
+            "flight_number": "2091",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "16:57",
+            "depart_time": "14:30",
+            "destination": "DTW",
+            "duration_minutes": 87,
+            "flight_number": "1215",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -3786,7 +5268,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -3860,7 +5344,37 @@
         "duration_display": "7h 49m",
         "duration_minutes": 469,
         "flight_numbers": "UA 755 / UA 4024",
+        "layovers": [
+          {
+            "airport": "IAD",
+            "change_of_airport": false,
+            "duration_minutes": 53,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 777",
+            "airline": "UA",
+            "arrive_time": "21:27",
+            "depart_time": "13:10",
+            "destination": "IAD",
+            "duration_minutes": 317,
+            "flight_number": "755",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "23:59",
+            "depart_time": "22:20",
+            "destination": "DTW",
+            "duration_minutes": 99,
+            "flight_number": "4024",
+            "origin": "IAD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -3873,7 +5387,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -3947,7 +5463,37 @@
         "duration_display": "11h 3m",
         "duration_minutes": 663,
         "flight_numbers": "UA 1931 / UA 3706",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 300,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "01:00",
+            "depart_time": "18:30",
+            "destination": "ORD",
+            "duration_minutes": 270,
+            "flight_number": "1931",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "08:33",
+            "depart_time": "06:00",
+            "destination": "DTW",
+            "duration_minutes": 93,
+            "flight_number": "3706",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -3960,7 +5506,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -4034,7 +5582,37 @@
         "duration_display": "8h 11m",
         "duration_minutes": 491,
         "flight_numbers": "UA 1387 / UA 2755",
+        "layovers": [
+          {
+            "airport": "IAH",
+            "change_of_airport": false,
+            "duration_minutes": 82,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 9 Passenger",
+            "airline": "UA",
+            "arrive_time": "18:38",
+            "depart_time": "12:33",
+            "destination": "IAH",
+            "duration_minutes": 245,
+            "flight_number": "1387",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "23:44",
+            "depart_time": "20:00",
+            "destination": "DTW",
+            "duration_minutes": 164,
+            "flight_number": "2755",
+            "origin": "IAH"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -4047,7 +5625,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -4121,7 +5701,37 @@
         "duration_display": "9h 1m",
         "duration_minutes": 541,
         "flight_numbers": "DL 1715 / DL 708",
+        "layovers": [
+          {
+            "airport": "LAX",
+            "change_of_airport": false,
+            "duration_minutes": 179,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "12:37",
+            "depart_time": "11:05",
+            "destination": "LAX",
+            "duration_minutes": 92,
+            "flight_number": "1715",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "DL",
+            "arrive_time": "23:06",
+            "depart_time": "15:36",
+            "destination": "DTW",
+            "duration_minutes": 270,
+            "flight_number": "708",
+            "origin": "LAX"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -4134,7 +5744,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -4208,7 +5820,37 @@
         "duration_display": "12h 20m",
         "duration_minutes": 740,
         "flight_numbers": "UA 1931 / UA 5717",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 390,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "01:00",
+            "depart_time": "18:30",
+            "destination": "ORD",
+            "duration_minutes": 270,
+            "flight_number": "1931",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "09:50",
+            "depart_time": "07:30",
+            "destination": "DTW",
+            "duration_minutes": 80,
+            "flight_number": "5717",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -4221,7 +5863,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -4295,7 +5939,37 @@
         "duration_display": "12h 38m",
         "duration_minutes": 758,
         "flight_numbers": "UA 1482 / UA 3706",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 391,
+            "overnight": true
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "23:29",
+            "depart_time": "16:55",
+            "destination": "ORD",
+            "duration_minutes": 274,
+            "flight_number": "1482",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "08:33",
+            "depart_time": "06:00",
+            "destination": "DTW",
+            "duration_minutes": 93,
+            "flight_number": "3706",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -4308,7 +5982,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -4382,7 +6058,37 @@
         "duration_display": "7h 45m",
         "duration_minutes": 465,
         "flight_numbers": "AA 1949 / AA 2826",
+        "layovers": [
+          {
+            "airport": "DFW",
+            "change_of_airport": false,
+            "duration_minutes": 96,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "AA",
+            "arrive_time": "15:51",
+            "depart_time": "10:16",
+            "destination": "DFW",
+            "duration_minutes": 215,
+            "flight_number": "1949",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AA",
+            "arrive_time": "21:01",
+            "depart_time": "17:27",
+            "destination": "DTW",
+            "duration_minutes": 154,
+            "flight_number": "2826",
+            "origin": "DFW"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -4395,7 +6101,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -4469,7 +6177,37 @@
         "duration_display": "9h 47m",
         "duration_minutes": 587,
         "flight_numbers": "DL 3034 / DL 533",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 180,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A220-300 Passenger",
+            "airline": "DL",
+            "arrive_time": "12:55",
+            "depart_time": "10:31",
+            "destination": "SEA",
+            "duration_minutes": 144,
+            "flight_number": "3034",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "23:18",
+            "depart_time": "15:55",
+            "destination": "DTW",
+            "duration_minutes": 263,
+            "flight_number": "533",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -4482,7 +6220,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -4556,7 +6296,37 @@
         "duration_display": "10h 55m",
         "duration_minutes": 655,
         "flight_numbers": "WN 2446 / WN 759",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 330,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "06:40",
+            "depart_time": "05:05",
+            "destination": "LAS",
+            "duration_minutes": 95,
+            "flight_number": "2446",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "19:00",
+            "depart_time": "12:10",
+            "destination": "DTW",
+            "duration_minutes": 230,
+            "flight_number": "759",
+            "origin": "LAS"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -4569,7 +6339,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -4643,7 +6415,37 @@
         "duration_display": "10h 5m",
         "duration_minutes": 605,
         "flight_numbers": "DL 2721 / DL 1706",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 199,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A220-300 Passenger",
+            "airline": "DL",
+            "arrive_time": "08:26",
+            "depart_time": "06:05",
+            "destination": "SEA",
+            "duration_minutes": 141,
+            "flight_number": "2721",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "19:10",
+            "depart_time": "11:45",
+            "destination": "DTW",
+            "duration_minutes": 265,
+            "flight_number": "1706",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -4656,7 +6458,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -4730,7 +6534,37 @@
         "duration_display": "13h 55m",
         "duration_minutes": 835,
         "flight_numbers": "UA 1482 / UA 5717",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 481,
+            "overnight": true
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "23:29",
+            "depart_time": "16:55",
+            "destination": "ORD",
+            "duration_minutes": 274,
+            "flight_number": "1482",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "09:50",
+            "depart_time": "07:30",
+            "destination": "DTW",
+            "duration_minutes": 80,
+            "flight_number": "5717",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -4743,7 +6577,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -4817,7 +6653,37 @@
         "duration_display": "7h 21m",
         "duration_minutes": 441,
         "flight_numbers": "DL 3991 / DL 810",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 39,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Embraer 175",
+            "airline": "DL",
+            "arrive_time": "22:26",
+            "depart_time": "20:05",
+            "destination": "SEA",
+            "duration_minutes": 141,
+            "flight_number": "3991",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "06:26",
+            "depart_time": "23:05",
+            "destination": "DTW",
+            "duration_minutes": 261,
+            "flight_number": "810",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -4830,7 +6696,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -4904,7 +6772,37 @@
         "duration_display": "15h 30m",
         "duration_minutes": 930,
         "flight_numbers": "UA 1931 / UA 5756",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 570,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "01:00",
+            "depart_time": "18:30",
+            "destination": "ORD",
+            "duration_minutes": 270,
+            "flight_number": "1931",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "13:00",
+            "depart_time": "10:30",
+            "destination": "DTW",
+            "duration_minutes": 90,
+            "flight_number": "5756",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -4917,7 +6815,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -4991,7 +6891,20 @@
         "duration_display": "4h 35m",
         "duration_minutes": 275,
         "flight_numbers": "DL 335",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "06:20",
+            "depart_time": "22:45",
+            "destination": "DTW",
+            "duration_minutes": 275,
+            "flight_number": "335",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -5004,7 +6917,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -5078,7 +6993,37 @@
         "duration_display": "8h 10m",
         "duration_minutes": 490,
         "flight_numbers": "DL 1559 / DL 407",
+        "layovers": [
+          {
+            "airport": "LAX",
+            "change_of_airport": false,
+            "duration_minutes": 131,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "20:19",
+            "depart_time": "18:50",
+            "destination": "LAX",
+            "duration_minutes": 89,
+            "flight_number": "1559",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 757",
+            "airline": "DL",
+            "arrive_time": "06:00",
+            "depart_time": "22:30",
+            "destination": "DTW",
+            "duration_minutes": 270,
+            "flight_number": "407",
+            "origin": "LAX"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -5091,7 +7036,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -5165,7 +7112,37 @@
         "duration_display": "7h 17m",
         "duration_minutes": 437,
         "flight_numbers": "F9 1094 / F9 4186",
+        "layovers": [
+          {
+            "airport": "DEN",
+            "change_of_airport": false,
+            "duration_minutes": 111,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A320neo",
+            "airline": "F9",
+            "arrive_time": "17:47",
+            "depart_time": "14:07",
+            "destination": "DEN",
+            "duration_minutes": 160,
+            "flight_number": "1094",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A320neo",
+            "airline": "F9",
+            "arrive_time": "00:24",
+            "depart_time": "19:38",
+            "destination": "DTW",
+            "duration_minutes": 166,
+            "flight_number": "4186",
+            "origin": "DEN"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -5178,7 +7155,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -5252,7 +7231,37 @@
         "duration_display": "8h 58m",
         "duration_minutes": 538,
         "flight_numbers": "DL 635 / DL 1646",
+        "layovers": [
+          {
+            "airport": "ATL",
+            "change_of_airport": false,
+            "duration_minutes": 137,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "05:08",
+            "depart_time": "21:30",
+            "destination": "ATL",
+            "duration_minutes": 278,
+            "flight_number": "635",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "09:28",
+            "depart_time": "07:25",
+            "destination": "DTW",
+            "duration_minutes": 123,
+            "flight_number": "1646",
+            "origin": "ATL"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -5265,7 +7274,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -5339,7 +7350,37 @@
         "duration_display": "17h 5m",
         "duration_minutes": 1025,
         "flight_numbers": "UA 1482 / UA 5756",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 661,
+            "overnight": true
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "23:29",
+            "depart_time": "16:55",
+            "destination": "ORD",
+            "duration_minutes": 274,
+            "flight_number": "1482",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "13:00",
+            "depart_time": "10:30",
+            "destination": "DTW",
+            "duration_minutes": 90,
+            "flight_number": "5756",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -5352,7 +7393,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -5426,7 +7469,37 @@
         "duration_display": "9h 25m",
         "duration_minutes": 565,
         "flight_numbers": "DL 2112 / DL 5080",
+        "layovers": [
+          {
+            "airport": "JFK",
+            "change_of_airport": false,
+            "duration_minutes": 102,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 757",
+            "airline": "DL",
+            "arrive_time": "05:33",
+            "depart_time": "21:00",
+            "destination": "JFK",
+            "duration_minutes": 333,
+            "flight_number": "2112",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Canadair RJ 900",
+            "airline": "DL",
+            "arrive_time": "09:25",
+            "depart_time": "07:15",
+            "destination": "DTW",
+            "duration_minutes": 130,
+            "flight_number": "5080",
+            "origin": "JFK"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -5439,7 +7512,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -5513,7 +7588,53 @@
         "duration_display": "10h 30m",
         "duration_minutes": 630,
         "flight_numbers": "WN 342 / WN 2518 / WN 1076",
+        "layovers": [
+          {
+            "airport": "LAX",
+            "change_of_airport": false,
+            "duration_minutes": 95,
+            "overnight": false
+          },
+          {
+            "airport": "MDW",
+            "change_of_airport": false,
+            "duration_minutes": 125,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "22:20",
+            "depart_time": "20:45",
+            "destination": "LAX",
+            "duration_minutes": 95,
+            "flight_number": "342",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "05:55",
+            "depart_time": "23:55",
+            "destination": "MDW",
+            "duration_minutes": 240,
+            "flight_number": "2518",
+            "origin": "LAX"
+          },
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "10:15",
+            "depart_time": "08:00",
+            "destination": "DTW",
+            "duration_minutes": 75,
+            "flight_number": "1076",
+            "origin": "MDW"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -5526,7 +7647,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -5600,7 +7723,37 @@
         "duration_display": "9h 36m",
         "duration_minutes": 576,
         "flight_numbers": "UA 705 / UA 6137",
+        "layovers": [
+          {
+            "airport": "IAD",
+            "change_of_airport": false,
+            "duration_minutes": 150,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 9 Passenger",
+            "airline": "UA",
+            "arrive_time": "06:00",
+            "depart_time": "21:30",
+            "destination": "IAD",
+            "duration_minutes": 330,
+            "flight_number": "705",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "10:06",
+            "depart_time": "08:30",
+            "destination": "DTW",
+            "duration_minutes": 96,
+            "flight_number": "6137",
+            "origin": "IAD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -5613,7 +7766,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -5687,7 +7842,37 @@
         "duration_display": "17h 46m",
         "duration_minutes": 1066,
         "flight_numbers": "UA 1931 / UA 5882",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 710,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "01:00",
+            "depart_time": "18:30",
+            "destination": "ORD",
+            "duration_minutes": 270,
+            "flight_number": "1931",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "15:16",
+            "depart_time": "12:50",
+            "destination": "DTW",
+            "duration_minutes": 86,
+            "flight_number": "5882",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -5700,7 +7885,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -5774,7 +7961,53 @@
         "duration_display": "13h 50m",
         "duration_minutes": 830,
         "flight_numbers": "WN 3853 / WN 3699 / WN 1348",
+        "layovers": [
+          {
+            "airport": "SAN",
+            "change_of_airport": false,
+            "duration_minutes": 155,
+            "overnight": false
+          },
+          {
+            "airport": "DEN",
+            "change_of_airport": false,
+            "duration_minutes": 280,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "08:25",
+            "depart_time": "06:50",
+            "destination": "SAN",
+            "duration_minutes": 95,
+            "flight_number": "3853",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "14:25",
+            "depart_time": "11:00",
+            "destination": "DEN",
+            "duration_minutes": 145,
+            "flight_number": "3699",
+            "origin": "SAN"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "23:40",
+            "depart_time": "19:05",
+            "destination": "DTW",
+            "duration_minutes": 155,
+            "flight_number": "1348",
+            "origin": "DEN"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -5787,7 +8020,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -5861,7 +8096,53 @@
         "duration_display": "9h 10m",
         "duration_minutes": 550,
         "flight_numbers": "WN 2446 / WN 1499 / WN 1638",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 85,
+            "overnight": false
+          },
+          {
+            "airport": "MDW",
+            "change_of_airport": false,
+            "duration_minutes": 95,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "06:40",
+            "depart_time": "05:05",
+            "destination": "LAS",
+            "duration_minutes": 95,
+            "flight_number": "2446",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "13:30",
+            "depart_time": "08:05",
+            "destination": "MDW",
+            "duration_minutes": 205,
+            "flight_number": "1499",
+            "origin": "LAS"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "17:15",
+            "depart_time": "15:05",
+            "destination": "DTW",
+            "duration_minutes": 70,
+            "flight_number": "1638",
+            "origin": "MDW"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -5874,7 +8155,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -5948,7 +8231,53 @@
         "duration_display": "12h 29m",
         "duration_minutes": 749,
         "flight_numbers": "AS 2358 / AS 1478 / AA 4927",
+        "layovers": [
+          {
+            "airport": "SAN",
+            "change_of_airport": false,
+            "duration_minutes": 162,
+            "overnight": false
+          },
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 133,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Embraer 175",
+            "airline": "AS",
+            "arrive_time": "09:57",
+            "depart_time": "08:20",
+            "destination": "SAN",
+            "duration_minutes": 97,
+            "flight_number": "2358",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "19:00",
+            "depart_time": "12:39",
+            "destination": "ORD",
+            "duration_minutes": 261,
+            "flight_number": "1478",
+            "origin": "SAN"
+          },
+          {
+            "aircraft": "Canadair RJ 700",
+            "airline": "AA",
+            "arrive_time": "23:49",
+            "depart_time": "21:13",
+            "destination": "DTW",
+            "duration_minutes": 96,
+            "flight_number": "4927",
+            "origin": "ORD"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -5961,7 +8290,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -6035,7 +8366,37 @@
         "duration_display": "13h 15m",
         "duration_minutes": 795,
         "flight_numbers": "UA 2619 / UA 3706",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 425,
+            "overnight": true
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "UA",
+            "arrive_time": "22:55",
+            "depart_time": "16:18",
+            "destination": "ORD",
+            "duration_minutes": 277,
+            "flight_number": "2619",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "08:33",
+            "depart_time": "06:00",
+            "destination": "DTW",
+            "duration_minutes": 93,
+            "flight_number": "3706",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -6048,7 +8409,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -6122,7 +8485,37 @@
         "duration_display": "10h 39m",
         "duration_minutes": 639,
         "flight_numbers": "UA 2482 / UA 3700",
+        "layovers": [
+          {
+            "airport": "EWR",
+            "change_of_airport": false,
+            "duration_minutes": 182,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 757",
+            "airline": "UA",
+            "arrive_time": "05:53",
+            "depart_time": "21:15",
+            "destination": "EWR",
+            "duration_minutes": 338,
+            "flight_number": "2482",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "10:54",
+            "depart_time": "08:55",
+            "destination": "DTW",
+            "duration_minutes": 119,
+            "flight_number": "3700",
+            "origin": "EWR"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -6135,7 +8528,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -6209,7 +8604,37 @@
         "duration_display": "7h 40m",
         "duration_minutes": 460,
         "flight_numbers": "WN 3849 / WN 1076",
+        "layovers": [
+          {
+            "airport": "MDW",
+            "change_of_airport": false,
+            "duration_minutes": 120,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "06:00",
+            "depart_time": "23:35",
+            "destination": "MDW",
+            "duration_minutes": 265,
+            "flight_number": "3849",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "10:15",
+            "depart_time": "08:00",
+            "destination": "DTW",
+            "duration_minutes": 75,
+            "flight_number": "1076",
+            "origin": "MDW"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -6222,7 +8647,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -6296,7 +8723,37 @@
         "duration_display": "10h 41m",
         "duration_minutes": 641,
         "flight_numbers": "DL 3707 / DL 810",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 240,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Embraer 175",
+            "airline": "DL",
+            "arrive_time": "19:05",
+            "depart_time": "16:45",
+            "destination": "SEA",
+            "duration_minutes": 140,
+            "flight_number": "3707",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "06:26",
+            "depart_time": "23:05",
+            "destination": "DTW",
+            "duration_minutes": 261,
+            "flight_number": "810",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -6309,7 +8766,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -6383,7 +8842,37 @@
         "duration_display": "7h 59m",
         "duration_minutes": 479,
         "flight_numbers": "AA 939 / AA 2374",
+        "layovers": [
+          {
+            "airport": "DFW",
+            "change_of_airport": false,
+            "duration_minutes": 113,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "AA",
+            "arrive_time": "05:23",
+            "depart_time": "23:59",
+            "destination": "DFW",
+            "duration_minutes": 204,
+            "flight_number": "939",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AA",
+            "arrive_time": "10:58",
+            "depart_time": "07:16",
+            "destination": "DTW",
+            "duration_minutes": 162,
+            "flight_number": "2374",
+            "origin": "DFW"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -6396,7 +8885,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -6470,7 +8961,37 @@
         "duration_display": "19h 21m",
         "duration_minutes": 1161,
         "flight_numbers": "UA 1482 / UA 5882",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 801,
+            "overnight": true
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "23:29",
+            "depart_time": "16:55",
+            "destination": "ORD",
+            "duration_minutes": 274,
+            "flight_number": "1482",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "15:16",
+            "depart_time": "12:50",
+            "destination": "DTW",
+            "duration_minutes": 86,
+            "flight_number": "5882",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -6483,7 +9004,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -6557,7 +9080,37 @@
         "duration_display": "19h 27m",
         "duration_minutes": 1167,
         "flight_numbers": "UA 1931 / UA 1215",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 810,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "01:00",
+            "depart_time": "18:30",
+            "destination": "ORD",
+            "duration_minutes": 270,
+            "flight_number": "1931",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "16:57",
+            "depart_time": "14:30",
+            "destination": "DTW",
+            "duration_minutes": 87,
+            "flight_number": "1215",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -6570,7 +9123,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -6644,7 +9199,53 @@
         "duration_display": "10h 45m",
         "duration_minutes": 645,
         "flight_numbers": "WN 3850 / WN 403 / WN 759",
+        "layovers": [
+          {
+            "airport": "PHX",
+            "change_of_airport": false,
+            "duration_minutes": 105,
+            "overnight": false
+          },
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 110,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "08:15",
+            "depart_time": "05:15",
+            "destination": "PHX",
+            "duration_minutes": 120,
+            "flight_number": "3850",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "10:20",
+            "depart_time": "10:00",
+            "destination": "LAS",
+            "duration_minutes": 80,
+            "flight_number": "403",
+            "origin": "PHX"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "19:00",
+            "depart_time": "12:10",
+            "destination": "DTW",
+            "duration_minutes": 230,
+            "flight_number": "759",
+            "origin": "LAS"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -6657,7 +9258,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -6731,7 +9334,37 @@
         "duration_display": "14h 32m",
         "duration_minutes": 872,
         "flight_numbers": "UA 2619 / UA 5717",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 515,
+            "overnight": true
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "UA",
+            "arrive_time": "22:55",
+            "depart_time": "16:18",
+            "destination": "ORD",
+            "duration_minutes": 277,
+            "flight_number": "2619",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "09:50",
+            "depart_time": "07:30",
+            "destination": "DTW",
+            "duration_minutes": 80,
+            "flight_number": "5717",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -6744,7 +9377,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -6818,7 +9453,37 @@
         "duration_display": "6h 56m",
         "duration_minutes": 416,
         "flight_numbers": "UA 2343 / UA 5882",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 63,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "11:47",
+            "depart_time": "05:20",
+            "destination": "ORD",
+            "duration_minutes": 267,
+            "flight_number": "2343",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "15:16",
+            "depart_time": "12:50",
+            "destination": "DTW",
+            "duration_minutes": 86,
+            "flight_number": "5882",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -6831,7 +9496,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -6905,7 +9572,37 @@
         "duration_display": "7h 14m",
         "duration_minutes": 434,
         "flight_numbers": "UA 1479 / UA 1915",
+        "layovers": [
+          {
+            "airport": "DEN",
+            "change_of_airport": false,
+            "duration_minutes": 111,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 757",
+            "airline": "UA",
+            "arrive_time": "08:39",
+            "depart_time": "05:00",
+            "destination": "DEN",
+            "duration_minutes": 159,
+            "flight_number": "1479",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A320",
+            "airline": "UA",
+            "arrive_time": "15:14",
+            "depart_time": "10:30",
+            "destination": "DTW",
+            "duration_minutes": 164,
+            "flight_number": "1915",
+            "origin": "DEN"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -6918,7 +9615,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -6992,7 +9691,53 @@
         "duration_display": "11h 30m",
         "duration_minutes": 690,
         "flight_numbers": "WN 2446 / WN 3184 / WN 2971",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 175,
+            "overnight": false
+          },
+          {
+            "airport": "BNA",
+            "change_of_airport": false,
+            "duration_minutes": 115,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "06:40",
+            "depart_time": "05:05",
+            "destination": "LAS",
+            "duration_minutes": 95,
+            "flight_number": "2446",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "15:05",
+            "depart_time": "09:35",
+            "destination": "BNA",
+            "duration_minutes": 210,
+            "flight_number": "3184",
+            "origin": "LAS"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "19:35",
+            "depart_time": "17:00",
+            "destination": "DTW",
+            "duration_minutes": 95,
+            "flight_number": "2971",
+            "origin": "BNA"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -7005,7 +9750,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -7079,7 +9826,37 @@
         "duration_display": "20h 52m",
         "duration_minutes": 1252,
         "flight_numbers": "UA 1931 / UA 2632",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 890,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "01:00",
+            "depart_time": "18:30",
+            "destination": "ORD",
+            "duration_minutes": 270,
+            "flight_number": "1931",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "18:22",
+            "depart_time": "15:50",
+            "destination": "DTW",
+            "duration_minutes": 92,
+            "flight_number": "2632",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -7092,7 +9869,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -7166,7 +9945,37 @@
         "duration_display": "7h 54m",
         "duration_minutes": 474,
         "flight_numbers": "AA 2651 / AA 2371",
+        "layovers": [
+          {
+            "airport": "CLT",
+            "change_of_airport": false,
+            "duration_minutes": 59,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "AA",
+            "arrive_time": "21:36",
+            "depart_time": "13:31",
+            "destination": "CLT",
+            "duration_minutes": 305,
+            "flight_number": "2651",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "AA",
+            "arrive_time": "00:25",
+            "depart_time": "22:35",
+            "destination": "DTW",
+            "duration_minutes": 110,
+            "flight_number": "2371",
+            "origin": "CLT"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -7179,7 +9988,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -7253,7 +10064,37 @@
         "duration_display": "7h 59m",
         "duration_minutes": 479,
         "flight_numbers": "DL 2789 / DL 1433",
+        "layovers": [
+          {
+            "airport": "MSP",
+            "change_of_airport": false,
+            "duration_minutes": 150,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "06:20",
+            "depart_time": "00:40",
+            "destination": "MSP",
+            "duration_minutes": 220,
+            "flight_number": "2789",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "11:39",
+            "depart_time": "08:50",
+            "destination": "DTW",
+            "duration_minutes": 109,
+            "flight_number": "1433",
+            "origin": "MSP"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -7266,7 +10107,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -7340,7 +10183,37 @@
         "duration_display": "21h 2m",
         "duration_minutes": 1262,
         "flight_numbers": "UA 1482 / UA 1215",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 901,
+            "overnight": true
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "23:29",
+            "depart_time": "16:55",
+            "destination": "ORD",
+            "duration_minutes": 274,
+            "flight_number": "1482",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "16:57",
+            "depart_time": "14:30",
+            "destination": "DTW",
+            "duration_minutes": 87,
+            "flight_number": "1215",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -7353,7 +10226,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -7427,7 +10302,53 @@
         "duration_display": "13h 15m",
         "duration_minutes": 795,
         "flight_numbers": "WN 2645 / WN 2518 / WN 1076",
+        "layovers": [
+          {
+            "airport": "LAX",
+            "change_of_airport": false,
+            "duration_minutes": 260,
+            "overnight": false
+          },
+          {
+            "airport": "MDW",
+            "change_of_airport": false,
+            "duration_minutes": 125,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "19:35",
+            "depart_time": "18:00",
+            "destination": "LAX",
+            "duration_minutes": 95,
+            "flight_number": "2645",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "05:55",
+            "depart_time": "23:55",
+            "destination": "MDW",
+            "duration_minutes": 240,
+            "flight_number": "2518",
+            "origin": "LAX"
+          },
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "10:15",
+            "depart_time": "08:00",
+            "destination": "DTW",
+            "duration_minutes": 75,
+            "flight_number": "1076",
+            "origin": "MDW"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -7440,7 +10361,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -7514,7 +10437,37 @@
         "duration_display": "8h 37m",
         "duration_minutes": 517,
         "flight_numbers": "UA 2343 / UA 1215",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 163,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "11:47",
+            "depart_time": "05:20",
+            "destination": "ORD",
+            "duration_minutes": 267,
+            "flight_number": "2343",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "16:57",
+            "depart_time": "14:30",
+            "destination": "DTW",
+            "duration_minutes": 87,
+            "flight_number": "1215",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -7527,7 +10480,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -7601,7 +10556,37 @@
         "duration_display": "9h 10m",
         "duration_minutes": 550,
         "flight_numbers": "UA 2847 / UA 5756",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 194,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "07:16",
+            "depart_time": "00:50",
+            "destination": "ORD",
+            "duration_minutes": 266,
+            "flight_number": "2847",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "13:00",
+            "depart_time": "10:30",
+            "destination": "DTW",
+            "duration_minutes": 90,
+            "flight_number": "5756",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -7614,7 +10599,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -7688,7 +10675,37 @@
         "duration_display": "6h 14m",
         "duration_minutes": 374,
         "flight_numbers": "DL 1331 / DL 2236",
+        "layovers": [
+          {
+            "airport": "SLC",
+            "change_of_airport": false,
+            "duration_minutes": 45,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "08:55",
+            "depart_time": "06:00",
+            "destination": "SLC",
+            "duration_minutes": 115,
+            "flight_number": "1331",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "15:14",
+            "depart_time": "09:40",
+            "destination": "DTW",
+            "duration_minutes": 214,
+            "flight_number": "2236",
+            "origin": "SLC"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -7701,7 +10718,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -7775,7 +10794,53 @@
         "duration_display": "10h 15m",
         "duration_minutes": 615,
         "flight_numbers": "WN 3846 / WN 4990 / WN 1076",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 95,
+            "overnight": true
+          },
+          {
+            "airport": "MDW",
+            "change_of_airport": false,
+            "duration_minutes": 140,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "22:45",
+            "depart_time": "21:00",
+            "destination": "LAS",
+            "duration_minutes": 105,
+            "flight_number": "3846",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "05:40",
+            "depart_time": "00:20",
+            "destination": "MDW",
+            "duration_minutes": 200,
+            "flight_number": "4990",
+            "origin": "LAS"
+          },
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "10:15",
+            "depart_time": "08:00",
+            "destination": "DTW",
+            "duration_minutes": 75,
+            "flight_number": "1076",
+            "origin": "MDW"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -7788,7 +10853,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -7862,7 +10929,37 @@
         "duration_display": "8h 41m",
         "duration_minutes": 521,
         "flight_numbers": "B6 216 / B6 820",
+        "layovers": [
+          {
+            "airport": "JFK",
+            "change_of_airport": false,
+            "duration_minutes": 61,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A320",
+            "airline": "B6",
+            "arrive_time": "20:44",
+            "depart_time": "12:15",
+            "destination": "JFK",
+            "duration_minutes": 329,
+            "flight_number": "216",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A320",
+            "airline": "B6",
+            "arrive_time": "23:56",
+            "depart_time": "21:45",
+            "destination": "DTW",
+            "duration_minutes": 131,
+            "flight_number": "820",
+            "origin": "JFK"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -7875,7 +10972,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -7949,7 +11048,37 @@
         "duration_display": "10h 10m",
         "duration_minutes": 610,
         "flight_numbers": "UA 368 / UA 5756",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 252,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "06:18",
+            "depart_time": "23:50",
+            "destination": "ORD",
+            "duration_minutes": 268,
+            "flight_number": "368",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "13:00",
+            "depart_time": "10:30",
+            "destination": "DTW",
+            "duration_minutes": 90,
+            "flight_number": "5756",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -7962,7 +11091,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -8036,7 +11167,37 @@
         "duration_display": "9h 48m",
         "duration_minutes": 588,
         "flight_numbers": "DL 570 / DL 2067",
+        "layovers": [
+          {
+            "airport": "ATL",
+            "change_of_airport": false,
+            "duration_minutes": 191,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "13:39",
+            "depart_time": "06:00",
+            "destination": "ATL",
+            "duration_minutes": 279,
+            "flight_number": "570",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "18:48",
+            "depart_time": "16:50",
+            "destination": "DTW",
+            "duration_minutes": 118,
+            "flight_number": "2067",
+            "origin": "ATL"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -8049,7 +11210,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -8123,7 +11286,37 @@
         "duration_display": "10h 54m",
         "duration_minutes": 654,
         "flight_numbers": "AA 2327 / AA 3364",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 314,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "AA",
+            "arrive_time": "05:26",
+            "depart_time": "23:15",
+            "destination": "ORD",
+            "duration_minutes": 251,
+            "flight_number": "2327",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 170",
+            "airline": "AA",
+            "arrive_time": "13:09",
+            "depart_time": "10:40",
+            "destination": "DTW",
+            "duration_minutes": 89,
+            "flight_number": "3364",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -8136,7 +11329,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -8210,7 +11405,37 @@
         "duration_display": "11h 10m",
         "duration_minutes": 670,
         "flight_numbers": "UA 2278 / UA 5756",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 303,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "05:27",
+            "depart_time": "22:50",
+            "destination": "ORD",
+            "duration_minutes": 277,
+            "flight_number": "2278",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "13:00",
+            "depart_time": "10:30",
+            "destination": "DTW",
+            "duration_minutes": 90,
+            "flight_number": "5756",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -8223,7 +11448,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -8297,7 +11524,37 @@
         "duration_display": "17h 12m",
         "duration_minutes": 1032,
         "flight_numbers": "AS 620 / AS 313",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 628,
+            "overnight": true
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "22:54",
+            "depart_time": "20:35",
+            "destination": "SEA",
+            "duration_minutes": 139,
+            "flight_number": "620",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "16:47",
+            "depart_time": "09:22",
+            "destination": "DTW",
+            "duration_minutes": 265,
+            "flight_number": "313",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -8310,7 +11567,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -8384,7 +11643,37 @@
         "duration_display": "12h 51m",
         "duration_minutes": 771,
         "flight_numbers": "F9 1448 / F9 2898",
+        "layovers": [
+          {
+            "airport": "ATL",
+            "change_of_airport": false,
+            "duration_minutes": 364,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "F9",
+            "arrive_time": "06:30",
+            "depart_time": "22:48",
+            "destination": "ATL",
+            "duration_minutes": 282,
+            "flight_number": "1448",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "F9",
+            "arrive_time": "14:39",
+            "depart_time": "12:34",
+            "destination": "DTW",
+            "duration_minutes": 125,
+            "flight_number": "2898",
+            "origin": "ATL"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -8397,7 +11686,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -8471,7 +11762,37 @@
         "duration_display": "7h 43m",
         "duration_minutes": 463,
         "flight_numbers": "UA 2168 / UA 393",
+        "layovers": [
+          {
+            "airport": "IAH",
+            "change_of_airport": false,
+            "duration_minutes": 69,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 9 Passenger",
+            "airline": "UA",
+            "arrive_time": "10:51",
+            "depart_time": "05:00",
+            "destination": "IAH",
+            "duration_minutes": 231,
+            "flight_number": "2168",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "15:43",
+            "depart_time": "12:00",
+            "destination": "DTW",
+            "duration_minutes": 163,
+            "flight_number": "393",
+            "origin": "IAH"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -8484,7 +11805,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -8558,7 +11881,37 @@
         "duration_display": "12h 26m",
         "duration_minutes": 746,
         "flight_numbers": "UA 368 / UA 5882",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 392,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "06:18",
+            "depart_time": "23:50",
+            "destination": "ORD",
+            "duration_minutes": 268,
+            "flight_number": "368",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "15:16",
+            "depart_time": "12:50",
+            "destination": "DTW",
+            "duration_minutes": 86,
+            "flight_number": "5882",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -8571,7 +11924,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -8645,7 +12000,37 @@
         "duration_display": "13h 26m",
         "duration_minutes": 806,
         "flight_numbers": "UA 2278 / UA 5882",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 443,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "05:27",
+            "depart_time": "22:50",
+            "destination": "ORD",
+            "duration_minutes": 277,
+            "flight_number": "2278",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "15:16",
+            "depart_time": "12:50",
+            "destination": "DTW",
+            "duration_minutes": 86,
+            "flight_number": "5882",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -8658,7 +12043,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -8732,7 +12119,37 @@
         "duration_display": "11h 26m",
         "duration_minutes": 686,
         "flight_numbers": "UA 2847 / UA 5882",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 334,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "07:16",
+            "depart_time": "00:50",
+            "destination": "ORD",
+            "duration_minutes": 266,
+            "flight_number": "2847",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "15:16",
+            "depart_time": "12:50",
+            "destination": "DTW",
+            "duration_minutes": 86,
+            "flight_number": "5882",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -8745,7 +12162,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -8819,7 +12238,37 @@
         "duration_display": "14h 7m",
         "duration_minutes": 847,
         "flight_numbers": "UA 368 / UA 1215",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 492,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "06:18",
+            "depart_time": "23:50",
+            "destination": "ORD",
+            "duration_minutes": 268,
+            "flight_number": "368",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "16:57",
+            "depart_time": "14:30",
+            "destination": "DTW",
+            "duration_minutes": 87,
+            "flight_number": "1215",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -8832,7 +12281,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -8906,7 +12357,37 @@
         "duration_display": "7h",
         "duration_minutes": 420,
         "flight_numbers": "UA 368 / UA 5717",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 72,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "06:18",
+            "depart_time": "23:50",
+            "destination": "ORD",
+            "duration_minutes": 268,
+            "flight_number": "368",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "09:50",
+            "depart_time": "07:30",
+            "destination": "DTW",
+            "duration_minutes": 80,
+            "flight_number": "5717",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -8919,7 +12400,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -8993,7 +12476,37 @@
         "duration_display": "15h 7m",
         "duration_minutes": 907,
         "flight_numbers": "UA 2278 / UA 1215",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 543,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "05:27",
+            "depart_time": "22:50",
+            "destination": "ORD",
+            "duration_minutes": 277,
+            "flight_number": "2278",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "16:57",
+            "depart_time": "14:30",
+            "destination": "DTW",
+            "duration_minutes": 87,
+            "flight_number": "1215",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -9006,7 +12519,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -9080,7 +12595,37 @@
         "duration_display": "15h 32m",
         "duration_minutes": 932,
         "flight_numbers": "UA 368 / UA 2632",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 572,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "06:18",
+            "depart_time": "23:50",
+            "destination": "ORD",
+            "duration_minutes": 268,
+            "flight_number": "368",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "18:22",
+            "depart_time": "15:50",
+            "destination": "DTW",
+            "duration_minutes": 92,
+            "flight_number": "2632",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -9093,7 +12638,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -9167,7 +12714,37 @@
         "duration_display": "8h",
         "duration_minutes": 480,
         "flight_numbers": "UA 2278 / UA 5717",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 123,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "05:27",
+            "depart_time": "22:50",
+            "destination": "ORD",
+            "duration_minutes": 277,
+            "flight_number": "2278",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "09:50",
+            "depart_time": "07:30",
+            "destination": "DTW",
+            "duration_minutes": 80,
+            "flight_number": "5717",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -9180,7 +12757,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -9254,7 +12833,37 @@
         "duration_display": "8h 11m",
         "duration_minutes": 491,
         "flight_numbers": "UA 2111 / UA 6137",
+        "layovers": [
+          {
+            "airport": "IAD",
+            "change_of_airport": false,
+            "duration_minutes": 65,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 9 Passenger",
+            "airline": "UA",
+            "arrive_time": "07:25",
+            "depart_time": "22:55",
+            "destination": "IAD",
+            "duration_minutes": 330,
+            "flight_number": "2111",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "10:06",
+            "depart_time": "08:30",
+            "destination": "DTW",
+            "duration_minutes": 96,
+            "flight_number": "6137",
+            "origin": "IAD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -9267,7 +12876,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -9341,7 +12952,37 @@
         "duration_display": "10h",
         "duration_minutes": 600,
         "flight_numbers": "UA 604 / UA 4064",
+        "layovers": [
+          {
+            "airport": "IAH",
+            "change_of_airport": false,
+            "duration_minutes": 202,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 777",
+            "airline": "UA",
+            "arrive_time": "06:28",
+            "depart_time": "00:45",
+            "destination": "IAH",
+            "duration_minutes": 223,
+            "flight_number": "604",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "13:45",
+            "depart_time": "09:50",
+            "destination": "DTW",
+            "duration_minutes": 175,
+            "flight_number": "4064",
+            "origin": "IAH"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -9354,7 +12995,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -9428,7 +13071,37 @@
         "duration_display": "8h 31m",
         "duration_minutes": 511,
         "flight_numbers": "UA 2837 / UA 6137",
+        "layovers": [
+          {
+            "airport": "IAD",
+            "change_of_airport": false,
+            "duration_minutes": 85,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 9 Passenger",
+            "airline": "UA",
+            "arrive_time": "07:05",
+            "depart_time": "22:35",
+            "destination": "IAD",
+            "duration_minutes": 330,
+            "flight_number": "2837",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "10:06",
+            "depart_time": "08:30",
+            "destination": "DTW",
+            "duration_minutes": 96,
+            "flight_number": "6137",
+            "origin": "IAD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -9441,7 +13114,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -9515,7 +13190,37 @@
         "duration_display": "16h 32m",
         "duration_minutes": 992,
         "flight_numbers": "UA 2278 / UA 2632",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 623,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "05:27",
+            "depart_time": "22:50",
+            "destination": "ORD",
+            "duration_minutes": 277,
+            "flight_number": "2278",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "18:22",
+            "depart_time": "15:50",
+            "destination": "DTW",
+            "duration_minutes": 92,
+            "flight_number": "2632",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -9528,7 +13233,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -9602,7 +13309,37 @@
         "duration_display": "16h 32m",
         "duration_minutes": 992,
         "flight_numbers": "AA 2327 / AA 6246",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 652,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "AA",
+            "arrive_time": "05:26",
+            "depart_time": "23:15",
+            "destination": "ORD",
+            "duration_minutes": 251,
+            "flight_number": "2327",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Canadair RJ 700",
+            "airline": "AA",
+            "arrive_time": "18:47",
+            "depart_time": "16:18",
+            "destination": "DTW",
+            "duration_minutes": 89,
+            "flight_number": "6246",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -9615,7 +13352,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -9689,7 +13428,37 @@
         "duration_display": "14h 32m",
         "duration_minutes": 872,
         "flight_numbers": "UA 2847 / UA 2632",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 514,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "07:16",
+            "depart_time": "00:50",
+            "destination": "ORD",
+            "duration_minutes": 266,
+            "flight_number": "2847",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "18:22",
+            "depart_time": "15:50",
+            "destination": "DTW",
+            "duration_minutes": 92,
+            "flight_number": "2632",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -9702,7 +13471,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -9776,7 +13547,37 @@
         "duration_display": "17h 20m",
         "duration_minutes": 1040,
         "flight_numbers": "AA 2327 / AA 6373",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 702,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "AA",
+            "arrive_time": "05:26",
+            "depart_time": "23:15",
+            "destination": "ORD",
+            "duration_minutes": 251,
+            "flight_number": "2327",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Canadair RJ 700",
+            "airline": "AA",
+            "arrive_time": "19:35",
+            "depart_time": "17:08",
+            "destination": "DTW",
+            "duration_minutes": 87,
+            "flight_number": "6373",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -9789,7 +13590,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -9863,7 +13666,37 @@
         "duration_display": "17h 30m",
         "duration_minutes": 1050,
         "flight_numbers": "UA 368 / UA 5232",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 697,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "06:18",
+            "depart_time": "23:50",
+            "destination": "ORD",
+            "duration_minutes": 268,
+            "flight_number": "368",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "20:20",
+            "depart_time": "17:55",
+            "destination": "DTW",
+            "duration_minutes": 85,
+            "flight_number": "5232",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -9876,7 +13709,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -9950,7 +13785,37 @@
         "duration_display": "9h 49m",
         "duration_minutes": 589,
         "flight_numbers": "DL 690 / DL 1240",
+        "layovers": [
+          {
+            "airport": "ATL",
+            "change_of_airport": false,
+            "duration_minutes": 194,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "07:21",
+            "depart_time": "23:45",
+            "destination": "ATL",
+            "duration_minutes": 276,
+            "flight_number": "690",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "12:34",
+            "depart_time": "10:35",
+            "destination": "DTW",
+            "duration_minutes": 119,
+            "flight_number": "1240",
+            "origin": "ATL"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -9963,7 +13828,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -10037,7 +13904,37 @@
         "duration_display": "17h 58m",
         "duration_minutes": 1078,
         "flight_numbers": "AA 2327 / AA 4774",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 743,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "AA",
+            "arrive_time": "05:26",
+            "depart_time": "23:15",
+            "destination": "ORD",
+            "duration_minutes": 251,
+            "flight_number": "2327",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "AA",
+            "arrive_time": "20:13",
+            "depart_time": "17:49",
+            "destination": "DTW",
+            "duration_minutes": 84,
+            "flight_number": "4774",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -10050,7 +13947,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -10124,7 +14023,37 @@
         "duration_display": "10h 21m",
         "duration_minutes": 621,
         "flight_numbers": "DL 670 / DL 4725",
+        "layovers": [
+          {
+            "airport": "JFK",
+            "change_of_airport": false,
+            "duration_minutes": 163,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 767",
+            "airline": "DL",
+            "arrive_time": "07:17",
+            "depart_time": "22:45",
+            "destination": "JFK",
+            "duration_minutes": 332,
+            "flight_number": "670",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Canadair RJ 900",
+            "airline": "DL",
+            "arrive_time": "12:06",
+            "depart_time": "10:00",
+            "destination": "DTW",
+            "duration_minutes": 126,
+            "flight_number": "4725",
+            "origin": "JFK"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -10137,7 +14066,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -10211,7 +14142,37 @@
         "duration_display": "18h 30m",
         "duration_minutes": 1110,
         "flight_numbers": "UA 2278 / UA 5232",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 748,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "05:27",
+            "depart_time": "22:50",
+            "destination": "ORD",
+            "duration_minutes": 277,
+            "flight_number": "2278",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "20:20",
+            "depart_time": "17:55",
+            "destination": "DTW",
+            "duration_minutes": 85,
+            "flight_number": "5232",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -10224,7 +14185,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -10298,7 +14261,37 @@
         "duration_display": "16h 30m",
         "duration_minutes": 990,
         "flight_numbers": "UA 2847 / UA 5232",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 639,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "07:16",
+            "depart_time": "00:50",
+            "destination": "ORD",
+            "duration_minutes": 266,
+            "flight_number": "2847",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "20:20",
+            "depart_time": "17:55",
+            "destination": "DTW",
+            "duration_minutes": 85,
+            "flight_number": "5232",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -10311,7 +14304,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -10385,7 +14380,37 @@
         "duration_display": "10h 46m",
         "duration_minutes": 646,
         "flight_numbers": "UA 505 / UA 4064",
+        "layovers": [
+          {
+            "airport": "IAH",
+            "change_of_airport": false,
+            "duration_minutes": 239,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 9 Passenger",
+            "airline": "UA",
+            "arrive_time": "05:51",
+            "depart_time": "23:59",
+            "destination": "IAH",
+            "duration_minutes": 232,
+            "flight_number": "505",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "13:45",
+            "depart_time": "09:50",
+            "destination": "DTW",
+            "duration_minutes": 175,
+            "flight_number": "4064",
+            "origin": "IAH"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -10398,7 +14423,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -10472,7 +14499,37 @@
         "duration_display": "19h 44m",
         "duration_minutes": 1184,
         "flight_numbers": "UA 368 / UA 4773",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 822,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "06:18",
+            "depart_time": "23:50",
+            "destination": "ORD",
+            "duration_minutes": 268,
+            "flight_number": "368",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "22:34",
+            "depart_time": "20:00",
+            "destination": "DTW",
+            "duration_minutes": 94,
+            "flight_number": "4773",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -10485,7 +14542,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -10559,7 +14618,37 @@
         "duration_display": "7h 28m",
         "duration_minutes": 448,
         "flight_numbers": "DL 902 / DL 2255",
+        "layovers": [
+          {
+            "airport": "SLC",
+            "change_of_airport": false,
+            "duration_minutes": 117,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A220-300 Passenger",
+            "airline": "DL",
+            "arrive_time": "16:33",
+            "depart_time": "13:35",
+            "destination": "SLC",
+            "duration_minutes": 118,
+            "flight_number": "902",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "00:03",
+            "depart_time": "18:30",
+            "destination": "DTW",
+            "duration_minutes": 213,
+            "flight_number": "2255",
+            "origin": "SLC"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -10572,7 +14661,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -10646,7 +14737,37 @@
         "duration_display": "20h 44m",
         "duration_minutes": 1244,
         "flight_numbers": "UA 2278 / UA 4773",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 873,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "05:27",
+            "depart_time": "22:50",
+            "destination": "ORD",
+            "duration_minutes": 277,
+            "flight_number": "2278",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "22:34",
+            "depart_time": "20:00",
+            "destination": "DTW",
+            "duration_minutes": 94,
+            "flight_number": "4773",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -10659,7 +14780,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -10733,7 +14856,37 @@
         "duration_display": "18h 44m",
         "duration_minutes": 1124,
         "flight_numbers": "UA 2847 / UA 4773",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 764,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "07:16",
+            "depart_time": "00:50",
+            "destination": "ORD",
+            "duration_minutes": 266,
+            "flight_number": "2847",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "22:34",
+            "depart_time": "20:00",
+            "destination": "DTW",
+            "duration_minutes": 94,
+            "flight_number": "4773",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -10746,7 +14899,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -10820,7 +14975,37 @@
         "duration_display": "15h 9m",
         "duration_minutes": 909,
         "flight_numbers": "F9 1230 / F9 4186",
+        "layovers": [
+          {
+            "airport": "DEN",
+            "change_of_airport": false,
+            "duration_minutes": 582,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A320neo",
+            "airline": "F9",
+            "arrive_time": "09:56",
+            "depart_time": "06:15",
+            "destination": "DEN",
+            "duration_minutes": 161,
+            "flight_number": "1230",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A320neo",
+            "airline": "F9",
+            "arrive_time": "00:24",
+            "depart_time": "19:38",
+            "destination": "DTW",
+            "duration_minutes": 166,
+            "flight_number": "4186",
+            "origin": "DEN"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -10833,7 +15018,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -10907,7 +15094,37 @@
         "duration_display": "26h 7m",
         "duration_minutes": 1567,
         "flight_numbers": "F9 3440 / F9 4186",
+        "layovers": [
+          {
+            "airport": "DEN",
+            "change_of_airport": false,
+            "duration_minutes": 1239,
+            "overnight": true
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A320neo",
+            "airline": "F9",
+            "arrive_time": "22:59",
+            "depart_time": "19:17",
+            "destination": "DEN",
+            "duration_minutes": 162,
+            "flight_number": "3440",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A320neo",
+            "airline": "F9",
+            "arrive_time": "00:24",
+            "depart_time": "19:38",
+            "destination": "DTW",
+            "duration_minutes": 166,
+            "flight_number": "4186",
+            "origin": "DEN"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -10920,7 +15137,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -10994,7 +15213,37 @@
         "duration_display": "9h 4m",
         "duration_minutes": 544,
         "flight_numbers": "UA 649 / UA 3700",
+        "layovers": [
+          {
+            "airport": "EWR",
+            "change_of_airport": false,
+            "duration_minutes": 81,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 777",
+            "airline": "UA",
+            "arrive_time": "07:34",
+            "depart_time": "22:50",
+            "destination": "EWR",
+            "duration_minutes": 344,
+            "flight_number": "649",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "10:54",
+            "depart_time": "08:55",
+            "destination": "DTW",
+            "duration_minutes": 119,
+            "flight_number": "3700",
+            "origin": "EWR"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -11007,7 +15256,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -11081,7 +15332,37 @@
         "duration_display": "10h 39m",
         "duration_minutes": 639,
         "flight_numbers": "UA 1141 / UA 3606",
+        "layovers": [
+          {
+            "airport": "EWR",
+            "change_of_airport": false,
+            "duration_minutes": 173,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 757",
+            "airline": "UA",
+            "arrive_time": "08:37",
+            "depart_time": "23:55",
+            "destination": "EWR",
+            "duration_minutes": 342,
+            "flight_number": "1141",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "13:34",
+            "depart_time": "11:30",
+            "destination": "DTW",
+            "duration_minutes": 124,
+            "flight_number": "3606",
+            "origin": "EWR"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -11094,7 +15375,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -11168,7 +15451,53 @@
         "duration_display": "14h 42m",
         "duration_minutes": 882,
         "flight_numbers": "UA 2400 / UA 664 / UA 1215",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 354,
+            "overnight": false
+          },
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 104,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "UA",
+            "arrive_time": "01:06",
+            "depart_time": "23:15",
+            "destination": "LAS",
+            "duration_minutes": 111,
+            "flight_number": "2400",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "UA",
+            "arrive_time": "12:46",
+            "depart_time": "07:00",
+            "destination": "ORD",
+            "duration_minutes": 226,
+            "flight_number": "664",
+            "origin": "LAS"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "16:57",
+            "depart_time": "14:30",
+            "destination": "DTW",
+            "duration_minutes": 87,
+            "flight_number": "1215",
+            "origin": "ORD"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -11181,7 +15510,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -11255,7 +15586,37 @@
         "duration_display": "21h 2m",
         "duration_minutes": 1262,
         "flight_numbers": "UA 368 / UA 5478",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 912,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "06:18",
+            "depart_time": "23:50",
+            "destination": "ORD",
+            "duration_minutes": 268,
+            "flight_number": "368",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "23:52",
+            "depart_time": "21:30",
+            "destination": "DTW",
+            "duration_minutes": 82,
+            "flight_number": "5478",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -11268,7 +15629,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -11342,7 +15705,37 @@
         "duration_display": "21h 34m",
         "duration_minutes": 1294,
         "flight_numbers": "AA 2327 / AA 4927",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 947,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "AA",
+            "arrive_time": "05:26",
+            "depart_time": "23:15",
+            "destination": "ORD",
+            "duration_minutes": 251,
+            "flight_number": "2327",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Canadair RJ 700",
+            "airline": "AA",
+            "arrive_time": "23:49",
+            "depart_time": "21:13",
+            "destination": "DTW",
+            "duration_minutes": 96,
+            "flight_number": "4927",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -11355,7 +15748,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -11429,7 +15824,37 @@
         "duration_display": "20h 2m",
         "duration_minutes": 1202,
         "flight_numbers": "UA 2847 / UA 5478",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 854,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "07:16",
+            "depart_time": "00:50",
+            "destination": "ORD",
+            "duration_minutes": 266,
+            "flight_number": "2847",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "23:52",
+            "depart_time": "21:30",
+            "destination": "DTW",
+            "duration_minutes": 82,
+            "flight_number": "5478",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -11442,7 +15867,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -11516,7 +15943,37 @@
         "duration_display": "11h 44m",
         "duration_minutes": 704,
         "flight_numbers": "UA 649 / UA 3606",
+        "layovers": [
+          {
+            "airport": "EWR",
+            "change_of_airport": false,
+            "duration_minutes": 236,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 777",
+            "airline": "UA",
+            "arrive_time": "07:34",
+            "depart_time": "22:50",
+            "destination": "EWR",
+            "duration_minutes": 344,
+            "flight_number": "649",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "13:34",
+            "depart_time": "11:30",
+            "destination": "DTW",
+            "duration_minutes": 124,
+            "flight_number": "3606",
+            "origin": "EWR"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -11529,7 +15986,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -11603,7 +16062,37 @@
         "duration_display": "11h 58m",
         "duration_minutes": 718,
         "flight_numbers": "UA 604 / UA 393",
+        "layovers": [
+          {
+            "airport": "IAH",
+            "change_of_airport": false,
+            "duration_minutes": 332,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 777",
+            "airline": "UA",
+            "arrive_time": "06:28",
+            "depart_time": "00:45",
+            "destination": "IAH",
+            "duration_minutes": 223,
+            "flight_number": "604",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "15:43",
+            "depart_time": "12:00",
+            "destination": "DTW",
+            "duration_minutes": 163,
+            "flight_number": "393",
+            "origin": "IAH"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -11616,7 +16105,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -11690,7 +16181,37 @@
         "duration_display": "21h 1m",
         "duration_minutes": 1261,
         "flight_numbers": "AA 1826 / AA 5448",
+        "layovers": [
+          {
+            "airport": "PHL",
+            "change_of_airport": false,
+            "duration_minutes": 835,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "AA",
+            "arrive_time": "07:25",
+            "depart_time": "23:14",
+            "destination": "PHL",
+            "duration_minutes": 311,
+            "flight_number": "1826",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Canadair RJ 700",
+            "airline": "AA",
+            "arrive_time": "23:15",
+            "depart_time": "21:20",
+            "destination": "DTW",
+            "duration_minutes": 115,
+            "flight_number": "5448",
+            "origin": "PHL"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -11703,7 +16224,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -11777,7 +16300,37 @@
         "duration_display": "7h 44m",
         "duration_minutes": 464,
         "flight_numbers": "DL 531 / DL 2940",
+        "layovers": [
+          {
+            "airport": "ATL",
+            "change_of_airport": false,
+            "duration_minutes": 66,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 767",
+            "airline": "DL",
+            "arrive_time": "21:39",
+            "depart_time": "14:00",
+            "destination": "ATL",
+            "duration_minutes": 279,
+            "flight_number": "531",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "00:44",
+            "depart_time": "22:45",
+            "destination": "DTW",
+            "duration_minutes": 119,
+            "flight_number": "2940",
+            "origin": "ATL"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -11790,7 +16343,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -11864,7 +16419,37 @@
         "duration_display": "10h 14m",
         "duration_minutes": 614,
         "flight_numbers": "DL 693 / DL 2940",
+        "layovers": [
+          {
+            "airport": "ATL",
+            "change_of_airport": false,
+            "duration_minutes": 212,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "DL",
+            "arrive_time": "19:13",
+            "depart_time": "11:30",
+            "destination": "ATL",
+            "duration_minutes": 283,
+            "flight_number": "693",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "00:44",
+            "depart_time": "22:45",
+            "destination": "DTW",
+            "duration_minutes": 119,
+            "flight_number": "2940",
+            "origin": "ATL"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -11877,7 +16462,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -11951,7 +16538,53 @@
         "duration_display": "14h 5m",
         "duration_minutes": 845,
         "flight_numbers": "DL 1412 / DL 3820 / DL 913",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 210,
+            "overnight": false
+          },
+          {
+            "airport": "PDX",
+            "change_of_airport": false,
+            "duration_minutes": 177,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A220-300 Passenger",
+            "airline": "DL",
+            "arrive_time": "15:25",
+            "depart_time": "13:05",
+            "destination": "SEA",
+            "duration_minutes": 140,
+            "flight_number": "1412",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "DL",
+            "arrive_time": "19:58",
+            "depart_time": "18:55",
+            "destination": "PDX",
+            "duration_minutes": 63,
+            "flight_number": "3820",
+            "origin": "SEA"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "06:10",
+            "depart_time": "22:55",
+            "destination": "DTW",
+            "duration_minutes": 255,
+            "flight_number": "913",
+            "origin": "PDX"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -11964,7 +16597,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -12038,7 +16673,53 @@
         "duration_display": "10h 25m",
         "duration_minutes": 625,
         "flight_numbers": "DL 3707 / DL 3997 / DL 913",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 114,
+            "overnight": false
+          },
+          {
+            "airport": "PDX",
+            "change_of_airport": false,
+            "duration_minutes": 51,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Embraer 175",
+            "airline": "DL",
+            "arrive_time": "19:05",
+            "depart_time": "16:45",
+            "destination": "SEA",
+            "duration_minutes": 140,
+            "flight_number": "3707",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Embraer 175",
+            "airline": "DL",
+            "arrive_time": "22:04",
+            "depart_time": "20:59",
+            "destination": "PDX",
+            "duration_minutes": 65,
+            "flight_number": "3997",
+            "origin": "SEA"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "06:10",
+            "depart_time": "22:55",
+            "destination": "DTW",
+            "duration_minutes": 255,
+            "flight_number": "913",
+            "origin": "PDX"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -12051,7 +16732,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -12125,7 +16808,37 @@
         "duration_display": "20h 58m",
         "duration_minutes": 1258,
         "flight_numbers": "AA 1476 / AA 2371",
+        "layovers": [
+          {
+            "airport": "CLT",
+            "change_of_airport": false,
+            "duration_minutes": 850,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A321",
+            "airline": "AA",
+            "arrive_time": "08:25",
+            "depart_time": "00:27",
+            "destination": "CLT",
+            "duration_minutes": 298,
+            "flight_number": "1476",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A319",
+            "airline": "AA",
+            "arrive_time": "00:25",
+            "depart_time": "22:35",
+            "destination": "DTW",
+            "duration_minutes": 110,
+            "flight_number": "2371",
+            "origin": "CLT"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -12138,7 +16851,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -12212,7 +16927,53 @@
         "duration_display": "10h 39m",
         "duration_minutes": 639,
         "flight_numbers": "DL 1715 / DL 715 / DL 2940",
+        "layovers": [
+          {
+            "airport": "LAX",
+            "change_of_airport": false,
+            "duration_minutes": 98,
+            "overnight": false
+          },
+          {
+            "airport": "ATL",
+            "change_of_airport": false,
+            "duration_minutes": 69,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "12:37",
+            "depart_time": "11:05",
+            "destination": "LAX",
+            "duration_minutes": 92,
+            "flight_number": "1715",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "DL",
+            "arrive_time": "21:36",
+            "depart_time": "14:15",
+            "destination": "ATL",
+            "duration_minutes": 261,
+            "flight_number": "715",
+            "origin": "LAX"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "00:44",
+            "depart_time": "22:45",
+            "destination": "DTW",
+            "duration_minutes": 119,
+            "flight_number": "2940",
+            "origin": "ATL"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -12225,7 +16986,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -12299,7 +17062,53 @@
         "duration_display": "12h 49m",
         "duration_minutes": 769,
         "flight_numbers": "DL 1421 / DL 715 / DL 2940",
+        "layovers": [
+          {
+            "airport": "LAX",
+            "change_of_airport": false,
+            "duration_minutes": 224,
+            "overnight": false
+          },
+          {
+            "airport": "ATL",
+            "change_of_airport": false,
+            "duration_minutes": 69,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "10:31",
+            "depart_time": "08:55",
+            "destination": "LAX",
+            "duration_minutes": 96,
+            "flight_number": "1421",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "DL",
+            "arrive_time": "21:36",
+            "depart_time": "14:15",
+            "destination": "ATL",
+            "duration_minutes": 261,
+            "flight_number": "715",
+            "origin": "LAX"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "00:44",
+            "depart_time": "22:45",
+            "destination": "DTW",
+            "duration_minutes": 119,
+            "flight_number": "2940",
+            "origin": "ATL"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -12312,7 +17121,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },
@@ -12386,7 +17197,53 @@
         "duration_display": "12h 49m",
         "duration_minutes": 769,
         "flight_numbers": "DL 1421 / DL 395 / DL 2940",
+        "layovers": [
+          {
+            "airport": "LAX",
+            "change_of_airport": false,
+            "duration_minutes": 149,
+            "overnight": false
+          },
+          {
+            "airport": "ATL",
+            "change_of_airport": false,
+            "duration_minutes": 143,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "DL",
+            "arrive_time": "10:31",
+            "depart_time": "08:55",
+            "destination": "LAX",
+            "duration_minutes": 96,
+            "flight_number": "1421",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "DL",
+            "arrive_time": "20:22",
+            "depart_time": "13:00",
+            "destination": "ATL",
+            "duration_minutes": 262,
+            "flight_number": "395",
+            "origin": "LAX"
+          },
+          {
+            "aircraft": "Airbus A321",
+            "airline": "DL",
+            "arrive_time": "00:44",
+            "depart_time": "22:45",
+            "destination": "DTW",
+            "duration_minutes": 119,
+            "flight_number": "2940",
+            "origin": "ATL"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -12399,7 +17256,9 @@
         "duration_display": "",
         "duration_minutes": "",
         "flight_numbers": "",
+        "layovers": [],
         "origin": "",
+        "segments": [],
         "stops": ""
       }
     },

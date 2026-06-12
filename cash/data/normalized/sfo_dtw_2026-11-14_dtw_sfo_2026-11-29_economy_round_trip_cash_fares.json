@@ -32,7 +32,37 @@
         "duration_display": "7h 42m",
         "duration_minutes": 462,
         "flight_numbers": "AS 68 / AS 313",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 60,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "08:22",
+            "depart_time": "06:05",
+            "destination": "SEA",
+            "duration_minutes": 137,
+            "flight_number": "68",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "16:47",
+            "depart_time": "09:22",
+            "destination": "DTW",
+            "duration_minutes": 265,
+            "flight_number": "313",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -45,7 +75,37 @@
         "duration_display": "7h 5m",
         "duration_minutes": 425,
         "flight_numbers": "WN 1880 / WN 2723",
+        "layovers": [
+          {
+            "airport": "STL",
+            "change_of_airport": false,
+            "duration_minutes": 45,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "07:10",
+            "depart_time": "06:10",
+            "destination": "STL",
+            "duration_minutes": 120,
+            "flight_number": "1880",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "10:15",
+            "depart_time": "07:55",
+            "destination": "SFO",
+            "duration_minutes": 260,
+            "flight_number": "2723",
+            "origin": "STL"
+          }
+        ],
         "stops": 1
       }
     },
@@ -119,7 +179,37 @@
         "duration_display": "7h 42m",
         "duration_minutes": 462,
         "flight_numbers": "AS 68 / AS 313",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 60,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "08:22",
+            "depart_time": "06:05",
+            "destination": "SEA",
+            "duration_minutes": 137,
+            "flight_number": "68",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "16:47",
+            "depart_time": "09:22",
+            "destination": "DTW",
+            "duration_minutes": 265,
+            "flight_number": "313",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -132,7 +222,37 @@
         "duration_display": "9h 48m",
         "duration_minutes": 588,
         "flight_numbers": "AS 313 / AS 1364",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 150,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "09:01",
+            "depart_time": "07:00",
+            "destination": "SEA",
+            "duration_minutes": 301,
+            "flight_number": "313",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "13:48",
+            "depart_time": "11:31",
+            "destination": "SFO",
+            "duration_minutes": 137,
+            "flight_number": "1364",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       }
     },
@@ -206,7 +326,37 @@
         "duration_display": "7h 42m",
         "duration_minutes": 462,
         "flight_numbers": "AS 68 / AS 313",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 60,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "08:22",
+            "depart_time": "06:05",
+            "destination": "SEA",
+            "duration_minutes": 137,
+            "flight_number": "68",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "16:47",
+            "depart_time": "09:22",
+            "destination": "DTW",
+            "duration_minutes": 265,
+            "flight_number": "313",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -219,7 +369,37 @@
         "duration_display": "8h 23m",
         "duration_minutes": 503,
         "flight_numbers": "AS 327 / AS 1318",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 68,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "18:47",
+            "depart_time": "16:46",
+            "destination": "SEA",
+            "duration_minutes": 301,
+            "flight_number": "327",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "22:09",
+            "depart_time": "19:55",
+            "destination": "SFO",
+            "duration_minutes": 134,
+            "flight_number": "1318",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       }
     },
@@ -293,7 +473,37 @@
         "duration_display": "7h 42m",
         "duration_minutes": 462,
         "flight_numbers": "AS 68 / AS 313",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 60,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "08:22",
+            "depart_time": "06:05",
+            "destination": "SEA",
+            "duration_minutes": 137,
+            "flight_number": "68",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "16:47",
+            "depart_time": "09:22",
+            "destination": "DTW",
+            "duration_minutes": 265,
+            "flight_number": "313",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -306,7 +516,37 @@
         "duration_display": "10h 13m",
         "duration_minutes": 613,
         "flight_numbers": "AS 327 / AS 417",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 173,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "18:47",
+            "depart_time": "16:46",
+            "destination": "SEA",
+            "duration_minutes": 301,
+            "flight_number": "327",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "23:59",
+            "depart_time": "21:40",
+            "destination": "SFO",
+            "duration_minutes": 139,
+            "flight_number": "417",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       }
     },
@@ -380,7 +620,37 @@
         "duration_display": "7h 42m",
         "duration_minutes": 462,
         "flight_numbers": "AS 68 / AS 313",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 60,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "08:22",
+            "depart_time": "06:05",
+            "destination": "SEA",
+            "duration_minutes": 137,
+            "flight_number": "68",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "16:47",
+            "depart_time": "09:22",
+            "destination": "DTW",
+            "duration_minutes": 265,
+            "flight_number": "313",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -393,7 +663,37 @@
         "duration_display": "11h 49m",
         "duration_minutes": 709,
         "flight_numbers": "AS 313 / AS 1379",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 274,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "09:01",
+            "depart_time": "07:00",
+            "destination": "SEA",
+            "duration_minutes": 301,
+            "flight_number": "313",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "15:49",
+            "depart_time": "13:35",
+            "destination": "SFO",
+            "duration_minutes": 134,
+            "flight_number": "1379",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       }
     },
@@ -467,7 +767,37 @@
         "duration_display": "7h 42m",
         "duration_minutes": 462,
         "flight_numbers": "AS 68 / AS 313",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 60,
+            "overnight": false
+          }
+        ],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "08:22",
+            "depart_time": "06:05",
+            "destination": "SEA",
+            "duration_minutes": 137,
+            "flight_number": "68",
+            "origin": "SFO"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "16:47",
+            "depart_time": "09:22",
+            "destination": "DTW",
+            "duration_minutes": 265,
+            "flight_number": "313",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       },
       "return": {
@@ -480,7 +810,37 @@
         "duration_display": "13h 56m",
         "duration_minutes": 836,
         "flight_numbers": "AS 313 / AS 1463",
+        "layovers": [
+          {
+            "airport": "SEA",
+            "change_of_airport": false,
+            "duration_minutes": 403,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "09:01",
+            "depart_time": "07:00",
+            "destination": "SEA",
+            "duration_minutes": 301,
+            "flight_number": "313",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "AS",
+            "arrive_time": "17:56",
+            "depart_time": "15:44",
+            "destination": "SFO",
+            "duration_minutes": 132,
+            "flight_number": "1463",
+            "origin": "SEA"
+          }
+        ],
         "stops": 1
       }
     },

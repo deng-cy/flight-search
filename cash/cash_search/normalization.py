@@ -157,6 +157,34 @@ def _normalize_cash_leg(
     duration_minutes = _get(raw_leg, "duration_minutes")
     if duration_minutes in ("", None):
         duration_minutes = parse_duration_minutes(duration_display)
+    segments = []
+    for segment in raw_leg.get("segments") or []:
+        if not isinstance(segment, dict):
+            continue
+        segments.append(
+            {
+                "origin": str(_get(segment, "origin", "from_airport") or ""),
+                "destination": str(_get(segment, "destination", "to_airport") or ""),
+                "depart_time": normalize_time(_get(segment, "departure", "departure_time", "depart_time")),
+                "arrive_time": normalize_time(_get(segment, "arrival", "arrival_time", "arrive_time")),
+                "airline": str(_get(segment, "airline", "carrier", "carriers") or ""),
+                "flight_number": str(_get(segment, "flight_number", "flight_numbers") or ""),
+                "aircraft": str(_get(segment, "aircraft") or ""),
+                "duration_minutes": _get(segment, "duration_minutes") or "",
+            }
+        )
+    layovers = []
+    for layover in raw_leg.get("layovers") or []:
+        if not isinstance(layover, dict):
+            continue
+        layovers.append(
+            {
+                "airport": str(_get(layover, "airport", "location") or ""),
+                "duration_minutes": _get(layover, "duration_minutes") or "",
+                "overnight": bool(layover.get("overnight")),
+                "change_of_airport": bool(layover.get("change_of_airport")),
+            }
+        )
     return {
         "direction": direction,
         "origin": str(_get(raw_leg, "origin", "from_airport") or origin),
@@ -169,6 +197,8 @@ def _normalize_cash_leg(
         "stops": parse_stops(_get(raw_leg, "stops")),
         "duration_minutes": duration_minutes,
         "duration_display": duration_display,
+        "segments": segments,
+        "layovers": layovers,
     }
 
 

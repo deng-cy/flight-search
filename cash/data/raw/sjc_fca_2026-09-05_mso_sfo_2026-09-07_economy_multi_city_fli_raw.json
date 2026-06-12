@@ -1,6 +1,6 @@
 {
   "evidence": {
-    "result_count": 0,
+    "result_count": 27,
     "top_n": 3,
     "transport": "fli"
   },
@@ -24,7 +24,3212 @@
   },
   "result": {
     "current_price": "",
-    "flights": []
+    "flights": [
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": true,
+        "legs": [
+          {
+            "arrival": "13:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "07:02",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 26m",
+            "duration_minutes": 326,
+            "flight_numbers": "AS 754 / AS 2412",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 123,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:49:00",
+                "arrive_time": "08:49",
+                "depart_datetime": "2026-09-05T07:02:00",
+                "depart_time": "07:02",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "754",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T13:28:00",
+                "arrive_time": "13:28",
+                "depart_datetime": "2026-09-05T10:52:00",
+                "depart_time": "10:52",
+                "destination": "FCA",
+                "duration_minutes": 96,
+                "flight_number": "2412",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "10:58",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "4h 43m",
+            "duration_minutes": 283,
+            "flight_numbers": "AS 722 / AS 528",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 42,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T10:58:00",
+                "arrive_time": "10:58",
+                "depart_datetime": "2026-09-07T08:40:00",
+                "depart_time": "08:40",
+                "destination": "SFO",
+                "duration_minutes": 138,
+                "flight_number": "528",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 581.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "07:02",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 26m",
+            "duration_minutes": 326,
+            "flight_numbers": "AS 754 / AS 2412",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 123,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:49:00",
+                "arrive_time": "08:49",
+                "depart_datetime": "2026-09-05T07:02:00",
+                "depart_time": "07:02",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "754",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T13:28:00",
+                "arrive_time": "13:28",
+                "depart_datetime": "2026-09-05T10:52:00",
+                "depart_time": "10:52",
+                "destination": "FCA",
+                "duration_minutes": 96,
+                "flight_number": "2412",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:40",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "16:16",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "7h 24m",
+            "duration_minutes": 444,
+            "flight_numbers": "AS 660 / AS 590",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 205,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T17:00:00",
+                "arrive_time": "17:00",
+                "depart_datetime": "2026-09-07T16:16:00",
+                "depart_time": "16:16",
+                "destination": "SEA",
+                "duration_minutes": 104,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T22:40:00",
+                "arrive_time": "22:40",
+                "depart_datetime": "2026-09-07T20:25:00",
+                "depart_time": "20:25",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "590",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 608.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "07:02",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 26m",
+            "duration_minutes": 326,
+            "flight_numbers": "AS 754 / AS 2412",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 123,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:49:00",
+                "arrive_time": "08:49",
+                "depart_datetime": "2026-09-05T07:02:00",
+                "depart_time": "07:02",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "754",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T13:28:00",
+                "arrive_time": "13:28",
+                "depart_datetime": "2026-09-05T10:52:00",
+                "depart_time": "10:52",
+                "destination": "FCA",
+                "duration_minutes": 96,
+                "flight_number": "2412",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "12:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "6h 41m",
+            "duration_minutes": 401,
+            "flight_numbers": "AS 722 / AS 688",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 162,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T12:56:00",
+                "arrive_time": "12:56",
+                "depart_datetime": "2026-09-07T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 136,
+                "flight_number": "688",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 768.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "07:02",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 26m",
+            "duration_minutes": 326,
+            "flight_numbers": "AS 754 / AS 2412",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 123,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:49:00",
+                "arrive_time": "08:49",
+                "depart_datetime": "2026-09-05T07:02:00",
+                "depart_time": "07:02",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "754",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T13:28:00",
+                "arrive_time": "13:28",
+                "depart_datetime": "2026-09-05T10:52:00",
+                "depart_time": "10:52",
+                "destination": "FCA",
+                "duration_minutes": 96,
+                "flight_number": "2412",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "16:37",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "13:05",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "4h 32m",
+            "duration_minutes": 272,
+            "flight_numbers": "AS 2042 / AS 236",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 66,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-09-07T13:05:00",
+                "depart_time": "13:05",
+                "destination": "PDX",
+                "duration_minutes": 91,
+                "flight_number": "2042",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T16:37:00",
+                "arrive_time": "16:37",
+                "depart_datetime": "2026-09-07T14:42:00",
+                "depart_time": "14:42",
+                "destination": "SFO",
+                "duration_minutes": 115,
+                "flight_number": "236",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 768.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "07:02",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 26m",
+            "duration_minutes": 326,
+            "flight_numbers": "AS 754 / AS 2412",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 123,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:49:00",
+                "arrive_time": "08:49",
+                "depart_datetime": "2026-09-05T07:02:00",
+                "depart_time": "07:02",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "754",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T13:28:00",
+                "arrive_time": "13:28",
+                "depart_datetime": "2026-09-05T10:52:00",
+                "depart_time": "10:52",
+                "destination": "FCA",
+                "duration_minutes": 96,
+                "flight_number": "2412",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "18:00",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "14:05",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "4h 55m",
+            "duration_minutes": 295,
+            "flight_numbers": "AS 2219 / AS 1385",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 65,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:40:00",
+                "arrive_time": "14:40",
+                "depart_datetime": "2026-09-07T14:05:00",
+                "depart_time": "14:05",
+                "destination": "SEA",
+                "duration_minutes": 95,
+                "flight_number": "2219",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T18:00:00",
+                "arrive_time": "18:00",
+                "depart_datetime": "2026-09-07T15:45:00",
+                "depart_time": "15:45",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "1385",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 768.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "07:02",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 26m",
+            "duration_minutes": 326,
+            "flight_numbers": "AS 754 / AS 2412",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 123,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:49:00",
+                "arrive_time": "08:49",
+                "depart_datetime": "2026-09-05T07:02:00",
+                "depart_time": "07:02",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "754",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T13:28:00",
+                "arrive_time": "13:28",
+                "depart_datetime": "2026-09-05T10:52:00",
+                "depart_time": "10:52",
+                "destination": "FCA",
+                "duration_minutes": 96,
+                "flight_number": "2412",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "19:59",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "14:05",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "6h 54m",
+            "duration_minutes": 414,
+            "flight_numbers": "AS 2219 / AS 619",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 184,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:40:00",
+                "arrive_time": "14:40",
+                "depart_datetime": "2026-09-07T14:05:00",
+                "depart_time": "14:05",
+                "destination": "SEA",
+                "duration_minutes": 95,
+                "flight_number": "2219",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T19:59:00",
+                "arrive_time": "19:59",
+                "depart_datetime": "2026-09-07T17:44:00",
+                "depart_time": "17:44",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "619",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 768.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "07:02",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 26m",
+            "duration_minutes": 326,
+            "flight_numbers": "AS 754 / AS 2412",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 123,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:49:00",
+                "arrive_time": "08:49",
+                "depart_datetime": "2026-09-05T07:02:00",
+                "depart_time": "07:02",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "754",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T13:28:00",
+                "arrive_time": "13:28",
+                "depart_datetime": "2026-09-05T10:52:00",
+                "depart_time": "10:52",
+                "destination": "FCA",
+                "duration_minutes": 96,
+                "flight_number": "2412",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "19:59",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "16:16",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "4h 43m",
+            "duration_minutes": 283,
+            "flight_numbers": "AS 660 / AS 619",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 44,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T17:00:00",
+                "arrive_time": "17:00",
+                "depart_datetime": "2026-09-07T16:16:00",
+                "depart_time": "16:16",
+                "destination": "SEA",
+                "duration_minutes": 104,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T19:59:00",
+                "arrive_time": "19:59",
+                "depart_datetime": "2026-09-07T17:44:00",
+                "depart_time": "17:44",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "619",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 768.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "07:02",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 26m",
+            "duration_minutes": 326,
+            "flight_numbers": "AS 754 / AS 2412",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 123,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:49:00",
+                "arrive_time": "08:49",
+                "depart_datetime": "2026-09-05T07:02:00",
+                "depart_time": "07:02",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "754",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T13:28:00",
+                "arrive_time": "13:28",
+                "depart_datetime": "2026-09-05T10:52:00",
+                "depart_time": "10:52",
+                "destination": "FCA",
+                "duration_minutes": 96,
+                "flight_number": "2412",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "21:30",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "16:16",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "6h 14m",
+            "duration_minutes": 374,
+            "flight_numbers": "AS 660 / AS 628",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 135,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T17:00:00",
+                "arrive_time": "17:00",
+                "depart_datetime": "2026-09-07T16:16:00",
+                "depart_time": "16:16",
+                "destination": "SEA",
+                "duration_minutes": 104,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T21:30:00",
+                "arrive_time": "21:30",
+                "depart_datetime": "2026-09-07T19:15:00",
+                "depart_time": "19:15",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "628",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 768.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "07:02",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 26m",
+            "duration_minutes": 326,
+            "flight_numbers": "AS 754 / AS 2412",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 123,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:49:00",
+                "arrive_time": "08:49",
+                "depart_datetime": "2026-09-05T07:02:00",
+                "depart_time": "07:02",
+                "destination": "PDX",
+                "duration_minutes": 107,
+                "flight_number": "754",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T13:28:00",
+                "arrive_time": "13:28",
+                "depart_datetime": "2026-09-05T10:52:00",
+                "depart_time": "10:52",
+                "destination": "FCA",
+                "duration_minutes": 96,
+                "flight_number": "2412",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "19:54",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "13:05",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "7h 49m",
+            "duration_minutes": 469,
+            "flight_numbers": "AS 2042 / AS 1393",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 257,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-09-07T13:05:00",
+                "depart_time": "13:05",
+                "destination": "PDX",
+                "duration_minutes": 91,
+                "flight_number": "2042",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T19:54:00",
+                "arrive_time": "19:54",
+                "depart_datetime": "2026-09-07T17:53:00",
+                "depart_time": "17:53",
+                "destination": "SFO",
+                "duration_minutes": 121,
+                "flight_number": "1393",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1012.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "14:40",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "7h 16m",
+            "duration_minutes": 436,
+            "flight_numbers": "AS 694 / AS 743 / AS 2256",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 75,
+                "overnight": false
+              },
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 104,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:26:00",
+                "arrive_time": "16:26",
+                "depart_datetime": "2026-09-05T14:40:00",
+                "depart_time": "14:40",
+                "destination": "PDX",
+                "duration_minutes": 106,
+                "flight_number": "694",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T18:51:00",
+                "arrive_time": "18:51",
+                "depart_datetime": "2026-09-05T17:41:00",
+                "depart_time": "17:41",
+                "destination": "SEA",
+                "duration_minutes": 70,
+                "flight_number": "743",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-05T20:35:00",
+                "depart_time": "20:35",
+                "destination": "FCA",
+                "duration_minutes": 81,
+                "flight_number": "2256",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 2
+          },
+          {
+            "arrival": "10:58",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "4h 43m",
+            "duration_minutes": 283,
+            "flight_numbers": "AS 722 / AS 528",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 42,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T10:58:00",
+                "arrive_time": "10:58",
+                "depart_datetime": "2026-09-07T08:40:00",
+                "depart_time": "08:40",
+                "destination": "SFO",
+                "duration_minutes": 138,
+                "flight_number": "528",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 660.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "14:40",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "7h 16m",
+            "duration_minutes": 436,
+            "flight_numbers": "AS 694 / AS 743 / AS 2256",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 75,
+                "overnight": false
+              },
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 104,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:26:00",
+                "arrive_time": "16:26",
+                "depart_datetime": "2026-09-05T14:40:00",
+                "depart_time": "14:40",
+                "destination": "PDX",
+                "duration_minutes": 106,
+                "flight_number": "694",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T18:51:00",
+                "arrive_time": "18:51",
+                "depart_datetime": "2026-09-05T17:41:00",
+                "depart_time": "17:41",
+                "destination": "SEA",
+                "duration_minutes": 70,
+                "flight_number": "743",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-05T20:35:00",
+                "depart_time": "20:35",
+                "destination": "FCA",
+                "duration_minutes": 81,
+                "flight_number": "2256",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 2
+          },
+          {
+            "arrival": "22:40",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "16:16",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "7h 24m",
+            "duration_minutes": 444,
+            "flight_numbers": "AS 660 / AS 590",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 205,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T17:00:00",
+                "arrive_time": "17:00",
+                "depart_datetime": "2026-09-07T16:16:00",
+                "depart_time": "16:16",
+                "destination": "SEA",
+                "duration_minutes": 104,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T22:40:00",
+                "arrive_time": "22:40",
+                "depart_datetime": "2026-09-07T20:25:00",
+                "depart_time": "20:25",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "590",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 687.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "14:40",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "7h 16m",
+            "duration_minutes": 436,
+            "flight_numbers": "AS 694 / AS 743 / AS 2256",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 75,
+                "overnight": false
+              },
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 104,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:26:00",
+                "arrive_time": "16:26",
+                "depart_datetime": "2026-09-05T14:40:00",
+                "depart_time": "14:40",
+                "destination": "PDX",
+                "duration_minutes": 106,
+                "flight_number": "694",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T18:51:00",
+                "arrive_time": "18:51",
+                "depart_datetime": "2026-09-05T17:41:00",
+                "depart_time": "17:41",
+                "destination": "SEA",
+                "duration_minutes": 70,
+                "flight_number": "743",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-05T20:35:00",
+                "depart_time": "20:35",
+                "destination": "FCA",
+                "duration_minutes": 81,
+                "flight_number": "2256",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 2
+          },
+          {
+            "arrival": "12:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "6h 41m",
+            "duration_minutes": 401,
+            "flight_numbers": "AS 722 / AS 688",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 162,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T12:56:00",
+                "arrive_time": "12:56",
+                "depart_datetime": "2026-09-07T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 136,
+                "flight_number": "688",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 847.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "14:40",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "7h 16m",
+            "duration_minutes": 436,
+            "flight_numbers": "AS 694 / AS 743 / AS 2256",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 75,
+                "overnight": false
+              },
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 104,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:26:00",
+                "arrive_time": "16:26",
+                "depart_datetime": "2026-09-05T14:40:00",
+                "depart_time": "14:40",
+                "destination": "PDX",
+                "duration_minutes": 106,
+                "flight_number": "694",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T18:51:00",
+                "arrive_time": "18:51",
+                "depart_datetime": "2026-09-05T17:41:00",
+                "depart_time": "17:41",
+                "destination": "SEA",
+                "duration_minutes": 70,
+                "flight_number": "743",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-05T20:35:00",
+                "depart_time": "20:35",
+                "destination": "FCA",
+                "duration_minutes": 81,
+                "flight_number": "2256",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 2
+          },
+          {
+            "arrival": "16:37",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "13:05",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "4h 32m",
+            "duration_minutes": 272,
+            "flight_numbers": "AS 2042 / AS 236",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 66,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-09-07T13:05:00",
+                "depart_time": "13:05",
+                "destination": "PDX",
+                "duration_minutes": 91,
+                "flight_number": "2042",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T16:37:00",
+                "arrive_time": "16:37",
+                "depart_datetime": "2026-09-07T14:42:00",
+                "depart_time": "14:42",
+                "destination": "SFO",
+                "duration_minutes": 115,
+                "flight_number": "236",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 847.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "14:40",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "7h 16m",
+            "duration_minutes": 436,
+            "flight_numbers": "AS 694 / AS 743 / AS 2256",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 75,
+                "overnight": false
+              },
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 104,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:26:00",
+                "arrive_time": "16:26",
+                "depart_datetime": "2026-09-05T14:40:00",
+                "depart_time": "14:40",
+                "destination": "PDX",
+                "duration_minutes": 106,
+                "flight_number": "694",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T18:51:00",
+                "arrive_time": "18:51",
+                "depart_datetime": "2026-09-05T17:41:00",
+                "depart_time": "17:41",
+                "destination": "SEA",
+                "duration_minutes": 70,
+                "flight_number": "743",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-05T20:35:00",
+                "depart_time": "20:35",
+                "destination": "FCA",
+                "duration_minutes": 81,
+                "flight_number": "2256",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 2
+          },
+          {
+            "arrival": "18:00",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "14:05",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "4h 55m",
+            "duration_minutes": 295,
+            "flight_numbers": "AS 2219 / AS 1385",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 65,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:40:00",
+                "arrive_time": "14:40",
+                "depart_datetime": "2026-09-07T14:05:00",
+                "depart_time": "14:05",
+                "destination": "SEA",
+                "duration_minutes": 95,
+                "flight_number": "2219",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T18:00:00",
+                "arrive_time": "18:00",
+                "depart_datetime": "2026-09-07T15:45:00",
+                "depart_time": "15:45",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "1385",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 847.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "14:40",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "7h 16m",
+            "duration_minutes": 436,
+            "flight_numbers": "AS 694 / AS 743 / AS 2256",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 75,
+                "overnight": false
+              },
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 104,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:26:00",
+                "arrive_time": "16:26",
+                "depart_datetime": "2026-09-05T14:40:00",
+                "depart_time": "14:40",
+                "destination": "PDX",
+                "duration_minutes": 106,
+                "flight_number": "694",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T18:51:00",
+                "arrive_time": "18:51",
+                "depart_datetime": "2026-09-05T17:41:00",
+                "depart_time": "17:41",
+                "destination": "SEA",
+                "duration_minutes": 70,
+                "flight_number": "743",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-05T20:35:00",
+                "depart_time": "20:35",
+                "destination": "FCA",
+                "duration_minutes": 81,
+                "flight_number": "2256",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 2
+          },
+          {
+            "arrival": "19:59",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "14:05",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "6h 54m",
+            "duration_minutes": 414,
+            "flight_numbers": "AS 2219 / AS 619",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 184,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:40:00",
+                "arrive_time": "14:40",
+                "depart_datetime": "2026-09-07T14:05:00",
+                "depart_time": "14:05",
+                "destination": "SEA",
+                "duration_minutes": 95,
+                "flight_number": "2219",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T19:59:00",
+                "arrive_time": "19:59",
+                "depart_datetime": "2026-09-07T17:44:00",
+                "depart_time": "17:44",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "619",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 847.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "14:40",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "7h 16m",
+            "duration_minutes": 436,
+            "flight_numbers": "AS 694 / AS 743 / AS 2256",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 75,
+                "overnight": false
+              },
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 104,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:26:00",
+                "arrive_time": "16:26",
+                "depart_datetime": "2026-09-05T14:40:00",
+                "depart_time": "14:40",
+                "destination": "PDX",
+                "duration_minutes": 106,
+                "flight_number": "694",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T18:51:00",
+                "arrive_time": "18:51",
+                "depart_datetime": "2026-09-05T17:41:00",
+                "depart_time": "17:41",
+                "destination": "SEA",
+                "duration_minutes": 70,
+                "flight_number": "743",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-05T20:35:00",
+                "depart_time": "20:35",
+                "destination": "FCA",
+                "duration_minutes": 81,
+                "flight_number": "2256",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 2
+          },
+          {
+            "arrival": "19:59",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "16:16",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "4h 43m",
+            "duration_minutes": 283,
+            "flight_numbers": "AS 660 / AS 619",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 44,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T17:00:00",
+                "arrive_time": "17:00",
+                "depart_datetime": "2026-09-07T16:16:00",
+                "depart_time": "16:16",
+                "destination": "SEA",
+                "duration_minutes": 104,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T19:59:00",
+                "arrive_time": "19:59",
+                "depart_datetime": "2026-09-07T17:44:00",
+                "depart_time": "17:44",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "619",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 847.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "14:40",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "7h 16m",
+            "duration_minutes": 436,
+            "flight_numbers": "AS 694 / AS 743 / AS 2256",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 75,
+                "overnight": false
+              },
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 104,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:26:00",
+                "arrive_time": "16:26",
+                "depart_datetime": "2026-09-05T14:40:00",
+                "depart_time": "14:40",
+                "destination": "PDX",
+                "duration_minutes": 106,
+                "flight_number": "694",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T18:51:00",
+                "arrive_time": "18:51",
+                "depart_datetime": "2026-09-05T17:41:00",
+                "depart_time": "17:41",
+                "destination": "SEA",
+                "duration_minutes": 70,
+                "flight_number": "743",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-05T20:35:00",
+                "depart_time": "20:35",
+                "destination": "FCA",
+                "duration_minutes": 81,
+                "flight_number": "2256",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 2
+          },
+          {
+            "arrival": "21:30",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "16:16",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "6h 14m",
+            "duration_minutes": 374,
+            "flight_numbers": "AS 660 / AS 628",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 135,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T17:00:00",
+                "arrive_time": "17:00",
+                "depart_datetime": "2026-09-07T16:16:00",
+                "depart_time": "16:16",
+                "destination": "SEA",
+                "duration_minutes": 104,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T21:30:00",
+                "arrive_time": "21:30",
+                "depart_datetime": "2026-09-07T19:15:00",
+                "depart_time": "19:15",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "628",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 847.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "22:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "14:40",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "7h 16m",
+            "duration_minutes": 436,
+            "flight_numbers": "AS 694 / AS 743 / AS 2256",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 75,
+                "overnight": false
+              },
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 104,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T16:26:00",
+                "arrive_time": "16:26",
+                "depart_datetime": "2026-09-05T14:40:00",
+                "depart_time": "14:40",
+                "destination": "PDX",
+                "duration_minutes": 106,
+                "flight_number": "694",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T18:51:00",
+                "arrive_time": "18:51",
+                "depart_datetime": "2026-09-05T17:41:00",
+                "depart_time": "17:41",
+                "destination": "SEA",
+                "duration_minutes": 70,
+                "flight_number": "743",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T22:56:00",
+                "arrive_time": "22:56",
+                "depart_datetime": "2026-09-05T20:35:00",
+                "depart_time": "20:35",
+                "destination": "FCA",
+                "duration_minutes": 81,
+                "flight_number": "2256",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 2
+          },
+          {
+            "arrival": "19:54",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "13:05",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "7h 49m",
+            "duration_minutes": 469,
+            "flight_numbers": "AS 2042 / AS 1393",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 257,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-09-07T13:05:00",
+                "depart_time": "13:05",
+                "destination": "PDX",
+                "duration_minutes": 91,
+                "flight_number": "2042",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T19:54:00",
+                "arrive_time": "19:54",
+                "depart_datetime": "2026-09-07T17:53:00",
+                "depart_time": "17:53",
+                "destination": "SFO",
+                "duration_minutes": 121,
+                "flight_number": "1393",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1096.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "06:17",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 11m",
+            "duration_minutes": 311,
+            "flight_numbers": "AS 762 / AS 2405",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:32:00",
+                "arrive_time": "08:32",
+                "depart_datetime": "2026-09-05T06:17:00",
+                "depart_time": "06:17",
+                "destination": "SEA",
+                "duration_minutes": 135,
+                "flight_number": "762",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T12:28:00",
+                "arrive_time": "12:28",
+                "depart_datetime": "2026-09-05T10:02:00",
+                "depart_time": "10:02",
+                "destination": "FCA",
+                "duration_minutes": 86,
+                "flight_number": "2405",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "10:58",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "4h 43m",
+            "duration_minutes": 283,
+            "flight_numbers": "AS 722 / AS 528",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 42,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T10:58:00",
+                "arrive_time": "10:58",
+                "depart_datetime": "2026-09-07T08:40:00",
+                "depart_time": "08:40",
+                "destination": "SFO",
+                "duration_minutes": 138,
+                "flight_number": "528",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 666.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "06:17",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 11m",
+            "duration_minutes": 311,
+            "flight_numbers": "AS 762 / AS 2405",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:32:00",
+                "arrive_time": "08:32",
+                "depart_datetime": "2026-09-05T06:17:00",
+                "depart_time": "06:17",
+                "destination": "SEA",
+                "duration_minutes": 135,
+                "flight_number": "762",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T12:28:00",
+                "arrive_time": "12:28",
+                "depart_datetime": "2026-09-05T10:02:00",
+                "depart_time": "10:02",
+                "destination": "FCA",
+                "duration_minutes": 86,
+                "flight_number": "2405",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:40",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "16:16",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "7h 24m",
+            "duration_minutes": 444,
+            "flight_numbers": "AS 660 / AS 590",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 205,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T17:00:00",
+                "arrive_time": "17:00",
+                "depart_datetime": "2026-09-07T16:16:00",
+                "depart_time": "16:16",
+                "destination": "SEA",
+                "duration_minutes": 104,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T22:40:00",
+                "arrive_time": "22:40",
+                "depart_datetime": "2026-09-07T20:25:00",
+                "depart_time": "20:25",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "590",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 693.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "06:17",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 11m",
+            "duration_minutes": 311,
+            "flight_numbers": "AS 762 / AS 2405",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:32:00",
+                "arrive_time": "08:32",
+                "depart_datetime": "2026-09-05T06:17:00",
+                "depart_time": "06:17",
+                "destination": "SEA",
+                "duration_minutes": 135,
+                "flight_number": "762",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T12:28:00",
+                "arrive_time": "12:28",
+                "depart_datetime": "2026-09-05T10:02:00",
+                "depart_time": "10:02",
+                "destination": "FCA",
+                "duration_minutes": 86,
+                "flight_number": "2405",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "12:56",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "07:15",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "6h 41m",
+            "duration_minutes": 401,
+            "flight_numbers": "AS 722 / AS 688",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 162,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T07:58:00",
+                "arrive_time": "07:58",
+                "depart_datetime": "2026-09-07T07:15:00",
+                "depart_time": "07:15",
+                "destination": "SEA",
+                "duration_minutes": 103,
+                "flight_number": "722",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T12:56:00",
+                "arrive_time": "12:56",
+                "depart_datetime": "2026-09-07T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 136,
+                "flight_number": "688",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 853.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "06:17",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 11m",
+            "duration_minutes": 311,
+            "flight_numbers": "AS 762 / AS 2405",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:32:00",
+                "arrive_time": "08:32",
+                "depart_datetime": "2026-09-05T06:17:00",
+                "depart_time": "06:17",
+                "destination": "SEA",
+                "duration_minutes": 135,
+                "flight_number": "762",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T12:28:00",
+                "arrive_time": "12:28",
+                "depart_datetime": "2026-09-05T10:02:00",
+                "depart_time": "10:02",
+                "destination": "FCA",
+                "duration_minutes": 86,
+                "flight_number": "2405",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "16:37",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "13:05",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "4h 32m",
+            "duration_minutes": 272,
+            "flight_numbers": "AS 2042 / AS 236",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 66,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-09-07T13:05:00",
+                "depart_time": "13:05",
+                "destination": "PDX",
+                "duration_minutes": 91,
+                "flight_number": "2042",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T16:37:00",
+                "arrive_time": "16:37",
+                "depart_datetime": "2026-09-07T14:42:00",
+                "depart_time": "14:42",
+                "destination": "SFO",
+                "duration_minutes": 115,
+                "flight_number": "236",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 853.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "06:17",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 11m",
+            "duration_minutes": 311,
+            "flight_numbers": "AS 762 / AS 2405",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:32:00",
+                "arrive_time": "08:32",
+                "depart_datetime": "2026-09-05T06:17:00",
+                "depart_time": "06:17",
+                "destination": "SEA",
+                "duration_minutes": 135,
+                "flight_number": "762",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T12:28:00",
+                "arrive_time": "12:28",
+                "depart_datetime": "2026-09-05T10:02:00",
+                "depart_time": "10:02",
+                "destination": "FCA",
+                "duration_minutes": 86,
+                "flight_number": "2405",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "18:00",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "14:05",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "4h 55m",
+            "duration_minutes": 295,
+            "flight_numbers": "AS 2219 / AS 1385",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 65,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:40:00",
+                "arrive_time": "14:40",
+                "depart_datetime": "2026-09-07T14:05:00",
+                "depart_time": "14:05",
+                "destination": "SEA",
+                "duration_minutes": 95,
+                "flight_number": "2219",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T18:00:00",
+                "arrive_time": "18:00",
+                "depart_datetime": "2026-09-07T15:45:00",
+                "depart_time": "15:45",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "1385",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 853.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "06:17",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 11m",
+            "duration_minutes": 311,
+            "flight_numbers": "AS 762 / AS 2405",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:32:00",
+                "arrive_time": "08:32",
+                "depart_datetime": "2026-09-05T06:17:00",
+                "depart_time": "06:17",
+                "destination": "SEA",
+                "duration_minutes": 135,
+                "flight_number": "762",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T12:28:00",
+                "arrive_time": "12:28",
+                "depart_datetime": "2026-09-05T10:02:00",
+                "depart_time": "10:02",
+                "destination": "FCA",
+                "duration_minutes": 86,
+                "flight_number": "2405",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "19:59",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "14:05",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "6h 54m",
+            "duration_minutes": 414,
+            "flight_numbers": "AS 2219 / AS 619",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 184,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T14:40:00",
+                "arrive_time": "14:40",
+                "depart_datetime": "2026-09-07T14:05:00",
+                "depart_time": "14:05",
+                "destination": "SEA",
+                "duration_minutes": 95,
+                "flight_number": "2219",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T19:59:00",
+                "arrive_time": "19:59",
+                "depart_datetime": "2026-09-07T17:44:00",
+                "depart_time": "17:44",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "619",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 853.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "06:17",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 11m",
+            "duration_minutes": 311,
+            "flight_numbers": "AS 762 / AS 2405",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:32:00",
+                "arrive_time": "08:32",
+                "depart_datetime": "2026-09-05T06:17:00",
+                "depart_time": "06:17",
+                "destination": "SEA",
+                "duration_minutes": 135,
+                "flight_number": "762",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T12:28:00",
+                "arrive_time": "12:28",
+                "depart_datetime": "2026-09-05T10:02:00",
+                "depart_time": "10:02",
+                "destination": "FCA",
+                "duration_minutes": 86,
+                "flight_number": "2405",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "19:59",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "16:16",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "4h 43m",
+            "duration_minutes": 283,
+            "flight_numbers": "AS 660 / AS 619",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 44,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T17:00:00",
+                "arrive_time": "17:00",
+                "depart_datetime": "2026-09-07T16:16:00",
+                "depart_time": "16:16",
+                "destination": "SEA",
+                "duration_minutes": 104,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T19:59:00",
+                "arrive_time": "19:59",
+                "depart_datetime": "2026-09-07T17:44:00",
+                "depart_time": "17:44",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "619",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 853.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "06:17",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 11m",
+            "duration_minutes": 311,
+            "flight_numbers": "AS 762 / AS 2405",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:32:00",
+                "arrive_time": "08:32",
+                "depart_datetime": "2026-09-05T06:17:00",
+                "depart_time": "06:17",
+                "destination": "SEA",
+                "duration_minutes": 135,
+                "flight_number": "762",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T12:28:00",
+                "arrive_time": "12:28",
+                "depart_datetime": "2026-09-05T10:02:00",
+                "depart_time": "10:02",
+                "destination": "FCA",
+                "duration_minutes": 86,
+                "flight_number": "2405",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "21:30",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "16:16",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "6h 14m",
+            "duration_minutes": 374,
+            "flight_numbers": "AS 660 / AS 628",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 135,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T17:00:00",
+                "arrive_time": "17:00",
+                "depart_datetime": "2026-09-07T16:16:00",
+                "depart_time": "16:16",
+                "destination": "SEA",
+                "duration_minutes": 104,
+                "flight_number": "660",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T21:30:00",
+                "arrive_time": "21:30",
+                "depart_datetime": "2026-09-07T19:15:00",
+                "depart_time": "19:15",
+                "destination": "SFO",
+                "duration_minutes": 135,
+                "flight_number": "628",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 853.00"
+      },
+      {
+        "carriers": "AS",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:28",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-05",
+            "departure": "06:17",
+            "destination": "FCA",
+            "direction": "outbound",
+            "duration": "5h 11m",
+            "duration_minutes": 311,
+            "flight_numbers": "AS 762 / AS 2405",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T08:32:00",
+                "arrive_time": "08:32",
+                "depart_datetime": "2026-09-05T06:17:00",
+                "depart_time": "06:17",
+                "destination": "SEA",
+                "duration_minutes": 135,
+                "flight_number": "762",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-05T12:28:00",
+                "arrive_time": "12:28",
+                "depart_datetime": "2026-09-05T10:02:00",
+                "depart_time": "10:02",
+                "destination": "FCA",
+                "duration_minutes": 86,
+                "flight_number": "2405",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "19:54",
+            "arrival_time_ahead": "",
+            "carrier": "AS",
+            "date": "2026-09-07",
+            "departure": "13:05",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "7h 49m",
+            "duration_minutes": 469,
+            "flight_numbers": "AS 2042 / AS 1393",
+            "layovers": [
+              {
+                "airport": "PDX",
+                "change_of_airport": false,
+                "duration_minutes": 257,
+                "overnight": false
+              }
+            ],
+            "origin": "MSO",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2026-09-07T13:05:00",
+                "depart_time": "13:05",
+                "destination": "PDX",
+                "duration_minutes": 91,
+                "flight_number": "2042",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AS",
+                "arrive_datetime": "2026-09-07T19:54:00",
+                "arrive_time": "19:54",
+                "depart_datetime": "2026-09-07T17:53:00",
+                "depart_time": "17:53",
+                "destination": "SFO",
+                "duration_minutes": 121,
+                "flight_number": "1393",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PDX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1097.00"
+      }
+    ]
   },
-  "searched_at": "2026-06-04T16:58:30.393787+00:00"
+  "searched_at": "2026-06-11T06:26:04.736049+00:00"
 }

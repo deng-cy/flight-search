@@ -207,6 +207,31 @@ class CashSearchNormalizationTests(unittest.TestCase):
                                 "duration": "6h 8m",
                                 "stops": 1,
                                 "flight_numbers": "DL 1088 / DL 1723",
+                                "layovers": [
+                                    {"airport": "SLC", "duration_minutes": 86, "overnight": False}
+                                ],
+                                "segments": [
+                                    {
+                                        "airline": "DL",
+                                        "flight_number": "1088",
+                                        "origin": "SFO",
+                                        "destination": "SLC",
+                                        "depart_time": "17:10",
+                                        "arrive_time": "19:55",
+                                        "aircraft": "Airbus A321",
+                                        "duration_minutes": 105,
+                                    },
+                                    {
+                                        "airline": "DL",
+                                        "flight_number": "1723",
+                                        "origin": "SLC",
+                                        "destination": "MSO",
+                                        "depart_time": "21:21",
+                                        "arrive_time": "00:18",
+                                        "aircraft": "Embraer 175",
+                                        "duration_minutes": 92,
+                                    },
+                                ],
                             },
                             {
                                 "carrier": "DL",
@@ -231,6 +256,9 @@ class CashSearchNormalizationTests(unittest.TestCase):
         self.assertEqual(rows[0]["outbound_arrive_time"], "00:18 +1")
         self.assertEqual(rows[0]["return_depart_time"], "05:30")
         self.assertEqual(rows[0]["return_flight_numbers"], "DL 2795 / DL 920")
+        self.assertEqual(rows[0]["legs"]["outbound"]["layovers"][0]["airport"], "SLC")
+        self.assertEqual(rows[0]["legs"]["outbound"]["segments"][0]["origin"], "SFO")
+        self.assertEqual(rows[0]["legs"]["outbound"]["segments"][1]["flight_number"], "1723")
 
     def test_round_trip_fli_provider_call_uses_two_segments(self) -> None:
         calls = []

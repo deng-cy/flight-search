@@ -32,7 +32,53 @@
         "duration_display": "7h 25m",
         "duration_minutes": 445,
         "flight_numbers": "WN 2638 / WN 1843 / WN 4960",
+        "layovers": [
+          {
+            "airport": "DEN",
+            "change_of_airport": false,
+            "duration_minutes": 55,
+            "overnight": false
+          },
+          {
+            "airport": "STL",
+            "change_of_airport": false,
+            "duration_minutes": 40,
+            "overnight": false
+          }
+        ],
         "origin": "SJC",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "15:25",
+            "depart_time": "11:55",
+            "destination": "DEN",
+            "duration_minutes": 150,
+            "flight_number": "2638",
+            "origin": "SJC"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "19:15",
+            "depart_time": "16:20",
+            "destination": "STL",
+            "duration_minutes": 115,
+            "flight_number": "1843",
+            "origin": "DEN"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "22:20",
+            "depart_time": "19:55",
+            "destination": "DTW",
+            "duration_minutes": 85,
+            "flight_number": "4960",
+            "origin": "STL"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -45,7 +91,37 @@
         "duration_display": "10h 40m",
         "duration_minutes": 640,
         "flight_numbers": "WN 1874 / WN 1796",
+        "layovers": [
+          {
+            "airport": "DEN",
+            "change_of_airport": false,
+            "duration_minutes": 275,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "07:30",
+            "depart_time": "06:05",
+            "destination": "DEN",
+            "duration_minutes": 205,
+            "flight_number": "1874",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "WN",
+            "arrive_time": "13:45",
+            "depart_time": "12:05",
+            "destination": "SJC",
+            "duration_minutes": 160,
+            "flight_number": "1796",
+            "origin": "DEN"
+          }
+        ],
         "stops": 1
       }
     },
@@ -119,7 +195,53 @@
         "duration_display": "7h 25m",
         "duration_minutes": 445,
         "flight_numbers": "WN 2638 / WN 1843 / WN 4960",
+        "layovers": [
+          {
+            "airport": "DEN",
+            "change_of_airport": false,
+            "duration_minutes": 55,
+            "overnight": false
+          },
+          {
+            "airport": "STL",
+            "change_of_airport": false,
+            "duration_minutes": 40,
+            "overnight": false
+          }
+        ],
         "origin": "SJC",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "15:25",
+            "depart_time": "11:55",
+            "destination": "DEN",
+            "duration_minutes": 150,
+            "flight_number": "2638",
+            "origin": "SJC"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "19:15",
+            "depart_time": "16:20",
+            "destination": "STL",
+            "duration_minutes": 115,
+            "flight_number": "1843",
+            "origin": "DEN"
+          },
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "22:20",
+            "depart_time": "19:55",
+            "destination": "DTW",
+            "duration_minutes": 85,
+            "flight_number": "4960",
+            "origin": "STL"
+          }
+        ],
         "stops": 2
       },
       "return": {
@@ -132,7 +254,37 @@
         "duration_display": "7h",
         "duration_minutes": 420,
         "flight_numbers": "WN 1076 / WN 2445",
+        "layovers": [
+          {
+            "airport": "LAS",
+            "change_of_airport": false,
+            "duration_minutes": 45,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Boeing 737",
+            "airline": "WN",
+            "arrive_time": "12:20",
+            "depart_time": "10:40",
+            "destination": "LAS",
+            "duration_minutes": 280,
+            "flight_number": "1076",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+            "airline": "WN",
+            "arrive_time": "14:40",
+            "depart_time": "13:05",
+            "destination": "SJC",
+            "duration_minutes": 95,
+            "flight_number": "2445",
+            "origin": "LAS"
+          }
+        ],
         "stops": 1
       }
     },

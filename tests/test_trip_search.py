@@ -18,6 +18,7 @@ from run_trip_search import (
     cash_one_way_pair_rows,
     choose_cash_trip_type,
     expand_trip_search,
+    leg_stop_value,
     mixed_cash_award_rows,
     recommendation_cards,
     run_ordered_workers,
@@ -108,8 +109,8 @@ class TripSearchExpansionTests(unittest.TestCase):
                 "effective_num": 450.0,
                 "score": 520.0,
                 "score_label": "520.00",
-                "stops": "1 + 1",
-                "stops_num": 2,
+                "stops": "2 + 1",
+                "stops_num": 3,
                 "duration": "9h",
                 "duration_minutes": 540,
                 "depart": "09:00 / 10:15",
@@ -192,6 +193,217 @@ class TripSearchExpansionTests(unittest.TestCase):
         self.assertIn("award pair", html)
         self.assertIn("Cash Details Verified", html)
         self.assertIn("10:15 -&gt; 13:20", html)
+        self.assertNotIn('data-view-tab="plans"', html)
+        self.assertNotIn('id="plansView"', html)
+
+    def test_master_report_uses_valid_checkbox_filters_and_builder_detail_markers(self) -> None:
+        plan = expand_trip_search(
+            origins=["SFO", "SJC"],
+            destinations=["FCA", "MSO"],
+            outbound_dates=["2026-09-04", "2026-09-05"],
+            return_dates=["2026-09-07"],
+        )
+        complete_rows = [
+            {
+                "kind": "cash",
+                "route": "SFO -> FCA / FCA -> SFO",
+                "dates": "2026-09-04 / 2026-09-07",
+                "origin": "SFO",
+                "destination": "FCA",
+                "outbound_date": "2026-09-04",
+                "return_origin": "FCA",
+                "return_destination": "SFO",
+                "return_date": "2026-09-07",
+                "same_airports": True,
+                "trip_type": "round-trip",
+                "cash_detail_status": "complete",
+                "cash_detail_source": "fli",
+                "price": "$450.00",
+                "effective": "$450.00",
+                "effective_num": 450.0,
+                "cpp": "",
+                "cpp_num": 0.0,
+                "award_points": 0.0,
+                "award_components": [],
+                "cash_component_usd": 450.0,
+                "score": 520.0,
+                "score_label": "520.00",
+                "stops": "1 + 1",
+                "stops_num": 2,
+                "duration": "9h",
+                "duration_minutes": 540,
+                "depart": "09:00 / 10:15",
+                "arrive": "15:00 / 13:20",
+                "outbound_depart": "09:00",
+                "outbound_arrive": "15:00",
+                "return_depart": "10:15",
+                "return_arrive": "13:20",
+                "provider": "cash",
+                "notes": "round trip cash fare",
+                "outbound_cell": "SFO -> FCA\n2026-09-04\n09:00 -> 15:00\nUA 100 / UA 200, 2 stop(s), 4h 30m",
+                "return_cell": "FCA -> SFO\n2026-09-07\n10:15 -> 13:20\nUA 201 / UA 101, 1 stop(s), 4h 30m",
+                "outbound_leg_detail": {
+                    "origin": "SFO",
+                    "destination": "FCA",
+                    "date": "2026-09-04",
+                    "depart_time": "09:00",
+                    "arrive_time": "15:00",
+                    "flight_numbers": "UA 100 / UA 200",
+                    "carriers": "UA",
+                    "stops": 2,
+                    "duration_display": "4h 30m",
+                    "segments": [
+                        {
+                            "origin": "SFO",
+                            "destination": "DEN",
+                            "depart_time": "09:00",
+                            "arrive_time": "11:30",
+                            "airline": "UA",
+                            "flight_number": "100",
+                        }
+                    ],
+                    "layovers": [{"airport": "DEN", "duration_minutes": 60}],
+                },
+                "return_leg_detail": {
+                    "origin": "FCA",
+                    "destination": "SFO",
+                    "date": "2026-09-07",
+                    "depart_time": "10:15",
+                    "arrive_time": "13:20",
+                    "flight_numbers": "UA 201 / UA 101",
+                    "carriers": "UA",
+                    "stops": 1,
+                    "duration_display": "4h 30m",
+                    "segments": [],
+                    "layovers": [],
+                },
+            },
+            {
+                "kind": "cash",
+                "route": "SJC -> MSO / MSO -> SJC",
+                "dates": "2026-09-05 / 2026-09-07",
+                "origin": "SJC",
+                "destination": "MSO",
+                "outbound_date": "2026-09-05",
+                "return_origin": "MSO",
+                "return_destination": "SJC",
+                "return_date": "2026-09-07",
+                "same_airports": True,
+                "trip_type": "round-trip",
+                "cash_detail_status": "complete",
+                "cash_detail_source": "fli",
+                "price": "$500.00",
+                "effective": "$500.00",
+                "effective_num": 500.0,
+                "cpp": "",
+                "cpp_num": 0.0,
+                "award_points": 0.0,
+                "award_components": [],
+                "cash_component_usd": 500.0,
+                "score": 560.0,
+                "score_label": "560.00",
+                "stops": "0 + 0",
+                "stops_num": 0,
+                "duration": "7h",
+                "duration_minutes": 420,
+                "depart": "10:00 / 11:00",
+                "arrive": "13:00 / 14:00",
+                "outbound_depart": "10:00",
+                "outbound_arrive": "13:00",
+                "return_depart": "11:00",
+                "return_arrive": "14:00",
+                "provider": "cash",
+                "notes": "",
+                "outbound_cell": "SJC -> MSO\n2026-09-05\n10:00 -> 13:00\nDL 100, 0 stop(s), 3h",
+                "return_cell": "MSO -> SJC\n2026-09-07\n11:00 -> 14:00\nDL 101, 0 stop(s), 4h",
+                "outbound_leg_detail": {"origin": "SJC", "destination": "MSO", "stops": 0, "carriers": "DL"},
+                "return_leg_detail": {"origin": "MSO", "destination": "SJC", "stops": 0, "carriers": "DL"},
+            },
+        ]
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            output = Path(tmp_dir) / "report.html"
+            write_master_html(
+                output,
+                title="SFO/SJC to FCA/MSO Trip Search",
+                cabin="economy",
+                plan=plan,
+                complete_rows=complete_rows,
+                award_rows=[],
+                cash_one_way_rows=[],
+                errors=[],
+            )
+            html = output.read_text(encoding="utf-8")
+
+        self.assertNotIn("id=\"kindFilter\"", html)
+        self.assertNotIn("id=\"tripFilter\"", html)
+        self.assertNotIn("id=\"lateFilter\"", html)
+        self.assertNotIn("Plan Type", html)
+        self.assertNotIn("buildKindFilter", html)
+        self.assertNotIn('data-view-tab="plans"', html)
+        self.assertNotIn('id="plansView"', html)
+        self.assertIn('id="planResultsTemplate"', html)
+        self.assertIn("[hidden] {", html)
+        self.assertIn("window.tripReportShowView", html)
+        self.assertIn("button.dataset.viewBound", html)
+        self.assertIn("planTemplate.content.cloneNode(true)", html)
+        self.assertIn('planResults ? planResults.querySelectorAll(".trip-card") : []', html)
+        self.assertIn('data-filter-key="origin" value="SFO"', html)
+        self.assertIn('data-filter-key="origin" value="SJC"', html)
+        self.assertNotIn('data-filter-key="origin" value="FCA"', html)
+        self.assertIn('data-filter-key="destination" value="FCA"', html)
+        self.assertIn('data-filter-key="destination" value="MSO"', html)
+        self.assertNotIn('data-filter-key="destination" value="SFO"', html)
+        self.assertNotIn('data-filter-key="returnDate"', html)
+        self.assertIn("Max Stops Per Leg", html)
+        self.assertRegex(html, r'data-outbound-stops="2(?:\.0)?"')
+        self.assertRegex(html, r'data-return-stops="1(?:\.0)?"')
+        self.assertIn('legStopValue(row, "outboundStops") <= maxStops', html)
+        self.assertIn('legStopValue(row, "returnStops") <= maxStops', html)
+        self.assertIn("data-compatible", html)
+        self.assertIn("No match with selected", html)
+        self.assertIn('id="outboundSort"', html)
+        self.assertIn('id="returnSort"', html)
+        self.assertIn('<option value="convenience">Convenience</option>', html)
+        self.assertIn('sortChoiceGroups(bestByKey(pool, "outboundKey"), "outboundKey", outboundSort.value)', html)
+        self.assertIn('sortChoiceGroups(bestByKey(pool, "returnKey"), "returnKey", returnSort.value)', html)
+        self.assertIn('button.dataset.compatible === "false"', html)
+        self.assertIn('selectedReturnKey = "";', html)
+        self.assertIn('selectedOutboundKey = "";', html)
+        self.assertIn("plan-card-head", html)
+        self.assertIn("plan-metrics", html)
+        self.assertIn("plan-timeline-list", html)
+        self.assertIn("flight-timeline", html)
+        self.assertIn("timeline-segment", html)
+        self.assertIn("timeline-layover", html)
+        self.assertIn("timeline-fallback", html)
+        self.assertIn('renderLegTimeline("Outbound flight", outboundDetail)', html)
+        self.assertIn('renderLegTimeline("Inbound flight", returnDetail)', html)
+        self.assertNotIn("renderLegDetail", html)
+        self.assertNotIn("segment-list", html)
+        self.assertIn("choice-compact", html)
+        self.assertIn("choice-logo-cell", html)
+        self.assertIn("choice-facts", html)
+        self.assertIn("choice-metric-strip", html)
+        self.assertIn("choice-mini-metric", html)
+        self.assertIn("Effective USD", html)
+        self.assertIn("integerMoney(sampleCard.dataset.effective)", html)
+        self.assertIn("legLogosHtml(detail)", html)
+        self.assertIn("carrierLine(detail)", html)
+        self.assertIn("layoverSummary(detail)", html)
+        self.assertIn("carrierCodesFromDetail", html)
+        self.assertIn("legPaymentIconHtml(detail", html)
+        self.assertIn("legPairIconsHtml(outboundDetail, returnDetail)", html)
+        self.assertIn("pointsLabel(detail.points)", html)
+        self.assertIn("detail.taxes", html)
+        self.assertIn("choice-switch", html)
+        self.assertIn('Switches ${escapeHtml(switchLabel)}', html)
+        self.assertIn('keyName === "returnKey" ? "outbound" : "inbound"', html)
+        self.assertIn(".leg-choice .plan-icon", html)
+        self.assertIn("airline-logo-config", html)
+
+        self.assertEqual(leg_stop_value(complete_rows[0], "outbound"), 2)
+        self.assertEqual(leg_stop_value(complete_rows[0], "return"), 1)
 
     def test_master_report_marks_missing_cash_return_timing(self) -> None:
         plan = expand_trip_search(

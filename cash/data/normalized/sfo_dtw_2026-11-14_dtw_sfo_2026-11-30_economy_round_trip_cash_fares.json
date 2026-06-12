@@ -32,7 +32,20 @@
         "duration_display": "4h 55m",
         "duration_minutes": 295,
         "flight_numbers": "UA 743",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "20:40",
+            "depart_time": "12:45",
+            "destination": "DTW",
+            "duration_minutes": 295,
+            "flight_number": "743",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -45,7 +58,37 @@
         "duration_display": "9h 27m",
         "duration_minutes": 567,
         "flight_numbers": "UA 426 / UA 2817",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 177,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "20:03",
+            "depart_time": "19:30",
+            "destination": "ORD",
+            "duration_minutes": 93,
+            "flight_number": "426",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "01:57",
+            "depart_time": "23:00",
+            "destination": "SFO",
+            "duration_minutes": 297,
+            "flight_number": "2817",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       }
     },
@@ -119,7 +162,20 @@
         "duration_display": "4h 55m",
         "duration_minutes": 295,
         "flight_numbers": "UA 743",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "20:40",
+            "depart_time": "12:45",
+            "destination": "DTW",
+            "duration_minutes": 295,
+            "flight_number": "743",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -132,7 +188,37 @@
         "duration_display": "7h 45m",
         "duration_minutes": 465,
         "flight_numbers": "UA 3556 / UA 2817",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 71,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "21:49",
+            "depart_time": "21:12",
+            "destination": "ORD",
+            "duration_minutes": 97,
+            "flight_number": "3556",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "01:57",
+            "depart_time": "23:00",
+            "destination": "SFO",
+            "duration_minutes": 297,
+            "flight_number": "2817",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       }
     },
@@ -206,7 +292,20 @@
         "duration_display": "4h 55m",
         "duration_minutes": 295,
         "flight_numbers": "UA 743",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "20:40",
+            "depart_time": "12:45",
+            "destination": "DTW",
+            "duration_minutes": 295,
+            "flight_number": "743",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -219,7 +318,37 @@
         "duration_display": "10h 57m",
         "duration_minutes": 657,
         "flight_numbers": "UA 630 / UA 2817",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 279,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "18:21",
+            "depart_time": "18:00",
+            "destination": "ORD",
+            "duration_minutes": 81,
+            "flight_number": "630",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "01:57",
+            "depart_time": "23:00",
+            "destination": "SFO",
+            "duration_minutes": 297,
+            "flight_number": "2817",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       }
     },
@@ -293,7 +422,20 @@
         "duration_display": "4h 55m",
         "duration_minutes": 295,
         "flight_numbers": "UA 743",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "20:40",
+            "depart_time": "12:45",
+            "destination": "DTW",
+            "duration_minutes": 295,
+            "flight_number": "743",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -306,7 +448,37 @@
         "duration_display": "12h 42m",
         "duration_minutes": 762,
         "flight_numbers": "UA 4673 / UA 2817",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 384,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "16:36",
+            "depart_time": "16:15",
+            "destination": "ORD",
+            "duration_minutes": 81,
+            "flight_number": "4673",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "01:57",
+            "depart_time": "23:00",
+            "destination": "SFO",
+            "duration_minutes": 297,
+            "flight_number": "2817",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       }
     },
@@ -380,7 +552,20 @@
         "duration_display": "4h 55m",
         "duration_minutes": 295,
         "flight_numbers": "UA 743",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "20:40",
+            "depart_time": "12:45",
+            "destination": "DTW",
+            "duration_minutes": 295,
+            "flight_number": "743",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -393,7 +578,37 @@
         "duration_display": "15h 4m",
         "duration_minutes": 904,
         "flight_numbers": "UA 3556 / UA 246",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 516,
+            "overnight": true
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Embraer 175",
+            "airline": "UA",
+            "arrive_time": "21:49",
+            "depart_time": "21:12",
+            "destination": "ORD",
+            "duration_minutes": 97,
+            "flight_number": "3556",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "09:16",
+            "depart_time": "06:25",
+            "destination": "SFO",
+            "duration_minutes": 291,
+            "flight_number": "246",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       }
     },
@@ -467,7 +682,20 @@
         "duration_display": "4h 55m",
         "duration_minutes": 295,
         "flight_numbers": "UA 743",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "20:40",
+            "depart_time": "12:45",
+            "destination": "DTW",
+            "duration_minutes": 295,
+            "flight_number": "743",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -480,7 +708,20 @@
         "duration_display": "5h 23m",
         "duration_minutes": 323,
         "flight_numbers": "UA 1550",
+        "layovers": [],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "09:23",
+            "depart_time": "07:00",
+            "destination": "SFO",
+            "duration_minutes": 323,
+            "flight_number": "1550",
+            "origin": "DTW"
+          }
+        ],
         "stops": 0
       }
     },
@@ -554,7 +795,20 @@
         "duration_display": "4h 55m",
         "duration_minutes": 295,
         "flight_numbers": "UA 743",
+        "layovers": [],
         "origin": "SFO",
+        "segments": [
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "20:40",
+            "depart_time": "12:45",
+            "destination": "DTW",
+            "duration_minutes": 295,
+            "flight_number": "743",
+            "origin": "SFO"
+          }
+        ],
         "stops": 0
       },
       "return": {
@@ -567,7 +821,37 @@
         "duration_display": "7h 45m",
         "duration_minutes": 465,
         "flight_numbers": "UA 630 / UA 1495",
+        "layovers": [
+          {
+            "airport": "ORD",
+            "change_of_airport": false,
+            "duration_minutes": 84,
+            "overnight": false
+          }
+        ],
         "origin": "DTW",
+        "segments": [
+          {
+            "aircraft": "Airbus A319",
+            "airline": "UA",
+            "arrive_time": "18:21",
+            "depart_time": "18:00",
+            "destination": "ORD",
+            "duration_minutes": 81,
+            "flight_number": "630",
+            "origin": "DTW"
+          },
+          {
+            "aircraft": "Airbus A321neo",
+            "airline": "UA",
+            "arrive_time": "22:45",
+            "depart_time": "19:45",
+            "destination": "SFO",
+            "duration_minutes": 300,
+            "flight_number": "1495",
+            "origin": "ORD"
+          }
+        ],
         "stops": 1
       }
     },
