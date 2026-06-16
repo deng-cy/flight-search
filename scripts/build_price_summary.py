@@ -13,6 +13,7 @@ if str(WORKSPACE_ROOT) not in sys.path:
 
 from flight_search_common.formatting import money, normalize_airport, points, slug
 from flight_search_common.io import load_json, markdown_escape
+from flight_search_common.web_awards import load_web_award_rows
 
 DEFAULT_OUTPUT_DIR = WORKSPACE_ROOT / "reports"
 AIRLINE_CODES = {
@@ -31,6 +32,7 @@ AWARD_PROGRAM_CODES = {
     "azul": "AD",
     "delta": "DL",
     "flyingblue": "AF",
+    "southwest": "WN",
     "united": "UA",
     "velocity": "VA",
     "virginatlantic": "VS",
@@ -83,7 +85,14 @@ def top_award_rows(rows: list[dict[str, Any]], cabin: str, limit: int) -> list[d
         and row.get("cabin") == cabin
         and row.get("effective_usd") != ""
     ]
-    return candidates[:limit]
+    return sorted(
+        candidates,
+        key=lambda row: (
+            numeric(row.get("score")),
+            numeric(row.get("effective_usd")),
+            numeric(row.get("duration_minutes")),
+        ),
+    )[:limit]
 
 
 def carrier_codes(value: Any) -> set[str]:
@@ -180,6 +189,8 @@ def award_program_code(row: dict[str, Any]) -> str:
         return "AS"
     if "delta" in program:
         return "DL"
+    if "southwest" in program or "rapid rewards" in program:
+        return "WN"
     if "united" in program:
         return "UA"
     if "virgin" in program:
@@ -270,15 +281,17 @@ def write_summary(
     cabin: str,
     cash_path: Path,
     award_path: Path,
+    award_web_paths: list[Path],
     cash_rows: list[dict[str, Any]],
     award_rows: list[dict[str, Any]],
 ) -> None:
+    award_sources = [str(award_path), *[str(path) for path in award_web_paths]]
     lines = [
         f"# {normalize_airport(origin)} to {normalize_airport(destination)} Cash and Award Summary on {departure_date}",
         "",
         f"- Cabin: `{cabin}`",
         f"- Cash source: `{cash_path}`",
-        f"- Award source: `{award_path}`",
+        f"- Award source(s): `{'; '.join(award_sources)}`",
         "",
         "Cash rows are observed comparable paid fares. Award rows use configured point valuations to compute effective USD.",
         "",
@@ -669,6 +682,8 @@ def main() -> None:
     parser.add_argument("--cash-json")
     parser.add_argument("--award-json")
     parser.add_argument("--award-full-json")
+    parser.add_argument("--award-web-json", action="append", default=[], help="Additional normalized award_web JSON file.")
+    parser.add_argument("--no-award-web", action="store_true", help="Do not auto-include matching cached award_web rows.")
     parser.add_argument("--output")
     parser.add_argument("--html-output")
     parser.add_argument("--limit", type=int, default=10)
@@ -681,15 +696,31 @@ def main() -> None:
     award_full_path = Path(args.award_full_json) if args.award_full_json else paths["award_full_json"]
     output_path = Path(args.output) if args.output else paths["output"]
     html_output_path = Path(args.html_output) if args.html_output else paths["html_output"]
+    explicit_award_web_paths = [Path(path) for path in args.award_web_json]
+    web_award_rows = [] if args.no_award_web else load_web_award_rows(
+        WORKSPACE_ROOT,
+        origin=args.origin,
+        destination=args.destination,
+        departure_date=args.date,
+        cabin=args.cabin,
+        paths=explicit_award_web_paths or None,
+    )
+    auto_award_web_paths = [] if args.no_award_web or explicit_award_web_paths else [
+        path
+        for path in (WORKSPACE_ROOT / "award_web" / "data" / "normalized").glob(
+            f"*_{slug(args.origin)}_{slug(args.destination)}_{args.date}_{args.cabin.replace('-', '_')}_one_way_web_awards.json"
+        )
+    ]
+    award_web_paths = explicit_award_web_paths or sorted(auto_award_web_paths)
 
-    award_rows = top_award_rows(load_json(award_path), args.cabin, args.limit)
-    award_match_rows = load_json(award_full_path if award_full_path.exists() else award_path)
+    award_rows = top_award_rows([*load_json(award_path), *web_award_rows], args.cabin, args.limit)
+    award_match_rows = [*load_json(award_full_path if award_full_path.exists() else award_path), *web_award_rows]
     cash_rows = enrich_cash_flight_numbers(
         top_cash_rows(load_json(cash_path), args.cabin, args.limit),
         award_match_rows,
     )
     html_limit = args.html_limit if args.html_limit > 0 else 10**9
-    html_award_rows = top_award_rows(load_json(award_path), args.cabin, html_limit)
+    html_award_rows = top_award_rows([*load_json(award_path), *web_award_rows], args.cabin, html_limit)
     html_cash_rows = enrich_cash_flight_numbers(
         top_cash_rows(load_json(cash_path), args.cabin, html_limit),
         award_match_rows,
@@ -702,6 +733,7 @@ def main() -> None:
         cabin=args.cabin,
         cash_path=cash_path,
         award_path=award_path,
+        award_web_paths=award_web_paths,
         cash_rows=cash_rows,
         award_rows=award_rows,
     )

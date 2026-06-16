@@ -1,0 +1,2101 @@
+origin,destination,departure_date,trip_type,return_origin,return_destination,return_date,depart_time,arrive_time,flight_numbers,carriers,cabin,stops,source_type,source_name,points,cash_price_usd,taxes_usd,effective_usd,bookable,remaining_seats,confidence,evidence_path,stop_penalty_usd,duration_penalty_usd,time_penalty_usd,next_day_penalty_usd,seat_credit_usd,score,flags,duration_minutes,duration_display,raw_price,raw_text,status,status_message,created_at
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,06:00,13:36,DL772,DL,economy,0,web_award,delta,86800,,12.0,1053.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,23.0,50.0,0.0,0.0,1126.6,"delta_web_observation, fare_brand:delta_main, early departure",276,4h 36m,"86,800 miles + $12","DL772
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+86,800
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+103,100",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,06:00,13:36,DL772,DL,economy,0,web_award,delta,103100,,12.0,1249.2,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,23.0,50.0,0.0,0.0,1322.2,"delta_web_observation, fare_brand:delta_comfort, early departure",276,4h 36m,"103,100 miles + $12","DL772
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+103,100
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,06:00,13:36,DL772,DL,first,0,web_award,delta,249600,,12.0,3007.2,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,23.0,50.0,0.0,0.0,3080.2,"delta_web_observation, fare_brand:delta_first, early departure",276,4h 36m,"249,600 miles + $12","DL772
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+249,600
+miles
++
+$
+12
+Round Trip
+Not Offered
+Nonstop
+Free Wi-Fi for SkyMiles Members
+DL361",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,11:35,19:11,DL361,DL,economy,0,web_award,delta,98800,,12.0,1197.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,23.0,0.0,0.0,0.0,1220.6,"delta_web_observation, fare_brand:delta_main",276,4h 36m,"98,800 miles + $12","DL361
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+98,800
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+115,000",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,11:35,19:11,DL361,DL,economy,0,web_award,delta,115000,,12.0,1392.0,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,23.0,0.0,0.0,0.0,1415.0,"delta_web_observation, fare_brand:delta_comfort",276,4h 36m,"115,000 miles + $12","DL361
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+115,000
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,11:35,19:11,DL361,DL,first,0,web_award,delta,199800,,12.0,2409.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,23.0,0.0,0.0,0.0,2432.6,"delta_web_observation, fare_brand:delta_first",276,4h 36m,"199,800 miles + $12","DL361
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+199,800
+miles
++
+$
+12
+Round Trip
+Not Offered
+Lowest Fare
+Nonstop
+Free Wi-Fi for SkyMiles Members",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,14:25,22:00,DL1927,DL,economy,0,web_award,delta,86800,,12.0,1053.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,22.92,0.0,0.0,0.0,1076.52,"delta_web_observation, fare_brand:delta_main",275,4h 35m,"86,800 miles + $12","DL1927
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+86,800
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+103,100",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,14:25,22:00,DL1927,DL,economy,0,web_award,delta,103100,,12.0,1249.2,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,22.92,0.0,0.0,0.0,1272.12,"delta_web_observation, fare_brand:delta_comfort",275,4h 35m,"103,100 miles + $12","DL1927
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+103,100
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,14:25,22:00,DL1927,DL,first,0,web_award,delta,148100,,12.0,1789.2,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,22.92,0.0,0.0,0.0,1812.12,"delta_web_observation, fare_brand:delta_first",275,4h 35m,"148,100 miles + $12","DL1927
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+148,100
+miles
++
+$
+12
+Round Trip
+4 left at this price
+Not Offered
+Lowest Fare
+Nonstop",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,22:45,06:20,DL335,DL,economy,0,web_award,delta,86800,,12.0,1053.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,22.92,75.0,0.0,0.0,1151.52,"delta_web_observation, fare_brand:delta_main, late departure",275,4h 35m,"86,800 miles + $12","DL335
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+86,800
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+103,100",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,22:45,06:20,DL335,DL,economy,0,web_award,delta,103100,,12.0,1249.2,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,22.92,75.0,0.0,0.0,1347.12,"delta_web_observation, fare_brand:delta_comfort, late departure",275,4h 35m,"103,100 miles + $12","DL335
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+103,100
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,22:45,06:20,DL335,DL,first,0,web_award,delta,148100,,12.0,1789.2,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,22.92,75.0,0.0,0.0,1887.12,"delta_web_observation, fare_brand:delta_first, late departure",275,4h 35m,"148,100 miles + $12","DL335
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+148,100
+miles
++
+$
+12
+Round Trip
+4 left at this price
+Not Offered
+Free Wi-Fi for SkyMiles Members
+DL2272",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,13:00,23:06,DL708,DL,economy,,web_award,delta,95900,,12.0,1162.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,35.5,50.0,0.0,0.0,1248.3,"delta_web_observation, fare_brand:delta_main, missing_stops, late arrival",426,7h 6m,"95,900 miles + $12","DL708
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+95,900
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,13:00,23:06,DL708,DL,economy,,web_award,delta,112200,,12.0,1358.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,35.5,50.0,0.0,0.0,1443.9,"delta_web_observation, fare_brand:delta_comfort, missing_stops, late arrival",426,7h 6m,"112,200 miles + $12","DL708
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,13:00,23:06,DL708,DL,first,,web_award,delta,157200,,12.0,1898.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,35.5,50.0,0.0,0.0,1983.9,"delta_web_observation, fare_brand:delta_first, missing_stops, late arrival",426,7h 6m,"157,200 miles + $12","DL708
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+157,200
+miles
++
+$
+12
+Round Trip
+3 left at this price
+Not Offered
+Free Wi-Fi for SkyMiles Members
+DL920",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,10:00,19:10,DL2244,DL,economy,,web_award,delta,97800,,12.0,1185.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,30.83,0.0,0.0,0.0,1216.43,"delta_web_observation, fare_brand:delta_main, missing_stops",370,6h 10m,"97,800 miles + $12","DL2244
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+97,800
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+114,100",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,10:00,19:10,DL2244,DL,economy,,web_award,delta,114100,,12.0,1381.2,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,30.83,0.0,0.0,0.0,1412.03,"delta_web_observation, fare_brand:delta_comfort, missing_stops",370,6h 10m,"114,100 miles + $12","DL2244
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+114,100
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,10:00,19:10,DL2244,DL,first,,web_award,delta,176300,,12.0,2127.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,30.83,0.0,0.0,0.0,2158.43,"delta_web_observation, fare_brand:delta_first, missing_stops",370,6h 10m,"176,300 miles + $12","DL2244
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+176,300
+miles
++
+$
+12
+Round Trip
+3 left at this price
+Not Offered
+Free Wi-Fi for SkyMiles Members
+DL1412",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,13:05,23:18,DL533,DL,economy,,web_award,delta,95900,,12.0,1162.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,36.08,50.0,0.0,0.0,1248.88,"delta_web_observation, fare_brand:delta_main, missing_stops, late arrival",433,7h 13m,"95,900 miles + $12","DL533
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+95,900
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,13:05,23:18,DL533,DL,economy,,web_award,delta,112200,,12.0,1358.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,36.08,50.0,0.0,0.0,1444.48,"delta_web_observation, fare_brand:delta_comfort, missing_stops, late arrival",433,7h 13m,"112,200 miles + $12","DL533
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,13:05,23:18,DL533,DL,first,,web_award,delta,157200,,12.0,1898.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,36.08,50.0,0.0,0.0,1984.48,"delta_web_observation, fare_brand:delta_first, missing_stops, late arrival",433,7h 13m,"157,200 miles + $12","DL533
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+157,200
+miles
++
+$
+12
+Round Trip
+Not Offered
+Free Wi-Fi for SkyMiles Members
+DL1421
+,",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,08:55,19:14,DL802,DL,economy,,web_award,delta,95900,,12.0,1162.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,36.58,0.0,0.0,0.0,1199.38,"delta_web_observation, fare_brand:delta_main, missing_stops",439,7h 19m,"95,900 miles + $12","DL802
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+95,900
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,08:55,19:14,DL802,DL,economy,,web_award,delta,112200,,12.0,1358.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,36.58,0.0,0.0,0.0,1394.98,"delta_web_observation, fare_brand:delta_comfort, missing_stops",439,7h 19m,"112,200 miles + $12","DL802
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,08:55,19:14,DL802,DL,first,,web_award,delta,176300,,12.0,2127.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,36.58,0.0,0.0,0.0,2164.18,"delta_web_observation, fare_brand:delta_first, missing_stops",439,7h 19m,"176,300 miles + $12","DL802
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+176,300
+miles
++
+$
+12
+Round Trip
+2 left at this price
+Not Offered
+Free Wi-Fi for SkyMiles Members
+DL902",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,13:35,00:03,DL2255,DL,economy,,web_award,delta,95900,,12.0,1162.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,37.33,100.0,0.0,0.0,1300.13,"delta_web_observation, fare_brand:delta_main, missing_stops, after-midnight arrival",448,7h 28m,"95,900 miles + $12","DL2255
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+95,900
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+116,900",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,13:35,00:03,DL2255,DL,economy,,web_award,delta,116900,,12.0,1414.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,37.33,100.0,0.0,0.0,1552.13,"delta_web_observation, fare_brand:delta_comfort, missing_stops, after-midnight arrival",448,7h 28m,"116,900 miles + $12","DL2255
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+116,900
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,13:35,00:03,DL2255,DL,first,,web_award,delta,199800,,12.0,2409.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,37.33,100.0,0.0,0.0,2546.93,"delta_web_observation, fare_brand:delta_first, missing_stops, after-midnight arrival",448,7h 28m,"199,800 miles + $12","DL2255
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+199,800
+miles
++
+$
+12
+Round Trip
+3 left at this price
+Not Offered
+Free Wi-Fi for SkyMiles Members
+DL2078",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,11:40,20:42,DL1476,DL,economy,,web_award,delta,98800,,12.0,1197.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,30.17,0.0,0.0,0.0,1227.77,"delta_web_observation, fare_brand:delta_main, missing_stops",362,6h 2m,"98,800 miles + $12","DL1476
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+98,800
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+119,800",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,11:40,20:42,DL1476,DL,economy,,web_award,delta,119800,,12.0,1449.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,30.17,0.0,0.0,0.0,1479.77,"delta_web_observation, fare_brand:delta_comfort, missing_stops",362,6h 2m,"119,800 miles + $12","DL1476
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+119,800
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,11:40,20:42,DL1476,DL,first,,web_award,delta,199800,,12.0,2409.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,30.17,0.0,0.0,0.0,2439.77,"delta_web_observation, fare_brand:delta_first, missing_stops",362,6h 2m,"199,800 miles + $12","DL1476
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+199,800
+miles
++
+$
+12
+Round Trip
+Not Offered
+Free Wi-Fi for SkyMiles Members
+DL1331
+,",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,06:00,15:14,DL2236,DL,economy,,web_award,delta,98800,,12.0,1197.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,31.17,50.0,0.0,0.0,1278.77,"delta_web_observation, fare_brand:delta_main, missing_stops, early departure",374,6h 14m,"98,800 miles + $12","DL2236
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+98,800
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+119,800",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,06:00,15:14,DL2236,DL,economy,,web_award,delta,119800,,12.0,1449.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,31.17,50.0,0.0,0.0,1530.77,"delta_web_observation, fare_brand:delta_comfort, missing_stops, early departure",374,6h 14m,"119,800 miles + $12","DL2236
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+119,800
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,06:00,15:14,DL2236,DL,first,,web_award,delta,176300,,12.0,2127.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,31.17,50.0,0.0,0.0,2208.77,"delta_web_observation, fare_brand:delta_first, missing_stops, early departure",374,6h 14m,"176,300 miles + $12","DL2236
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+176,300
+miles
++
+$
+12
+Round Trip
+3 left at this price
+Not Offered
+Free Wi-Fi for SkyMiles Members
+DL2178",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,06:15,15:30,DL1519,DL,economy,,web_award,delta,98800,,12.0,1197.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,31.25,50.0,0.0,0.0,1278.85,"delta_web_observation, fare_brand:delta_main, missing_stops, early departure",375,6h 15m,"98,800 miles + $12","DL1519
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+98,800
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+115,000",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,06:15,15:30,DL1519,DL,economy,,web_award,delta,115000,,12.0,1392.0,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,31.25,50.0,0.0,0.0,1473.25,"delta_web_observation, fare_brand:delta_comfort, missing_stops, early departure",375,6h 15m,"115,000 miles + $12","DL1519
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+115,000
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,06:15,15:30,DL1519,DL,first,,web_award,delta,199800,,12.0,2409.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,31.25,50.0,0.0,0.0,2490.85,"delta_web_observation, fare_brand:delta_first, missing_stops, early departure",375,6h 15m,"199,800 miles + $12","DL1519
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+199,800
+miles
++
+$
+12
+Round Trip
+Not Offered
+Free Wi-Fi for SkyMiles Members
+DL381
+,",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,09:53,20:38,DL2736,DL,economy,,web_award,delta,95900,,12.0,1162.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,38.75,0.0,0.0,0.0,1201.55,"delta_web_observation, fare_brand:delta_main, missing_stops",465,7h 45m,"95,900 miles + $12","DL2736
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+95,900
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,09:53,20:38,DL2736,DL,economy,,web_award,delta,112200,,12.0,1358.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,38.75,0.0,0.0,0.0,1397.15,"delta_web_observation, fare_brand:delta_comfort, missing_stops",465,7h 45m,"112,200 miles + $12","DL2736
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,09:53,20:38,DL2736,DL,first,,web_award,delta,249600,,12.0,3007.2,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,38.75,0.0,0.0,0.0,3045.95,"delta_web_observation, fare_brand:delta_first, missing_stops",465,7h 45m,"249,600 miles + $12","DL2736
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+249,600
+miles
++
+$
+12
+Round Trip
+Not Offered
+Free Wi-Fi for SkyMiles Members
+DL2078
+,",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,11:40,22:33,DL1484,DL,economy,,web_award,delta,95900,,12.0,1162.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,39.42,0.0,0.0,0.0,1202.22,"delta_web_observation, fare_brand:delta_main, missing_stops",473,7h 53m,"95,900 miles + $12","DL1484
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+95,900
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+116,900",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,11:40,22:33,DL1484,DL,economy,,web_award,delta,116900,,12.0,1414.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,39.42,0.0,0.0,0.0,1454.22,"delta_web_observation, fare_brand:delta_comfort, missing_stops",473,7h 53m,"116,900 miles + $12","DL1484
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+116,900
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,11:40,22:33,DL1484,DL,first,,web_award,delta,176300,,12.0,2127.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,39.42,0.0,0.0,0.0,2167.02,"delta_web_observation, fare_brand:delta_first, missing_stops",473,7h 53m,"176,300 miles + $12","DL1484
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+176,300
+miles
++
+$
+12
+Round Trip
+1 left at this price
+Not Offered
+DL3991
+1",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,20:05,06:26,DL810,DL,economy,,web_award,delta,95900,,12.0,1162.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,36.75,0.0,0.0,0.0,1199.55,"delta_web_observation, fare_brand:delta_main, missing_stops",441,7h 21m,"95,900 miles + $12","DL810
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+95,900
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,20:05,06:26,DL810,DL,economy,,web_award,delta,112200,,12.0,1358.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,36.75,0.0,0.0,0.0,1395.15,"delta_web_observation, fare_brand:delta_comfort, missing_stops",441,7h 21m,"112,200 miles + $12","DL810
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,20:05,06:26,DL810,DL,first,,web_award,delta,176300,,12.0,2127.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,36.75,0.0,0.0,0.0,2164.35,"delta_web_observation, fare_brand:delta_first, missing_stops",441,7h 21m,"176,300 miles + $12","DL810
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+176,300
+miles
++
+$
+12
+Round Trip
+Not Offered
+Free Wi-Fi for SkyMiles Members
+DL1715
+,",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,11:05,23:06,DL708,DL,economy,,web_award,delta,95900,,12.0,1162.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,45.08,50.0,0.0,0.0,1257.88,"delta_web_observation, fare_brand:delta_main, missing_stops, late arrival",541,9h 1m,"95,900 miles + $12","DL708
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+95,900
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,11:05,23:06,DL708,DL,economy,,web_award,delta,112200,,12.0,1358.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,45.08,50.0,0.0,0.0,1453.48,"delta_web_observation, fare_brand:delta_comfort, missing_stops, late arrival",541,9h 1m,"112,200 miles + $12","DL708
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,11:05,23:06,DL708,DL,first,,web_award,delta,157200,,12.0,1898.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,45.08,50.0,0.0,0.0,1993.48,"delta_web_observation, fare_brand:delta_first, missing_stops, late arrival",541,9h 1m,"157,200 miles + $12","DL708
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+157,200
+miles
++
+$
+12
+Round Trip
+3 left at this price
+Not Offered
+Free Wi-Fi for SkyMiles Members
+DL1598",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,07:00,19:14,DL802,DL,economy,,web_award,delta,95900,,12.0,1162.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,46.17,0.0,0.0,0.0,1208.97,"delta_web_observation, fare_brand:delta_main, missing_stops",554,9h 14m,"95,900 miles + $12","DL802
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+95,900
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,07:00,19:14,DL802,DL,economy,,web_award,delta,112200,,12.0,1358.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,46.17,0.0,0.0,0.0,1404.57,"delta_web_observation, fare_brand:delta_comfort, missing_stops",554,9h 14m,"112,200 miles + $12","DL802
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,07:00,19:14,DL802,DL,first,,web_award,delta,199800,,12.0,2409.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,46.17,0.0,0.0,0.0,2455.77,"delta_web_observation, fare_brand:delta_first, missing_stops",554,9h 14m,"199,800 miles + $12","DL802
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+199,800
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Not Offered
+Free Wi-Fi for SkyMiles Members
+DL2789",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,00:40,11:39,DL1433,DL,economy,,web_award,delta,95900,,12.0,1162.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,39.92,100.0,0.0,0.0,1302.72,"delta_web_observation, fare_brand:delta_main, missing_stops, very early departure",479,7h 59m,"95,900 miles + $12","DL1433
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+95,900
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,00:40,11:39,DL1433,DL,economy,,web_award,delta,112200,,12.0,1358.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,39.92,100.0,0.0,0.0,1498.32,"delta_web_observation, fare_brand:delta_comfort, missing_stops, very early departure",479,7h 59m,"112,200 miles + $12","DL1433
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,00:40,11:39,DL1433,DL,first,,web_award,delta,157200,,12.0,1898.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,39.92,100.0,0.0,0.0,2038.32,"delta_web_observation, fare_brand:delta_first, missing_stops, very early departure",479,7h 59m,"157,200 miles + $12","DL1433
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+157,200
+miles
++
+$
+12
+Round Trip
+2 left at this price
+Not Offered
+Free Wi-Fi for SkyMiles Members
+DL1559",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,18:50,06:00,DL407,DL,economy,,web_award,delta,95900,,12.0,1162.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,40.83,0.0,0.0,0.0,1203.63,"delta_web_observation, fare_brand:delta_main, missing_stops",490,8h 10m,"95,900 miles + $12","DL407
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+95,900
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+116,900",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,18:50,06:00,DL407,DL,economy,,web_award,delta,116900,,12.0,1414.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,40.83,0.0,0.0,0.0,1455.63,"delta_web_observation, fare_brand:delta_comfort, missing_stops",490,8h 10m,"116,900 miles + $12","DL407
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+116,900
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,18:50,06:00,DL407,DL,first,,web_award,delta,199800,,12.0,2409.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,40.83,0.0,0.0,0.0,2450.43,"delta_web_observation, fare_brand:delta_first, missing_stops",490,8h 10m,"199,800 miles + $12","DL407
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+199,800
+miles
++
+$
+12
+Round Trip
+Not Offered
+Free Wi-Fi for SkyMiles Members
+DL3034
+,",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,10:31,23:18,DL533,DL,economy,,web_award,delta,95900,,12.0,1162.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,48.92,50.0,0.0,0.0,1261.72,"delta_web_observation, fare_brand:delta_main, missing_stops, late arrival",587,9h 47m,"95,900 miles + $12","DL533
+Details
+Seats
+Delta Main Classic
+From
+Actual Fare
+95,900
+miles
++
+$
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,10:31,23:18,DL533,DL,economy,,web_award,delta,112200,,12.0,1358.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,48.92,50.0,0.0,0.0,1457.32,"delta_web_observation, fare_brand:delta_comfort, missing_stops, late arrival",587,9h 47m,"112,200 miles + $12","DL533
+12
+Round Trip
+Delta Comfort Classic
+From
+Actual Fare
+112,200
+miles
++
+$
+12
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z
+SFO,DTW,2026-11-13,round-trip,DTW,SFO,2026-11-29,10:31,23:18,DL533,DL,first,,web_award,delta,157200,,12.0,1898.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png,0.0,48.92,50.0,0.0,0.0,1997.32,"delta_web_observation, fare_brand:delta_first, missing_stops, late arrival",587,9h 47m,"157,200 miles + $12","DL533
+Round Trip
+5 left at this price
+Delta First Classic
+From
+Actual Fare
+157,200
+miles
++
+$
+12
+Round Trip
+3 left at this price
+Not Offered
+See More Results
+This link opens another site in a new window that may not follow the same accessibility policies as Delta Air Lines.",observed,"Skip to Main Content
+SFO - DTW
+Round Trip
+Nov 13 - 29
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+Outbound
+SFO
+DTW
+Fri, Nov 13, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Extra: Maximum Flex",2026-06-12T06:37:47.371Z

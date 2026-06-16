@@ -24011,7 +24011,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-11",
+          "fx_source": "cache:2026-06-11",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_fca_2026-09-04_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_fca_2026-09-04_best_flights.json",
@@ -24033,7 +24033,7 @@
         "summary": {
           "best_count": 5,
           "full_count": 7,
-          "fx_source": "live:2026-06-11",
+          "fx_source": "cache:2026-06-11",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_fca_2026-09-05_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_fca_2026-09-05_best_flights.json",
@@ -24055,7 +24055,7 @@
         "summary": {
           "best_count": 40,
           "full_count": 74,
-          "fx_source": "live:2026-06-11",
+          "fx_source": "cache:2026-06-11",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_mso_2026-09-04_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_mso_2026-09-04_best_flights.json",
@@ -24077,7 +24077,7 @@
         "summary": {
           "best_count": 40,
           "full_count": 76,
-          "fx_source": "live:2026-06-11",
+          "fx_source": "cache:2026-06-11",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_mso_2026-09-05_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_mso_2026-09-05_best_flights.json",
@@ -24099,7 +24099,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-11",
+          "fx_source": "cache:2026-06-11",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_fca_2026-09-04_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_fca_2026-09-04_best_flights.json",
@@ -24121,7 +24121,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-11",
+          "fx_source": "cache:2026-06-11",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_fca_2026-09-05_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_fca_2026-09-05_best_flights.json",
@@ -24143,7 +24143,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-11",
+          "fx_source": "cache:2026-06-11",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_mso_2026-09-04_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_mso_2026-09-04_best_flights.json",
@@ -24165,7 +24165,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-11",
+          "fx_source": "cache:2026-06-11",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_mso_2026-09-05_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_mso_2026-09-05_best_flights.json",
@@ -24187,7 +24187,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-11",
+          "fx_source": "cache:2026-06-11",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/fca_sfo_2026-09-07_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/fca_sfo_2026-09-07_best_flights.json",
@@ -24209,7 +24209,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-11",
+          "fx_source": "cache:2026-06-11",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/fca_sjc_2026-09-07_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/fca_sjc_2026-09-07_best_flights.json",
@@ -24231,7 +24231,7 @@
         "summary": {
           "best_count": 40,
           "full_count": 70,
-          "fx_source": "live:2026-06-11",
+          "fx_source": "cache:2026-06-11",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/mso_sfo_2026-09-07_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/mso_sfo_2026-09-07_best_flights.json",
@@ -24253,7 +24253,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-11",
+          "fx_source": "cache:2026-06-11",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/mso_sjc_2026-09-07_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/mso_sjc_2026-09-07_best_flights.json",

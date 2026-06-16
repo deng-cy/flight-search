@@ -1,0 +1,30 @@
+{
+  "body_text": "Book a Flight | Southwest Airlines\nSkip to content\nLog in\nCreate account\nEspa\u00f1ol\nFLIGHT | HOTEL | CAR | VACATIONS | CRUISES\nSPECIAL OFFERS\nRAPID REWARDS\u00ae\nBook a Flight\nNow accepting reservations through March 10, 2027.\n*Required fields\nTrip type\nOne-way\nRecent searches\nSelect search\nDepart*\nSan Francisco, CA - SFO\nArrive*\nLas Vegas, NV - LAS\nDepart date*\nSat, Jun 20, 2026\nPassengers*\nPromo code\nShow fares in\n$\nPoints\n$ + Points\nSearch with low fare calendar\nSearch flights\nBaggage & optional fees\nSUMMER TRAVEL INCLUDED\n2X points on flights\n\nEarn double Rapid Rewards\u00ae points when you register and book by 6/15/26 and fly by 11/18/26.*\n\n*Terms apply.\n\nRegister now\nTravel Tips\nWe\u2019ll treat your bags like our own\n\nYou can have one carry-on and one personal item. See if your airport features Express Bag Drop.\n\nMeet your new travel buddy\n\nManage flights from your phone or tablet with our apps. You can change or cancel reservations, view your flight's status, access your mobile boarding pass, and more.\n\nCheck in like a pro\n\nYou can check in online and print your boarding pass up to 24 hours in advance, or stop by our convenient airport kiosks.\n\nSpeed through security\n\nPriority Lanes and Express Lanes, (where available), are designed to speed our Choice Extra and Choice Preferred Customers, as well as A-List and A-List Preferred Members, through check-in and security lines.\n\nJoin Rapid Rewards\u00ae. Get rewarded rapidly.\nRedeem points for domestic and international flights\nAlso redeem points on hotels, cars & more\nNo blackout dates & points don\u2019t expire\nFree inflight WiFi* for Rapid Rewards\u00ae Members thanks to\nT-Mobile\nJoin for free\n\n*Where available. Available only on WiFi-enabled designated aircraft.\nAll Rapid Rewards\u00ae rules and regulations apply and can be found at Southwest.com/rrterms.\n\nFind the fare that works for you\n\nAt Southwest\u00ae, we offer four fares to get you more out of every flight: Choice Extra, Choice Preferred, Choice, and Basic. Find the fare that works for you.\n\n\u00a0\n\nSee all my benefits\nI have an Unaccompanied Minor\n\nIt's never too early for your first flight, but children ages 5-11 traveling without a passenger age 12 or older are considered Unaccompanied Minors and require a different protocol.\n\n\u00a0\n\nFind out more\nI\u2019m flying with an infant or child\n\nWhen flying with little ones, it\u2019s always best to be prepared. Get documentation, safety requirements, and information on what you need to know before and during your flight.\n\n\u00a0\n\nGet ready\nSpecial accommodations\nView Help Center\nI have a disability\n\nWe're here to assist you, whether it's help with a wheelchair, an assistance animal, or any health concerns you may have. Just click \"Add Disability Options\" when you book.\n\nLearn more\n\nI'm traveling with a pet\nI need extra space\nI'm flying with a group\nSave on your entire vacay with Getaways by Southwest\u2122.\nBook now\nNeed help?\nHelp Center\nSubscribe\nWanna receive email from us?\nSign up to get the latest deals.\nConnect with us\nMobile Apps\nAbout Southwest\nWhat's New\nPress Room\nInvestor Relations\nCorporate Citizenship\nSupplier Information\nCareers\nCode of Conduct\nFlying Southwest\nVisit Southwest.com\nFly with Southwest\nRapid Rewards\u00ae\nInternational Travel\nAirport Information\nNew Destinations\nExplore Destinations\nPopular Routes\nTarmac Delay Plan\nContract of Carriage\nCustomer Service Plan\nFlight Schedules\nCarbon Offset Program\nSouthwest Products\nFare Types and Benefits\nChange or Upgrade Seats\nUpgrade My Fare\nPriority Boarding\nSouthwest\u00ae gift card\nHotels\nGetaways by Southwest\u2122\nWiFi & Inflight Entertainment\nDrinks & Snacks\nSouthwest Business\nSouthwest Cargo\nGroup Travel\nCharter Services\nSouthwest\u00ae The Store\nRapid Rewards\u00ae Credit Card\nBook a Rental Car\nSouthwest Cruises\nHelp Center\nSitemap\nCustomer Commitments\nBaggage Policies\nDisability Related Accommodations\nMilitary & Government Travel\nExtra Seat Policy\nTraveling with Infants\nPet Policy\nTravel Funds, Refunds, & Reimbursements\nComplete account setup\nLost and Found\nGetaways by Southwest\u2122 FAQ\nIndicates external site which may or may not meet accessibility guidelines\n\u00a9 2026 Southwest Airlines Co. All Rights Reserved. Use of the Southwest websites and our Company Information constitutes acceptance of our Terms and Conditions. Privacy Policy Trademarks Do Not Sell/Share My Personal Information \u00a0\na11y-message-header--new-window\nFeedback",
+  "created_at": "2026-06-15T06:08:26.892840+00:00",
+  "evidence": {
+    "html": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/southwest/southwest_sfo_las_2026-06-20_economy_one_way/southwest_sfo_las_2026-06-20_economy_one_way.html",
+    "screenshot": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/southwest/southwest_sfo_las_2026-06-20_economy_one_way/southwest_sfo_las_2026-06-20_economy_one_way.png"
+  },
+  "network_errors": [
+    {
+      "status": 403,
+      "url": "https://www.southwest.com/api/air-booking/v1/air-booking/page/air/booking/shopping"
+    }
+  ],
+  "provider": "southwest",
+  "request": {
+    "adults": 1,
+    "cabin": "economy",
+    "departure_date": "2026-06-20",
+    "destination": "LAS",
+    "origin": "SFO",
+    "return_date": null,
+    "return_destination": null,
+    "return_origin": null,
+    "source_name": "southwest",
+    "trip_type": "one-way"
+  },
+  "status": "provider_error",
+  "status_message": "Southwest network request returned HTTP 403: https://www.southwest.com/api/air-booking/v1/air-booking/page/air/booking/shopping",
+  "url": "https://www.southwest.com/air/booking/?adultPassengersCount=1&adultsCount=1&departureDate=2026-06-20&departureTimeOfDay=ALL_DAY&destinationAirportCode=LAS&fareType=POINTS&originationAirportCode=SFO&passengerType=ADULT&promoCode=&returnDate=&returnTimeOfDay=ALL_DAY&tripType=oneway&validate=true"
+}

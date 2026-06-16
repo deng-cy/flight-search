@@ -23,6 +23,7 @@ from cash_search.pipeline import DEFAULT_PREFERENCES_PATH, load_preferences, run
 from find_best_flights import run_pipeline as run_award_pipeline
 from flight_search_common.formatting import money, normalize_airport, points, slug
 from flight_search_common.io import load_json, write_json
+from flight_search_common.web_awards import load_web_award_rows, load_web_round_trip_award_rows
 
 
 DEFAULT_BASE_URL = "http://127.0.0.1:8001"
@@ -44,6 +45,7 @@ AWARD_PROGRAM_CODES = {
     "azul": "AD",
     "delta": "DL",
     "flyingblue": "AF",
+    "southwest": "WN",
     "united": "UA",
     "velocity": "VA",
     "virginatlantic": "VS",
@@ -1015,6 +1017,81 @@ def award_leg_detail(row: dict[str, Any], leg: dict[str, Any]) -> dict[str, Any]
     }
 
 
+def award_leg_report_row(row: dict[str, Any], leg: dict[str, Any]) -> dict[str, Any]:
+    detail = award_leg_detail(row, leg)
+    return {
+        "kind": f"{leg['direction']} award",
+        "direction": leg["direction"],
+        "route": f"{leg['origin']} -> {leg['destination']}",
+        "dates": leg["date"],
+        "origin": leg["origin"],
+        "destination": leg["destination"],
+        "outbound_date": leg["date"] if leg["direction"] == "outbound" else "",
+        "return_origin": leg["origin"] if leg["direction"] == "return" else "",
+        "return_destination": leg["destination"] if leg["direction"] == "return" else "",
+        "return_date": leg["date"] if leg["direction"] == "return" else "",
+        "same_airports": True,
+        "trip_type": "award one-way",
+        "price": award_price(row),
+        "effective": compact_money(row.get("effective_usd"), "USD"),
+        "effective_num": numeric(row.get("effective_usd")),
+        "cpp": award_cpp_label(row),
+        "cpp_num": numeric(row.get("cents_per_point"), 0),
+        "award_points": numeric(row.get("mileage_cost"), 0),
+        "award_components": [award_component(row)],
+        "cash_component_usd": award_cash_component_usd(row),
+        "score": numeric(row.get("score")),
+        "score_label": "" if row.get("score") in ("", None) else f"{float(row['score']):.2f}",
+        "stop_penalty_base": component_value(row.get("stop_penalty_usd")),
+        "duration_penalty_base": component_value(row.get("duration_penalty_usd")),
+        "time_penalty_base": component_value(row.get("time_penalty_usd")),
+        "next_day_penalty_base": component_value(row.get("next_day_penalty_usd")),
+        "seat_credit_base": component_value(row.get("seat_credit_usd")),
+        "stops": row.get("stops", ""),
+        "stops_num": numeric(row.get("stops"), 0),
+        "duration": duration_label(row.get("duration_minutes")),
+        "duration_minutes": numeric(row.get("duration_minutes"), 0),
+        "depart": row.get("depart_time", ""),
+        "arrive": row.get("arrive_time", ""),
+        "outbound_depart": row.get("depart_time", "") if leg["direction"] == "outbound" else "",
+        "outbound_arrive": row.get("arrive_time", "") if leg["direction"] == "outbound" else "",
+        "return_depart": row.get("depart_time", "") if leg["direction"] == "return" else "",
+        "return_arrive": row.get("arrive_time", "") if leg["direction"] == "return" else "",
+        "provider": row.get("program", row.get("source", "")),
+        "flight": row.get("flight_numbers", ""),
+        "notes": short_notes(row.get("flags")),
+        "outbound_detail": (
+            f"{leg['origin']} -> {leg['destination']} {leg['date']}: "
+            f"{row.get('depart_time', '')} -> {row.get('arrive_time', '')}, "
+            f"{row.get('flight_numbers', '') or row.get('carriers', '')}, "
+            f"{row.get('stops', '')} stop(s), {duration_label(row.get('duration_minutes'))}"
+        ),
+        "return_detail": "",
+        "outbound_cell": (
+            f"{leg['origin']} -> {leg['destination']}\n{leg['date']}\n"
+            f"{row.get('depart_time', '')} -> {row.get('arrive_time', '')}\n"
+            f"{row.get('flight_numbers', '') or row.get('carriers', '')}, "
+            f"{row.get('stops', '')} stop(s), {duration_label(row.get('duration_minutes'))}"
+        )
+        if leg["direction"] == "outbound"
+        else "",
+        "return_cell": (
+            f"{leg['origin']} -> {leg['destination']}\n{leg['date']}\n"
+            f"{row.get('depart_time', '')} -> {row.get('arrive_time', '')}\n"
+            f"{row.get('flight_numbers', '') or row.get('carriers', '')}, "
+            f"{row.get('stops', '')} stop(s), {duration_label(row.get('duration_minutes'))}"
+        )
+        if leg["direction"] == "return"
+        else "",
+        "leg_detail": detail,
+        "outbound_leg_detail": detail if leg["direction"] == "outbound" else {},
+        "return_leg_detail": detail if leg["direction"] == "return" else {},
+        "source_status": "ok",
+        "raw": row,
+        "leg": leg,
+    }
+
+
 def award_leg_rows(award_runs: list[dict[str, Any]], *, cabin: str, per_leg_limit: int) -> list[dict[str, Any]]:
     rows = []
     for run in award_runs:
@@ -1104,6 +1181,107 @@ def award_leg_rows(award_runs: list[dict[str, Any]], *, cabin: str, per_leg_limi
                 }
             )
     return sorted(rows, key=lambda row: (row["score"], row["effective_num"], row["duration_minutes"]))
+
+
+def award_web_leg_rows(legs: list[LegContext], *, cabin: str, per_leg_limit: int) -> list[dict[str, Any]]:
+    rows = []
+    for leg_context in legs:
+        leg = asdict(leg_context)
+        candidates = load_web_award_rows(
+            WORKSPACE_ROOT,
+            origin=leg_context.origin,
+            destination=leg_context.destination,
+            departure_date=leg_context.date,
+            cabin=cabin,
+        )[:per_leg_limit]
+        rows.extend(award_leg_report_row(row, leg) for row in candidates)
+    return sorted(deduplicate_rows(rows), key=lambda row: (row["score"], row["effective_num"], row["duration_minutes"]))
+
+
+def award_web_round_trip_rows(
+    itineraries: list[CashItineraryContext],
+    *,
+    cabin: str,
+    per_itinerary_limit: int,
+) -> list[dict[str, Any]]:
+    rows = []
+    for itinerary in itineraries:
+        candidates = load_web_round_trip_award_rows(
+            WORKSPACE_ROOT,
+            origin=itinerary.outbound.origin,
+            destination=itinerary.outbound.destination,
+            departure_date=itinerary.outbound.date,
+            return_origin=itinerary.return_leg.origin,
+            return_destination=itinerary.return_leg.destination,
+            return_date=itinerary.return_leg.date,
+            cabin=cabin,
+        )[:per_itinerary_limit]
+        rows.extend(award_web_round_trip_report_row(row, itinerary) for row in candidates)
+    return sorted(deduplicate_rows(rows), key=lambda row: (row["score"], row["effective_num"], row["duration_minutes"]))
+
+
+def award_web_round_trip_report_row(row: dict[str, Any], itinerary: CashItineraryContext) -> dict[str, Any]:
+    outbound_leg = asdict(itinerary.outbound)
+    return_leg = asdict(itinerary.return_leg)
+    outbound_detail = award_leg_detail(row, {**outbound_leg, "direction": "outbound"})
+    return_detail = blank_leg("return", itinerary.return_leg.origin, itinerary.return_leg.destination, itinerary.return_leg.date)
+    return_detail["program"] = row.get("program", row.get("source", ""))
+    return_detail["points"] = row.get("mileage_cost", "")
+    return_detail["taxes"] = compact_money(row.get("taxes_amount"), row.get("taxes_currency") or "USD")
+    open_jaw = choose_cash_trip_type(itinerary.outbound, itinerary.return_leg) == "multi-city"
+    notes = short_notes(row.get("flags"), open_jaw=open_jaw)
+    notes = better_note(notes, "Delta web round-trip observation")
+    notes = better_note(notes, "return selection not parsed")
+    notes = better_note(notes, "treat as observed until checkout-ready")
+    return {
+        "kind": "web award round-trip",
+        "route": itinerary.route,
+        "dates": itinerary.dates,
+        "origin": itinerary.outbound.origin,
+        "destination": itinerary.outbound.destination,
+        "outbound_date": itinerary.outbound.date,
+        "return_origin": itinerary.return_leg.origin,
+        "return_destination": itinerary.return_leg.destination,
+        "return_date": itinerary.return_leg.date,
+        "same_airports": not open_jaw,
+        "trip_type": "web award round-trip",
+        "price": award_price(row),
+        "effective": compact_money(row.get("effective_usd"), "USD"),
+        "effective_num": numeric(row.get("effective_usd")),
+        "cpp": award_cpp_label(row),
+        "cpp_num": numeric(row.get("cents_per_point"), 0),
+        "award_points": numeric(row.get("mileage_cost"), 0),
+        "award_components": [award_component(row)],
+        "cash_component_usd": award_cash_component_usd(row),
+        "score": numeric(row.get("score")),
+        "score_label": "" if row.get("score") in ("", None) else f"{float(row['score']):.2f}",
+        "stop_penalty_base": component_value(row.get("stop_penalty_usd")),
+        "duration_penalty_base": component_value(row.get("duration_penalty_usd")),
+        "time_penalty_base": component_value(row.get("time_penalty_usd")),
+        "next_day_penalty_base": component_value(row.get("next_day_penalty_usd")),
+        "seat_credit_base": component_value(row.get("seat_credit_usd")),
+        "stops": f"{row.get('stops', '')} + ?",
+        "stops_num": numeric(row.get("stops"), 0),
+        "duration": f"{duration_label(row.get('duration_minutes'))} + return not parsed",
+        "duration_minutes": numeric(row.get("duration_minutes"), 0),
+        "depart": str(row.get("depart_time", "")),
+        "arrive": str(row.get("arrive_time", "")),
+        "outbound_depart": str(row.get("depart_time", "")),
+        "outbound_arrive": str(row.get("arrive_time", "")),
+        "return_depart": "",
+        "return_arrive": "",
+        "provider": row.get("program", row.get("source", "")),
+        "notes": notes,
+        "outbound_detail": leg_detail_text(outbound_detail),
+        "return_detail": f"{itinerary.return_leg.label}: return selection not parsed",
+        "outbound_cell": leg_cell_text(outbound_detail),
+        "return_cell": f"{itinerary.return_leg.route}\n{itinerary.return_leg.date}\nReturn selection not parsed",
+        "outbound_leg_detail": outbound_detail,
+        "return_leg_detail": return_detail,
+        "source_status": "observation",
+        "evidence": row.get("evidence_path", ""),
+        "raw": row,
+    }
 
 
 def duration_label(value: Any) -> str:
@@ -1478,6 +1656,8 @@ def has_late_penalty(row: dict[str, Any]) -> bool:
 
 
 def has_complete_timing(row: dict[str, Any]) -> bool:
+    if row.get("kind") == "web award round-trip":
+        return False
     if row.get("kind") == "cash":
         return row.get("cash_detail_status") == "complete"
     if row.get("kind") in {"award pair", "cash + award", "cash one-ways"}:
@@ -1509,14 +1689,18 @@ def recommendation_cards(complete_rows: list[dict[str, Any]]) -> list[dict[str, 
     if not complete_rows:
         return []
 
+    recommendable_rows = [row for row in complete_rows if row.get("kind") != "web award round-trip"]
+    if not recommendable_rows:
+        return []
+
     cards = []
-    cash_rows = [row for row in complete_rows if row["kind"] == "cash"]
-    award_rows = [row for row in complete_rows if row["kind"] == "award pair"]
-    mixed_rows = [row for row in complete_rows if row["kind"] == "cash + award"]
-    cash_one_way_rows = [row for row in complete_rows if row["kind"] == "cash one-ways"]
+    cash_rows = [row for row in recommendable_rows if row["kind"] == "cash"]
+    award_rows = [row for row in recommendable_rows if row["kind"] == "award pair"]
+    mixed_rows = [row for row in recommendable_rows if row["kind"] == "cash + award"]
+    cash_one_way_rows = [row for row in recommendable_rows if row["kind"] == "cash one-ways"]
     paid_cash_rows = [*cash_rows, *cash_one_way_rows]
-    complete_timing_rows = [row for row in complete_rows if has_complete_timing(row)]
-    overall_pool = complete_timing_rows or complete_rows
+    complete_timing_rows = [row for row in recommendable_rows if has_complete_timing(row)]
+    overall_pool = complete_timing_rows or recommendable_rows
     best_overall = min(overall_pool, key=lambda row: (row["score"], row["effective_num"]))
     cards.append({"label": "Best overall", "row": best_overall})
 
@@ -4601,6 +4785,7 @@ def run_trip_search(
     offline_fx: bool,
     output_dir: Path,
     skip_awards: bool,
+    skip_award_web: bool,
     skip_cash: bool,
     award_per_leg_limit: int,
     award_pair_limit: int,
@@ -4669,7 +4854,28 @@ def run_trip_search(
             ),
         )
 
-    award_rows = award_leg_rows(award_runs, cabin=cabin, per_leg_limit=award_per_leg_limit)
+    award_web_rows = []
+    award_web_round_trip_plan_rows = []
+    if not skip_awards and not skip_award_web:
+        award_web_rows = award_web_leg_rows(
+            [*plan.outbound_legs, *plan.return_legs],
+            cabin=cabin,
+            per_leg_limit=award_per_leg_limit,
+        )
+        award_web_round_trip_plan_rows = award_web_round_trip_rows(
+            plan.cash_itineraries,
+            cabin=cabin,
+            per_itinerary_limit=award_per_leg_limit,
+        )
+    award_rows = sorted(
+        deduplicate_rows(
+            [
+                *award_leg_rows(award_runs, cabin=cabin, per_leg_limit=award_per_leg_limit),
+                *award_web_rows,
+            ]
+        ),
+        key=lambda row: (row["score"], row["effective_num"], row["duration_minutes"]),
+    )
     cash_one_way_rows = cash_one_way_leg_rows(cash_one_way_runs, per_leg_limit=cash_one_way_per_leg_limit)
     cash_plan_rows = top_cash_plan_rows(cash_runs)
     cash_one_way_plan_rows = cash_one_way_pair_rows(cash_one_way_rows, limit=cash_one_way_pair_limit)
@@ -4679,6 +4885,7 @@ def run_trip_search(
     )
     complete_rows = [
         *cash_plan_rows,
+        *award_web_round_trip_plan_rows,
         *cash_one_way_plan_rows,
         *mixed_cash_award_rows(cash_one_way_rows, award_rows, limit=mixed_plan_limit),
         *award_pair_rows(award_rows, limit=award_pair_limit),
@@ -4726,6 +4933,8 @@ def run_trip_search(
             "mixed_plan_rows": len([row for row in complete_rows if row["kind"] == "cash + award"]),
             "complete_plan_rows": len(complete_rows),
             "award_leg_rows": len(award_rows),
+            "award_web_leg_rows": len(award_web_rows),
+            "award_web_round_trip_rows": len(award_web_round_trip_plan_rows),
             "errors": len(errors),
             "award_workers": max(0, award_workers),
             "cash_workers": max(0, cash_workers),
@@ -4755,6 +4964,7 @@ def main() -> None:
     parser.add_argument("--refresh", action="store_true", help="Refresh cash and award provider data.")
     parser.add_argument("--offline-fx", action="store_true", help="Use cached FX snapshots for award tax conversion.")
     parser.add_argument("--skip-awards", action="store_true")
+    parser.add_argument("--skip-award-web", action="store_true", help="Do not include cached award_web observations.")
     parser.add_argument("--skip-cash", action="store_true")
     parser.add_argument("--award-per-leg-limit", type=int, default=3)
     parser.add_argument("--award-pair-limit", type=int, default=80)
@@ -4782,6 +4992,7 @@ def main() -> None:
         offline_fx=args.offline_fx,
         output_dir=Path(args.output_dir),
         skip_awards=args.skip_awards,
+        skip_award_web=args.skip_award_web,
         skip_cash=args.skip_cash,
         award_per_leg_limit=args.award_per_leg_limit,
         award_pair_limit=args.award_pair_limit,

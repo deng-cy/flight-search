@@ -4,7 +4,7 @@ This workspace contains a three-stage flight comparison pipeline:
 
 - `seat_aero/` captures and ranks award availability from the local Seats.aero wrapper.
 - `cash/` captures and normalizes paid fare observations.
-- `award_web/` is reserved for browser-confirmed award checks.
+- `award_web/` captures browser-observed award checks, starting with no-login Delta searches.
 
 Shared, cross-module helper code lives in `flight_search_common/`. Shared ranking preferences live in `config/search_preferences.yaml`. Keep provider-specific code and provider-owned data inside the module that owns it.
 
@@ -29,6 +29,7 @@ python scripts/build_price_summary.py --origin SFO --destination DTW --date 2026
 ```
 
 The combined report is written under `reports/`.
+It automatically includes matching cached one-way `award_web` rows when they exist; use `--no-award-web` to suppress them or `--award-web-json` to pass specific files.
 
 Run a multi-airport return-trip search with real two-leg cash pricing:
 
@@ -43,3 +44,4 @@ python scripts/run_trip_search.py \
 ```
 
 The master trip report is written under `reports/`. Cash recommendations use actual `round-trip` or `multi-city` provider searches; award recommendations are built from one-way outbound and return award legs. Cash rows show whether return timing was verified, outbound-only, or price-only.
+Cached one-way `award_web` observations are included as additional award legs unless `--skip-award-web` is passed. Cached round-trip web observations are shown as tentative web award rows when the return leg has not been parsed yet.

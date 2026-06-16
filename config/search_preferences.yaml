@@ -57,6 +57,12 @@ points:
       aliases:
         - Delta
         - DL
+    southwest:
+      label: Southwest Rapid Rewards
+      cents_per_point: 1.2
+      aliases:
+        - Southwest
+        - WN
     flyingblue:
       label: Air France/KLM Flying Blue
       cents_per_point: 1.1

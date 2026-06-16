@@ -1,0 +1,2161 @@
+origin,destination,departure_date,trip_type,return_origin,return_destination,return_date,depart_time,arrive_time,flight_numbers,carriers,cabin,stops,source_type,source_name,points,cash_price_usd,taxes_usd,effective_usd,bookable,remaining_seats,confidence,evidence_path,stop_penalty_usd,duration_penalty_usd,time_penalty_usd,next_day_penalty_usd,seat_credit_usd,score,flags,duration_minutes,duration_display,raw_price,raw_text,status,status_message,created_at
+SFO,DTW,2026-10-14,one-way,,,,06:00,13:36,DL772,DL,economy,0,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,23.0,50.0,0.0,0.0,393.4,"delta_web_observation, fare_brand:delta_main, early departure",276,4h 36m,"26,200 miles + $6","DL772
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,06:00,13:36,DL772,DL,economy,0,web_award,delta,39900,,6.0,484.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,23.0,50.0,0.0,0.0,557.8,"delta_web_observation, fare_brand:delta_comfort, early departure",276,4h 36m,"39,900 miles + $6","DL772
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+75,400
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,06:00,13:36,DL772,DL,first,0,web_award,delta,75400,,6.0,910.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,23.0,50.0,0.0,0.0,983.8,"delta_web_observation, fare_brand:delta_first, early departure",276,4h 36m,"75,400 miles + $6","DL772
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+75,400
+miles
++
+$
+6
+One-Way
+3 left at this price
+Not Offered
+Lowest Fare
+Nonstop",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,11:35,19:11,DL361,DL,economy,0,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,23.0,0.0,0.0,0.0,343.4,"delta_web_observation, fare_brand:delta_main",276,4h 36m,"26,200 miles + $6","DL361
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+44,400
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,11:35,19:11,DL361,DL,economy,0,web_award,delta,44400,,6.0,538.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,23.0,0.0,0.0,0.0,561.8,"delta_web_observation, fare_brand:delta_comfort",276,4h 36m,"44,400 miles + $6","DL361
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+44,400
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+97,800
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,11:35,19:11,DL361,DL,first,0,web_award,delta,97800,,6.0,1179.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,23.0,0.0,0.0,0.0,1202.6,"delta_web_observation, fare_brand:delta_first",276,4h 36m,"97,800 miles + $6","DL361
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+97,800
+miles
++
+$
+6
+One-Way
+Not Offered
+Lowest Fare
+Nonstop
+Free Wi-Fi for SkyMiles Members",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,14:25,22:00,DL940,DL,economy,0,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,22.92,0.0,0.0,0.0,343.32,"delta_web_observation, fare_brand:delta_main",275,4h 35m,"26,200 miles + $6","DL940
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,14:25,22:00,DL940,DL,economy,0,web_award,delta,39900,,6.0,484.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,22.92,0.0,0.0,0.0,507.72,"delta_web_observation, fare_brand:delta_comfort",275,4h 35m,"39,900 miles + $6","DL940
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+60,400
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,14:25,22:00,DL940,DL,first,0,web_award,delta,60400,,6.0,730.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,22.92,0.0,0.0,0.0,753.72,"delta_web_observation, fare_brand:delta_first",275,4h 35m,"60,400 miles + $6","DL940
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+60,400
+miles
++
+$
+6
+One-Way
+2 left at this price
+Not Offered
+Lowest Fare
+Nonstop",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,22:45,06:20,DL335,DL,economy,0,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,22.92,75.0,0.0,0.0,418.32,"delta_web_observation, fare_brand:delta_main, late departure",275,4h 35m,"26,200 miles + $6","DL335
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,22:45,06:20,DL335,DL,economy,0,web_award,delta,39900,,6.0,484.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,22.92,75.0,0.0,0.0,582.72,"delta_web_observation, fare_brand:delta_comfort, late departure",275,4h 35m,"39,900 miles + $6","DL335
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+75,400
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,22:45,06:20,DL335,DL,first,0,web_award,delta,75400,,6.0,910.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,22.92,75.0,0.0,0.0,1008.72,"delta_web_observation, fare_brand:delta_first, late departure",275,4h 35m,"75,400 miles + $6","DL335
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+75,400
+miles
++
+$
+6
+One-Way
+Not Offered
+Lowest Fare
+Free Wi-Fi for SkyMiles Members
+DL1598",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,07:00,17:06,DL494,DL,economy,,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,35.5,0.0,0.0,0.0,355.9,"delta_web_observation, fare_brand:delta_main, missing_stops",426,7h 6m,"26,200 miles + $6","DL494
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+44,400
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,07:00,17:06,DL494,DL,economy,,web_award,delta,44400,,6.0,538.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,35.5,0.0,0.0,0.0,574.3,"delta_web_observation, fare_brand:delta_comfort, missing_stops",426,7h 6m,"44,400 miles + $6","DL494
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+44,400
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+145,200
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,07:00,17:06,DL494,DL,first,,web_award,delta,145200,,6.0,1748.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,35.5,0.0,0.0,0.0,1783.9,"delta_web_observation, fare_brand:delta_first, missing_stops",426,7h 6m,"145,200 miles + $6","DL494
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+145,200
+miles
++
+$
+6
+One-Way
+3 left at this price
+Not Offered
+Lowest Fare
+Free Wi-Fi for SkyMiles Members",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,13:00,23:06,DL708,DL,economy,,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,35.5,50.0,0.0,0.0,405.9,"delta_web_observation, fare_brand:delta_main, missing_stops, late arrival",426,7h 6m,"26,200 miles + $6","DL708
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,13:00,23:06,DL708,DL,economy,,web_award,delta,39900,,6.0,484.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,35.5,50.0,0.0,0.0,570.3,"delta_web_observation, fare_brand:delta_comfort, missing_stops, late arrival",426,7h 6m,"39,900 miles + $6","DL708
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+145,200
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,13:00,23:06,DL708,DL,first,,web_award,delta,145200,,6.0,1748.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,35.5,50.0,0.0,0.0,1833.9,"delta_web_observation, fare_brand:delta_first, missing_stops, late arrival",426,7h 6m,"145,200 miles + $6","DL708
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+145,200
+miles
++
+$
+6
+One-Way
+Not Offered
+Lowest Fare
+Free Wi-Fi for SkyMiles Members
+DL1412",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,13:05,23:18,DL533,DL,economy,,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,36.08,50.0,0.0,0.0,406.48,"delta_web_observation, fare_brand:delta_main, missing_stops, late arrival",433,7h 13m,"26,200 miles + $6","DL533
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,13:05,23:18,DL533,DL,economy,,web_award,delta,39900,,6.0,484.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,36.08,50.0,0.0,0.0,570.88,"delta_web_observation, fare_brand:delta_comfort, missing_stops, late arrival",433,7h 13m,"39,900 miles + $6","DL533
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+60,400
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,13:05,23:18,DL533,DL,first,,web_award,delta,60400,,6.0,730.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,36.08,50.0,0.0,0.0,816.88,"delta_web_observation, fare_brand:delta_first, missing_stops, late arrival",433,7h 13m,"60,400 miles + $6","DL533
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+60,400
+miles
++
+$
+6
+One-Way
+Not Offered
+Lowest Fare
+Free Wi-Fi for SkyMiles Members
+DL1421",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,08:55,19:14,DL802,DL,economy,,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,36.58,0.0,0.0,0.0,356.98,"delta_web_observation, fare_brand:delta_main, missing_stops",439,7h 19m,"26,200 miles + $6","DL802
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,08:55,19:14,DL802,DL,economy,,web_award,delta,39900,,6.0,484.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,36.58,0.0,0.0,0.0,521.38,"delta_web_observation, fare_brand:delta_comfort, missing_stops",439,7h 19m,"39,900 miles + $6","DL802
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+145,200
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,08:55,19:14,DL802,DL,first,,web_award,delta,145200,,6.0,1748.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,36.58,0.0,0.0,0.0,1784.98,"delta_web_observation, fare_brand:delta_first, missing_stops",439,7h 19m,"145,200 miles + $6","DL802
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+145,200
+miles
++
+$
+6
+One-Way
+Not Offered
+Lowest Fare
+Free Wi-Fi for SkyMiles Members
+DL902",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,13:35,00:03,DL2255,DL,economy,,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,37.33,100.0,0.0,0.0,457.73,"delta_web_observation, fare_brand:delta_main, missing_stops, after-midnight arrival",448,7h 28m,"26,200 miles + $6","DL2255
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,13:35,00:03,DL2255,DL,economy,,web_award,delta,39900,,6.0,484.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,37.33,100.0,0.0,0.0,622.13,"delta_web_observation, fare_brand:delta_comfort, missing_stops, after-midnight arrival",448,7h 28m,"39,900 miles + $6","DL2255
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+60,400
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,13:35,00:03,DL2255,DL,first,,web_award,delta,60400,,6.0,730.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,37.33,100.0,0.0,0.0,868.13,"delta_web_observation, fare_brand:delta_first, missing_stops, after-midnight arrival",448,7h 28m,"60,400 miles + $6","DL2255
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+60,400
+miles
++
+$
+6
+One-Way
+Not Offered
+Lowest Fare
+DL531
+,",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,14:00,00:44,DL2940,DL,economy,,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,38.67,100.0,0.0,0.0,459.07,"delta_web_observation, fare_brand:delta_main, missing_stops, after-midnight arrival",464,7h 44m,"26,200 miles + $6","DL2940
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,14:00,00:44,DL2940,DL,economy,,web_award,delta,39900,,6.0,484.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,38.67,100.0,0.0,0.0,623.47,"delta_web_observation, fare_brand:delta_comfort, missing_stops, after-midnight arrival",464,7h 44m,"39,900 miles + $6","DL2940
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+93,700
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,14:00,00:44,DL2940,DL,first,,web_award,delta,93700,,6.0,1130.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,38.67,100.0,0.0,0.0,1269.07,"delta_web_observation, fare_brand:delta_first, missing_stops, after-midnight arrival",464,7h 44m,"93,700 miles + $6","DL2940
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+93,700
+miles
++
+$
+6
+One-Way
+3 left at this price
+Not Offered
+Lowest Fare
+Free Wi-Fi for SkyMiles Members",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,09:53,20:38,DL2736,DL,economy,,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,38.75,0.0,0.0,0.0,359.15,"delta_web_observation, fare_brand:delta_main, missing_stops",465,7h 45m,"26,200 miles + $6","DL2736
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Delta Main Classic
+Actual Fare
+39,900",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,09:53,20:38,DL2736,DL,economy,,web_award,delta,39900,,6.0,484.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,38.75,0.0,0.0,0.0,523.55,"delta_web_observation, fare_brand:delta_main, missing_stops",465,7h 45m,"39,900 miles + $6","DL2736
+6
+One-Way
+Delta Comfort Classic
+Delta Main Classic
+Actual Fare
+39,900
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+97,800
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,09:53,20:38,DL2736,DL,first,,web_award,delta,97800,,6.0,1179.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,38.75,0.0,0.0,0.0,1218.35,"delta_web_observation, fare_brand:delta_first, missing_stops",465,7h 45m,"97,800 miles + $6","DL2736
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+97,800
+miles
++
+$
+6
+One-Way
+5 left at this price
+Not Offered
+Lowest Fare
+Free Wi-Fi for SkyMiles Members",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,06:00,17:09,DL1005,DL,economy,,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,40.75,50.0,0.0,0.0,411.15,"delta_web_observation, fare_brand:delta_main, missing_stops, early departure",489,8h 9m,"26,200 miles + $6","DL1005
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,06:00,17:09,DL1005,DL,economy,,web_award,delta,39900,,6.0,484.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,40.75,50.0,0.0,0.0,575.55,"delta_web_observation, fare_brand:delta_comfort, missing_stops, early departure",489,8h 9m,"39,900 miles + $6","DL1005
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+145,200
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,06:00,17:09,DL1005,DL,first,,web_award,delta,145200,,6.0,1748.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,40.75,50.0,0.0,0.0,1839.15,"delta_web_observation, fare_brand:delta_first, missing_stops, early departure",489,8h 9m,"145,200 miles + $6","DL1005
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+145,200
+miles
++
+$
+6
+One-Way
+Not Offered
+Lowest Fare
+DL3991
+1",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,20:05,06:26,DL810,DL,economy,,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,36.75,0.0,0.0,0.0,357.15,"delta_web_observation, fare_brand:delta_main, missing_stops",441,7h 21m,"26,200 miles + $6","DL810
+Operated by SkyWest DBA Delta Connection.
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,20:05,06:26,DL810,DL,economy,,web_award,delta,39900,,6.0,484.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,36.75,0.0,0.0,0.0,521.55,"delta_web_observation, fare_brand:delta_comfort, missing_stops",441,7h 21m,"39,900 miles + $6","DL810
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+60,400
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,20:05,06:26,DL810,DL,first,,web_award,delta,60400,,6.0,730.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,36.75,0.0,0.0,0.0,767.55,"delta_web_observation, fare_brand:delta_first, missing_stops",441,7h 21m,"60,400 miles + $6","DL810
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+60,400
+miles
++
+$
+6
+One-Way
+Not Offered
+Lowest Fare
+Free Wi-Fi for SkyMiles Members
+DL1715",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,11:05,23:06,DL708,DL,economy,,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,45.08,50.0,0.0,0.0,415.48,"delta_web_observation, fare_brand:delta_main, missing_stops, late arrival",541,9h 1m,"26,200 miles + $6","DL708
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,11:05,23:06,DL708,DL,economy,,web_award,delta,39900,,6.0,484.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,45.08,50.0,0.0,0.0,579.88,"delta_web_observation, fare_brand:delta_comfort, missing_stops, late arrival",541,9h 1m,"39,900 miles + $6","DL708
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+97,800
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,11:05,23:06,DL708,DL,first,,web_award,delta,97800,,6.0,1179.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,45.08,50.0,0.0,0.0,1274.68,"delta_web_observation, fare_brand:delta_first, missing_stops, late arrival",541,9h 1m,"97,800 miles + $6","DL708
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+97,800
+miles
++
+$
+6
+One-Way
+2 left at this price
+Not Offered
+Lowest Fare
+Free Wi-Fi for SkyMiles Members",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,23:45,10:17,DL643,DL,economy,,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,37.67,75.0,0.0,0.0,433.07,"delta_web_observation, fare_brand:delta_main, missing_stops, late departure",452,7h 32m,"26,200 miles + $6","DL643
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,23:45,10:17,DL643,DL,economy,,web_award,delta,39900,,6.0,484.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,37.67,75.0,0.0,0.0,597.47,"delta_web_observation, fare_brand:delta_comfort, missing_stops, late departure",452,7h 32m,"39,900 miles + $6","DL643
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+97,800
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,23:45,10:17,DL643,DL,first,,web_award,delta,97800,,6.0,1179.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,37.67,75.0,0.0,0.0,1292.27,"delta_web_observation, fare_brand:delta_first, missing_stops, late departure",452,7h 32m,"97,800 miles + $6","DL643
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+97,800
+miles
++
+$
+6
+One-Way
+5 left at this price
+Not Offered
+Lowest Fare
+Free Wi-Fi for SkyMiles Members",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,07:00,19:14,DL802,DL,economy,,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,46.17,0.0,0.0,0.0,366.57,"delta_web_observation, fare_brand:delta_main, missing_stops",554,9h 14m,"26,200 miles + $6","DL802
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,07:00,19:14,DL802,DL,economy,,web_award,delta,39900,,6.0,484.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,46.17,0.0,0.0,0.0,530.97,"delta_web_observation, fare_brand:delta_comfort, missing_stops",554,9h 14m,"39,900 miles + $6","DL802
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+145,200
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,07:00,19:14,DL802,DL,first,,web_award,delta,145200,,6.0,1748.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,46.17,0.0,0.0,0.0,1794.57,"delta_web_observation, fare_brand:delta_first, missing_stops",554,9h 14m,"145,200 miles + $6","DL802
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+145,200
+miles
++
+$
+6
+One-Way
+Not Offered
+Lowest Fare
+DL693
+,",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,11:30,23:47,DL651,DL,economy,,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,46.42,50.0,0.0,0.0,416.82,"delta_web_observation, fare_brand:delta_main, missing_stops, late arrival",557,9h 17m,"26,200 miles + $6","DL651
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,11:30,23:47,DL651,DL,economy,,web_award,delta,39900,,6.0,484.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,46.42,50.0,0.0,0.0,581.22,"delta_web_observation, fare_brand:delta_comfort, missing_stops, late arrival",557,9h 17m,"39,900 miles + $6","DL651
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+97,800
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,11:30,23:47,DL651,DL,first,,web_award,delta,97800,,6.0,1179.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,46.42,50.0,0.0,0.0,1276.02,"delta_web_observation, fare_brand:delta_first, missing_stops, late arrival",557,9h 17m,"97,800 miles + $6","DL651
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+97,800
+miles
++
+$
+6
+One-Way
+1 left at this price
+Not Offered
+Lowest Fare
+DL495",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,22:30,09:28,DL1646,DL,economy,,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,39.83,75.0,0.0,0.0,435.23,"delta_web_observation, fare_brand:delta_main, missing_stops, late departure",478,7h 58m,"26,200 miles + $6","DL1646
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,22:30,09:28,DL1646,DL,economy,,web_award,delta,39900,,6.0,484.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,39.83,75.0,0.0,0.0,599.63,"delta_web_observation, fare_brand:delta_comfort, missing_stops, late departure",478,7h 58m,"39,900 miles + $6","DL1646
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+97,800
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,22:30,09:28,DL1646,DL,first,,web_award,delta,97800,,6.0,1179.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,39.83,75.0,0.0,0.0,1294.43,"delta_web_observation, fare_brand:delta_first, missing_stops, late departure",478,7h 58m,"97,800 miles + $6","DL1646
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+97,800
+miles
++
+$
+6
+One-Way
+4 left at this price
+Not Offered
+Lowest Fare
+Free Wi-Fi for SkyMiles Members",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,00:40,11:39,DL1433,DL,economy,,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,39.92,100.0,0.0,0.0,460.32,"delta_web_observation, fare_brand:delta_main, missing_stops, very early departure",479,7h 59m,"26,200 miles + $6","DL1433
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,00:40,11:39,DL1433,DL,economy,,web_award,delta,39900,,6.0,484.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,39.92,100.0,0.0,0.0,624.72,"delta_web_observation, fare_brand:delta_comfort, missing_stops, very early departure",479,7h 59m,"39,900 miles + $6","DL1433
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+39,900
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+97,800
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,00:40,11:39,DL1433,DL,first,,web_award,delta,97800,,6.0,1179.6,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,39.92,100.0,0.0,0.0,1319.52,"delta_web_observation, fare_brand:delta_first, missing_stops, very early departure",479,7h 59m,"97,800 miles + $6","DL1433
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+97,800
+miles
++
+$
+6
+One-Way
+Not Offered
+Lowest Fare
+Free Wi-Fi for SkyMiles Members
+DL1559",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,18:50,06:00,DL407,DL,economy,,web_award,delta,26200,,6.0,320.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,40.83,0.0,0.0,0.0,361.23,"delta_web_observation, fare_brand:delta_main, missing_stops",490,8h 10m,"26,200 miles + $6","DL407
+DTW
+Details
+Seats
+Delta Main
+Actual Fare
+26,200
+miles
++
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+44,400
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,18:50,06:00,DL407,DL,economy,,web_award,delta,44400,,6.0,538.8,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,40.83,0.0,0.0,0.0,579.63,"delta_web_observation, fare_brand:delta_comfort, missing_stops",490,8h 10m,"44,400 miles + $6","DL407
+$
+6
+One-Way
+Delta Comfort Classic
+Actual Fare
+44,400
+miles
++
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+145,200
+miles",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z
+SFO,DTW,2026-10-14,one-way,,,,18:50,06:00,DL407,DL,first,,web_award,delta,145200,,6.0,1748.4,True,,medium,/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/browser_delta_sfo_dtw_2026-10-14_economy_one_way/browser_delta_sfo_dtw_2026-10-14_economy_one_way.png,0.0,40.83,0.0,0.0,0.0,1789.23,"delta_web_observation, fare_brand:delta_first, missing_stops",490,8h 10m,"145,200 miles + $6","DL407
+$
+6
+One-Way
+Delta First Classic
+Actual Fare
+145,200
+miles
++
+$
+6
+One-Way
+Not Offered
+See More Results
+This link opens another site in a new window that may not follow the same accessibility policies as Delta Air Lines.
+© 2026 Delta Air Lines, Inc.|Travel may be on other airlines.",observed,"Skip to Main Content
+SFO - DTW
+One Way
+Oct 14
+1 Passenger
+Modify
+Sign Up
+Log in
+3
+One Way
+SFO
+DTW
+Wed, Oct 14, 2026
+Show Price In, changes will reload the page
+Show Price In
+$USD
+Miles
+Miles + Cash
+Sort & Filter
+Limited Time Offer
+Earn a we",2026-06-12T06:32:08.879Z

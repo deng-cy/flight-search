@@ -2,7 +2,7 @@
 
 - Cabin: `economy`
 - Cash source: `/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/cash/data/normalized/sfo_dtw_2026-10-14_economy_cash_fares.json`
-- Award source: `/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_dtw_2026-10-14_best_flights.json`
+- Award source(s): `/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_dtw_2026-10-14_best_flights.json; /Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/normalized/browser_delta_sfo_dtw_2026-10-14_economy_one_way_web_awards.json; /Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/normalized/delta_sfo_dtw_2026-10-14_economy_one_way_web_awards.json`
 
 Cash rows are observed comparable paid fares. Award rows use configured point valuations to compute effective USD.
 

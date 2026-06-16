@@ -1,0 +1,3 @@
+# Browser automation for no-login airline award checks.
+playwright>=1.45,<2
+PyYAML>=6,<7

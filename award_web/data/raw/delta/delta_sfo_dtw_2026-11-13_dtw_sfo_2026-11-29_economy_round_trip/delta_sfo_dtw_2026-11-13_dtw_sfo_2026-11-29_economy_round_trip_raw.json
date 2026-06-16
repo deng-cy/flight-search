@@ -1,0 +1,24 @@
+{
+  "body_text": "Access Denied\nYou don't have permission to access this server.\n\nReference 0.852d3e17.1781245554.121a847e",
+  "created_at": "2026-06-12T06:25:53.914667+00:00",
+  "evidence": {
+    "html": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.html",
+    "screenshot": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/award_web/data/raw/delta/delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip/delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip.png"
+  },
+  "provider": "delta",
+  "request": {
+    "adults": 1,
+    "cabin": "economy",
+    "departure_date": "2026-11-13",
+    "destination": "DTW",
+    "origin": "SFO",
+    "return_date": "2026-11-29",
+    "return_destination": "SFO",
+    "return_origin": "DTW",
+    "source_name": "delta",
+    "trip_type": "round-trip"
+  },
+  "status": "access_denied",
+  "status_message": "Access Denied\nYou don't have permission to access this server.\n\nReference 0.852d3e17.1781245554.121a847e",
+  "url": "https://www.delta.com/flightsearch/book-a-flight"
+}

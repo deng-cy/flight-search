@@ -2,10 +2,62 @@
 
 Use this module for browser-driven award searches that complement Seats.aero.
 
-Planned shape:
+Implemented providers:
 
-- launch or attach to a browser session
-- search airline and partner award sites
-- save screenshots or HTML evidence
-- normalize observed award prices into CSV/JSON
-- mark confidence and bookability separately from Seats.aero confirmed `Source` rows
+- Delta public no-login award checks through `delta/scripts/search_delta_awards.py`
+- Southwest public one-way points checks through `southwest/scripts/search_southwest_awards.py`
+- screenshots and HTML evidence under `data/raw/<provider>/`
+- normalized `web_award` rows under `data/normalized/`
+- markdown summaries under `data/reports/`
+- Provider-specific code is isolated in `delta/` and `southwest/`; the older `scripts/search_delta_awards.py` path is a compatibility wrapper.
+
+Cached one-way `web_award` rows are now integrated into the root report builders:
+
+- `scripts/build_price_summary.py` auto-loads matching rows unless `--no-award-web` is passed.
+- `scripts/run_trip_search.py` uses matching one-way rows as additional award legs unless `--skip-award-web` is passed.
+- Round-trip Delta web captures appear in the master trip report as web award observations with return timing marked as unparsed until return-leg selection is implemented.
+
+Install provider dependencies when live browser checks are needed:
+
+```bash
+.venv/bin/python -m pip install -r award_web/requirements.txt
+.venv/bin/python -m playwright install chromium
+```
+
+One-way example:
+
+```bash
+.venv/bin/python award_web/delta/scripts/search_delta_awards.py \
+  --origin SFO \
+  --destination DTW \
+  --date 2026-10-14 \
+  --trip-type one-way \
+  --refresh
+```
+
+Round-trip example:
+
+```bash
+.venv/bin/python award_web/delta/scripts/search_delta_awards.py \
+  --origin SFO \
+  --destination DTW \
+  --date 2026-11-13 \
+  --trip-type round-trip \
+  --return-date 2026-11-29 \
+  --refresh
+```
+
+Delta errors such as `SFAF009` are saved as provider failures with evidence.
+They should not be interpreted as no-availability results.
+
+Southwest one-way example:
+
+```bash
+.venv/bin/python award_web/southwest/scripts/search_southwest_awards.py \
+  --origin SFO \
+  --destination DTW \
+  --date 2026-06-12 \
+  --refresh
+```
+
+The important design difference is that Southwest award trips should be searched as independent one-ways and summed in the report, while Delta web round trips should be searched as true Delta round trips. Southwest round-trip award-web rows are ignored by the root report adapter to avoid accidentally comparing the wrong search semantics.
