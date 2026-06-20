@@ -5,9 +5,12 @@ from typing import Any, Iterable
 
 from .formatting import slug
 from .io import load_json
+from .provider_catalog import load_provider_catalog
 
 
-ONE_WAY_ONLY_ROUND_TRIP_SOURCES = {"southwest"}
+def provider_catalog(workspace_root: Path):
+    catalog_path = workspace_root / "config" / "provider_catalog.yaml"
+    return load_provider_catalog(catalog_path if catalog_path.exists() else None)
 
 
 def numeric(value: Any, default: float = 0.0) -> float:
@@ -61,6 +64,7 @@ def load_web_award_rows(
     departure_date: str,
     cabin: str,
     paths: Iterable[Path] | None = None,
+    source_names: Iterable[str] | None = None,
 ) -> list[dict[str, Any]]:
     candidate_paths = list(paths) if paths is not None else award_web_candidate_paths(
         workspace_root,
@@ -69,15 +73,17 @@ def load_web_award_rows(
         departure_date=departure_date,
         cabin=cabin,
     )
+    allowed_sources = {str(source).strip().lower() for source in source_names or [] if str(source).strip()}
     rows: list[dict[str, Any]] = []
     for path in candidate_paths:
         payload = load_json(path)
         if not isinstance(payload, list):
             continue
         rows.extend(
-            adapt_web_award_row(row, evidence_source=path)
+            adapt_web_award_row(row, workspace_root=workspace_root, evidence_source=path)
             for row in payload
             if isinstance(row, dict)
+            and source_allowed(row, allowed_sources)
             and web_award_row_matches(
                 row,
                 origin=origin,
@@ -107,6 +113,7 @@ def load_web_round_trip_award_rows(
     return_date: str,
     cabin: str,
     paths: Iterable[Path] | None = None,
+    source_names: Iterable[str] | None = None,
 ) -> list[dict[str, Any]]:
     candidate_paths = list(paths) if paths is not None else award_web_round_trip_candidate_paths(
         workspace_root,
@@ -118,17 +125,20 @@ def load_web_round_trip_award_rows(
         return_date=return_date,
         cabin=cabin,
     )
+    allowed_sources = {str(source).strip().lower() for source in source_names or [] if str(source).strip()}
     rows: list[dict[str, Any]] = []
     for path in candidate_paths:
         payload = load_json(path)
         if not isinstance(payload, list):
             continue
         rows.extend(
-            adapt_web_award_row(row, evidence_source=path)
+            adapt_web_award_row(row, workspace_root=workspace_root, evidence_source=path)
             for row in payload
             if isinstance(row, dict)
+            and source_allowed(row, allowed_sources)
             and web_round_trip_row_matches(
                 row,
+                workspace_root=workspace_root,
                 origin=origin,
                 destination=destination,
                 departure_date=departure_date,
@@ -146,6 +156,13 @@ def load_web_round_trip_award_rows(
             numeric(row.get("duration_minutes")),
         ),
     )
+
+
+def source_allowed(row: dict[str, Any], allowed_sources: set[str]) -> bool:
+    if not allowed_sources:
+        return True
+    source_name = str(row.get("source_name") or row.get("source") or "").strip().lower()
+    return source_name in allowed_sources
 
 
 def web_award_row_matches(
@@ -168,6 +185,7 @@ def web_award_row_matches(
 def web_round_trip_row_matches(
     row: dict[str, Any],
     *,
+    workspace_root: Path,
     origin: str,
     destination: str,
     departure_date: str,
@@ -177,7 +195,7 @@ def web_round_trip_row_matches(
     cabin: str,
 ) -> bool:
     source_name = str(row.get("source_name") or row.get("source") or "").strip().lower()
-    if source_name in ONE_WAY_ONLY_ROUND_TRIP_SOURCES:
+    if source_name in provider_catalog(workspace_root).one_way_only_round_trip_sources():
         return False
     return (
         str(row.get("origin", "")).upper() == origin.upper()
@@ -191,14 +209,20 @@ def web_round_trip_row_matches(
     )
 
 
-def adapt_web_award_row(row: dict[str, Any], *, evidence_source: Path | None = None) -> dict[str, Any]:
+def adapt_web_award_row(
+    row: dict[str, Any],
+    *,
+    workspace_root: Path | None = None,
+    evidence_source: Path | None = None,
+) -> dict[str, Any]:
     points = numeric(row.get("points"), 0)
     taxes_usd = numeric(row.get("taxes_usd"), 0)
     effective_usd = numeric(row.get("effective_usd"), 0)
     points_value_usd = max(0.0, effective_usd - taxes_usd)
     cpp = (points_value_usd * 100 / points) if points else 0.0
     source_name = str(row.get("source_name") or "web").strip().lower()
-    program = f"{source_name.title()} Web"
+    catalog = provider_catalog(workspace_root) if workspace_root is not None else load_provider_catalog()
+    program = catalog.award_web_label(source_name)
     flags = ", ".join(
         value
         for value in [
@@ -224,9 +248,34 @@ def adapt_web_award_row(row: dict[str, Any], *, evidence_source: Path | None = N
     }
 
 
+def row_detail_score(row: dict[str, Any]) -> int:
+    legs = row.get("legs") if isinstance(row.get("legs"), dict) else {}
+    outbound = legs.get("outbound") if isinstance(legs.get("outbound"), dict) else {}
+    return_leg = legs.get("return") if isinstance(legs.get("return"), dict) else {}
+    fields = [
+        row.get("depart_time"),
+        row.get("arrive_time"),
+        row.get("flight_numbers"),
+        row.get("duration_minutes"),
+        row.get("outbound_depart_time"),
+        row.get("outbound_arrive_time"),
+        row.get("outbound_flight_numbers"),
+        row.get("return_depart_time"),
+        row.get("return_arrive_time"),
+        row.get("return_flight_numbers"),
+        outbound.get("depart_time"),
+        outbound.get("arrive_time"),
+        outbound.get("flight_numbers"),
+        return_leg.get("depart_time"),
+        return_leg.get("arrive_time"),
+        return_leg.get("flight_numbers"),
+    ]
+    return sum(1 for value in fields if value not in (None, ""))
+
+
 def deduplicate_award_rows(rows: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
     deduped: list[dict[str, Any]] = []
-    seen: set[tuple[Any, ...]] = set()
+    seen: dict[tuple[Any, ...], int] = {}
     for row in rows:
         key = (
             row.get("source"),
@@ -240,8 +289,11 @@ def deduplicate_award_rows(rows: Iterable[dict[str, Any]]) -> list[dict[str, Any
             row.get("mileage_cost"),
             row.get("taxes_usd"),
         )
-        if key in seen:
+        existing_index = seen.get(key)
+        if existing_index is not None:
+            if row_detail_score(row) > row_detail_score(deduped[existing_index]):
+                deduped[existing_index] = row
             continue
-        seen.add(key)
+        seen[key] = len(deduped)
         deduped.append(row)
     return deduped

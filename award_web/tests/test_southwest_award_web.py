@@ -13,6 +13,7 @@ for path in (WORKSPACE_ROOT, AWARD_WEB_ROOT):
         sys.path.insert(0, str(path))
 
 from award_web.models import AwardWebSearchRequest
+from award_web import available_provider_keys, get_provider, run_pipeline as run_award_web_provider
 from award_web.southwest.normalization import normalize_southwest_payload, page_status
 from award_web.southwest.pipeline import run_pipeline
 
@@ -32,6 +33,27 @@ PREFERENCES = {
 
 
 class SouthwestAwardWebTests(unittest.TestCase):
+    def test_award_web_registry_exposes_delta_and_southwest(self) -> None:
+        self.assertEqual(sorted(available_provider_keys()), ["delta", "southwest"])
+        southwest = get_provider("southwest")
+
+        self.assertEqual(southwest.carrier_code, "WN")
+        self.assertEqual(southwest.round_trip_mode, "sum_one_way")
+        self.assertEqual(southwest.supported_trip_types, ("one-way",))
+
+    def test_generic_award_web_pipeline_validates_provider_capability(self) -> None:
+        with self.assertRaisesRegex(ValueError, "one-way"):
+            run_award_web_provider(
+                source_name="southwest",
+                origin="SFO",
+                destination="DTW",
+                departure_date="2026-06-12",
+                trip_type="round-trip",
+                return_date="2026-06-20",
+                output_dir=Path("/tmp"),
+                preferences_path=WORKSPACE_ROOT / "config/search_preferences.yaml",
+            )
+
     def test_page_status_does_not_treat_booking_form_as_results(self) -> None:
         status, message = page_status("Book a Flight\nShow fares in\nPoints\nSearch flights")
 

@@ -31,6 +31,10 @@ def main() -> None:
     parser.add_argument("--output-dir", default=str(DEFAULT_DATA_DIR))
     parser.add_argument("--preferences", default=str(DEFAULT_PREFERENCES_PATH))
     parser.add_argument("--refresh", action="store_true", help="Fetch a fresh Delta page instead of reusing cached evidence.")
+    parser.add_argument(
+        "--browser-capture-json",
+        help="Normalize a Delta payload captured from an existing browser session instead of launching Playwright.",
+    )
     parser.add_argument("--headed", action="store_true", help="Show the browser while Playwright runs.")
     parser.add_argument("--flexible-dates", action="store_true", help="Leave Delta's flexible date option enabled.")
     parser.add_argument("--timeout-ms", type=int, default=45000)
@@ -52,6 +56,7 @@ def main() -> None:
         headless=not args.headed,
         flexible_dates=args.flexible_dates,
         timeout_ms=args.timeout_ms,
+        browser_capture_path=Path(args.browser_capture_json) if args.browser_capture_json else None,
     )
     print(json.dumps(summary, indent=2, sort_keys=True))
 

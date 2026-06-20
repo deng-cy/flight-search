@@ -45,7 +45,12 @@ class FindBestFlightsTests(unittest.TestCase):
         self.assertFalse(used_default)
 
         label, cpp, used_default = program_value("american", self.preferences)
-        self.assertEqual(label, "american")
+        self.assertEqual(label, "American AAdvantage")
+        self.assertEqual(cpp, 2.0)
+        self.assertFalse(used_default)
+
+        label, cpp, used_default = program_value("unknown_airline", self.preferences)
+        self.assertEqual(label, "unknown_airline")
         self.assertEqual(cpp, 2.0)
         self.assertTrue(used_default)
 

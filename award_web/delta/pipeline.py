@@ -9,7 +9,7 @@ from flight_search_common.io import load_json, markdown_escape, write_csv, write
 
 from ..models import AWARD_WEB_FIELDNAMES, AwardWebSearchRequest
 from .normalization import normalize_delta_payload
-from .provider import search_delta_public
+from .provider import import_delta_browser_capture, search_delta_public
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -46,7 +46,18 @@ def ensure_raw_response(
     headless: bool,
     flexible_dates: bool,
     timeout_ms: int,
+    browser_capture_path: Path | None = None,
 ) -> dict[str, Any]:
+    if browser_capture_path is not None:
+        payload = import_delta_browser_capture(
+            browser_capture_path,
+            request,
+            html_path=paths["html"],
+            screenshot_path=paths["screenshot"],
+        )
+        write_json(paths["raw_json"], payload)
+        return payload
+
     if paths["raw_json"].exists() and not refresh:
         return load_json(paths["raw_json"])
 
@@ -132,6 +143,7 @@ def run_pipeline(
     headless: bool = True,
     flexible_dates: bool = False,
     timeout_ms: int = 45000,
+    browser_capture_path: Path | None = None,
 ) -> dict[str, Any]:
     request = AwardWebSearchRequest(
         origin=origin,
@@ -145,7 +157,7 @@ def run_pipeline(
         return_destination=return_destination,
     )
     paths = output_paths(output_dir, request)
-    used_live_fetch = refresh or not paths["raw_json"].exists()
+    used_live_fetch = browser_capture_path is not None or refresh or not paths["raw_json"].exists()
     payload = ensure_raw_response(
         request,
         paths,
@@ -153,6 +165,7 @@ def run_pipeline(
         headless=headless,
         flexible_dates=flexible_dates,
         timeout_ms=timeout_ms,
+        browser_capture_path=browser_capture_path,
     )
     preferences = load_preferences(preferences_path)
     evidence_path = Path(payload.get("evidence", {}).get("screenshot") or payload.get("evidence", {}).get("html") or paths["raw_json"])
@@ -165,6 +178,7 @@ def run_pipeline(
     return {
         "provider": "delta",
         "live": used_live_fetch,
+        "capture_source": payload.get("capture_source", "playwright" if used_live_fetch else "cached"),
         "status": payload.get("status", ""),
         "status_message": payload.get("status_message", ""),
         "normalized_count": len(rows),

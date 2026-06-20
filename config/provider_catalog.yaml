@@ -1,0 +1,138 @@
+# Shared airline, mileage-program, and award-web provider identities.
+# Point valuations are mirrored from search_preferences.yaml for reporting
+# metadata; scoring continues to read config/search_preferences.yaml.
+version: 1
+
+airlines:
+  air_canada:
+    label: Air Canada
+    carrier_code: AC
+    aliases: [Air Canada, AC, Aeroplan]
+  alaska:
+    label: Alaska
+    carrier_code: AS
+    logo_path: assets/alaska.png
+    aliases: [Alaska, AS, Atmos Rewards]
+  american:
+    label: American
+    carrier_code: AA
+    logo_path: assets/american.png
+    aliases: [American, AA, AAdvantage]
+  azul:
+    label: Azul
+    carrier_code: AD
+    aliases: [Azul, AD, TudoAzul]
+  delta:
+    label: Delta
+    carrier_code: DL
+    logo_path: assets/delta.jpeg
+    aliases: [Delta, DL, SkyMiles]
+  frontier:
+    label: Frontier
+    carrier_code: F9
+    logo_path: assets/frontier.jpeg
+    aliases: [Frontier, F9]
+  southwest:
+    label: Southwest
+    carrier_code: WN
+    logo_path: assets/southwest.jpeg
+    aliases: [Southwest, WN, Rapid Rewards]
+  united:
+    label: United
+    carrier_code: UA
+    logo_path: assets/united.png
+    aliases: [United, UA, MileagePlus]
+  air_france_klm:
+    label: Air France/KLM
+    carrier_code: AF
+    aliases: [Air France, KLM, AF, Flying Blue]
+  virgin_atlantic:
+    label: Virgin Atlantic
+    carrier_code: VS
+    aliases: [Virgin Atlantic, VS, Flying Club]
+  virgin_australia:
+    label: Virgin Australia
+    carrier_code: VA
+    aliases: [Virgin Australia, VA, Velocity]
+
+award_programs:
+  aeroplan:
+    label: Air Canada Aeroplan
+    carrier_code: AC
+    cents_per_point: 1.1
+    aliases: [Aeroplan, Air Canada]
+  alaska:
+    label: Alaska Atmos Rewards
+    carrier_code: AS
+    cents_per_point: 1.5
+    aliases: [Alaska, Atmos Rewards]
+  american:
+    label: American AAdvantage
+    carrier_code: AA
+    cents_per_point: 2.0
+    aliases: [American, AAdvantage]
+  azul:
+    label: Azul TudoAzul
+    carrier_code: AD
+    cents_per_point: 2.0
+    aliases: [Azul, TudoAzul]
+  delta:
+    label: Delta SkyMiles
+    carrier_code: DL
+    cents_per_point: 1.2
+    aliases: [Delta, SkyMiles, DL]
+  flyingblue:
+    label: Air France/KLM Flying Blue
+    carrier_code: AF
+    cents_per_point: 1.1
+    aliases: [Flying Blue, Air France, KLM]
+  southwest:
+    label: Southwest Rapid Rewards
+    carrier_code: WN
+    cents_per_point: 1.2
+    aliases: [Southwest, Rapid Rewards, WN]
+  united:
+    label: United MileagePlus
+    carrier_code: UA
+    cents_per_point: 1.2
+    aliases: [United, MileagePlus, UA]
+  velocity:
+    label: Virgin Australia Velocity
+    carrier_code: VA
+    cents_per_point: 2.0
+    aliases: [Velocity, Virgin Australia]
+  virginatlantic:
+    label: Virgin Atlantic Flying Club
+    carrier_code: VS
+    cents_per_point: 1.0
+    aliases: [Virgin Atlantic, Flying Club, VS]
+
+award_web:
+  delta:
+    label: Delta Web
+    carrier_code: DL
+    source_name: delta
+    module: award_web.delta.pipeline
+    run_function: run_pipeline
+    search_module: award_web.delta.provider
+    search_function: search_delta_public
+    normalize_module: award_web.delta.normalization
+    normalize_function: normalize_delta_payload
+    supported_trip_types: [one-way, round-trip]
+    round_trip_mode: true_round_trip
+    evidence_outputs: [html, screenshot, raw_json]
+    confidence: observed_until_checkout
+  southwest:
+    label: Southwest Web
+    carrier_code: WN
+    source_name: southwest
+    module: award_web.southwest.pipeline
+    run_function: run_pipeline
+    search_module: award_web.southwest.provider
+    search_function: search_southwest_public
+    normalize_module: award_web.southwest.normalization
+    normalize_function: normalize_southwest_payload
+    supported_trip_types: [one-way]
+    round_trip_mode: sum_one_way
+    evidence_outputs: [html, screenshot, raw_json]
+    confidence: observed_until_checkout

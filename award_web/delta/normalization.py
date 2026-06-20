@@ -180,21 +180,128 @@ def collect_flight_context(lines: list[str], index: int) -> dict[str, Any]:
     }
 
 
-def normalize_delta_payload(
-    payload: dict[str, Any],
-    request: AwardWebSearchRequest,
-    evidence_path: Path,
-    preferences: dict[str, Any] | None = None,
-) -> list[dict[str, Any]]:
-    preferences = preferences or {}
-    text = str(payload.get("body_text") or payload.get("text") or "")
-    status = str(payload.get("status") or page_status(text)[0])
-    status_message = str(payload.get("status_message") or page_status(text)[1])
-    created_at = str(payload.get("created_at") or "")
-    _, cpp = program_cents_per_point(request.source_name, preferences)
+def line_index(lines: list[str], values: list[str]) -> int | None:
+    normalized = [compact_text(value).lower() for value in values if compact_text(value)]
+    if not normalized:
+        return None
+    for index in range(0, len(lines) - len(normalized) + 1):
+        window = [line.lower() for line in lines[index : index + len(normalized)]]
+        if window == normalized:
+            return index
+    return None
 
+
+def stage_lines(text: str, *, stage: str, origin: str, destination: str) -> list[str]:
     lines = [compact_text(line) for line in text.splitlines()]
     lines = [line for line in lines if line]
+    marker = line_index(lines, [stage, origin, destination])
+    if marker is not None:
+        return lines[marker:]
+    return lines
+
+
+def snapshot_text(snapshot: dict[str, Any]) -> str:
+    return str(snapshot.get("body_text") or snapshot.get("text") or "")
+
+
+def snapshot_status(snapshot: dict[str, Any], fallback_text: str = "") -> tuple[str, str]:
+    text = snapshot_text(snapshot) or fallback_text
+    status, message = page_status(text)
+    return str(snapshot.get("status") or status), str(snapshot.get("status_message") or message)
+
+
+def snapshot_evidence(snapshot: dict[str, Any], fallback: Path) -> str:
+    evidence = snapshot.get("evidence")
+    if isinstance(evidence, dict):
+        return str(evidence.get("screenshot") or evidence.get("html") or fallback)
+    return str(snapshot.get("evidence_path") or fallback)
+
+
+def snapshot_for_stage(payload: dict[str, Any], stage: str) -> dict[str, Any] | None:
+    snapshots = payload.get("snapshots")
+    if not isinstance(snapshots, list):
+        return None
+    for snapshot in snapshots:
+        if isinstance(snapshot, dict) and str(snapshot.get("stage", "")).lower() == stage:
+            return snapshot
+    return None
+
+
+def combined_duration(*legs: dict[str, Any]) -> int | str:
+    minutes = [leg.get("duration_minutes") for leg in legs]
+    if all(isinstance(value, int) for value in minutes):
+        return sum(minutes)
+    return ""
+
+
+def leg_from_row(row: dict[str, Any], *, direction: str, origin: str, destination: str, date: str) -> dict[str, Any]:
+    return {
+        "direction": direction,
+        "origin": origin,
+        "destination": destination,
+        "date": date,
+        "depart_time": row.get("depart_time", ""),
+        "arrive_time": row.get("arrive_time", ""),
+        "flight_numbers": row.get("flight_numbers", ""),
+        "carriers": row.get("carriers", ""),
+        "stops": row.get("stops", ""),
+        "duration_minutes": row.get("duration_minutes", ""),
+        "duration_display": row.get("duration_display", ""),
+        "segments": [],
+        "layovers": [],
+    }
+
+
+def row_with_leg_fields(row: dict[str, Any], outbound_leg: dict[str, Any], return_leg: dict[str, Any]) -> dict[str, Any]:
+    row["legs"] = {"outbound": outbound_leg, "return": return_leg}
+    row.update(
+        {
+            "outbound_origin": outbound_leg["origin"],
+            "outbound_destination": outbound_leg["destination"],
+            "outbound_date": outbound_leg["date"],
+            "outbound_depart_time": outbound_leg["depart_time"],
+            "outbound_arrive_time": outbound_leg["arrive_time"],
+            "outbound_flight_numbers": outbound_leg["flight_numbers"],
+            "outbound_carriers": outbound_leg["carriers"],
+            "outbound_stops": outbound_leg["stops"],
+            "outbound_duration_minutes": outbound_leg["duration_minutes"],
+            "outbound_duration_display": outbound_leg["duration_display"],
+            "return_depart_time": return_leg["depart_time"],
+            "return_arrive_time": return_leg["arrive_time"],
+            "return_flight_numbers": return_leg["flight_numbers"],
+            "return_carriers": return_leg["carriers"],
+            "return_stops": return_leg["stops"],
+            "return_duration_minutes": return_leg["duration_minutes"],
+            "return_duration_display": return_leg["duration_display"],
+        }
+    )
+    return row
+
+
+def normalize_delta_text(
+    text: str,
+    request: AwardWebSearchRequest,
+    evidence_path: Path | str,
+    preferences: dict[str, Any],
+    *,
+    origin: str,
+    destination: str,
+    departure_date: str,
+    trip_type: str,
+    return_origin: str = "",
+    return_destination: str = "",
+    return_date: str = "",
+    stage: str = "outbound",
+    status: str = "",
+    status_message: str = "",
+    created_at: str = "",
+) -> list[dict[str, Any]]:
+    detected_status, detected_message = page_status(text)
+    status = status or detected_status
+    status_message = status_message or detected_message
+    _, cpp = program_cents_per_point(request.source_name, preferences)
+
+    lines = stage_lines(text, stage=stage, origin=origin, destination=destination)
     rows: list[dict[str, Any]] = []
     seen: set[tuple[Any, ...]] = set()
     current_flight: dict[str, Any] = {}
@@ -250,13 +357,13 @@ def normalize_delta_payload(
 
         rows.append(
             {
-                "origin": request.origin,
-                "destination": request.destination,
-                "departure_date": request.departure_date,
-                "trip_type": request.trip_type,
-                "return_origin": request.return_origin or "",
-                "return_destination": request.return_destination or "",
-                "return_date": request.return_date or "",
+                "origin": origin,
+                "destination": destination,
+                "departure_date": departure_date,
+                "trip_type": trip_type,
+                "return_origin": return_origin,
+                "return_destination": return_destination,
+                "return_date": return_date,
                 "depart_time": depart_time,
                 "arrive_time": arrive_time,
                 "flight_numbers": flight_numbers,
@@ -290,4 +397,206 @@ def normalize_delta_payload(
             }
         )
 
+    return rows
+
+
+def selected_outbound_row(rows: list[dict[str, Any]], request: AwardWebSearchRequest) -> dict[str, Any] | None:
+    cabin_rows = [row for row in rows if str(row.get("cabin", "")).lower() == request.cabin]
+    candidates = cabin_rows or rows
+    if not candidates:
+        return None
+    return sorted(
+        candidates,
+        key=lambda row: (
+            float(row.get("score") or 0),
+            float(row.get("effective_usd") or 0),
+            int(row.get("duration_minutes") or 0) if row.get("duration_minutes") not in ("", None) else 0,
+        ),
+    )[0]
+
+
+def normalize_delta_round_trip_snapshots(
+    payload: dict[str, Any],
+    request: AwardWebSearchRequest,
+    evidence_path: Path,
+    preferences: dict[str, Any],
+) -> list[dict[str, Any]]:
+    outbound_snapshot = snapshot_for_stage(payload, "outbound")
+    return_snapshot = snapshot_for_stage(payload, "return")
+    if not outbound_snapshot or not return_snapshot:
+        return []
+
+    created_at = str(payload.get("created_at") or "")
+    outbound_text = snapshot_text(outbound_snapshot)
+    return_text = snapshot_text(return_snapshot)
+    outbound_status, outbound_status_message = snapshot_status(outbound_snapshot, outbound_text)
+    return_status, return_status_message = snapshot_status(return_snapshot, return_text)
+
+    outbound_rows = normalize_delta_text(
+        outbound_text,
+        request,
+        snapshot_evidence(outbound_snapshot, evidence_path),
+        preferences,
+        origin=request.origin,
+        destination=request.destination,
+        departure_date=request.departure_date,
+        trip_type=request.trip_type,
+        return_origin=request.return_origin or "",
+        return_destination=request.return_destination or "",
+        return_date=request.return_date or "",
+        stage="outbound",
+        status=outbound_status,
+        status_message=outbound_status_message,
+        created_at=created_at,
+    )
+    selected_outbound = selected_outbound_row(outbound_rows, request)
+    if not selected_outbound:
+        return []
+
+    return_rows = normalize_delta_text(
+        return_text,
+        request,
+        snapshot_evidence(return_snapshot, evidence_path),
+        preferences,
+        origin=request.return_origin or request.destination,
+        destination=request.return_destination or request.origin,
+        departure_date=request.return_date or "",
+        trip_type=request.trip_type,
+        return_origin=request.return_origin or "",
+        return_destination=request.return_destination or "",
+        return_date=request.return_date or "",
+        stage="return",
+        status=return_status,
+        status_message=return_status_message,
+        created_at=created_at,
+    )
+
+    outbound_leg = leg_from_row(
+        selected_outbound,
+        direction="outbound",
+        origin=request.origin,
+        destination=request.destination,
+        date=request.departure_date,
+    )
+    rows = []
+    seen: set[tuple[Any, ...]] = set()
+    for return_row in return_rows:
+        return_leg = leg_from_row(
+            return_row,
+            direction="return",
+            origin=request.return_origin or request.destination,
+            destination=request.return_destination or request.origin,
+            date=request.return_date or "",
+        )
+        key = (
+            outbound_leg["flight_numbers"],
+            return_leg["flight_numbers"],
+            return_row.get("points"),
+            return_leg["depart_time"],
+            return_leg["arrive_time"],
+            return_row.get("cabin"),
+        )
+        if key in seen:
+            continue
+        seen.add(key)
+
+        duration_minutes = combined_duration(outbound_leg, return_leg)
+        row = {
+            **return_row,
+            "origin": request.origin,
+            "destination": request.destination,
+            "departure_date": request.departure_date,
+            "trip_type": request.trip_type,
+            "return_origin": request.return_origin or "",
+            "return_destination": request.return_destination or "",
+            "return_date": request.return_date or "",
+            "depart_time": outbound_leg["depart_time"],
+            "arrive_time": outbound_leg["arrive_time"],
+            "flight_numbers": outbound_leg["flight_numbers"],
+            "carriers": outbound_leg["carriers"],
+            "stops": outbound_leg["stops"],
+            "duration_minutes": duration_minutes if duration_minutes != "" else outbound_leg["duration_minutes"],
+            "duration_display": (
+                f"{outbound_leg['duration_display']} + {return_leg['duration_display']}"
+                if outbound_leg["duration_display"] and return_leg["duration_display"]
+                else outbound_leg["duration_display"]
+            ),
+            "flags": ", ".join(
+                dict.fromkeys(
+                    [
+                        *[flag.strip() for flag in str(return_row.get("flags", "")).split(",") if flag.strip()],
+                        "return_selection_captured",
+                    ]
+                )
+            ),
+            "raw_text": "\n\n".join(
+                value
+                for value in [
+                    "Selected outbound:\n" + str(selected_outbound.get("raw_text", "")).strip(),
+                    "Return options:\n" + str(return_row.get("raw_text", "")).strip(),
+                ]
+                if value.strip()
+            ),
+        }
+        rows.append(row_with_leg_fields(row, outbound_leg, return_leg))
+    return rows
+
+
+def normalize_delta_payload(
+    payload: dict[str, Any],
+    request: AwardWebSearchRequest,
+    evidence_path: Path,
+    preferences: dict[str, Any] | None = None,
+) -> list[dict[str, Any]]:
+    preferences = preferences or {}
+    if request.trip_type == "round-trip":
+        snapshot_rows = normalize_delta_round_trip_snapshots(payload, request, evidence_path, preferences)
+        if snapshot_rows:
+            return snapshot_rows
+
+    text = str(payload.get("body_text") or payload.get("text") or "")
+    status = str(payload.get("status") or page_status(text)[0])
+    status_message = str(payload.get("status_message") or page_status(text)[1])
+    created_at = str(payload.get("created_at") or "")
+    rows = normalize_delta_text(
+        text,
+        request,
+        evidence_path,
+        preferences,
+        origin=request.origin,
+        destination=request.destination,
+        departure_date=request.departure_date,
+        trip_type=request.trip_type,
+        return_origin=request.return_origin or "",
+        return_destination=request.return_destination or "",
+        return_date=request.return_date or "",
+        stage="outbound",
+        status=status,
+        status_message=status_message,
+        created_at=created_at,
+    )
+    blank_return = {
+        "direction": "return",
+        "origin": request.return_origin or "",
+        "destination": request.return_destination or "",
+        "date": request.return_date or "",
+        "depart_time": "",
+        "arrive_time": "",
+        "flight_numbers": "",
+        "carriers": "",
+        "stops": "",
+        "duration_minutes": "",
+        "duration_display": "",
+        "segments": [],
+        "layovers": [],
+    }
+    for row in rows:
+        outbound_leg = leg_from_row(
+            row,
+            direction="outbound",
+            origin=request.origin,
+            destination=request.destination,
+            date=request.departure_date,
+        )
+        row_with_leg_fields(row, outbound_leg, blank_return)
     return rows

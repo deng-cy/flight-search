@@ -68,9 +68,12 @@ def ensure_saved_search(
     base_url: str,
     output_dir: Path,
     refresh: bool,
+    sources: list[str] | None = None,
     timeout_seconds: float = 60,
 ) -> tuple[Path, Path]:
-    stem = f"{slug(origin)}_{slug(destination)}_{search_date}"
+    source_filter = ",".join(source.strip().lower() for source in sources or [] if source.strip())
+    source_suffix = f"_sources_{slug(source_filter.replace(',', '_'))}" if source_filter else ""
+    stem = f"{slug(origin)}_{slug(destination)}_{search_date}{source_suffix}"
     raw_search_path = output_dir / f"{stem}_search_raw.json"
     trip_dir = output_dir / f"{stem}_trip_details"
 
@@ -80,17 +83,18 @@ def ensure_saved_search(
     if raw_search_path.exists() and not refresh:
         search_payload = load_json(raw_search_path)
     else:
-        query = urlencode(
-            {
-                "origin_airport": normalize_airport(origin),
-                "destination_airport": normalize_airport(destination),
-                "start_date": search_date,
-                "end_date": search_date,
-                "take": 1000,
-                "include_trips": "true",
-                "minify_trips": "true",
-            }
-        )
+        query_payload = {
+            "origin_airport": normalize_airport(origin),
+            "destination_airport": normalize_airport(destination),
+            "start_date": search_date,
+            "end_date": search_date,
+            "take": 1000,
+            "include_trips": "true",
+            "minify_trips": "true",
+        }
+        if source_filter:
+            query_payload["sources"] = source_filter
+        query = urlencode(query_payload)
         search_payload = fetch_json(f"{base_url.rstrip('/')}/search?{query}", timeout_seconds)
         write_json(raw_search_path, search_payload)
 
@@ -504,6 +508,7 @@ def run_pipeline(
     refresh: bool,
     offline_fx: bool,
     best_limit: int | None = None,
+    sources: list[str] | None = None,
 ) -> dict[str, Any]:
     preferences = load_preferences(preferences_path)
     raw_search_path, trip_dir = ensure_saved_search(
@@ -513,9 +518,13 @@ def run_pipeline(
         base_url=base_url,
         output_dir=output_dir,
         refresh=refresh,
+        sources=sources,
     )
     fx_rates, fx_source = load_fx_rates(preferences, offline_fx=offline_fx)
     full_rows = build_full_rows(trip_dir, preferences, fx_rates, fx_source)
+    if sources:
+        allowed_sources = {source.strip().lower() for source in sources if source.strip()}
+        full_rows = [row for row in full_rows if str(row.get("source") or "").strip().lower() in allowed_sources]
     apply_dynamic_price_flags(full_rows, preferences)
 
     configured_limit = int(preferences.get("outputs", {}).get("best_report_limit", 40))
@@ -541,6 +550,7 @@ def run_pipeline(
         "fx_source": fx_source,
         "full_count": len(full_rows),
         "best_count": len(best_rows),
+        "sources": sources or [],
         "outputs": {key: str(value) for key, value in paths.items()},
     }
 
@@ -556,6 +566,7 @@ def main() -> None:
     parser.add_argument("--refresh", action="store_true", help="Force refetching search and trip-detail data from the local API.")
     parser.add_argument("--offline-fx", action="store_true", help="Use cached FX only; do not call the FX provider.")
     parser.add_argument("--best-limit", type=int, default=None)
+    parser.add_argument("--sources", default="", help="Comma-delimited Seats.aero sources to include, e.g. united,aeroplan.")
     args = parser.parse_args()
 
     summary = run_pipeline(
@@ -568,6 +579,7 @@ def main() -> None:
         refresh=args.refresh,
         offline_fx=args.offline_fx,
         best_limit=args.best_limit,
+        sources=[value.strip().lower() for value in args.sources.split(",") if value.strip()] or None,
     )
     print(json.dumps(summary, indent=2, sort_keys=True))
 

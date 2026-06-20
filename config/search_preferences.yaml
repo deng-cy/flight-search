@@ -51,6 +51,20 @@ points:
       cents_per_point: 1.5
       aliases:
         - Alaska
+    american:
+      label: American AAdvantage
+      cents_per_point: 2.0
+      aliases:
+        - American
+        - AAdvantage
+        - AA
+    azul:
+      label: Azul TudoAzul
+      cents_per_point: 2.0
+      aliases:
+        - Azul
+        - TudoAzul
+        - AD
     delta:
       label: Delta SkyMiles
       cents_per_point: 1.2
@@ -74,6 +88,13 @@ points:
       aliases:
         - United
         - UA
+    velocity:
+      label: Virgin Australia Velocity
+      cents_per_point: 2.0
+      aliases:
+        - Velocity
+        - Virgin Australia
+        - VA
     virginatlantic:
       label: Virgin Atlantic Flying Club
       cents_per_point: 1.0

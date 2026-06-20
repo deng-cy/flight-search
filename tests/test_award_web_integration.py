@@ -71,6 +71,70 @@ def sample_round_trip_web_award_row() -> dict[str, object]:
     return row
 
 
+def sample_round_trip_web_award_row_with_return_timing() -> dict[str, object]:
+    row = sample_round_trip_web_award_row()
+    outbound_leg = {
+        "direction": "outbound",
+        "origin": "SFO",
+        "destination": "DTW",
+        "date": "2026-11-13",
+        "depart_time": "14:25",
+        "arrive_time": "22:00",
+        "flight_numbers": "DL1927",
+        "carriers": "DL",
+        "stops": 0,
+        "duration_minutes": 275,
+        "duration_display": "4h 35m",
+        "segments": [],
+        "layovers": [],
+    }
+    return_leg = {
+        "direction": "return",
+        "origin": "DTW",
+        "destination": "SFO",
+        "date": "2026-11-29",
+        "depart_time": "20:20",
+        "arrive_time": "22:39",
+        "flight_numbers": "DL1327",
+        "carriers": "DL",
+        "stops": 0,
+        "duration_minutes": 319,
+        "duration_display": "5h 19m",
+        "segments": [],
+        "layovers": [],
+    }
+    row.update(
+        {
+            "depart_time": "14:25",
+            "arrive_time": "22:00",
+            "flight_numbers": "DL1927",
+            "stops": 0,
+            "duration_minutes": 594,
+            "duration_display": "4h 35m + 5h 19m",
+            "legs": {"outbound": outbound_leg, "return": return_leg},
+            "outbound_origin": "SFO",
+            "outbound_destination": "DTW",
+            "outbound_date": "2026-11-13",
+            "outbound_depart_time": "14:25",
+            "outbound_arrive_time": "22:00",
+            "outbound_flight_numbers": "DL1927",
+            "outbound_carriers": "DL",
+            "outbound_stops": 0,
+            "outbound_duration_minutes": 275,
+            "outbound_duration_display": "4h 35m",
+            "return_depart_time": "20:20",
+            "return_arrive_time": "22:39",
+            "return_flight_numbers": "DL1327",
+            "return_carriers": "DL",
+            "return_stops": 0,
+            "return_duration_minutes": 319,
+            "return_duration_display": "5h 19m",
+            "flags": "delta_web_observation, return_selection_captured",
+        }
+    )
+    return row
+
+
 def sample_southwest_web_award_row(direction: str) -> dict[str, object]:
     if direction == "outbound":
         origin, destination, date, depart, arrive, flight = "SFO", "DTW", "2026-06-12", "08:00", "15:35", "WN1234 / WN567"
@@ -203,6 +267,82 @@ class AwardWebIntegrationTests(unittest.TestCase):
         self.assertEqual(plan_rows[0]["kind"], "web award round-trip")
         self.assertEqual(plan_rows[0]["price"], "DL 86,800 + $12.00")
         self.assertIn("return selection not parsed", plan_rows[0]["notes"])
+        self.assertEqual(recommendation_cards(plan_rows), [])
+
+    def test_round_trip_web_award_dedupe_prefers_return_timing(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            stale_row = sample_round_trip_web_award_row_with_return_timing()
+            stale_row.pop("legs")
+            stale_row.update(
+                {
+                    "return_depart_time": "",
+                    "return_arrive_time": "",
+                    "return_flight_numbers": "",
+                    "return_carriers": "",
+                    "return_stops": "",
+                    "return_duration_minutes": "",
+                    "return_duration_display": "",
+                    "flags": "delta_web_observation",
+                }
+            )
+            write_web_rows(
+                root,
+                "browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip_web_awards.json",
+                [stale_row],
+            )
+            write_web_rows(
+                root,
+                "delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip_web_awards.json",
+                [sample_round_trip_web_award_row_with_return_timing()],
+            )
+
+            rows = load_web_round_trip_award_rows(
+                root,
+                origin="SFO",
+                destination="DTW",
+                departure_date="2026-11-13",
+                return_origin="DTW",
+                return_destination="SFO",
+                return_date="2026-11-29",
+                cabin="economy",
+            )
+
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["return_depart_time"], "20:20")
+        self.assertEqual(rows[0]["return_flight_numbers"], "DL1327")
+
+    def test_trip_report_uses_parsed_round_trip_web_award_return_leg(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            write_web_rows(
+                root,
+                "browser_delta_sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip_web_awards.json",
+                [sample_round_trip_web_award_row_with_return_timing()],
+            )
+            original_root = run_trip_search.WORKSPACE_ROOT
+            try:
+                run_trip_search.WORKSPACE_ROOT = root
+                plan_rows = award_web_round_trip_rows(
+                    [
+                        CashItineraryContext(
+                            LegContext("outbound", "SFO", "DTW", "2026-11-13"),
+                            LegContext("return", "DTW", "SFO", "2026-11-29"),
+                            "round-trip",
+                        )
+                    ],
+                    cabin="economy",
+                    per_itinerary_limit=3,
+                )
+            finally:
+                run_trip_search.WORKSPACE_ROOT = original_root
+
+        self.assertEqual(len(plan_rows), 1)
+        self.assertEqual(plan_rows[0]["return_depart"], "20:20")
+        self.assertEqual(plan_rows[0]["return_arrive"], "22:39")
+        self.assertIn("20:20 -> 22:39", plan_rows[0]["return_cell"])
+        self.assertIn("return details captured", plan_rows[0]["notes"])
+        self.assertNotIn("return selection not parsed", plan_rows[0]["notes"])
         self.assertEqual(recommendation_cards(plan_rows), [])
 
     def test_southwest_web_awards_pair_from_one_ways_and_ignore_round_trip_rows(self) -> None:

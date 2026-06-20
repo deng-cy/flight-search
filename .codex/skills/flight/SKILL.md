@@ -111,6 +111,21 @@ Saved traveler defaults:
    - `award pair`: two one-way awards.
    Use `--cash-workers 1` when debugging provider behavior. Use `--cash-workers 2` or `3` for normal live grids; avoid very high values because `fli` also expands return choices internally.
 
+   For Delta award-web round trips, standalone Playwright can be blocked by Delta's edge bot checks even when the user's real Chrome session works. In that case, use the Chrome/browser tool to capture the visible Delta outbound and return pages into a JSON payload with `snapshots` entries for `stage: "outbound"` and `stage: "return"`, each containing `url`, `body_text`, and optionally `html_content`. Then normalize that capture through the Delta CLI:
+   ```bash
+   .venv/bin/python award_web/scripts/search_delta_awards.py \
+     --origin SFO \
+     --destination DTW \
+     --date 2026-11-13 \
+     --trip-type round-trip \
+     --return-origin DTW \
+     --return-destination SFO \
+     --return-date 2026-11-29 \
+     --cabin economy \
+     --browser-capture-json /path/to/delta_browser_capture.json
+   ```
+   This writes the standard raw, normalized, and markdown outputs. Regenerate the master trip report afterward so parsed `legs.return` timing replaces stale "return selection not parsed" rows.
+
 6. Verify outputs:
    - Confirm the script summaries show nonzero counts.
    - Open the HTML report through the local static server when visual verification is useful:

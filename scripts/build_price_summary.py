@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 from html import escape
+import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -13,30 +14,12 @@ if str(WORKSPACE_ROOT) not in sys.path:
 
 from flight_search_common.formatting import money, normalize_airport, points, slug
 from flight_search_common.io import load_json, markdown_escape
+from flight_search_common.provider_catalog import load_provider_catalog
+from flight_search_common.report_display import friendly_flag_notes
 from flight_search_common.web_awards import load_web_award_rows
 
 DEFAULT_OUTPUT_DIR = WORKSPACE_ROOT / "reports"
-AIRLINE_CODES = {
-    "Air Canada": "AC",
-    "Alaska": "AS",
-    "American": "AA",
-    "Delta": "DL",
-    "Frontier": "F9",
-    "Southwest": "WN",
-    "United": "UA",
-}
-AWARD_PROGRAM_CODES = {
-    "aeroplan": "AC",
-    "alaska": "AS",
-    "american": "AA",
-    "azul": "AD",
-    "delta": "DL",
-    "flyingblue": "AF",
-    "southwest": "WN",
-    "united": "UA",
-    "velocity": "VA",
-    "virginatlantic": "VS",
-}
+PROVIDER_CATALOG = load_provider_catalog(WORKSPACE_ROOT / "config" / "provider_catalog.yaml")
 
 
 def default_paths(origin: str, destination: str, departure_date: str, cabin: str) -> dict[str, Path]:
@@ -49,6 +32,13 @@ def default_paths(origin: str, destination: str, departure_date: str, cabin: str
         "output": DEFAULT_OUTPUT_DIR / f"{cash_stem}_cash_award_summary.md",
         "html_output": DEFAULT_OUTPUT_DIR / f"{cash_stem}_cash_award_summary.html",
     }
+
+
+def award_web_path_matches_sources(path: Path, sources: list[str]) -> bool:
+    if not sources:
+        return True
+    name = path.name.lower()
+    return any(name.startswith(f"{source}_") or name.startswith(f"browser_{source}_") for source in sources)
 
 
 def numeric(value: Any, default: float = 10**12) -> float:
@@ -99,9 +89,14 @@ def carrier_codes(value: Any) -> set[str]:
     text = str(value or "").strip()
     if not text:
         return set()
-    if text in AIRLINE_CODES:
-        return {AIRLINE_CODES[text]}
-    return {part.strip() for part in text.split(",") if part.strip()}
+    codes = set()
+    for part in re.split(r"[,/]", text):
+        item = part.strip()
+        if not item:
+            continue
+        code = PROVIDER_CATALOG.airline_code(item)
+        codes.add(code or item)
+    return codes
 
 
 def normalized_stops(value: Any) -> int | None:
@@ -179,25 +174,8 @@ def compact_money(amount: Any, currency: str = "USD") -> str:
 
 def award_program_code(row: dict[str, Any]) -> str:
     source = str(row.get("source") or "").strip().lower()
-    if source in AWARD_PROGRAM_CODES:
-        return AWARD_PROGRAM_CODES[source]
-
-    program = str(row.get("program") or "").lower()
-    if "flying blue" in program or "air france" in program:
-        return "AF"
-    if "alaska" in program:
-        return "AS"
-    if "delta" in program:
-        return "DL"
-    if "southwest" in program or "rapid rewards" in program:
-        return "WN"
-    if "united" in program:
-        return "UA"
-    if "virgin" in program:
-        return "VS"
-    if "aeroplan" in program or "air canada" in program:
-        return "AC"
-    return source.upper()
+    program = str(row.get("program") or "").strip()
+    return PROVIDER_CATALOG.award_program_code(source) or PROVIDER_CATALOG.award_program_code(program) or source.upper()
 
 
 def score(value: Any) -> str:
@@ -245,7 +223,7 @@ def combined_rows(
                 "effective_num": numeric(row.get("effective_usd")),
                 "score": score(row.get("score")),
                 "score_num": numeric(row.get("score")),
-                "notes": row.get("flags", ""),
+                "notes": friendly_flag_notes(row.get("flags", "")),
             }
         )
 
@@ -266,7 +244,7 @@ def combined_rows(
                 "effective_num": numeric(row.get("effective_usd")),
                 "score": score(row.get("score")),
                 "score_num": numeric(row.get("score")),
-                "notes": row.get("flags", ""),
+                "notes": friendly_flag_notes(row.get("flags", "")),
             }
         )
     return rows
@@ -658,9 +636,20 @@ def write_html_summary(
         applySort(index, direction);
       }});
     }});
+    function bindCommittedFilterControl(control) {{
+      control.addEventListener("change", applyFilters);
+      control.addEventListener("keydown", event => {{
+        if (event.key === "Enter") {{
+          event.preventDefault();
+          control.blur();
+          applyFilters();
+        }}
+      }});
+    }}
     Object.values(controls).forEach(control => {{
-      if (control instanceof HTMLInputElement || control instanceof HTMLSelectElement) {{
-        control.addEventListener("input", applyFilters);
+      if (control instanceof HTMLInputElement) {{
+        bindCommittedFilterControl(control);
+      }} else if (control instanceof HTMLSelectElement) {{
         control.addEventListener("change", applyFilters);
       }}
     }});
@@ -684,6 +673,7 @@ def main() -> None:
     parser.add_argument("--award-full-json")
     parser.add_argument("--award-web-json", action="append", default=[], help="Additional normalized award_web JSON file.")
     parser.add_argument("--no-award-web", action="store_true", help="Do not auto-include matching cached award_web rows.")
+    parser.add_argument("--award-web-sources", default="", help="Comma-delimited award_web sources to include, e.g. delta,southwest.")
     parser.add_argument("--output")
     parser.add_argument("--html-output")
     parser.add_argument("--limit", type=int, default=10)
@@ -697,6 +687,7 @@ def main() -> None:
     output_path = Path(args.output) if args.output else paths["output"]
     html_output_path = Path(args.html_output) if args.html_output else paths["html_output"]
     explicit_award_web_paths = [Path(path) for path in args.award_web_json]
+    award_web_sources = [value.strip().lower() for value in args.award_web_sources.split(",") if value.strip()]
     web_award_rows = [] if args.no_award_web else load_web_award_rows(
         WORKSPACE_ROOT,
         origin=args.origin,
@@ -704,12 +695,14 @@ def main() -> None:
         departure_date=args.date,
         cabin=args.cabin,
         paths=explicit_award_web_paths or None,
+        source_names=award_web_sources or None,
     )
     auto_award_web_paths = [] if args.no_award_web or explicit_award_web_paths else [
         path
         for path in (WORKSPACE_ROOT / "award_web" / "data" / "normalized").glob(
             f"*_{slug(args.origin)}_{slug(args.destination)}_{args.date}_{args.cabin.replace('-', '_')}_one_way_web_awards.json"
         )
+        if award_web_path_matches_sources(path, award_web_sources)
     ]
     award_web_paths = explicit_award_web_paths or sorted(auto_award_web_paths)
 

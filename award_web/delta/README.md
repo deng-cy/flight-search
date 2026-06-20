@@ -23,4 +23,42 @@ Keeping outputs in the shared tree lets the root report builders discover web-aw
 
 ## Important Behavior
 
-Delta round-trip checks should use Delta's round-trip UI. Do not replace a Delta round-trip search with two one-way web searches. The current round-trip parser records the outbound-selection page as an observation and marks return selection as unparsed until the return leg is parsed from Delta's flow.
+Delta round-trip checks should use Delta's round-trip UI. Do not replace a Delta round-trip search with two one-way web searches.
+
+The standalone Playwright fetch can be blocked by Delta's edge bot checks. When Delta works in the user's real Chrome session, capture the visible outbound and return pages with the browser tool and save a JSON payload with this shape:
+
+```json
+{
+  "snapshots": [
+    {
+      "stage": "outbound",
+      "url": "https://www.delta.com/...",
+      "body_text": "...visible outbound page text...",
+      "html_content": "...optional page html..."
+    },
+    {
+      "stage": "return",
+      "url": "https://www.delta.com/...",
+      "body_text": "...visible return page text...",
+      "html_content": "...optional page html..."
+    }
+  ]
+}
+```
+
+Then import and normalize it through the standard Delta pipeline:
+
+```bash
+.venv/bin/python award_web/scripts/search_delta_awards.py \
+  --origin SFO \
+  --destination DTW \
+  --date 2026-11-13 \
+  --trip-type round-trip \
+  --return-origin DTW \
+  --return-destination SFO \
+  --return-date 2026-11-29 \
+  --cabin economy \
+  --browser-capture-json /path/to/delta_browser_capture.json
+```
+
+This writes the usual raw JSON, evidence, normalized CSV/JSON, and markdown report. If both outbound and return snapshots contain parseable flight rows, the normalized row carries `legs.outbound`, `legs.return`, and the flattened `return_*` timing fields used by the master trip report.

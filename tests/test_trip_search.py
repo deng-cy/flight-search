@@ -14,10 +14,13 @@ for path in (WORKSPACE_ROOT, SCRIPTS_ROOT):
 
 from run_trip_search import (
     annotate_cash_strategy_comparisons,
+    airline_identity_config,
     award_pair_rows,
     cash_one_way_pair_rows,
     choose_cash_trip_type,
+    display_arrow_text,
     expand_trip_search,
+    leg_booking_label,
     leg_stop_value,
     mixed_cash_award_rows,
     recommendation_cards,
@@ -185,13 +188,13 @@ class TripSearchExpansionTests(unittest.TestCase):
             )
             html = output.read_text(encoding="utf-8")
 
-        self.assertIn("Best overall", html)
+        self.assertIn("Start here", html)
         self.assertIn("Complete Plans", html)
         self.assertIn("Outbound Award Options", html)
         self.assertIn("Return Award Options", html)
         self.assertIn("round-trip", html)
         self.assertIn("award pair", html)
-        self.assertIn("Cash Details Verified", html)
+        self.assertIn("Cash timing verified", html)
         self.assertIn("10:15 -&gt; 13:20", html)
         self.assertNotIn('data-view-tab="plans"', html)
         self.assertNotIn('id="plansView"', html)
@@ -344,6 +347,17 @@ class TripSearchExpansionTests(unittest.TestCase):
         self.assertNotIn('id="plansView"', html)
         self.assertIn('id="planResultsTemplate"', html)
         self.assertIn("[hidden] {", html)
+        self.assertIn('id="compareTray" class="compare-tray" hidden', html)
+        self.assertIn("compare-tray-head", html)
+        self.assertIn("Compare Plans", html)
+        self.assertIn("compareTray.hidden = selected.length === 0", html)
+        self.assertIn("data-builder-compare-plan", html)
+        self.assertIn("data-builder-plan-id", html)
+        self.assertIn("data-plan-id", html)
+        self.assertIn("setPlanCompared", html)
+        self.assertIn("syncBuilderCompareChecks", html)
+        self.assertIn('input.closest(".builder-card")?.classList.toggle("selected", checked)', html)
+        self.assertNotIn('id="compareTray" hidden><div id="compareList"', html)
         self.assertIn("window.tripReportShowView", html)
         self.assertIn("button.dataset.viewBound", html)
         self.assertIn("planTemplate.content.cloneNode(true)", html)
@@ -356,6 +370,15 @@ class TripSearchExpansionTests(unittest.TestCase):
         self.assertNotIn('data-filter-key="destination" value="SFO"', html)
         self.assertNotIn('data-filter-key="returnDate"', html)
         self.assertIn("Max Stops Per Leg", html)
+        self.assertIn(
+            '<label>Max Stops Per Leg<select id="stopsFilter"><option value="">Any</option>'
+            '<option value="0">0</option><option value="1">1</option><option value="2">2</option></select></label>',
+            html,
+        )
+        self.assertNotIn('id="stopsFilter" type="number"', html)
+        self.assertIn("bindCommittedFilterControl", html)
+        self.assertIn("control.blur();", html)
+        self.assertIn('control.matches(\'input[type="search"], input[type="text"], input[type="number"]\')', html)
         self.assertRegex(html, r'data-outbound-stops="2(?:\.0)?"')
         self.assertRegex(html, r'data-return-stops="1(?:\.0)?"')
         self.assertIn('legStopValue(row, "outboundStops") <= maxStops', html)
@@ -371,39 +394,123 @@ class TripSearchExpansionTests(unittest.TestCase):
         self.assertIn('selectedReturnKey = "";', html)
         self.assertIn('selectedOutboundKey = "";', html)
         self.assertIn("plan-card-head", html)
+        self.assertIn("rec-metrics", html)
+        self.assertIn("recommendation-head", html)
         self.assertIn("plan-metrics", html)
+        self.assertIn("price-chip", html)
+        self.assertIn("grid-template-columns: minmax(200px, 0.95fr) minmax(200px, 0.95fr) minmax(300px, 1.4fr)", html)
+        self.assertIn("grid-template-columns: minmax(180px, 2.2fr) minmax(100px, 1fr) minmax(84px, 0.8fr)", html)
+        self.assertNotIn("<span>Type</span><strong>${escapeHtml(card.dataset.kind", html)
+        self.assertIn("builder-column-head builder-column-head-simple", html)
+        self.assertIn("3. Matching Plans", html)
+        self.assertIn("Complete plans for the selected legs", html)
         self.assertIn("plan-timeline-list", html)
         self.assertIn("flight-timeline", html)
         self.assertIn("timeline-segment", html)
         self.assertIn("timeline-layover", html)
         self.assertIn("timeline-fallback", html)
-        self.assertIn('renderLegTimeline("Outbound flight", outboundDetail)', html)
-        self.assertIn('renderLegTimeline("Inbound flight", returnDetail)', html)
+        self.assertIn('renderLegTimeline("Outbound flight", outboundDetail, card.dataset.outboundBooking)', html)
+        self.assertIn('renderLegTimeline("Inbound flight", returnDetail, card.dataset.returnBooking)', html)
+        self.assertIn("data-outbound-booking", html)
+        self.assertIn("data-return-booking", html)
+        self.assertIn("Book together:", html)
         self.assertNotIn("renderLegDetail", html)
         self.assertNotIn("segment-list", html)
+        self.assertNotIn("compositionHtml", html)
+        self.assertNotIn("data-composition", html)
+        self.assertNotIn("Cash component $", html)
         self.assertIn("choice-compact", html)
         self.assertIn("choice-logo-cell", html)
         self.assertIn("choice-facts", html)
         self.assertIn("choice-metric-strip", html)
         self.assertIn("choice-mini-metric", html)
-        self.assertIn("Effective USD", html)
+        self.assertIn("displayArrowText", html)
+        self.assertIn("escapeDisplay", html)
+        self.assertIn("Estimated value", html)
         self.assertIn("integerMoney(sampleCard.dataset.effective)", html)
         self.assertIn("legLogosHtml(detail)", html)
-        self.assertIn("carrierLine(detail)", html)
+        self.assertIn("airlineLabels", html)
+        self.assertIn("airlineAliasLabels", html)
+        self.assertIn("airlineNamesFromDetail(detail)", html)
+        self.assertIn('const airlineText = airlineNamesFromDetail(detail) || "Airline TBD";', html)
+        self.assertIn("<small>${escapeHtml(airlineText)}</small>", html)
+        self.assertNotIn("carrierLine(detail)", html)
+        self.assertNotIn("choice-subtitle", html)
+        self.assertIn("fallback-logo", html)
+        self.assertIn("carrierClass(code)", html)
+        self.assertIn("compactCarrierText", html)
+        self.assertNotIn("const aircraft = String(detail.aircraft", html)
+        self.assertNotIn("String(segment.aircraft || detail.aircraft", html)
+        self.assertNotIn("pointsLabel(value)", html)
         self.assertIn("layoverSummary(detail)", html)
         self.assertIn("carrierCodesFromDetail", html)
         self.assertIn("legPaymentIconHtml(detail", html)
         self.assertIn("legPairIconsHtml(outboundDetail, returnDetail)", html)
-        self.assertIn("pointsLabel(detail.points)", html)
-        self.assertIn("detail.taxes", html)
         self.assertIn("choice-switch", html)
-        self.assertIn('Switches ${escapeHtml(switchLabel)}', html)
+        self.assertIn('Switch ${escapeHtml(switchLabel)}', html)
+        self.assertNotIn('Switches ${escapeHtml(switchLabel)}', html)
         self.assertIn('keyName === "returnKey" ? "outbound" : "inbound"', html)
         self.assertIn(".leg-choice .plan-icon", html)
         self.assertIn("airline-logo-config", html)
+        self.assertIn("SJC \u2194 MSO", html)
+        self.assertIn("10:00 \u2192 13:00", html)
+        self.assertNotIn("SJC &lt;-&gt; MSO", html)
 
         self.assertEqual(leg_stop_value(complete_rows[0], "outbound"), 2)
         self.assertEqual(leg_stop_value(complete_rows[0], "return"), 1)
+
+    def test_leg_booking_labels_are_concise(self) -> None:
+        award_row = {
+            "kind": "award pair",
+            "price": "AF 16,000 + $20.44 / DL 47,300 + $5.60",
+            "outbound_leg_detail": {
+                "program": "Air France/KLM Flying Blue",
+                "points": 16000,
+                "taxes": "$20.44",
+            },
+            "return_leg_detail": {
+                "program": "Delta SkyMiles",
+                "points": 47300,
+                "taxes": "$5.60",
+            },
+        }
+        cash_row = {
+            "kind": "cash + award",
+            "price": "Cash $357.00 / AF 16,000 + $20.44",
+            "outbound_leg_detail": {},
+            "return_leg_detail": {
+                "program": "Air France/KLM Flying Blue",
+                "points": 16000,
+                "taxes": "$20.44",
+            },
+        }
+        together_row = {
+            "kind": "cash",
+            "trip_type": "round-trip",
+            "price": "$359.00",
+        }
+
+        self.assertEqual(
+            leg_booking_label(award_row, "outbound"),
+            "Book separately: Air France/KLM Flying Blue · 16,000 pts · $20.44",
+        )
+        self.assertEqual(leg_booking_label(cash_row, "outbound"), "Book separately: $357.00")
+        self.assertEqual(leg_booking_label(together_row, "return"), "Book together: round-trip fare · $359.00")
+
+    def test_display_arrow_text_uses_real_arrows(self) -> None:
+        self.assertEqual(display_arrow_text("SFO -> DTW"), "SFO \u2192 DTW")
+        self.assertEqual(display_arrow_text("SFO <-> DTW"), "SFO \u2194 DTW")
+
+    def test_airline_identity_config_collapses_provider_labels(self) -> None:
+        config = airline_identity_config()
+
+        self.assertEqual(config["labels"]["DL"], "Delta")
+        self.assertEqual(config["labels"]["UA"], "United")
+        self.assertEqual(config["labels"]["WN"], "Southwest")
+        self.assertEqual(config["aliases"]["deltaweb"], "Delta")
+        self.assertEqual(config["aliases"]["deltaskymiles"], "Delta")
+        self.assertEqual(config["aliases"]["unitedmileageplus"], "United")
+        self.assertEqual(config["aliases"]["southwestrapidrewards"], "Southwest")
 
     def test_master_report_marks_missing_cash_return_timing(self) -> None:
         plan = expand_trip_search(
@@ -465,7 +572,7 @@ class TripSearchExpansionTests(unittest.TestCase):
 
         self.assertIn("timing missing", html)
         self.assertIn("Timing unavailable", html)
-        self.assertIn("Cash details: 0/1 priced fares have verified return timing", html)
+        self.assertIn("Cash timing verified", html)
 
     def test_recommendations_do_not_promote_unverified_cash_as_overall(self) -> None:
         cash_row = {
@@ -510,11 +617,11 @@ class TripSearchExpansionTests(unittest.TestCase):
 
         cards = recommendation_cards([cash_row, award_row])
 
-        self.assertEqual(cards[0]["label"], "Best overall")
+        self.assertEqual(cards[0]["label"], "Start here")
         self.assertEqual(cards[0]["row"]["kind"], "award pair")
         cash_cards = [card for card in cards if card["row"]["kind"] == "cash"]
         self.assertEqual(len(cash_cards), 1)
-        self.assertIn("return unverified", cash_cards[0]["label"])
+        self.assertIn("verify timing", cash_cards[0]["label"])
         self.assertNotIn("Cheapest tolerable", cash_cards[0]["label"])
 
     def test_master_report_calls_out_missing_cash(self) -> None:
@@ -560,7 +667,7 @@ class TripSearchExpansionTests(unittest.TestCase):
 
         self.assertIn("Cash unavailable", html)
         self.assertIn("1 cash itineraries checked", html)
-        self.assertIn("No priced cash fares", html)
+        self.assertIn("Provider issues", html)
 
     def test_mixed_cash_award_and_cash_one_way_pairs_are_complete_plans(self) -> None:
         cash_rows = [
@@ -691,7 +798,11 @@ class TripSearchExpansionTests(unittest.TestCase):
 
         cash_rows, one_way_rows = annotate_cash_strategy_comparisons([true_cash], [two_one_ways])
         cards = recommendation_cards([*cash_rows, *one_way_rows])
-        best_cash_cards = [card for card in cards if "Suggested cash: two one-ways" in card["label"]]
+        best_cash_cards = [
+            card
+            for card in cards
+            if card["row"]["kind"] == "cash one-ways" and card["row"].get("cash_flex_recommended")
+        ]
 
         self.assertEqual(len(best_cash_cards), 1)
         self.assertEqual(best_cash_cards[0]["row"]["kind"], "cash one-ways")
