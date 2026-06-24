@@ -437,6 +437,145 @@ def normalized_list(value: Any) -> list[dict[str, Any]]:
     return [item for item in value if isinstance(item, dict)]
 
 
+def unique_ordered_strings(values: list[Any]) -> list[str]:
+    labels: list[str] = []
+    seen: set[str] = set()
+    for value in values:
+        label = str(value or "").strip()
+        if not label or label in seen:
+            continue
+        labels.append(label)
+        seen.add(label)
+    return labels
+
+
+def plan_summary_payload(plan: TripSearchPlan) -> dict[str, list[dict[str, Any]]]:
+    return {
+        "outbound_legs": [asdict(leg) for leg in plan.outbound_legs],
+        "return_legs": [asdict(leg) for leg in plan.return_legs],
+    }
+
+
+def trip_record_from_payload(
+    *,
+    plan_payload: dict[str, Any],
+    href: str,
+    html_path: Path,
+    current: bool,
+    complete_count: int | None,
+) -> dict[str, Any]:
+    outbound_legs = normalized_list(plan_payload.get("outbound_legs"))
+    return_legs = normalized_list(plan_payload.get("return_legs"))
+    origins = unique_ordered_strings([leg.get("origin") for leg in outbound_legs])
+    destinations = unique_ordered_strings([leg.get("destination") for leg in outbound_legs])
+    outbound_dates = unique_ordered_strings([leg.get("date") for leg in outbound_legs])
+    return_dates = unique_ordered_strings([leg.get("date") for leg in return_legs])
+    route_label = f"{'/'.join(origins) or 'Unknown'} to {'/'.join(destinations) or 'Unknown'}"
+    outbound_label = ", ".join(outbound_dates) if outbound_dates else "none"
+    return_label = ", ".join(return_dates) if return_dates else "none"
+    updated_sort = 0.0 if current else (html_path.stat().st_mtime if html_path.exists() else 0.0)
+    updated_label = (
+        ""
+        if current
+        else (
+            datetime.fromtimestamp(updated_sort).astimezone().strftime("%Y-%m-%d %H:%M %Z")
+            if updated_sort
+            else ""
+        )
+    )
+    return {
+        "href": href,
+        "route_label": route_label,
+        "date_label": f"Outbound dates: {outbound_label} · Return dates: {return_label}",
+        "complete_count": complete_count,
+        "updated_label": updated_label,
+        "updated_sort": updated_sort,
+        "current": current,
+    }
+
+
+def trip_record_from_summary_path(summary_path: Path, current_html_path: Path) -> dict[str, Any] | None:
+    try:
+        payload = load_json(summary_path)
+    except Exception:
+        return None
+    if not isinstance(payload, dict):
+        return None
+
+    html_path = summary_path.with_suffix(".html")
+    is_current = html_path.name == current_html_path.name
+    if not html_path.exists() and not is_current:
+        return None
+
+    rows = payload.get("rows") if isinstance(payload.get("rows"), dict) else {}
+    complete_rows = rows.get("complete_plans") if isinstance(rows.get("complete_plans"), list) else []
+    plan_payload = payload.get("plan") if isinstance(payload.get("plan"), dict) else {}
+    return trip_record_from_payload(
+        plan_payload=plan_payload,
+        href=html_path.name,
+        html_path=html_path,
+        current=is_current,
+        complete_count=len(complete_rows),
+    )
+
+
+def trip_report_records(current_html_path: Path, *, plan: TripSearchPlan, complete_rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    current_href = current_html_path.name
+    records: dict[str, dict[str, Any]] = {
+        current_href: trip_record_from_payload(
+            plan_payload=plan_summary_payload(plan),
+            href=current_href,
+            html_path=current_html_path,
+            current=True,
+            complete_count=len(complete_rows),
+        )
+    }
+    for summary_path in sorted(current_html_path.parent.glob("*_trip_summary.json")):
+        record = trip_record_from_summary_path(summary_path, current_html_path)
+        if record is None:
+            continue
+        records[record["href"]] = record
+
+    records[current_href]["current"] = True
+    current_record = records[current_href]
+    other_records = sorted(
+        (record for href, record in records.items() if href != current_href),
+        key=lambda record: (-float(record.get("updated_sort") or 0), str(record.get("route_label") or "")),
+    )
+    return [current_record, *other_records]
+
+
+def trip_record_selector_html(current_html_path: Path, *, plan: TripSearchPlan, complete_rows: list[dict[str, Any]]) -> str:
+    records = trip_report_records(current_html_path, plan=plan, complete_rows=complete_rows)
+    links = []
+    for record in records:
+        complete_count = record.get("complete_count")
+        count_label = ""
+        if complete_count is not None:
+            suffix = "" if complete_count == 1 else "s"
+            count_label = f"{complete_count} complete plan{suffix}"
+        status_label = "Current" if record.get("current") else "Open"
+        meta_parts = [part for part in [count_label, status_label] if part]
+        meta = "".join(f"<span>{escape(part)}</span>" for part in meta_parts)
+        current_class = " current" if record.get("current") else ""
+        aria_current = ' aria-current="page"' if record.get("current") else ""
+        links.append(
+            f'<a class="record-link{current_class}" href="{escape(str(record["href"]), quote=True)}"{aria_current}>'
+            f'<strong>{escape(str(record["route_label"]))}</strong>'
+            f'<span>{escape(str(record["date_label"]))}</span>'
+            f'<small class="record-meta">{meta}</small>'
+            "</a>"
+        )
+    return (
+        '<section class="control-block record-controls" aria-label="Trip records">'
+        "<h2>Trip records</h2>"
+        '<nav class="record-list" aria-label="Saved trip report pages">'
+        f'{"".join(links)}'
+        "</nav>"
+        "</section>"
+    )
+
+
 def split_codes(value: Any) -> list[str]:
     text = str(value or "")
     codes = re.findall(r"\b[A-Z0-9]{2}\b(?=\s?\d|\b)", text)
@@ -1753,6 +1892,15 @@ def recommendation_row_key(row: dict[str, Any]) -> tuple[Any, ...]:
     )
 
 
+def best_overall_recommendation_row(complete_rows: list[dict[str, Any]]) -> dict[str, Any] | None:
+    recommendable_rows = [row for row in complete_rows if row.get("kind") != "web award round-trip"]
+    if not recommendable_rows:
+        return None
+    complete_timing_rows = [row for row in recommendable_rows if has_complete_timing(row)]
+    overall_pool = complete_timing_rows or recommendable_rows
+    return min(overall_pool, key=lambda row: (row["score"], row["effective_num"]))
+
+
 def recommendation_cards(complete_rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     if not complete_rows:
         return []
@@ -1764,63 +1912,26 @@ def recommendation_cards(complete_rows: list[dict[str, Any]]) -> list[dict[str, 
     cards = []
     cash_rows = [row for row in recommendable_rows if row["kind"] == "cash"]
     award_rows = [row for row in recommendable_rows if row["kind"] == "award pair"]
-    cash_one_way_rows = [row for row in recommendable_rows if row["kind"] == "cash one-ways"]
-    paid_cash_rows = [*cash_rows, *cash_one_way_rows]
-    complete_timing_rows = [row for row in recommendable_rows if has_complete_timing(row)]
-    overall_pool = complete_timing_rows or recommendable_rows
-    best_overall = min(overall_pool, key=lambda row: (row["score"], row["effective_num"]))
-    cards.append({"label": "Start here", "row": best_overall})
+    best_overall = best_overall_recommendation_row(complete_rows)
+    if best_overall:
+        cards.append({"label": "Start here", "row": best_overall})
 
-    if paid_cash_rows:
+    if cash_rows:
         best_cash = min(
-            paid_cash_rows,
+            cash_rows,
             key=lambda row: (
-                row["effective_num"],
-                not bool(row.get("cash_flex_recommended")),
-                row.get("kind") != "cash one-ways",
                 row["score"],
+                row["effective_num"],
             ),
         )
-        cash_label = "Best all-cash"
-        if best_cash.get("kind") == "cash one-ways" and best_cash.get("cash_flex_recommended"):
-            cash_label = "Best all-cash: two one-ways"
-        elif cash_return_unverified(best_cash):
-            cash_label = "Best all-cash, verify timing"
-        cards.append({"label": cash_label, "row": best_cash})
+        cards.append({"label": "Best cash option", "row": best_cash})
 
     if award_rows:
         cards.append({"label": "Best points option", "row": min(award_rows, key=lambda row: (row["score"], row["effective_num"]))})
 
-    if cash_one_way_rows:
-        flexible_one_way_rows = [row for row in cash_one_way_rows if row.get("cash_flex_recommended")]
-        one_way_label = "Best two one-ways" if flexible_one_way_rows else "Two one-ways check"
-        cards.append(
-            {
-                "label": one_way_label,
-                "row": min(flexible_one_way_rows or cash_one_way_rows, key=lambda row: (row["effective_num"], row["score"])),
-            }
-        )
-
     cheapest = min(complete_rows, key=lambda row: (row["effective_num"], row["score"]))
     cheapest_label = "Lowest estimate, verify timing" if cash_return_unverified(cheapest) else "Lowest estimate"
     cards.append({"label": cheapest_label, "row": cheapest})
-    cards.append(
-        {
-            "label": "Easiest timing",
-            "row": min(
-                complete_timing_rows or complete_rows,
-                key=lambda row: (
-                    not has_complete_timing(row),
-                    excessive_duration(row),
-                    has_late_penalty(row),
-                    row["stops_num"],
-                    row["duration_minutes"],
-                    not bool(row.get("same_airports")),
-                    row["score"],
-                ),
-            ),
-        }
-    )
 
     deduped = []
     by_row: dict[tuple[Any, ...], dict[str, Any]] = {}
@@ -1835,15 +1946,16 @@ def recommendation_cards(complete_rows: list[dict[str, Any]]) -> list[dict[str, 
 
 
 def compact_card_label(labels: list[str]) -> str:
+    if "Start here" in labels and "Best cash option" in labels:
+        return "Start here + best cash option"
+    if "Start here" in labels and "Lowest estimate" in labels:
+        return "Start here + lowest estimate"
+    if "Start here" in labels and "Lowest estimate, verify timing" in labels:
+        return "Start here + lowest estimate"
     priority = [
         "Start here",
-        "Best all-cash: two one-ways",
-        "Best all-cash, verify timing",
-        "Best all-cash",
+        "Best cash option",
         "Best points option",
-        "Best two one-ways",
-        "Two one-ways check",
-        "Easiest timing",
         "Lowest estimate",
         "Lowest estimate, verify timing",
     ]
@@ -2016,6 +2128,108 @@ def note_from_penalties(row: dict[str, Any]) -> list[str]:
     return notes
 
 
+def has_inconvenient_time_penalty(row: dict[str, Any]) -> bool:
+    return bool(note_from_penalties(row))
+
+
+def timing_pain_summary(row: dict[str, Any]) -> str:
+    penalties = note_from_penalties(row)
+    if penalties:
+        return "Pain: " + ", ".join(penalties[:2])
+    if cash_return_unverified(row):
+        return "Return timing missing"
+    if not has_complete_timing(row):
+        return "Timing incomplete"
+    return "No early/late penalty"
+
+
+def stat_card_html(label: str, value: str, detail: str, *, class_name: str = "") -> str:
+    classes = "stat" + (f" {class_name}" if class_name else "")
+    return (
+        f'<article class="{classes}">'
+        f"<span>{escape(label)}</span>"
+        f"<strong>{escape(value or '-')}</strong>"
+        f"<p>{escape(detail)}</p>"
+        "</article>"
+    )
+
+
+def price_stat_detail(row: dict[str, Any], suffix: str) -> str:
+    parts = [str(row.get("price") or row.get("effective") or "").strip(), compact_route(row), suffix]
+    return " · ".join(part for part in parts if part)
+
+
+def summary_price_stats_html(complete_rows: list[dict[str, Any]]) -> str:
+    recommendable_rows = [row for row in complete_rows if row.get("kind") != "web award round-trip"]
+    if not recommendable_rows:
+        return ""
+
+    cheapest = min(recommendable_rows, key=lambda row: (row["effective_num"], row["score"]))
+    clean_timing_rows = [
+        row
+        for row in recommendable_rows
+        if has_complete_timing(row) and not has_inconvenient_time_penalty(row)
+    ]
+    cheapest_clean = min(clean_timing_rows, key=lambda row: (row["effective_num"], row["score"])) if clean_timing_rows else None
+    best_overall = best_overall_recommendation_row(complete_rows)
+
+    cards = [
+        stat_card_html(
+            "Cheapest flight",
+            str(cheapest.get("effective") or cheapest.get("price") or ""),
+            price_stat_detail(cheapest, timing_pain_summary(cheapest)),
+            class_name="price-alert" if has_inconvenient_time_penalty(cheapest) else "",
+        )
+    ]
+    if cheapest_clean:
+        cards.append(
+            stat_card_html(
+                "Cheapest clean timing",
+                str(cheapest_clean.get("effective") or cheapest_clean.get("price") or ""),
+                price_stat_detail(cheapest_clean, "No early/late penalty"),
+            )
+        )
+    else:
+        cards.append(
+            stat_card_html(
+                "Cheapest clean timing",
+                "Not found",
+                "Every complete plan has an early/late warning or incomplete timing.",
+                class_name="price-alert",
+            )
+        )
+    if best_overall:
+        cards.append(
+            stat_card_html(
+                "Best flight price",
+                str(best_overall.get("effective") or best_overall.get("price") or ""),
+                price_stat_detail(best_overall, f"Score {best_overall.get('score_label') or '-'}"),
+            )
+        )
+
+    if cheapest_clean:
+        delta = float(cheapest_clean["effective_num"]) - float(cheapest["effective_num"])
+        if delta > CASH_PRICE_TOLERANCE_USD:
+            cards.append(
+                stat_card_html(
+                    "Savings for pain",
+                    signed_money_delta(delta),
+                    "How much the cheapest estimate saves versus the lowest clean-timing option.",
+                    class_name="savings-stat",
+                )
+            )
+        else:
+            cards.append(
+                stat_card_html(
+                    "Clean-timing premium",
+                    "$0.00",
+                    "The cheapest option already avoids early/late timing penalties.",
+                )
+            )
+
+    return "".join(cards)
+
+
 def display_notes(row: dict[str, Any]) -> str:
     notes = note_from_penalties(row)
     comparison = row.get("cash_strategy_comparison")
@@ -2040,6 +2254,72 @@ def display_notes(row: dict[str, Any]) -> str:
     if friendly_notes:
         notes.extend(part.strip() for part in friendly_notes.split(",") if part.strip())
     return "; ".join(dict.fromkeys(note for note in notes if note))
+
+
+def summary_rank_reason(row: dict[str, Any], label: str = "") -> str:
+    kind = str(row.get("kind") or "")
+    label_lower = label.lower()
+    if "start here" in label_lower:
+        return "Best balance of price, timing, stops, and duration."
+    if "cash option" in label_lower or kind == "cash":
+        return "Best paid fare with one checkout."
+    if "points" in label_lower and kind == "award pair":
+        return "Best points plan after mile value, taxes, timing, and stops."
+    if "lowest" in label_lower:
+        return "Lowest estimated value in this search."
+    if kind == "cash + award":
+        return "Best split plan when one direction is better with points."
+    if kind == "cash one-ways":
+        return "Best separately booked cash pair."
+    if kind == "award pair":
+        return "Best points plan after mile value, taxes, timing, and stops."
+    return "Ranked with the same traveler preferences."
+
+
+def lowercase_first(value: str) -> str:
+    if not value:
+        return value
+    return value[:1].lower() + value[1:]
+
+
+def summary_card_note(row: dict[str, Any]) -> str:
+    notes: list[str] = []
+    kind = str(row.get("kind") or "")
+    comparison = row.get("cash_strategy_comparison")
+    delta = row.get("cash_strategy_delta_usd")
+
+    if kind == "cash":
+        if comparison == "cheaper" and delta not in ("", None):
+            notes.append(f"Saves {signed_money_delta(float(delta))} versus separately booked one-way cash.")
+        elif comparison == "same_price":
+            notes.append("Same price as two one-way cash fares; one booking is simpler.")
+        elif comparison == "more_expensive" and delta not in ("", None):
+            notes.append(f"Two one-way cash fares are {signed_money_delta(float(delta))} cheaper.")
+    elif kind == "cash one-ways":
+        if comparison == "cheaper" and delta not in ("", None):
+            notes.append(f"Saves {signed_money_delta(float(delta))} versus true two-leg cash, but needs separate bookings.")
+        elif comparison == "same_price":
+            notes.append("Same price as true two-leg cash; separate bookings add flexibility.")
+        elif comparison == "more_expensive" and delta not in ("", None):
+            notes.append(f"Costs {signed_money_delta(float(delta))} more than true two-leg cash.")
+        else:
+            notes.append("Book outbound and return separately.")
+    elif kind == "cash + award":
+        notes.append("Two checkouts: cash one way, points the other.")
+    elif kind == "award pair":
+        notes.append("Book outbound and return as separate awards.")
+
+    penalties = note_from_penalties(row)
+    if penalties:
+        notes.append("Timing warning: " + ", ".join(lowercase_first(note) for note in penalties) + ".")
+    if row.get("same_airports") is False:
+        notes.append("Airport pair changes; check ground logistics.")
+    if cash_return_unverified(row):
+        notes.append("Return time still needs confirmation.")
+    elif not has_complete_timing(row):
+        notes.append("Some timing details are missing.")
+
+    return " ".join(dict.fromkeys(note for note in notes if note))
 
 
 def traveler_decision_chips(row: dict[str, Any]) -> list[str]:
@@ -2076,7 +2356,7 @@ def traveler_rank_reason(row: dict[str, Any], label: str = "") -> str:
         reason = "Best balance of estimated cost, stops, duration, and inconvenient flight times."
     elif "easiest" in label_lower:
         reason = "Least friction among the available plans: better timing, fewer stops, and complete details when available."
-    elif "all-cash" in label_lower:
+    elif "all-cash" in label_lower or "cash option" in label_lower:
         reason = "Strongest paid-fare option, useful when you want a simple booking path without points."
     elif "points" in label_lower and kind == "award pair":
         reason = "Strongest points-only plan after valuing miles, taxes, timing, and stops together."
@@ -2370,12 +2650,16 @@ def summary_recommendation_leg_html(
     return (
         f'<div class="{classes}">'
         f'<span>{escape(label)}</span>'
+        '<div class="rec-leg-top">'
+        '<div class="rec-leg-place">'
         f'<div class="rec-leg-route">{escape(route or "Route TBD")}</div>'
         f'<div class="rec-leg-date">{escape(str(date or "Date TBD"))}</div>'
+        '</div>'
         '<div class="rec-leg-times">'
         f'<strong>{escape(str(depart or "TBD"))}</strong>'
         f'<span>{RIGHT_ARROW}</span>'
         f'<strong>{escape(str(arrive or "TBD"))}</strong>'
+        '</div>'
         '</div>'
         f'<div class="rec-leg-meta">{escape(meta or "Timing details unavailable")}</div>'
         '</div>'
@@ -2694,15 +2978,18 @@ def write_master_html(
     all_rows = [*complete_rows, *award_rows, *cash_one_way_rows]
     one_way_cash_options = len(cash_one_way_rows)
     cards = recommendation_cards(complete_rows)
+    summary_stats = summary_price_stats_html(complete_rows)
     card_tags = []
     for card in cards:
         row = card["row"]
-        card_note = display_notes(row)
+        card_note = summary_card_note(row)
         card_badges = badges_html(row)
         card_badges_tag = f'<div class="badges rec-badges">{card_badges}</div>' if card_badges else ""
         card_note_tag = f'<p class="recommendation-note">{escape(card_note)}</p>' if card_note else ""
-        card_reason_tag = f'<p class="recommendation-reason">{escape(traveler_rank_reason(row, card["label"]))}</p>'
+        card_reason_tag = f'<p class="recommendation-reason">{escape(summary_rank_reason(row, card["label"]))}</p>'
         decision_chips = decision_chips_html(row)
+        alert_row_empty = " empty" if not card_badges and not decision_chips else ""
+        alert_row = f'<div class="summary-alert-row{alert_row_empty}">{card_badges_tag}{decision_chips}</div>'
         timing_warning_tag = (
             '<p class="recommendation-warning">Confirm return timing before booking</p>'
             if cash_return_unverified(row)
@@ -2715,17 +3002,16 @@ def write_master_html(
             f'<h2>{escape(compact_route(row))}</h2>'
             f'<p>{escape(compact_dates(row))}</p>'
             '</div>'
-            f'{card_badges_tag}'
+            f'{alert_row}'
             f'{card_reason_tag}'
-            f'{decision_chips}'
-            '<div class="rec-legs">'
-            f'{summary_recommendation_leg_html("Outbound", row, "outbound")}'
-            f'{summary_recommendation_leg_html("Return", row, "return", muted=row.get("kind") == "cash" and row.get("cash_detail_status") != "complete")}'
-            '</div>'
             '<div class="rec-metrics">'
             f'<span class="plan-chip price-chip"><span>Price</span><strong>{escape(row["price"])}</strong></span>'
             f'<span class="plan-chip"><span>Estimated value</span><strong><span data-live-effective>{escape(row["effective"])}</span></strong></span>'
             f'<span class="plan-chip"><span>Trip score</span><strong><span data-live-score>{escape(row["score_label"])}</span></strong></span>'
+            '</div>'
+            '<div class="rec-legs">'
+            f'{summary_recommendation_leg_html("Outbound", row, "outbound")}'
+            f'{summary_recommendation_leg_html("Return", row, "return", muted=row.get("kind") == "cash" and row.get("cash_detail_status") != "complete")}'
             '</div>'
             f'{timing_warning_tag}'
             f'{card_note_tag}'
@@ -2767,6 +3053,7 @@ def write_master_html(
     point_controls = point_value_controls(all_rows)
     stop_filter_options = stop_limit_options(all_rows)
     date_constraints = date_constraint_summary(plan)
+    trip_record_selector = trip_record_selector_html(path, plan=plan, complete_rows=complete_rows)
     checkbox_filters = "\n".join(
         item
         for item in [
@@ -2900,7 +3187,11 @@ def write_master_html(
       border-radius: 8px;
       box-shadow: var(--card-shadow);
     }}
-    .stat {{ padding: 14px 16px; }}
+    .stat {{
+      display: grid;
+      gap: 6px;
+      padding: 14px 16px;
+    }}
     .stat span,
     .section-kicker {{
       display: block;
@@ -2915,6 +3206,28 @@ def write_master_html(
       font-size: 22px;
       line-height: 1.12;
       overflow-wrap: anywhere;
+    }}
+    .stat p {{
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+    }}
+    .stat.price-alert {{
+      border-color: #fdba74;
+      background: #fff7ed;
+    }}
+    .stat.price-alert span,
+    .stat.price-alert p {{
+      color: #9a3412;
+    }}
+    .stat.savings-stat {{
+      border-color: #99f6e4;
+      background: #ecfdf5;
+    }}
+    .stat.savings-stat span,
+    .stat.savings-stat p {{
+      color: #0f766e;
     }}
     .source-body {{
       display: grid;
@@ -3006,13 +3319,17 @@ def write_master_html(
     }}
     .recommendation {{
       display: grid;
+      grid-template-rows: minmax(58px, auto) minmax(28px, auto) minmax(34px, auto) auto auto auto auto;
       gap: 12px;
       padding: 14px;
       min-width: 0;
+      align-content: start;
     }}
     .recommendation-head {{
       display: grid;
       gap: 4px;
+      align-content: start;
+      min-height: 58px;
     }}
     .recommendation h2 {{
       margin: 0;
@@ -3037,6 +3354,9 @@ def write_master_html(
     .rank-reason {{
       margin: 0;
       color: var(--metric-ink);
+    }}
+    .recommendation-reason {{
+      min-height: 34px;
     }}
     .recommendation-warning {{
       width: fit-content;
@@ -3066,7 +3386,21 @@ def write_master_html(
       font-weight: 780;
       text-transform: uppercase;
     }}
-    .rec-badges {{ margin: -2px 0 0; }}
+    .summary-alert-row {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: flex-start;
+      min-height: 28px;
+    }}
+    .summary-alert-row.empty {{
+      visibility: hidden;
+    }}
+    .summary-alert-row .badges,
+    .summary-alert-row .decision-chips {{
+      margin: 0;
+    }}
+    .rec-badges {{ margin: 0; }}
     .rec-legs {{
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -3083,6 +3417,17 @@ def write_master_html(
       display: grid;
       gap: 4px;
     }}
+    .rec-leg-top {{
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: start;
+    }}
+    .rec-leg-place {{
+      display: grid;
+      gap: 3px;
+      min-width: 0;
+    }}
     .rec-leg > span {{
       display: block;
       margin-bottom: 5px;
@@ -3096,7 +3441,8 @@ def write_master_html(
       font-size: 13px;
       line-height: 1.25;
       font-weight: 820;
-      overflow-wrap: anywhere;
+      overflow-wrap: normal;
+      white-space: nowrap;
     }}
     .rec-leg-date {{
       color: var(--muted);
@@ -3107,14 +3453,16 @@ def write_master_html(
     .rec-leg-times {{
       display: flex;
       flex-wrap: nowrap;
-      gap: 6px;
+      gap: 4px;
       align-items: baseline;
+      justify-content: end;
+      text-align: right;
       color: var(--ink);
     }}
     .rec-leg-times strong {{
       flex: 0 0 auto;
       min-width: max-content;
-      font-size: 15px;
+      font-size: 14px;
       line-height: 1.15;
       font-weight: 860;
       white-space: nowrap;
@@ -3145,6 +3493,11 @@ def write_master_html(
     }}
     .rec-metrics .price-chip {{
       grid-column: 1 / -1;
+    }}
+    .rec-metrics .price-chip strong {{
+      font-size: 15px;
+      overflow-wrap: normal;
+      word-break: normal;
     }}
     .quality {{
       margin-bottom: 18px;
@@ -3261,6 +3614,9 @@ def write_master_html(
       gap: 10px;
       min-width: 0;
     }}
+    .record-controls {{
+      order: 0;
+    }}
     .score-controls {{
       order: 2;
     }}
@@ -3282,6 +3638,66 @@ def write_master_html(
       color: var(--muted);
       font-size: 13px;
       line-height: 1.35;
+    }}
+    .record-list {{
+      display: grid;
+      gap: 8px;
+    }}
+    .record-link {{
+      display: grid;
+      gap: 5px;
+      min-width: 0;
+      padding: 10px 11px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fbfdff;
+      color: var(--ink);
+      text-decoration: none;
+    }}
+    .record-link:hover {{
+      border-color: #b7c7d6;
+      background: var(--surface-soft);
+    }}
+    .record-link:focus-visible {{
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }}
+    .record-link.current {{
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      box-shadow: inset 3px 0 0 var(--accent);
+    }}
+    .record-link strong {{
+      color: var(--ink);
+      font-size: 14px;
+      line-height: 1.25;
+      font-weight: 820;
+      overflow-wrap: anywhere;
+    }}
+    .record-link > span {{
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+      font-weight: 650;
+      overflow-wrap: anywhere;
+    }}
+    .record-meta {{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }}
+    .record-meta span {{
+      display: inline-flex;
+      align-items: center;
+      min-height: 20px;
+      border: 1px solid var(--metric-border);
+      border-radius: 999px;
+      padding: 2px 7px;
+      background: var(--metric-bg);
+      color: var(--metric-ink);
+      font-size: 11px;
+      line-height: 1;
+      font-weight: 760;
     }}
     .quick-tabs {{
       display: grid;
@@ -4264,13 +4680,15 @@ def write_master_html(
     }}
     @media (max-width: 1180px) {{
       .plan-metrics {{ grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); }}
-      .price-chip {{ grid-column: 1 / -1; }}
+      .plan-metrics .price-chip {{ grid-column: 1 / -1; }}
     }}
     @media (max-width: 760px) {{
       .choice-compact {{ grid-template-columns: auto minmax(0, 1fr); }}
       .choice-icon-cell {{ grid-column: 1 / -1; justify-content: start; }}
       .choice-facts {{ grid-template-columns: 1fr; }}
       .plan-metrics {{ grid-template-columns: 1fr; }}
+      .rec-metrics {{ grid-template-columns: 1fr 1fr; }}
+      .rec-metrics .price-chip {{ grid-column: 1 / -1; }}
     }}
     .controls {{
       display: grid;
@@ -4455,6 +4873,8 @@ def write_master_html(
     @media (max-width: 620px) {{
       .stats, .recommendations, .source-summary-grid, .controls {{ grid-template-columns: 1fr; }}
       .rec-legs {{ grid-template-columns: 1fr; }}
+      .rec-leg-top {{ grid-template-columns: 1fr; }}
+      .rec-leg-times {{ justify-content: start; text-align: left; }}
       .quick-tabs, .result-toolbar, .card-legs, .cpp-grid, .time-hour-controls, .time-plot-wrap {{ grid-template-columns: 1fr; }}
       .time-penalty-plot {{ gap: 2px; padding: 6px; }}
       .time-scale-control {{
@@ -4473,14 +4893,15 @@ def write_master_html(
 <body>
   <script id="score-config" type="application/json">{score_config_json}</script>
   <script id="airline-logo-config" type="application/json">{airline_logo_config_json}</script>
-  <main class="report-shell drawer-collapsed">
-    <aside class="global-controls" aria-label="Trip preference controls">
+  <main class="report-shell">
+    <aside class="global-controls" aria-label="Trip controls">
       <div class="control-drawer-header">
-        <h2 class="control-drawer-title">Tune preferences</h2>
+        <h2 class="control-drawer-title">Trip controls</h2>
         <button id="controlReset" class="control-reset-button" type="button">Reset</button>
-        <button id="controlDrawerToggle" class="control-drawer-toggle" type="button" aria-controls="controlDrawerBody" aria-expanded="false" aria-label="Show trip controls">&lsaquo;</button>
+        <button id="controlDrawerToggle" class="control-drawer-toggle" type="button" aria-controls="controlDrawerBody" aria-expanded="true" aria-label="Hide trip controls">&rsaquo;</button>
       </div>
       <div id="controlDrawerBody" class="global-controls-inner">
+        {trip_record_selector}
         <section class="control-block score-controls" aria-label="Scoring assumptions">
           <details class="control-details advanced-controls">
             <summary>Advanced scoring and point values</summary>
@@ -4555,6 +4976,9 @@ def write_master_html(
       </template>
     <section id="summaryView" class="view-panel">
       <section class="summary-body">
+        <section class="summary-stats stats" aria-label="Price condition overview">
+          {summary_stats}
+        </section>
         <section class="recommendations" aria-label="Recommendations">
           {"".join(card_tags) if card_tags else '<article class="recommendation"><span>No complete plans</span><h2>Refresh data or check provider errors</h2><p>The report still lists attempted searches below.</p><strong></strong><em></em></article>'}
         </section>

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -25,6 +26,7 @@ from run_trip_search import (
     mixed_cash_award_rows,
     recommendation_cards,
     run_ordered_workers,
+    summary_card_note,
     write_master_html,
 )
 
@@ -196,8 +198,140 @@ class TripSearchExpansionTests(unittest.TestCase):
         self.assertIn("award pair", html)
         self.assertIn("Cash timing verified", html)
         self.assertIn("10:15 -&gt; 13:20", html)
+        self.assertIn("Trip records", html)
+        self.assertIn("SFO to FCA", html)
+        self.assertIn("Outbound dates: 2026-09-04 · Return dates: 2026-09-07", html)
+        self.assertIn("Cheapest flight", html)
+        self.assertIn("Cheapest clean timing", html)
+        self.assertIn("Best flight price", html)
+        self.assertIn("Best cash option", html)
+        self.assertIn("summary-alert-row", html)
+        self.assertIn(".rec-metrics .price-chip", html)
+        self.assertIn("overflow-wrap: normal", html)
+        self.assertNotIn("Easiest timing", html)
+        self.assertNotIn("Best two one-ways", html)
         self.assertNotIn('data-view-tab="plans"', html)
         self.assertNotIn('id="plansView"', html)
+
+    def test_summary_card_note_clarifies_savings_and_timing_warning(self) -> None:
+        note = summary_card_note(
+            {
+                "kind": "cash",
+                "cash_detail_status": "complete",
+                "cash_strategy_comparison": "cheaper",
+                "cash_strategy_delta_usd": -207.0,
+                "outbound_depart": "12:45",
+                "return_depart": "19:30",
+                "same_airports": True,
+                "notes": "late arrival",
+            }
+        )
+
+        self.assertEqual(
+            note,
+            "Saves $207.00 versus separately booked one-way cash. Timing warning: late arrival.",
+        )
+
+    def test_recommendation_cards_prioritize_best_cash_without_extra_timing_cards(self) -> None:
+        rows = [
+            {
+                "kind": "cash",
+                "route": "SFO -> DTW / DTW -> SFO",
+                "dates": "2026-11-14 / 2026-11-30",
+                "price": "$359.00",
+                "effective": "$359.00",
+                "effective_num": 359.0,
+                "score": 383.58,
+                "score_label": "383.58",
+                "stops_num": 1,
+                "duration_minutes": 862,
+                "depart": "12:45 / 19:30",
+                "arrive": "20:40 / 01:57 +1",
+                "outbound_depart": "12:45",
+                "return_depart": "19:30",
+                "cash_detail_status": "complete",
+                "same_airports": True,
+                "notes": "round trip cash fare",
+            },
+            {
+                "kind": "cash one-ways",
+                "route": "SFO -> DTW -> SJC",
+                "dates": "2026-11-14 / 2026-11-30",
+                "price": "$209.00 / $367.00",
+                "effective": "$576.00",
+                "effective_num": 576.0,
+                "score": 823.5,
+                "score_label": "823.50",
+                "stops_num": 2,
+                "duration_minutes": 870,
+                "depart": "12:20 / 10:40",
+                "arrive": "22:50 / 14:40",
+                "outbound_depart": "12:20",
+                "return_depart": "10:40",
+                "cash_flex_recommended": True,
+                "same_airports": False,
+                "notes": "cheaper than true two-leg fare by $117.00",
+            },
+        ]
+
+        labels = [card["label"] for card in recommendation_cards(rows)]
+
+        self.assertIn("Start here + best cash option", labels)
+        self.assertNotIn("Best two one-ways", labels)
+        self.assertNotIn("Two one-ways check", labels)
+        self.assertNotIn("Easiest timing", labels)
+
+    def test_master_report_renders_saved_trip_record_links(self) -> None:
+        plan = expand_trip_search(
+            origins=["SFO"],
+            destinations=["DTW"],
+            outbound_dates=["2026-11-13"],
+            return_dates=["2026-11-29"],
+        )
+        sibling_payload = {
+            "plan": {
+                "outbound_legs": [
+                    {"origin": "SFO", "destination": "FCA", "date": "2026-09-04"},
+                    {"origin": "SFO", "destination": "MSO", "date": "2026-09-05"},
+                    {"origin": "SJC", "destination": "FCA", "date": "2026-09-04"},
+                    {"origin": "SJC", "destination": "MSO", "date": "2026-09-05"},
+                ],
+                "return_legs": [
+                    {"origin": "FCA", "destination": "SFO", "date": "2026-09-07"},
+                    {"origin": "MSO", "destination": "SJC", "date": "2026-09-07"},
+                ],
+            },
+            "rows": {"complete_plans": [{}, {}]},
+        }
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            output_dir = Path(tmp_dir)
+            sibling_json = output_dir / "sfo_sjc_to_fca_mso_out_2026-09-04_2026-09-05_return_2026-09-07_economy_trip_summary.json"
+            sibling_html = sibling_json.with_suffix(".html")
+            sibling_json.write_text(json.dumps(sibling_payload), encoding="utf-8")
+            sibling_html.write_text("<!doctype html>", encoding="utf-8")
+            output = output_dir / "sfo_to_dtw_trip_summary.html"
+            write_master_html(
+                output,
+                title="SFO to DTW Trip Search",
+                cabin="economy",
+                plan=plan,
+                complete_rows=[],
+                award_rows=[],
+                cash_one_way_rows=[],
+                errors=[],
+            )
+            html = output.read_text(encoding="utf-8")
+
+        self.assertIn("Trip records", html)
+        self.assertIn('aria-label="Saved trip report pages"', html)
+        self.assertIn('href="sfo_to_dtw_trip_summary.html" aria-current="page"', html)
+        self.assertIn('href="sfo_sjc_to_fca_mso_out_2026-09-04_2026-09-05_return_2026-09-07_economy_trip_summary.html"', html)
+        self.assertIn("SFO to DTW", html)
+        self.assertIn("SFO/SJC to FCA/MSO", html)
+        self.assertIn("Outbound dates: 2026-09-04, 2026-09-05 · Return dates: 2026-09-07", html)
+        self.assertIn("2 complete plans", html)
+        self.assertIn("Current", html)
 
     def test_master_report_uses_valid_checkbox_filters_and_builder_detail_markers(self) -> None:
         plan = expand_trip_search(
@@ -621,7 +755,8 @@ class TripSearchExpansionTests(unittest.TestCase):
         self.assertEqual(cards[0]["row"]["kind"], "award pair")
         cash_cards = [card for card in cards if card["row"]["kind"] == "cash"]
         self.assertEqual(len(cash_cards), 1)
-        self.assertIn("verify timing", cash_cards[0]["label"])
+        self.assertEqual(cash_cards[0]["label"], "Best cash option")
+        self.assertEqual(cash_cards[0]["row"]["cash_detail_status"], "outbound_only")
         self.assertNotIn("Cheapest tolerable", cash_cards[0]["label"])
 
     def test_master_report_calls_out_missing_cash(self) -> None:

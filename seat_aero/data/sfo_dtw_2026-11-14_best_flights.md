@@ -30,15 +30,15 @@ Seats.aero timestamps are treated as displayed wall-clock times; no timezone con
 | 13 | 10:48 | 22:23 | UA1604, UA1220 | United MileagePlus | economy | 1 | 9 | 22,200 + USD 5.60 | USD 272.00 | 346.92 |  |  |
 | 14 | 12:45 | 22:23 | UA540, UA1220 | United MileagePlus | economy | 1 | 9 | 23,100 + USD 5.60 | USD 282.80 | 347.97 |  |  |
 | 15 | 13:00 | 23:06 | DL2272, DL708 | Air France/KLM Flying Blue | economy | 1 | 7 | 18,000 + USD 30.24 | USD 228.24 | 349.74 | late arrival | Virgin Atlantic Flying Club 26,000 + USD 5.60 |
-| 16 | 05:20 | 15:16 | UA2343, UA5882 | United MileagePlus | economy | 1 | 9 | 15,000 + USD 5.60 | USD 185.60 | 352.27 | very early departure | Air Canada Aeroplan 15,000 + CAD 46.70; velocity 19,000 + AUD 20.70 |
+| 16 | 05:20 | 15:16 | UA2343, UA5882 | United MileagePlus | economy | 1 | 9 | 15,000 + USD 5.60 | USD 185.60 | 352.27 | very early departure | Air Canada Aeroplan 15,000 + CAD 46.70; Virgin Australia Velocity 19,000 + AUD 20.70 |
 | 17 | 06:15 | 15:30 | DL2178, DL1519 | Air France/KLM Flying Blue | economy | 1 | 9 | 19,000 + USD 30.24 | USD 239.24 | 352.49 | early departure | Virgin Atlantic Flying Club 29,500 + USD 5.60 |
-| 18 | 05:00 | 15:14 | UA1479, UA1915 | United MileagePlus | economy | 1 | 9 | 15,000 + USD 5.60 | USD 185.60 | 353.77 | very early departure | Air Canada Aeroplan 15,000 + CAD 46.70; velocity 19,000 + AUD 20.70 |
-| 19 | 05:20 | 16:57 | UA2343, UA1215 | United MileagePlus | economy | 1 | 9 | 15,000 + USD 5.60 | USD 185.60 | 360.68 | very early departure | Air Canada Aeroplan 15,000 + CAD 46.70; velocity 19,000 + AUD 20.70 |
+| 18 | 05:00 | 15:14 | UA1479, UA1915 | United MileagePlus | economy | 1 | 9 | 15,000 + USD 5.60 | USD 185.60 | 353.77 | very early departure | Air Canada Aeroplan 15,000 + CAD 46.70; Virgin Australia Velocity 19,000 + AUD 20.70 |
+| 19 | 05:20 | 16:57 | UA2343, UA1215 | United MileagePlus | economy | 1 | 9 | 15,000 + USD 5.60 | USD 185.60 | 360.68 | very early departure | Air Canada Aeroplan 15,000 + CAD 46.70; Virgin Australia Velocity 19,000 + AUD 20.70 |
 | 20 | 22:45 | 06:20 +1 | DL335 | Air France/KLM Flying Blue | economy | 0 | 4 | 16,000 + USD 20.44 | USD 196.44 | 361.36 | next_day_arrival, late departure | Virgin Atlantic Flying Club 22,000 + USD 5.60 |
 | 21 | 13:50 | 23:52 | UA1777, UA5478 | United MileagePlus | economy | 1 | 9 | 19,900 + USD 5.60 | USD 244.40 | 361.57 | late arrival |  |
 | 22 | 13:05 | 23:18 | DL1412, DL533 | Air France/KLM Flying Blue | economy | 1 | 9 | 19,500 + USD 30.50 | USD 245.00 | 363.08 | late arrival | Virgin Atlantic Flying Club 29,500 + USD 5.60 |
 | 23 | 06:35 | 16:57 | UA2091, UA1215 | United MileagePlus | economy | 1 | 9 | 19,900 + USD 5.60 | USD 244.40 | 363.23 | early departure |  |
-| 24 | 00:50 | 13:00 | UA2847, UA5756 | United MileagePlus | economy | 1 | 9 | 15,000 + USD 5.60 | USD 185.60 | 363.43 | very early departure | Air Canada Aeroplan 15,000 + CAD 46.70; velocity 19,000 + AUD 20.70 |
+| 24 | 00:50 | 13:00 | UA2847, UA5756 | United MileagePlus | economy | 1 | 9 | 15,000 + USD 5.60 | USD 185.60 | 363.43 | very early departure | Air Canada Aeroplan 15,000 + CAD 46.70; Virgin Australia Velocity 19,000 + AUD 20.70 |
 | 25 | 07:00 | 19:38 | UA1205, UA3586 | United MileagePlus | economy | 1 | 9 | 23,500 + USD 5.60 | USD 287.60 | 367.77 |  |  |
 | 26 | 06:35 | 18:22 | UA2091, UA2632 | United MileagePlus | economy | 1 | 9 | 19,900 + USD 5.60 | USD 244.40 | 370.32 | early departure |  |
 | 27 | 18:30 | 09:50 +1 | UA1931, UA5717 | Air Canada Aeroplan | economy | 1 | 9 | 15,000 + CAD 54.40 | USD 204.02 | 372.69 | next_day_arrival |  |
@@ -52,6 +52,6 @@ Seats.aero timestamps are treated as displayed wall-clock times; no timezone con
 | 35 | 12:15 | 23:52 | UA2317, UA5478 | United MileagePlus | economy | 1 | 9 | 22,200 + USD 5.60 | USD 272.00 | 397.08 | late arrival |  |
 | 36 | 09:46 | 22:14 | AS8, AA5384 | Alaska Atmos Rewards | economy | 1 | 9 | 20,000 + USD 18.10 | USD 318.10 | 397.43 |  |  |
 | 37 | 00:50 | 16:57 | UA2847, UA1215 | Air Canada Aeroplan | economy | 1 | 9 | 15,000 + CAD 54.40 | USD 204.02 | 401.61 | very early departure |  |
-| 38 | 23:50 | 09:50 +1 | UA368, UA5717 | United MileagePlus | economy | 1 | 9 | 15,000 + USD 5.60 | USD 185.60 | 402.6 | next_day_arrival, late departure | Air Canada Aeroplan 15,000 + CAD 46.70; velocity 19,000 + AUD 20.70 |
+| 38 | 23:50 | 09:50 +1 | UA368, UA5717 | United MileagePlus | economy | 1 | 9 | 15,000 + USD 5.60 | USD 185.60 | 402.6 | next_day_arrival, late departure | Air Canada Aeroplan 15,000 + CAD 46.70; Virgin Australia Velocity 19,000 + AUD 20.70 |
 | 39 | 21:15 | 10:54 +1 | UA2482, UA3700 | United MileagePlus | economy | 1 | 9 | 19,900 + USD 5.60 | USD 244.40 | 404.65 | next_day_arrival |  |
-| 40 | 22:50 | 09:50 +1 | UA2278, UA5717 | United MileagePlus | economy | 1 | 9 | 15,000 + USD 5.60 | USD 185.60 | 407.6 | next_day_arrival, late departure | Air Canada Aeroplan 15,000 + CAD 46.70; velocity 19,000 + AUD 20.70 |
+| 40 | 22:50 | 09:50 +1 | UA2278, UA5717 | United MileagePlus | economy | 1 | 9 | 15,000 + USD 5.60 | USD 185.60 | 407.6 | next_day_arrival, late departure | Air Canada Aeroplan 15,000 + CAD 46.70; Virgin Australia Velocity 19,000 + AUD 20.70 |

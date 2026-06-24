@@ -617,7 +617,7 @@
   {
     "aircraft": "Airbus A321neo, Embraer E175",
     "alternate_count": 2,
-    "alternates": "Air Canada Aeroplan 15,000 + CAD 46.70; velocity 19,000 + AUD 20.70",
+    "alternates": "Air Canada Aeroplan 15,000 + CAD 46.70; Virgin Australia Velocity 19,000 + AUD 20.70",
     "arrive_time": "15:16",
     "arrives_at_raw": "2026-11-14T15:16:00Z",
     "availability_id": "36szNxlBagrAREtnJn79PPLMSwZ",
@@ -699,7 +699,7 @@
   {
     "aircraft": "Boeing 757-300, Airbus A320",
     "alternate_count": 2,
-    "alternates": "Air Canada Aeroplan 15,000 + CAD 46.70; velocity 19,000 + AUD 20.70",
+    "alternates": "Air Canada Aeroplan 15,000 + CAD 46.70; Virgin Australia Velocity 19,000 + AUD 20.70",
     "arrive_time": "15:14",
     "arrives_at_raw": "2026-11-14T15:14:00Z",
     "availability_id": "36szNxlBagrAREtnJn79PPLMSwZ",
@@ -740,7 +740,7 @@
   {
     "aircraft": "Airbus A321neo, Airbus A319",
     "alternate_count": 2,
-    "alternates": "Air Canada Aeroplan 15,000 + CAD 46.70; velocity 19,000 + AUD 20.70",
+    "alternates": "Air Canada Aeroplan 15,000 + CAD 46.70; Virgin Australia Velocity 19,000 + AUD 20.70",
     "arrive_time": "16:57",
     "arrives_at_raw": "2026-11-14T16:57:00Z",
     "availability_id": "36szNxlBagrAREtnJn79PPLMSwZ",
@@ -945,7 +945,7 @@
   {
     "aircraft": "Airbus A321neo, Embraer E175",
     "alternate_count": 2,
-    "alternates": "Air Canada Aeroplan 15,000 + CAD 46.70; velocity 19,000 + AUD 20.70",
+    "alternates": "Air Canada Aeroplan 15,000 + CAD 46.70; Virgin Australia Velocity 19,000 + AUD 20.70",
     "arrive_time": "13:00",
     "arrives_at_raw": "2026-11-14T13:00:00Z",
     "availability_id": "36szNxlBagrAREtnJn79PPLMSwZ",
@@ -1519,7 +1519,7 @@
   {
     "aircraft": "Airbus A321neo, Embraer E175",
     "alternate_count": 2,
-    "alternates": "Air Canada Aeroplan 15,000 + CAD 46.70; velocity 19,000 + AUD 20.70",
+    "alternates": "Air Canada Aeroplan 15,000 + CAD 46.70; Virgin Australia Velocity 19,000 + AUD 20.70",
     "arrive_time": "09:50 +1",
     "arrives_at_raw": "2026-11-15T09:50:00Z",
     "availability_id": "36szNxlBagrAREtnJn79PPLMSwZ",
@@ -1601,7 +1601,7 @@
   {
     "aircraft": "Airbus A321neo, Embraer E175",
     "alternate_count": 2,
-    "alternates": "Air Canada Aeroplan 15,000 + CAD 46.70; velocity 19,000 + AUD 20.70",
+    "alternates": "Air Canada Aeroplan 15,000 + CAD 46.70; Virgin Australia Velocity 19,000 + AUD 20.70",
     "arrive_time": "09:50 +1",
     "arrives_at_raw": "2026-11-15T09:50:00Z",
     "availability_id": "36szNxlBagrAREtnJn79PPLMSwZ",

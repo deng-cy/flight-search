@@ -18,13 +18,13 @@
     "effective_usd": 1215.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, very early departure",
+    "flags": "not_enough_seats, very early departure",
     "flight_numbers": "AA1476, AA3195",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 60500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 1210.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 1404.43,
     "seat_credit_usd": 0.0,
@@ -36,7 +36,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 100.0,
     "trip_id": "37Ehyg2Uh5DOc13ruCn4cGv6gTJ",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Airbus A320",
@@ -96,13 +96,13 @@
     "effective_usd": 305.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, very early departure",
+    "flags": "not_enough_seats, very early departure",
     "flight_numbers": "AA1476, AA3195",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 15000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 300.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 494.43,
     "seat_credit_usd": 0.0,
@@ -114,7 +114,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 100.0,
     "trip_id": "37EhycIw4keUQ6bxk5MxKCADhNO",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-900, Airbus A321",
@@ -369,13 +369,13 @@
     "effective_usd": 394.52,
     "expensive_flag": false,
     "fare_classes": "X, X",
-    "flags": "default_cpp, very early departure",
+    "flags": "very early departure",
     "flight_numbers": "UA2847, UA5756",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 19000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 380.0,
-    "program": "velocity",
+    "program": "Virgin Australia Velocity",
     "remaining_seats": 8,
     "score": 574.35,
     "seat_credit_usd": 16.0,
@@ -387,7 +387,7 @@
     "taxes_usd": 14.52,
     "time_penalty_usd": 100.0,
     "trip_id": "3BHvwO0QEhSW7euJY6NL3Ms0pCU",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321neo, Embraer E175",
@@ -447,13 +447,13 @@
     "effective_usd": 375.04,
     "expensive_flag": false,
     "fare_classes": "X, X",
-    "flags": "default_cpp, not_enough_seats, very early departure",
+    "flags": "not_enough_seats, very early departure",
     "flight_numbers": "UA2847, UA5882",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 18315,
     "next_day_penalty_usd": 0,
     "points_value_usd": 366.3,
-    "program": "azul",
+    "program": "Azul TudoAzul",
     "remaining_seats": 0,
     "score": 582.21,
     "seat_credit_usd": 0.0,
@@ -465,7 +465,7 @@
     "taxes_usd": 8.74,
     "time_penalty_usd": 100.0,
     "trip_id": "3D48FtyEo1zDkX5YREueyRGLflw",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "",
@@ -486,13 +486,13 @@
     "effective_usd": 375.04,
     "expensive_flag": false,
     "fare_classes": "X, X",
-    "flags": "default_cpp, not_enough_seats, very early departure",
+    "flags": "not_enough_seats, very early departure",
     "flight_numbers": "UA1479, UA1220",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 18315,
     "next_day_penalty_usd": 0,
     "points_value_usd": 366.3,
-    "program": "azul",
+    "program": "Azul TudoAzul",
     "remaining_seats": 0,
     "score": 596.96,
     "seat_credit_usd": 0.0,
@@ -504,7 +504,7 @@
     "taxes_usd": 8.74,
     "time_penalty_usd": 100.0,
     "trip_id": "3D48FqLwiKBCcrK3DnmJPR9iRMu",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 757-300, Airbus A320",
@@ -603,13 +603,13 @@
     "effective_usd": 394.52,
     "expensive_flag": false,
     "fare_classes": "X, X",
-    "flags": "default_cpp, very early departure",
+    "flags": "very early departure",
     "flight_numbers": "UA1479, UA1915",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 19000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 380.0,
-    "program": "velocity",
+    "program": "Virgin Australia Velocity",
     "remaining_seats": 9,
     "score": 562.69,
     "seat_credit_usd": 18.0,
@@ -621,7 +621,7 @@
     "taxes_usd": 14.52,
     "time_penalty_usd": 100.0,
     "trip_id": "3BHvwLaLrsEbyo7nzW18PnWcIRq",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737 MAX 9, Airbus A319",
@@ -798,13 +798,13 @@
     "effective_usd": 394.52,
     "expensive_flag": false,
     "fare_classes": "X, X",
-    "flags": "default_cpp, very early departure",
+    "flags": "very early departure",
     "flight_numbers": "UA2343, UA1215",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 19000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 380.0,
-    "program": "velocity",
+    "program": "Virgin Australia Velocity",
     "remaining_seats": 9,
     "score": 569.6,
     "seat_credit_usd": 18.0,
@@ -816,7 +816,7 @@
     "taxes_usd": 14.52,
     "time_penalty_usd": 100.0,
     "trip_id": "3E0bDPbfVbZvHgcOBYLXsZ3irxb",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321neo, Airbus A319",
@@ -876,13 +876,13 @@
     "effective_usd": 400.06,
     "expensive_flag": true,
     "fare_classes": "X, X",
-    "flags": "default_cpp, very early departure, expensive",
+    "flags": "very early departure, expensive",
     "flight_numbers": "UA2343, UA2632",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 19000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 380.0,
-    "program": "velocity",
+    "program": "Virgin Australia Velocity",
     "remaining_seats": 9,
     "score": 582.23,
     "seat_credit_usd": 18.0,
@@ -894,7 +894,7 @@
     "taxes_usd": 20.06,
     "time_penalty_usd": 100.0,
     "trip_id": "3E0bDPMppb8diMuDt0Ksapx79gb",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321neo, Embraer E175",
@@ -1032,13 +1032,13 @@
     "effective_usd": 394.52,
     "expensive_flag": false,
     "fare_classes": "X, X",
-    "flags": "default_cpp, very early departure",
+    "flags": "very early departure",
     "flight_numbers": "UA2343, UA5882",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 19000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 380.0,
-    "program": "velocity",
+    "program": "Virgin Australia Velocity",
     "remaining_seats": 9,
     "score": 561.19,
     "seat_credit_usd": 18.0,
@@ -1050,7 +1050,7 @@
     "taxes_usd": 14.52,
     "time_penalty_usd": 100.0,
     "trip_id": "3E0bDOghdL4bgDdBjnwgPP8hhEX",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-800, Airbus A320, Bombardier CRJ700",
@@ -1422,13 +1422,13 @@
     "effective_usd": 1625.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, early departure",
+    "flags": "not_enough_seats, early departure",
     "flight_numbers": "AA6404, AA1673",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 81000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 1620.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 1762.93,
     "seat_credit_usd": 0.0,
@@ -1440,7 +1440,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 50.0,
     "trip_id": "39sKXnToHXsGPJVDHJaA9yyZMxZ",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Embraer E175, Boeing 737-800",
@@ -1461,13 +1461,13 @@
     "effective_usd": 755.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, early departure",
+    "flags": "not_enough_seats, early departure",
     "flight_numbers": "AA6404, AA1673",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 37500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 750.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 892.93,
     "seat_credit_usd": 0.0,
@@ -1479,7 +1479,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 50.0,
     "trip_id": "39sKXlU9Pq6t91TfO9724lapPCi",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-900, Boeing 737-900",
@@ -1773,13 +1773,13 @@
     "effective_usd": 1205.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, early departure",
+    "flags": "not_enough_seats, early departure",
     "flight_numbers": "AS68, AS313",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 60000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 1200.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 1344.1,
     "seat_credit_usd": 0.0,
@@ -1791,7 +1791,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 50.0,
     "trip_id": "3E0bEp3zKoDY0vISIqtep6wM9Lb",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-900, Boeing 737-900",
@@ -1851,13 +1851,13 @@
     "effective_usd": 255.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, early departure",
+    "flags": "not_enough_seats, early departure",
     "flight_numbers": "AS68, AS313",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 12500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 250.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 394.1,
     "seat_credit_usd": 0.0,
@@ -1869,7 +1869,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 50.0,
     "trip_id": "3E0bEnnCh4DDCM0izUOQmrw8dls",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Airbus A321",
@@ -2046,13 +2046,13 @@
     "effective_usd": 521.2,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, early departure, late arrival",
+    "flags": "not_enough_seats, early departure, late arrival",
     "flight_numbers": "AA2553, AA5448",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 25500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 510.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 739.95,
     "seat_credit_usd": 0.0,
@@ -2064,7 +2064,7 @@
     "taxes_usd": 11.2,
     "time_penalty_usd": 100.0,
     "trip_id": "3E0bEo43n9e6qUDXJmEaq2ARUj2",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321neo, Bombardier CRJ700",
@@ -2124,13 +2124,13 @@
     "effective_usd": 211.2,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, early departure, late arrival",
+    "flags": "not_enough_seats, early departure, late arrival",
     "flight_numbers": "AA2553, AA5448",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 10000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 200.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 429.95,
     "seat_credit_usd": 0.0,
@@ -2142,7 +2142,7 @@
     "taxes_usd": 11.2,
     "time_penalty_usd": 100.0,
     "trip_id": "3E0bEn5mQsTsTCsezqtFZP0p2iW",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321neo, Airbus A319",
@@ -2241,13 +2241,13 @@
     "effective_usd": 255.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops, early departure",
+    "flags": "not_enough_seats, exceeds_preferred_stops, early departure",
     "flight_numbers": "AS345, AA1565, AA4774",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 12500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 250.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 458.35,
     "seat_credit_usd": 0.0,
@@ -2259,7 +2259,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 50.0,
     "trip_id": "3E0bEn2Jy8JKbOTqvbCYSi07Gtk",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-900, Airbus A321neo, Embraer E175",
@@ -2280,13 +2280,13 @@
     "effective_usd": 255.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops, early departure",
+    "flags": "not_enough_seats, exceeds_preferred_stops, early departure",
     "flight_numbers": "AS345, AA3083, AA4774",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 12500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 250.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 458.35,
     "seat_credit_usd": 0.0,
@@ -2298,7 +2298,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 50.0,
     "trip_id": "3E0bElwslEuPZHEjesUnOmsGNra",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-900, Airbus A321neo, Bombardier CRJ700",
@@ -2319,13 +2319,13 @@
     "effective_usd": 255.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops, early departure",
+    "flags": "not_enough_seats, exceeds_preferred_stops, early departure",
     "flight_numbers": "AS345, AA3083, AA6373",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 12500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 250.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 455.18,
     "seat_credit_usd": 0.0,
@@ -2337,7 +2337,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 50.0,
     "trip_id": "3E0bEnThAEh6HmEMVWzQKygtlua",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-900, Airbus A321, Boeing 737-800",
@@ -2358,13 +2358,13 @@
     "effective_usd": 255.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops, early departure",
+    "flags": "not_enough_seats, exceeds_preferred_stops, early departure",
     "flight_numbers": "AS345, AA686, AA2826",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 12500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 250.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 462.35,
     "seat_credit_usd": 0.0,
@@ -2376,7 +2376,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 50.0,
     "trip_id": "3E0bEohUfM5ZFytgNu7uxEMn1Lw",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Boeing 737-800",
@@ -2397,13 +2397,13 @@
     "effective_usd": 1075.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA3047, AA1860",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 53500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 1070.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 1169.18,
     "seat_credit_usd": 0.0,
@@ -2415,7 +2415,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3E0bElbQPaBPHsVwsYxEIXRXr03",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Boeing 737-800",
@@ -2475,13 +2475,13 @@
     "effective_usd": 195.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA3047, AA1860",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 9500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 190.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 289.18,
     "seat_credit_usd": 0.0,
@@ -2493,7 +2493,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3E0bEkXjaKgEr9c0gVnTp2P4wPV",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Airbus A321",
@@ -2514,13 +2514,13 @@
     "effective_usd": 1015.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA3047, AA245",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 50500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 1010.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 1104.35,
     "seat_credit_usd": 0.0,
@@ -2532,7 +2532,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3E0bElGd2bAJdVgGIO44OlT2ORW",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Airbus A321",
@@ -2592,13 +2592,13 @@
     "effective_usd": 195.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA3047, AA245",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 9500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 190.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 284.35,
     "seat_credit_usd": 0.0,
@@ -2610,7 +2610,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3E0bEohgfnyViFH7125OGIEr3W2",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Boeing 737 MAX 8",
@@ -2631,13 +2631,13 @@
     "effective_usd": 1051.2,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA3047, AA2508",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 52000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 1040.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 1165.53,
     "seat_credit_usd": 0.0,
@@ -2649,7 +2649,7 @@
     "taxes_usd": 11.2,
     "time_penalty_usd": 0.0,
     "trip_id": "37EhyhrTB4bMY8n1eX5lp72idct",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Boeing 737 MAX 8",
@@ -2670,13 +2670,13 @@
     "effective_usd": 201.2,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA3047, AA2508",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 9500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 190.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 315.53,
     "seat_credit_usd": 0.0,
@@ -2688,7 +2688,7 @@
     "taxes_usd": 11.2,
     "time_penalty_usd": 0.0,
     "trip_id": "37EhygLVRHNsNhar81dGYzO1SUq",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Airbus A321, Bombardier CRJ700",
@@ -2748,13 +2748,13 @@
     "effective_usd": 1151.2,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA3047, AA2826",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 57000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 1140.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 1256.28,
     "seat_credit_usd": 0.0,
@@ -2766,7 +2766,7 @@
     "taxes_usd": 11.2,
     "time_penalty_usd": 0.0,
     "trip_id": "3CK8schr5N7zSBiu4IrZ7DyZA6b",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Boeing 737-800",
@@ -2787,13 +2787,13 @@
     "effective_usd": 211.2,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA3047, AA2826",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 10000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 200.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 316.28,
     "seat_credit_usd": 0.0,
@@ -2805,7 +2805,7 @@
     "taxes_usd": 11.2,
     "time_penalty_usd": 0.0,
     "trip_id": "3CK8sZ4NyUqxS4geute7SGGUDDl",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Boeing 737-800, Bombardier CRJ700",
@@ -2826,13 +2826,13 @@
     "effective_usd": 1975.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops",
+    "flags": "not_enough_seats, exceeds_preferred_stops",
     "flight_numbers": "AA3047, AA3008, AA5384",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 98500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 1970.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 2136.77,
     "seat_credit_usd": 0.0,
@@ -2844,7 +2844,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3CEAd5CIFEiD4GjwxxJK28GXEsN",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Boeing 737-800, Bombardier CRJ700",
@@ -2865,13 +2865,13 @@
     "effective_usd": 195.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops",
+    "flags": "not_enough_seats, exceeds_preferred_stops",
     "flight_numbers": "AA3047, AA3008, AA5384",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 9500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 190.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 356.77,
     "seat_credit_usd": 0.0,
@@ -2883,7 +2883,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3CEAd6iQFbWQh7BVdHzSX4yCpzo",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Boeing 737-800, Bombardier CRJ700",
@@ -2904,13 +2904,13 @@
     "effective_usd": 1975.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops",
+    "flags": "not_enough_seats, exceeds_preferred_stops",
     "flight_numbers": "AA3047, AA819, AA5384",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 98500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 1970.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 2136.77,
     "seat_credit_usd": 0.0,
@@ -2922,7 +2922,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3CEAd9uCzed4uRXJjvw3i912tzM",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Boeing 737-800, Bombardier CRJ700",
@@ -2943,13 +2943,13 @@
     "effective_usd": 195.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops",
+    "flags": "not_enough_seats, exceeds_preferred_stops",
     "flight_numbers": "AA3047, AA819, AA5384",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 9500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 190.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 356.77,
     "seat_credit_usd": 0.0,
@@ -2961,7 +2961,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3CEAd38iV1QgH81WDcyko7fjn4w",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-800, Airbus A321",
@@ -3528,13 +3528,13 @@
     "effective_usd": 1335.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops",
+    "flags": "not_enough_seats, exceeds_preferred_stops",
     "flight_numbers": "AA1878, AA612, AA5384",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 66500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 1330.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 1495.52,
     "seat_credit_usd": 0.0,
@@ -3546,7 +3546,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3CEAd4MgxTMAVLgYGfOhJ8yDmQ0",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Boeing 737-800, Bombardier CRJ700",
@@ -3567,13 +3567,13 @@
     "effective_usd": 195.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops",
+    "flags": "not_enough_seats, exceeds_preferred_stops",
     "flight_numbers": "AA1878, AA612, AA5384",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 9500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 190.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 355.52,
     "seat_credit_usd": 0.0,
@@ -3585,7 +3585,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3CEAd3BkPMU9ERFSlKd6hAGhzIv",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-900, Airbus A321, Boeing 737-800",
@@ -3606,13 +3606,13 @@
     "effective_usd": 255.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops",
+    "flags": "not_enough_seats, exceeds_preferred_stops",
     "flight_numbers": "AS1450, AA3319, AA2826",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 12500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 250.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 409.02,
     "seat_credit_usd": 0.0,
@@ -3624,7 +3624,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3E0bEkitAYaQfNxjLqexyx8SPPB",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-900, Airbus A321",
@@ -3684,13 +3684,13 @@
     "effective_usd": 1085.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops, late arrival",
+    "flags": "not_enough_seats, exceeds_preferred_stops, late arrival",
     "flight_numbers": "AS1410, AA561, AA4927",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 54000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 1080.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 1300.77,
     "seat_credit_usd": 0.0,
@@ -3702,7 +3702,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 50.0,
     "trip_id": "3E0bEmlYCtAiZdfOyeTUCb9EHLr",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-900, Boeing 737-800, Bombardier CRJ700",
@@ -3723,13 +3723,13 @@
     "effective_usd": 255.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops, late arrival",
+    "flags": "not_enough_seats, exceeds_preferred_stops, late arrival",
     "flight_numbers": "AS1410, AA561, AA4927",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 12500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 250.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 470.77,
     "seat_credit_usd": 0.0,
@@ -3741,7 +3741,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 50.0,
     "trip_id": "3E0bEq1HL6n6vkjayEKRdnqkWbR",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-800, Boeing 737-800",
@@ -3762,13 +3762,13 @@
     "effective_usd": 2195.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA2904, AA1860",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 109500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 2190.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 2284.18,
     "seat_credit_usd": 0.0,
@@ -3780,7 +3780,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "39sKXiO5i9k9TOEDdX9v9Bvqlpo",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-800, Boeing 737-800",
@@ -3801,13 +3801,13 @@
     "effective_usd": 595.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA2904, AA1860",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 29500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 590.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 684.18,
     "seat_credit_usd": 0.0,
@@ -3819,7 +3819,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "39sKXiEdmb87uXHq3y824kKvOYT",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321neo, Airbus A319",
@@ -3957,13 +3957,13 @@
     "effective_usd": 255.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops",
+    "flags": "not_enough_seats, exceeds_preferred_stops",
     "flight_numbers": "AS412, AA686, AA2826",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 12500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 250.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 402.77,
     "seat_credit_usd": 0.0,
@@ -3975,7 +3975,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3E0bEl7FGjQIUni4rpp5ZVZwnjv",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737 MAX 8, Embraer E175",
@@ -4308,13 +4308,13 @@
     "effective_usd": 490.06,
     "expensive_flag": true,
     "fare_classes": "X, X",
-    "flags": "default_cpp, late arrival, expensive",
+    "flags": "late arrival, expensive",
     "flight_numbers": "UA2664, UA4024",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 23500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 470.0,
-    "program": "velocity",
+    "program": "Virgin Australia Velocity",
     "remaining_seats": 9,
     "score": 632.4,
     "seat_credit_usd": 18.0,
@@ -4326,7 +4326,7 @@
     "taxes_usd": 20.06,
     "time_penalty_usd": 50.0,
     "trip_id": "3CK8rc1c6ikxbXvBHhqcBq849LS",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Boeing 737-800, Embraer E175",
@@ -4347,13 +4347,13 @@
     "effective_usd": 2085.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops",
+    "flags": "not_enough_seats, exceeds_preferred_stops",
     "flight_numbers": "AA1146, AA1150, AA4598",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 104000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 2080.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 2239.18,
     "seat_credit_usd": 0.0,
@@ -4365,7 +4365,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3CEAd3ysAGZ8CYsUEyAUNl3XEMQ",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Boeing 737-800, Embraer E175",
@@ -4386,13 +4386,13 @@
     "effective_usd": 195.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops",
+    "flags": "not_enough_seats, exceeds_preferred_stops",
     "flight_numbers": "AA1146, AA1150, AA4598",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 9500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 190.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 349.18,
     "seat_credit_usd": 0.0,
@@ -4404,7 +4404,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3CEAd86B9tXlK7YphacZVIfJ2ek",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Airbus A319",
@@ -4425,13 +4425,13 @@
     "effective_usd": 2221.2,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, next_day_arrival, after-midnight arrival",
+    "flags": "not_enough_seats, next_day_arrival, after-midnight arrival",
     "flight_numbers": "AA1146, AA2371",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 110500,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 2210.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 2508.28,
     "seat_credit_usd": 0.0,
@@ -4443,7 +4443,7 @@
     "taxes_usd": 11.2,
     "time_penalty_usd": 100.0,
     "trip_id": "37Ehyi47iEVqkxN9kdAzl6Duzuz",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Airbus A319",
@@ -4464,13 +4464,13 @@
     "effective_usd": 231.2,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, next_day_arrival, after-midnight arrival",
+    "flags": "not_enough_seats, next_day_arrival, after-midnight arrival",
     "flight_numbers": "AA1146, AA2371",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 11000,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 220.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 518.28,
     "seat_credit_usd": 0.0,
@@ -4482,7 +4482,7 @@
     "taxes_usd": 11.2,
     "time_penalty_usd": 100.0,
     "trip_id": "37EhyhAxK2zHVPqQc1IpYGRSo5L",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Airbus A319",
@@ -4503,13 +4503,13 @@
     "effective_usd": 2785.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA1146, AA2559",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 139000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 2780.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 2888.1,
     "seat_credit_usd": 0.0,
@@ -4521,7 +4521,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3E0bEpDIY7Py9wABrsveNWYZUbu",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Airbus A319",
@@ -4581,13 +4581,13 @@
     "effective_usd": 245.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA1146, AA2559",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 12000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 240.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 348.1,
     "seat_credit_usd": 0.0,
@@ -4599,7 +4599,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3E0bElkV4C29LPgPbi4j5uaUCg0",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Airbus A321, Bombardier CRJ700",
@@ -4620,13 +4620,13 @@
     "effective_usd": 2225.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops, late arrival",
+    "flags": "not_enough_seats, exceeds_preferred_stops, late arrival",
     "flight_numbers": "AA1146, AA2576, AA4927",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 111000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 2220.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 2434.68,
     "seat_credit_usd": 0.0,
@@ -4638,7 +4638,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 50.0,
     "trip_id": "3E0bEn4A5LvT3Zas8WC2IsjFtJE",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Airbus A321, Bombardier CRJ700",
@@ -4659,13 +4659,13 @@
     "effective_usd": 225.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops, late arrival",
+    "flags": "not_enough_seats, exceeds_preferred_stops, late arrival",
     "flight_numbers": "AA1146, AA2576, AA4927",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 11000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 220.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 434.68,
     "seat_credit_usd": 0.0,
@@ -4677,7 +4677,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 50.0,
     "trip_id": "3E0bElayALZvUDgVTj9gquTbQKv",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A320, Airbus A321, Bombardier CRJ700",
@@ -4776,13 +4776,13 @@
     "effective_usd": 2935.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops, next_day_arrival, after-midnight arrival",
+    "flags": "not_enough_seats, exceeds_preferred_stops, next_day_arrival, after-midnight arrival",
     "flight_numbers": "AA2411, AA2755, AA2371",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 146500,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 2930.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 3271.43,
     "seat_credit_usd": 0.0,
@@ -4794,7 +4794,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 100.0,
     "trip_id": "3E0bEm3EMx7VOTEwabJbQiQL06R",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A320, Airbus A321, Airbus A319",
@@ -4854,13 +4854,13 @@
     "effective_usd": 235.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops, next_day_arrival, after-midnight arrival",
+    "flags": "not_enough_seats, exceeds_preferred_stops, next_day_arrival, after-midnight arrival",
     "flight_numbers": "AA2411, AA2755, AA2371",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 11500,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 230.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 571.43,
     "seat_credit_usd": 0.0,
@@ -4872,7 +4872,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 100.0,
     "trip_id": "3E0bEmr07BKQIM4EEjBKDr5PyGP",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A320, Airbus A321neo, Boeing 737 MAX 8",
@@ -5049,13 +5049,13 @@
     "effective_usd": 255.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops",
+    "flags": "not_enough_seats, exceeds_preferred_stops",
     "flight_numbers": "AS3450, AA2264, AA2508",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 12500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 250.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 408.6,
     "seat_credit_usd": 0.0,
@@ -5067,7 +5067,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3E0bEm0cJLA8vVHMX0rgvldmSrq",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-800, Bombardier CRJ700",
@@ -5088,13 +5088,13 @@
     "effective_usd": 1085.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AS8, AA5384",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 54000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 1080.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 1182.93,
     "seat_credit_usd": 0.0,
@@ -5106,7 +5106,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3E0bEp3YaINeFqOn2oVeA6QMKtw",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-800, Bombardier CRJ700",
@@ -5166,13 +5166,13 @@
     "effective_usd": 255.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AS8, AA5384",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 12500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 250.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 352.93,
     "seat_credit_usd": 0.0,
@@ -5184,7 +5184,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3E0bEnThR0rSq5A1wFevZ09f5Zh",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A319, Airbus A319",
@@ -5439,13 +5439,13 @@
     "effective_usd": 255.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops, late arrival",
+    "flags": "not_enough_seats, exceeds_preferred_stops, late arrival",
     "flight_numbers": "AS586, AA2131, AA4927",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 12500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 250.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 459.52,
     "seat_credit_usd": 0.0,
@@ -5457,7 +5457,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 50.0,
     "trip_id": "3E0bEplu74j3LhHALtgH6tfJc7F",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-900, Airbus A321neo, Boeing 737 MAX 8",
@@ -5478,13 +5478,13 @@
     "effective_usd": 255.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops",
+    "flags": "not_enough_seats, exceeds_preferred_stops",
     "flight_numbers": "AS586, AA2783, AA2508",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 12500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 250.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 404.77,
     "seat_credit_usd": 0.0,
@@ -5496,7 +5496,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3E0bElOHX244t5KiF1RNZHqd6kC",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-800, Change Of Equipment - All Codes",
@@ -5556,13 +5556,13 @@
     "effective_usd": 484.52,
     "expensive_flag": true,
     "fare_classes": "X, X",
-    "flags": "default_cpp, exceeds_preferred_stops, expensive",
+    "flags": "exceeds_preferred_stops, expensive",
     "flight_numbers": "UA790, UA1220",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 23500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 470.0,
-    "program": "velocity",
+    "program": "Virgin Australia Velocity",
     "remaining_seats": 9,
     "score": 612.69,
     "seat_credit_usd": 18.0,
@@ -5574,7 +5574,7 @@
     "taxes_usd": 14.52,
     "time_penalty_usd": 0.0,
     "trip_id": "3DflfwRgIdujVwVz5lrJdIB5veS",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Embraer E175, Airbus A320, Boeing 737-800",
@@ -5595,13 +5595,13 @@
     "effective_usd": 255.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops",
+    "flags": "not_enough_seats, exceeds_preferred_stops",
     "flight_numbers": "AS3178, AA3245, AA1287",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 12500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 250.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 403.6,
     "seat_credit_usd": 0.0,
@@ -5613,7 +5613,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3E0bEpVMGSc70NEb8v4CbNF4LeZ",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Boeing 737-800",
@@ -5634,13 +5634,13 @@
     "effective_usd": 2425.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA1949, AA2826",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 121000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 2420.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 2514.35,
     "seat_credit_usd": 0.0,
@@ -5652,7 +5652,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3CEAd8RD3Ozhgg3rM7D8Gvpwh58",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Boeing 737-800",
@@ -5673,13 +5673,13 @@
     "effective_usd": 675.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA1949, AA2826",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 33500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 670.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 764.35,
     "seat_credit_usd": 0.0,
@@ -5691,7 +5691,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3CEAd84XEW3dElYcZDKcxtN2KOA",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 787-9, Embraer E175",
@@ -6297,13 +6297,13 @@
     "effective_usd": 2695.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, late arrival",
+    "flags": "not_enough_seats, late arrival",
     "flight_numbers": "AA1732, AA5448",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 134500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 2690.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 2836.18,
     "seat_credit_usd": 0.0,
@@ -6315,7 +6315,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 50.0,
     "trip_id": "3CEAd600SKuYf9XaCzPYKEbbaQ8",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321neo, Bombardier CRJ700",
@@ -6375,13 +6375,13 @@
     "effective_usd": 445.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, late arrival",
+    "flags": "not_enough_seats, late arrival",
     "flight_numbers": "AA1732, AA5448",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 22000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 440.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 586.18,
     "seat_credit_usd": 0.0,
@@ -6393,7 +6393,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 50.0,
     "trip_id": "3CEAd99i82vQSGuBrf8MFKtl6ka",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Boeing 737 MAX 8",
@@ -6414,13 +6414,13 @@
     "effective_usd": 2315.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA1996, AA2508",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 115500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 2310.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 2404.02,
     "seat_credit_usd": 0.0,
@@ -6432,7 +6432,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3CEAd80SfCI8LjwV4eW759IK0EY",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Boeing 737 MAX 8",
@@ -6492,13 +6492,13 @@
     "effective_usd": 385.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA1996, AA2508",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 19000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 380.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 474.02,
     "seat_credit_usd": 0.0,
@@ -6510,7 +6510,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3CEAd4TpvReGi5exrxTWw1HOT2I",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321neo, Embraer E175",
@@ -6609,13 +6609,13 @@
     "effective_usd": 1355.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA2114, AA1287",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 67500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 1350.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 1443.1,
     "seat_credit_usd": 0.0,
@@ -6627,7 +6627,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3CEAd8UX19q6i9WyA0EeBBhJsdz",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737 MAX 8, Boeing 737-800",
@@ -6687,13 +6687,13 @@
     "effective_usd": 465.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats",
+    "flags": "not_enough_seats",
     "flight_numbers": "AA2114, AA1287",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 23000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 460.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 553.1,
     "seat_credit_usd": 0.0,
@@ -6705,7 +6705,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3CEAd5aCqMOGJ9bpctdSiTPktsN",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737 MAX 9, Airbus A319",
@@ -7233,13 +7233,13 @@
     "effective_usd": 484.52,
     "expensive_flag": true,
     "fare_classes": "X, X",
-    "flags": "default_cpp, late arrival, expensive",
+    "flags": "late arrival, expensive",
     "flight_numbers": "UA755, UA4024",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 23500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 470.0,
-    "program": "velocity",
+    "program": "Virgin Australia Velocity",
     "remaining_seats": 9,
     "score": 605.6,
     "seat_credit_usd": 18.0,
@@ -7251,7 +7251,7 @@
     "taxes_usd": 14.52,
     "time_penalty_usd": 50.0,
     "trip_id": "3BHvwNAm0RXQEw2ri1bewu5qJZX",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737 MAX 8, Bombardier CRJ700",
@@ -7272,13 +7272,13 @@
     "effective_usd": 1565.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, late arrival",
+    "flags": "not_enough_seats, late arrival",
     "flight_numbers": "AA2436, AA4927",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 78000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 1560.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 1703.77,
     "seat_credit_usd": 0.0,
@@ -7290,7 +7290,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 50.0,
     "trip_id": "39sKXmC8cXTtyQd9kRsJ83BVJ4X",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737 MAX 8, Bombardier CRJ700",
@@ -7350,13 +7350,13 @@
     "effective_usd": 455.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, late arrival",
+    "flags": "not_enough_seats, late arrival",
     "flight_numbers": "AA2436, AA4927",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 22500,
     "next_day_penalty_usd": 0,
     "points_value_usd": 450.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 593.77,
     "seat_credit_usd": 0.0,
@@ -7368,7 +7368,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 50.0,
     "trip_id": "39sKXhFPXCbW0L4BcqXuGQAFZu9",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 777, Embraer E175",
@@ -7428,13 +7428,13 @@
     "effective_usd": 2255.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, next_day_arrival, after-midnight arrival",
+    "flags": "not_enough_seats, next_day_arrival, after-midnight arrival",
     "flight_numbers": "AA2651, AA2371",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 112500,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 2250.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 2520.1,
     "seat_credit_usd": 0.0,
@@ -7446,7 +7446,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 100.0,
     "trip_id": "37EhyiFSpGhLt4ENGAdWypVLU7n",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321, Airbus A319",
@@ -7506,13 +7506,13 @@
     "effective_usd": 295.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, next_day_arrival, after-midnight arrival",
+    "flags": "not_enough_seats, next_day_arrival, after-midnight arrival",
     "flight_numbers": "AA2651, AA2371",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 14500,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 290.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 560.1,
     "seat_credit_usd": 0.0,
@@ -7524,7 +7524,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 100.0,
     "trip_id": "37EhyisYfyRnyGvOqCMrKsrNmic",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A220, Airbus A321",
@@ -7974,13 +7974,13 @@
     "effective_usd": 375.04,
     "expensive_flag": false,
     "fare_classes": "X, X",
-    "flags": "default_cpp, not_enough_seats, next_day_arrival",
+    "flags": "not_enough_seats, next_day_arrival",
     "flight_numbers": "UA2619, UA1215",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 18315,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 366.3,
-    "program": "azul",
+    "program": "Azul TudoAzul",
     "remaining_seats": 0,
     "score": 608.29,
     "seat_credit_usd": 0.0,
@@ -7992,7 +7992,7 @@
     "taxes_usd": 8.74,
     "time_penalty_usd": 0.0,
     "trip_id": "3E0bEZP2m25tNGsK1cyGbVHfo3x",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 757-200, Embraer E175",
@@ -8052,13 +8052,13 @@
     "effective_usd": 375.04,
     "expensive_flag": false,
     "fare_classes": "X, X",
-    "flags": "default_cpp, not_enough_seats, next_day_arrival",
+    "flags": "not_enough_seats, next_day_arrival",
     "flight_numbers": "UA1149, UA3672",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 18315,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 366.3,
-    "program": "azul",
+    "program": "Azul TudoAzul",
     "remaining_seats": 0,
     "score": 565.79,
     "seat_credit_usd": 0.0,
@@ -8070,7 +8070,7 @@
     "taxes_usd": 8.74,
     "time_penalty_usd": 0.0,
     "trip_id": "3D48FrzopFveMZeYI0EorE8ci4S",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 757-200, Embraer E175",
@@ -8091,13 +8091,13 @@
     "effective_usd": 490.06,
     "expensive_flag": true,
     "fare_classes": "X, X",
-    "flags": "default_cpp, next_day_arrival, expensive",
+    "flags": "next_day_arrival, expensive",
     "flight_numbers": "UA1149, UA3672",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 23500,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 470.0,
-    "program": "velocity",
+    "program": "Virgin Australia Velocity",
     "remaining_seats": 6,
     "score": 668.81,
     "seat_credit_usd": 12.0,
@@ -8109,7 +8109,7 @@
     "taxes_usd": 20.06,
     "time_penalty_usd": 0.0,
     "trip_id": "3DflfyDfAy1YoSi2exFGCtt13BN",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "",
@@ -8130,13 +8130,13 @@
     "effective_usd": 375.04,
     "expensive_flag": false,
     "fare_classes": "X, X",
-    "flags": "default_cpp, not_enough_seats, next_day_arrival",
+    "flags": "not_enough_seats, next_day_arrival",
     "flight_numbers": "UA1931, UA2632",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 18315,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 366.3,
-    "program": "azul",
+    "program": "Azul TudoAzul",
     "remaining_seats": 0,
     "score": 604.38,
     "seat_credit_usd": 0.0,
@@ -8148,7 +8148,7 @@
     "taxes_usd": 8.74,
     "time_penalty_usd": 0.0,
     "trip_id": "3E0bEZ2KjDlRRQEXZTYMzPyNZCV",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321neo, Embraer E175",
@@ -8208,13 +8208,13 @@
     "effective_usd": 1085.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops, next_day_arrival",
+    "flags": "not_enough_seats, exceeds_preferred_stops, next_day_arrival",
     "flight_numbers": "AS1362, AA700, AA2374",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 54000,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 1080.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 1324.1,
     "seat_credit_usd": 0.0,
@@ -8226,7 +8226,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3E0bEpnXgATdUo22Zl3CcrOiF5b",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-900, Airbus A321, Boeing 737-800",
@@ -8247,13 +8247,13 @@
     "effective_usd": 1085.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, exceeds_preferred_stops, next_day_arrival",
+    "flags": "not_enough_seats, exceeds_preferred_stops, next_day_arrival",
     "flight_numbers": "AS620, AA3075, AA2374",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 54000,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 1080.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 1317.52,
     "seat_credit_usd": 0.0,
@@ -8265,7 +8265,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 0.0,
     "trip_id": "3E0bEqAMFUGv05I5Mrf3bMTO6n9",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 777, Embraer E175",
@@ -8598,13 +8598,13 @@
     "effective_usd": 375.04,
     "expensive_flag": false,
     "fare_classes": "X, X",
-    "flags": "default_cpp, not_enough_seats, next_day_arrival, late departure",
+    "flags": "not_enough_seats, next_day_arrival, late departure",
     "flight_numbers": "UA2278, UA5717",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 18315,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 366.3,
-    "program": "azul",
+    "program": "Azul TudoAzul",
     "remaining_seats": 0,
     "score": 615.04,
     "seat_credit_usd": 0.0,
@@ -8616,7 +8616,7 @@
     "taxes_usd": 8.74,
     "time_penalty_usd": 75.0,
     "trip_id": "37EhQXEHLnmuuM8MXJFFgRE5OCg",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321neo, Embraer E175",
@@ -8676,13 +8676,13 @@
     "effective_usd": 394.52,
     "expensive_flag": false,
     "fare_classes": "X, X",
-    "flags": "default_cpp, next_day_arrival, late departure",
+    "flags": "next_day_arrival, late departure",
     "flight_numbers": "UA2278, UA5717",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 19000,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 380.0,
-    "program": "velocity",
+    "program": "Virgin Australia Velocity",
     "remaining_seats": 9,
     "score": 616.52,
     "seat_credit_usd": 18.0,
@@ -8694,7 +8694,7 @@
     "taxes_usd": 14.52,
     "time_penalty_usd": 75.0,
     "trip_id": "37Ei2ygWOQyIsRN1rG1ah6u5UxZ",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "",
@@ -8715,13 +8715,13 @@
     "effective_usd": 375.04,
     "expensive_flag": false,
     "fare_classes": "X, X",
-    "flags": "default_cpp, not_enough_seats, next_day_arrival, late departure",
+    "flags": "not_enough_seats, next_day_arrival, late departure",
     "flight_numbers": "UA2278, UA5756",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 18315,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 366.3,
-    "program": "azul",
+    "program": "Azul TudoAzul",
     "remaining_seats": 0,
     "score": 630.88,
     "seat_credit_usd": 0.0,
@@ -8733,7 +8733,7 @@
     "taxes_usd": 8.74,
     "time_penalty_usd": 75.0,
     "trip_id": "3E2eQ9nRITtdoe8aDtNXISm3M5D",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "",
@@ -8754,13 +8754,13 @@
     "effective_usd": 375.04,
     "expensive_flag": false,
     "fare_classes": "X, X",
-    "flags": "default_cpp, not_enough_seats, next_day_arrival, late departure",
+    "flags": "not_enough_seats, next_day_arrival, late departure",
     "flight_numbers": "UA2278, UA5882",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 18315,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 366.3,
-    "program": "azul",
+    "program": "Azul TudoAzul",
     "remaining_seats": 0,
     "score": 642.21,
     "seat_credit_usd": 0.0,
@@ -8772,7 +8772,7 @@
     "taxes_usd": 8.74,
     "time_penalty_usd": 75.0,
     "trip_id": "3D48FsWLP8lzbUEKyrPsgK3GVli",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737 MAX 9, Embraer E175",
@@ -8949,13 +8949,13 @@
     "effective_usd": 825.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, next_day_arrival, late departure",
+    "flags": "not_enough_seats, next_day_arrival, late departure",
     "flight_numbers": "AA1826, AA5636",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 41000,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 820.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 1067.02,
     "seat_credit_usd": 0.0,
@@ -8967,7 +8967,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 75.0,
     "trip_id": "37EhyhPJnL88V9i1hOTCGYsjRCQ",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321neo, Bombardier CRJ900",
@@ -8988,13 +8988,13 @@
     "effective_usd": 625.6,
     "expensive_flag": false,
     "fare_classes": "",
-    "flags": "default_cpp, not_enough_seats, next_day_arrival, late departure",
+    "flags": "not_enough_seats, next_day_arrival, late departure",
     "flight_numbers": "AA1826, AA5636",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 31000,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 620.0,
-    "program": "american",
+    "program": "American AAdvantage",
     "remaining_seats": 0,
     "score": 867.02,
     "seat_credit_usd": 0.0,
@@ -9006,7 +9006,7 @@
     "taxes_usd": 5.6,
     "time_penalty_usd": 75.0,
     "trip_id": "37EhyfQD65SSDUtweUdqIk9fbGu",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737 MAX 8, Embraer E170",
@@ -9105,13 +9105,13 @@
     "effective_usd": 375.04,
     "expensive_flag": false,
     "fare_classes": "X, X",
-    "flags": "default_cpp, not_enough_seats, next_day_arrival, late departure",
+    "flags": "not_enough_seats, next_day_arrival, late departure",
     "flight_numbers": "UA368, UA1215",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 18315,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 366.3,
-    "program": "azul",
+    "program": "Azul TudoAzul",
     "remaining_seats": 0,
     "score": 645.63,
     "seat_credit_usd": 0.0,
@@ -9123,7 +9123,7 @@
     "taxes_usd": 8.74,
     "time_penalty_usd": 75.0,
     "trip_id": "3B6lySHHYeBRtUqMYntJmK74B2M",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321neo, Embraer E175",
@@ -9222,13 +9222,13 @@
     "effective_usd": 394.52,
     "expensive_flag": false,
     "fare_classes": "X, X",
-    "flags": "default_cpp, next_day_arrival, late departure",
+    "flags": "next_day_arrival, late departure",
     "flight_numbers": "UA368, UA5717",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 19000,
     "next_day_penalty_usd": 75.0,
     "points_value_usd": 380.0,
-    "program": "velocity",
+    "program": "Virgin Australia Velocity",
     "remaining_seats": 9,
     "score": 611.52,
     "seat_credit_usd": 18.0,
@@ -9240,7 +9240,7 @@
     "taxes_usd": 14.52,
     "time_penalty_usd": 75.0,
     "trip_id": "3BHvwLVflvrsBnxedsqIVDrTTY3",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Airbus A321neo, Embraer E175",

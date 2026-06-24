@@ -23,25 +23,25 @@ Seats.aero timestamps are treated as displayed wall-clock times; no timezone con
 | 6 | 20:52 | 15:14 +1 | UA301, UA1915 | Air Canada Aeroplan | economy | 1 | 9 | 15,000 + CAD 54.40 | USD 204.02 | 387.86 | next_day_arrival |  |
 | 7 | 19:59 | 15:48 +1 | AS1327, AS313 | Alaska Atmos Rewards | economy | 1 | 9 | 12,500 + USD 11.20 | USD 198.70 | 389.78 | next_day_arrival |  |
 | 8 | 18:53 | 15:48 +1 | AS496, AS313 | Alaska Atmos Rewards | economy | 1 | 9 | 12,500 + USD 11.20 | USD 198.70 | 395.28 | next_day_arrival |  |
-| 9 | 23:50 | 09:50 +1 | UA368, UA5717 | United MileagePlus | economy | 1 | 9 | 15,000 + USD 5.60 | USD 185.60 | 402.6 | next_day_arrival, late departure | Air Canada Aeroplan 15,000 + CAD 46.70; velocity 19,000 + AUD 20.39 |
+| 9 | 23:50 | 09:50 +1 | UA368, UA5717 | United MileagePlus | economy | 1 | 9 | 15,000 + USD 5.60 | USD 185.60 | 402.6 | next_day_arrival, late departure | Air Canada Aeroplan 15,000 + CAD 46.70; Virgin Australia Velocity 19,000 + AUD 20.39 |
 | 10 | 16:44 | 15:48 +1 | AS591, AS313 | Alaska Atmos Rewards | economy | 1 | 9 | 12,500 + USD 11.20 | USD 198.70 | 406.03 | next_day_arrival |  |
 | 11 | 22:55 | 10:06 +1 | UA2111, UA6137 | United MileagePlus | economy | 1 | 9 | 15,000 + USD 5.60 | USD 185.60 | 408.52 | next_day_arrival, late departure | Air Canada Aeroplan 25,000 + CAD 46.70 |
 | 12 | 22:35 | 10:06 +1 | UA2837, UA6137 | United MileagePlus | economy | 1 | 9 | 15,000 + USD 5.60 | USD 185.60 | 410.18 | next_day_arrival, late departure | Air Canada Aeroplan 25,000 + CAD 46.70 |
 | 13 | 14:45 | 15:48 +1 | AS1445, AS313 | Alaska Atmos Rewards | economy | 1 | 9 | 12,500 + USD 11.20 | USD 198.70 | 415.95 | next_day_arrival |  |
-| 14 | 22:50 | 09:50 +1 | UA2278, UA5717 | United MileagePlus | economy | 1 | 4 | 15,000 + USD 5.60 | USD 185.60 | 417.6 | next_day_arrival, late departure | Air Canada Aeroplan 15,000 + CAD 46.70; velocity 19,000 + AUD 20.39 |
+| 14 | 22:50 | 09:50 +1 | UA2278, UA5717 | United MileagePlus | economy | 1 | 4 | 15,000 + USD 5.60 | USD 185.60 | 417.6 | next_day_arrival, late departure | Air Canada Aeroplan 15,000 + CAD 46.70; Virgin Australia Velocity 19,000 + AUD 20.39 |
 | 15 | 07:00 | 18:43 | AA3047, AA1860 | Alaska Atmos Rewards | economy | 1 | 9 | 22,500 + USD 18.10 | USD 355.60 | 431.18 |  |  |
 | 16 | 11:25 | 15:48 +1 | AS515, AS313 | Alaska Atmos Rewards | economy | 1 | 9 | 12,500 + USD 11.20 | USD 198.70 | 432.62 | next_day_arrival |  |
 | 17 | 20:50 | 15:48 +1 | AS2042, AS2209, AS313 | Alaska Atmos Rewards | economy | 2 | 9 | 12,500 + USD 11.20 | USD 198.70 | 435.53 | exceeds_preferred_stops, next_day_arrival |  |
 | 18 | 20:50 | 15:48 +1 | AS2042, AS512, AS313 | Alaska Atmos Rewards | economy | 2 | 9 | 12,500 + USD 11.20 | USD 198.70 | 435.53 | exceeds_preferred_stops, next_day_arrival |  |
 | 19 | 08:00 | 18:43 | AA2904, AA1860 | Alaska Atmos Rewards | economy | 1 | 4 | 22,500 + USD 18.10 | USD 355.60 | 436.18 |  |  |
 | 20 | 10:16 | 21:01 | AA1949, AA2826 | Alaska Atmos Rewards | economy | 1 | 4 | 22,500 + USD 18.10 | USD 355.60 | 436.35 |  |  |
-| 21 | 23:50 | 13:00 +1 | UA368, UA5756 | Air Canada Aeroplan | economy | 1 | 6 | 15,000 + CAD 54.40 | USD 204.02 | 442.86 | next_day_arrival, late departure | velocity 19,000 + AUD 28.20 |
+| 21 | 23:50 | 13:00 +1 | UA368, UA5756 | Air Canada Aeroplan | economy | 1 | 6 | 15,000 + CAD 54.40 | USD 204.02 | 442.86 | next_day_arrival, late departure | Virgin Australia Velocity 19,000 + AUD 28.20 |
 | 22 | 19:01 | 15:48 +1 | AS525, AS2209, AS313 | Alaska Atmos Rewards | economy | 2 | 9 | 12,500 + USD 11.20 | USD 198.70 | 444.62 | exceeds_preferred_stops, next_day_arrival |  |
 | 23 | 19:01 | 15:48 +1 | AS525, AS252, AS313 | Alaska Atmos Rewards | economy | 2 | 9 | 12,500 + USD 11.20 | USD 198.70 | 444.62 | exceeds_preferred_stops, next_day_arrival |  |
 | 24 | 19:01 | 15:48 +1 | AS525, AS512, AS313 | Alaska Atmos Rewards | economy | 2 | 9 | 12,500 + USD 11.20 | USD 198.70 | 444.62 | exceeds_preferred_stops, next_day_arrival |  |
 | 25 | 09:00 | 22:30 | AA1146, AA2559 | Alaska Atmos Rewards | economy | 1 | 6 | 22,500 + USD 18.10 | USD 355.60 | 446.1 |  |  |
 | 26 | 08:00 | 21:01 | AA2904, AA2826 | Alaska Atmos Rewards | economy | 1 | 4 | 22,500 + USD 18.10 | USD 355.60 | 447.68 |  |  |
-| 27 | 22:50 | 13:00 +1 | UA2278, UA5756 | Air Canada Aeroplan | economy | 1 | 3 | 15,000 + CAD 54.40 | USD 204.02 | 453.86 | next_day_arrival, late departure | velocity 19,000 + AUD 28.20 |
+| 27 | 22:50 | 13:00 +1 | UA2278, UA5756 | Air Canada Aeroplan | economy | 1 | 3 | 15,000 + CAD 54.40 | USD 204.02 | 453.86 | next_day_arrival, late departure | Virgin Australia Velocity 19,000 + AUD 28.20 |
 | 28 | 23:50 | 15:16 +1 | UA368, UA5882 | Air Canada Aeroplan | economy | 1 | 6 | 15,000 + CAD 54.40 | USD 204.02 | 454.19 | next_day_arrival, late departure |  |
 | 29 | 12:33 | 23:44 | UA1387, UA2755 | United MileagePlus | economy | 1 | 9 | 27,500 + USD 5.60 | USD 335.60 | 458.52 | late arrival |  |
 | 30 | 05:20 | 16:57 | UA2343, UA1215 | United MileagePlus | economy | 1 | 9 | 23,600 + USD 5.60 | USD 288.80 | 463.88 | very early departure |  |
