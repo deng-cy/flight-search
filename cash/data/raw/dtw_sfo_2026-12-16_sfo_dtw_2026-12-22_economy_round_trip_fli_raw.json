@@ -1,0 +1,1983 @@
+{
+  "evidence": {
+    "result_count": 16,
+    "top_n": 1,
+    "transport": "fli"
+  },
+  "provider": "fli",
+  "provider_api_variant": "python-api",
+  "provider_package": "flights",
+  "provider_version": "0.9.0",
+  "request": {
+    "adults": 1,
+    "cabin": "economy",
+    "currency": "USD",
+    "departure_date": "2026-12-16",
+    "destination": "SFO",
+    "fetch_mode": "fallback",
+    "max_stops": null,
+    "origin": "DTW",
+    "return_date": "2026-12-22",
+    "return_destination": "DTW",
+    "return_origin": "SFO",
+    "trip_type": "round-trip"
+  },
+  "result": {
+    "current_price": "",
+    "flights": [
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": true,
+        "legs": [
+          {
+            "arrival": "13:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-16",
+            "departure": "05:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 1872 / WN 2766",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 215,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T07:05:00",
+                "arrive_time": "07:05",
+                "depart_datetime": "2026-12-16T05:25:00",
+                "depart_time": "05:25",
+                "destination": "BWI",
+                "duration_minutes": 100,
+                "flight_number": "1872",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-12-16T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 370,
+                "flight_number": "2766",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "20:20",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-22",
+            "departure": "06:45",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "10h 35m",
+            "duration_minutes": 635,
+            "flight_numbers": "WN 3853 / WN 2330 / WN 1754",
+            "layovers": [
+              {
+                "airport": "SAN",
+                "change_of_airport": false,
+                "duration_minutes": 95,
+                "overnight": false
+              },
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 120,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T08:20:00",
+                "arrive_time": "08:20",
+                "depart_datetime": "2026-12-22T06:45:00",
+                "depart_time": "06:45",
+                "destination": "SAN",
+                "duration_minutes": 95,
+                "flight_number": "3853",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T11:25:00",
+                "arrive_time": "11:25",
+                "depart_datetime": "2026-12-22T09:55:00",
+                "depart_time": "09:55",
+                "destination": "LAS",
+                "duration_minutes": 90,
+                "flight_number": "2330",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SAN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T20:20:00",
+                "arrive_time": "20:20",
+                "depart_datetime": "2026-12-22T13:25:00",
+                "depart_time": "13:25",
+                "destination": "DTW",
+                "duration_minutes": 235,
+                "flight_number": "1754",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 428.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-16",
+            "departure": "05:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 1872 / WN 2766",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 215,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T07:05:00",
+                "arrive_time": "07:05",
+                "depart_datetime": "2026-12-16T05:25:00",
+                "depart_time": "05:25",
+                "destination": "BWI",
+                "duration_minutes": 100,
+                "flight_number": "1872",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-12-16T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 370,
+                "flight_number": "2766",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "21:25",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-22",
+            "departure": "05:00",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "13h 25m",
+            "duration_minutes": 805,
+            "flight_numbers": "WN 4361 / WN 2377 / WN 2932",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 270,
+                "overnight": false
+              },
+              {
+                "airport": "MDW",
+                "change_of_airport": false,
+                "duration_minutes": 160,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-12-22T05:00:00",
+                "depart_time": "05:00",
+                "destination": "LAS",
+                "duration_minutes": 95,
+                "flight_number": "4361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T16:35:00",
+                "arrive_time": "16:35",
+                "depart_datetime": "2026-12-22T11:05:00",
+                "depart_time": "11:05",
+                "destination": "MDW",
+                "duration_minutes": 210,
+                "flight_number": "2377",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T21:25:00",
+                "arrive_time": "21:25",
+                "depart_datetime": "2026-12-22T19:15:00",
+                "depart_time": "19:15",
+                "destination": "DTW",
+                "duration_minutes": 70,
+                "flight_number": "2932",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MDW"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 435.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-16",
+            "departure": "05:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 1872 / WN 2766",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 215,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T07:05:00",
+                "arrive_time": "07:05",
+                "depart_datetime": "2026-12-16T05:25:00",
+                "depart_time": "05:25",
+                "destination": "BWI",
+                "duration_minutes": 100,
+                "flight_number": "1872",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-12-16T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 370,
+                "flight_number": "2766",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "23:30",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-22",
+            "departure": "05:00",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "15h 30m",
+            "duration_minutes": 930,
+            "flight_numbers": "WN 4361 / WN 3184 / WN 4534",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 220,
+                "overnight": false
+              },
+              {
+                "airport": "BNA",
+                "change_of_airport": false,
+                "duration_minutes": 310,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-12-22T05:00:00",
+                "depart_time": "05:00",
+                "destination": "LAS",
+                "duration_minutes": 95,
+                "flight_number": "4361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T15:45:00",
+                "arrive_time": "15:45",
+                "depart_datetime": "2026-12-22T10:15:00",
+                "depart_time": "10:15",
+                "destination": "BNA",
+                "duration_minutes": 210,
+                "flight_number": "3184",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T23:30:00",
+                "arrive_time": "23:30",
+                "depart_datetime": "2026-12-22T20:55:00",
+                "depart_time": "20:55",
+                "destination": "DTW",
+                "duration_minutes": 95,
+                "flight_number": "4534",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BNA"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 435.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-16",
+            "departure": "05:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 1872 / WN 2766",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 215,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T07:05:00",
+                "arrive_time": "07:05",
+                "depart_datetime": "2026-12-16T05:25:00",
+                "depart_time": "05:25",
+                "destination": "BWI",
+                "duration_minutes": 100,
+                "flight_number": "1872",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-12-16T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 370,
+                "flight_number": "2766",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "17:00",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-22",
+            "departure": "05:00",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "9h",
+            "duration_minutes": 540,
+            "flight_numbers": "WN 4361 / WN 1499 / WN 1638",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 70,
+                "overnight": false
+              },
+              {
+                "airport": "MDW",
+                "change_of_airport": false,
+                "duration_minutes": 100,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-12-22T05:00:00",
+                "depart_time": "05:00",
+                "destination": "LAS",
+                "duration_minutes": 95,
+                "flight_number": "4361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T13:10:00",
+                "arrive_time": "13:10",
+                "depart_datetime": "2026-12-22T07:45:00",
+                "depart_time": "07:45",
+                "destination": "MDW",
+                "duration_minutes": 205,
+                "flight_number": "1499",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T17:00:00",
+                "arrive_time": "17:00",
+                "depart_datetime": "2026-12-22T14:50:00",
+                "depart_time": "14:50",
+                "destination": "DTW",
+                "duration_minutes": 70,
+                "flight_number": "1638",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MDW"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 443.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-16",
+            "departure": "05:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 1872 / WN 2766",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 215,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T07:05:00",
+                "arrive_time": "07:05",
+                "depart_datetime": "2026-12-16T05:25:00",
+                "depart_time": "05:25",
+                "destination": "BWI",
+                "duration_minutes": 100,
+                "flight_number": "1872",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-12-16T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 370,
+                "flight_number": "2766",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "20:20",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-22",
+            "departure": "10:35",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "6h 45m",
+            "duration_minutes": 405,
+            "flight_numbers": "WN 4362 / WN 1754",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 65,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T12:20:00",
+                "arrive_time": "12:20",
+                "depart_datetime": "2026-12-22T10:35:00",
+                "depart_time": "10:35",
+                "destination": "LAS",
+                "duration_minutes": 105,
+                "flight_number": "4362",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T20:20:00",
+                "arrive_time": "20:20",
+                "depart_datetime": "2026-12-22T13:25:00",
+                "depart_time": "13:25",
+                "destination": "DTW",
+                "duration_minutes": 235,
+                "flight_number": "1754",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 464.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-16",
+            "departure": "05:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 1872 / WN 2766",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 215,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T07:05:00",
+                "arrive_time": "07:05",
+                "depart_datetime": "2026-12-16T05:25:00",
+                "depart_time": "05:25",
+                "destination": "BWI",
+                "duration_minutes": 100,
+                "flight_number": "1872",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-12-16T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 370,
+                "flight_number": "2766",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "00:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-12-22",
+            "departure": "11:15",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "10h 10m",
+            "duration_minutes": 610,
+            "flight_numbers": "WN 1596 / WN 826",
+            "layovers": [
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 290,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T15:00:00",
+                "arrive_time": "15:00",
+                "depart_datetime": "2026-12-22T11:15:00",
+                "depart_time": "11:15",
+                "destination": "DEN",
+                "duration_minutes": 165,
+                "flight_number": "1596",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-23T00:25:00",
+                "arrive_time": "00:25",
+                "depart_datetime": "2026-12-22T19:50:00",
+                "depart_time": "19:50",
+                "destination": "DTW",
+                "duration_minutes": 155,
+                "flight_number": "826",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 464.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-16",
+            "departure": "05:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 1872 / WN 2766",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 215,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T07:05:00",
+                "arrive_time": "07:05",
+                "depart_datetime": "2026-12-16T05:25:00",
+                "depart_time": "05:25",
+                "destination": "BWI",
+                "duration_minutes": 100,
+                "flight_number": "1872",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-12-16T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 370,
+                "flight_number": "2766",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "20:20",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-22",
+            "departure": "06:45",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "10h 35m",
+            "duration_minutes": 635,
+            "flight_numbers": "WN 3853 / WN 297 / WN 1754",
+            "layovers": [
+              {
+                "airport": "SAN",
+                "change_of_airport": false,
+                "duration_minutes": 130,
+                "overnight": false
+              },
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T08:20:00",
+                "arrive_time": "08:20",
+                "depart_datetime": "2026-12-22T06:45:00",
+                "depart_time": "06:45",
+                "destination": "SAN",
+                "duration_minutes": 95,
+                "flight_number": "3853",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T11:55:00",
+                "arrive_time": "11:55",
+                "depart_datetime": "2026-12-22T10:30:00",
+                "depart_time": "10:30",
+                "destination": "LAS",
+                "duration_minutes": 85,
+                "flight_number": "297",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SAN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T20:20:00",
+                "arrive_time": "20:20",
+                "depart_datetime": "2026-12-22T13:25:00",
+                "depart_time": "13:25",
+                "destination": "DTW",
+                "duration_minutes": 235,
+                "flight_number": "1754",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 469.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-16",
+            "departure": "05:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 1872 / WN 2766",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 215,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T07:05:00",
+                "arrive_time": "07:05",
+                "depart_datetime": "2026-12-16T05:25:00",
+                "depart_time": "05:25",
+                "destination": "BWI",
+                "duration_minutes": 100,
+                "flight_number": "1872",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-12-16T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 370,
+                "flight_number": "2766",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "20:20",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-22",
+            "departure": "07:35",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "9h 45m",
+            "duration_minutes": 585,
+            "flight_numbers": "WN 3854 / WN 297 / WN 1754",
+            "layovers": [
+              {
+                "airport": "SAN",
+                "change_of_airport": false,
+                "duration_minutes": 75,
+                "overnight": false
+              },
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T09:15:00",
+                "arrive_time": "09:15",
+                "depart_datetime": "2026-12-22T07:35:00",
+                "depart_time": "07:35",
+                "destination": "SAN",
+                "duration_minutes": 100,
+                "flight_number": "3854",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T11:55:00",
+                "arrive_time": "11:55",
+                "depart_datetime": "2026-12-22T10:30:00",
+                "depart_time": "10:30",
+                "destination": "LAS",
+                "duration_minutes": 85,
+                "flight_number": "297",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SAN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T20:20:00",
+                "arrive_time": "20:20",
+                "depart_datetime": "2026-12-22T13:25:00",
+                "depart_time": "13:25",
+                "destination": "DTW",
+                "duration_minutes": 235,
+                "flight_number": "1754",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 469.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-16",
+            "departure": "05:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 1872 / WN 2766",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 215,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T07:05:00",
+                "arrive_time": "07:05",
+                "depart_datetime": "2026-12-16T05:25:00",
+                "depart_time": "05:25",
+                "destination": "BWI",
+                "duration_minutes": 100,
+                "flight_number": "1872",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-12-16T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 370,
+                "flight_number": "2766",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "00:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-12-22",
+            "departure": "09:30",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "11h 55m",
+            "duration_minutes": 715,
+            "flight_numbers": "WN 2495 / WN 2495 / WN 826",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 40,
+                "overnight": false
+              },
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 285,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T11:05:00",
+                "arrive_time": "11:05",
+                "depart_datetime": "2026-12-22T09:30:00",
+                "depart_time": "09:30",
+                "destination": "LAX",
+                "duration_minutes": 95,
+                "flight_number": "2495",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T15:05:00",
+                "arrive_time": "15:05",
+                "depart_datetime": "2026-12-22T11:45:00",
+                "depart_time": "11:45",
+                "destination": "DEN",
+                "duration_minutes": 140,
+                "flight_number": "2495",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-23T00:25:00",
+                "arrive_time": "00:25",
+                "depart_datetime": "2026-12-22T19:50:00",
+                "depart_time": "19:50",
+                "destination": "DTW",
+                "duration_minutes": 155,
+                "flight_number": "826",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 469.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-16",
+            "departure": "05:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 1872 / WN 2766",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 215,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T07:05:00",
+                "arrive_time": "07:05",
+                "depart_datetime": "2026-12-16T05:25:00",
+                "depart_time": "05:25",
+                "destination": "BWI",
+                "duration_minutes": 100,
+                "flight_number": "1872",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-12-16T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 370,
+                "flight_number": "2766",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "15:05",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-22",
+            "departure": "05:20",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "6h 45m",
+            "duration_minutes": 405,
+            "flight_numbers": "WN 4578 / WN 1124",
+            "layovers": [
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T08:55:00",
+                "arrive_time": "08:55",
+                "depart_datetime": "2026-12-22T05:20:00",
+                "depart_time": "05:20",
+                "destination": "DEN",
+                "duration_minutes": 155,
+                "flight_number": "4578",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T15:05:00",
+                "arrive_time": "15:05",
+                "depart_datetime": "2026-12-22T10:25:00",
+                "depart_time": "10:25",
+                "destination": "DTW",
+                "duration_minutes": 160,
+                "flight_number": "1124",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 473.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-16",
+            "departure": "05:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 1872 / WN 2766",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 215,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T07:05:00",
+                "arrive_time": "07:05",
+                "depart_datetime": "2026-12-16T05:25:00",
+                "depart_time": "05:25",
+                "destination": "BWI",
+                "duration_minutes": 100,
+                "flight_number": "1872",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-12-16T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 370,
+                "flight_number": "2766",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "21:25",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-22",
+            "departure": "09:45",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "8h 40m",
+            "duration_minutes": 520,
+            "flight_numbers": "WN 4368 / WN 2932",
+            "layovers": [
+              {
+                "airport": "MDW",
+                "change_of_airport": false,
+                "duration_minutes": 200,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T15:55:00",
+                "arrive_time": "15:55",
+                "depart_datetime": "2026-12-22T09:45:00",
+                "depart_time": "09:45",
+                "destination": "MDW",
+                "duration_minutes": 250,
+                "flight_number": "4368",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T21:25:00",
+                "arrive_time": "21:25",
+                "depart_datetime": "2026-12-22T19:15:00",
+                "depart_time": "19:15",
+                "destination": "DTW",
+                "duration_minutes": 70,
+                "flight_number": "2932",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MDW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 473.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-16",
+            "departure": "05:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 1872 / WN 2766",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 215,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T07:05:00",
+                "arrive_time": "07:05",
+                "depart_datetime": "2026-12-16T05:25:00",
+                "depart_time": "05:25",
+                "destination": "BWI",
+                "duration_minutes": 100,
+                "flight_number": "1872",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-12-16T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 370,
+                "flight_number": "2766",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "00:25",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-12-22",
+            "departure": "14:25",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "7h",
+            "duration_minutes": 420,
+            "flight_numbers": "WN 3845 / WN 826",
+            "layovers": [
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 110,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T18:00:00",
+                "arrive_time": "18:00",
+                "depart_datetime": "2026-12-22T14:25:00",
+                "depart_time": "14:25",
+                "destination": "DEN",
+                "duration_minutes": 155,
+                "flight_number": "3845",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-23T00:25:00",
+                "arrive_time": "00:25",
+                "depart_datetime": "2026-12-22T19:50:00",
+                "depart_time": "19:50",
+                "destination": "DTW",
+                "duration_minutes": 155,
+                "flight_number": "826",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 473.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-16",
+            "departure": "05:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 1872 / WN 2766",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 215,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T07:05:00",
+                "arrive_time": "07:05",
+                "depart_datetime": "2026-12-16T05:25:00",
+                "depart_time": "05:25",
+                "destination": "BWI",
+                "duration_minutes": 100,
+                "flight_number": "1872",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-12-16T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 370,
+                "flight_number": "2766",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:20",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-22",
+            "departure": "10:35",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "8h 45m",
+            "duration_minutes": 525,
+            "flight_numbers": "WN 4362 / WN 2885 / WN 4960",
+            "layovers": [
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 95,
+                "overnight": false
+              },
+              {
+                "airport": "STL",
+                "change_of_airport": false,
+                "duration_minutes": 55,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T12:20:00",
+                "arrive_time": "12:20",
+                "depart_datetime": "2026-12-22T10:35:00",
+                "depart_time": "10:35",
+                "destination": "LAS",
+                "duration_minutes": 105,
+                "flight_number": "4362",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T19:00:00",
+                "arrive_time": "19:00",
+                "depart_datetime": "2026-12-22T13:55:00",
+                "depart_time": "13:55",
+                "destination": "STL",
+                "duration_minutes": 185,
+                "flight_number": "2885",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T22:20:00",
+                "arrive_time": "22:20",
+                "depart_datetime": "2026-12-22T19:55:00",
+                "depart_time": "19:55",
+                "destination": "DTW",
+                "duration_minutes": 85,
+                "flight_number": "4960",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "STL"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 478.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-16",
+            "departure": "05:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 1872 / WN 2766",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 215,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T07:05:00",
+                "arrive_time": "07:05",
+                "depart_datetime": "2026-12-16T05:25:00",
+                "depart_time": "05:25",
+                "destination": "BWI",
+                "duration_minutes": 100,
+                "flight_number": "1872",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-12-16T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 370,
+                "flight_number": "2766",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:20",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-22",
+            "departure": "13:05",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "6h 15m",
+            "duration_minutes": 375,
+            "flight_numbers": "WN 4886 / WN 4960",
+            "layovers": [
+              {
+                "airport": "STL",
+                "change_of_airport": false,
+                "duration_minutes": 60,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T18:55:00",
+                "arrive_time": "18:55",
+                "depart_datetime": "2026-12-22T13:05:00",
+                "depart_time": "13:05",
+                "destination": "STL",
+                "duration_minutes": 230,
+                "flight_number": "4886",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-22T22:20:00",
+                "arrive_time": "22:20",
+                "depart_datetime": "2026-12-22T19:55:00",
+                "depart_time": "19:55",
+                "destination": "DTW",
+                "duration_minutes": 85,
+                "flight_number": "4960",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "STL"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 483.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-16",
+            "departure": "05:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 1872 / WN 2766",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 215,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T07:05:00",
+                "arrive_time": "07:05",
+                "depart_datetime": "2026-12-16T05:25:00",
+                "depart_time": "05:25",
+                "destination": "BWI",
+                "duration_minutes": 100,
+                "flight_number": "1872",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-12-16T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 370,
+                "flight_number": "2766",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "12:10",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-12-22",
+            "departure": "21:25",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "11h 45m",
+            "duration_minutes": 705,
+            "flight_numbers": "WN 859 / WN 971",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 305,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-23T05:30:00",
+                "arrive_time": "05:30",
+                "depart_datetime": "2026-12-22T21:25:00",
+                "depart_time": "21:25",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "859",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-23T12:10:00",
+                "arrive_time": "12:10",
+                "depart_datetime": "2026-12-23T10:35:00",
+                "depart_time": "10:35",
+                "destination": "DTW",
+                "duration_minutes": 95,
+                "flight_number": "971",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 483.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:50",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-12-16",
+            "departure": "05:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 1872 / WN 2766",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 215,
+                "overnight": false
+              }
+            ],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T07:05:00",
+                "arrive_time": "07:05",
+                "depart_datetime": "2026-12-16T05:25:00",
+                "depart_time": "05:25",
+                "destination": "BWI",
+                "duration_minutes": 100,
+                "flight_number": "1872",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-16T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-12-16T10:40:00",
+                "depart_time": "10:40",
+                "destination": "SFO",
+                "duration_minutes": 370,
+                "flight_number": "2766",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "10:00",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-12-22",
+            "departure": "23:35",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "7h 25m",
+            "duration_minutes": 445,
+            "flight_numbers": "WN 3849 / WN 1076",
+            "layovers": [
+              {
+                "airport": "MDW",
+                "change_of_airport": false,
+                "duration_minutes": 105,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-23T06:00:00",
+                "arrive_time": "06:00",
+                "depart_datetime": "2026-12-22T23:35:00",
+                "depart_time": "23:35",
+                "destination": "MDW",
+                "duration_minutes": 265,
+                "flight_number": "3849",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-12-23T10:00:00",
+                "arrive_time": "10:00",
+                "depart_datetime": "2026-12-23T07:45:00",
+                "depart_time": "07:45",
+                "destination": "DTW",
+                "duration_minutes": 75,
+                "flight_number": "1076",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MDW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 493.00"
+      }
+    ]
+  },
+  "searched_at": "2026-06-28T02:23:49.728159+00:00"
+}

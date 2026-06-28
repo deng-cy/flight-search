@@ -1,0 +1,354 @@
+{
+  "booking_links": [
+    {
+      "label": "Book via Alaska Atmos Rewards",
+      "link": "https://www.alaskaair.com/search/results?O=CUN&D=SFO&OD=2026-09-07&A=1&C=0&L=0&RT=false&ShoppingMethod=onlineaward&utm_source=seatsaero",
+      "primary": true
+    },
+    {
+      "label": "Book via American AAdvantage",
+      "link": "https://www.aa.com/booking/search?type=OneWay&searchType=Award&from=CUN&to=SFO&pax=1&cabin=&locale=en_US&nearbyAirports=true&depart=2026-09-07&carriers=ALL&pos=US&adult=1&utm_source=seatsaero",
+      "primary": false
+    },
+    {
+      "label": "Book via British Airways Club",
+      "link": "https://www.britishairways.com/travel/redeem/execclub/_gf/en_gb?eId=100002&pageid=PLANREDEMPTIONJOURNEY&tab_selected=redeem&redemption_type=STD_RED&amex_redemption_type=&upgradeOutbound=true&WebApplicationID=BOD&Output=&hdnAgencyCode=&departurePoint=CUN&destinationPoint=SFO&departInputDate=07/09/2026&oneWay=true&RestrictionType=Restricted&NumberOfAdults=1&NumberOfYoungAdults=0&NumberOfChildren=0&NumberOfInfants=0&aviosapp=true&CabinCode=M&utm_source=seatsaero",
+      "primary": false
+    },
+    {
+      "label": "Book via Qantas Frequent Flyer",
+      "link": "https://www.qantas.com/?departureAirportCode=CUN&arrivalAirportCode=SFO&travelClass=ECO&tripType=O&usePoints=true&adults=1&departureDate=2026-09-07&utm_source=seatsaero",
+      "primary": false
+    },
+    {
+      "label": "Book via Qatar Airways Privilege Club",
+      "link": "https://booking.qatarairways.com/nsp/views/showBooking.action?widget=QR&searchType=F&addTaxToFare=Y&minPurTime=0&upsellCallId=100&tripType=O&bookingClass=E&allowRedemption=Y&flexibleDate=Off&selLang=EN&fromStation=CUN&from=CUN&toStation=SFO&to=SFO&departingHidden=2026-09-07&departing=2026-09-07&adults=1&children=0&infants=0&teenager=0&ofw=0&promoCode=&qmilesFlow=true&paymentMode=qmiles&upsellCallId=100&utm_source=seatsaero",
+      "primary": false
+    }
+  ],
+  "carriers": {
+    "AA": "American Airlines"
+  },
+  "data": [
+    {
+      "Aircraft": [
+        "Airbus A321",
+        "Airbus A321neo/Lr/Xlr"
+      ],
+      "ArrivesAt": "2026-09-07T22:59:00Z",
+      "AvailabilityID": "32x9TkuBSntzT01WItLngwdnewB",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2026-09-07T17:26:00Z",
+          "AvailabilityID": "32x9TkuBSntzT01WItLngwdnewB",
+          "AvailabilityTripID": "3Fc9PvjQ5qouKmLPPnwvoiD5lfs",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-25T04:57:49.065399Z",
+          "DepartsAt": "2026-09-07T12:30:00Z",
+          "DestinationAirport": "PHL",
+          "Distance": 1472,
+          "Duration": 236,
+          "FareClass": "T",
+          "FlightNumber": "AA2175",
+          "ID": "3Fc9PvGAvTwYEMm0ooaiFYLv13U",
+          "Order": 0,
+          "OriginAirport": "CUN",
+          "RouteID": "2RmNPmfX0N8zIv738Q7xsCvsnZe",
+          "Source": "alaska",
+          "UpdatedAt": "2026-06-25T04:57:49.065399Z"
+        },
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A321neo/Lr/Xlr",
+          "ArrivesAt": "2026-09-07T22:59:00Z",
+          "AvailabilityID": "32x9TkuBSntzT01WItLngwdnewB",
+          "AvailabilityTripID": "3Fc9PvjQ5qouKmLPPnwvoiD5lfs",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-25T04:57:49.065399Z",
+          "DepartsAt": "2026-09-07T19:35:00Z",
+          "DestinationAirport": "SFO",
+          "Distance": 2518,
+          "Duration": 384,
+          "FareClass": "T",
+          "FlightNumber": "AA2663",
+          "ID": "3Fc9PvY7MYeeyQVd7pdRyrRZUTv",
+          "Order": 1,
+          "OriginAirport": "PHL",
+          "RouteID": "2RmNPmfX0N8zIv738Q7xsCvsnZe",
+          "Source": "alaska",
+          "UpdatedAt": "2026-06-25T04:57:49.065399Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "AA",
+      "Connections": [
+        "PHL"
+      ],
+      "CreatedAt": "2026-06-25T04:57:49.065399Z",
+      "DepartsAt": "2026-09-07T12:30:00Z",
+      "DestinationAirport": "SFO",
+      "FareClasses": [
+        "T",
+        "T"
+      ],
+      "FlightNumbers": "AA2175, AA2663",
+      "ID": "3Fc9PvjQ5qouKmLPPnwvoiD5lfs",
+      "MileageCost": 22500,
+      "OriginAirport": "CUN",
+      "RemainingSeats": 9,
+      "RouteID": "2RmNPmfX0N8zIv738Q7xsCvsnZe",
+      "Source": "alaska",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 749,
+      "TotalSegmentDistance": 3990,
+      "TotalTaxes": 9845,
+      "UpdatedAt": "2026-06-25T04:57:49.065399Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A321",
+        "Airbus A321neo/Lr/Xlr"
+      ],
+      "ArrivesAt": "2026-09-07T22:59:00Z",
+      "AvailabilityID": "32x9TkuBSntzT01WItLngwdnewB",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2026-09-07T17:26:00Z",
+          "AvailabilityID": "32x9TkuBSntzT01WItLngwdnewB",
+          "AvailabilityTripID": "3Fc9PwMzik5Sk2NzLZh9efDSizz",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-25T04:57:49.065399Z",
+          "DepartsAt": "2026-09-07T12:30:00Z",
+          "DestinationAirport": "PHL",
+          "Distance": 1472,
+          "Duration": 236,
+          "FareClass": "U",
+          "FlightNumber": "AA2175",
+          "ID": "3Fc9PwlVcz75gxv4laCMdeofYH6",
+          "Order": 0,
+          "OriginAirport": "CUN",
+          "RouteID": "2RmNPmfX0N8zIv738Q7xsCvsnZe",
+          "Source": "alaska",
+          "UpdatedAt": "2026-06-25T04:57:49.065399Z"
+        },
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A321neo/Lr/Xlr",
+          "ArrivesAt": "2026-09-07T22:59:00Z",
+          "AvailabilityID": "32x9TkuBSntzT01WItLngwdnewB",
+          "AvailabilityTripID": "3Fc9PwMzik5Sk2NzLZh9efDSizz",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-25T04:57:49.065399Z",
+          "DepartsAt": "2026-09-07T19:35:00Z",
+          "DestinationAirport": "SFO",
+          "Distance": 2518,
+          "Duration": 384,
+          "FareClass": "U",
+          "FlightNumber": "AA2663",
+          "ID": "3Fc9Px2Nz6aT34zIGEU8JQKuAmK",
+          "Order": 1,
+          "OriginAirport": "PHL",
+          "RouteID": "2RmNPmfX0N8zIv738Q7xsCvsnZe",
+          "Source": "alaska",
+          "UpdatedAt": "2026-06-25T04:57:49.065399Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "AA",
+      "Connections": [
+        "PHL"
+      ],
+      "CreatedAt": "2026-06-25T04:57:49.065399Z",
+      "DepartsAt": "2026-09-07T12:30:00Z",
+      "DestinationAirport": "SFO",
+      "FareClasses": [
+        "U",
+        "U"
+      ],
+      "FlightNumbers": "AA2175, AA2663",
+      "ID": "3Fc9PwMzik5Sk2NzLZh9efDSizz",
+      "MileageCost": 45000,
+      "OriginAirport": "CUN",
+      "RemainingSeats": 2,
+      "RouteID": "2RmNPmfX0N8zIv738Q7xsCvsnZe",
+      "Source": "alaska",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 749,
+      "TotalSegmentDistance": 3990,
+      "TotalTaxes": 9845,
+      "UpdatedAt": "2026-06-25T04:57:49.065399Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-800",
+        "Airbus A321neo/Lr/Xlr"
+      ],
+      "ArrivesAt": "2026-09-07T22:59:00Z",
+      "AvailabilityID": "32x9TkuBSntzT01WItLngwdnewB",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "738",
+          "AircraftName": "Boeing 737-800",
+          "ArrivesAt": "2026-09-07T15:52:00Z",
+          "AvailabilityID": "32x9TkuBSntzT01WItLngwdnewB",
+          "AvailabilityTripID": "3Fc9PxYjYdTGFWrHNcfkU7OJ2FI",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-25T04:57:49.065399Z",
+          "DepartsAt": "2026-09-07T11:00:00Z",
+          "DestinationAirport": "PHL",
+          "Distance": 1472,
+          "Duration": 232,
+          "FareClass": "T",
+          "FlightNumber": "AA1971",
+          "ID": "3Fc9PrXO7WEdWFDkVRWkSBuFe6a",
+          "Order": 0,
+          "OriginAirport": "CUN",
+          "RouteID": "2RmNPmfX0N8zIv738Q7xsCvsnZe",
+          "Source": "alaska",
+          "UpdatedAt": "2026-06-25T04:57:49.065399Z"
+        },
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A321neo/Lr/Xlr",
+          "ArrivesAt": "2026-09-07T22:59:00Z",
+          "AvailabilityID": "32x9TkuBSntzT01WItLngwdnewB",
+          "AvailabilityTripID": "3Fc9PxYjYdTGFWrHNcfkU7OJ2FI",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-25T04:57:49.065399Z",
+          "DepartsAt": "2026-09-07T19:35:00Z",
+          "DestinationAirport": "SFO",
+          "Distance": 2518,
+          "Duration": 384,
+          "FareClass": "T",
+          "FlightNumber": "AA2663",
+          "ID": "3Fc9PrllRGktOFnHa9ciyLCRGBI",
+          "Order": 1,
+          "OriginAirport": "PHL",
+          "RouteID": "2RmNPmfX0N8zIv738Q7xsCvsnZe",
+          "Source": "alaska",
+          "UpdatedAt": "2026-06-25T04:57:49.065399Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "AA",
+      "Connections": [
+        "PHL"
+      ],
+      "CreatedAt": "2026-06-25T04:57:49.065399Z",
+      "DepartsAt": "2026-09-07T11:00:00Z",
+      "DestinationAirport": "SFO",
+      "FareClasses": [
+        "T",
+        "T"
+      ],
+      "FlightNumbers": "AA1971, AA2663",
+      "ID": "3Fc9PxYjYdTGFWrHNcfkU7OJ2FI",
+      "MileageCost": 22500,
+      "OriginAirport": "CUN",
+      "RemainingSeats": 9,
+      "RouteID": "2RmNPmfX0N8zIv738Q7xsCvsnZe",
+      "Source": "alaska",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 839,
+      "TotalSegmentDistance": 3990,
+      "TotalTaxes": 9845,
+      "UpdatedAt": "2026-06-25T04:57:49.065399Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-800",
+        "Airbus A321neo/Lr/Xlr"
+      ],
+      "ArrivesAt": "2026-09-07T22:59:00Z",
+      "AvailabilityID": "32x9TkuBSntzT01WItLngwdnewB",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "738",
+          "AircraftName": "Boeing 737-800",
+          "ArrivesAt": "2026-09-07T15:52:00Z",
+          "AvailabilityID": "32x9TkuBSntzT01WItLngwdnewB",
+          "AvailabilityTripID": "3Fc9PtDQ2eIFGV8BRf0dmSqfWxx",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-25T04:57:49.065399Z",
+          "DepartsAt": "2026-09-07T11:00:00Z",
+          "DestinationAirport": "PHL",
+          "Distance": 1472,
+          "Duration": 232,
+          "FareClass": "U",
+          "FlightNumber": "AA1971",
+          "ID": "3Fc9Pst2AB2jAZqdB7wqCLjcQgK",
+          "Order": 0,
+          "OriginAirport": "CUN",
+          "RouteID": "2RmNPmfX0N8zIv738Q7xsCvsnZe",
+          "Source": "alaska",
+          "UpdatedAt": "2026-06-25T04:57:49.065399Z"
+        },
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A321neo/Lr/Xlr",
+          "ArrivesAt": "2026-09-07T22:59:00Z",
+          "AvailabilityID": "32x9TkuBSntzT01WItLngwdnewB",
+          "AvailabilityTripID": "3Fc9PtDQ2eIFGV8BRf0dmSqfWxx",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-25T04:57:49.065399Z",
+          "DepartsAt": "2026-09-07T19:35:00Z",
+          "DestinationAirport": "SFO",
+          "Distance": 2518,
+          "Duration": 384,
+          "FareClass": "U",
+          "FlightNumber": "AA2663",
+          "ID": "3Fc9PwJlrlGmP1O2OI2xP78aWFQ",
+          "Order": 1,
+          "OriginAirport": "PHL",
+          "RouteID": "2RmNPmfX0N8zIv738Q7xsCvsnZe",
+          "Source": "alaska",
+          "UpdatedAt": "2026-06-25T04:57:49.065399Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "AA",
+      "Connections": [
+        "PHL"
+      ],
+      "CreatedAt": "2026-06-25T04:57:49.065399Z",
+      "DepartsAt": "2026-09-07T11:00:00Z",
+      "DestinationAirport": "SFO",
+      "FareClasses": [
+        "U",
+        "U"
+      ],
+      "FlightNumbers": "AA1971, AA2663",
+      "ID": "3Fc9PtDQ2eIFGV8BRf0dmSqfWxx",
+      "MileageCost": 45000,
+      "OriginAirport": "CUN",
+      "RemainingSeats": 3,
+      "RouteID": "2RmNPmfX0N8zIv738Q7xsCvsnZe",
+      "Source": "alaska",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 839,
+      "TotalSegmentDistance": 3990,
+      "TotalTaxes": 9845,
+      "UpdatedAt": "2026-06-25T04:57:49.065399Z"
+    }
+  ],
+  "destination_coordinates": {
+    "Lat": 37.615215,
+    "Lon": -122.389881
+  },
+  "origin_coordinates": {
+    "Lat": 21.040457,
+    "Lon": -86.874439
+  }
+}

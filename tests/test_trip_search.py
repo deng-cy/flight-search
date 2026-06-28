@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 import json
+import os
 import tempfile
 import unittest
+from datetime import datetime
 from pathlib import Path
 import sys
 
@@ -200,11 +202,11 @@ class TripSearchExpansionTests(unittest.TestCase):
         self.assertIn("10:15 -&gt; 13:20", html)
         self.assertIn("Trip records", html)
         self.assertIn("SFO to FCA", html)
-        self.assertIn("Outbound dates: 2026-09-04 · Return dates: 2026-09-07", html)
+        self.assertIn("Outbound Sep 4, 2026 · Return Sep 7, 2026", html)
         self.assertIn("Cheapest flight", html)
         self.assertIn("Cheapest clean timing", html)
         self.assertIn("Best flight price", html)
-        self.assertIn("Best cash option", html)
+        self.assertIn("Best paid strategy", html)
         self.assertIn("summary-alert-row", html)
         self.assertIn(".rec-metrics .price-chip", html)
         self.assertIn("overflow-wrap: normal", html)
@@ -276,7 +278,7 @@ class TripSearchExpansionTests(unittest.TestCase):
 
         labels = [card["label"] for card in recommendation_cards(rows)]
 
-        self.assertIn("Start here + best cash option", labels)
+        self.assertIn("Start here + best paid strategy", labels)
         self.assertNotIn("Best two one-ways", labels)
         self.assertNotIn("Two one-ways check", labels)
         self.assertNotIn("Easiest timing", labels)
@@ -306,16 +308,30 @@ class TripSearchExpansionTests(unittest.TestCase):
 
         with tempfile.TemporaryDirectory() as tmp_dir:
             output_dir = Path(tmp_dir)
+            current_source = output_dir / "current_cash.json"
+            current_source.write_text("[]", encoding="utf-8")
+            current_ts = datetime(2026, 6, 20, 12, 0).timestamp()
+            sibling_ts = datetime(2026, 6, 25, 12, 0).timestamp()
+            os.utime(current_source, (current_ts, current_ts))
+            current_updated = datetime.fromtimestamp(current_source.stat().st_mtime).astimezone().strftime("%Y-%m-%d")
             sibling_json = output_dir / "sfo_sjc_to_fca_mso_out_2026-09-04_2026-09-05_return_2026-09-07_economy_trip_summary.json"
             sibling_html = sibling_json.with_suffix(".html")
             sibling_json.write_text(json.dumps(sibling_payload), encoding="utf-8")
             sibling_html.write_text("<!doctype html>", encoding="utf-8")
+            os.utime(sibling_html, (sibling_ts, sibling_ts))
             output = output_dir / "sfo_to_dtw_trip_summary.html"
             write_master_html(
                 output,
                 title="SFO to DTW Trip Search",
                 cabin="economy",
                 plan=plan,
+                cash_runs=[
+                    {
+                        "summary": {
+                            "outputs": {"normalized_json": str(current_source)},
+                        }
+                    }
+                ],
                 complete_rows=[],
                 award_rows=[],
                 cash_one_way_rows=[],
@@ -324,13 +340,23 @@ class TripSearchExpansionTests(unittest.TestCase):
             html = output.read_text(encoding="utf-8")
 
         self.assertIn("Trip records", html)
+        self.assertIn('id="tripRecordSort"', html)
+        self.assertIn('<option value="updated">Last updated</option>', html)
+        self.assertIn('<option value="outbound">Outbound date</option>', html)
+        self.assertIn('<option value="origin">Origin airport</option>', html)
+        self.assertLess(
+            html.index('href="sfo_sjc_to_fca_mso_out_2026-09-04_2026-09-05_return_2026-09-07_economy_trip_summary.html"'),
+            html.index('href="sfo_to_dtw_trip_summary.html" aria-current="page"'),
+        )
         self.assertIn('aria-label="Saved trip report pages"', html)
         self.assertIn('href="sfo_to_dtw_trip_summary.html" aria-current="page"', html)
         self.assertIn('href="sfo_sjc_to_fca_mso_out_2026-09-04_2026-09-05_return_2026-09-07_economy_trip_summary.html"', html)
         self.assertIn("SFO to DTW", html)
         self.assertIn("SFO/SJC to FCA/MSO", html)
-        self.assertIn("Outbound dates: 2026-09-04, 2026-09-05 · Return dates: 2026-09-07", html)
-        self.assertIn("2 complete plans", html)
+        self.assertIn("Outbound Sep 4-5, 2026 · Return Sep 7, 2026", html)
+        self.assertIn("2 plans", html)
+        self.assertIn(f"{current_updated} · 0 plans", html)
+        self.assertNotIn(f"Updated {current_updated}", html)
         self.assertIn("Current", html)
 
     def test_master_report_uses_valid_checkbox_filters_and_builder_detail_markers(self) -> None:
@@ -755,7 +781,7 @@ class TripSearchExpansionTests(unittest.TestCase):
         self.assertEqual(cards[0]["row"]["kind"], "award pair")
         cash_cards = [card for card in cards if card["row"]["kind"] == "cash"]
         self.assertEqual(len(cash_cards), 1)
-        self.assertEqual(cash_cards[0]["label"], "Best cash option")
+        self.assertEqual(cash_cards[0]["label"], "Best paid strategy")
         self.assertEqual(cash_cards[0]["row"]["cash_detail_status"], "outbound_only")
         self.assertNotIn("Cheapest tolerable", cash_cards[0]["label"])
 
@@ -919,6 +945,7 @@ class TripSearchExpansionTests(unittest.TestCase):
             "arrive": "20:40 / 01:57 +1",
             "outbound_depart": "12:45",
             "return_depart": "19:30",
+            "cash_detail_status": "complete",
             "notes": "round trip cash fare",
         }
         two_one_ways = {
@@ -940,10 +967,62 @@ class TripSearchExpansionTests(unittest.TestCase):
         ]
 
         self.assertEqual(len(best_cash_cards), 1)
+        self.assertEqual(best_cash_cards[0]["label"], "Best paid strategy")
         self.assertEqual(best_cash_cards[0]["row"]["kind"], "cash one-ways")
         self.assertTrue(best_cash_cards[0]["row"]["cash_flex_recommended"])
         self.assertIn("same price as true two-leg fare; more flexible", best_cash_cards[0]["row"]["notes"])
         self.assertIn("two one-ways are same price and more flexible", cash_rows[0]["notes"])
+
+    def test_cheaper_two_one_ways_are_suggested_with_complete_round_trip_timing(self) -> None:
+        true_cash = {
+            "kind": "cash",
+            "route": "SFO -> DTW / DTW -> SFO",
+            "dates": "2026-11-14 / 2026-11-30",
+            "origin": "SFO",
+            "destination": "DTW",
+            "outbound_date": "2026-11-14",
+            "return_origin": "DTW",
+            "return_destination": "SFO",
+            "return_date": "2026-11-30",
+            "same_airports": True,
+            "trip_type": "round-trip",
+            "price": "$500.00",
+            "effective": "$500.00",
+            "effective_num": 500.0,
+            "score": 300.0,
+            "score_label": "300.00",
+            "stops": "0 + 0",
+            "stops_num": 0,
+            "duration": "10h",
+            "duration_minutes": 600,
+            "depart": "12:45 / 19:30",
+            "arrive": "20:40 / 01:57 +1",
+            "outbound_depart": "12:45",
+            "return_depart": "19:30",
+            "cash_detail_status": "complete",
+            "notes": "round trip cash fare",
+        }
+        two_one_ways = {
+            **true_cash,
+            "kind": "cash one-ways",
+            "trip_type": "two one-ways",
+            "price": "$180.00 / $220.00",
+            "effective": "$400.00",
+            "effective_num": 400.0,
+            "score": 450.0,
+            "score_label": "450.00",
+            "notes": "book as two separate paid one-way tickets",
+        }
+
+        cash_rows, one_way_rows = annotate_cash_strategy_comparisons([true_cash], [two_one_ways])
+        cards = recommendation_cards([*cash_rows, *one_way_rows])
+        paid_cards = [card for card in cards if card["label"] == "Best paid strategy"]
+
+        self.assertEqual(len(paid_cards), 1)
+        self.assertEqual(paid_cards[0]["row"]["kind"], "cash one-ways")
+        self.assertTrue(paid_cards[0]["row"]["cash_flex_recommended"])
+        self.assertIn("cheaper than true two-leg fare by $100.00", paid_cards[0]["row"]["notes"])
+        self.assertIn("comparable two one-ways cost $100.00 less", cash_rows[0]["notes"])
 
 
 if __name__ == "__main__":

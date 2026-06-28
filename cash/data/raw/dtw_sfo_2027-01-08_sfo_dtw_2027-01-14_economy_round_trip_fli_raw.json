@@ -1,0 +1,2061 @@
+{
+  "evidence": {
+    "result_count": 23,
+    "top_n": 1,
+    "transport": "fli"
+  },
+  "provider": "fli",
+  "provider_api_variant": "python-api",
+  "provider_package": "flights",
+  "provider_version": "0.9.0",
+  "request": {
+    "adults": 1,
+    "cabin": "economy",
+    "currency": "USD",
+    "departure_date": "2027-01-08",
+    "destination": "SFO",
+    "fetch_mode": "fallback",
+    "max_stops": null,
+    "origin": "DTW",
+    "return_date": "2027-01-14",
+    "return_destination": "DTW",
+    "return_origin": "SFO",
+    "trip_type": "round-trip"
+  },
+  "result": {
+    "current_price": "",
+    "flights": [
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": true,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "13:36",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "06:00",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "4h 36m",
+            "duration_minutes": 276,
+            "flight_numbers": "DL 772",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T13:36:00",
+                "arrive_time": "13:36",
+                "depart_datetime": "2027-01-14T06:00:00",
+                "depart_time": "06:00",
+                "destination": "DTW",
+                "duration_minutes": 276,
+                "flight_number": "772",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          }
+        ],
+        "price": "USD 349.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "06:20",
+            "arrival_time_ahead": "+1",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "22:45",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "4h 35m",
+            "duration_minutes": 275,
+            "flight_numbers": "DL 335",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-15T06:20:00",
+                "arrive_time": "06:20",
+                "depart_datetime": "2027-01-14T22:45:00",
+                "depart_time": "22:45",
+                "destination": "DTW",
+                "duration_minutes": 275,
+                "flight_number": "335",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          }
+        ],
+        "price": "USD 384.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "11:39",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "00:40",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "7h 59m",
+            "duration_minutes": 479,
+            "flight_numbers": "DL 2789 / DL 1433",
+            "layovers": [
+              {
+                "airport": "MSP",
+                "change_of_airport": false,
+                "duration_minutes": 150,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T06:20:00",
+                "arrive_time": "06:20",
+                "depart_datetime": "2027-01-14T00:40:00",
+                "depart_time": "00:40",
+                "destination": "MSP",
+                "duration_minutes": 220,
+                "flight_number": "2789",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T11:39:00",
+                "arrive_time": "11:39",
+                "depart_datetime": "2027-01-14T08:50:00",
+                "depart_time": "08:50",
+                "destination": "DTW",
+                "duration_minutes": 109,
+                "flight_number": "1433",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSP"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 454.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "15:14",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "06:00",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "6h 14m",
+            "duration_minutes": 374,
+            "flight_numbers": "DL 1331 / DL 2236",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 45,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T08:55:00",
+                "arrive_time": "08:55",
+                "depart_datetime": "2027-01-14T06:00:00",
+                "depart_time": "06:00",
+                "destination": "SLC",
+                "duration_minutes": 115,
+                "flight_number": "1331",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T15:14:00",
+                "arrive_time": "15:14",
+                "depart_datetime": "2027-01-14T09:40:00",
+                "depart_time": "09:40",
+                "destination": "DTW",
+                "duration_minutes": 214,
+                "flight_number": "2236",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 454.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "17:09",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "06:00",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "8h 9m",
+            "duration_minutes": 489,
+            "flight_numbers": "DL 570 / DL 1005",
+            "layovers": [
+              {
+                "airport": "ATL",
+                "change_of_airport": false,
+                "duration_minutes": 91,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T13:39:00",
+                "arrive_time": "13:39",
+                "depart_datetime": "2027-01-14T06:00:00",
+                "depart_time": "06:00",
+                "destination": "ATL",
+                "duration_minutes": 279,
+                "flight_number": "570",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T17:09:00",
+                "arrive_time": "17:09",
+                "depart_datetime": "2027-01-14T15:10:00",
+                "depart_time": "15:10",
+                "destination": "DTW",
+                "duration_minutes": 119,
+                "flight_number": "1005",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ATL"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 454.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "15:30",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "06:15",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "6h 15m",
+            "duration_minutes": 375,
+            "flight_numbers": "DL 2178 / DL 1519",
+            "layovers": [
+              {
+                "airport": "MSP",
+                "change_of_airport": false,
+                "duration_minutes": 48,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T11:57:00",
+                "arrive_time": "11:57",
+                "depart_datetime": "2027-01-14T06:15:00",
+                "depart_time": "06:15",
+                "destination": "MSP",
+                "duration_minutes": 222,
+                "flight_number": "2178",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T15:30:00",
+                "arrive_time": "15:30",
+                "depart_datetime": "2027-01-14T12:45:00",
+                "depart_time": "12:45",
+                "destination": "DTW",
+                "duration_minutes": 105,
+                "flight_number": "1519",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MSP"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 454.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "20:38",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "09:53",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "7h 45m",
+            "duration_minutes": 465,
+            "flight_numbers": "DL 381 / DL 2736",
+            "layovers": [
+              {
+                "airport": "AUS",
+                "change_of_airport": false,
+                "duration_minutes": 67,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A319",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T15:33:00",
+                "arrive_time": "15:33",
+                "depart_datetime": "2027-01-14T09:53:00",
+                "depart_time": "09:53",
+                "destination": "AUS",
+                "duration_minutes": 220,
+                "flight_number": "381",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A319",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T20:38:00",
+                "arrive_time": "20:38",
+                "depart_datetime": "2027-01-14T16:40:00",
+                "depart_time": "16:40",
+                "destination": "DTW",
+                "duration_minutes": 178,
+                "flight_number": "2736",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "AUS"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 454.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "23:06",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "11:05",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "9h 1m",
+            "duration_minutes": 541,
+            "flight_numbers": "DL 1715 / DL 708",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 179,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T12:37:00",
+                "arrive_time": "12:37",
+                "depart_datetime": "2027-01-14T11:05:00",
+                "depart_time": "11:05",
+                "destination": "LAX",
+                "duration_minutes": 92,
+                "flight_number": "1715",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T23:06:00",
+                "arrive_time": "23:06",
+                "depart_datetime": "2027-01-14T15:36:00",
+                "depart_time": "15:36",
+                "destination": "DTW",
+                "duration_minutes": 270,
+                "flight_number": "708",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 454.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "23:06",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "13:00",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "7h 6m",
+            "duration_minutes": 426,
+            "flight_numbers": "DL 2272 / DL 708",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 64,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T14:32:00",
+                "arrive_time": "14:32",
+                "depart_datetime": "2027-01-14T13:00:00",
+                "depart_time": "13:00",
+                "destination": "LAX",
+                "duration_minutes": 92,
+                "flight_number": "2272",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T23:06:00",
+                "arrive_time": "23:06",
+                "depart_datetime": "2027-01-14T15:36:00",
+                "depart_time": "15:36",
+                "destination": "DTW",
+                "duration_minutes": 270,
+                "flight_number": "708",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 454.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "00:44",
+            "arrival_time_ahead": "+1",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "14:00",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "7h 44m",
+            "duration_minutes": 464,
+            "flight_numbers": "DL 531 / DL 2940",
+            "layovers": [
+              {
+                "airport": "ATL",
+                "change_of_airport": false,
+                "duration_minutes": 66,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 767",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T21:39:00",
+                "arrive_time": "21:39",
+                "depart_datetime": "2027-01-14T14:00:00",
+                "depart_time": "14:00",
+                "destination": "ATL",
+                "duration_minutes": 279,
+                "flight_number": "531",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-15T00:44:00",
+                "arrive_time": "00:44",
+                "depart_datetime": "2027-01-14T22:45:00",
+                "depart_time": "22:45",
+                "destination": "DTW",
+                "duration_minutes": 119,
+                "flight_number": "2940",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ATL"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 454.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "06:00",
+            "arrival_time_ahead": "+1",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "18:50",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "8h 10m",
+            "duration_minutes": 490,
+            "flight_numbers": "DL 1559 / DL 407",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 131,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T20:19:00",
+                "arrive_time": "20:19",
+                "depart_datetime": "2027-01-14T18:50:00",
+                "depart_time": "18:50",
+                "destination": "LAX",
+                "duration_minutes": 89,
+                "flight_number": "1559",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-15T06:00:00",
+                "arrive_time": "06:00",
+                "depart_datetime": "2027-01-14T22:30:00",
+                "depart_time": "22:30",
+                "destination": "DTW",
+                "duration_minutes": 270,
+                "flight_number": "407",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 454.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "17:06",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "07:00",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "7h 6m",
+            "duration_minutes": 426,
+            "flight_numbers": "DL 1598 / DL 494",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 66,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T08:29:00",
+                "arrive_time": "08:29",
+                "depart_datetime": "2027-01-14T07:00:00",
+                "depart_time": "07:00",
+                "destination": "LAX",
+                "duration_minutes": 89,
+                "flight_number": "1598",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T17:06:00",
+                "arrive_time": "17:06",
+                "depart_datetime": "2027-01-14T09:35:00",
+                "depart_time": "09:35",
+                "destination": "DTW",
+                "duration_minutes": 271,
+                "flight_number": "494",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 474.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "19:10",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "10:00",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "6h 10m",
+            "duration_minutes": 370,
+            "flight_numbers": "DL 920 / DL 2244",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 50,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A319",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T12:50:00",
+                "arrive_time": "12:50",
+                "depart_datetime": "2027-01-14T10:00:00",
+                "depart_time": "10:00",
+                "destination": "SLC",
+                "duration_minutes": 110,
+                "flight_number": "920",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T19:10:00",
+                "arrive_time": "19:10",
+                "depart_datetime": "2027-01-14T13:40:00",
+                "depart_time": "13:40",
+                "destination": "DTW",
+                "duration_minutes": 210,
+                "flight_number": "2244",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 474.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "23:47",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "11:30",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "9h 17m",
+            "duration_minutes": 557,
+            "flight_numbers": "DL 693 / DL 651",
+            "layovers": [
+              {
+                "airport": "ATL",
+                "change_of_airport": false,
+                "duration_minutes": 152,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T19:13:00",
+                "arrive_time": "19:13",
+                "depart_datetime": "2027-01-14T11:30:00",
+                "depart_time": "11:30",
+                "destination": "ATL",
+                "duration_minutes": 283,
+                "flight_number": "693",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T23:47:00",
+                "arrive_time": "23:47",
+                "depart_datetime": "2027-01-14T21:45:00",
+                "depart_time": "21:45",
+                "destination": "DTW",
+                "duration_minutes": 122,
+                "flight_number": "651",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ATL"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 474.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "00:44",
+            "arrival_time_ahead": "+1",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "11:30",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "10h 14m",
+            "duration_minutes": 614,
+            "flight_numbers": "DL 693 / DL 2940",
+            "layovers": [
+              {
+                "airport": "ATL",
+                "change_of_airport": false,
+                "duration_minutes": 212,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T19:13:00",
+                "arrive_time": "19:13",
+                "depart_datetime": "2027-01-14T11:30:00",
+                "depart_time": "11:30",
+                "destination": "ATL",
+                "duration_minutes": 283,
+                "flight_number": "693",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-15T00:44:00",
+                "arrive_time": "00:44",
+                "depart_datetime": "2027-01-14T22:45:00",
+                "depart_time": "22:45",
+                "destination": "DTW",
+                "duration_minutes": 119,
+                "flight_number": "2940",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ATL"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 474.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "00:03",
+            "arrival_time_ahead": "+1",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "13:35",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "7h 28m",
+            "duration_minutes": 448,
+            "flight_numbers": "DL 902 / DL 2255",
+            "layovers": [
+              {
+                "airport": "SLC",
+                "change_of_airport": false,
+                "duration_minutes": 117,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A220-300 Passenger",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T16:33:00",
+                "arrive_time": "16:33",
+                "depart_datetime": "2027-01-14T13:35:00",
+                "depart_time": "13:35",
+                "destination": "SLC",
+                "duration_minutes": 118,
+                "flight_number": "902",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-15T00:03:00",
+                "arrive_time": "00:03",
+                "depart_datetime": "2027-01-14T18:30:00",
+                "depart_time": "18:30",
+                "destination": "DTW",
+                "duration_minutes": 213,
+                "flight_number": "2255",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SLC"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 474.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "12:34",
+            "arrival_time_ahead": "+1",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "23:45",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "9h 49m",
+            "duration_minutes": 589,
+            "flight_numbers": "DL 690 / DL 1240",
+            "layovers": [
+              {
+                "airport": "ATL",
+                "change_of_airport": false,
+                "duration_minutes": 194,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-15T07:21:00",
+                "arrive_time": "07:21",
+                "depart_datetime": "2027-01-14T23:45:00",
+                "depart_time": "23:45",
+                "destination": "ATL",
+                "duration_minutes": 276,
+                "flight_number": "690",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-15T12:34:00",
+                "arrive_time": "12:34",
+                "depart_datetime": "2027-01-15T10:35:00",
+                "depart_time": "10:35",
+                "destination": "DTW",
+                "duration_minutes": 119,
+                "flight_number": "1240",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ATL"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 504.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "19:11",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "11:35",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "4h 36m",
+            "duration_minutes": 276,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T19:11:00",
+                "arrive_time": "19:11",
+                "depart_datetime": "2027-01-14T11:35:00",
+                "depart_time": "11:35",
+                "destination": "DTW",
+                "duration_minutes": 276,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          }
+        ],
+        "price": "USD 578.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "06:26",
+            "arrival_time_ahead": "+1",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "16:45",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "10h 41m",
+            "duration_minutes": 641,
+            "flight_numbers": "DL 3707 / DL 810",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 240,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T19:05:00",
+                "arrive_time": "19:05",
+                "depart_datetime": "2027-01-14T16:45:00",
+                "depart_time": "16:45",
+                "destination": "SEA",
+                "duration_minutes": 140,
+                "flight_number": "3707",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-15T06:26:00",
+                "arrive_time": "06:26",
+                "depart_datetime": "2027-01-14T23:05:00",
+                "depart_time": "23:05",
+                "destination": "DTW",
+                "duration_minutes": 261,
+                "flight_number": "810",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 588.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "09:28",
+            "arrival_time_ahead": "+1",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "21:30",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "8h 58m",
+            "duration_minutes": 538,
+            "flight_numbers": "DL 635 / DL 1646",
+            "layovers": [
+              {
+                "airport": "ATL",
+                "change_of_airport": false,
+                "duration_minutes": 137,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-15T05:08:00",
+                "arrive_time": "05:08",
+                "depart_datetime": "2027-01-14T21:30:00",
+                "depart_time": "21:30",
+                "destination": "ATL",
+                "duration_minutes": 278,
+                "flight_number": "635",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-15T09:28:00",
+                "arrive_time": "09:28",
+                "depart_datetime": "2027-01-15T07:25:00",
+                "depart_time": "07:25",
+                "destination": "DTW",
+                "duration_minutes": 123,
+                "flight_number": "1646",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ATL"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 588.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "11:22",
+            "arrival_time_ahead": "+1",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "23:45",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "8h 37m",
+            "duration_minutes": 517,
+            "flight_numbers": "DL 690 / DL 1298",
+            "layovers": [
+              {
+                "airport": "ATL",
+                "change_of_airport": false,
+                "duration_minutes": 124,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-15T07:21:00",
+                "arrive_time": "07:21",
+                "depart_datetime": "2027-01-14T23:45:00",
+                "depart_time": "23:45",
+                "destination": "ATL",
+                "duration_minutes": 276,
+                "flight_number": "690",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-15T11:22:00",
+                "arrive_time": "11:22",
+                "depart_datetime": "2027-01-15T09:25:00",
+                "depart_time": "09:25",
+                "destination": "DTW",
+                "duration_minutes": 117,
+                "flight_number": "1298",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ATL"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 588.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "12:06",
+            "arrival_time_ahead": "+1",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "22:45",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "10h 21m",
+            "duration_minutes": 621,
+            "flight_numbers": "DL 670 / DL 4725",
+            "layovers": [
+              {
+                "airport": "JFK",
+                "change_of_airport": false,
+                "duration_minutes": 163,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 767",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-15T07:17:00",
+                "arrive_time": "07:17",
+                "depart_datetime": "2027-01-14T22:45:00",
+                "depart_time": "22:45",
+                "destination": "JFK",
+                "duration_minutes": 332,
+                "flight_number": "670",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Canadair RJ 900",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-15T12:06:00",
+                "arrive_time": "12:06",
+                "depart_datetime": "2027-01-15T10:00:00",
+                "depart_time": "10:00",
+                "destination": "DTW",
+                "duration_minutes": 126,
+                "flight_number": "4725",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "JFK"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 703.00"
+      },
+      {
+        "carriers": "DL",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:43",
+            "arrival_time_ahead": "",
+            "carrier": "DL",
+            "date": "2027-01-08",
+            "departure": "08:25",
+            "destination": "SFO",
+            "direction": "outbound",
+            "duration": "5h 18m",
+            "duration_minutes": 318,
+            "flight_numbers": "DL 361",
+            "layovers": [],
+            "origin": "DTW",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-08T10:43:00",
+                "arrive_time": "10:43",
+                "depart_datetime": "2027-01-08T08:25:00",
+                "depart_time": "08:25",
+                "destination": "SFO",
+                "duration_minutes": 318,
+                "flight_number": "361",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DTW"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "06:26",
+            "arrival_time_ahead": "+1",
+            "carrier": "DL",
+            "date": "2027-01-14",
+            "departure": "20:05",
+            "destination": "DTW",
+            "direction": "return",
+            "duration": "7h 21m",
+            "duration_minutes": 441,
+            "flight_numbers": "DL 3991 / DL 810",
+            "layovers": [
+              {
+                "airport": "SEA",
+                "change_of_airport": false,
+                "duration_minutes": 39,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Embraer 175",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-14T22:26:00",
+                "arrive_time": "22:26",
+                "depart_datetime": "2027-01-14T20:05:00",
+                "depart_time": "20:05",
+                "destination": "SEA",
+                "duration_minutes": 141,
+                "flight_number": "3991",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "DL",
+                "arrive_datetime": "2027-01-15T06:26:00",
+                "arrive_time": "06:26",
+                "depart_datetime": "2027-01-14T23:05:00",
+                "depart_time": "23:05",
+                "destination": "DTW",
+                "duration_minutes": 261,
+                "flight_number": "810",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SEA"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 2087.00"
+      }
+    ]
+  },
+  "searched_at": "2026-06-28T02:27:06.956221+00:00"
+}

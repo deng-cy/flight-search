@@ -12,8 +12,6 @@ from urllib.error import URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
-import yaml
-
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 WORKSPACE_ROOT = PROJECT_ROOT.parent
@@ -32,19 +30,11 @@ from flight_search_common.formatting import (
     time_label,
 )
 from flight_search_common.io import load_json, markdown_escape, write_csv, write_json
+from flight_search_common.preferences import DEFAULT_PREFERENCES_PATH, load_preferences
 from flight_search_common.scoring import append_flag, configured_time_penalty
 
 DEFAULT_BASE_URL = "http://127.0.0.1:8000"
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "data"
-DEFAULT_PREFERENCES_PATH = WORKSPACE_ROOT / "config/search_preferences.yaml"
-
-
-def load_preferences(path: Path) -> dict[str, Any]:
-    with path.open() as handle:
-        preferences = yaml.safe_load(handle)
-    if not isinstance(preferences, dict):
-        raise ValueError(f"{path} must contain a YAML mapping")
-    return preferences
 
 
 def project_path(value: str | Path) -> Path:

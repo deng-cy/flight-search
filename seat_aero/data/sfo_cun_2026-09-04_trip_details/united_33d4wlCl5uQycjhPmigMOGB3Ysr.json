@@ -1,0 +1,2653 @@
+{
+  "booking_links": [
+    {
+      "label": "Book via United MileagePlus",
+      "link": "https://www.united.com/en/us/fsr/choose-flights?f=SFO&t=CUN&d=2026-09-04&sc=7&st=bestmatches&cbm=-1&cbm2=-1&ft=0&cp=0&tt=1&at=1&rm=1&act=0&px=1&taxng=1&clm=7&tqp=A&utm_source=seatsaero",
+      "primary": true
+    },
+    {
+      "label": "Book via Air Canada Aeroplan",
+      "link": "https://www.aircanada.com/aeroplan/redeem/availability/outbound?org0=SFO&dest0=CUN&departureDate0=2026-09-04&lang=en-CA&tripType=O&ADT=1&YTH=0&CHD=0&INF=0&INS=0&marketCode=INT",
+      "primary": false
+    },
+    {
+      "label": "Book via Copa ConnectMiles",
+      "link": "https://shopping.copaair.com/miles?roundtrip=false&area1=SFO&area2=CUN&date1=2026-09-04&date2=&flexible_dates_v2=false&adults=1&children=0&infants=0&isMiles=true&advanced_air_search=false&stopover=false&sf=gs&langid=en&promocode=",
+      "primary": false
+    }
+  ],
+  "carriers": {
+    "UA": "United Airlines"
+  },
+  "data": [
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9"
+      ],
+      "ArrivesAt": "2026-09-04T16:12:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-04T16:12:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3BdOuf4DdoxqSA9Bp0dJsvYM8JX",
+          "Cabin": "business",
+          "CreatedAt": "2026-03-29T20:21:44.719449Z",
+          "DepartsAt": "2026-09-04T08:51:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 2408,
+          "Duration": 321,
+          "FareClass": "JN",
+          "FlightNumber": "UA1679",
+          "ID": "3BdOudKfOS6tgWCfOTnNolaNuqX",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "UA",
+      "CreatedAt": "2026-03-29T20:21:44.719449Z",
+      "DepartsAt": "2026-09-04T08:51:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "JN"
+      ],
+      "FlightNumbers": "UA1679",
+      "ID": "3BdOuf4DdoxqSA9Bp0dJsvYM8JX",
+      "MileageCost": 60600,
+      "OptionalPrices": {
+        "UACARD": 54500
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 0,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 321,
+      "TotalSegmentDistance": 2408,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Boeing 737 MAX 9"
+      ],
+      "ArrivesAt": "2026-09-05T14:37:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T06:02:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc8ovwNhqQJDn4HVer6fNrJ3",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T23:59:00Z",
+          "DestinationAirport": "IAH",
+          "Distance": 1635,
+          "Duration": 243,
+          "FareClass": "JN",
+          "FlightNumber": "UA505",
+          "ID": "3FKSc71mUncj7YlX1NAHu6HSmtj",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T14:37:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc8ovwNhqQJDn4HVer6fNrJ3",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T12:19:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 812,
+          "Duration": 138,
+          "FareClass": "JN",
+          "FlightNumber": "UA1167",
+          "ID": "3FKSc4dRlUHeAYxfsRgQvmeJCnV",
+          "Order": 1,
+          "OriginAirport": "IAH",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAH"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T23:59:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "JN",
+        "JN"
+      ],
+      "FlightNumbers": "UA505, UA1167",
+      "ID": "3FKSc8ovwNhqQJDn4HVer6fNrJ3",
+      "MileageCost": 72200,
+      "OptionalPrices": {
+        "UACARD": 64900
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 758,
+      "TotalSegmentDistance": 2447,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 777",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-09-04T12:02:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "777",
+          "AircraftName": "Boeing 777",
+          "ArrivesAt": "2026-09-04T06:35:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc45eUfuw8P6CSOQ1s7agbn4",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T00:45:00Z",
+          "DestinationAirport": "IAH",
+          "Distance": 1635,
+          "Duration": 230,
+          "FareClass": "YN",
+          "FlightNumber": "UA604",
+          "ID": "3FKSc7orx9kykw5N4oyRwlPF3pm",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-04T12:02:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc45eUfuw8P6CSOQ1s7agbn4",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T09:44:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 812,
+          "Duration": 138,
+          "FareClass": "YN",
+          "FlightNumber": "UA1018",
+          "ID": "3FKSc6uK3cuF139fu5LvwLp98Ju",
+          "Order": 1,
+          "OriginAirport": "IAH",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAH"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T00:45:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA604, UA1018",
+      "ID": "3FKSc45eUfuw8P6CSOQ1s7agbn4",
+      "MileageCost": 42400,
+      "OptionalPrices": {
+        "UACARD": 38100
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 557,
+      "TotalSegmentDistance": 2447,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-09-05T11:40:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T07:08:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc8Xg0I5hoicz9AdJR7uCAKd",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T23:20:00Z",
+          "DestinationAirport": "CLE",
+          "Distance": 2159,
+          "Duration": 288,
+          "FareClass": "YN",
+          "FlightNumber": "UA2097",
+          "ID": "3FKSc7gZSYsLDYKy68XNK8ZGLGO",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-05T11:40:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc8Xg0I5hoicz9AdJR7uCAKd",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T09:06:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 1439,
+          "Duration": 214,
+          "FareClass": "YN",
+          "FlightNumber": "UA1038",
+          "ID": "3FKSc1VXnsgCeuLkiXsAV8tVhE7",
+          "Order": 1,
+          "OriginAirport": "CLE",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "CLE"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T23:20:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA2097, UA1038",
+      "ID": "3FKSc8Xg0I5hoicz9AdJR7uCAKd",
+      "MileageCost": 29000,
+      "OptionalPrices": {
+        "UACARD": 26100
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 620,
+      "TotalSegmentDistance": 3598,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Boeing 737 MAX 9"
+      ],
+      "ArrivesAt": "2026-09-05T15:12:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T07:15:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc2h0LJHJHKcysc5uOqSErkN",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T22:52:00Z",
+          "DestinationAirport": "BWI",
+          "Distance": 2454,
+          "Duration": 323,
+          "FareClass": "YN",
+          "FlightNumber": "UA1340",
+          "ID": "3FKSc7PnEteapb4emzIqzk9aZGJ",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T15:12:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc2h0LJHJHKcysc5uOqSErkN",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T12:35:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 1359,
+          "Duration": 217,
+          "FareClass": "YN",
+          "FlightNumber": "UA1276",
+          "ID": "3FKSc7d0WasY7Tmmz0KB3NT93Vw",
+          "Order": 1,
+          "OriginAirport": "IAD",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAD"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T22:52:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA1340, UA1276",
+      "ID": "3FKSc2h0LJHJHKcysc5uOqSErkN",
+      "MileageCost": 25000,
+      "OptionalPrices": {
+        "UACARD": 22500
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 860,
+      "TotalSegmentDistance": 3813,
+      "TotalTaxes": 6794,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-09-05T11:05:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T07:35:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc4XiobkBrVEsAE1BkhEnhBU",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T23:14:00Z",
+          "DestinationAirport": "IAD",
+          "Distance": 2416,
+          "Duration": 321,
+          "FareClass": "YN",
+          "FlightNumber": "UA2111",
+          "ID": "3FKSc3CjcPhR4jhLXEIgcvU2kLm",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-05T11:05:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc4XiobkBrVEsAE1BkhEnhBU",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T08:26:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 1359,
+          "Duration": 219,
+          "FareClass": "YN",
+          "FlightNumber": "UA1154",
+          "ID": "3FKSc8EaDxPoZat7cPCflZiYP1K",
+          "Order": 1,
+          "OriginAirport": "IAD",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAD"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T23:14:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA2111, UA1154",
+      "ID": "3FKSc4XiobkBrVEsAE1BkhEnhBU",
+      "MileageCost": 40700,
+      "OptionalPrices": {
+        "UACARD": 36600
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 591,
+      "TotalSegmentDistance": 3775,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-09-05T12:02:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T06:02:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc3ZCSlQ16M3mIsqp9KTTA4T",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T23:59:00Z",
+          "DestinationAirport": "IAH",
+          "Distance": 1635,
+          "Duration": 243,
+          "FareClass": "YN",
+          "FlightNumber": "UA505",
+          "ID": "3FKSc3SFMmB8ilSxWipDPgTJMJb",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-05T12:02:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc3ZCSlQ16M3mIsqp9KTTA4T",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T09:44:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 812,
+          "Duration": 138,
+          "FareClass": "YN",
+          "FlightNumber": "UA1018",
+          "ID": "3FKSc36HsLdRFRaqcz4OOVmXUmW",
+          "Order": 1,
+          "OriginAirport": "IAH",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAH"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T23:59:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA505, UA1018",
+      "ID": "3FKSc3ZCSlQ16M3mIsqp9KTTA4T",
+      "MileageCost": 40700,
+      "OptionalPrices": {
+        "UACARD": 36600
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 603,
+      "TotalSegmentDistance": 2447,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 8",
+        "Airbus A321neo"
+      ],
+      "ArrivesAt": "2026-09-05T12:58:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M8",
+          "AircraftName": "Boeing 737 MAX 8",
+          "ArrivesAt": "2026-09-04T23:42:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc8cR4TP8iQ5UMAwUS6GPPTK",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T19:56:00Z",
+          "DestinationAirport": "DEN",
+          "Distance": 966,
+          "Duration": 166,
+          "FareClass": "YN",
+          "FlightNumber": "UA1145",
+          "ID": "3FKSc7KUNKNtU22TErvBP2wtgmq",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A321neo",
+          "ArrivesAt": "2026-09-05T12:58:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc8cR4TP8iQ5UMAwUS6GPPTK",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T08:01:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 1672,
+          "Duration": 237,
+          "FareClass": "YN",
+          "FlightNumber": "UA1119",
+          "ID": "3FKSc3l1zrLYV7oPjZJv1dzERw7",
+          "Order": 1,
+          "OriginAirport": "DEN",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "DEN"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T19:56:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA1145, UA1119",
+      "ID": "3FKSc8cR4TP8iQ5UMAwUS6GPPTK",
+      "MileageCost": 25000,
+      "OptionalPrices": {
+        "UACARD": 18000
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 902,
+      "TotalSegmentDistance": 2638,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-09-05T12:02:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T06:02:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc5lE28mu8D81h8edLMFnMQn",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T23:59:00Z",
+          "DestinationAirport": "IAH",
+          "Distance": 1635,
+          "Duration": 243,
+          "FareClass": "JN",
+          "FlightNumber": "UA505",
+          "ID": "3FKSc1V55H28aOu1xWpSKNTx8HS",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-05T12:02:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc5lE28mu8D81h8edLMFnMQn",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T09:44:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 812,
+          "Duration": 138,
+          "FareClass": "JN",
+          "FlightNumber": "UA1018",
+          "ID": "3FKSc64X3kSkNtugknjTMINm7Y7",
+          "Order": 1,
+          "OriginAirport": "IAH",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAH"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T23:59:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "JN",
+        "JN"
+      ],
+      "FlightNumbers": "UA505, UA1018",
+      "ID": "3FKSc5lE28mu8D81h8edLMFnMQn",
+      "MileageCost": 72200,
+      "OptionalPrices": {
+        "UACARD": 64900
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 603,
+      "TotalSegmentDistance": 2447,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A321neo",
+        "Boeing 737 MAX 9"
+      ],
+      "ArrivesAt": "2026-09-05T14:26:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A321neo",
+          "ArrivesAt": "2026-09-05T05:59:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc6gdVYxNU9aXtWQWmBSwG0l",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T23:30:00Z",
+          "DestinationAirport": "ORD",
+          "Distance": 1844,
+          "Duration": 269,
+          "FareClass": "YN",
+          "FlightNumber": "UA368",
+          "ID": "3FKSc77m3uJfyHCveAreyQ46T0B",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T14:26:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc6gdVYxNU9aXtWQWmBSwG0l",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T10:46:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 1449,
+          "Duration": 220,
+          "FareClass": "YN",
+          "FlightNumber": "UA1659",
+          "ID": "3FKSc4is52vJngosBbFOOQORbE8",
+          "Order": 1,
+          "OriginAirport": "ORD",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "ORD"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T23:30:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA368, UA1659",
+      "ID": "3FKSc6gdVYxNU9aXtWQWmBSwG0l",
+      "MileageCost": 40700,
+      "OptionalPrices": {
+        "UACARD": 36600
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 776,
+      "TotalSegmentDistance": 3293,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 777",
+        "Boeing 737 MAX 9"
+      ],
+      "ArrivesAt": "2026-09-04T10:06:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "777",
+          "AircraftName": "Boeing 777",
+          "ArrivesAt": "2026-09-04T06:35:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc2OjSAlLhXaNO3IFl4Sl354",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T00:45:00Z",
+          "DestinationAirport": "IAH",
+          "Distance": 1635,
+          "Duration": 230,
+          "FareClass": "YN",
+          "FlightNumber": "UA604",
+          "ID": "3FKSc7XwLp75XAWL74plnn5QLRN",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-04T10:06:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc2OjSAlLhXaNO3IFl4Sl354",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T07:48:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 812,
+          "Duration": 138,
+          "FareClass": "YN",
+          "FlightNumber": "UA1619",
+          "ID": "3FKSc8HulrvZi3zmf1g2J5Bxkat",
+          "Order": 1,
+          "OriginAirport": "IAH",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAH"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T00:45:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA604, UA1619",
+      "ID": "3FKSc2OjSAlLhXaNO3IFl4Sl354",
+      "MileageCost": 42400,
+      "OptionalPrices": {
+        "UACARD": 38100
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 441,
+      "TotalSegmentDistance": 2447,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A321neo",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-09-05T13:10:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A321neo",
+          "ArrivesAt": "2026-09-05T05:04:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc7AgSIA4vj8Zm1aiK9rab5t",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T22:35:00Z",
+          "DestinationAirport": "ORD",
+          "Distance": 1844,
+          "Duration": 269,
+          "FareClass": "YN",
+          "FlightNumber": "UA2278",
+          "ID": "3FKSc7NXxVeeibRoaidIPFnCO8L",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-05T13:10:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc7AgSIA4vj8Zm1aiK9rab5t",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T09:29:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 1449,
+          "Duration": 221,
+          "FareClass": "YN",
+          "FlightNumber": "UA1198",
+          "ID": "3FKSc83TvXSzEacOSA6DcMgSu0C",
+          "Order": 1,
+          "OriginAirport": "ORD",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "ORD"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T22:35:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA2278, UA1198",
+      "ID": "3FKSc7AgSIA4vj8Zm1aiK9rab5t",
+      "MileageCost": 49900,
+      "OptionalPrices": {
+        "UACARD": 44900
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 755,
+      "TotalSegmentDistance": 3293,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Boeing 737 MAX 9"
+      ],
+      "ArrivesAt": "2026-09-05T14:37:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T06:02:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc69WS1TNb63GMhZli5Cavhy",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T23:59:00Z",
+          "DestinationAirport": "IAH",
+          "Distance": 1635,
+          "Duration": 243,
+          "FareClass": "YN",
+          "FlightNumber": "UA505",
+          "ID": "3FKSc5La2FWHhQR6JDooHjTKWIF",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T14:37:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc69WS1TNb63GMhZli5Cavhy",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T12:19:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 812,
+          "Duration": 138,
+          "FareClass": "YN",
+          "FlightNumber": "UA1167",
+          "ID": "3FKSc1Fcjsos14YCATJ28aQinKA",
+          "Order": 1,
+          "OriginAirport": "IAH",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAH"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T23:59:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA505, UA1167",
+      "ID": "3FKSc69WS1TNb63GMhZli5Cavhy",
+      "MileageCost": 34100,
+      "OptionalPrices": {
+        "UACARD": 30600
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 758,
+      "TotalSegmentDistance": 2447,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-09-05T11:05:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T07:00:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc1a7wlWPU77jEdsVR3gBaRE",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T22:35:00Z",
+          "DestinationAirport": "IAD",
+          "Distance": 2416,
+          "Duration": 325,
+          "FareClass": "YN",
+          "FlightNumber": "UA2837",
+          "ID": "3FKSc5IxQMtzjhEayaYnu6z7xLH",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-05T11:05:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc1a7wlWPU77jEdsVR3gBaRE",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T08:26:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 1359,
+          "Duration": 219,
+          "FareClass": "YN",
+          "FlightNumber": "UA1154",
+          "ID": "3FKSc4VLd00C6R9UehGnKU8OEH1",
+          "Order": 1,
+          "OriginAirport": "IAD",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAD"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T22:35:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA2837, UA1154",
+      "ID": "3FKSc1a7wlWPU77jEdsVR3gBaRE",
+      "MileageCost": 33100,
+      "OptionalPrices": {
+        "UACARD": 29700
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 630,
+      "TotalSegmentDistance": 3775,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Boeing 737 MAX 9"
+      ],
+      "ArrivesAt": "2026-09-05T10:06:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T00:28:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc6vszOGHx0FYZzX89PBf99M",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T18:30:00Z",
+          "DestinationAirport": "IAH",
+          "Distance": 1635,
+          "Duration": 238,
+          "FareClass": "YN",
+          "FlightNumber": "UA2019",
+          "ID": "3FKSc3BMIcxME7K6doXKF8AwFR9",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T10:06:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc6vszOGHx0FYZzX89PBf99M",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T07:48:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 812,
+          "Duration": 138,
+          "FareClass": "YN",
+          "FlightNumber": "UA1619",
+          "ID": "3FKSc6qL8End8rSAsk9apzXBcZm",
+          "Order": 1,
+          "OriginAirport": "IAH",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAH"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T18:30:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA2019, UA1619",
+      "ID": "3FKSc6vszOGHx0FYZzX89PBf99M",
+      "MileageCost": 33200,
+      "OptionalPrices": {
+        "UACARD": 29800
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 816,
+      "TotalSegmentDistance": 2447,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-800",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-09-05T06:41:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "738",
+          "AircraftName": "Boeing 737-800",
+          "ArrivesAt": "2026-09-04T18:11:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc1HEDJvTpqd9Ofh6Qm0aAAG",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T16:40:00Z",
+          "DestinationAirport": "ONT",
+          "Distance": 364,
+          "Duration": 91,
+          "FareClass": "YN",
+          "FlightNumber": "UA2619",
+          "ID": "3FKSc6NZyFL2zJ5iBYNI5rBPq1C",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-05T06:41:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc1HEDJvTpqd9Ofh6Qm0aAAG",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T23:59:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 2119,
+          "Duration": 282,
+          "FareClass": "YN",
+          "FlightNumber": "UA1075",
+          "ID": "3FKSc4Qz5FBCkwyYE4BkEfGYgMB",
+          "Order": 1,
+          "OriginAirport": "LAX",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "LAX"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T16:40:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA2619, UA1075",
+      "ID": "3FKSc1HEDJvTpqd9Ofh6Qm0aAAG",
+      "MileageCost": 36100,
+      "OptionalPrices": {
+        "UACARD": 32400
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 721,
+      "TotalSegmentDistance": 2483,
+      "TotalTaxes": 6794,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A321neo",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-09-05T13:10:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A321neo",
+          "ArrivesAt": "2026-09-05T05:59:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc2dm4gpt7mWoEW00XM5mr0j",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T23:30:00Z",
+          "DestinationAirport": "ORD",
+          "Distance": 1844,
+          "Duration": 269,
+          "FareClass": "YN",
+          "FlightNumber": "UA368",
+          "ID": "3FKSc3tqe4bPDtKYLZ8wwhVxdMi",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-05T13:10:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc2dm4gpt7mWoEW00XM5mr0j",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T09:29:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 1449,
+          "Duration": 221,
+          "FareClass": "YN",
+          "FlightNumber": "UA1198",
+          "ID": "3FKSc7domBTEbHtobqTd8Wjy1DF",
+          "Order": 1,
+          "OriginAirport": "ORD",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "ORD"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T23:30:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA368, UA1198",
+      "ID": "3FKSc2dm4gpt7mWoEW00XM5mr0j",
+      "MileageCost": 52100,
+      "OptionalPrices": {
+        "UACARD": 46800
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 700,
+      "TotalSegmentDistance": 3293,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 8",
+        "Airbus A321neo"
+      ],
+      "ArrivesAt": "2026-09-05T12:58:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M8",
+          "AircraftName": "Boeing 737 MAX 8",
+          "ArrivesAt": "2026-09-04T23:42:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc57go6h6iCULXrDE5dksqXY",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T19:56:00Z",
+          "DestinationAirport": "DEN",
+          "Distance": 966,
+          "Duration": 166,
+          "FareClass": "JN",
+          "FlightNumber": "UA1145",
+          "ID": "3FKSc4FlS9XoGSNhXjxEOLOTYCm",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A321neo",
+          "ArrivesAt": "2026-09-05T12:58:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc57go6h6iCULXrDE5dksqXY",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T08:01:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 1672,
+          "Duration": 237,
+          "FareClass": "JN",
+          "FlightNumber": "UA1119",
+          "ID": "3FKSc5cn8UOhBmkZtCbwvHWqsaU",
+          "Order": 1,
+          "OriginAirport": "DEN",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "DEN"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T19:56:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "JN",
+        "JN"
+      ],
+      "FlightNumbers": "UA1145, UA1119",
+      "ID": "3FKSc57go6h6iCULXrDE5dksqXY",
+      "MileageCost": 80500,
+      "OptionalPrices": {
+        "UACARD": 72400
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 902,
+      "TotalSegmentDistance": 2638,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Boeing 737 MAX 9"
+      ],
+      "ArrivesAt": "2026-09-05T15:12:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T07:15:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc1WQygCu5lVBPaJZioZlvaM",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T22:52:00Z",
+          "DestinationAirport": "BWI",
+          "Distance": 2454,
+          "Duration": 323,
+          "FareClass": "JN",
+          "FlightNumber": "UA1340",
+          "ID": "3FKSc5hWcJbyo4r3zXspu3GsWnZ",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T15:12:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc1WQygCu5lVBPaJZioZlvaM",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T12:35:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 1359,
+          "Duration": 217,
+          "FareClass": "JN",
+          "FlightNumber": "UA1276",
+          "ID": "3FKSc3UkdJVNSAy2LUjeI5toxSI",
+          "Order": 1,
+          "OriginAirport": "IAD",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAD"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T22:52:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "JN",
+        "JN"
+      ],
+      "FlightNumbers": "UA1340, UA1276",
+      "ID": "3FKSc1WQygCu5lVBPaJZioZlvaM",
+      "MileageCost": 61500,
+      "OptionalPrices": {
+        "UACARD": 55300
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 860,
+      "TotalSegmentDistance": 3813,
+      "TotalTaxes": 6794,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-900",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-09-05T06:41:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-04T20:27:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc2TAtygOyGx3PGB6Ed7dydc",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T18:45:00Z",
+          "DestinationAirport": "LAX",
+          "Distance": 338,
+          "Duration": 102,
+          "FareClass": "JN",
+          "FlightNumber": "UA1427",
+          "ID": "3FKSc3bpJQK95FduGc9mdiYCGqe",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-05T06:41:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc2TAtygOyGx3PGB6Ed7dydc",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T23:59:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 2119,
+          "Duration": 282,
+          "FareClass": "JN",
+          "FlightNumber": "UA1075",
+          "ID": "3FKSc2dtgrxPSzNUTUhaPGTbhTi",
+          "Order": 1,
+          "OriginAirport": "LAX",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "LAX"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T18:45:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "JN",
+        "JN"
+      ],
+      "FlightNumbers": "UA1427, UA1075",
+      "ID": "3FKSc2TAtygOyGx3PGB6Ed7dydc",
+      "MileageCost": 80700,
+      "OptionalPrices": {
+        "UACARD": 72600
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 596,
+      "TotalSegmentDistance": 2457,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Boeing 737 MAX 9"
+      ],
+      "ArrivesAt": "2026-09-05T15:12:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T07:00:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc7Nx86cJB9O5reVrj9fEmr9",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T22:35:00Z",
+          "DestinationAirport": "IAD",
+          "Distance": 2416,
+          "Duration": 325,
+          "FareClass": "YN",
+          "FlightNumber": "UA2837",
+          "ID": "3FKSc7yvCVsaiYGU6yy2JixL8uD",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T15:12:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc7Nx86cJB9O5reVrj9fEmr9",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T12:35:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 1359,
+          "Duration": 217,
+          "FareClass": "YN",
+          "FlightNumber": "UA1276",
+          "ID": "3FKSc3cmm9kgqeUr5pZwRczPsTV",
+          "Order": 1,
+          "OriginAirport": "IAD",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAD"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T22:35:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA2837, UA1276",
+      "ID": "3FKSc7Nx86cJB9O5reVrj9fEmr9",
+      "MileageCost": 27400,
+      "OptionalPrices": {
+        "UACARD": 24600
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 877,
+      "TotalSegmentDistance": 3775,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-09-05T12:33:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T06:02:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc2pxxHHqMcbTJSb8DChjNLG",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T23:59:00Z",
+          "DestinationAirport": "IAH",
+          "Distance": 1635,
+          "Duration": 243,
+          "FareClass": "JN",
+          "FlightNumber": "UA505",
+          "ID": "3FKSc4tirDFpferrkNmh0JxTeEM",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-05T12:33:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc2pxxHHqMcbTJSb8DChjNLG",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T10:15:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 812,
+          "Duration": 138,
+          "FareClass": "JN",
+          "FlightNumber": "UA1014",
+          "ID": "3FKSc1uEY3yCt6ueLzNhubG3BN4",
+          "Order": 1,
+          "OriginAirport": "IAH",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAH"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T23:59:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "JN",
+        "JN"
+      ],
+      "FlightNumbers": "UA505, UA1014",
+      "ID": "3FKSc2pxxHHqMcbTJSb8DChjNLG",
+      "MileageCost": 72200,
+      "OptionalPrices": {
+        "UACARD": 64900
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 634,
+      "TotalSegmentDistance": 2447,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Boeing 737 MAX 9"
+      ],
+      "ArrivesAt": "2026-09-05T10:06:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T00:28:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc1tCHdTlIq7rXDsQgsjjKPB",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T18:30:00Z",
+          "DestinationAirport": "IAH",
+          "Distance": 1635,
+          "Duration": 238,
+          "FareClass": "JN",
+          "FlightNumber": "UA2019",
+          "ID": "3FKSc8YljDVJ6GwjKZfY35Oro38",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T10:06:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc1tCHdTlIq7rXDsQgsjjKPB",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T07:48:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 812,
+          "Duration": 138,
+          "FareClass": "JN",
+          "FlightNumber": "UA1619",
+          "ID": "3FKSc5IndH7daMAjJZZher52GeK",
+          "Order": 1,
+          "OriginAirport": "IAH",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAH"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T18:30:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "JN",
+        "JN"
+      ],
+      "FlightNumbers": "UA2019, UA1619",
+      "ID": "3FKSc1tCHdTlIq7rXDsQgsjjKPB",
+      "MileageCost": 78400,
+      "OptionalPrices": {
+        "UACARD": 70500
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 8,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 816,
+      "TotalSegmentDistance": 2447,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 8",
+        "Airbus A321neo"
+      ],
+      "ArrivesAt": "2026-09-05T12:58:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M8",
+          "AircraftName": "Boeing 737 MAX 8",
+          "ArrivesAt": "2026-09-05T00:59:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc83Xod7CYtjx9QhhJ9hda53",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T21:13:00Z",
+          "DestinationAirport": "DEN",
+          "Distance": 966,
+          "Duration": 166,
+          "FareClass": "YN",
+          "FlightNumber": "UA301",
+          "ID": "3FKSc1e2WcsmVPX5uOgsOspD7Xq",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A321neo",
+          "ArrivesAt": "2026-09-05T12:58:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc83Xod7CYtjx9QhhJ9hda53",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T08:01:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 1672,
+          "Duration": 237,
+          "FareClass": "YN",
+          "FlightNumber": "UA1119",
+          "ID": "3FKSc2y5ryrZ95DC9vlCjiFA7nc",
+          "Order": 1,
+          "OriginAirport": "DEN",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "DEN"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T21:13:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA301, UA1119",
+      "ID": "3FKSc83Xod7CYtjx9QhhJ9hda53",
+      "MileageCost": 25000,
+      "OptionalPrices": {
+        "UACARD": 18000
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 825,
+      "TotalSegmentDistance": 2638,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-09-05T12:33:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T06:02:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc4yb0bnw7gsuECx4tFhWMQF",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T23:59:00Z",
+          "DestinationAirport": "IAH",
+          "Distance": 1635,
+          "Duration": 243,
+          "FareClass": "YN",
+          "FlightNumber": "UA505",
+          "ID": "3FKSc7aLDpmMYFtqvPSgQijj2Fk",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-05T12:33:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc4yb0bnw7gsuECx4tFhWMQF",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T10:15:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 812,
+          "Duration": 138,
+          "FareClass": "YN",
+          "FlightNumber": "UA1014",
+          "ID": "3FKSc3p1cdKRR4NoDAKDW0BQzkS",
+          "Order": 1,
+          "OriginAirport": "IAH",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAH"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T23:59:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA505, UA1014",
+      "ID": "3FKSc4yb0bnw7gsuECx4tFhWMQF",
+      "MileageCost": 33100,
+      "OptionalPrices": {
+        "UACARD": 29700
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 634,
+      "TotalSegmentDistance": 2447,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Boeing 737 MAX 9"
+      ],
+      "ArrivesAt": "2026-09-05T15:12:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T07:35:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc1RVf2eHgTTSHE9FWysGVvO",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T23:14:00Z",
+          "DestinationAirport": "IAD",
+          "Distance": 2416,
+          "Duration": 321,
+          "FareClass": "YN",
+          "FlightNumber": "UA2111",
+          "ID": "3FKSc8UrBYDowMNaoV6U1fESqPM",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T15:12:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc1RVf2eHgTTSHE9FWysGVvO",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T12:35:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 1359,
+          "Duration": 217,
+          "FareClass": "YN",
+          "FlightNumber": "UA1276",
+          "ID": "3FKSc7Hsrsdf4ijCOpF8zF2CvQ0",
+          "Order": 1,
+          "OriginAirport": "IAD",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAD"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T23:14:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA2111, UA1276",
+      "ID": "3FKSc1RVf2eHgTTSHE9FWysGVvO",
+      "MileageCost": 33100,
+      "OptionalPrices": {
+        "UACARD": 29700
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 838,
+      "TotalSegmentDistance": 3775,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 777-300ER",
+        "Boeing 737 MAX 9"
+      ],
+      "ArrivesAt": "2026-09-05T13:39:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "77W",
+          "AircraftName": "Boeing 777-300ER",
+          "ArrivesAt": "2026-09-05T08:30:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc5plwIhec65Ww6qLkSo1tvc",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T23:59:00Z",
+          "DestinationAirport": "EWR",
+          "Distance": 2562,
+          "Duration": 331,
+          "FareClass": "YN",
+          "FlightNumber": "UA2416",
+          "ID": "3FKSc5rCFHa2VHEvYGNIvJgovrO",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T13:39:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc5plwIhec65Ww6qLkSo1tvc",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T10:33:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 1550,
+          "Duration": 246,
+          "FareClass": "YN",
+          "FlightNumber": "UA1054",
+          "ID": "3FKSc6uQ73bzuNS5afI134Yisl8",
+          "Order": 1,
+          "OriginAirport": "EWR",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "EWR"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T23:59:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA2416, UA1054",
+      "ID": "3FKSc5plwIhec65Ww6qLkSo1tvc",
+      "MileageCost": 61400,
+      "OptionalPrices": {
+        "UACARD": 55200
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 700,
+      "TotalSegmentDistance": 4112,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A321neo",
+        "Boeing 737 MAX 9"
+      ],
+      "ArrivesAt": "2026-09-05T14:26:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A321neo",
+          "ArrivesAt": "2026-09-05T05:04:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc5gbomxnkAYNsq0VOc2PFwD",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T22:35:00Z",
+          "DestinationAirport": "ORD",
+          "Distance": 1844,
+          "Duration": 269,
+          "FareClass": "YN",
+          "FlightNumber": "UA2278",
+          "ID": "3FKSc6VSczV96SR5HMHA6PeD0lI",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-05T14:26:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc5gbomxnkAYNsq0VOc2PFwD",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T10:46:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 1449,
+          "Duration": 220,
+          "FareClass": "YN",
+          "FlightNumber": "UA1659",
+          "ID": "3FKSc387YhNmgiPTiD0ZuJgQjHX",
+          "Order": 1,
+          "OriginAirport": "ORD",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "ORD"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T22:35:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA2278, UA1659",
+      "ID": "3FKSc5gbomxnkAYNsq0VOc2PFwD",
+      "MileageCost": 40700,
+      "OptionalPrices": {
+        "UACARD": 36600
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 831,
+      "TotalSegmentDistance": 3293,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 8",
+        "Airbus A321neo"
+      ],
+      "ArrivesAt": "2026-09-05T12:58:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M8",
+          "AircraftName": "Boeing 737 MAX 8",
+          "ArrivesAt": "2026-09-05T00:59:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc6nIt7Ksx7LMTjBbGGZg7DV",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T21:13:00Z",
+          "DestinationAirport": "DEN",
+          "Distance": 966,
+          "Duration": 166,
+          "FareClass": "JN",
+          "FlightNumber": "UA301",
+          "ID": "3FKSc8oTX67BA2le9yvWfmtzn0U",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A321neo",
+          "ArrivesAt": "2026-09-05T12:58:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc6nIt7Ksx7LMTjBbGGZg7DV",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T08:01:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 1672,
+          "Duration": 237,
+          "FareClass": "JN",
+          "FlightNumber": "UA1119",
+          "ID": "3FKSc8jmLv9HlVZraoPUADeO23w",
+          "Order": 1,
+          "OriginAirport": "DEN",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "DEN"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T21:13:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "JN",
+        "JN"
+      ],
+      "FlightNumbers": "UA301, UA1119",
+      "ID": "3FKSc6nIt7Ksx7LMTjBbGGZg7DV",
+      "MileageCost": 72200,
+      "OptionalPrices": {
+        "UACARD": 64900
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 825,
+      "TotalSegmentDistance": 2638,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-900",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-09-05T11:05:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-05T05:55:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc81yX7Z6xCDt8Ojyr6dVB5w",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T21:30:00Z",
+          "DestinationAirport": "IAD",
+          "Distance": 2416,
+          "Duration": 325,
+          "FareClass": "YN",
+          "FlightNumber": "UA705",
+          "ID": "3FKSc3yokzxHpEFVyddkueXRlgY",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-05T11:05:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc81yX7Z6xCDt8Ojyr6dVB5w",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-05T08:26:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 1359,
+          "Duration": 219,
+          "FareClass": "YN",
+          "FlightNumber": "UA1154",
+          "ID": "3FKSc6ALuIoq8Kxn2pdFdcgaDam",
+          "Order": 1,
+          "OriginAirport": "IAD",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAD"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T21:30:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA705, UA1154",
+      "ID": "3FKSc81yX7Z6xCDt8Ojyr6dVB5w",
+      "MileageCost": 33100,
+      "OptionalPrices": {
+        "UACARD": 29700
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 695,
+      "TotalSegmentDistance": 3775,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 777",
+        "Boeing 737 MAX 9"
+      ],
+      "ArrivesAt": "2026-09-04T14:37:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "777",
+          "AircraftName": "Boeing 777",
+          "ArrivesAt": "2026-09-04T06:35:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc5exd3TZmxGz5in2wd8WrJz",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T00:45:00Z",
+          "DestinationAirport": "IAH",
+          "Distance": 1635,
+          "Duration": 230,
+          "FareClass": "YN",
+          "FlightNumber": "UA604",
+          "ID": "3FKSc5sFc4Sizz0QgI23TzesBVX",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-04T14:37:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc5exd3TZmxGz5in2wd8WrJz",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T12:19:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 812,
+          "Duration": 138,
+          "FareClass": "YN",
+          "FlightNumber": "UA1167",
+          "ID": "3FKSc5o7uzo6bKroEP9j0iKX1Hg",
+          "Order": 1,
+          "OriginAirport": "IAH",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAH"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T00:45:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA604, UA1167",
+      "ID": "3FKSc5exd3TZmxGz5in2wd8WrJz",
+      "MileageCost": 42400,
+      "OptionalPrices": {
+        "UACARD": 38100
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 712,
+      "TotalSegmentDistance": 2447,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-900",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2026-09-05T06:41:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-04T21:31:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc1HzlvsEBq704U9S7Kbwo3d",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T19:49:00Z",
+          "DestinationAirport": "LAX",
+          "Distance": 338,
+          "Duration": 102,
+          "FareClass": "JN",
+          "FlightNumber": "UA1344",
+          "ID": "3FKSc8txnV0ddxiROwnITmHbDzM",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2026-09-05T06:41:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3FKSc1HzlvsEBq704U9S7Kbwo3d",
+          "Cabin": "business",
+          "CreatedAt": "2026-06-18T22:39:03.172482Z",
+          "DepartsAt": "2026-09-04T23:59:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 2119,
+          "Duration": 282,
+          "FareClass": "JN",
+          "FlightNumber": "UA1075",
+          "ID": "3FKSc1NEXjNuMfhfSyyjTlaEn3S",
+          "Order": 1,
+          "OriginAirport": "LAX",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "business",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "LAX"
+      ],
+      "CreatedAt": "2026-06-18T22:39:03.172482Z",
+      "DepartsAt": "2026-09-04T19:49:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "JN",
+        "JN"
+      ],
+      "FlightNumbers": "UA1344, UA1075",
+      "ID": "3FKSc1HzlvsEBq704U9S7Kbwo3d",
+      "MileageCost": 80700,
+      "OptionalPrices": {
+        "UACARD": 72600
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 532,
+      "TotalSegmentDistance": 2457,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9"
+      ],
+      "ArrivesAt": "2026-09-04T16:12:00Z",
+      "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-09-04T16:12:00Z",
+          "AvailabilityID": "33d4wlCl5uQycjhPmigMOGB3Ysr",
+          "AvailabilityTripID": "3BdOugciRmr4P7aLdqh934wOLXm",
+          "Cabin": "economy",
+          "CreatedAt": "2026-03-29T20:21:44.719449Z",
+          "DepartsAt": "2026-09-04T08:51:00Z",
+          "DestinationAirport": "CUN",
+          "Distance": 2408,
+          "Duration": 321,
+          "FareClass": "YN",
+          "FlightNumber": "UA1679",
+          "ID": "3BdOujZvUscNEdWMgdSXKkxgd2S",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+          "Source": "united",
+          "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA",
+      "CreatedAt": "2026-03-29T20:21:44.719449Z",
+      "DepartsAt": "2026-09-04T08:51:00Z",
+      "DestinationAirport": "CUN",
+      "FareClasses": [
+        "YN"
+      ],
+      "FlightNumbers": "UA1679",
+      "ID": "3BdOugciRmr4P7aLdqh934wOLXm",
+      "MileageCost": 28900,
+      "OptionalPrices": {
+        "UACARD": 26000
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2RZWcpnr5RN91IDmZFMdlwscVXd",
+      "Source": "united",
+      "Stops": 0,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 321,
+      "TotalSegmentDistance": 2408,
+      "TotalTaxes": 6234,
+      "UpdatedAt": "2026-06-24T22:37:09.984838Z"
+    }
+  ],
+  "destination_coordinates": {
+    "Lat": 21.040457,
+    "Lon": -86.874439
+  },
+  "origin_coordinates": {
+    "Lat": 37.615215,
+    "Lon": -122.389881
+  }
+}

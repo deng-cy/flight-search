@@ -24020,6 +24020,7 @@
             "full_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_fca_2026-09-04_normalized_full.json"
           },
           "raw_search": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_fca_2026-09-04_search_raw.json",
+          "sources": [],
           "trip_details": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_fca_2026-09-04_trip_details"
         }
       },
@@ -24042,6 +24043,7 @@
             "full_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_fca_2026-09-05_normalized_full.json"
           },
           "raw_search": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_fca_2026-09-05_search_raw.json",
+          "sources": [],
           "trip_details": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_fca_2026-09-05_trip_details"
         }
       },
@@ -24064,6 +24066,7 @@
             "full_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_mso_2026-09-04_normalized_full.json"
           },
           "raw_search": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_mso_2026-09-04_search_raw.json",
+          "sources": [],
           "trip_details": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_mso_2026-09-04_trip_details"
         }
       },
@@ -24086,6 +24089,7 @@
             "full_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_mso_2026-09-05_normalized_full.json"
           },
           "raw_search": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_mso_2026-09-05_search_raw.json",
+          "sources": [],
           "trip_details": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_mso_2026-09-05_trip_details"
         }
       },
@@ -24108,6 +24112,7 @@
             "full_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_fca_2026-09-04_normalized_full.json"
           },
           "raw_search": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_fca_2026-09-04_search_raw.json",
+          "sources": [],
           "trip_details": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_fca_2026-09-04_trip_details"
         }
       },
@@ -24130,6 +24135,7 @@
             "full_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_fca_2026-09-05_normalized_full.json"
           },
           "raw_search": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_fca_2026-09-05_search_raw.json",
+          "sources": [],
           "trip_details": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_fca_2026-09-05_trip_details"
         }
       },
@@ -24152,6 +24158,7 @@
             "full_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_mso_2026-09-04_normalized_full.json"
           },
           "raw_search": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_mso_2026-09-04_search_raw.json",
+          "sources": [],
           "trip_details": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_mso_2026-09-04_trip_details"
         }
       },
@@ -24174,6 +24181,7 @@
             "full_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_mso_2026-09-05_normalized_full.json"
           },
           "raw_search": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_mso_2026-09-05_search_raw.json",
+          "sources": [],
           "trip_details": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_mso_2026-09-05_trip_details"
         }
       },
@@ -24196,6 +24204,7 @@
             "full_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/fca_sfo_2026-09-07_normalized_full.json"
           },
           "raw_search": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/fca_sfo_2026-09-07_search_raw.json",
+          "sources": [],
           "trip_details": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/fca_sfo_2026-09-07_trip_details"
         }
       },
@@ -24218,6 +24227,7 @@
             "full_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/fca_sjc_2026-09-07_normalized_full.json"
           },
           "raw_search": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/fca_sjc_2026-09-07_search_raw.json",
+          "sources": [],
           "trip_details": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/fca_sjc_2026-09-07_trip_details"
         }
       },
@@ -24240,6 +24250,7 @@
             "full_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/mso_sfo_2026-09-07_normalized_full.json"
           },
           "raw_search": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/mso_sfo_2026-09-07_search_raw.json",
+          "sources": [],
           "trip_details": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/mso_sfo_2026-09-07_trip_details"
         }
       },
@@ -24262,6 +24273,7 @@
             "full_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/mso_sjc_2026-09-07_normalized_full.json"
           },
           "raw_search": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/mso_sjc_2026-09-07_search_raw.json",
+          "sources": [],
           "trip_details": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/mso_sjc_2026-09-07_trip_details"
         }
       }

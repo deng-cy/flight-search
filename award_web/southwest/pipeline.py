@@ -3,9 +3,8 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
-import yaml
-
 from flight_search_common.io import load_json, markdown_escape, write_csv, write_json
+from flight_search_common.preferences import DEFAULT_PREFERENCES_PATH, load_preferences
 
 from ..models import AWARD_WEB_FIELDNAMES, AwardWebSearchRequest
 from .normalization import normalize_southwest_payload
@@ -13,17 +12,7 @@ from .provider import search_southwest_public
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-WORKSPACE_ROOT = PROJECT_ROOT.parent
 DEFAULT_DATA_DIR = PROJECT_ROOT / "data"
-DEFAULT_PREFERENCES_PATH = WORKSPACE_ROOT / "config/search_preferences.yaml"
-
-
-def load_preferences(path: Path) -> dict[str, Any]:
-    with path.open(encoding="utf-8") as handle:
-        preferences = yaml.safe_load(handle)
-    if not isinstance(preferences, dict):
-        raise ValueError(f"{path} must contain a YAML mapping")
-    return preferences
 
 
 def output_paths(output_dir: Path, request: AwardWebSearchRequest) -> dict[str, Path]:

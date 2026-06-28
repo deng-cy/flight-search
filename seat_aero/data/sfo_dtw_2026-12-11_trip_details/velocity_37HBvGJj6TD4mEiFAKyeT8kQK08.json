@@ -1,0 +1,110 @@
+{
+  "booking_links": [
+    {
+      "label": "Book via Virgin Australia Velocity",
+      "link": "https://book.virginaustralia.com/dx/VADX/#/flight-selection?journeyType=one-way&activeMonth=12-11-2026&awardBooking=true&class=First&ADT=1&CHD=0&INF=0&origin=SFO&destination=DTW&date=12-11-2026&promoCode=&utm_source=seatsaero",
+      "primary": true
+    },
+    {
+      "label": "Book via Air Canada Aeroplan",
+      "link": "https://www.aircanada.com/aeroplan/redeem/availability/outbound?org0=SFO&dest0=DTW&departureDate0=2026-12-11&lang=en-CA&tripType=O&ADT=1&YTH=0&CHD=0&INF=0&INS=0&marketCode=INT",
+      "primary": false
+    },
+    {
+      "label": "Book via United MileagePlus",
+      "link": "https://www.united.com/en/us/fsr/choose-flights?f=SFO&t=DTW&d=2026-12-11&sc=7&st=bestmatches&cbm=-1&cbm2=-1&ft=0&cp=0&tt=1&at=1&rm=1&act=0&px=1&taxng=1&clm=7&tqp=A&utm_source=seatsaero",
+      "primary": false
+    }
+  ],
+  "carriers": {
+    "UA": "United Airlines"
+  },
+  "data": [
+    {
+      "Aircraft": [
+        "Airbus A320",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-12-12T08:33:00Z",
+      "AvailabilityID": "37HBvGJj6TD4mEiFAKyeT8kQK08",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A320",
+          "ArrivesAt": "2026-12-12T01:00:00Z",
+          "AvailabilityID": "37HBvGJj6TD4mEiFAKyeT8kQK08",
+          "AvailabilityTripID": "3BHvUlEQdzXzyLCcc3QR0u1iIfi",
+          "Cabin": "economy",
+          "CreatedAt": "2026-03-22T05:53:47.818638Z",
+          "DepartsAt": "2026-12-11T18:30:00Z",
+          "DestinationAirport": "ORD",
+          "Distance": 1844,
+          "Duration": 270,
+          "FareClass": "X",
+          "FlightNumber": "UA1931",
+          "ID": "3BHvUhiztXrlV3QvqYD5WDIARAJ",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2Wnm5EWlZwmueSCcojzhzLDVFpV",
+          "Source": "velocity",
+          "UpdatedAt": "2026-06-11T15:48:18.200275Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-12-12T08:33:00Z",
+          "AvailabilityID": "37HBvGJj6TD4mEiFAKyeT8kQK08",
+          "AvailabilityTripID": "3BHvUlEQdzXzyLCcc3QR0u1iIfi",
+          "Cabin": "economy",
+          "CreatedAt": "2026-03-22T05:53:47.818638Z",
+          "DepartsAt": "2026-12-12T06:00:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 234,
+          "Duration": 93,
+          "FareClass": "X",
+          "FlightNumber": "UA3706",
+          "ID": "3BHvUm2dsIeD2DG8JfXRNkSc8y8",
+          "Order": 1,
+          "OriginAirport": "ORD",
+          "RouteID": "2Wnm5EWlZwmueSCcojzhzLDVFpV",
+          "Source": "velocity",
+          "UpdatedAt": "2026-06-11T15:48:18.200275Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA",
+      "Connections": [
+        "ORD"
+      ],
+      "CreatedAt": "2026-03-22T05:53:47.818638Z",
+      "DepartsAt": "2026-12-11T18:30:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "X",
+        "X"
+      ],
+      "FlightNumbers": "UA1931, UA3706",
+      "ID": "3BHvUlEQdzXzyLCcc3QR0u1iIfi",
+      "MileageCost": 19000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2Wnm5EWlZwmueSCcojzhzLDVFpV",
+      "Source": "velocity",
+      "Stops": 1,
+      "TaxesCurrency": "AUD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 663,
+      "TotalSegmentDistance": 2078,
+      "TotalTaxes": 2900,
+      "UpdatedAt": "2026-06-11T15:48:18.200275Z"
+    }
+  ],
+  "destination_coordinates": {
+    "Lat": 42.207808,
+    "Lon": -83.356048
+  },
+  "origin_coordinates": {
+    "Lat": 37.615215,
+    "Lon": -122.389881
+  }
+}

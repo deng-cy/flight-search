@@ -1209,13 +1209,13 @@
     "effective_usd": 394.38,
     "expensive_flag": false,
     "fare_classes": "X, X",
-    "flags": "default_cpp, early departure",
+    "flags": "early departure",
     "flight_numbers": "UA617, UA5535",
     "fx_source": "cache:2026-06-11",
     "mileage_cost": 19000,
     "next_day_penalty_usd": 0,
     "points_value_usd": 380.0,
-    "program": "velocity",
+    "program": "Virgin Australia Velocity",
     "remaining_seats": 9,
     "score": 520.96,
     "seat_credit_usd": 18.0,
@@ -1227,7 +1227,7 @@
     "taxes_usd": 14.38,
     "time_penalty_usd": 50.0,
     "trip_id": "3CyvHi7pRec4AKeRqqe4i7B40QM",
-    "used_default_cpp": true
+    "used_default_cpp": false
   },
   {
     "aircraft": "Boeing 737-900, Embraer E175",

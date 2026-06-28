@@ -7,7 +7,13 @@ airlines:
   air_canada:
     label: Air Canada
     carrier_code: AC
+    logo_path: assets/air_canada.svg
     aliases: [Air Canada, AC, Aeroplan]
+  aeromexico:
+    label: Aeromexico
+    carrier_code: AM
+    logo_path: assets/aeromexico.svg
+    aliases: [Aeromexico, AM, Club Premier]
   alaska:
     label: Alaska
     carrier_code: AS

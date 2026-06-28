@@ -1,0 +1,110 @@
+{
+  "booking_links": [
+    {
+      "label": "Book via Air Canada Aeroplan",
+      "link": "https://www.aircanada.com/aeroplan/redeem/availability/outbound?org0=SFO&dest0=DTW&departureDate0=2027-01-15&lang=en-CA&tripType=O&ADT=1&YTH=0&CHD=0&INF=0&INS=0&marketCode=INT",
+      "primary": true
+    },
+    {
+      "label": "Book via United MileagePlus",
+      "link": "https://www.united.com/en/us/fsr/choose-flights?f=SFO&t=DTW&d=2027-01-15&sc=7&st=bestmatches&cbm=-1&cbm2=-1&ft=0&cp=0&tt=1&at=1&rm=1&act=0&px=1&taxng=1&clm=7&tqp=A",
+      "primary": false
+    },
+    {
+      "label": "Book via Copa ConnectMiles",
+      "link": "https://shopping.copaair.com/miles?roundtrip=false&area1=SFO&area2=DTW&date1=2027-01-15&date2=&flexible_dates_v2=false&adults=1&children=0&infants=0&isMiles=true&advanced_air_search=false&stopover=false&sf=gs&langid=en&promocode=",
+      "primary": false
+    }
+  ],
+  "carriers": {
+    "UA": "United Airlines"
+  },
+  "data": [
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Airbus A320"
+      ],
+      "ArrivesAt": "2027-01-16T15:14:00Z",
+      "AvailabilityID": "38lv435BkvjL4sIthYo0bIQxaQg",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2027-01-16T00:43:00Z",
+          "AvailabilityID": "38lv435BkvjL4sIthYo0bIQxaQg",
+          "AvailabilityTripID": "3BAKkvs7XsSSypE3bIs29acx8Zo",
+          "Cabin": "economy",
+          "CreatedAt": "2026-03-19T13:23:00.837408Z",
+          "DepartsAt": "2027-01-15T20:52:00Z",
+          "DestinationAirport": "DEN",
+          "Distance": 966,
+          "Duration": 171,
+          "FareClass": "X",
+          "FlightNumber": "UA301",
+          "ID": "3BAKkp7idZx95wmKC0UBuJ8RCnn",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNfHJWEZcFcmrPxPZYAaGF7AD",
+          "Source": "aeroplan",
+          "UpdatedAt": "2026-06-08T04:47:41.022304Z"
+        },
+        {
+          "AircraftCode": "320",
+          "AircraftName": "Airbus A320",
+          "ArrivesAt": "2027-01-16T15:14:00Z",
+          "AvailabilityID": "38lv435BkvjL4sIthYo0bIQxaQg",
+          "AvailabilityTripID": "3BAKkvs7XsSSypE3bIs29acx8Zo",
+          "Cabin": "economy",
+          "CreatedAt": "2026-03-19T13:23:00.837408Z",
+          "DepartsAt": "2027-01-16T10:30:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1121,
+          "Duration": 164,
+          "FareClass": "X",
+          "FlightNumber": "UA1915",
+          "ID": "3BAKktKT47HcMgOIMMr8qetkgRg",
+          "Order": 1,
+          "OriginAirport": "DEN",
+          "RouteID": "2fLNfHJWEZcFcmrPxPZYAaGF7AD",
+          "Source": "aeroplan",
+          "UpdatedAt": "2026-06-08T04:47:41.022304Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA",
+      "Connections": [
+        "DEN"
+      ],
+      "CreatedAt": "2026-03-19T13:23:00.837408Z",
+      "DepartsAt": "2027-01-15T20:52:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "X",
+        "X"
+      ],
+      "FlightNumbers": "UA301, UA1915",
+      "ID": "3BAKkvs7XsSSypE3bIs29acx8Zo",
+      "MileageCost": 15000,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNfHJWEZcFcmrPxPZYAaGF7AD",
+      "Source": "aeroplan",
+      "Stops": 1,
+      "TaxesCurrency": "CAD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 922,
+      "TotalSegmentDistance": 2087,
+      "TotalTaxes": 5460,
+      "UpdatedAt": "2026-06-08T04:47:41.022304Z"
+    }
+  ],
+  "destination_coordinates": {
+    "Lat": 42.207808,
+    "Lon": -83.356048
+  },
+  "origin_coordinates": {
+    "Lat": 37.615215,
+    "Lon": -122.389881
+  }
+}

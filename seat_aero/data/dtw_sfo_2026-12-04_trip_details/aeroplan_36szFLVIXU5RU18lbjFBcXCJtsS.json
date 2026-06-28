@@ -1,0 +1,110 @@
+{
+  "booking_links": [
+    {
+      "label": "Book via Air Canada Aeroplan",
+      "link": "https://www.aircanada.com/aeroplan/redeem/availability/outbound?org0=DTW&dest0=SFO&departureDate0=2026-12-04&lang=en-CA&tripType=O&ADT=1&YTH=0&CHD=0&INF=0&INS=0&marketCode=INT",
+      "primary": true
+    },
+    {
+      "label": "Book via United MileagePlus",
+      "link": "https://www.united.com/en/us/fsr/choose-flights?f=DTW&t=SFO&d=2026-12-04&sc=7&st=bestmatches&cbm=-1&cbm2=-1&ft=0&cp=0&tt=1&at=1&rm=1&act=0&px=1&taxng=1&clm=7&tqp=A",
+      "primary": false
+    },
+    {
+      "label": "Book via Copa ConnectMiles",
+      "link": "https://shopping.copaair.com/miles?roundtrip=false&area1=DTW&area2=SFO&date1=2026-12-04&date2=&flexible_dates_v2=false&adults=1&children=0&infants=0&isMiles=true&advanced_air_search=false&stopover=false&sf=gs&langid=en&promocode=",
+      "primary": false
+    }
+  ],
+  "carriers": {
+    "UA": "United Airlines"
+  },
+  "data": [
+    {
+      "Aircraft": [
+        "Embraer E175",
+        "Boeing 777"
+      ],
+      "ArrivesAt": "2026-12-04T11:20:00Z",
+      "AvailabilityID": "36szFLVIXU5RU18lbjFBcXCJtsS",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-12-04T07:35:00Z",
+          "AvailabilityID": "36szFLVIXU5RU18lbjFBcXCJtsS",
+          "AvailabilityTripID": "3D00MW4RyP4EtRBELoYyI3voTsK",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-28T19:13:51.797676Z",
+          "DepartsAt": "2026-12-04T06:00:00Z",
+          "DestinationAirport": "IAD",
+          "Distance": 383,
+          "Duration": 95,
+          "FareClass": "X",
+          "FlightNumber": "UA6168",
+          "ID": "3D00MU7E3cJrTIUX0rkePI8vB7d",
+          "Order": 0,
+          "OriginAirport": "DTW",
+          "RouteID": "2fLNfHGMHZlO665aXJYbUkUm7xJ",
+          "Source": "aeroplan",
+          "UpdatedAt": "2026-06-22T20:12:29.480611Z"
+        },
+        {
+          "AircraftCode": "777",
+          "AircraftName": "Boeing 777",
+          "ArrivesAt": "2026-12-04T11:20:00Z",
+          "AvailabilityID": "36szFLVIXU5RU18lbjFBcXCJtsS",
+          "AvailabilityTripID": "3D00MW4RyP4EtRBELoYyI3voTsK",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-28T19:13:51.797676Z",
+          "DepartsAt": "2026-12-04T08:25:00Z",
+          "DestinationAirport": "SFO",
+          "Distance": 2416,
+          "Duration": 355,
+          "FareClass": "X",
+          "FlightNumber": "UA1147",
+          "ID": "3D00MXX9YZjGe5Jn8eBU2yr7OqO",
+          "Order": 1,
+          "OriginAirport": "IAD",
+          "RouteID": "2fLNfHGMHZlO665aXJYbUkUm7xJ",
+          "Source": "aeroplan",
+          "UpdatedAt": "2026-06-22T20:12:29.480611Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA",
+      "Connections": [
+        "IAD"
+      ],
+      "CreatedAt": "2026-04-28T19:13:51.797676Z",
+      "DepartsAt": "2026-12-04T06:00:00Z",
+      "DestinationAirport": "SFO",
+      "FareClasses": [
+        "X",
+        "X"
+      ],
+      "FlightNumbers": "UA6168, UA1147",
+      "ID": "3D00MW4RyP4EtRBELoYyI3voTsK",
+      "MileageCost": 25000,
+      "OriginAirport": "DTW",
+      "RemainingSeats": 8,
+      "RouteID": "2fLNfHGMHZlO665aXJYbUkUm7xJ",
+      "Source": "aeroplan",
+      "Stops": 1,
+      "TaxesCurrency": "CAD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 500,
+      "TotalSegmentDistance": 2799,
+      "TotalTaxes": 4690,
+      "UpdatedAt": "2026-06-22T20:12:29.480611Z"
+    }
+  ],
+  "destination_coordinates": {
+    "Lat": 37.615215,
+    "Lon": -122.389881
+  },
+  "origin_coordinates": {
+    "Lat": 42.207808,
+    "Lon": -83.356048
+  }
+}

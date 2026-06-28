@@ -449,6 +449,94 @@ def unique_ordered_strings(values: list[Any]) -> list[str]:
     return labels
 
 
+MONTH_ABBR = ("", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+TRIP_RECORD_SOURCE_KEYS = (
+    "full_json",
+    "best_json",
+    "normalized_json",
+    "normalized_csv",
+    "full_csv",
+    "best_csv",
+    "raw_response",
+)
+
+
+def parsed_trip_date(value: str) -> datetime | None:
+    try:
+        return datetime.strptime(value, "%Y-%m-%d")
+    except ValueError:
+        return None
+
+
+def compact_trip_dates(values: list[str]) -> str:
+    labels = unique_ordered_strings(values)
+    if not labels:
+        return "none"
+    parsed = [parsed_trip_date(label) for label in labels]
+    if any(item is None for item in parsed):
+        return ", ".join(labels)
+    dates = [item for item in parsed if item is not None]
+    if len(dates) == 1:
+        date = dates[0]
+        return f"{MONTH_ABBR[date.month]} {date.day}, {date.year}"
+    same_year = len({date.year for date in dates}) == 1
+    same_month = same_year and len({date.month for date in dates}) == 1
+    ordered = sorted(dates)
+    contiguous = all((ordered[index + 1] - ordered[index]).days == 1 for index in range(len(ordered) - 1))
+    if same_month and contiguous:
+        return f"{MONTH_ABBR[ordered[0].month]} {ordered[0].day}-{ordered[-1].day}, {ordered[0].year}"
+    if same_month:
+        days = ", ".join(str(date.day) for date in ordered)
+        return f"{MONTH_ABBR[ordered[0].month]} {days}, {ordered[0].year}"
+    if same_year:
+        return f"{', '.join(f'{MONTH_ABBR[date.month]} {date.day}' for date in ordered)}, {ordered[0].year}"
+    return ", ".join(f"{MONTH_ABBR[date.month]} {date.day}, {date.year}" for date in ordered)
+
+
+def file_mtime(value: Any) -> float | None:
+    if not value:
+        return None
+    path = Path(str(value))
+    if not path.exists():
+        return None
+    return path.stat().st_mtime
+
+
+def source_path_candidates(summary: dict[str, Any]) -> list[str]:
+    outputs = summary.get("outputs") if isinstance(summary.get("outputs"), dict) else {}
+    candidates: list[str] = []
+    for key in TRIP_RECORD_SOURCE_KEYS:
+        value = outputs.get(key) or summary.get(key)
+        if value:
+            candidates.append(str(value))
+    for value in outputs.values():
+        if value:
+            candidates.append(str(value))
+    return list(dict.fromkeys(candidates))
+
+
+def trip_record_source_mtime(runs: dict[str, Any] | None) -> float | None:
+    if not isinstance(runs, dict):
+        return None
+    mtimes: list[float] = []
+    for group in ("award", "cash", "cash_one_way"):
+        for run in normalized_list(runs.get(group)):
+            summary = run.get("summary") if isinstance(run, dict) else None
+            if not isinstance(summary, dict):
+                continue
+            for path in source_path_candidates(summary):
+                mtime = file_mtime(path)
+                if mtime is not None:
+                    mtimes.append(mtime)
+    return max(mtimes) if mtimes else None
+
+
+def trip_record_date_label(timestamp: float | None) -> str:
+    if not timestamp:
+        return ""
+    return datetime.fromtimestamp(timestamp).astimezone().strftime("%Y-%m-%d")
+
+
 def plan_summary_payload(plan: TripSearchPlan) -> dict[str, list[dict[str, Any]]]:
     return {
         "outbound_legs": [asdict(leg) for leg in plan.outbound_legs],
@@ -459,6 +547,7 @@ def plan_summary_payload(plan: TripSearchPlan) -> dict[str, list[dict[str, Any]]
 def trip_record_from_payload(
     *,
     plan_payload: dict[str, Any],
+    runs_payload: dict[str, Any] | None = None,
     href: str,
     html_path: Path,
     current: bool,
@@ -471,23 +560,28 @@ def trip_record_from_payload(
     outbound_dates = unique_ordered_strings([leg.get("date") for leg in outbound_legs])
     return_dates = unique_ordered_strings([leg.get("date") for leg in return_legs])
     route_label = f"{'/'.join(origins) or 'Unknown'} to {'/'.join(destinations) or 'Unknown'}"
-    outbound_label = ", ".join(outbound_dates) if outbound_dates else "none"
-    return_label = ", ".join(return_dates) if return_dates else "none"
-    updated_sort = 0.0 if current else (html_path.stat().st_mtime if html_path.exists() else 0.0)
-    updated_label = (
-        ""
-        if current
-        else (
-            datetime.fromtimestamp(updated_sort).astimezone().strftime("%Y-%m-%d %H:%M %Z")
-            if updated_sort
-            else ""
-        )
-    )
+    origin_sort = "/".join(origins)
+    destination_sort = "/".join(destinations)
+    outbound_sort = min(outbound_dates) if outbound_dates else ""
+    return_sort = min(return_dates) if return_dates else ""
+    outbound_label = compact_trip_dates(outbound_dates)
+    return_label = compact_trip_dates(return_dates)
+    source_mtime = trip_record_source_mtime(runs_payload)
+    fallback_mtime = file_mtime(html_path)
+    updated_sort = source_mtime or fallback_mtime or 0.0
+    updated_date = trip_record_date_label(updated_sort)
+    updated_label = f"Updated {updated_date}" if updated_date else ""
     return {
         "href": href,
         "route_label": route_label,
-        "date_label": f"Outbound dates: {outbound_label} · Return dates: {return_label}",
+        "origin_sort": origin_sort,
+        "destination_sort": destination_sort,
+        "outbound_sort": outbound_sort,
+        "return_sort": return_sort,
+        "date_label": f"Outbound {outbound_label} · Return {return_label}",
         "complete_count": complete_count,
+        "retrieved_label": updated_label,
+        "updated_date": updated_date,
         "updated_label": updated_label,
         "updated_sort": updated_sort,
         "current": current,
@@ -510,8 +604,10 @@ def trip_record_from_summary_path(summary_path: Path, current_html_path: Path) -
     rows = payload.get("rows") if isinstance(payload.get("rows"), dict) else {}
     complete_rows = rows.get("complete_plans") if isinstance(rows.get("complete_plans"), list) else []
     plan_payload = payload.get("plan") if isinstance(payload.get("plan"), dict) else {}
+    runs_payload = payload.get("runs") if isinstance(payload.get("runs"), dict) else {}
     return trip_record_from_payload(
         plan_payload=plan_payload,
+        runs_payload=runs_payload,
         href=html_path.name,
         html_path=html_path,
         current=is_current,
@@ -519,11 +615,18 @@ def trip_record_from_summary_path(summary_path: Path, current_html_path: Path) -
     )
 
 
-def trip_report_records(current_html_path: Path, *, plan: TripSearchPlan, complete_rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def trip_report_records(
+    current_html_path: Path,
+    *,
+    plan: TripSearchPlan,
+    runs_payload: dict[str, Any],
+    complete_rows: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
     current_href = current_html_path.name
     records: dict[str, dict[str, Any]] = {
         current_href: trip_record_from_payload(
             plan_payload=plan_summary_payload(plan),
+            runs_payload=runs_payload,
             href=current_href,
             html_path=current_html_path,
             current=True,
@@ -537,38 +640,80 @@ def trip_report_records(current_html_path: Path, *, plan: TripSearchPlan, comple
         records[record["href"]] = record
 
     records[current_href]["current"] = True
-    current_record = records[current_href]
-    other_records = sorted(
-        (record for href, record in records.items() if href != current_href),
-        key=lambda record: (-float(record.get("updated_sort") or 0), str(record.get("route_label") or "")),
+    return sorted(
+        records.values(),
+        key=lambda record: (
+            -float(record.get("updated_sort") or 0),
+            str(record.get("outbound_sort") or ""),
+            str(record.get("origin_sort") or ""),
+            str(record.get("destination_sort") or ""),
+            str(record.get("route_label") or ""),
+        ),
     )
-    return [current_record, *other_records]
 
 
-def trip_record_selector_html(current_html_path: Path, *, plan: TripSearchPlan, complete_rows: list[dict[str, Any]]) -> str:
-    records = trip_report_records(current_html_path, plan=plan, complete_rows=complete_rows)
+def trip_record_selector_html(
+    current_html_path: Path,
+    *,
+    plan: TripSearchPlan,
+    award_runs: list[dict[str, Any]],
+    cash_runs: list[dict[str, Any]],
+    cash_one_way_runs: list[dict[str, Any]],
+    complete_rows: list[dict[str, Any]],
+) -> str:
+    runs_payload = {
+        "award": [summary_run(run) for run in award_runs],
+        "cash": [summary_run(run) for run in cash_runs],
+        "cash_one_way": [summary_run(run) for run in cash_one_way_runs],
+    }
+    records = trip_report_records(current_html_path, plan=plan, runs_payload=runs_payload, complete_rows=complete_rows)
     links = []
-    for record in records:
+    for index, record in enumerate(records):
         complete_count = record.get("complete_count")
         count_label = ""
         if complete_count is not None:
             suffix = "" if complete_count == 1 else "s"
-            count_label = f"{complete_count} complete plan{suffix}"
+            count_label = f"{complete_count} plan{suffix}"
         status_label = "Current" if record.get("current") else "Open"
-        meta_parts = [part for part in [count_label, status_label] if part]
-        meta = "".join(f"<span>{escape(part)}</span>" for part in meta_parts)
+        updated_date = str(record.get("updated_date") or "")
+        meta_parts = [part for part in [updated_date, count_label] if part]
+        meta = escape(" · ".join(meta_parts))
         current_class = " current" if record.get("current") else ""
+        status_class = " current" if record.get("current") else ""
         aria_current = ' aria-current="page"' if record.get("current") else ""
+        complete_sort = "" if complete_count is None else str(complete_count)
         links.append(
-            f'<a class="record-link{current_class}" href="{escape(str(record["href"]), quote=True)}"{aria_current}>'
+            f'<a class="record-link{current_class}" href="{escape(str(record["href"]), quote=True)}"{aria_current}'
+            f' data-sort-index="{index}"'
+            f' data-sort-updated="{escape(str(record.get("updated_sort") or 0), quote=True)}"'
+            f' data-sort-outbound="{escape(str(record.get("outbound_sort") or ""), quote=True)}"'
+            f' data-sort-return="{escape(str(record.get("return_sort") or ""), quote=True)}"'
+            f' data-sort-origin="{escape(str(record.get("origin_sort") or ""), quote=True)}"'
+            f' data-sort-destination="{escape(str(record.get("destination_sort") or ""), quote=True)}"'
+            f' data-sort-plans="{escape(complete_sort, quote=True)}">'
+            '<span class="record-link-top">'
             f'<strong>{escape(str(record["route_label"]))}</strong>'
-            f'<span>{escape(str(record["date_label"]))}</span>'
+            f'<span class="record-status{status_class}">{escape(status_label)}</span>'
+            '</span>'
+            f'<span class="record-dates">{escape(str(record["date_label"]))}</span>'
             f'<small class="record-meta">{meta}</small>'
             "</a>"
         )
     return (
         '<section class="control-block record-controls" aria-label="Trip records">'
+        '<div class="record-controls-head">'
         "<h2>Trip records</h2>"
+        '<label class="record-sort">Sort'
+        '<select id="tripRecordSort" aria-label="Sort trip records">'
+        '<option value="updated">Last updated</option>'
+        '<option value="outbound">Outbound date</option>'
+        '<option value="return">Return date</option>'
+        '<option value="origin">Origin airport</option>'
+        '<option value="destination">Destination airport</option>'
+        '<option value="plans">Plan count</option>'
+        '</select>'
+        '</label>'
+        '</div>'
         '<nav class="record-list" aria-label="Saved trip report pages">'
         f'{"".join(links)}'
         "</nav>"
@@ -1901,6 +2046,32 @@ def best_overall_recommendation_row(complete_rows: list[dict[str, Any]]) -> dict
     return min(overall_pool, key=lambda row: (row["score"], row["effective_num"]))
 
 
+def paid_strategy_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return [row for row in rows if row.get("kind") in {"cash", "cash one-ways"}]
+
+
+def best_paid_strategy_row(complete_rows: list[dict[str, Any]]) -> dict[str, Any] | None:
+    candidates = paid_strategy_rows([row for row in complete_rows if row.get("kind") != "web award round-trip"])
+    if not candidates:
+        return None
+
+    best_paid = min(candidates, key=lambda row: (row["score"], row["effective_num"]))
+    if best_paid.get("kind") != "cash":
+        return best_paid
+
+    preferred_one_ways = best_by_signature(
+        [
+            row
+            for row in candidates
+            if row.get("kind") == "cash one-ways" and row.get("cash_flex_recommended")
+        ]
+    )
+    matching_one_ways = preferred_one_ways.get(paid_cash_signature(best_paid))
+    if matching_one_ways and best_paid.get("cash_strategy_comparison") in {"same_price", "more_expensive"}:
+        return matching_one_ways
+    return best_paid
+
+
 def recommendation_cards(complete_rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     if not complete_rows:
         return []
@@ -1910,21 +2081,14 @@ def recommendation_cards(complete_rows: list[dict[str, Any]]) -> list[dict[str, 
         return []
 
     cards = []
-    cash_rows = [row for row in recommendable_rows if row["kind"] == "cash"]
     award_rows = [row for row in recommendable_rows if row["kind"] == "award pair"]
     best_overall = best_overall_recommendation_row(complete_rows)
+    best_paid = best_paid_strategy_row(complete_rows)
     if best_overall:
         cards.append({"label": "Start here", "row": best_overall})
 
-    if cash_rows:
-        best_cash = min(
-            cash_rows,
-            key=lambda row: (
-                row["score"],
-                row["effective_num"],
-            ),
-        )
-        cards.append({"label": "Best cash option", "row": best_cash})
+    if best_paid:
+        cards.append({"label": "Best paid strategy", "row": best_paid})
 
     if award_rows:
         cards.append({"label": "Best points option", "row": min(award_rows, key=lambda row: (row["score"], row["effective_num"]))})
@@ -1946,15 +2110,15 @@ def recommendation_cards(complete_rows: list[dict[str, Any]]) -> list[dict[str, 
 
 
 def compact_card_label(labels: list[str]) -> str:
-    if "Start here" in labels and "Best cash option" in labels:
-        return "Start here + best cash option"
+    if "Start here" in labels and "Best paid strategy" in labels:
+        return "Start here + best paid strategy"
     if "Start here" in labels and "Lowest estimate" in labels:
         return "Start here + lowest estimate"
     if "Start here" in labels and "Lowest estimate, verify timing" in labels:
         return "Start here + lowest estimate"
     priority = [
         "Start here",
-        "Best cash option",
+        "Best paid strategy",
         "Best points option",
         "Lowest estimate",
         "Lowest estimate, verify timing",
@@ -2261,7 +2425,11 @@ def summary_rank_reason(row: dict[str, Any], label: str = "") -> str:
     label_lower = label.lower()
     if "start here" in label_lower:
         return "Best balance of price, timing, stops, and duration."
-    if "cash option" in label_lower or kind == "cash":
+    if "paid strategy" in label_lower:
+        if kind == "cash one-ways":
+            return "Best paid plan after comparing separate one-way tickets with true two-leg fares."
+        return "Best paid fare with one checkout."
+    if kind == "cash":
         return "Best paid fare with one checkout."
     if "points" in label_lower and kind == "award pair":
         return "Best points plan after mile value, taxes, timing, and stops."
@@ -2356,8 +2524,11 @@ def traveler_rank_reason(row: dict[str, Any], label: str = "") -> str:
         reason = "Best balance of estimated cost, stops, duration, and inconvenient flight times."
     elif "easiest" in label_lower:
         reason = "Least friction among the available plans: better timing, fewer stops, and complete details when available."
-    elif "all-cash" in label_lower or "cash option" in label_lower:
-        reason = "Strongest paid-fare option, useful when you want a simple booking path without points."
+    elif "all-cash" in label_lower or "paid strategy" in label_lower:
+        if kind == "cash one-ways":
+            reason = "Strongest paid-fare strategy after comparing separate one-way tickets with single two-leg fares."
+        else:
+            reason = "Strongest paid-fare option, useful when you want a simple booking path without points."
     elif "points" in label_lower and kind == "award pair":
         reason = "Strongest points-only plan after valuing miles, taxes, timing, and stops together."
     elif "cash + points" in label_lower or kind == "cash + award":
@@ -3053,7 +3224,14 @@ def write_master_html(
     point_controls = point_value_controls(all_rows)
     stop_filter_options = stop_limit_options(all_rows)
     date_constraints = date_constraint_summary(plan)
-    trip_record_selector = trip_record_selector_html(path, plan=plan, complete_rows=complete_rows)
+    trip_record_selector = trip_record_selector_html(
+        path,
+        plan=plan,
+        award_runs=award_runs,
+        cash_runs=cash_runs,
+        cash_one_way_runs=cash_one_way_runs,
+        complete_rows=complete_rows,
+    )
     checkbox_filters = "\n".join(
         item
         for item in [
@@ -3628,6 +3806,30 @@ def write_master_html(
       font-size: 16px;
       line-height: 1.25;
     }}
+    .record-controls-head {{
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+    }}
+    .record-sort {{
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #526173;
+      font-size: 11px;
+      line-height: 1;
+      font-weight: 760;
+      text-transform: none;
+    }}
+    .record-sort select {{
+      min-height: 28px;
+      width: auto;
+      max-width: 148px;
+      padding: 4px 26px 4px 8px;
+      font-size: 12px;
+      font-weight: 700;
+    }}
     .results-board h2 {{
       margin: 0;
       font-size: 17px;
@@ -3645,14 +3847,15 @@ def write_master_html(
     }}
     .record-link {{
       display: grid;
-      gap: 5px;
+      gap: 6px;
       min-width: 0;
-      padding: 10px 11px;
+      padding: 11px 12px;
       border: 1px solid var(--line);
       border-radius: 6px;
       background: #fbfdff;
       color: var(--ink);
       text-decoration: none;
+      transition: background-color 160ms ease-out, border-color 160ms ease-out;
     }}
     .record-link:hover {{
       border-color: #b7c7d6;
@@ -3665,7 +3868,13 @@ def write_master_html(
     .record-link.current {{
       border-color: var(--accent);
       background: var(--accent-soft);
-      box-shadow: inset 3px 0 0 var(--accent);
+    }}
+    .record-link-top {{
+      display: flex;
+      min-width: 0;
+      gap: 8px;
+      align-items: flex-start;
+      justify-content: space-between;
     }}
     .record-link strong {{
       color: var(--ink);
@@ -3674,21 +3883,10 @@ def write_master_html(
       font-weight: 820;
       overflow-wrap: anywhere;
     }}
-    .record-link > span {{
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.35;
-      font-weight: 650;
-      overflow-wrap: anywhere;
-    }}
-    .record-meta {{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-    }}
-    .record-meta span {{
+    .record-status {{
       display: inline-flex;
       align-items: center;
+      flex: 0 0 auto;
       min-height: 20px;
       border: 1px solid var(--metric-border);
       border-radius: 999px;
@@ -3698,6 +3896,31 @@ def write_master_html(
       font-size: 11px;
       line-height: 1;
       font-weight: 760;
+    }}
+    .record-status.current {{
+      border-color: #bfdbfe;
+      background: #dbeafe;
+      color: var(--accent-ink);
+    }}
+    .record-dates {{
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+      font-weight: 650;
+      overflow-wrap: anywhere;
+    }}
+    .record-link.current .record-dates {{
+      color: #244665;
+    }}
+    .record-meta {{
+      display: block;
+      color: #526173;
+      font-size: 11px;
+      line-height: 1.35;
+      font-weight: 680;
+    }}
+    .record-link.current .record-meta {{
+      color: #34516d;
     }}
     .quick-tabs {{
       display: grid;
@@ -4863,6 +5086,7 @@ def write_master_html(
       .report-shell.drawer-collapsed {{ grid-template-columns: 1fr; }}
       .report-content {{ grid-column: auto; grid-row: auto; order: 1; }}
       .global-controls {{ grid-column: auto; grid-row: auto; order: 2; position: static; max-height: none; }}
+      .record-list {{ grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }}
       .stats, .recommendations, .source-summary-grid, .controls {{ grid-template-columns: 1fr 1fr; }}
       .builder-grid {{ grid-template-columns: 1fr; }}
       .builder-header {{ grid-template-columns: 1fr; }}
@@ -4871,6 +5095,10 @@ def write_master_html(
       h1 {{ font-size: 24px; }}
     }}
     @media (max-width: 620px) {{
+      .record-controls-head {{ grid-template-columns: 1fr; align-items: start; }}
+      .record-sort {{ justify-content: space-between; }}
+      .record-sort select {{ max-width: none; flex: 1; }}
+      .record-list {{ grid-template-columns: 1fr; }}
       .stats, .recommendations, .source-summary-grid, .controls {{ grid-template-columns: 1fr; }}
       .rec-legs {{ grid-template-columns: 1fr; }}
       .rec-leg-top {{ grid-template-columns: 1fr; }}
@@ -5075,6 +5303,8 @@ def write_master_html(
     const timePenaltySelectedValue = document.querySelector("#timePenaltySelectedValue");
     const outboundSort = document.querySelector("#outboundSort");
     const returnSort = document.querySelector("#returnSort");
+    const tripRecordSort = document.querySelector("#tripRecordSort");
+    const tripRecordList = document.querySelector(".record-list");
     const visiblePlanCount = document.querySelector("#visiblePlanCount");
     const planResults = document.querySelector("#planResults");
     const planTemplate = document.querySelector("#planResultsTemplate");
@@ -5091,6 +5321,7 @@ def write_master_html(
     const buildResultCount = document.querySelector("#buildResultCount");
     const tables = Array.from(document.querySelectorAll("table"));
     const rows = Array.from(document.querySelectorAll("tbody tr"));
+    const tripRecordLinks = Array.from(tripRecordList ? tripRecordList.querySelectorAll(".record-link") : []);
     const cards = Array.from(planResults ? planResults.querySelectorAll(".trip-card") : []);
     const recommendations = Array.from(document.querySelectorAll(".recommendation[data-section='summary']"));
     const scoreItems = [...rows, ...cards, ...recommendations];
@@ -5099,8 +5330,15 @@ def write_master_html(
     let selectedReturnKey = "";
     let selectedTimeHour = 0;
     let currentKindPreset = "";
+    const TRIP_RECORD_SORT_KEY = "flightSearchTripRecordSort";
     const INITIAL_MATCH_LIMIT = 8;
     let showAllBuilderMatches = false;
+    try {{
+      const savedTripRecordSort = window.localStorage.getItem(TRIP_RECORD_SORT_KEY);
+      if (savedTripRecordSort && tripRecordSort && Array.from(tripRecordSort.options).some(option => option.value === savedTripRecordSort)) {{
+        tripRecordSort.value = savedTripRecordSort;
+      }}
+    }} catch {{}}
     const defaultScoreValues = {{
       stop: scoreControls.stop.value,
       duration: scoreControls.duration.value
@@ -5109,6 +5347,7 @@ def write_master_html(
     const defaultFilterValues = Object.values(controls).map(control => [control, control.value]);
     const defaultCheckboxValues = checkboxFilters.map(control => [control, control.checked]);
     const defaultKindPreset = currentKindPreset;
+    const defaultTripRecordSort = "updated";
     const defaultOutboundSort = outboundSort.value;
     const defaultReturnSort = returnSort.value;
     const defaultHourlyPenalties = [...(scoreConfig.timePenaltyDefaults || Array(24).fill(0))];
@@ -5327,6 +5566,40 @@ def write_master_html(
       controlDrawerToggle.setAttribute("aria-label", collapsed ? "Show trip controls" : "Hide trip controls");
       controlDrawerToggle.textContent = collapsed ? "<" : ">";
     }}
+    function tripRecordNumber(link, key) {{
+      const value = Number(link.dataset[key] || 0);
+      return Number.isFinite(value) ? value : 0;
+    }}
+    function tripRecordText(link, key) {{
+      const value = (link.dataset[key] || "").toLowerCase();
+      return value || "\uffff";
+    }}
+    function compareTripRecordText(a, b, key) {{
+      return tripRecordText(a, key).localeCompare(tripRecordText(b, key));
+    }}
+    function sortTripRecords() {{
+      if (!tripRecordList || !tripRecordSort) return;
+      const mode = tripRecordSort.value;
+      const sorted = [...tripRecordLinks].sort((a, b) => {{
+        let result = 0;
+        if (mode === "updated") {{
+          result = tripRecordNumber(b, "sortUpdated") - tripRecordNumber(a, "sortUpdated");
+        }} else if (mode === "outbound") {{
+          result = compareTripRecordText(a, b, "sortOutbound");
+        }} else if (mode === "return") {{
+          result = compareTripRecordText(a, b, "sortReturn");
+        }} else if (mode === "origin") {{
+          result = compareTripRecordText(a, b, "sortOrigin");
+        }} else if (mode === "destination") {{
+          result = compareTripRecordText(a, b, "sortDestination");
+        }} else if (mode === "plans") {{
+          result = tripRecordNumber(b, "sortPlans") - tripRecordNumber(a, "sortPlans");
+        }}
+        if (result !== 0) return result;
+        return tripRecordNumber(a, "sortIndex") - tripRecordNumber(b, "sortIndex");
+      }});
+      sorted.forEach(link => tripRecordList.appendChild(link));
+    }}
     function resetTripControls() {{
       scoreControls.stop.value = defaultScoreValues.stop;
       scoreControls.duration.value = defaultScoreValues.duration;
@@ -5340,6 +5613,12 @@ def write_master_html(
         control.checked = checked;
       }});
       currentKindPreset = defaultKindPreset;
+      if (tripRecordSort) {{
+        tripRecordSort.value = defaultTripRecordSort;
+        try {{
+          window.localStorage.setItem(TRIP_RECORD_SORT_KEY, tripRecordSort.value);
+        }} catch {{}}
+      }}
       outboundSort.value = defaultOutboundSort;
       returnSort.value = defaultReturnSort;
       selectedOutboundKey = "";
@@ -5353,6 +5632,7 @@ def write_master_html(
         if (checkbox) checkbox.checked = false;
       }});
       refreshScoresAndViews();
+      sortTripRecords();
       renderBuilder();
     }}
     function refreshScoresAndViews() {{
@@ -5929,6 +6209,14 @@ def write_master_html(
       setControlDrawerCollapsed(!reportShell.classList.contains("drawer-collapsed"));
     }});
     controlReset.addEventListener("click", resetTripControls);
+    if (tripRecordSort) {{
+      tripRecordSort.addEventListener("change", () => {{
+        try {{
+          window.localStorage.setItem(TRIP_RECORD_SORT_KEY, tripRecordSort.value);
+        }} catch {{}}
+        sortTripRecords();
+      }});
+    }}
     timeHourSelect.addEventListener("change", () => {{
       selectedTimeHour = Number(timeHourSelect.value || 0);
       syncTimeEditor();
@@ -6032,6 +6320,7 @@ def write_master_html(
         updateCompareTray();
       }}
     }});
+    sortTripRecords();
     refreshScoresAndViews();
     renderBuilder();
   </script>

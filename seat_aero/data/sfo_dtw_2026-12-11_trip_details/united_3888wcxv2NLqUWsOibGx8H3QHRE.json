@@ -1,0 +1,1490 @@
+{
+  "booking_links": [
+    {
+      "label": "Book via United MileagePlus",
+      "link": "https://www.united.com/en/us/fsr/choose-flights?f=SFO&t=DTW&d=2026-12-11&sc=7&st=bestmatches&cbm=-1&cbm2=-1&ft=0&cp=0&tt=1&at=1&rm=1&act=0&px=1&taxng=1&clm=7&tqp=A&utm_source=seatsaero",
+      "primary": true
+    },
+    {
+      "label": "Book via Air Canada Aeroplan",
+      "link": "https://www.aircanada.com/aeroplan/redeem/availability/outbound?org0=SFO&dest0=DTW&departureDate0=2026-12-11&lang=en-CA&tripType=O&ADT=1&YTH=0&CHD=0&INF=0&INS=0&marketCode=INT",
+      "primary": false
+    },
+    {
+      "label": "Book via Copa ConnectMiles",
+      "link": "https://shopping.copaair.com/miles?roundtrip=false&area1=SFO&area2=DTW&date1=2026-12-11&date2=&flexible_dates_v2=false&adults=1&children=0&infants=0&isMiles=true&advanced_air_search=false&stopover=false&sf=gs&langid=en&promocode=",
+      "primary": false
+    }
+  ],
+  "carriers": {
+    "UA": "United Airlines"
+  },
+  "data": [
+    {
+      "Aircraft": [
+        "Boeing 757-300",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-12-11T23:52:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "753",
+          "AircraftName": "Boeing 757-300",
+          "ArrivesAt": "2026-12-11T20:22:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLem8ID4Iqp3pwbE82p149FkJ",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-11T14:00:00Z",
+          "DestinationAirport": "ORD",
+          "Distance": 1844,
+          "Duration": 262,
+          "FareClass": "YN",
+          "FlightNumber": "UA1124",
+          "ID": "3FNLelUjSSBMGjI91XuRbjO6xyo",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-12-11T23:52:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLem8ID4Iqp3pwbE82p149FkJ",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-11T21:30:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 234,
+          "Duration": 82,
+          "FareClass": "YN",
+          "FlightNumber": "UA5478",
+          "ID": "3FNLembeiIbVKSV0Mx98FtguLdX",
+          "Order": 1,
+          "OriginAirport": "ORD",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "ORD"
+      ],
+      "CreatedAt": "2026-06-19T23:11:17.441606Z",
+      "DepartsAt": "2026-12-11T14:00:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA1124, UA5478",
+      "ID": "3FNLem8ID4Iqp3pwbE82p149FkJ",
+      "MileageCost": 28600,
+      "OptionalPrices": {
+        "UACARD": 25700
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 412,
+      "TotalSegmentDistance": 2078,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Airbus A319"
+      ],
+      "ArrivesAt": "2026-12-11T16:57:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-12-11T11:24:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLekcHs6ovJYysMn7Sl7ahsvs",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-11T05:00:00Z",
+          "DestinationAirport": "ORD",
+          "Distance": 1844,
+          "Duration": 264,
+          "FareClass": "YN",
+          "FlightNumber": "UA1248",
+          "ID": "3FNLemMrTtpMrBYzlT93c5qnHrN",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "319",
+          "AircraftName": "Airbus A319",
+          "ArrivesAt": "2026-12-11T16:57:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLekcHs6ovJYysMn7Sl7ahsvs",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-11T14:30:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 234,
+          "Duration": 87,
+          "FareClass": "YN",
+          "FlightNumber": "UA1727",
+          "ID": "3FNLelibsfoRVeRmHDYSFNnoddI",
+          "Order": 1,
+          "OriginAirport": "ORD",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "ORD"
+      ],
+      "CreatedAt": "2026-06-19T23:11:17.441606Z",
+      "DepartsAt": "2026-12-11T05:00:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA1248, UA1727",
+      "ID": "3FNLekcHs6ovJYysMn7Sl7ahsvs",
+      "MileageCost": 29600,
+      "OptionalPrices": {
+        "UACARD": 26600
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 537,
+      "TotalSegmentDistance": 2078,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-12-12T10:06:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-12-12T07:05:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x1x99JkoPXTeEFhKTLHp9yqM",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-11T22:35:00Z",
+          "DestinationAirport": "IAD",
+          "Distance": 2416,
+          "Duration": 330,
+          "FareClass": "YN",
+          "FlightNumber": "UA2837",
+          "ID": "3F4x23F3lhPEzxed4ls1s34BbkP",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-12-12T10:06:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x1x99JkoPXTeEFhKTLHp9yqM",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-12T08:30:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 383,
+          "Duration": 96,
+          "FareClass": "YN",
+          "FlightNumber": "UA6137",
+          "ID": "3F4x1ycemRgrUuxvMX6RwkSJHML",
+          "Order": 1,
+          "OriginAirport": "IAD",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAD"
+      ],
+      "CreatedAt": "2026-06-13T10:52:11.730351Z",
+      "DepartsAt": "2026-12-11T22:35:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA2837, UA6137",
+      "ID": "3F4x1x99JkoPXTeEFhKTLHp9yqM",
+      "MileageCost": 22100,
+      "OptionalPrices": {
+        "UACARD": 19800
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 511,
+      "TotalSegmentDistance": 2799,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A321neo",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-12-12T09:50:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A321neo",
+          "ArrivesAt": "2026-12-12T05:04:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLeog4K8XECQlkZcWl6bwE9WS",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-11T22:45:00Z",
+          "DestinationAirport": "ORD",
+          "Distance": 1844,
+          "Duration": 259,
+          "FareClass": "YN",
+          "FlightNumber": "UA2278",
+          "ID": "3FNLeoXrgK5KWRjkaM0sQG77ggK",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-12-12T09:50:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLeog4K8XECQlkZcWl6bwE9WS",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-12T07:30:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 234,
+          "Duration": 80,
+          "FareClass": "YN",
+          "FlightNumber": "UA5717",
+          "ID": "3FNLephXdYSVYJSGBv74RUuV0aJ",
+          "Order": 1,
+          "OriginAirport": "ORD",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "ORD"
+      ],
+      "CreatedAt": "2026-06-19T23:11:17.441606Z",
+      "DepartsAt": "2026-12-11T22:45:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA2278, UA5717",
+      "ID": "3FNLeog4K8XECQlkZcWl6bwE9WS",
+      "MileageCost": 22500,
+      "OptionalPrices": {
+        "UACARD": 20200
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 485,
+      "TotalSegmentDistance": 2078,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 777",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-12-11T23:59:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "777",
+          "AircraftName": "Boeing 777",
+          "ArrivesAt": "2026-12-11T21:27:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x20kPMbUAaqromv9tJWRQj7W",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-11T13:10:00Z",
+          "DestinationAirport": "IAD",
+          "Distance": 2416,
+          "Duration": 317,
+          "FareClass": "YN",
+          "FlightNumber": "UA755",
+          "ID": "3F4x220TgvXtI7x9Ikltt22w98p",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-12-11T23:59:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x20kPMbUAaqromv9tJWRQj7W",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-11T22:20:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 383,
+          "Duration": 99,
+          "FareClass": "YN",
+          "FlightNumber": "UA4024",
+          "ID": "3F4x1ygiWo9tbPb0mrvzTxCtDNx",
+          "Order": 1,
+          "OriginAirport": "IAD",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAD"
+      ],
+      "CreatedAt": "2026-06-13T10:52:11.730351Z",
+      "DepartsAt": "2026-12-11T13:10:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA755, UA4024",
+      "ID": "3F4x20kPMbUAaqromv9tJWRQj7W",
+      "MileageCost": 31900,
+      "OptionalPrices": {
+        "UACARD": 28700
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 469,
+      "TotalSegmentDistance": 2799,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 757-200",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-12-11T23:59:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "752",
+          "AircraftName": "Boeing 757-200",
+          "ArrivesAt": "2026-12-11T19:07:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x20ADWflvpb1T17nsWsc1yzV",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-11T10:45:00Z",
+          "DestinationAirport": "IAD",
+          "Distance": 2416,
+          "Duration": 322,
+          "FareClass": "YN",
+          "FlightNumber": "UA336",
+          "ID": "3F4x20kGvItGjS7odhpXys66uOL",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-12-11T23:59:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x20ADWflvpb1T17nsWsc1yzV",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-11T22:20:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 383,
+          "Duration": 99,
+          "FareClass": "YN",
+          "FlightNumber": "UA4024",
+          "ID": "3F4x1yIGdTs84IqkkIWW7aSez7V",
+          "Order": 1,
+          "OriginAirport": "IAD",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAD"
+      ],
+      "CreatedAt": "2026-06-13T10:52:11.730351Z",
+      "DepartsAt": "2026-12-11T10:45:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA336, UA4024",
+      "ID": "3F4x20ADWflvpb1T17nsWsc1yzV",
+      "MileageCost": 47600,
+      "OptionalPrices": {
+        "UACARD": 42800
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 614,
+      "TotalSegmentDistance": 2799,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 777",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-12-12T13:34:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "777",
+          "AircraftName": "Boeing 777",
+          "ArrivesAt": "2026-12-12T07:34:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLenmHr7KM4J1SHbpmskxr7Ws",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-11T22:50:00Z",
+          "DestinationAirport": "EWR",
+          "Distance": 2562,
+          "Duration": 344,
+          "FareClass": "YN",
+          "FlightNumber": "UA649",
+          "ID": "3FNLelfNTxUD30jcHncGeqGY6Bx",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-12-12T13:34:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLenmHr7KM4J1SHbpmskxr7Ws",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-12T11:30:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 487,
+          "Duration": 124,
+          "FareClass": "YN",
+          "FlightNumber": "UA3425",
+          "ID": "3FNLel24f93KWbvuGaonsoYoTSs",
+          "Order": 1,
+          "OriginAirport": "EWR",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "EWR"
+      ],
+      "CreatedAt": "2026-06-19T23:11:17.441606Z",
+      "DepartsAt": "2026-12-11T22:50:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA649, UA3425",
+      "ID": "3FNLenmHr7KM4J1SHbpmskxr7Ws",
+      "MileageCost": 48800,
+      "OptionalPrices": {
+        "UACARD": 43900
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 704,
+      "TotalSegmentDistance": 3049,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-12-11T15:29:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-12-11T11:24:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLeoRuw54ttdOXMR4oGg7ZQuI",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-11T05:00:00Z",
+          "DestinationAirport": "ORD",
+          "Distance": 1844,
+          "Duration": 264,
+          "FareClass": "YN",
+          "FlightNumber": "UA1248",
+          "ID": "3FNLeosgGwxxkPe33EDSdp9yPNT",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-12-11T15:29:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLeoRuw54ttdOXMR4oGg7ZQuI",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-11T12:50:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 234,
+          "Duration": 99,
+          "FareClass": "YN",
+          "FlightNumber": "UA3719",
+          "ID": "3FNLekG9D3TOlEDavefAqKuW0qC",
+          "Order": 1,
+          "OriginAirport": "ORD",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "ORD"
+      ],
+      "CreatedAt": "2026-06-19T23:11:17.441606Z",
+      "DepartsAt": "2026-12-11T05:00:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA1248, UA3719",
+      "ID": "3FNLeoRuw54ttdOXMR4oGg7ZQuI",
+      "MileageCost": 37900,
+      "OptionalPrices": {
+        "UACARD": 34100
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 449,
+      "TotalSegmentDistance": 2078,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 757-200",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-12-12T13:34:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "752",
+          "AircraftName": "Boeing 757-200",
+          "ArrivesAt": "2026-12-12T08:37:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLemii2JyNJw5HhyqxAKWkUGq",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-11T23:55:00Z",
+          "DestinationAirport": "EWR",
+          "Distance": 2562,
+          "Duration": 342,
+          "FareClass": "YN",
+          "FlightNumber": "UA1141",
+          "ID": "3FNLemh98Yy2veHMVml5Udvo1ib",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-12-12T13:34:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLemii2JyNJw5HhyqxAKWkUGq",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-12T11:30:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 487,
+          "Duration": 124,
+          "FareClass": "YN",
+          "FlightNumber": "UA3425",
+          "ID": "3FNLem3a23aXI6Bj5OKIcgrgvNs",
+          "Order": 1,
+          "OriginAirport": "EWR",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "EWR"
+      ],
+      "CreatedAt": "2026-06-19T23:11:17.441606Z",
+      "DepartsAt": "2026-12-11T23:55:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA1141, UA3425",
+      "ID": "3FNLemii2JyNJw5HhyqxAKWkUGq",
+      "MileageCost": 48800,
+      "OptionalPrices": {
+        "UACARD": 43900
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 639,
+      "TotalSegmentDistance": 3049,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-12-12T09:50:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-12-12T05:47:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLejz0SkeddzySzgubyibhOb7",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-11T23:30:00Z",
+          "DestinationAirport": "ORD",
+          "Distance": 1844,
+          "Duration": 257,
+          "FareClass": "X",
+          "FlightNumber": "UA368",
+          "ID": "3FNLejfBqPw9SmLgFeXizZLDVvL",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-12-12T09:50:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLejz0SkeddzySzgubyibhOb7",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-12T07:30:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 234,
+          "Duration": 80,
+          "FareClass": "X",
+          "FlightNumber": "UA5717",
+          "ID": "3FNLek00AG8Fi8iNTXWLKCc3sRw",
+          "Order": 1,
+          "OriginAirport": "ORD",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "ORD"
+      ],
+      "CreatedAt": "2026-06-19T23:11:17.441606Z",
+      "DepartsAt": "2026-12-11T23:30:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "X",
+        "X"
+      ],
+      "FlightNumbers": "UA368, UA5717",
+      "ID": "3FNLejz0SkeddzySzgubyibhOb7",
+      "MileageCost": 15000,
+      "OptionalPrices": {
+        "UACARD": 13500
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 2,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 440,
+      "TotalSegmentDistance": 2078,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A321neo",
+        "Airbus A319"
+      ],
+      "ArrivesAt": "2026-12-11T16:57:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A321neo",
+          "ArrivesAt": "2026-12-11T13:01:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x23uES8HTMT407jIY1SpraV4",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-11T06:35:00Z",
+          "DestinationAirport": "ORD",
+          "Distance": 1844,
+          "Duration": 266,
+          "FareClass": "YN",
+          "FlightNumber": "UA2091",
+          "ID": "3F4x23h19FjL384eoAzyuGsM89D",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "319",
+          "AircraftName": "Airbus A319",
+          "ArrivesAt": "2026-12-11T16:57:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x23uES8HTMT407jIY1SpraV4",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-11T14:30:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 234,
+          "Duration": 87,
+          "FareClass": "YN",
+          "FlightNumber": "UA1727",
+          "ID": "3F4x1z6dF0fQScTZV6AmQWI6u3l",
+          "Order": 1,
+          "OriginAirport": "ORD",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "ORD"
+      ],
+      "CreatedAt": "2026-06-13T10:52:11.730351Z",
+      "DepartsAt": "2026-12-11T06:35:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA2091, UA1727",
+      "ID": "3F4x23uES8HTMT407jIY1SpraV4",
+      "MileageCost": 35400,
+      "OptionalPrices": {
+        "UACARD": 31800
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 442,
+      "TotalSegmentDistance": 2078,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 777",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-12-11T13:45:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "777",
+          "AircraftName": "Boeing 777",
+          "ArrivesAt": "2026-12-11T06:28:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x1xApN9VJ2CEerkawvagn2aR",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-11T00:45:00Z",
+          "DestinationAirport": "IAH",
+          "Distance": 1635,
+          "Duration": 223,
+          "FareClass": "YN",
+          "FlightNumber": "UA604",
+          "ID": "3F4x23yIQbXq4o551HnPAJ9ySOT",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-12-11T13:45:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x1xApN9VJ2CEerkawvagn2aR",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-11T09:50:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1076,
+          "Duration": 175,
+          "FareClass": "YN",
+          "FlightNumber": "UA4064",
+          "ID": "3F4x20XApIL3PdHNIrElazpxAvv",
+          "Order": 1,
+          "OriginAirport": "IAH",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAH"
+      ],
+      "CreatedAt": "2026-06-13T10:52:11.730351Z",
+      "DepartsAt": "2026-12-11T00:45:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA604, UA4064",
+      "ID": "3F4x1xApN9VJ2CEerkawvagn2aR",
+      "MileageCost": 26800,
+      "OptionalPrices": {
+        "UACARD": 24100
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 600,
+      "TotalSegmentDistance": 2711,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-12-12T10:06:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-12-12T07:25:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x228pQAempb7vZVq2cV2owK6",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-11T22:55:00Z",
+          "DestinationAirport": "IAD",
+          "Distance": 2416,
+          "Duration": 330,
+          "FareClass": "YN",
+          "FlightNumber": "UA2111",
+          "ID": "3F4x1z5mlEsk91HzuKt5stjbHLp",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-12-12T10:06:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x228pQAempb7vZVq2cV2owK6",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-12T08:30:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 383,
+          "Duration": 96,
+          "FareClass": "YN",
+          "FlightNumber": "UA6137",
+          "ID": "3F4x21Htm0Zsb3miBw8pKUWebcZ",
+          "Order": 1,
+          "OriginAirport": "IAD",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAD"
+      ],
+      "CreatedAt": "2026-06-13T10:52:11.730351Z",
+      "DepartsAt": "2026-12-11T22:55:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA2111, UA6137",
+      "ID": "3F4x228pQAempb7vZVq2cV2owK6",
+      "MileageCost": 22100,
+      "OptionalPrices": {
+        "UACARD": 19800
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 491,
+      "TotalSegmentDistance": 2799,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Airbus A319"
+      ],
+      "ArrivesAt": "2026-12-11T23:44:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-12-11T16:52:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLeium51Bl13jUaEFEKg7ILu4",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-11T10:47:00Z",
+          "DestinationAirport": "IAH",
+          "Distance": 1635,
+          "Duration": 245,
+          "FareClass": "YN",
+          "FlightNumber": "UA1259",
+          "ID": "3FNLeoZEVkyVXm145NBxNbI5ntH",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "319",
+          "AircraftName": "Airbus A319",
+          "ArrivesAt": "2026-12-11T23:44:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLeium51Bl13jUaEFEKg7ILu4",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-11T20:00:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1076,
+          "Duration": 164,
+          "FareClass": "YN",
+          "FlightNumber": "UA1528",
+          "ID": "3FNLekQ57lSiVcAKdiqBvGW0tvP",
+          "Order": 1,
+          "OriginAirport": "IAH",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAH"
+      ],
+      "CreatedAt": "2026-06-19T23:11:17.441606Z",
+      "DepartsAt": "2026-12-11T10:47:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA1259, UA1528",
+      "ID": "3FNLeium51Bl13jUaEFEKg7ILu4",
+      "MileageCost": 41600,
+      "OptionalPrices": {
+        "UACARD": 37400
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 597,
+      "TotalSegmentDistance": 2711,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Airbus A319"
+      ],
+      "ArrivesAt": "2026-12-11T23:44:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-12-11T18:38:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLeodN2bCG6M3CVGdE1BkSspo",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-11T12:33:00Z",
+          "DestinationAirport": "IAH",
+          "Distance": 1635,
+          "Duration": 245,
+          "FareClass": "YN",
+          "FlightNumber": "UA1387",
+          "ID": "3FNLepaDYNoMusmSj9LqyC2SSZ7",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "319",
+          "AircraftName": "Airbus A319",
+          "ArrivesAt": "2026-12-11T23:44:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3FNLeodN2bCG6M3CVGdE1BkSspo",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-19T23:11:17.441606Z",
+          "DepartsAt": "2026-12-11T20:00:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1076,
+          "Duration": 164,
+          "FareClass": "YN",
+          "FlightNumber": "UA1528",
+          "ID": "3FNLencUqmldXaKfX2qhhdRDL6Z",
+          "Order": 1,
+          "OriginAirport": "IAH",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAH"
+      ],
+      "CreatedAt": "2026-06-19T23:11:17.441606Z",
+      "DepartsAt": "2026-12-11T12:33:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA1387, UA1528",
+      "ID": "3FNLeodN2bCG6M3CVGdE1BkSspo",
+      "MileageCost": 37800,
+      "OptionalPrices": {
+        "UACARD": 34000
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 491,
+      "TotalSegmentDistance": 2711,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-12-12T10:06:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-12-12T06:00:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x23jVj20u6vDjJuNGJzuMcJ9",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-11T21:30:00Z",
+          "DestinationAirport": "IAD",
+          "Distance": 2416,
+          "Duration": 330,
+          "FareClass": "YN",
+          "FlightNumber": "UA705",
+          "ID": "3F4x1xVJqnetEYhExl9OpgsvTIm",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-12-12T10:06:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x23jVj20u6vDjJuNGJzuMcJ9",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-12T08:30:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 383,
+          "Duration": 96,
+          "FareClass": "YN",
+          "FlightNumber": "UA6137",
+          "ID": "3F4x238L51KgAMiNuHbNsMlBZmN",
+          "Order": 1,
+          "OriginAirport": "IAD",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAD"
+      ],
+      "CreatedAt": "2026-06-13T10:52:11.730351Z",
+      "DepartsAt": "2026-12-11T21:30:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA705, UA6137",
+      "ID": "3F4x23jVj20u6vDjJuNGJzuMcJ9",
+      "MileageCost": 22100,
+      "OptionalPrices": {
+        "UACARD": 19800
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 576,
+      "TotalSegmentDistance": 2799,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737 MAX 9",
+        "Embraer E175"
+      ],
+      "ArrivesAt": "2026-12-12T13:45:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "7M9",
+          "AircraftName": "Boeing 737 MAX 9",
+          "ArrivesAt": "2026-12-12T05:51:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x1zh6pIdnKO8mqvoeqqj8gYD",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-11T23:59:00Z",
+          "DestinationAirport": "IAH",
+          "Distance": 1635,
+          "Duration": 232,
+          "FareClass": "YN",
+          "FlightNumber": "UA505",
+          "ID": "3F4x23kOpXFxGKN0OrrURqRTYCR",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2026-12-12T13:45:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x1zh6pIdnKO8mqvoeqqj8gYD",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-12T09:50:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1076,
+          "Duration": 175,
+          "FareClass": "YN",
+          "FlightNumber": "UA4064",
+          "ID": "3F4x22wvOC7FKLxMItqIxqgi1jZ",
+          "Order": 1,
+          "OriginAirport": "IAH",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAH"
+      ],
+      "CreatedAt": "2026-06-13T10:52:11.730351Z",
+      "DepartsAt": "2026-12-11T23:59:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA505, UA4064",
+      "ID": "3F4x1zh6pIdnKO8mqvoeqqj8gYD",
+      "MileageCost": 41600,
+      "OptionalPrices": {
+        "UACARD": 37400
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 646,
+      "TotalSegmentDistance": 2711,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A321neo",
+        "Airbus A320"
+      ],
+      "ArrivesAt": "2026-12-11T15:14:00Z",
+      "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A321neo",
+          "ArrivesAt": "2026-12-11T08:39:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x1xVe4f5xGipC60ZkeVeAl0W",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-11T05:00:00Z",
+          "DestinationAirport": "DEN",
+          "Distance": 966,
+          "Duration": 159,
+          "FareClass": "YN",
+          "FlightNumber": "UA1479",
+          "ID": "3F4x201mY8NK4yzKzpwZa5RvygN",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        },
+        {
+          "AircraftCode": "320",
+          "AircraftName": "Airbus A320",
+          "ArrivesAt": "2026-12-11T15:14:00Z",
+          "AvailabilityID": "3888wcxv2NLqUWsOibGx8H3QHRE",
+          "AvailabilityTripID": "3F4x1xVe4f5xGipC60ZkeVeAl0W",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-13T10:52:11.730351Z",
+          "DepartsAt": "2026-12-11T10:30:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1121,
+          "Duration": 164,
+          "FareClass": "YN",
+          "FlightNumber": "UA1915",
+          "ID": "3F4x20UhEwL4p6RsDzsWkMobLY8",
+          "Order": 1,
+          "OriginAirport": "DEN",
+          "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+          "Source": "united",
+          "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "DEN"
+      ],
+      "CreatedAt": "2026-06-13T10:52:11.730351Z",
+      "DepartsAt": "2026-12-11T05:00:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "YN",
+        "YN"
+      ],
+      "FlightNumbers": "UA1479, UA1915",
+      "ID": "3F4x1xVe4f5xGipC60ZkeVeAl0W",
+      "MileageCost": 35800,
+      "OptionalPrices": {
+        "UACARD": 32200
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2fLNdgLhAPC92DLQfg271DZe2BJ",
+      "Source": "united",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 434,
+      "TotalSegmentDistance": 2087,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-27T04:00:14.113574Z"
+    }
+  ],
+  "destination_coordinates": {
+    "Lat": 42.207808,
+    "Lon": -83.356048
+  },
+  "origin_coordinates": {
+    "Lat": 37.615215,
+    "Lon": -122.389881
+  }
+}

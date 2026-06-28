@@ -1,0 +1,2356 @@
+{
+  "evidence": {
+    "result_count": 21,
+    "top_n": 3,
+    "transport": "fli"
+  },
+  "provider": "fli",
+  "provider_api_variant": "python-api",
+  "provider_package": "flights",
+  "provider_version": "0.9.0",
+  "request": {
+    "adults": 1,
+    "cabin": "economy",
+    "currency": "USD",
+    "departure_date": "2026-09-04",
+    "destination": "CUN",
+    "fetch_mode": "fallback",
+    "max_stops": null,
+    "origin": "SFO",
+    "return_date": "2026-09-07",
+    "return_destination": "SJC",
+    "return_origin": "CUN",
+    "trip_type": "multi-city"
+  },
+  "result": {
+    "current_price": "",
+    "flights": [
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": true,
+        "legs": [
+          {
+            "arrival": "16:12",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "08:51",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "5h 21m",
+            "duration_minutes": 321,
+            "flight_numbers": "UA 1679",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T16:12:00",
+                "arrive_time": "16:12",
+                "depart_datetime": "2026-09-04T08:51:00",
+                "depart_time": "08:51",
+                "destination": "CUN",
+                "duration_minutes": 321,
+                "flight_number": "1679",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "20:57",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "07:51",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "15h 6m",
+            "duration_minutes": 906,
+            "flight_numbers": "UA 1059 / UA 2168 / UA 2745",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 135,
+                "overnight": false
+              },
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 301,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T10:15:00",
+                "arrive_time": "10:15",
+                "depart_datetime": "2026-09-07T07:51:00",
+                "depart_time": "07:51",
+                "destination": "IAH",
+                "duration_minutes": 144,
+                "flight_number": "1059",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T14:15:00",
+                "arrive_time": "14:15",
+                "depart_datetime": "2026-09-07T12:30:00",
+                "depart_time": "12:30",
+                "destination": "DEN",
+                "duration_minutes": 165,
+                "flight_number": "2168",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T20:57:00",
+                "arrive_time": "20:57",
+                "depart_datetime": "2026-09-07T19:16:00",
+                "depart_time": "19:16",
+                "destination": "SJC",
+                "duration_minutes": 161,
+                "flight_number": "2745",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 899.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "16:12",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "08:51",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "5h 21m",
+            "duration_minutes": 321,
+            "flight_numbers": "UA 1679",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T16:12:00",
+                "arrive_time": "16:12",
+                "depart_datetime": "2026-09-04T08:51:00",
+                "depart_time": "08:51",
+                "destination": "CUN",
+                "duration_minutes": 321,
+                "flight_number": "1679",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "22:50",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "12:11",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "12h 39m",
+            "duration_minutes": 759,
+            "flight_numbers": "UA 1196 / UA 481",
+            "layovers": [
+              {
+                "airport": "ORD",
+                "change_of_airport": false,
+                "duration_minutes": 239,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T16:04:00",
+                "arrive_time": "16:04",
+                "depart_datetime": "2026-09-07T12:11:00",
+                "depart_time": "12:11",
+                "destination": "ORD",
+                "duration_minutes": 233,
+                "flight_number": "1196",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T22:50:00",
+                "arrive_time": "22:50",
+                "depart_datetime": "2026-09-07T20:03:00",
+                "depart_time": "20:03",
+                "destination": "SJC",
+                "duration_minutes": 287,
+                "flight_number": "481",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ORD"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1208.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "16:12",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "08:51",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "5h 21m",
+            "duration_minutes": 321,
+            "flight_numbers": "UA 1679",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T16:12:00",
+                "arrive_time": "16:12",
+                "depart_datetime": "2026-09-04T08:51:00",
+                "depart_time": "08:51",
+                "destination": "CUN",
+                "duration_minutes": 321,
+                "flight_number": "1679",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "17:31",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "07:51",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "11h 40m",
+            "duration_minutes": 700,
+            "flight_numbers": "UA 1059 / UA 2168 / UA 1883",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 135,
+                "overnight": false
+              },
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 100,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T10:15:00",
+                "arrive_time": "10:15",
+                "depart_datetime": "2026-09-07T07:51:00",
+                "depart_time": "07:51",
+                "destination": "IAH",
+                "duration_minutes": 144,
+                "flight_number": "1059",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T14:15:00",
+                "arrive_time": "14:15",
+                "depart_datetime": "2026-09-07T12:30:00",
+                "depart_time": "12:30",
+                "destination": "DEN",
+                "duration_minutes": 165,
+                "flight_number": "2168",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T17:31:00",
+                "arrive_time": "17:31",
+                "depart_datetime": "2026-09-07T15:55:00",
+                "depart_time": "15:55",
+                "destination": "SJC",
+                "duration_minutes": 156,
+                "flight_number": "1883",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 1352.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "16:12",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "08:51",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "5h 21m",
+            "duration_minutes": 321,
+            "flight_numbers": "UA 1679",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T16:12:00",
+                "arrive_time": "16:12",
+                "depart_datetime": "2026-09-04T08:51:00",
+                "depart_time": "08:51",
+                "destination": "CUN",
+                "duration_minutes": 321,
+                "flight_number": "1679",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "22:32",
+            "arrival_time_ahead": "",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "10:50",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "13h 42m",
+            "duration_minutes": 822,
+            "flight_numbers": "AA 1601 / AA 364",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 430,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T10:50:00",
+                "depart_time": "10:50",
+                "destination": "DFW",
+                "duration_minutes": 180,
+                "flight_number": "1601",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T22:32:00",
+                "arrive_time": "22:32",
+                "depart_datetime": "2026-09-07T21:00:00",
+                "depart_time": "21:00",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "364",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 2836.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "16:12",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "08:51",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "5h 21m",
+            "duration_minutes": 321,
+            "flight_numbers": "UA 1679",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T16:12:00",
+                "arrive_time": "16:12",
+                "depart_datetime": "2026-09-04T08:51:00",
+                "depart_time": "08:51",
+                "destination": "CUN",
+                "duration_minutes": 321,
+                "flight_number": "1679",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "22:32",
+            "arrival_time_ahead": "",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "12:08",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "12h 24m",
+            "duration_minutes": 744,
+            "flight_numbers": "AA 1068 / AA 364",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 350,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T15:10:00",
+                "arrive_time": "15:10",
+                "depart_datetime": "2026-09-07T12:08:00",
+                "depart_time": "12:08",
+                "destination": "DFW",
+                "duration_minutes": 182,
+                "flight_number": "1068",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T22:32:00",
+                "arrive_time": "22:32",
+                "depart_datetime": "2026-09-07T21:00:00",
+                "depart_time": "21:00",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "364",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 2836.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "16:12",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "08:51",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "5h 21m",
+            "duration_minutes": 321,
+            "flight_numbers": "UA 1679",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T16:12:00",
+                "arrive_time": "16:12",
+                "depart_datetime": "2026-09-04T08:51:00",
+                "depart_time": "08:51",
+                "destination": "CUN",
+                "duration_minutes": 321,
+                "flight_number": "1679",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "22:32",
+            "arrival_time_ahead": "",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "13:55",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "10h 37m",
+            "duration_minutes": 637,
+            "flight_numbers": "AA 2219 / AA 364",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 236,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T17:04:00",
+                "arrive_time": "17:04",
+                "depart_datetime": "2026-09-07T13:55:00",
+                "depart_time": "13:55",
+                "destination": "DFW",
+                "duration_minutes": 189,
+                "flight_number": "2219",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T22:32:00",
+                "arrive_time": "22:32",
+                "depart_datetime": "2026-09-07T21:00:00",
+                "depart_time": "21:00",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "364",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 2836.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "16:12",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "08:51",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "5h 21m",
+            "duration_minutes": 321,
+            "flight_numbers": "UA 1679",
+            "layovers": [],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T16:12:00",
+                "arrive_time": "16:12",
+                "depart_datetime": "2026-09-04T08:51:00",
+                "depart_time": "08:51",
+                "destination": "CUN",
+                "duration_minutes": 321,
+                "flight_number": "1679",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              }
+            ],
+            "stops": 0
+          },
+          {
+            "arrival": "22:32",
+            "arrival_time_ahead": "",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "15:56",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "8h 36m",
+            "duration_minutes": 516,
+            "flight_numbers": "AA 2652 / AA 364",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 115,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T19:05:00",
+                "arrive_time": "19:05",
+                "depart_datetime": "2026-09-07T15:56:00",
+                "depart_time": "15:56",
+                "destination": "DFW",
+                "duration_minutes": 189,
+                "flight_number": "2652",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T22:32:00",
+                "arrive_time": "22:32",
+                "depart_datetime": "2026-09-07T21:00:00",
+                "depart_time": "21:00",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "364",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 2836.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:02",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "23:59",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "10h 3m",
+            "duration_minutes": 603,
+            "flight_numbers": "UA 505 / UA 1018",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 222,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T06:02:00",
+                "arrive_time": "06:02",
+                "depart_datetime": "2026-09-04T23:59:00",
+                "depart_time": "23:59",
+                "destination": "IAH",
+                "duration_minutes": 243,
+                "flight_number": "505",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:02:00",
+                "arrive_time": "12:02",
+                "depart_datetime": "2026-09-05T09:44:00",
+                "depart_time": "09:44",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1018",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "20:57",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "07:51",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "15h 6m",
+            "duration_minutes": 906,
+            "flight_numbers": "UA 1059 / UA 2168 / UA 2745",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 135,
+                "overnight": false
+              },
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 301,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T10:15:00",
+                "arrive_time": "10:15",
+                "depart_datetime": "2026-09-07T07:51:00",
+                "depart_time": "07:51",
+                "destination": "IAH",
+                "duration_minutes": 144,
+                "flight_number": "1059",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T14:15:00",
+                "arrive_time": "14:15",
+                "depart_datetime": "2026-09-07T12:30:00",
+                "depart_time": "12:30",
+                "destination": "DEN",
+                "duration_minutes": 165,
+                "flight_number": "2168",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T20:57:00",
+                "arrive_time": "20:57",
+                "depart_datetime": "2026-09-07T19:16:00",
+                "depart_time": "19:16",
+                "destination": "SJC",
+                "duration_minutes": 161,
+                "flight_number": "2745",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 953.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:02",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "23:59",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "10h 3m",
+            "duration_minutes": 603,
+            "flight_numbers": "UA 505 / UA 1018",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 222,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T06:02:00",
+                "arrive_time": "06:02",
+                "depart_datetime": "2026-09-04T23:59:00",
+                "depart_time": "23:59",
+                "destination": "IAH",
+                "duration_minutes": 243,
+                "flight_number": "505",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:02:00",
+                "arrive_time": "12:02",
+                "depart_datetime": "2026-09-05T09:44:00",
+                "depart_time": "09:44",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1018",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:50",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "12:11",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "12h 39m",
+            "duration_minutes": 759,
+            "flight_numbers": "UA 1196 / UA 481",
+            "layovers": [
+              {
+                "airport": "ORD",
+                "change_of_airport": false,
+                "duration_minutes": 239,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T16:04:00",
+                "arrive_time": "16:04",
+                "depart_datetime": "2026-09-07T12:11:00",
+                "depart_time": "12:11",
+                "destination": "ORD",
+                "duration_minutes": 233,
+                "flight_number": "1196",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T22:50:00",
+                "arrive_time": "22:50",
+                "depart_datetime": "2026-09-07T20:03:00",
+                "depart_time": "20:03",
+                "destination": "SJC",
+                "duration_minutes": 287,
+                "flight_number": "481",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ORD"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1262.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:02",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "23:59",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "10h 3m",
+            "duration_minutes": 603,
+            "flight_numbers": "UA 505 / UA 1018",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 222,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T06:02:00",
+                "arrive_time": "06:02",
+                "depart_datetime": "2026-09-04T23:59:00",
+                "depart_time": "23:59",
+                "destination": "IAH",
+                "duration_minutes": 243,
+                "flight_number": "505",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:02:00",
+                "arrive_time": "12:02",
+                "depart_datetime": "2026-09-05T09:44:00",
+                "depart_time": "09:44",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1018",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "17:31",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "07:51",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "11h 40m",
+            "duration_minutes": 700,
+            "flight_numbers": "UA 1059 / UA 2168 / UA 1883",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 135,
+                "overnight": false
+              },
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 100,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T10:15:00",
+                "arrive_time": "10:15",
+                "depart_datetime": "2026-09-07T07:51:00",
+                "depart_time": "07:51",
+                "destination": "IAH",
+                "duration_minutes": 144,
+                "flight_number": "1059",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T14:15:00",
+                "arrive_time": "14:15",
+                "depart_datetime": "2026-09-07T12:30:00",
+                "depart_time": "12:30",
+                "destination": "DEN",
+                "duration_minutes": 165,
+                "flight_number": "2168",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T17:31:00",
+                "arrive_time": "17:31",
+                "depart_datetime": "2026-09-07T15:55:00",
+                "depart_time": "15:55",
+                "destination": "SJC",
+                "duration_minutes": 156,
+                "flight_number": "1883",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 1406.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:02",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "23:59",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "10h 3m",
+            "duration_minutes": 603,
+            "flight_numbers": "UA 505 / UA 1018",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 222,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T06:02:00",
+                "arrive_time": "06:02",
+                "depart_datetime": "2026-09-04T23:59:00",
+                "depart_time": "23:59",
+                "destination": "IAH",
+                "duration_minutes": 243,
+                "flight_number": "505",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:02:00",
+                "arrive_time": "12:02",
+                "depart_datetime": "2026-09-05T09:44:00",
+                "depart_time": "09:44",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1018",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:32",
+            "arrival_time_ahead": "",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "10:50",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "13h 42m",
+            "duration_minutes": 822,
+            "flight_numbers": "AA 1601 / AA 364",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 430,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T10:50:00",
+                "depart_time": "10:50",
+                "destination": "DFW",
+                "duration_minutes": 180,
+                "flight_number": "1601",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T22:32:00",
+                "arrive_time": "22:32",
+                "depart_datetime": "2026-09-07T21:00:00",
+                "depart_time": "21:00",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "364",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 2836.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:02",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "23:59",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "10h 3m",
+            "duration_minutes": 603,
+            "flight_numbers": "UA 505 / UA 1018",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 222,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T06:02:00",
+                "arrive_time": "06:02",
+                "depart_datetime": "2026-09-04T23:59:00",
+                "depart_time": "23:59",
+                "destination": "IAH",
+                "duration_minutes": 243,
+                "flight_number": "505",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:02:00",
+                "arrive_time": "12:02",
+                "depart_datetime": "2026-09-05T09:44:00",
+                "depart_time": "09:44",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1018",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:32",
+            "arrival_time_ahead": "",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "12:08",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "12h 24m",
+            "duration_minutes": 744,
+            "flight_numbers": "AA 1068 / AA 364",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 350,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T15:10:00",
+                "arrive_time": "15:10",
+                "depart_datetime": "2026-09-07T12:08:00",
+                "depart_time": "12:08",
+                "destination": "DFW",
+                "duration_minutes": 182,
+                "flight_number": "1068",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T22:32:00",
+                "arrive_time": "22:32",
+                "depart_datetime": "2026-09-07T21:00:00",
+                "depart_time": "21:00",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "364",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 2836.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:02",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "23:59",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "10h 3m",
+            "duration_minutes": 603,
+            "flight_numbers": "UA 505 / UA 1018",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 222,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T06:02:00",
+                "arrive_time": "06:02",
+                "depart_datetime": "2026-09-04T23:59:00",
+                "depart_time": "23:59",
+                "destination": "IAH",
+                "duration_minutes": 243,
+                "flight_number": "505",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:02:00",
+                "arrive_time": "12:02",
+                "depart_datetime": "2026-09-05T09:44:00",
+                "depart_time": "09:44",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1018",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:32",
+            "arrival_time_ahead": "",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "13:55",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "10h 37m",
+            "duration_minutes": 637,
+            "flight_numbers": "AA 2219 / AA 364",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 236,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T17:04:00",
+                "arrive_time": "17:04",
+                "depart_datetime": "2026-09-07T13:55:00",
+                "depart_time": "13:55",
+                "destination": "DFW",
+                "duration_minutes": 189,
+                "flight_number": "2219",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T22:32:00",
+                "arrive_time": "22:32",
+                "depart_datetime": "2026-09-07T21:00:00",
+                "depart_time": "21:00",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "364",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 2836.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:02",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "23:59",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "10h 3m",
+            "duration_minutes": 603,
+            "flight_numbers": "UA 505 / UA 1018",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 222,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T06:02:00",
+                "arrive_time": "06:02",
+                "depart_datetime": "2026-09-04T23:59:00",
+                "depart_time": "23:59",
+                "destination": "IAH",
+                "duration_minutes": 243,
+                "flight_number": "505",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:02:00",
+                "arrive_time": "12:02",
+                "depart_datetime": "2026-09-05T09:44:00",
+                "depart_time": "09:44",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1018",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:32",
+            "arrival_time_ahead": "",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "15:56",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "8h 36m",
+            "duration_minutes": 516,
+            "flight_numbers": "AA 2652 / AA 364",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 115,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T19:05:00",
+                "arrive_time": "19:05",
+                "depart_datetime": "2026-09-07T15:56:00",
+                "depart_time": "15:56",
+                "destination": "DFW",
+                "duration_minutes": 189,
+                "flight_number": "2652",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T22:32:00",
+                "arrive_time": "22:32",
+                "depart_datetime": "2026-09-07T21:00:00",
+                "depart_time": "21:00",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "364",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 2836.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:06",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "00:45",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "7h 21m",
+            "duration_minutes": 441,
+            "flight_numbers": "UA 604 / UA 1619",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 73,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 777",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T00:45:00",
+                "depart_time": "00:45",
+                "destination": "IAH",
+                "duration_minutes": 230,
+                "flight_number": "604",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T10:06:00",
+                "arrive_time": "10:06",
+                "depart_datetime": "2026-09-04T07:48:00",
+                "depart_time": "07:48",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1619",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "20:57",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "07:51",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "15h 6m",
+            "duration_minutes": 906,
+            "flight_numbers": "UA 1059 / UA 2168 / UA 2745",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 135,
+                "overnight": false
+              },
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 301,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T10:15:00",
+                "arrive_time": "10:15",
+                "depart_datetime": "2026-09-07T07:51:00",
+                "depart_time": "07:51",
+                "destination": "IAH",
+                "duration_minutes": 144,
+                "flight_number": "1059",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T14:15:00",
+                "arrive_time": "14:15",
+                "depart_datetime": "2026-09-07T12:30:00",
+                "depart_time": "12:30",
+                "destination": "DEN",
+                "duration_minutes": 165,
+                "flight_number": "2168",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T20:57:00",
+                "arrive_time": "20:57",
+                "depart_datetime": "2026-09-07T19:16:00",
+                "depart_time": "19:16",
+                "destination": "SJC",
+                "duration_minutes": 161,
+                "flight_number": "2745",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 966.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:06",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "00:45",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "7h 21m",
+            "duration_minutes": 441,
+            "flight_numbers": "UA 604 / UA 1619",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 73,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 777",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T00:45:00",
+                "depart_time": "00:45",
+                "destination": "IAH",
+                "duration_minutes": 230,
+                "flight_number": "604",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T10:06:00",
+                "arrive_time": "10:06",
+                "depart_datetime": "2026-09-04T07:48:00",
+                "depart_time": "07:48",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1619",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:50",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "12:11",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "12h 39m",
+            "duration_minutes": 759,
+            "flight_numbers": "UA 1196 / UA 481",
+            "layovers": [
+              {
+                "airport": "ORD",
+                "change_of_airport": false,
+                "duration_minutes": 239,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T16:04:00",
+                "arrive_time": "16:04",
+                "depart_datetime": "2026-09-07T12:11:00",
+                "depart_time": "12:11",
+                "destination": "ORD",
+                "duration_minutes": 233,
+                "flight_number": "1196",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T22:50:00",
+                "arrive_time": "22:50",
+                "depart_datetime": "2026-09-07T20:03:00",
+                "depart_time": "20:03",
+                "destination": "SJC",
+                "duration_minutes": 287,
+                "flight_number": "481",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ORD"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1275.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:06",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "00:45",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "7h 21m",
+            "duration_minutes": 441,
+            "flight_numbers": "UA 604 / UA 1619",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 73,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 777",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T00:45:00",
+                "depart_time": "00:45",
+                "destination": "IAH",
+                "duration_minutes": 230,
+                "flight_number": "604",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T10:06:00",
+                "arrive_time": "10:06",
+                "depart_datetime": "2026-09-04T07:48:00",
+                "depart_time": "07:48",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1619",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "17:31",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "07:51",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "11h 40m",
+            "duration_minutes": 700,
+            "flight_numbers": "UA 1059 / UA 2168 / UA 1883",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 135,
+                "overnight": false
+              },
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 100,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T10:15:00",
+                "arrive_time": "10:15",
+                "depart_datetime": "2026-09-07T07:51:00",
+                "depart_time": "07:51",
+                "destination": "IAH",
+                "duration_minutes": 144,
+                "flight_number": "1059",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T14:15:00",
+                "arrive_time": "14:15",
+                "depart_datetime": "2026-09-07T12:30:00",
+                "depart_time": "12:30",
+                "destination": "DEN",
+                "duration_minutes": 165,
+                "flight_number": "2168",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T17:31:00",
+                "arrive_time": "17:31",
+                "depart_datetime": "2026-09-07T15:55:00",
+                "depart_time": "15:55",
+                "destination": "SJC",
+                "duration_minutes": 156,
+                "flight_number": "1883",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 1419.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:06",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "00:45",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "7h 21m",
+            "duration_minutes": 441,
+            "flight_numbers": "UA 604 / UA 1619",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 73,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 777",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T00:45:00",
+                "depart_time": "00:45",
+                "destination": "IAH",
+                "duration_minutes": 230,
+                "flight_number": "604",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T10:06:00",
+                "arrive_time": "10:06",
+                "depart_datetime": "2026-09-04T07:48:00",
+                "depart_time": "07:48",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1619",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:32",
+            "arrival_time_ahead": "",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "10:50",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "13h 42m",
+            "duration_minutes": 822,
+            "flight_numbers": "AA 1601 / AA 364",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 430,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T10:50:00",
+                "depart_time": "10:50",
+                "destination": "DFW",
+                "duration_minutes": 180,
+                "flight_number": "1601",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T22:32:00",
+                "arrive_time": "22:32",
+                "depart_datetime": "2026-09-07T21:00:00",
+                "depart_time": "21:00",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "364",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 2836.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:06",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "00:45",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "7h 21m",
+            "duration_minutes": 441,
+            "flight_numbers": "UA 604 / UA 1619",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 73,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 777",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T00:45:00",
+                "depart_time": "00:45",
+                "destination": "IAH",
+                "duration_minutes": 230,
+                "flight_number": "604",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T10:06:00",
+                "arrive_time": "10:06",
+                "depart_datetime": "2026-09-04T07:48:00",
+                "depart_time": "07:48",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1619",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:32",
+            "arrival_time_ahead": "",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "12:08",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "12h 24m",
+            "duration_minutes": 744,
+            "flight_numbers": "AA 1068 / AA 364",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 350,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T15:10:00",
+                "arrive_time": "15:10",
+                "depart_datetime": "2026-09-07T12:08:00",
+                "depart_time": "12:08",
+                "destination": "DFW",
+                "duration_minutes": 182,
+                "flight_number": "1068",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T22:32:00",
+                "arrive_time": "22:32",
+                "depart_datetime": "2026-09-07T21:00:00",
+                "depart_time": "21:00",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "364",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 2836.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:06",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "00:45",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "7h 21m",
+            "duration_minutes": 441,
+            "flight_numbers": "UA 604 / UA 1619",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 73,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 777",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T00:45:00",
+                "depart_time": "00:45",
+                "destination": "IAH",
+                "duration_minutes": 230,
+                "flight_number": "604",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T10:06:00",
+                "arrive_time": "10:06",
+                "depart_datetime": "2026-09-04T07:48:00",
+                "depart_time": "07:48",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1619",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:32",
+            "arrival_time_ahead": "",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "13:55",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "10h 37m",
+            "duration_minutes": 637,
+            "flight_numbers": "AA 2219 / AA 364",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 236,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T17:04:00",
+                "arrive_time": "17:04",
+                "depart_datetime": "2026-09-07T13:55:00",
+                "depart_time": "13:55",
+                "destination": "DFW",
+                "duration_minutes": 189,
+                "flight_number": "2219",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T22:32:00",
+                "arrive_time": "22:32",
+                "depart_datetime": "2026-09-07T21:00:00",
+                "depart_time": "21:00",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "364",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 2836.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:06",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "00:45",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "7h 21m",
+            "duration_minutes": 441,
+            "flight_numbers": "UA 604 / UA 1619",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 73,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 777",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T00:45:00",
+                "depart_time": "00:45",
+                "destination": "IAH",
+                "duration_minutes": 230,
+                "flight_number": "604",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T10:06:00",
+                "arrive_time": "10:06",
+                "depart_datetime": "2026-09-04T07:48:00",
+                "depart_time": "07:48",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1619",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:32",
+            "arrival_time_ahead": "",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "15:56",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "8h 36m",
+            "duration_minutes": 516,
+            "flight_numbers": "AA 2652 / AA 364",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 115,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T19:05:00",
+                "arrive_time": "19:05",
+                "depart_datetime": "2026-09-07T15:56:00",
+                "depart_time": "15:56",
+                "destination": "DFW",
+                "duration_minutes": 189,
+                "flight_number": "2652",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T22:32:00",
+                "arrive_time": "22:32",
+                "depart_datetime": "2026-09-07T21:00:00",
+                "depart_time": "21:00",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "364",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 2836.00"
+      }
+    ]
+  },
+  "searched_at": "2026-06-28T01:59:34.232802+00:00"
+}

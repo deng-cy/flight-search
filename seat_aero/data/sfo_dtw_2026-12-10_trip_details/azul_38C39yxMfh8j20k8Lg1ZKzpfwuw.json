@@ -1,0 +1,402 @@
+{
+  "booking_links": [
+    {
+      "label": "Book via Azul Fidelidade",
+      "link": "https://azulpelomundo.voeazul.com.br/flights/OW/SFO/DTW/-/-/2026-12-10/-/1/0/0/0/0/ALL/F/ECONOMY/-/-/-/-/A/-",
+      "primary": true
+    },
+    {
+      "label": "Book via Azul Fidelidade (business)",
+      "link": "https://azulpelomundo.voeazul.com.br/flights/OW/SFO/DTW/-/-/2026-12-10/-/1/0/0/0/0/ALL/F/BUSINESS/-/-/-/-/A/-",
+      "primary": false
+    },
+    {
+      "label": "Book via Azul Fidelidade (Azul-operated)",
+      "link": "https://www.voeazul.com.br/br/pt/home/selecao-voo?c[0].ds=SFO&c[0].std=12/10/2026&c[0].as=DTW&p[0].t=ADT&p[0].c=1&p[0].cp=false&f.dl=3&f.dr=3&cc=BRL&utm_source=seatsaero",
+      "primary": false
+    }
+  ],
+  "carriers": {
+    "UA": "United Airlines"
+  },
+  "data": [
+    {
+      "ArrivesAt": "2026-12-10T23:59:00Z",
+      "AvailabilityID": "38C39yxMfh8j20k8Lg1ZKzpfwuw",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "",
+          "AircraftName": "",
+          "ArrivesAt": "2026-12-10T21:27:00Z",
+          "AvailabilityID": "38C39yxMfh8j20k8Lg1ZKzpfwuw",
+          "AvailabilityTripID": "3E2fHyYbgdNTlz6ptquxo3FuTGC",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-21T16:38:20.284906Z",
+          "DepartsAt": "2026-12-10T13:10:00Z",
+          "DestinationAirport": "IAD",
+          "Distance": 2416,
+          "Duration": 317,
+          "FareClass": "X",
+          "FlightNumber": "UA755",
+          "ID": "3E2fHsLy6LbpxfYLk1N0fpoOy9L",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdCE2aivlYCpzzVvLdiB7vcj",
+          "Source": "azul",
+          "UpdatedAt": "2026-06-11T19:10:10.154941Z"
+        },
+        {
+          "AircraftCode": "",
+          "AircraftName": "",
+          "ArrivesAt": "2026-12-10T23:59:00Z",
+          "AvailabilityID": "38C39yxMfh8j20k8Lg1ZKzpfwuw",
+          "AvailabilityTripID": "3E2fHyYbgdNTlz6ptquxo3FuTGC",
+          "Cabin": "economy",
+          "CreatedAt": "2026-05-21T16:38:20.284906Z",
+          "DepartsAt": "2026-12-10T22:20:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 383,
+          "Duration": 99,
+          "FareClass": "X",
+          "FlightNumber": "UA4024",
+          "ID": "3E2fHuUmHEYcbMMjeEG8Vkslprx",
+          "Order": 1,
+          "OriginAirport": "IAD",
+          "RouteID": "2fLNdCE2aivlYCpzzVvLdiB7vcj",
+          "Source": "azul",
+          "UpdatedAt": "2026-06-11T19:10:10.154941Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAD"
+      ],
+      "CreatedAt": "2026-05-21T16:38:20.284906Z",
+      "DepartsAt": "2026-12-10T13:10:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "X",
+        "X"
+      ],
+      "FlightNumbers": "UA755, UA4024",
+      "ID": "3E2fHyYbgdNTlz6ptquxo3FuTGC",
+      "MileageCost": 18315,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 0,
+      "RouteID": "2fLNdCE2aivlYCpzzVvLdiB7vcj",
+      "Source": "azul",
+      "Stops": 1,
+      "TaxesCurrency": "BRL",
+      "TaxesCurrencySymbol": "R$",
+      "TotalDuration": 469,
+      "TotalSegmentDistance": 2799,
+      "TotalTaxes": 4658,
+      "UpdatedAt": "2026-06-11T19:10:10.154941Z"
+    },
+    {
+      "ArrivesAt": "2026-12-11T23:44:00Z",
+      "AvailabilityID": "38C39yxMfh8j20k8Lg1ZKzpfwuw",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "",
+          "AircraftName": "",
+          "ArrivesAt": "2026-12-11T05:51:00Z",
+          "AvailabilityID": "38C39yxMfh8j20k8Lg1ZKzpfwuw",
+          "AvailabilityTripID": "3F0HLSOz1XLY9ZCPfzu280u1zsw",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-11T19:10:10.154941Z",
+          "DepartsAt": "2026-12-10T23:59:00Z",
+          "DestinationAirport": "IAH",
+          "Distance": 1635,
+          "Duration": 232,
+          "FareClass": "X",
+          "FlightNumber": "UA505",
+          "ID": "3F0HLUq6eZyus5VJsMskqd8MpTd",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdCE2aivlYCpzzVvLdiB7vcj",
+          "Source": "azul",
+          "UpdatedAt": "2026-06-11T19:10:10.154941Z"
+        },
+        {
+          "AircraftCode": "",
+          "AircraftName": "",
+          "ArrivesAt": "2026-12-11T23:44:00Z",
+          "AvailabilityID": "38C39yxMfh8j20k8Lg1ZKzpfwuw",
+          "AvailabilityTripID": "3F0HLSOz1XLY9ZCPfzu280u1zsw",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-11T19:10:10.154941Z",
+          "DepartsAt": "2026-12-11T20:00:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1076,
+          "Duration": 164,
+          "FareClass": "X",
+          "FlightNumber": "UA2755",
+          "ID": "3F0HLTz5WRrvTzcfUoI8kYw4RDb",
+          "Order": 1,
+          "OriginAirport": "IAH",
+          "RouteID": "2fLNdCE2aivlYCpzzVvLdiB7vcj",
+          "Source": "azul",
+          "UpdatedAt": "2026-06-11T19:10:10.154941Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAH"
+      ],
+      "CreatedAt": "2026-06-11T19:10:10.154941Z",
+      "DepartsAt": "2026-12-10T23:59:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "X",
+        "X"
+      ],
+      "FlightNumbers": "UA505, UA2755",
+      "ID": "3F0HLSOz1XLY9ZCPfzu280u1zsw",
+      "MileageCost": 18315,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 0,
+      "RouteID": "2fLNdCE2aivlYCpzzVvLdiB7vcj",
+      "Source": "azul",
+      "Stops": 1,
+      "TaxesCurrency": "BRL",
+      "TaxesCurrencySymbol": "R$",
+      "TotalDuration": 1245,
+      "TotalSegmentDistance": 2711,
+      "TotalTaxes": 4658,
+      "UpdatedAt": "2026-06-11T19:10:10.154941Z"
+    },
+    {
+      "ArrivesAt": "2026-12-10T22:23:00Z",
+      "AvailabilityID": "38C39yxMfh8j20k8Lg1ZKzpfwuw",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "",
+          "AircraftName": "",
+          "ArrivesAt": "2026-12-10T08:39:00Z",
+          "AvailabilityID": "38C39yxMfh8j20k8Lg1ZKzpfwuw",
+          "AvailabilityTripID": "38C39wnPxIUoO3IGLpZjl6YjJfX",
+          "Cabin": "economy",
+          "CreatedAt": "2026-01-13T07:32:57.283708Z",
+          "DepartsAt": "2026-12-10T05:00:00Z",
+          "DestinationAirport": "DEN",
+          "Distance": 966,
+          "Duration": 159,
+          "FareClass": "X",
+          "FlightNumber": "UA1479",
+          "ID": "38C39tfO4eJy0Z3c31bHs4qkiai",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdCE2aivlYCpzzVvLdiB7vcj",
+          "Source": "azul",
+          "UpdatedAt": "2026-06-11T19:10:10.154941Z"
+        },
+        {
+          "AircraftCode": "",
+          "AircraftName": "",
+          "ArrivesAt": "2026-12-10T22:23:00Z",
+          "AvailabilityID": "38C39yxMfh8j20k8Lg1ZKzpfwuw",
+          "AvailabilityTripID": "38C39wnPxIUoO3IGLpZjl6YjJfX",
+          "Cabin": "economy",
+          "CreatedAt": "2026-01-13T07:32:57.283708Z",
+          "DepartsAt": "2026-12-10T17:39:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1121,
+          "Duration": 164,
+          "FareClass": "X",
+          "FlightNumber": "UA1220",
+          "ID": "38C39yvU2u4AHQ5e4IEO5ijZYXH",
+          "Order": 1,
+          "OriginAirport": "DEN",
+          "RouteID": "2fLNdCE2aivlYCpzzVvLdiB7vcj",
+          "Source": "azul",
+          "UpdatedAt": "2026-06-11T19:10:10.154941Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "DEN"
+      ],
+      "CreatedAt": "2026-01-13T07:32:57.283708Z",
+      "DepartsAt": "2026-12-10T05:00:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "X",
+        "X"
+      ],
+      "FlightNumbers": "UA1479, UA1220",
+      "ID": "38C39wnPxIUoO3IGLpZjl6YjJfX",
+      "MileageCost": 18315,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 0,
+      "RouteID": "2fLNdCE2aivlYCpzzVvLdiB7vcj",
+      "Source": "azul",
+      "Stops": 1,
+      "TaxesCurrency": "BRL",
+      "TaxesCurrencySymbol": "R$",
+      "TotalDuration": 863,
+      "TotalSegmentDistance": 2087,
+      "TotalTaxes": 4658,
+      "UpdatedAt": "2026-06-11T19:10:10.154941Z"
+    },
+    {
+      "ArrivesAt": "2026-12-11T22:23:00Z",
+      "AvailabilityID": "38C39yxMfh8j20k8Lg1ZKzpfwuw",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "",
+          "AircraftName": "",
+          "ArrivesAt": "2026-12-11T00:43:00Z",
+          "AvailabilityID": "38C39yxMfh8j20k8Lg1ZKzpfwuw",
+          "AvailabilityTripID": "39gs9GDfOvAXyPXr1Sz9NYzHN1p",
+          "Cabin": "economy",
+          "CreatedAt": "2026-02-15T04:14:54.633559Z",
+          "DepartsAt": "2026-12-10T20:52:00Z",
+          "DestinationAirport": "DEN",
+          "Distance": 966,
+          "Duration": 171,
+          "FareClass": "X",
+          "FlightNumber": "UA301",
+          "ID": "39gs9I5ysm6VrrJdh7o87lHduqz",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdCE2aivlYCpzzVvLdiB7vcj",
+          "Source": "azul",
+          "UpdatedAt": "2026-06-11T19:10:10.154941Z"
+        },
+        {
+          "AircraftCode": "",
+          "AircraftName": "",
+          "ArrivesAt": "2026-12-11T22:23:00Z",
+          "AvailabilityID": "38C39yxMfh8j20k8Lg1ZKzpfwuw",
+          "AvailabilityTripID": "39gs9GDfOvAXyPXr1Sz9NYzHN1p",
+          "Cabin": "economy",
+          "CreatedAt": "2026-02-15T04:14:54.633559Z",
+          "DepartsAt": "2026-12-11T17:39:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1121,
+          "Duration": 164,
+          "FareClass": "X",
+          "FlightNumber": "UA1220",
+          "ID": "39gs9ICUiC8rVcxnaBv4RacHswK",
+          "Order": 1,
+          "OriginAirport": "DEN",
+          "RouteID": "2fLNdCE2aivlYCpzzVvLdiB7vcj",
+          "Source": "azul",
+          "UpdatedAt": "2026-06-11T19:10:10.154941Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "DEN"
+      ],
+      "CreatedAt": "2026-02-15T04:14:54.633559Z",
+      "DepartsAt": "2026-12-10T20:52:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "X",
+        "X"
+      ],
+      "FlightNumbers": "UA301, UA1220",
+      "ID": "39gs9GDfOvAXyPXr1Sz9NYzHN1p",
+      "MileageCost": 18315,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 0,
+      "RouteID": "2fLNdCE2aivlYCpzzVvLdiB7vcj",
+      "Source": "azul",
+      "Stops": 1,
+      "TaxesCurrency": "BRL",
+      "TaxesCurrencySymbol": "R$",
+      "TotalDuration": 1351,
+      "TotalSegmentDistance": 2087,
+      "TotalTaxes": 4658,
+      "UpdatedAt": "2026-06-11T19:10:10.154941Z"
+    },
+    {
+      "ArrivesAt": "2026-12-10T15:43:00Z",
+      "AvailabilityID": "38C39yxMfh8j20k8Lg1ZKzpfwuw",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "",
+          "AircraftName": "",
+          "ArrivesAt": "2026-12-10T06:28:00Z",
+          "AvailabilityID": "38C39yxMfh8j20k8Lg1ZKzpfwuw",
+          "AvailabilityTripID": "38C39viM2dFfZfSDwxv0ROyTpmK",
+          "Cabin": "economy",
+          "CreatedAt": "2026-01-13T07:32:57.283708Z",
+          "DepartsAt": "2026-12-10T00:45:00Z",
+          "DestinationAirport": "IAH",
+          "Distance": 1635,
+          "Duration": 223,
+          "FareClass": "X",
+          "FlightNumber": "UA604",
+          "ID": "38C39uYlpSVgQE0lafg86CcMm7n",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2fLNdCE2aivlYCpzzVvLdiB7vcj",
+          "Source": "azul",
+          "UpdatedAt": "2026-06-11T19:10:10.154941Z"
+        },
+        {
+          "AircraftCode": "",
+          "AircraftName": "",
+          "ArrivesAt": "2026-12-10T15:43:00Z",
+          "AvailabilityID": "38C39yxMfh8j20k8Lg1ZKzpfwuw",
+          "AvailabilityTripID": "38C39viM2dFfZfSDwxv0ROyTpmK",
+          "Cabin": "economy",
+          "CreatedAt": "2026-01-13T07:32:57.283708Z",
+          "DepartsAt": "2026-12-10T12:00:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1076,
+          "Duration": 163,
+          "FareClass": "X",
+          "FlightNumber": "UA393",
+          "ID": "38C39xczF3rYknndJqr3pHHY47R",
+          "Order": 1,
+          "OriginAirport": "IAH",
+          "RouteID": "2fLNdCE2aivlYCpzzVvLdiB7vcj",
+          "Source": "azul",
+          "UpdatedAt": "2026-06-11T19:10:10.154941Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "UA, UA",
+      "Connections": [
+        "IAH"
+      ],
+      "CreatedAt": "2026-01-13T07:32:57.283708Z",
+      "DepartsAt": "2026-12-10T00:45:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "X",
+        "X"
+      ],
+      "FlightNumbers": "UA604, UA393",
+      "ID": "38C39viM2dFfZfSDwxv0ROyTpmK",
+      "MileageCost": 18315,
+      "OriginAirport": "SFO",
+      "RemainingSeats": 0,
+      "RouteID": "2fLNdCE2aivlYCpzzVvLdiB7vcj",
+      "Source": "azul",
+      "Stops": 1,
+      "TaxesCurrency": "BRL",
+      "TaxesCurrencySymbol": "R$",
+      "TotalDuration": 718,
+      "TotalSegmentDistance": 2711,
+      "TotalTaxes": 4658,
+      "UpdatedAt": "2026-06-11T19:10:10.154941Z"
+    }
+  ],
+  "destination_coordinates": {
+    "Lat": 42.207808,
+    "Lon": -83.356048
+  },
+  "origin_coordinates": {
+    "Lat": 37.615215,
+    "Lon": -122.389881
+  }
+}

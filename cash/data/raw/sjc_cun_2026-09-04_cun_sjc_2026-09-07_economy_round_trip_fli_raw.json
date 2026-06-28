@@ -1,0 +1,4367 @@
+{
+  "evidence": {
+    "result_count": 33,
+    "top_n": 3,
+    "transport": "fli"
+  },
+  "provider": "fli",
+  "provider_api_variant": "python-api",
+  "provider_package": "flights",
+  "provider_version": "0.9.0",
+  "request": {
+    "adults": 1,
+    "cabin": "economy",
+    "currency": "USD",
+    "departure_date": "2026-09-04",
+    "destination": "CUN",
+    "fetch_mode": "fallback",
+    "max_stops": null,
+    "origin": "SJC",
+    "return_date": "2026-09-07",
+    "return_destination": "SJC",
+    "return_origin": "CUN",
+    "trip_type": "round-trip"
+  },
+  "result": {
+    "current_price": "",
+    "flights": [
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": true,
+        "legs": [
+          {
+            "arrival": "12:58",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:37",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "16h 21m",
+            "duration_minutes": 981,
+            "flight_numbers": "UA 1924 / UA 1119",
+            "layovers": [
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 586,
+                "overnight": true
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T22:15:00",
+                "arrive_time": "22:15",
+                "depart_datetime": "2026-09-04T18:37:00",
+                "depart_time": "18:37",
+                "destination": "DEN",
+                "duration_minutes": 158,
+                "flight_number": "1924",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:58:00",
+                "arrive_time": "12:58",
+                "depart_datetime": "2026-09-05T08:01:00",
+                "depart_time": "08:01",
+                "destination": "CUN",
+                "duration_minutes": 237,
+                "flight_number": "1119",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:32",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "15:56",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "32h 36m",
+            "duration_minutes": 1956,
+            "flight_numbers": "AA 2652 / AA 364",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 1555,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T19:05:00",
+                "arrive_time": "19:05",
+                "depart_datetime": "2026-09-07T15:56:00",
+                "depart_time": "15:56",
+                "destination": "DFW",
+                "duration_minutes": 189,
+                "flight_number": "2652",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-08T22:32:00",
+                "arrive_time": "22:32",
+                "depart_datetime": "2026-09-08T21:00:00",
+                "depart_time": "21:00",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "364",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 716.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:58",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:37",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "16h 21m",
+            "duration_minutes": 981,
+            "flight_numbers": "UA 1924 / UA 1119",
+            "layovers": [
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 586,
+                "overnight": true
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T22:15:00",
+                "arrive_time": "22:15",
+                "depart_datetime": "2026-09-04T18:37:00",
+                "depart_time": "18:37",
+                "destination": "DEN",
+                "duration_minutes": 158,
+                "flight_number": "1924",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:58:00",
+                "arrive_time": "12:58",
+                "depart_datetime": "2026-09-05T08:01:00",
+                "depart_time": "08:01",
+                "destination": "CUN",
+                "duration_minutes": 237,
+                "flight_number": "1119",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "20:57",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "07:51",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "15h 6m",
+            "duration_minutes": 906,
+            "flight_numbers": "UA 1059 / UA 2168 / UA 2745",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 135,
+                "overnight": false
+              },
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 301,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T10:15:00",
+                "arrive_time": "10:15",
+                "depart_datetime": "2026-09-07T07:51:00",
+                "depart_time": "07:51",
+                "destination": "IAH",
+                "duration_minutes": 144,
+                "flight_number": "1059",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T14:15:00",
+                "arrive_time": "14:15",
+                "depart_datetime": "2026-09-07T12:30:00",
+                "depart_time": "12:30",
+                "destination": "DEN",
+                "duration_minutes": 165,
+                "flight_number": "2168",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T20:57:00",
+                "arrive_time": "20:57",
+                "depart_datetime": "2026-09-07T19:16:00",
+                "depart_time": "19:16",
+                "destination": "SJC",
+                "duration_minutes": 161,
+                "flight_number": "2745",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 840.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:58",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:37",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "16h 21m",
+            "duration_minutes": 981,
+            "flight_numbers": "UA 1924 / UA 1119",
+            "layovers": [
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 586,
+                "overnight": true
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T22:15:00",
+                "arrive_time": "22:15",
+                "depart_datetime": "2026-09-04T18:37:00",
+                "depart_time": "18:37",
+                "destination": "DEN",
+                "duration_minutes": 158,
+                "flight_number": "1924",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:58:00",
+                "arrive_time": "12:58",
+                "depart_datetime": "2026-09-05T08:01:00",
+                "depart_time": "08:01",
+                "destination": "CUN",
+                "duration_minutes": 237,
+                "flight_number": "1119",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "20:57",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "15:43",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "31h 14m",
+            "duration_minutes": 1874,
+            "flight_numbers": "UA 1136 / UA 2745",
+            "layovers": [
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 1463,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T18:53:00",
+                "arrive_time": "18:53",
+                "depart_datetime": "2026-09-07T15:43:00",
+                "depart_time": "15:43",
+                "destination": "DEN",
+                "duration_minutes": 250,
+                "flight_number": "1136",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-08T20:57:00",
+                "arrive_time": "20:57",
+                "depart_datetime": "2026-09-08T19:16:00",
+                "depart_time": "19:16",
+                "destination": "SJC",
+                "duration_minutes": 161,
+                "flight_number": "2745",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1066.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:58",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:37",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "16h 21m",
+            "duration_minutes": 981,
+            "flight_numbers": "UA 1924 / UA 1119",
+            "layovers": [
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 586,
+                "overnight": true
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-04T22:15:00",
+                "arrive_time": "22:15",
+                "depart_datetime": "2026-09-04T18:37:00",
+                "depart_time": "18:37",
+                "destination": "DEN",
+                "duration_minutes": 158,
+                "flight_number": "1924",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:58:00",
+                "arrive_time": "12:58",
+                "depart_datetime": "2026-09-05T08:01:00",
+                "depart_time": "08:01",
+                "destination": "CUN",
+                "duration_minutes": 237,
+                "flight_number": "1119",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:50",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "12:11",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "12h 39m",
+            "duration_minutes": 759,
+            "flight_numbers": "UA 1196 / UA 481",
+            "layovers": [
+              {
+                "airport": "ORD",
+                "change_of_airport": false,
+                "duration_minutes": 239,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T16:04:00",
+                "arrive_time": "16:04",
+                "depart_datetime": "2026-09-07T12:11:00",
+                "depart_time": "12:11",
+                "destination": "ORD",
+                "duration_minutes": 233,
+                "flight_number": "1196",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T22:50:00",
+                "arrive_time": "22:50",
+                "depart_datetime": "2026-09-07T20:03:00",
+                "depart_time": "20:03",
+                "destination": "SJC",
+                "duration_minutes": 287,
+                "flight_number": "481",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ORD"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1149.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:32",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "15:56",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "32h 36m",
+            "duration_minutes": 1956,
+            "flight_numbers": "AA 2652 / AA 364",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 1555,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T19:05:00",
+                "arrive_time": "19:05",
+                "depart_datetime": "2026-09-07T15:56:00",
+                "depart_time": "15:56",
+                "destination": "DFW",
+                "duration_minutes": 189,
+                "flight_number": "2652",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-08T22:32:00",
+                "arrive_time": "22:32",
+                "depart_datetime": "2026-09-08T21:00:00",
+                "depart_time": "21:00",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "364",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 716.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:15",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "16:05",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "8h 10m",
+            "duration_minutes": 490,
+            "flight_numbers": "WN 1018 / WN 1679",
+            "layovers": [
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T19:10:00",
+                "arrive_time": "19:10",
+                "depart_datetime": "2026-09-07T16:05:00",
+                "depart_time": "16:05",
+                "destination": "DEN",
+                "duration_minutes": 245,
+                "flight_number": "1018",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T22:15:00",
+                "arrive_time": "22:15",
+                "depart_datetime": "2026-09-07T20:40:00",
+                "depart_time": "20:40",
+                "destination": "SJC",
+                "duration_minutes": 155,
+                "flight_number": "1679",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 917.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:15",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "13:10",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "11h 5m",
+            "duration_minutes": 665,
+            "flight_numbers": "WN 1996 / WN 2704 / WN 1679",
+            "layovers": [
+              {
+                "airport": "STL",
+                "change_of_airport": false,
+                "duration_minutes": 110,
+                "overnight": false
+              },
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 80,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T16:15:00",
+                "arrive_time": "16:15",
+                "depart_datetime": "2026-09-07T13:10:00",
+                "depart_time": "13:10",
+                "destination": "STL",
+                "duration_minutes": 185,
+                "flight_number": "1996",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T19:20:00",
+                "arrive_time": "19:20",
+                "depart_datetime": "2026-09-07T18:05:00",
+                "depart_time": "18:05",
+                "destination": "DEN",
+                "duration_minutes": 135,
+                "flight_number": "2704",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "STL"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T22:15:00",
+                "arrive_time": "22:15",
+                "depart_datetime": "2026-09-07T20:40:00",
+                "depart_time": "20:40",
+                "destination": "SJC",
+                "duration_minutes": 155,
+                "flight_number": "1679",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 922.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:20",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "13:10",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "11h 10m",
+            "duration_minutes": 670,
+            "flight_numbers": "WN 1996 / WN 3847 / WN 4965",
+            "layovers": [
+              {
+                "airport": "STL",
+                "change_of_airport": false,
+                "duration_minutes": 130,
+                "overnight": false
+              },
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 55,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T16:15:00",
+                "arrive_time": "16:15",
+                "depart_datetime": "2026-09-07T13:10:00",
+                "depart_time": "13:10",
+                "destination": "STL",
+                "duration_minutes": 185,
+                "flight_number": "1996",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T19:55:00",
+                "arrive_time": "19:55",
+                "depart_datetime": "2026-09-07T18:25:00",
+                "depart_time": "18:25",
+                "destination": "LAS",
+                "duration_minutes": 210,
+                "flight_number": "3847",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "STL"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T22:20:00",
+                "arrive_time": "22:20",
+                "depart_datetime": "2026-09-07T20:50:00",
+                "depart_time": "20:50",
+                "destination": "SJC",
+                "duration_minutes": 90,
+                "flight_number": "4965",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 922.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "23:05",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "13:10",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "11h 55m",
+            "duration_minutes": 715,
+            "flight_numbers": "WN 1996 / WN 4380 / WN 3264",
+            "layovers": [
+              {
+                "airport": "STL",
+                "change_of_airport": false,
+                "duration_minutes": 105,
+                "overnight": false
+              },
+              {
+                "airport": "PHX",
+                "change_of_airport": false,
+                "duration_minutes": 120,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T16:15:00",
+                "arrive_time": "16:15",
+                "depart_datetime": "2026-09-07T13:10:00",
+                "depart_time": "13:10",
+                "destination": "STL",
+                "duration_minutes": 185,
+                "flight_number": "1996",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T19:15:00",
+                "arrive_time": "19:15",
+                "depart_datetime": "2026-09-07T18:00:00",
+                "depart_time": "18:00",
+                "destination": "PHX",
+                "duration_minutes": 195,
+                "flight_number": "4380",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "STL"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T23:05:00",
+                "arrive_time": "23:05",
+                "depart_datetime": "2026-09-07T21:15:00",
+                "depart_time": "21:15",
+                "destination": "SJC",
+                "duration_minutes": 110,
+                "flight_number": "3264",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PHX"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 922.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "23:20",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "13:10",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "12h 10m",
+            "duration_minutes": 730,
+            "flight_numbers": "WN 1996 / WN 3001 / WN 576",
+            "layovers": [
+              {
+                "airport": "STL",
+                "change_of_airport": false,
+                "duration_minutes": 120,
+                "overnight": false
+              },
+              {
+                "airport": "MDW",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T16:15:00",
+                "arrive_time": "16:15",
+                "depart_datetime": "2026-09-07T13:10:00",
+                "depart_time": "13:10",
+                "destination": "STL",
+                "duration_minutes": 185,
+                "flight_number": "1996",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T19:20:00",
+                "arrive_time": "19:20",
+                "depart_datetime": "2026-09-07T18:15:00",
+                "depart_time": "18:15",
+                "destination": "MDW",
+                "duration_minutes": 65,
+                "flight_number": "3001",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "STL"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T23:20:00",
+                "arrive_time": "23:20",
+                "depart_datetime": "2026-09-07T20:50:00",
+                "depart_time": "20:50",
+                "destination": "SJC",
+                "duration_minutes": 270,
+                "flight_number": "576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MDW"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 922.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "23:05",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "13:40",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "11h 25m",
+            "duration_minutes": 685,
+            "flight_numbers": "WN 306 / WN 679 / WN 3264",
+            "layovers": [
+              {
+                "airport": "HOU",
+                "change_of_airport": false,
+                "duration_minutes": 140,
+                "overnight": false
+              },
+              {
+                "airport": "PHX",
+                "change_of_airport": false,
+                "duration_minutes": 135,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T16:00:00",
+                "arrive_time": "16:00",
+                "depart_datetime": "2026-09-07T13:40:00",
+                "depart_time": "13:40",
+                "destination": "HOU",
+                "duration_minutes": 140,
+                "flight_number": "306",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T19:00:00",
+                "arrive_time": "19:00",
+                "depart_datetime": "2026-09-07T18:20:00",
+                "depart_time": "18:20",
+                "destination": "PHX",
+                "duration_minutes": 160,
+                "flight_number": "679",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "HOU"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T23:05:00",
+                "arrive_time": "23:05",
+                "depart_datetime": "2026-09-07T21:15:00",
+                "depart_time": "21:15",
+                "destination": "SJC",
+                "duration_minutes": 110,
+                "flight_number": "3264",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PHX"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 922.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "23:20",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "13:05",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "12h 15m",
+            "duration_minutes": 735,
+            "flight_numbers": "WN 219 / WN 576",
+            "layovers": [
+              {
+                "airport": "MDW",
+                "change_of_airport": false,
+                "duration_minutes": 250,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T16:40:00",
+                "arrive_time": "16:40",
+                "depart_datetime": "2026-09-07T13:05:00",
+                "depart_time": "13:05",
+                "destination": "MDW",
+                "duration_minutes": 215,
+                "flight_number": "219",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T23:20:00",
+                "arrive_time": "23:20",
+                "depart_datetime": "2026-09-07T20:50:00",
+                "depart_time": "20:50",
+                "destination": "SJC",
+                "duration_minutes": 270,
+                "flight_number": "576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MDW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 995.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "20:10",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "11:35",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "10h 35m",
+            "duration_minutes": 635,
+            "flight_numbers": "WN 328 / WN 1938 / WN 3874",
+            "layovers": [
+              {
+                "airport": "HOU",
+                "change_of_airport": false,
+                "duration_minutes": 165,
+                "overnight": false
+              },
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 55,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T11:35:00",
+                "depart_time": "11:35",
+                "destination": "HOU",
+                "duration_minutes": 135,
+                "flight_number": "328",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T17:45:00",
+                "arrive_time": "17:45",
+                "depart_datetime": "2026-09-07T16:35:00",
+                "depart_time": "16:35",
+                "destination": "LAS",
+                "duration_minutes": 190,
+                "flight_number": "1938",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "HOU"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T20:10:00",
+                "arrive_time": "20:10",
+                "depart_datetime": "2026-09-07T18:40:00",
+                "depart_time": "18:40",
+                "destination": "SJC",
+                "duration_minutes": 90,
+                "flight_number": "3874",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 1000.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "20:40",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "11:35",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "11h 5m",
+            "duration_minutes": 665,
+            "flight_numbers": "WN 328 / WN 40 / WN 3671",
+            "layovers": [
+              {
+                "airport": "HOU",
+                "change_of_airport": false,
+                "duration_minutes": 130,
+                "overnight": false
+              },
+              {
+                "airport": "DAL",
+                "change_of_airport": false,
+                "duration_minutes": 120,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T11:35:00",
+                "depart_time": "11:35",
+                "destination": "HOU",
+                "duration_minutes": 135,
+                "flight_number": "328",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T17:05:00",
+                "arrive_time": "17:05",
+                "depart_datetime": "2026-09-07T16:00:00",
+                "depart_time": "16:00",
+                "destination": "DAL",
+                "duration_minutes": 65,
+                "flight_number": "40",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "HOU"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T20:40:00",
+                "arrive_time": "20:40",
+                "depart_datetime": "2026-09-07T19:05:00",
+                "depart_time": "19:05",
+                "destination": "SJC",
+                "duration_minutes": 215,
+                "flight_number": "3671",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DAL"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 1000.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "20:40",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "11:35",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "11h 5m",
+            "duration_minutes": 665,
+            "flight_numbers": "WN 328 / WN 44 / WN 3671",
+            "layovers": [
+              {
+                "airport": "HOU",
+                "change_of_airport": false,
+                "duration_minutes": 190,
+                "overnight": false
+              },
+              {
+                "airport": "DAL",
+                "change_of_airport": false,
+                "duration_minutes": 55,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T11:35:00",
+                "depart_time": "11:35",
+                "destination": "HOU",
+                "duration_minutes": 135,
+                "flight_number": "328",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T18:10:00",
+                "arrive_time": "18:10",
+                "depart_datetime": "2026-09-07T17:00:00",
+                "depart_time": "17:00",
+                "destination": "DAL",
+                "duration_minutes": 70,
+                "flight_number": "44",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "HOU"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T20:40:00",
+                "arrive_time": "20:40",
+                "depart_datetime": "2026-09-07T19:05:00",
+                "depart_time": "19:05",
+                "destination": "SJC",
+                "duration_minutes": 215,
+                "flight_number": "3671",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DAL"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 1000.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "21:25",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "11:35",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "11h 50m",
+            "duration_minutes": 710,
+            "flight_numbers": "WN 328 / WN 380 / WN 2794",
+            "layovers": [
+              {
+                "airport": "HOU",
+                "change_of_airport": false,
+                "duration_minutes": 215,
+                "overnight": false
+              },
+              {
+                "airport": "PHX",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T11:35:00",
+                "depart_time": "11:35",
+                "destination": "HOU",
+                "duration_minutes": 135,
+                "flight_number": "328",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T18:05:00",
+                "arrive_time": "18:05",
+                "depart_datetime": "2026-09-07T17:25:00",
+                "depart_time": "17:25",
+                "destination": "PHX",
+                "duration_minutes": 160,
+                "flight_number": "380",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "HOU"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T21:25:00",
+                "arrive_time": "21:25",
+                "depart_datetime": "2026-09-07T19:35:00",
+                "depart_time": "19:35",
+                "destination": "SJC",
+                "duration_minutes": 110,
+                "flight_number": "2794",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PHX"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 1000.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "21:35",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "11:35",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "12h",
+            "duration_minutes": 720,
+            "flight_numbers": "WN 328 / WN 1938 / WN 1131",
+            "layovers": [
+              {
+                "airport": "HOU",
+                "change_of_airport": false,
+                "duration_minutes": 165,
+                "overnight": false
+              },
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 140,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T11:35:00",
+                "depart_time": "11:35",
+                "destination": "HOU",
+                "duration_minutes": 135,
+                "flight_number": "328",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T17:45:00",
+                "arrive_time": "17:45",
+                "depart_datetime": "2026-09-07T16:35:00",
+                "depart_time": "16:35",
+                "destination": "LAS",
+                "duration_minutes": 190,
+                "flight_number": "1938",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "HOU"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T21:35:00",
+                "arrive_time": "21:35",
+                "depart_datetime": "2026-09-07T20:05:00",
+                "depart_time": "20:05",
+                "destination": "SJC",
+                "duration_minutes": 90,
+                "flight_number": "1131",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 1000.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "21:35",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "11:35",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "12h",
+            "duration_minutes": 720,
+            "flight_numbers": "WN 328 / WN 1939 / WN 1131",
+            "layovers": [
+              {
+                "airport": "HOU",
+                "change_of_airport": false,
+                "duration_minutes": 255,
+                "overnight": false
+              },
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 50,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T11:35:00",
+                "depart_time": "11:35",
+                "destination": "HOU",
+                "duration_minutes": 135,
+                "flight_number": "328",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T19:15:00",
+                "arrive_time": "19:15",
+                "depart_datetime": "2026-09-07T18:05:00",
+                "depart_time": "18:05",
+                "destination": "LAS",
+                "duration_minutes": 190,
+                "flight_number": "1939",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "HOU"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T21:35:00",
+                "arrive_time": "21:35",
+                "depart_datetime": "2026-09-07T20:05:00",
+                "depart_time": "20:05",
+                "destination": "SJC",
+                "duration_minutes": 90,
+                "flight_number": "1131",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 1000.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:00",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "11:35",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "12h 25m",
+            "duration_minutes": 745,
+            "flight_numbers": "WN 328 / WN 1891 / WN 1927",
+            "layovers": [
+              {
+                "airport": "HOU",
+                "change_of_airport": false,
+                "duration_minutes": 90,
+                "overnight": false
+              },
+              {
+                "airport": "AUS",
+                "change_of_airport": false,
+                "duration_minutes": 250,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T11:35:00",
+                "depart_time": "11:35",
+                "destination": "HOU",
+                "duration_minutes": 135,
+                "flight_number": "328",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T16:15:00",
+                "arrive_time": "16:15",
+                "depart_datetime": "2026-09-07T15:20:00",
+                "depart_time": "15:20",
+                "destination": "AUS",
+                "duration_minutes": 55,
+                "flight_number": "1891",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "HOU"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T22:00:00",
+                "arrive_time": "22:00",
+                "depart_datetime": "2026-09-07T20:25:00",
+                "depart_time": "20:25",
+                "destination": "SJC",
+                "duration_minutes": 215,
+                "flight_number": "1927",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "AUS"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 1000.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:15",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "11:35",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "12h 40m",
+            "duration_minutes": 760,
+            "flight_numbers": "WN 328 / WN 1915 / WN 1679",
+            "layovers": [
+              {
+                "airport": "HOU",
+                "change_of_airport": false,
+                "duration_minutes": 150,
+                "overnight": false
+              },
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 165,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T11:35:00",
+                "depart_time": "11:35",
+                "destination": "HOU",
+                "duration_minutes": 135,
+                "flight_number": "328",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T17:55:00",
+                "arrive_time": "17:55",
+                "depart_datetime": "2026-09-07T16:20:00",
+                "depart_time": "16:20",
+                "destination": "DEN",
+                "duration_minutes": 155,
+                "flight_number": "1915",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "HOU"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T22:15:00",
+                "arrive_time": "22:15",
+                "depart_datetime": "2026-09-07T20:40:00",
+                "depart_time": "20:40",
+                "destination": "SJC",
+                "duration_minutes": 155,
+                "flight_number": "1679",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 1000.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:15",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "11:35",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "12h 40m",
+            "duration_minutes": 760,
+            "flight_numbers": "WN 328 / WN 1916 / WN 1679",
+            "layovers": [
+              {
+                "airport": "HOU",
+                "change_of_airport": false,
+                "duration_minutes": 260,
+                "overnight": false
+              },
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 50,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T11:35:00",
+                "depart_time": "11:35",
+                "destination": "HOU",
+                "duration_minutes": 135,
+                "flight_number": "328",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T19:50:00",
+                "arrive_time": "19:50",
+                "depart_datetime": "2026-09-07T18:10:00",
+                "depart_time": "18:10",
+                "destination": "DEN",
+                "duration_minutes": 160,
+                "flight_number": "1916",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "HOU"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T22:15:00",
+                "arrive_time": "22:15",
+                "depart_datetime": "2026-09-07T20:40:00",
+                "depart_time": "20:40",
+                "destination": "SJC",
+                "duration_minutes": 155,
+                "flight_number": "1679",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 1000.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:20",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "11:35",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "12h 45m",
+            "duration_minutes": 765,
+            "flight_numbers": "WN 328 / WN 1938 / WN 4965",
+            "layovers": [
+              {
+                "airport": "HOU",
+                "change_of_airport": false,
+                "duration_minutes": 165,
+                "overnight": false
+              },
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 185,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T11:35:00",
+                "depart_time": "11:35",
+                "destination": "HOU",
+                "duration_minutes": 135,
+                "flight_number": "328",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T17:45:00",
+                "arrive_time": "17:45",
+                "depart_datetime": "2026-09-07T16:35:00",
+                "depart_time": "16:35",
+                "destination": "LAS",
+                "duration_minutes": 190,
+                "flight_number": "1938",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "HOU"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T22:20:00",
+                "arrive_time": "22:20",
+                "depart_datetime": "2026-09-07T20:50:00",
+                "depart_time": "20:50",
+                "destination": "SJC",
+                "duration_minutes": 90,
+                "flight_number": "4965",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 1000.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:20",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "11:35",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "12h 45m",
+            "duration_minutes": 765,
+            "flight_numbers": "WN 328 / WN 1939 / WN 4965",
+            "layovers": [
+              {
+                "airport": "HOU",
+                "change_of_airport": false,
+                "duration_minutes": 255,
+                "overnight": false
+              },
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 95,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T13:50:00",
+                "arrive_time": "13:50",
+                "depart_datetime": "2026-09-07T11:35:00",
+                "depart_time": "11:35",
+                "destination": "HOU",
+                "duration_minutes": 135,
+                "flight_number": "328",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T19:15:00",
+                "arrive_time": "19:15",
+                "depart_datetime": "2026-09-07T18:05:00",
+                "depart_time": "18:05",
+                "destination": "LAS",
+                "duration_minutes": 190,
+                "flight_number": "1939",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "HOU"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T22:20:00",
+                "arrive_time": "22:20",
+                "depart_datetime": "2026-09-07T20:50:00",
+                "depart_time": "20:50",
+                "destination": "SJC",
+                "duration_minutes": 90,
+                "flight_number": "4965",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 1000.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "21:35",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "13:40",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "9h 55m",
+            "duration_minutes": 595,
+            "flight_numbers": "WN 306 / WN 1939 / WN 1131",
+            "layovers": [
+              {
+                "airport": "HOU",
+                "change_of_airport": false,
+                "duration_minutes": 125,
+                "overnight": false
+              },
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 50,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T16:00:00",
+                "arrive_time": "16:00",
+                "depart_datetime": "2026-09-07T13:40:00",
+                "depart_time": "13:40",
+                "destination": "HOU",
+                "duration_minutes": 140,
+                "flight_number": "306",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T19:15:00",
+                "arrive_time": "19:15",
+                "depart_datetime": "2026-09-07T18:05:00",
+                "depart_time": "18:05",
+                "destination": "LAS",
+                "duration_minutes": 190,
+                "flight_number": "1939",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "HOU"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T21:35:00",
+                "arrive_time": "21:35",
+                "depart_datetime": "2026-09-07T20:05:00",
+                "depart_time": "20:05",
+                "destination": "SJC",
+                "duration_minutes": 90,
+                "flight_number": "1131",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 1000.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:15",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "13:40",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "10h 35m",
+            "duration_minutes": 635,
+            "flight_numbers": "WN 306 / WN 1916 / WN 1679",
+            "layovers": [
+              {
+                "airport": "HOU",
+                "change_of_airport": false,
+                "duration_minutes": 130,
+                "overnight": false
+              },
+              {
+                "airport": "DEN",
+                "change_of_airport": false,
+                "duration_minutes": 50,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T16:00:00",
+                "arrive_time": "16:00",
+                "depart_datetime": "2026-09-07T13:40:00",
+                "depart_time": "13:40",
+                "destination": "HOU",
+                "duration_minutes": 140,
+                "flight_number": "306",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T19:50:00",
+                "arrive_time": "19:50",
+                "depart_datetime": "2026-09-07T18:10:00",
+                "depart_time": "18:10",
+                "destination": "DEN",
+                "duration_minutes": 160,
+                "flight_number": "1916",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "HOU"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T22:15:00",
+                "arrive_time": "22:15",
+                "depart_datetime": "2026-09-07T20:40:00",
+                "depart_time": "20:40",
+                "destination": "SJC",
+                "duration_minutes": 155,
+                "flight_number": "1679",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DEN"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 1000.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:20",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "13:40",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "10h 40m",
+            "duration_minutes": 640,
+            "flight_numbers": "WN 306 / WN 1939 / WN 4965",
+            "layovers": [
+              {
+                "airport": "HOU",
+                "change_of_airport": false,
+                "duration_minutes": 125,
+                "overnight": false
+              },
+              {
+                "airport": "LAS",
+                "change_of_airport": false,
+                "duration_minutes": 95,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T16:00:00",
+                "arrive_time": "16:00",
+                "depart_datetime": "2026-09-07T13:40:00",
+                "depart_time": "13:40",
+                "destination": "HOU",
+                "duration_minutes": 140,
+                "flight_number": "306",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T19:15:00",
+                "arrive_time": "19:15",
+                "depart_datetime": "2026-09-07T18:05:00",
+                "depart_time": "18:05",
+                "destination": "LAS",
+                "duration_minutes": 190,
+                "flight_number": "1939",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "HOU"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T22:20:00",
+                "arrive_time": "22:20",
+                "depart_datetime": "2026-09-07T20:50:00",
+                "depart_time": "20:50",
+                "destination": "SJC",
+                "duration_minutes": 90,
+                "flight_number": "4965",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAS"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 1000.00"
+      },
+      {
+        "carriers": "WN",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "WN",
+            "date": "2026-09-04",
+            "departure": "22:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 10m",
+            "duration_minutes": 790,
+            "flight_numbers": "WN 3576 / WN 1607",
+            "layovers": [
+              {
+                "airport": "BWI",
+                "change_of_airport": false,
+                "duration_minutes": 265,
+                "overnight": false
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T06:35:00",
+                "arrive_time": "06:35",
+                "depart_datetime": "2026-09-04T22:30:00",
+                "depart_time": "22:30",
+                "destination": "BWI",
+                "duration_minutes": 305,
+                "flight_number": "3576",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-05T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-05T11:00:00",
+                "depart_time": "11:00",
+                "destination": "CUN",
+                "duration_minutes": 220,
+                "flight_number": "1607",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "BWI"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:00",
+            "arrival_time_ahead": "",
+            "carrier": "WN",
+            "date": "2026-09-07",
+            "departure": "15:10",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "8h 50m",
+            "duration_minutes": 530,
+            "flight_numbers": "WN 587 / WN 1927",
+            "layovers": [
+              {
+                "airport": "AUS",
+                "change_of_airport": false,
+                "duration_minutes": 165,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737-700 (Scimitar Winglets) Pax",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T17:40:00",
+                "arrive_time": "17:40",
+                "depart_datetime": "2026-09-07T15:10:00",
+                "depart_time": "15:10",
+                "destination": "AUS",
+                "duration_minutes": 150,
+                "flight_number": "587",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "WN",
+                "arrive_datetime": "2026-09-07T22:00:00",
+                "arrive_time": "22:00",
+                "depart_datetime": "2026-09-07T20:25:00",
+                "depart_time": "20:25",
+                "destination": "SJC",
+                "duration_minutes": 215,
+                "flight_number": "1927",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "AUS"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1045.00"
+      },
+      {
+        "carriers": "AA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:31",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-04",
+            "departure": "06:00",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "26h 31m",
+            "duration_minutes": 1591,
+            "flight_numbers": "AA 1358 / AA 691 / AA 2179",
+            "layovers": [
+              {
+                "airport": "PHX",
+                "change_of_airport": false,
+                "duration_minutes": 687,
+                "overnight": false
+              },
+              {
+                "airport": "AUS",
+                "change_of_airport": false,
+                "duration_minutes": 492,
+                "overnight": true
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-04T08:03:00",
+                "arrive_time": "08:03",
+                "depart_datetime": "2026-09-04T06:00:00",
+                "depart_time": "06:00",
+                "destination": "PHX",
+                "duration_minutes": 123,
+                "flight_number": "1358",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-04T23:48:00",
+                "arrive_time": "23:48",
+                "depart_datetime": "2026-09-04T19:30:00",
+                "depart_time": "19:30",
+                "destination": "AUS",
+                "duration_minutes": 138,
+                "flight_number": "691",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PHX"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-05T10:31:00",
+                "arrive_time": "10:31",
+                "depart_datetime": "2026-09-05T08:00:00",
+                "depart_time": "08:00",
+                "destination": "CUN",
+                "duration_minutes": 151,
+                "flight_number": "2179",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "AUS"
+              }
+            ],
+            "stops": 2
+          },
+          {
+            "arrival": "10:50",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "12:33",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "24h 17m",
+            "duration_minutes": 1457,
+            "flight_numbers": "AA 1102 / AA 2289 / AA 2046",
+            "layovers": [
+              {
+                "airport": "MIA",
+                "change_of_airport": false,
+                "duration_minutes": 239,
+                "overnight": false
+              },
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 696,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T15:28:00",
+                "arrive_time": "15:28",
+                "depart_datetime": "2026-09-07T12:33:00",
+                "depart_time": "12:33",
+                "destination": "MIA",
+                "duration_minutes": 115,
+                "flight_number": "1102",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T21:42:00",
+                "arrive_time": "21:42",
+                "depart_datetime": "2026-09-07T19:27:00",
+                "depart_time": "19:27",
+                "destination": "DFW",
+                "duration_minutes": 195,
+                "flight_number": "2289",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MIA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-08T10:50:00",
+                "arrive_time": "10:50",
+                "depart_datetime": "2026-09-08T09:18:00",
+                "depart_time": "09:18",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "2046",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 812.00"
+      },
+      {
+        "carriers": "AA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:31",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-04",
+            "departure": "06:00",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "26h 31m",
+            "duration_minutes": 1591,
+            "flight_numbers": "AA 1358 / AA 691 / AA 2179",
+            "layovers": [
+              {
+                "airport": "PHX",
+                "change_of_airport": false,
+                "duration_minutes": 687,
+                "overnight": false
+              },
+              {
+                "airport": "AUS",
+                "change_of_airport": false,
+                "duration_minutes": 492,
+                "overnight": true
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-04T08:03:00",
+                "arrive_time": "08:03",
+                "depart_datetime": "2026-09-04T06:00:00",
+                "depart_time": "06:00",
+                "destination": "PHX",
+                "duration_minutes": 123,
+                "flight_number": "1358",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-04T23:48:00",
+                "arrive_time": "23:48",
+                "depart_datetime": "2026-09-04T19:30:00",
+                "depart_time": "19:30",
+                "destination": "AUS",
+                "duration_minutes": 138,
+                "flight_number": "691",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PHX"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-05T10:31:00",
+                "arrive_time": "10:31",
+                "depart_datetime": "2026-09-05T08:00:00",
+                "depart_time": "08:00",
+                "destination": "CUN",
+                "duration_minutes": 151,
+                "flight_number": "2179",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "AUS"
+              }
+            ],
+            "stops": 2
+          },
+          {
+            "arrival": "10:50",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "12:33",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "24h 17m",
+            "duration_minutes": 1457,
+            "flight_numbers": "AA 1102 / AA 1679 / AA 2046",
+            "layovers": [
+              {
+                "airport": "MIA",
+                "change_of_airport": false,
+                "duration_minutes": 378,
+                "overnight": false
+              },
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 561,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T15:28:00",
+                "arrive_time": "15:28",
+                "depart_datetime": "2026-09-07T12:33:00",
+                "depart_time": "12:33",
+                "destination": "MIA",
+                "duration_minutes": 115,
+                "flight_number": "1102",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T23:57:00",
+                "arrive_time": "23:57",
+                "depart_datetime": "2026-09-07T21:46:00",
+                "depart_time": "21:46",
+                "destination": "DFW",
+                "duration_minutes": 191,
+                "flight_number": "1679",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MIA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-08T10:50:00",
+                "arrive_time": "10:50",
+                "depart_datetime": "2026-09-08T09:18:00",
+                "depart_time": "09:18",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "2046",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 812.00"
+      },
+      {
+        "carriers": "AA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:31",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-04",
+            "departure": "06:00",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "26h 31m",
+            "duration_minutes": 1591,
+            "flight_numbers": "AA 1358 / AA 691 / AA 2179",
+            "layovers": [
+              {
+                "airport": "PHX",
+                "change_of_airport": false,
+                "duration_minutes": 687,
+                "overnight": false
+              },
+              {
+                "airport": "AUS",
+                "change_of_airport": false,
+                "duration_minutes": 492,
+                "overnight": true
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-04T08:03:00",
+                "arrive_time": "08:03",
+                "depart_datetime": "2026-09-04T06:00:00",
+                "depart_time": "06:00",
+                "destination": "PHX",
+                "duration_minutes": 123,
+                "flight_number": "1358",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-04T23:48:00",
+                "arrive_time": "23:48",
+                "depart_datetime": "2026-09-04T19:30:00",
+                "depart_time": "19:30",
+                "destination": "AUS",
+                "duration_minutes": 138,
+                "flight_number": "691",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PHX"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-05T10:31:00",
+                "arrive_time": "10:31",
+                "depart_datetime": "2026-09-05T08:00:00",
+                "depart_time": "08:00",
+                "destination": "CUN",
+                "duration_minutes": 151,
+                "flight_number": "2179",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "AUS"
+              }
+            ],
+            "stops": 2
+          },
+          {
+            "arrival": "10:50",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "16:30",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "20h 20m",
+            "duration_minutes": 1220,
+            "flight_numbers": "AA 1723 / AA 1679 / AA 2046",
+            "layovers": [
+              {
+                "airport": "MIA",
+                "change_of_airport": false,
+                "duration_minutes": 141,
+                "overnight": false
+              },
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 561,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T19:25:00",
+                "arrive_time": "19:25",
+                "depart_datetime": "2026-09-07T16:30:00",
+                "depart_time": "16:30",
+                "destination": "MIA",
+                "duration_minutes": 115,
+                "flight_number": "1723",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T23:57:00",
+                "arrive_time": "23:57",
+                "depart_datetime": "2026-09-07T21:46:00",
+                "depart_time": "21:46",
+                "destination": "DFW",
+                "duration_minutes": 191,
+                "flight_number": "1679",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MIA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-08T10:50:00",
+                "arrive_time": "10:50",
+                "depart_datetime": "2026-09-08T09:18:00",
+                "depart_time": "09:18",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "2046",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 812.00"
+      },
+      {
+        "carriers": "AA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:31",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-04",
+            "departure": "06:00",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "26h 31m",
+            "duration_minutes": 1591,
+            "flight_numbers": "AA 1358 / AA 691 / AA 2179",
+            "layovers": [
+              {
+                "airport": "PHX",
+                "change_of_airport": false,
+                "duration_minutes": 687,
+                "overnight": false
+              },
+              {
+                "airport": "AUS",
+                "change_of_airport": false,
+                "duration_minutes": 492,
+                "overnight": true
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-04T08:03:00",
+                "arrive_time": "08:03",
+                "depart_datetime": "2026-09-04T06:00:00",
+                "depart_time": "06:00",
+                "destination": "PHX",
+                "duration_minutes": 123,
+                "flight_number": "1358",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-04T23:48:00",
+                "arrive_time": "23:48",
+                "depart_datetime": "2026-09-04T19:30:00",
+                "depart_time": "19:30",
+                "destination": "AUS",
+                "duration_minutes": 138,
+                "flight_number": "691",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PHX"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-05T10:31:00",
+                "arrive_time": "10:31",
+                "depart_datetime": "2026-09-05T08:00:00",
+                "depart_time": "08:00",
+                "destination": "CUN",
+                "duration_minutes": 151,
+                "flight_number": "2179",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "AUS"
+              }
+            ],
+            "stops": 2
+          },
+          {
+            "arrival": "13:40",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "16:30",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "23h 10m",
+            "duration_minutes": 1390,
+            "flight_numbers": "AA 1723 / AA 1679 / AA 2834",
+            "layovers": [
+              {
+                "airport": "MIA",
+                "change_of_airport": false,
+                "duration_minutes": 141,
+                "overnight": false
+              },
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 731,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T19:25:00",
+                "arrive_time": "19:25",
+                "depart_datetime": "2026-09-07T16:30:00",
+                "depart_time": "16:30",
+                "destination": "MIA",
+                "duration_minutes": 115,
+                "flight_number": "1723",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T23:57:00",
+                "arrive_time": "23:57",
+                "depart_datetime": "2026-09-07T21:46:00",
+                "depart_time": "21:46",
+                "destination": "DFW",
+                "duration_minutes": 191,
+                "flight_number": "1679",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MIA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-08T13:40:00",
+                "arrive_time": "13:40",
+                "depart_datetime": "2026-09-08T12:08:00",
+                "depart_time": "12:08",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "2834",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 844.00"
+      },
+      {
+        "carriers": "AA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:31",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-04",
+            "departure": "06:00",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "26h 31m",
+            "duration_minutes": 1591,
+            "flight_numbers": "AA 1358 / AA 691 / AA 2179",
+            "layovers": [
+              {
+                "airport": "PHX",
+                "change_of_airport": false,
+                "duration_minutes": 687,
+                "overnight": false
+              },
+              {
+                "airport": "AUS",
+                "change_of_airport": false,
+                "duration_minutes": 492,
+                "overnight": true
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-04T08:03:00",
+                "arrive_time": "08:03",
+                "depart_datetime": "2026-09-04T06:00:00",
+                "depart_time": "06:00",
+                "destination": "PHX",
+                "duration_minutes": 123,
+                "flight_number": "1358",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-04T23:48:00",
+                "arrive_time": "23:48",
+                "depart_datetime": "2026-09-04T19:30:00",
+                "depart_time": "19:30",
+                "destination": "AUS",
+                "duration_minutes": 138,
+                "flight_number": "691",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PHX"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-05T10:31:00",
+                "arrive_time": "10:31",
+                "depart_datetime": "2026-09-05T08:00:00",
+                "depart_time": "08:00",
+                "destination": "CUN",
+                "duration_minutes": 151,
+                "flight_number": "2179",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "AUS"
+              }
+            ],
+            "stops": 2
+          },
+          {
+            "arrival": "10:50",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "14:07",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "22h 43m",
+            "duration_minutes": 1363,
+            "flight_numbers": "AA 2665 / AA 2289 / AA 2046",
+            "layovers": [
+              {
+                "airport": "MIA",
+                "change_of_airport": false,
+                "duration_minutes": 145,
+                "overnight": false
+              },
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 696,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T17:02:00",
+                "arrive_time": "17:02",
+                "depart_datetime": "2026-09-07T14:07:00",
+                "depart_time": "14:07",
+                "destination": "MIA",
+                "duration_minutes": 115,
+                "flight_number": "2665",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T21:42:00",
+                "arrive_time": "21:42",
+                "depart_datetime": "2026-09-07T19:27:00",
+                "depart_time": "19:27",
+                "destination": "DFW",
+                "duration_minutes": 195,
+                "flight_number": "2289",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MIA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-08T10:50:00",
+                "arrive_time": "10:50",
+                "depart_datetime": "2026-09-08T09:18:00",
+                "depart_time": "09:18",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "2046",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 846.00"
+      },
+      {
+        "carriers": "AA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "10:31",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-04",
+            "departure": "06:00",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "26h 31m",
+            "duration_minutes": 1591,
+            "flight_numbers": "AA 1358 / AA 691 / AA 2179",
+            "layovers": [
+              {
+                "airport": "PHX",
+                "change_of_airport": false,
+                "duration_minutes": 687,
+                "overnight": false
+              },
+              {
+                "airport": "AUS",
+                "change_of_airport": false,
+                "duration_minutes": 492,
+                "overnight": true
+              }
+            ],
+            "origin": "SJC",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 8 Passenger",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-04T08:03:00",
+                "arrive_time": "08:03",
+                "depart_datetime": "2026-09-04T06:00:00",
+                "depart_time": "06:00",
+                "destination": "PHX",
+                "duration_minutes": 123,
+                "flight_number": "1358",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SJC"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-04T23:48:00",
+                "arrive_time": "23:48",
+                "depart_datetime": "2026-09-04T19:30:00",
+                "depart_time": "19:30",
+                "destination": "AUS",
+                "duration_minutes": 138,
+                "flight_number": "691",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "PHX"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-05T10:31:00",
+                "arrive_time": "10:31",
+                "depart_datetime": "2026-09-05T08:00:00",
+                "depart_time": "08:00",
+                "destination": "CUN",
+                "duration_minutes": 151,
+                "flight_number": "2179",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "AUS"
+              }
+            ],
+            "stops": 2
+          },
+          {
+            "arrival": "10:50",
+            "arrival_time_ahead": "+1",
+            "carrier": "AA",
+            "date": "2026-09-07",
+            "departure": "14:07",
+            "destination": "SJC",
+            "direction": "return",
+            "duration": "22h 43m",
+            "duration_minutes": 1363,
+            "flight_numbers": "AA 2665 / AA 1679 / AA 2046",
+            "layovers": [
+              {
+                "airport": "MIA",
+                "change_of_airport": false,
+                "duration_minutes": 284,
+                "overnight": false
+              },
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 561,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T17:02:00",
+                "arrive_time": "17:02",
+                "depart_datetime": "2026-09-07T14:07:00",
+                "depart_time": "14:07",
+                "destination": "MIA",
+                "duration_minutes": 115,
+                "flight_number": "2665",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-07T23:57:00",
+                "arrive_time": "23:57",
+                "depart_datetime": "2026-09-07T21:46:00",
+                "depart_time": "21:46",
+                "destination": "DFW",
+                "duration_minutes": 191,
+                "flight_number": "1679",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "MIA"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "AA",
+                "arrive_datetime": "2026-09-08T10:50:00",
+                "arrive_time": "10:50",
+                "depart_datetime": "2026-09-08T09:18:00",
+                "depart_time": "09:18",
+                "destination": "SJC",
+                "duration_minutes": 212,
+                "flight_number": "2046",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 2
+          }
+        ],
+        "price": "USD 846.00"
+      }
+    ]
+  },
+  "searched_at": "2026-06-28T02:00:13.907231+00:00"
+}

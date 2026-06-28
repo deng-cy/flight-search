@@ -548,6 +548,30 @@
       font-size: 16px;
       line-height: 1.25;
     }
+    .record-controls-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+    }
+    .record-sort {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #526173;
+      font-size: 11px;
+      line-height: 1;
+      font-weight: 760;
+      text-transform: none;
+    }
+    .record-sort select {
+      min-height: 28px;
+      width: auto;
+      max-width: 148px;
+      padding: 4px 26px 4px 8px;
+      font-size: 12px;
+      font-weight: 700;
+    }
     .results-board h2 {
       margin: 0;
       font-size: 17px;
@@ -565,14 +589,15 @@
     }
     .record-link {
       display: grid;
-      gap: 5px;
+      gap: 6px;
       min-width: 0;
-      padding: 10px 11px;
+      padding: 11px 12px;
       border: 1px solid var(--line);
       border-radius: 6px;
       background: #fbfdff;
       color: var(--ink);
       text-decoration: none;
+      transition: background-color 160ms ease-out, border-color 160ms ease-out;
     }
     .record-link:hover {
       border-color: #b7c7d6;
@@ -585,7 +610,13 @@
     .record-link.current {
       border-color: var(--accent);
       background: var(--accent-soft);
-      box-shadow: inset 3px 0 0 var(--accent);
+    }
+    .record-link-top {
+      display: flex;
+      min-width: 0;
+      gap: 8px;
+      align-items: flex-start;
+      justify-content: space-between;
     }
     .record-link strong {
       color: var(--ink);
@@ -594,21 +625,10 @@
       font-weight: 820;
       overflow-wrap: anywhere;
     }
-    .record-link > span {
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.35;
-      font-weight: 650;
-      overflow-wrap: anywhere;
-    }
-    .record-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-    }
-    .record-meta span {
+    .record-status {
       display: inline-flex;
       align-items: center;
+      flex: 0 0 auto;
       min-height: 20px;
       border: 1px solid var(--metric-border);
       border-radius: 999px;
@@ -618,6 +638,31 @@
       font-size: 11px;
       line-height: 1;
       font-weight: 760;
+    }
+    .record-status.current {
+      border-color: #bfdbfe;
+      background: #dbeafe;
+      color: var(--accent-ink);
+    }
+    .record-dates {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+      font-weight: 650;
+      overflow-wrap: anywhere;
+    }
+    .record-link.current .record-dates {
+      color: #244665;
+    }
+    .record-meta {
+      display: block;
+      color: #526173;
+      font-size: 11px;
+      line-height: 1.35;
+      font-weight: 680;
+    }
+    .record-link.current .record-meta {
+      color: #34516d;
     }
     .quick-tabs {
       display: grid;
@@ -1783,6 +1828,7 @@
       .report-shell.drawer-collapsed { grid-template-columns: 1fr; }
       .report-content { grid-column: auto; grid-row: auto; order: 1; }
       .global-controls { grid-column: auto; grid-row: auto; order: 2; position: static; max-height: none; }
+      .record-list { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
       .stats, .recommendations, .source-summary-grid, .controls { grid-template-columns: 1fr 1fr; }
       .builder-grid { grid-template-columns: 1fr; }
       .builder-header { grid-template-columns: 1fr; }
@@ -1791,6 +1837,10 @@
       h1 { font-size: 24px; }
     }
     @media (max-width: 620px) {
+      .record-controls-head { grid-template-columns: 1fr; align-items: start; }
+      .record-sort { justify-content: space-between; }
+      .record-sort select { max-width: none; flex: 1; }
+      .record-list { grid-template-columns: 1fr; }
       .stats, .recommendations, .source-summary-grid, .controls { grid-template-columns: 1fr; }
       .rec-legs { grid-template-columns: 1fr; }
       .rec-leg-top { grid-template-columns: 1fr; }
@@ -1821,7 +1871,7 @@
         <button id="controlDrawerToggle" class="control-drawer-toggle" type="button" aria-controls="controlDrawerBody" aria-expanded="true" aria-label="Hide trip controls">&rsaquo;</button>
       </div>
       <div id="controlDrawerBody" class="global-controls-inner">
-        <section class="control-block record-controls" aria-label="Trip records"><h2>Trip records</h2><nav class="record-list" aria-label="Saved trip report pages"><a class="record-link current" href="sfo_sjc_to_dtw_out_2026-11-13_2026-11-14_return_2026-11-29_2026-11-30_economy_trip_summary.html" aria-current="page"><strong>SFO/SJC to DTW</strong><span>Outbound dates: 2026-11-13, 2026-11-14 · Return dates: 2026-11-29, 2026-11-30</span><small class="record-meta"><span>237 complete plans</span><span>Current</span></small></a><a class="record-link" href="sfo_sjc_to_fca_mso_out_2026-09-04_2026-09-05_return_2026-09-07_economy_trip_summary.html"><strong>SFO/SJC to FCA/MSO</strong><span>Outbound dates: 2026-09-04, 2026-09-05 · Return dates: 2026-09-07</span><small class="record-meta"><span>160 complete plans</span><span>Open</span></small></a></nav></section>
+        <section class="control-block record-controls" aria-label="Trip records"><div class="record-controls-head"><h2>Trip records</h2><label class="record-sort">Sort<select id="tripRecordSort" aria-label="Sort trip records"><option value="updated">Last updated</option><option value="outbound">Outbound date</option><option value="return">Return date</option><option value="origin">Origin airport</option><option value="destination">Destination airport</option><option value="plans">Plan count</option></select></label></div><nav class="record-list" aria-label="Saved trip report pages"><a class="record-link current" href="sfo_sjc_to_dtw_out_2026-11-13_2026-11-14_return_2026-11-29_2026-11-30_economy_trip_summary.html" aria-current="page" data-sort-index="0" data-sort-updated="1782547284.8462424" data-sort-outbound="2026-11-13" data-sort-return="2026-11-29" data-sort-origin="SFO/SJC" data-sort-destination="DTW" data-sort-plans="237"><span class="record-link-top"><strong>SFO/SJC to DTW</strong><span class="record-status current">Current</span></span><span class="record-dates">Outbound Nov 13-14, 2026 · Return Nov 29-30, 2026</span><small class="record-meta">2026-06-27 · 237 plans</small></a><a class="record-link" href="sfo_sjc_to_fca_mso_out_2026-09-04_2026-09-05_return_2026-09-07_economy_trip_summary.html" data-sort-index="1" data-sort-updated="1782113538.739804" data-sort-outbound="2026-09-04" data-sort-return="2026-09-07" data-sort-origin="SFO/SJC" data-sort-destination="FCA/MSO" data-sort-plans="160"><span class="record-link-top"><strong>SFO/SJC to FCA/MSO</strong><span class="record-status">Open</span></span><span class="record-dates">Outbound Sep 4-5, 2026 · Return Sep 7, 2026</span><small class="record-meta">2026-06-22 · 160 plans</small></a></nav></section>
         <section class="control-block score-controls" aria-label="Scoring assumptions">
           <details class="control-details advanced-controls">
             <summary>Advanced scoring and point values</summary>
@@ -4988,7 +5038,7 @@ UA 426 / UA 2817, 1 stop(s), 9h 27m" data-outbound-label="SFO -&gt; DTW
 UA 743, 0 stop(s), 4h 55m" data-return-label="DTW -&gt; SFO
 2026-11-30
 19:30 -&gt; 01:57 +1
-UA 426 / UA 2817, 1 stop(s), 9h 27m" data-same-airports="true" data-late="false" data-score="383.58" data-original-score="383.58" data-effective="359.0" data-cpp="" data-cpp-num="0.0" data-cash-component="359.0" data-award-components="[]" data-time-hours="[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0]" data-stops="1.0" data-outbound-stops="0.0" data-return-stops="1.0" data-duration="862.0" data-stop-penalty="0.0" data-duration-penalty="24.58" data-carrier-codes="[&quot;UA&quot;]" data-outbound-leg="{&quot;aircraft&quot;: &quot;&quot;, &quot;arrive&quot;: &quot;20:40&quot;, &quot;carriers&quot;: &quot;UA&quot;, &quot;connections&quot;: &quot;&quot;, &quot;date&quot;: &quot;2026-11-14&quot;, &quot;depart&quot;: &quot;12:45&quot;, &quot;destination&quot;: &quot;DTW&quot;, &quot;direction&quot;: &quot;outbound&quot;, &quot;duration&quot;: &quot;4h 55m&quot;, &quot;durationMinutes&quot;: 295, &quot;flightNumbers&quot;: &quot;UA 743&quot;, &quot;label&quot;: &quot;SFO -&gt; DTW\n2026-11-14\n12:45 -&gt; 20:40\nUA 743, 0 stop(s), 4h 55m&quot;, &quot;layovers&quot;: [], &quot;origin&quot;: &quot;SFO&quot;, &quot;points&quot;: &quot;&quot;, &quot;program&quot;: &quot;&quot;, &quot;route&quot;: &quot;SFO -&gt; DTW&quot;, &quot;segments&quot;: [{&quot;aircraft&quot;: &quot;Airbus A319&quot;, &quot;airline&quot;: &quot;UA&quot;, &quot;arrive_time&quot;: &quot;20:40&quot;, &quot;depart_time&quot;: &quot;12:45&quot;, &quot;destination&quot;: &quot;DTW&quot;, &quot;duration_minutes&quot;: 295, &quot;flight_number&quot;: &quot;743&quot;, &quot;origin&quot;: &quot;SFO&quot;}], &quot;stops&quot;: 0, &quot;taxes&quot;: &quot;&quot;}" data-return-leg="{&quot;aircraft&quot;: &quot;&quot;, &quot;arrive&quot;: &quot;01:57 +1&quot;, &quot;carriers&quot;: &quot;UA&quot;, &quot;connections&quot;: &quot;&quot;, &quot;date&quot;: &quot;2026-11-30&quot;, &quot;depart&quot;: &quot;19:30&quot;, &quot;destination&quot;: &quot;SFO&quot;, &quot;direction&quot;: &quot;return&quot;, &quot;duration&quot;: &quot;9h 27m&quot;, &quot;durationMinutes&quot;: 567, &quot;flightNumbers&quot;: &quot;UA 426 / UA 2817&quot;, &quot;label&quot;: &quot;DTW -&gt; SFO\n2026-11-30\n19:30 -&gt; 01:57 +1\nUA 426 / UA 2817, 1 stop(s), 9h 27m&quot;, &quot;layovers&quot;: [{&quot;airport&quot;: &quot;ORD&quot;, &quot;change_of_airport&quot;: false, &quot;duration_minutes&quot;: 177, &quot;overnight&quot;: false}], &quot;origin&quot;: &quot;DTW&quot;, &quot;points&quot;: &quot;&quot;, &quot;program&quot;: &quot;&quot;, &quot;route&quot;: &quot;DTW -&gt; SFO&quot;, &quot;segments&quot;: [{&quot;aircraft&quot;: &quot;Airbus A319&quot;, &quot;airline&quot;: &quot;UA&quot;, &quot;arrive_time&quot;: &quot;20:03&quot;, &quot;depart_time&quot;: &quot;19:30&quot;, &quot;destination&quot;: &quot;ORD&quot;, &quot;duration_minutes&quot;: 93, &quot;flight_number&quot;: &quot;426&quot;, &quot;origin&quot;: &quot;DTW&quot;}, {&quot;aircraft&quot;: &quot;Airbus A321neo&quot;, &quot;airline&quot;: &quot;UA&quot;, &quot;arrive_time&quot;: &quot;01:57&quot;, &quot;depart_time&quot;: &quot;23:00&quot;, &quot;destination&quot;: &quot;SFO&quot;, &quot;duration_minutes&quot;: 297, &quot;flight_number&quot;: &quot;2817&quot;, &quot;origin&quot;: &quot;ORD&quot;}], &quot;stops&quot;: 1, &quot;taxes&quot;: &quot;&quot;}" data-outbound-booking="Book together: round-trip fare · $359.00" data-return-booking="Book together: round-trip fare · $359.00"><div class="recommendation-head"><span class="section-kicker">Start here + best cash option</span><h2>SFO ↔ DTW</h2><p>2026-11-14 → 2026-11-30</p></div><div class="summary-alert-row empty"></div><p class="recommendation-reason">Best balance of price, timing, stops, and duration.</p><div class="rec-metrics"><span class="plan-chip price-chip"><span>Price</span><strong>$359.00</strong></span><span class="plan-chip"><span>Estimated value</span><strong><span data-live-effective>$359.00</span></strong></span><span class="plan-chip"><span>Trip score</span><strong><span data-live-score>383.58</span></strong></span></div><div class="rec-legs"><div class="rec-leg rec-leg-structured"><span>Outbound</span><div class="rec-leg-top"><div class="rec-leg-place"><div class="rec-leg-route">SFO → DTW</div><div class="rec-leg-date">2026-11-14</div></div><div class="rec-leg-times"><strong>12:45</strong><span>→</span><strong>20:40</strong></div></div><div class="rec-leg-meta">UA 743 · nonstop · 4h 55m</div></div><div class="rec-leg rec-leg-structured"><span>Return</span><div class="rec-leg-top"><div class="rec-leg-place"><div class="rec-leg-route">DTW → SFO</div><div class="rec-leg-date">2026-11-30</div></div><div class="rec-leg-times"><strong>19:30</strong><span>→</span><strong>01:57 +1</strong></div></div><div class="rec-leg-meta">UA 426 / UA 2817 · 1 stop · 9h 27m</div></div></div><p class="recommendation-note">Saves $207.00 versus separately booked one-way cash.</p></article><article class="recommendation" data-plan-id="cc80e11032595f56" data-section="summary" data-kind="award pair" data-trip-type="award pair" data-route="SFO -&gt; DTW / DTW -&gt; SJC" data-dates="2026-11-13 / 2026-11-30" data-origin="SFO" data-destination="DTW" data-outbound-date="2026-11-13" data-return-date="2026-11-30" data-outbound-key="SFO -&gt; DTW
+UA 426 / UA 2817, 1 stop(s), 9h 27m" data-same-airports="true" data-late="false" data-score="383.58" data-original-score="383.58" data-effective="359.0" data-cpp="" data-cpp-num="0.0" data-cash-component="359.0" data-award-components="[]" data-time-hours="[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0]" data-stops="1.0" data-outbound-stops="0.0" data-return-stops="1.0" data-duration="862.0" data-stop-penalty="0.0" data-duration-penalty="24.58" data-carrier-codes="[&quot;UA&quot;]" data-outbound-leg="{&quot;aircraft&quot;: &quot;&quot;, &quot;arrive&quot;: &quot;20:40&quot;, &quot;carriers&quot;: &quot;UA&quot;, &quot;connections&quot;: &quot;&quot;, &quot;date&quot;: &quot;2026-11-14&quot;, &quot;depart&quot;: &quot;12:45&quot;, &quot;destination&quot;: &quot;DTW&quot;, &quot;direction&quot;: &quot;outbound&quot;, &quot;duration&quot;: &quot;4h 55m&quot;, &quot;durationMinutes&quot;: 295, &quot;flightNumbers&quot;: &quot;UA 743&quot;, &quot;label&quot;: &quot;SFO -&gt; DTW\n2026-11-14\n12:45 -&gt; 20:40\nUA 743, 0 stop(s), 4h 55m&quot;, &quot;layovers&quot;: [], &quot;origin&quot;: &quot;SFO&quot;, &quot;points&quot;: &quot;&quot;, &quot;program&quot;: &quot;&quot;, &quot;route&quot;: &quot;SFO -&gt; DTW&quot;, &quot;segments&quot;: [{&quot;aircraft&quot;: &quot;Airbus A319&quot;, &quot;airline&quot;: &quot;UA&quot;, &quot;arrive_time&quot;: &quot;20:40&quot;, &quot;depart_time&quot;: &quot;12:45&quot;, &quot;destination&quot;: &quot;DTW&quot;, &quot;duration_minutes&quot;: 295, &quot;flight_number&quot;: &quot;743&quot;, &quot;origin&quot;: &quot;SFO&quot;}], &quot;stops&quot;: 0, &quot;taxes&quot;: &quot;&quot;}" data-return-leg="{&quot;aircraft&quot;: &quot;&quot;, &quot;arrive&quot;: &quot;01:57 +1&quot;, &quot;carriers&quot;: &quot;UA&quot;, &quot;connections&quot;: &quot;&quot;, &quot;date&quot;: &quot;2026-11-30&quot;, &quot;depart&quot;: &quot;19:30&quot;, &quot;destination&quot;: &quot;SFO&quot;, &quot;direction&quot;: &quot;return&quot;, &quot;duration&quot;: &quot;9h 27m&quot;, &quot;durationMinutes&quot;: 567, &quot;flightNumbers&quot;: &quot;UA 426 / UA 2817&quot;, &quot;label&quot;: &quot;DTW -&gt; SFO\n2026-11-30\n19:30 -&gt; 01:57 +1\nUA 426 / UA 2817, 1 stop(s), 9h 27m&quot;, &quot;layovers&quot;: [{&quot;airport&quot;: &quot;ORD&quot;, &quot;change_of_airport&quot;: false, &quot;duration_minutes&quot;: 177, &quot;overnight&quot;: false}], &quot;origin&quot;: &quot;DTW&quot;, &quot;points&quot;: &quot;&quot;, &quot;program&quot;: &quot;&quot;, &quot;route&quot;: &quot;DTW -&gt; SFO&quot;, &quot;segments&quot;: [{&quot;aircraft&quot;: &quot;Airbus A319&quot;, &quot;airline&quot;: &quot;UA&quot;, &quot;arrive_time&quot;: &quot;20:03&quot;, &quot;depart_time&quot;: &quot;19:30&quot;, &quot;destination&quot;: &quot;ORD&quot;, &quot;duration_minutes&quot;: 93, &quot;flight_number&quot;: &quot;426&quot;, &quot;origin&quot;: &quot;DTW&quot;}, {&quot;aircraft&quot;: &quot;Airbus A321neo&quot;, &quot;airline&quot;: &quot;UA&quot;, &quot;arrive_time&quot;: &quot;01:57&quot;, &quot;depart_time&quot;: &quot;23:00&quot;, &quot;destination&quot;: &quot;SFO&quot;, &quot;duration_minutes&quot;: 297, &quot;flight_number&quot;: &quot;2817&quot;, &quot;origin&quot;: &quot;ORD&quot;}], &quot;stops&quot;: 1, &quot;taxes&quot;: &quot;&quot;}" data-outbound-booking="Book together: round-trip fare · $359.00" data-return-booking="Book together: round-trip fare · $359.00"><div class="recommendation-head"><span class="section-kicker">Start here + best paid strategy</span><h2>SFO ↔ DTW</h2><p>2026-11-14 → 2026-11-30</p></div><div class="summary-alert-row empty"></div><p class="recommendation-reason">Best balance of price, timing, stops, and duration.</p><div class="rec-metrics"><span class="plan-chip price-chip"><span>Price</span><strong>$359.00</strong></span><span class="plan-chip"><span>Estimated value</span><strong><span data-live-effective>$359.00</span></strong></span><span class="plan-chip"><span>Trip score</span><strong><span data-live-score>383.58</span></strong></span></div><div class="rec-legs"><div class="rec-leg rec-leg-structured"><span>Outbound</span><div class="rec-leg-top"><div class="rec-leg-place"><div class="rec-leg-route">SFO → DTW</div><div class="rec-leg-date">2026-11-14</div></div><div class="rec-leg-times"><strong>12:45</strong><span>→</span><strong>20:40</strong></div></div><div class="rec-leg-meta">UA 743 · nonstop · 4h 55m</div></div><div class="rec-leg rec-leg-structured"><span>Return</span><div class="rec-leg-top"><div class="rec-leg-place"><div class="rec-leg-route">DTW → SFO</div><div class="rec-leg-date">2026-11-30</div></div><div class="rec-leg-times"><strong>19:30</strong><span>→</span><strong>01:57 +1</strong></div></div><div class="rec-leg-meta">UA 426 / UA 2817 · 1 stop · 9h 27m</div></div></div><p class="recommendation-note">Saves $207.00 versus separately booked one-way cash.</p></article><article class="recommendation" data-plan-id="cc80e11032595f56" data-section="summary" data-kind="award pair" data-trip-type="award pair" data-route="SFO -&gt; DTW / DTW -&gt; SJC" data-dates="2026-11-13 / 2026-11-30" data-origin="SFO" data-destination="DTW" data-outbound-date="2026-11-13" data-return-date="2026-11-30" data-outbound-key="SFO -&gt; DTW
 2026-11-13
 14:25 -&gt; 22:00
 DL1927, 0 stop(s), 4h 35m" data-return-key="DTW -&gt; SJC
@@ -5046,36 +5096,36 @@ DL2753, DL1272, 1 stop(s), 6h 49m" data-same-airports="false" data-late="true" d
         <section class="panel source-table-panel">
           <h2>Source details</h2>
           <div class="source-groups">
-            <details class="source-group"><summary><span class="source-group-title"><strong>Seats.aero awards</strong><small>Award availability captured for each route and date.</small></span><span class="source-group-count">8 searches</span></summary><div class="table-wrap"><table class="source-table"><thead><tr><th>Search</th><th>Flights / fares</th><th>Last updated</th><th>Status</th><th>File</th></tr></thead><tbody><tr><td class="notes">Outbound: SFO → DTW on 2026-11-13</td><td>40 shown / 204 found</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">seat_aero/data/sfo_dtw_2026-11-13_normalized_full.json</td></tr>
-<tr><td class="notes">Outbound: SFO → DTW on 2026-11-14</td><td>40 shown / 240 found</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">seat_aero/data/sfo_dtw_2026-11-14_normalized_full.json</td></tr>
-<tr><td class="notes">Outbound: SJC → DTW on 2026-11-13</td><td>27 shown / 33 found</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">seat_aero/data/sjc_dtw_2026-11-13_normalized_full.json</td></tr>
-<tr><td class="notes">Outbound: SJC → DTW on 2026-11-14</td><td>25 shown / 37 found</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">seat_aero/data/sjc_dtw_2026-11-14_normalized_full.json</td></tr>
-<tr><td class="notes">Return: DTW → SFO on 2026-11-29</td><td>29 shown / 109 found</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">seat_aero/data/dtw_sfo_2026-11-29_normalized_full.json</td></tr>
-<tr><td class="notes">Return: DTW → SFO on 2026-11-30</td><td>37 shown / 125 found</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">seat_aero/data/dtw_sfo_2026-11-30_normalized_full.json</td></tr>
-<tr><td class="notes">Return: DTW → SJC on 2026-11-29</td><td>6 shown / 6 found</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">seat_aero/data/dtw_sjc_2026-11-29_normalized_full.json</td></tr>
-<tr><td class="notes">Return: DTW → SJC on 2026-11-30</td><td>15 shown / 15 found</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">seat_aero/data/dtw_sjc_2026-11-30_normalized_full.json</td></tr></tbody></table></div></details><details class="source-group"><summary><span class="source-group-title"><strong>Two-leg cash fares</strong><small>Round-trip and open-jaw paid fare searches.</small></span><span class="source-group-count">16 searches</span></summary><div class="table-wrap"><table class="source-table"><thead><tr><th>Search</th><th>Flights / fares</th><th>Last updated</th><th>Status</th><th>File</th></tr></thead><tbody><tr><td class="notes">SFO → DTW / DTW → SFO on 2026-11-13 / 2026-11-29 (round-trip)</td><td>1 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip_cash_fares.json</td></tr>
-<tr><td class="notes">SFO → DTW / DTW → SFO on 2026-11-13 / 2026-11-30 (round-trip)</td><td>5 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-13_dtw_sfo_2026-11-30_economy_round_trip_cash_fares.json</td></tr>
-<tr><td class="notes">SFO → DTW / DTW → SJC on 2026-11-13 / 2026-11-29 (multi-city)</td><td>0 fare rows</td><td>2026-06-23 00:42 PDT</td><td>No rows</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-13_dtw_sjc_2026-11-29_economy_multi_city_cash_fares.json</td></tr>
-<tr><td class="notes">SFO → DTW / DTW → SJC on 2026-11-13 / 2026-11-30 (multi-city)</td><td>12 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-13_dtw_sjc_2026-11-30_economy_multi_city_cash_fares.json</td></tr>
-<tr><td class="notes">SFO → DTW / DTW → SFO on 2026-11-14 / 2026-11-29 (round-trip)</td><td>6 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-14_dtw_sfo_2026-11-29_economy_round_trip_cash_fares.json</td></tr>
-<tr><td class="notes">SFO → DTW / DTW → SFO on 2026-11-14 / 2026-11-30 (round-trip)</td><td>7 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-14_dtw_sfo_2026-11-30_economy_round_trip_cash_fares.json</td></tr>
-<tr><td class="notes">SFO → DTW / DTW → SJC on 2026-11-14 / 2026-11-29 (multi-city)</td><td>0 fare rows</td><td>2026-06-23 00:42 PDT</td><td>No rows</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-14_dtw_sjc_2026-11-29_economy_multi_city_cash_fares.json</td></tr>
-<tr><td class="notes">SFO → DTW / DTW → SJC on 2026-11-14 / 2026-11-30 (multi-city)</td><td>12 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-14_dtw_sjc_2026-11-30_economy_multi_city_cash_fares.json</td></tr>
-<tr><td class="notes">SJC → DTW / DTW → SFO on 2026-11-13 / 2026-11-29 (multi-city)</td><td>0 fare rows</td><td>2026-06-23 00:42 PDT</td><td>No rows</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_multi_city_cash_fares.json</td></tr>
-<tr><td class="notes">SJC → DTW / DTW → SFO on 2026-11-13 / 2026-11-30 (multi-city)</td><td>0 fare rows</td><td>2026-06-23 00:42 PDT</td><td>No rows</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-13_dtw_sfo_2026-11-30_economy_multi_city_cash_fares.json</td></tr>
-<tr><td class="notes">SJC → DTW / DTW → SJC on 2026-11-13 / 2026-11-29 (round-trip)</td><td>8 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-13_dtw_sjc_2026-11-29_economy_round_trip_cash_fares.json</td></tr>
-<tr><td class="notes">SJC → DTW / DTW → SJC on 2026-11-13 / 2026-11-30 (round-trip)</td><td>2 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-13_dtw_sjc_2026-11-30_economy_round_trip_cash_fares.json</td></tr>
-<tr><td class="notes">SJC → DTW / DTW → SFO on 2026-11-14 / 2026-11-29 (multi-city)</td><td>0 fare rows</td><td>2026-06-23 00:42 PDT</td><td>No rows</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-14_dtw_sfo_2026-11-29_economy_multi_city_cash_fares.json</td></tr>
-<tr><td class="notes">SJC → DTW / DTW → SFO on 2026-11-14 / 2026-11-30 (multi-city)</td><td>0 fare rows</td><td>2026-06-23 00:42 PDT</td><td>No rows</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-14_dtw_sfo_2026-11-30_economy_multi_city_cash_fares.json</td></tr>
-<tr><td class="notes">SJC → DTW / DTW → SJC on 2026-11-14 / 2026-11-29 (round-trip)</td><td>9 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-14_dtw_sjc_2026-11-29_economy_round_trip_cash_fares.json</td></tr>
-<tr><td class="notes">SJC → DTW / DTW → SJC on 2026-11-14 / 2026-11-30 (round-trip)</td><td>13 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-14_dtw_sjc_2026-11-30_economy_round_trip_cash_fares.json</td></tr></tbody></table></div></details><details class="source-group"><summary><span class="source-group-title"><strong>One-way cash fares</strong><small>Paid one-way searches used for flexibility and mixed-plan comparisons.</small></span><span class="source-group-count">8 searches</span></summary><div class="table-wrap"><table class="source-table"><thead><tr><th>Search</th><th>Flights / fares</th><th>Last updated</th><th>Status</th><th>File</th></tr></thead><tbody><tr><td class="notes">Outbound: SFO → DTW on 2026-11-13</td><td>143 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-13_economy_cash_fares.json</td></tr>
-<tr><td class="notes">Outbound: SFO → DTW on 2026-11-14</td><td>163 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-14_economy_cash_fares.json</td></tr>
-<tr><td class="notes">Outbound: SJC → DTW on 2026-11-13</td><td>135 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-13_economy_cash_fares.json</td></tr>
-<tr><td class="notes">Outbound: SJC → DTW on 2026-11-14</td><td>107 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-14_economy_cash_fares.json</td></tr>
-<tr><td class="notes">Return: DTW → SFO on 2026-11-29</td><td>132 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/dtw_sfo_2026-11-29_economy_cash_fares.json</td></tr>
-<tr><td class="notes">Return: DTW → SFO on 2026-11-30</td><td>137 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/dtw_sfo_2026-11-30_economy_cash_fares.json</td></tr>
-<tr><td class="notes">Return: DTW → SJC on 2026-11-29</td><td>100 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/dtw_sjc_2026-11-29_economy_cash_fares.json</td></tr>
-<tr><td class="notes">Return: DTW → SJC on 2026-11-30</td><td>93 fare rows</td><td>2026-06-23 00:42 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/dtw_sjc_2026-11-30_economy_cash_fares.json</td></tr></tbody></table></div></details>
+            <details class="source-group"><summary><span class="source-group-title"><strong>Seats.aero awards</strong><small>Award availability captured for each route and date.</small></span><span class="source-group-count">8 searches</span></summary><div class="table-wrap"><table class="source-table"><thead><tr><th>Search</th><th>Flights / fares</th><th>Last updated</th><th>Status</th><th>File</th></tr></thead><tbody><tr><td class="notes">Outbound: SFO → DTW on 2026-11-13</td><td>40 shown / 204 found</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">seat_aero/data/sfo_dtw_2026-11-13_normalized_full.json</td></tr>
+<tr><td class="notes">Outbound: SFO → DTW on 2026-11-14</td><td>40 shown / 240 found</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">seat_aero/data/sfo_dtw_2026-11-14_normalized_full.json</td></tr>
+<tr><td class="notes">Outbound: SJC → DTW on 2026-11-13</td><td>27 shown / 33 found</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">seat_aero/data/sjc_dtw_2026-11-13_normalized_full.json</td></tr>
+<tr><td class="notes">Outbound: SJC → DTW on 2026-11-14</td><td>25 shown / 37 found</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">seat_aero/data/sjc_dtw_2026-11-14_normalized_full.json</td></tr>
+<tr><td class="notes">Return: DTW → SFO on 2026-11-29</td><td>29 shown / 109 found</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">seat_aero/data/dtw_sfo_2026-11-29_normalized_full.json</td></tr>
+<tr><td class="notes">Return: DTW → SFO on 2026-11-30</td><td>37 shown / 125 found</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">seat_aero/data/dtw_sfo_2026-11-30_normalized_full.json</td></tr>
+<tr><td class="notes">Return: DTW → SJC on 2026-11-29</td><td>6 shown / 6 found</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">seat_aero/data/dtw_sjc_2026-11-29_normalized_full.json</td></tr>
+<tr><td class="notes">Return: DTW → SJC on 2026-11-30</td><td>15 shown / 15 found</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">seat_aero/data/dtw_sjc_2026-11-30_normalized_full.json</td></tr></tbody></table></div></details><details class="source-group"><summary><span class="source-group-title"><strong>Two-leg cash fares</strong><small>Round-trip and open-jaw paid fare searches.</small></span><span class="source-group-count">16 searches</span></summary><div class="table-wrap"><table class="source-table"><thead><tr><th>Search</th><th>Flights / fares</th><th>Last updated</th><th>Status</th><th>File</th></tr></thead><tbody><tr><td class="notes">SFO → DTW / DTW → SFO on 2026-11-13 / 2026-11-29 (round-trip)</td><td>1 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_round_trip_cash_fares.json</td></tr>
+<tr><td class="notes">SFO → DTW / DTW → SFO on 2026-11-13 / 2026-11-30 (round-trip)</td><td>5 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-13_dtw_sfo_2026-11-30_economy_round_trip_cash_fares.json</td></tr>
+<tr><td class="notes">SFO → DTW / DTW → SJC on 2026-11-13 / 2026-11-29 (multi-city)</td><td>0 fare rows</td><td>2026-06-27 01:01 PDT</td><td>No rows</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-13_dtw_sjc_2026-11-29_economy_multi_city_cash_fares.json</td></tr>
+<tr><td class="notes">SFO → DTW / DTW → SJC on 2026-11-13 / 2026-11-30 (multi-city)</td><td>12 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-13_dtw_sjc_2026-11-30_economy_multi_city_cash_fares.json</td></tr>
+<tr><td class="notes">SFO → DTW / DTW → SFO on 2026-11-14 / 2026-11-29 (round-trip)</td><td>6 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-14_dtw_sfo_2026-11-29_economy_round_trip_cash_fares.json</td></tr>
+<tr><td class="notes">SFO → DTW / DTW → SFO on 2026-11-14 / 2026-11-30 (round-trip)</td><td>7 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-14_dtw_sfo_2026-11-30_economy_round_trip_cash_fares.json</td></tr>
+<tr><td class="notes">SFO → DTW / DTW → SJC on 2026-11-14 / 2026-11-29 (multi-city)</td><td>0 fare rows</td><td>2026-06-27 01:01 PDT</td><td>No rows</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-14_dtw_sjc_2026-11-29_economy_multi_city_cash_fares.json</td></tr>
+<tr><td class="notes">SFO → DTW / DTW → SJC on 2026-11-14 / 2026-11-30 (multi-city)</td><td>12 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-14_dtw_sjc_2026-11-30_economy_multi_city_cash_fares.json</td></tr>
+<tr><td class="notes">SJC → DTW / DTW → SFO on 2026-11-13 / 2026-11-29 (multi-city)</td><td>0 fare rows</td><td>2026-06-27 01:01 PDT</td><td>No rows</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-13_dtw_sfo_2026-11-29_economy_multi_city_cash_fares.json</td></tr>
+<tr><td class="notes">SJC → DTW / DTW → SFO on 2026-11-13 / 2026-11-30 (multi-city)</td><td>0 fare rows</td><td>2026-06-27 01:01 PDT</td><td>No rows</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-13_dtw_sfo_2026-11-30_economy_multi_city_cash_fares.json</td></tr>
+<tr><td class="notes">SJC → DTW / DTW → SJC on 2026-11-13 / 2026-11-29 (round-trip)</td><td>8 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-13_dtw_sjc_2026-11-29_economy_round_trip_cash_fares.json</td></tr>
+<tr><td class="notes">SJC → DTW / DTW → SJC on 2026-11-13 / 2026-11-30 (round-trip)</td><td>2 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-13_dtw_sjc_2026-11-30_economy_round_trip_cash_fares.json</td></tr>
+<tr><td class="notes">SJC → DTW / DTW → SFO on 2026-11-14 / 2026-11-29 (multi-city)</td><td>0 fare rows</td><td>2026-06-27 01:01 PDT</td><td>No rows</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-14_dtw_sfo_2026-11-29_economy_multi_city_cash_fares.json</td></tr>
+<tr><td class="notes">SJC → DTW / DTW → SFO on 2026-11-14 / 2026-11-30 (multi-city)</td><td>0 fare rows</td><td>2026-06-27 01:01 PDT</td><td>No rows</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-14_dtw_sfo_2026-11-30_economy_multi_city_cash_fares.json</td></tr>
+<tr><td class="notes">SJC → DTW / DTW → SJC on 2026-11-14 / 2026-11-29 (round-trip)</td><td>9 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-14_dtw_sjc_2026-11-29_economy_round_trip_cash_fares.json</td></tr>
+<tr><td class="notes">SJC → DTW / DTW → SJC on 2026-11-14 / 2026-11-30 (round-trip)</td><td>13 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-14_dtw_sjc_2026-11-30_economy_round_trip_cash_fares.json</td></tr></tbody></table></div></details><details class="source-group"><summary><span class="source-group-title"><strong>One-way cash fares</strong><small>Paid one-way searches used for flexibility and mixed-plan comparisons.</small></span><span class="source-group-count">8 searches</span></summary><div class="table-wrap"><table class="source-table"><thead><tr><th>Search</th><th>Flights / fares</th><th>Last updated</th><th>Status</th><th>File</th></tr></thead><tbody><tr><td class="notes">Outbound: SFO → DTW on 2026-11-13</td><td>143 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-13_economy_cash_fares.json</td></tr>
+<tr><td class="notes">Outbound: SFO → DTW on 2026-11-14</td><td>163 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sfo_dtw_2026-11-14_economy_cash_fares.json</td></tr>
+<tr><td class="notes">Outbound: SJC → DTW on 2026-11-13</td><td>135 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-13_economy_cash_fares.json</td></tr>
+<tr><td class="notes">Outbound: SJC → DTW on 2026-11-14</td><td>107 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/sjc_dtw_2026-11-14_economy_cash_fares.json</td></tr>
+<tr><td class="notes">Return: DTW → SFO on 2026-11-29</td><td>132 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/dtw_sfo_2026-11-29_economy_cash_fares.json</td></tr>
+<tr><td class="notes">Return: DTW → SFO on 2026-11-30</td><td>137 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/dtw_sfo_2026-11-30_economy_cash_fares.json</td></tr>
+<tr><td class="notes">Return: DTW → SJC on 2026-11-29</td><td>100 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/dtw_sjc_2026-11-29_economy_cash_fares.json</td></tr>
+<tr><td class="notes">Return: DTW → SJC on 2026-11-30</td><td>93 fare rows</td><td>2026-06-27 01:01 PDT</td><td>Rows found</td><td class="source-path">cash/data/normalized/dtw_sjc_2026-11-30_economy_cash_fares.json</td></tr></tbody></table></div></details>
           </div>
         </section>
       </section>
@@ -8544,6 +8594,8 @@ AS313, AS2028, AS650, 2 stop(s), 12h 23m" data-same-airports="true" data-late="f
     const timePenaltySelectedValue = document.querySelector("#timePenaltySelectedValue");
     const outboundSort = document.querySelector("#outboundSort");
     const returnSort = document.querySelector("#returnSort");
+    const tripRecordSort = document.querySelector("#tripRecordSort");
+    const tripRecordList = document.querySelector(".record-list");
     const visiblePlanCount = document.querySelector("#visiblePlanCount");
     const planResults = document.querySelector("#planResults");
     const planTemplate = document.querySelector("#planResultsTemplate");
@@ -8560,6 +8612,7 @@ AS313, AS2028, AS650, 2 stop(s), 12h 23m" data-same-airports="true" data-late="f
     const buildResultCount = document.querySelector("#buildResultCount");
     const tables = Array.from(document.querySelectorAll("table"));
     const rows = Array.from(document.querySelectorAll("tbody tr"));
+    const tripRecordLinks = Array.from(tripRecordList ? tripRecordList.querySelectorAll(".record-link") : []);
     const cards = Array.from(planResults ? planResults.querySelectorAll(".trip-card") : []);
     const recommendations = Array.from(document.querySelectorAll(".recommendation[data-section='summary']"));
     const scoreItems = [...rows, ...cards, ...recommendations];
@@ -8568,8 +8621,15 @@ AS313, AS2028, AS650, 2 stop(s), 12h 23m" data-same-airports="true" data-late="f
     let selectedReturnKey = "";
     let selectedTimeHour = 0;
     let currentKindPreset = "";
+    const TRIP_RECORD_SORT_KEY = "flightSearchTripRecordSort";
     const INITIAL_MATCH_LIMIT = 8;
     let showAllBuilderMatches = false;
+    try {
+      const savedTripRecordSort = window.localStorage.getItem(TRIP_RECORD_SORT_KEY);
+      if (savedTripRecordSort && tripRecordSort && Array.from(tripRecordSort.options).some(option => option.value === savedTripRecordSort)) {
+        tripRecordSort.value = savedTripRecordSort;
+      }
+    } catch {}
     const defaultScoreValues = {
       stop: scoreControls.stop.value,
       duration: scoreControls.duration.value
@@ -8578,6 +8638,7 @@ AS313, AS2028, AS650, 2 stop(s), 12h 23m" data-same-airports="true" data-late="f
     const defaultFilterValues = Object.values(controls).map(control => [control, control.value]);
     const defaultCheckboxValues = checkboxFilters.map(control => [control, control.checked]);
     const defaultKindPreset = currentKindPreset;
+    const defaultTripRecordSort = "updated";
     const defaultOutboundSort = outboundSort.value;
     const defaultReturnSort = returnSort.value;
     const defaultHourlyPenalties = [...(scoreConfig.timePenaltyDefaults || Array(24).fill(0))];
@@ -8796,6 +8857,40 @@ AS313, AS2028, AS650, 2 stop(s), 12h 23m" data-same-airports="true" data-late="f
       controlDrawerToggle.setAttribute("aria-label", collapsed ? "Show trip controls" : "Hide trip controls");
       controlDrawerToggle.textContent = collapsed ? "<" : ">";
     }
+    function tripRecordNumber(link, key) {
+      const value = Number(link.dataset[key] || 0);
+      return Number.isFinite(value) ? value : 0;
+    }
+    function tripRecordText(link, key) {
+      const value = (link.dataset[key] || "").toLowerCase();
+      return value || "￿";
+    }
+    function compareTripRecordText(a, b, key) {
+      return tripRecordText(a, key).localeCompare(tripRecordText(b, key));
+    }
+    function sortTripRecords() {
+      if (!tripRecordList || !tripRecordSort) return;
+      const mode = tripRecordSort.value;
+      const sorted = [...tripRecordLinks].sort((a, b) => {
+        let result = 0;
+        if (mode === "updated") {
+          result = tripRecordNumber(b, "sortUpdated") - tripRecordNumber(a, "sortUpdated");
+        } else if (mode === "outbound") {
+          result = compareTripRecordText(a, b, "sortOutbound");
+        } else if (mode === "return") {
+          result = compareTripRecordText(a, b, "sortReturn");
+        } else if (mode === "origin") {
+          result = compareTripRecordText(a, b, "sortOrigin");
+        } else if (mode === "destination") {
+          result = compareTripRecordText(a, b, "sortDestination");
+        } else if (mode === "plans") {
+          result = tripRecordNumber(b, "sortPlans") - tripRecordNumber(a, "sortPlans");
+        }
+        if (result !== 0) return result;
+        return tripRecordNumber(a, "sortIndex") - tripRecordNumber(b, "sortIndex");
+      });
+      sorted.forEach(link => tripRecordList.appendChild(link));
+    }
     function resetTripControls() {
       scoreControls.stop.value = defaultScoreValues.stop;
       scoreControls.duration.value = defaultScoreValues.duration;
@@ -8809,6 +8904,12 @@ AS313, AS2028, AS650, 2 stop(s), 12h 23m" data-same-airports="true" data-late="f
         control.checked = checked;
       });
       currentKindPreset = defaultKindPreset;
+      if (tripRecordSort) {
+        tripRecordSort.value = defaultTripRecordSort;
+        try {
+          window.localStorage.setItem(TRIP_RECORD_SORT_KEY, tripRecordSort.value);
+        } catch {}
+      }
       outboundSort.value = defaultOutboundSort;
       returnSort.value = defaultReturnSort;
       selectedOutboundKey = "";
@@ -8822,6 +8923,7 @@ AS313, AS2028, AS650, 2 stop(s), 12h 23m" data-same-airports="true" data-late="f
         if (checkbox) checkbox.checked = false;
       });
       refreshScoresAndViews();
+      sortTripRecords();
       renderBuilder();
     }
     function refreshScoresAndViews() {
@@ -9398,6 +9500,14 @@ AS313, AS2028, AS650, 2 stop(s), 12h 23m" data-same-airports="true" data-late="f
       setControlDrawerCollapsed(!reportShell.classList.contains("drawer-collapsed"));
     });
     controlReset.addEventListener("click", resetTripControls);
+    if (tripRecordSort) {
+      tripRecordSort.addEventListener("change", () => {
+        try {
+          window.localStorage.setItem(TRIP_RECORD_SORT_KEY, tripRecordSort.value);
+        } catch {}
+        sortTripRecords();
+      });
+    }
     timeHourSelect.addEventListener("change", () => {
       selectedTimeHour = Number(timeHourSelect.value || 0);
       syncTimeEditor();
@@ -9501,6 +9611,7 @@ AS313, AS2028, AS650, 2 stop(s), 12h 23m" data-same-airports="true" data-late="f
         updateCompareTray();
       }
     });
+    sortTripRecords();
     refreshScoresAndViews();
     renderBuilder();
   </script>

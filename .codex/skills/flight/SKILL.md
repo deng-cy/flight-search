@@ -99,7 +99,7 @@ Saved traveler defaults:
      --return-dates 2026-09-07 \
      --cabin economy \
      --base-url http://127.0.0.1:8001 \
-     --award-workers 2 \
+     --award-workers 4 \
      --cash-workers 3 \
      --refresh
    ```
@@ -109,7 +109,7 @@ Saved traveler defaults:
    - `cash + award`: a one-way paid fare combined with a one-way award.
    - `cash one-ways`: two separately priced one-way paid tickets for comparison and, when same-price or cheaper, recommendation.
    - `award pair`: two one-way awards.
-   Use `--cash-workers 1` when debugging provider behavior. Use `--cash-workers 2` or `3` for normal live grids; avoid very high values because `fli` also expands return choices internally.
+   Use `--award-workers 1 --cash-workers 1` when debugging provider behavior. Cached runs are usually too fast for worker counts to matter. In a live DTW-SFO/SFO-DTW 4-job sweep, `--award-workers 4` and `--cash-workers 4` were fastest; use `--award-workers 4 --cash-workers 3` as a stable default for live grids, raise cash to `4` when speed matters, and reduce cash workers if `fli` becomes flaky.
 
    For Delta award-web round trips, standalone Playwright can be blocked by Delta's edge bot checks even when the user's real Chrome session works. In that case, use the Chrome/browser tool to capture the visible Delta outbound and return pages into a JSON payload with `snapshots` entries for `stage: "outbound"` and `stage: "return"`, each containing `url`, `body_text`, and optionally `html_content`. Then normalize that capture through the Delta CLI:
    ```bash

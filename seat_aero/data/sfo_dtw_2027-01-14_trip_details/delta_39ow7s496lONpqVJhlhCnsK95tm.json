@@ -1,0 +1,1004 @@
+{
+  "booking_links": [
+    {
+      "label": "Book via Delta SkyMiles",
+      "link": "https://www.delta.com/flight-search/search?action=findFlights&searchByCabin=true&deltaOnlySearch=false&deltaOnly=off&go=Find%20Flights&tripType=ONE_WAY&passengerInfo=ADT:1&priceSchedule=price&awardTravel=true&originCity=SFO&destinationCity=DTW&departureDate=01/14/2027&returnDate=&forceMiles=true&utm_source=seatsaero",
+      "primary": true
+    },
+    {
+      "label": "Book via Virgin Atlantic",
+      "link": "https://www.virginatlantic.com/flight-search/search?action=findFlights&searchByCabin=true&deltaOnlySearch=false&deltaOnly=off&go=Find%20Flights&tripType=ONE_WAY&passengerInfo=ADT:1|GBE:0|CNN:0|INF:0&priceSchedule=price&awardTravel=true&originCity=SFO&destinationCity=DTW&departureDate=01/14/2027&returnDate=&forceMiles=true&utm_source=seatsaero",
+      "primary": false
+    },
+    {
+      "label": "Book via Air France/KLM Flying Blue",
+      "link": "https://wwws.airfrance.us/search/offers?activeConnection=0&bookingFlow=REWARD&cabinClass=ECONOMY&pax=1:0:0:0:0:0:0:0&connections=SFO%3AA%3A20270114%3EDTW%3AA&utm_source=seatsaero",
+      "primary": false
+    }
+  ],
+  "carriers": {
+    "DL": "Delta"
+  },
+  "data": [
+    {
+      "Aircraft": [
+        "Boeing 737-900",
+        "Airbus A321"
+      ],
+      "ArrivesAt": "2027-01-15T06:00:00Z",
+      "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2027-01-14T20:19:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxghdGFi8xusqB4Ed5V9bLzf",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T18:50:00Z",
+          "DestinationAirport": "LAX",
+          "Distance": 338,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL1559",
+          "ID": "3CDhxhrEV2byp2kwiQO5f9CwWGb",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        },
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2027-01-15T06:00:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxghdGFi8xusqB4Ed5V9bLzf",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T22:30:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1976,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL407",
+          "ID": "3CDhxcFAwsywmWtMXIDbdTWaL6H",
+          "Order": 1,
+          "OriginAirport": "LAX",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "LAX"
+      ],
+      "CreatedAt": "2026-04-11T16:51:35.1867Z",
+      "DepartsAt": "2027-01-14T18:50:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "NL",
+        "NL"
+      ],
+      "FlightNumbers": "DL1559, DL407",
+      "ID": "3CDhxghdGFi8xusqB4Ed5V9bLzf",
+      "MileageCost": 42900,
+      "OptionalPrices": {
+        "DLAMEX": 36465
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 490,
+      "TotalSegmentDistance": 2314,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 767-300",
+        "Airbus A321"
+      ],
+      "ArrivesAt": "2027-01-15T00:44:00Z",
+      "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "76W",
+          "AircraftName": "Boeing 767-300",
+          "ArrivesAt": "2027-01-14T21:39:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhximqCeLEJO6k6erKuLl0j57",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T14:00:00Z",
+          "DestinationAirport": "ATL",
+          "Distance": 2136,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL531",
+          "ID": "3CDhxchIKjUbPw54u8as2z9YZRT",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        },
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2027-01-15T00:44:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhximqCeLEJO6k6erKuLl0j57",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T22:45:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 595,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL2940",
+          "ID": "3CDhxiO21eqI2Ptfqk54iCd1nMh",
+          "Order": 1,
+          "OriginAirport": "ATL",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "ATL"
+      ],
+      "CreatedAt": "2026-04-11T16:51:35.1867Z",
+      "DepartsAt": "2027-01-14T14:00:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "NL",
+        "NL"
+      ],
+      "FlightNumbers": "DL531, DL2940",
+      "ID": "3CDhximqCeLEJO6k6erKuLl0j57",
+      "MileageCost": 42900,
+      "OptionalPrices": {
+        "DLAMEX": 36465
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 464,
+      "TotalSegmentDistance": 2731,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-800",
+        "Airbus A320"
+      ],
+      "ArrivesAt": "2027-01-14T23:06:00Z",
+      "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "738",
+          "AircraftName": "Boeing 737-800",
+          "ArrivesAt": "2027-01-14T12:37:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxddL6yxEK6EaB17YjUBnAvc",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T11:05:00Z",
+          "DestinationAirport": "LAX",
+          "Distance": 338,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL1715",
+          "ID": "3CDhxbukRDwYsB3l1KKmaidO0B4",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        },
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A320",
+          "ArrivesAt": "2027-01-14T23:06:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxddL6yxEK6EaB17YjUBnAvc",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T15:36:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1976,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL708",
+          "ID": "3CDhxgpJSaP1aLgkn0949MK1abH",
+          "Order": 1,
+          "OriginAirport": "LAX",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "LAX"
+      ],
+      "CreatedAt": "2026-04-11T16:51:35.1867Z",
+      "DepartsAt": "2027-01-14T11:05:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "NL",
+        "NL"
+      ],
+      "FlightNumbers": "DL1715, DL708",
+      "ID": "3CDhxddL6yxEK6EaB17YjUBnAvc",
+      "MileageCost": 42900,
+      "OptionalPrices": {
+        "DLAMEX": 36465
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 541,
+      "TotalSegmentDistance": 2314,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-800",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2027-01-14T19:14:00Z",
+      "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "738",
+          "AircraftName": "Boeing 737-800",
+          "ArrivesAt": "2027-01-14T08:29:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxbO7RhexiH7ZM9f6WECJiOn",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T07:00:00Z",
+          "DestinationAirport": "LAX",
+          "Distance": 338,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL1598",
+          "ID": "3CDhxikxk0b7EshUyrNw7JJxKSy",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2027-01-14T19:14:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxbO7RhexiH7ZM9f6WECJiOn",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T11:45:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1976,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL802",
+          "ID": "3CDhxiBg2hiLrNM03IHCeDo7vXW",
+          "Order": 1,
+          "OriginAirport": "LAX",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "LAX"
+      ],
+      "CreatedAt": "2026-04-11T16:51:35.1867Z",
+      "DepartsAt": "2027-01-14T07:00:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "NL",
+        "NL"
+      ],
+      "FlightNumbers": "DL1598, DL802",
+      "ID": "3CDhxbO7RhexiH7ZM9f6WECJiOn",
+      "MileageCost": 42900,
+      "OptionalPrices": {
+        "DLAMEX": 36465
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 554,
+      "TotalSegmentDistance": 2314,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A320",
+        "Airbus A321"
+      ],
+      "ArrivesAt": "2027-01-14T23:47:00Z",
+      "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A320",
+          "ArrivesAt": "2027-01-14T19:13:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3FNrD0YRGsCjdNX4WaRuaqRf5AM",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-20T03:30:44.145508Z",
+          "DepartsAt": "2027-01-14T11:30:00Z",
+          "DestinationAirport": "ATL",
+          "Distance": 2136,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL693",
+          "ID": "3FNrD2Q8YNeLICNoEFznC7IUr8W",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        },
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2027-01-14T23:47:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3FNrD0YRGsCjdNX4WaRuaqRf5AM",
+          "Cabin": "economy",
+          "CreatedAt": "2026-06-20T03:30:44.145508Z",
+          "DepartsAt": "2027-01-14T21:45:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 595,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL651",
+          "ID": "3FNrD1AATEkfin4xoFGBIkoO8Na",
+          "Order": 1,
+          "OriginAirport": "ATL",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "ATL"
+      ],
+      "CreatedAt": "2026-06-20T03:30:44.145508Z",
+      "DepartsAt": "2027-01-14T11:30:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "NL",
+        "NL"
+      ],
+      "FlightNumbers": "DL693, DL651",
+      "ID": "3FNrD0YRGsCjdNX4WaRuaqRf5AM",
+      "MileageCost": 42900,
+      "OptionalPrices": {
+        "DLAMEX": 36465
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 1,
+      "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 557,
+      "TotalSegmentDistance": 2731,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-900",
+        "Airbus A321"
+      ],
+      "ArrivesAt": "2027-01-14T18:48:00Z",
+      "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2027-01-14T15:10:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxcfAIpvkT9zcorriV4FONpM",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T07:30:00Z",
+          "DestinationAirport": "ATL",
+          "Distance": 2136,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL640",
+          "ID": "3CDhxdZkeuzoRDGcMZB6QTXB4bE",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        },
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2027-01-14T18:48:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxcfAIpvkT9zcorriV4FONpM",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T16:50:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 595,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL2067",
+          "ID": "3CDhxglZLGZKtcyA2JL71gbQPS0",
+          "Order": 1,
+          "OriginAirport": "ATL",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "ATL"
+      ],
+      "CreatedAt": "2026-04-11T16:51:35.1867Z",
+      "DepartsAt": "2027-01-14T07:30:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "NL",
+        "NL"
+      ],
+      "FlightNumbers": "DL640, DL2067",
+      "ID": "3CDhxcfAIpvkT9zcorriV4FONpM",
+      "MileageCost": 42900,
+      "OptionalPrices": {
+        "DLAMEX": 36465
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 498,
+      "TotalSegmentDistance": 2731,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-900",
+        "Airbus A321"
+      ],
+      "ArrivesAt": "2027-01-14T17:09:00Z",
+      "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2027-01-14T13:39:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxgXwJtAA2uuSuy8htE0w3qn",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T06:00:00Z",
+          "DestinationAirport": "ATL",
+          "Distance": 2136,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL570",
+          "ID": "3CDhxfjqdKrSN0DyxYL36jfW4r3",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        },
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2027-01-14T17:09:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxgXwJtAA2uuSuy8htE0w3qn",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T15:10:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 595,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL1005",
+          "ID": "3CDhxcDCgFVA99x7ZMXgG7cv15G",
+          "Order": 1,
+          "OriginAirport": "ATL",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "ATL"
+      ],
+      "CreatedAt": "2026-04-11T16:51:35.1867Z",
+      "DepartsAt": "2027-01-14T06:00:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "NL",
+        "NL"
+      ],
+      "FlightNumbers": "DL570, DL1005",
+      "ID": "3CDhxgXwJtAA2uuSuy8htE0w3qn",
+      "MileageCost": 42900,
+      "OptionalPrices": {
+        "DLAMEX": 36465
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 489,
+      "TotalSegmentDistance": 2731,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+    },
+    {
+      "Aircraft": [
+        "Embraer E175",
+        "Airbus A321"
+      ],
+      "ArrivesAt": "2027-01-15T06:26:00Z",
+      "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "E7W",
+          "AircraftName": "Embraer E175",
+          "ArrivesAt": "2027-01-14T22:26:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxctMIaMrY9OYoK0bwjcXGpz",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T20:05:00Z",
+          "DestinationAirport": "SEA",
+          "Distance": 679,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL3991",
+          "ID": "3CDhxfUXK584BYaK2eVukBBzuwe",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        },
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2027-01-15T06:26:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxctMIaMrY9OYoK0bwjcXGpz",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T23:05:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1923,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL810",
+          "ID": "3CDhxchebxMWrgwoCYnIrAl49Ho",
+          "Order": 1,
+          "OriginAirport": "SEA",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "SEA"
+      ],
+      "CreatedAt": "2026-04-11T16:51:35.1867Z",
+      "DepartsAt": "2027-01-14T20:05:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "NL",
+        "NL"
+      ],
+      "FlightNumbers": "DL3991, DL810",
+      "ID": "3CDhxctMIaMrY9OYoK0bwjcXGpz",
+      "MileageCost": 42900,
+      "OptionalPrices": {
+        "DLAMEX": 36465
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 441,
+      "TotalSegmentDistance": 2602,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+    },
+    {
+      "Aircraft": [
+        "Airbus A319",
+        "Airbus A319"
+      ],
+      "ArrivesAt": "2027-01-14T20:38:00Z",
+      "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "319",
+          "AircraftName": "Airbus A319",
+          "ArrivesAt": "2027-01-14T15:33:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxcGnLTpkeqRnfbiQVaudFqp",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T09:53:00Z",
+          "DestinationAirport": "AUS",
+          "Distance": 1503,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL381",
+          "ID": "3CDhxeTERupS8ubSHt42v242j8E",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        },
+        {
+          "AircraftCode": "319",
+          "AircraftName": "Airbus A319",
+          "ArrivesAt": "2027-01-14T20:38:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxcGnLTpkeqRnfbiQVaudFqp",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T16:40:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1149,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL2736",
+          "ID": "3CDhxfvz0LUdarCJ5tvTNjCjxFI",
+          "Order": 1,
+          "OriginAirport": "AUS",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "AUS"
+      ],
+      "CreatedAt": "2026-04-11T16:51:35.1867Z",
+      "DepartsAt": "2027-01-14T09:53:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "NL",
+        "NL"
+      ],
+      "FlightNumbers": "DL381, DL2736",
+      "ID": "3CDhxcGnLTpkeqRnfbiQVaudFqp",
+      "MileageCost": 42900,
+      "OptionalPrices": {
+        "DLAMEX": 36465
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 465,
+      "TotalSegmentDistance": 2652,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-800",
+        "Boeing 737-900"
+      ],
+      "ArrivesAt": "2027-01-14T19:14:00Z",
+      "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "738",
+          "AircraftName": "Boeing 737-800",
+          "ArrivesAt": "2027-01-14T10:31:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxhEe45f04m9if8XIcMQ5dsV",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T08:55:00Z",
+          "DestinationAirport": "LAX",
+          "Distance": 338,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL1421",
+          "ID": "3CDhxhCGKFEwPiQOYv4rbZyYnne",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        },
+        {
+          "AircraftCode": "739",
+          "AircraftName": "Boeing 737-900",
+          "ArrivesAt": "2027-01-14T19:14:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxhEe45f04m9if8XIcMQ5dsV",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T11:45:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1976,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL802",
+          "ID": "3CDhxdIqdSw7IDeeWlwZvEUJ7Wo",
+          "Order": 1,
+          "OriginAirport": "LAX",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "LAX"
+      ],
+      "CreatedAt": "2026-04-11T16:51:35.1867Z",
+      "DepartsAt": "2027-01-14T08:55:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "NL",
+        "NL"
+      ],
+      "FlightNumbers": "DL1421, DL802",
+      "ID": "3CDhxhEe45f04m9if8XIcMQ5dsV",
+      "MileageCost": 42900,
+      "OptionalPrices": {
+        "DLAMEX": 36465
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 8,
+      "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 439,
+      "TotalSegmentDistance": 2314,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-800",
+        "Airbus A321"
+      ],
+      "ArrivesAt": "2027-01-14T17:06:00Z",
+      "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "738",
+          "AircraftName": "Boeing 737-800",
+          "ArrivesAt": "2027-01-14T08:29:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxgkAjadf1nC0zFFIUWrnYMp",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T07:00:00Z",
+          "DestinationAirport": "LAX",
+          "Distance": 338,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL1598",
+          "ID": "3CDhxeoqfvPZmLIG67tL0ELXSmn",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        },
+        {
+          "AircraftCode": "321",
+          "AircraftName": "Airbus A321",
+          "ArrivesAt": "2027-01-14T17:06:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxgkAjadf1nC0zFFIUWrnYMp",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T09:35:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1976,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL494",
+          "ID": "3CDhxiE43Z3AoHcyrfre1CiqIRy",
+          "Order": 1,
+          "OriginAirport": "LAX",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "LAX"
+      ],
+      "CreatedAt": "2026-04-11T16:51:35.1867Z",
+      "DepartsAt": "2027-01-14T07:00:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "NL",
+        "NL"
+      ],
+      "FlightNumbers": "DL1598, DL494",
+      "ID": "3CDhxgkAjadf1nC0zFFIUWrnYMp",
+      "MileageCost": 42900,
+      "OptionalPrices": {
+        "DLAMEX": 36465
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 426,
+      "TotalSegmentDistance": 2314,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+    },
+    {
+      "Aircraft": [
+        "Boeing 737-800",
+        "Airbus A320"
+      ],
+      "ArrivesAt": "2027-01-14T23:06:00Z",
+      "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+      "AvailabilitySegments": [
+        {
+          "AircraftCode": "738",
+          "AircraftName": "Boeing 737-800",
+          "ArrivesAt": "2027-01-14T14:32:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxbXgw9QtsAisqaDyhN2xEO4",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T13:00:00Z",
+          "DestinationAirport": "LAX",
+          "Distance": 338,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL2272",
+          "ID": "3CDhxhTH22IZQgWO320G9XBah5O",
+          "Order": 0,
+          "OriginAirport": "SFO",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        },
+        {
+          "AircraftCode": "32Q",
+          "AircraftName": "Airbus A320",
+          "ArrivesAt": "2027-01-14T23:06:00Z",
+          "AvailabilityID": "39ow7s496lONpqVJhlhCnsK95tm",
+          "AvailabilityTripID": "3CDhxbXgw9QtsAisqaDyhN2xEO4",
+          "Cabin": "economy",
+          "CreatedAt": "2026-04-11T16:51:35.1867Z",
+          "DepartsAt": "2027-01-14T15:36:00Z",
+          "DestinationAirport": "DTW",
+          "Distance": 1976,
+          "Duration": 0,
+          "FareClass": "NL",
+          "FlightNumber": "DL708",
+          "ID": "3CDhxdDM0hvRLwTPCcfrZSTWNS9",
+          "Order": 1,
+          "OriginAirport": "LAX",
+          "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+          "Source": "delta",
+          "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+        }
+      ],
+      "Cabin": "economy",
+      "Carriers": "DL, DL",
+      "Connections": [
+        "LAX"
+      ],
+      "CreatedAt": "2026-04-11T16:51:35.1867Z",
+      "DepartsAt": "2027-01-14T13:00:00Z",
+      "DestinationAirport": "DTW",
+      "FareClasses": [
+        "NL",
+        "NL"
+      ],
+      "FlightNumbers": "DL2272, DL708",
+      "ID": "3CDhxbXgw9QtsAisqaDyhN2xEO4",
+      "MileageCost": 42900,
+      "OptionalPrices": {
+        "DLAMEX": 36465
+      },
+      "OriginAirport": "SFO",
+      "RemainingSeats": 9,
+      "RouteID": "2IZU4tUmuXedgW3w1WqNYRbaKDX",
+      "Source": "delta",
+      "Stops": 1,
+      "TaxesCurrency": "USD",
+      "TaxesCurrencySymbol": "$",
+      "TotalDuration": 426,
+      "TotalSegmentDistance": 2314,
+      "TotalTaxes": 560,
+      "UpdatedAt": "2026-06-20T03:30:44.145508Z"
+    }
+  ],
+  "destination_coordinates": {
+    "Lat": 42.207808,
+    "Lon": -83.356048
+  },
+  "origin_coordinates": {
+    "Lat": 37.615215,
+    "Lon": -122.389881
+  }
+}

@@ -44,7 +44,7 @@ Seats.aero timestamps are treated as displayed wall-clock times; no timezone con
 | 27 | 18:59 | 12:23 +1 | AS525, AS2258, AS2230 | Alaska Atmos Rewards | economy | 2 | 1 | 15,000 + USD 11.20 | USD 236.20 | 491.2 | exceeds_preferred_stops, next_day_arrival |  |
 | 28 | 18:59 | 12:23 +1 | AS525, AS452, AS2230 | Alaska Atmos Rewards | economy | 2 | 1 | 15,000 + USD 11.20 | USD 236.20 | 491.2 | exceeds_preferred_stops, next_day_arrival |  |
 | 29 | 18:59 | 12:23 +1 | AS525, AS499, AS2230 | Alaska Atmos Rewards | economy | 2 | 1 | 15,000 + USD 11.20 | USD 236.20 | 491.2 | exceeds_preferred_stops, next_day_arrival |  |
-| 30 | 06:15 | 16:10 | UA617, UA5535 | velocity | economy | 1 | 9 | 19,000 + AUD 20.50 | USD 394.38 | 520.96 | default_cpp, early departure |  |
+| 30 | 06:15 | 16:10 | UA617, UA5535 | Virgin Australia Velocity | economy | 1 | 9 | 19,000 + AUD 20.50 | USD 394.38 | 520.96 | early departure |  |
 | 31 | 06:03 | 12:23 | AS580, AS2230 | Alaska Atmos Rewards | economy | 1 | 9 | 27,500 + USD 5.60 | USD 418.10 | 526.77 | early departure |  |
 | 32 | 11:12 | 22:56 | AS2139, AS423, AS1435 | Alaska Atmos Rewards | business | 2 | 4 | 37,500 + USD 5.60 | USD 568.10 | 713.77 | exceeds_preferred_stops |  |
 | 33 | 11:33 | 22:56 | AS3420, AS1494, AS1435 | Alaska Atmos Rewards | business | 2 | 1 | 37,500 + USD 5.60 | USD 568.10 | 718.02 | exceeds_preferred_stops |  |

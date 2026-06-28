@@ -1,0 +1,2005 @@
+{
+  "evidence": {
+    "result_count": 18,
+    "top_n": 3,
+    "transport": "fli"
+  },
+  "provider": "fli",
+  "provider_api_variant": "python-api",
+  "provider_package": "flights",
+  "provider_version": "0.9.0",
+  "request": {
+    "adults": 1,
+    "cabin": "economy",
+    "currency": "USD",
+    "departure_date": "2026-09-04",
+    "destination": "CUN",
+    "fetch_mode": "fallback",
+    "max_stops": null,
+    "origin": "SFO",
+    "return_date": "2026-09-07",
+    "return_destination": "SFO",
+    "return_origin": "CUN",
+    "trip_type": "round-trip"
+  },
+  "result": {
+    "current_price": "",
+    "flights": [
+      {
+        "carriers": "F9",
+        "cash_detail_source": "fli",
+        "is_best": true,
+        "legs": [
+          {
+            "arrival": "13:54",
+            "arrival_time_ahead": "+1",
+            "carrier": "F9",
+            "date": "2026-09-04",
+            "departure": "22:35",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 19m",
+            "duration_minutes": 799,
+            "flight_numbers": "F9 1448 / F9 153",
+            "layovers": [
+              {
+                "airport": "ATL",
+                "change_of_airport": false,
+                "duration_minutes": 339,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "F9",
+                "arrive_datetime": "2026-09-05T06:27:00",
+                "arrive_time": "06:27",
+                "depart_datetime": "2026-09-04T22:35:00",
+                "depart_time": "22:35",
+                "destination": "ATL",
+                "duration_minutes": 292,
+                "flight_number": "1448",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "F9",
+                "arrive_datetime": "2026-09-05T13:54:00",
+                "arrive_time": "13:54",
+                "depart_datetime": "2026-09-05T12:06:00",
+                "depart_time": "12:06",
+                "destination": "CUN",
+                "duration_minutes": 168,
+                "flight_number": "153",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ATL"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "10:44",
+            "arrival_time_ahead": "+1",
+            "carrier": "AC",
+            "date": "2026-09-07",
+            "departure": "21:05",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "15h 39m",
+            "duration_minutes": 939,
+            "flight_numbers": "AC 1813 / AC 739",
+            "layovers": [
+              {
+                "airport": "YYZ",
+                "change_of_airport": false,
+                "duration_minutes": 370,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AC",
+                "arrive_datetime": "2026-09-08T02:05:00",
+                "arrive_time": "02:05",
+                "depart_datetime": "2026-09-07T21:05:00",
+                "depart_time": "21:05",
+                "destination": "YYZ",
+                "duration_minutes": 240,
+                "flight_number": "1813",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Airbus A220-300 Passenger",
+                "airline": "AC",
+                "arrive_datetime": "2026-09-08T10:44:00",
+                "arrive_time": "10:44",
+                "depart_datetime": "2026-09-08T08:15:00",
+                "depart_time": "08:15",
+                "destination": "SFO",
+                "duration_minutes": 329,
+                "flight_number": "739",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "YYZ"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 650.00"
+      },
+      {
+        "carriers": "F9",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:54",
+            "arrival_time_ahead": "+1",
+            "carrier": "F9",
+            "date": "2026-09-04",
+            "departure": "22:35",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 19m",
+            "duration_minutes": 799,
+            "flight_numbers": "F9 1448 / F9 153",
+            "layovers": [
+              {
+                "airport": "ATL",
+                "change_of_airport": false,
+                "duration_minutes": 339,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "F9",
+                "arrive_datetime": "2026-09-05T06:27:00",
+                "arrive_time": "06:27",
+                "depart_datetime": "2026-09-04T22:35:00",
+                "depart_time": "22:35",
+                "destination": "ATL",
+                "duration_minutes": 292,
+                "flight_number": "1448",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "F9",
+                "arrive_datetime": "2026-09-05T13:54:00",
+                "arrive_time": "13:54",
+                "depart_datetime": "2026-09-05T12:06:00",
+                "depart_time": "12:06",
+                "destination": "CUN",
+                "duration_minutes": 168,
+                "flight_number": "153",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ATL"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "12:34",
+            "arrival_time_ahead": "+1",
+            "carrier": "AC",
+            "date": "2026-09-07",
+            "departure": "21:05",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "17h 29m",
+            "duration_minutes": 1049,
+            "flight_numbers": "AC 1813 / AC 741",
+            "layovers": [
+              {
+                "airport": "YYZ",
+                "change_of_airport": false,
+                "duration_minutes": 480,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AC",
+                "arrive_datetime": "2026-09-08T02:05:00",
+                "arrive_time": "02:05",
+                "depart_datetime": "2026-09-07T21:05:00",
+                "depart_time": "21:05",
+                "destination": "YYZ",
+                "duration_minutes": 240,
+                "flight_number": "1813",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Airbus A320",
+                "airline": "AC",
+                "arrive_datetime": "2026-09-08T12:34:00",
+                "arrive_time": "12:34",
+                "depart_datetime": "2026-09-08T10:05:00",
+                "depart_time": "10:05",
+                "destination": "SFO",
+                "duration_minutes": 329,
+                "flight_number": "741",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "YYZ"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 650.00"
+      },
+      {
+        "carriers": "F9",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:54",
+            "arrival_time_ahead": "+1",
+            "carrier": "F9",
+            "date": "2026-09-04",
+            "departure": "22:35",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 19m",
+            "duration_minutes": 799,
+            "flight_numbers": "F9 1448 / F9 153",
+            "layovers": [
+              {
+                "airport": "ATL",
+                "change_of_airport": false,
+                "duration_minutes": 339,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "F9",
+                "arrive_datetime": "2026-09-05T06:27:00",
+                "arrive_time": "06:27",
+                "depart_datetime": "2026-09-04T22:35:00",
+                "depart_time": "22:35",
+                "destination": "ATL",
+                "duration_minutes": 292,
+                "flight_number": "1448",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "F9",
+                "arrive_datetime": "2026-09-05T13:54:00",
+                "arrive_time": "13:54",
+                "depart_datetime": "2026-09-05T12:06:00",
+                "depart_time": "12:06",
+                "destination": "CUN",
+                "duration_minutes": 168,
+                "flight_number": "153",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ATL"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "15:24",
+            "arrival_time_ahead": "+1",
+            "carrier": "AC",
+            "date": "2026-09-07",
+            "departure": "21:05",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "20h 19m",
+            "duration_minutes": 1219,
+            "flight_numbers": "AC 1813 / AC 743",
+            "layovers": [
+              {
+                "airport": "YYZ",
+                "change_of_airport": false,
+                "duration_minutes": 650,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321",
+                "airline": "AC",
+                "arrive_datetime": "2026-09-08T02:05:00",
+                "arrive_time": "02:05",
+                "depart_datetime": "2026-09-07T21:05:00",
+                "depart_time": "21:05",
+                "destination": "YYZ",
+                "duration_minutes": 240,
+                "flight_number": "1813",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Airbus A220-300 Passenger",
+                "airline": "AC",
+                "arrive_datetime": "2026-09-08T15:24:00",
+                "arrive_time": "15:24",
+                "depart_datetime": "2026-09-08T12:55:00",
+                "depart_time": "12:55",
+                "destination": "SFO",
+                "duration_minutes": 329,
+                "flight_number": "743",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "YYZ"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 650.00"
+      },
+      {
+        "carriers": "F9",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "13:54",
+            "arrival_time_ahead": "+1",
+            "carrier": "F9",
+            "date": "2026-09-04",
+            "departure": "22:35",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "13h 19m",
+            "duration_minutes": 799,
+            "flight_numbers": "F9 1448 / F9 153",
+            "layovers": [
+              {
+                "airport": "ATL",
+                "change_of_airport": false,
+                "duration_minutes": 339,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "F9",
+                "arrive_datetime": "2026-09-05T06:27:00",
+                "arrive_time": "06:27",
+                "depart_datetime": "2026-09-04T22:35:00",
+                "depart_time": "22:35",
+                "destination": "ATL",
+                "duration_minutes": 292,
+                "flight_number": "1448",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "F9",
+                "arrive_datetime": "2026-09-05T13:54:00",
+                "arrive_time": "13:54",
+                "depart_datetime": "2026-09-05T12:06:00",
+                "depart_time": "12:06",
+                "destination": "CUN",
+                "duration_minutes": 168,
+                "flight_number": "153",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "ATL"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "22:54",
+            "arrival_time_ahead": "",
+            "carrier": "F9",
+            "date": "2026-09-07",
+            "departure": "11:10",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "13h 44m",
+            "duration_minutes": 824,
+            "flight_numbers": "F9 229 / F9 3999",
+            "layovers": [
+              {
+                "airport": "DFW",
+                "change_of_airport": false,
+                "duration_minutes": 406,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Airbus A321neo",
+                "airline": "F9",
+                "arrive_datetime": "2026-09-07T14:13:00",
+                "arrive_time": "14:13",
+                "depart_datetime": "2026-09-07T11:10:00",
+                "depart_time": "11:10",
+                "destination": "DFW",
+                "duration_minutes": 183,
+                "flight_number": "229",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Airbus A320neo",
+                "airline": "F9",
+                "arrive_datetime": "2026-09-07T22:54:00",
+                "arrive_time": "22:54",
+                "depart_datetime": "2026-09-07T20:59:00",
+                "depart_time": "20:59",
+                "destination": "SFO",
+                "duration_minutes": 235,
+                "flight_number": "3999",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "DFW"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 1017.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:02",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "15h 32m",
+            "duration_minutes": 932,
+            "flight_numbers": "UA 2019 / UA 1018",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 556,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T00:28:00",
+                "arrive_time": "00:28",
+                "depart_datetime": "2026-09-04T18:30:00",
+                "depart_time": "18:30",
+                "destination": "IAH",
+                "duration_minutes": 238,
+                "flight_number": "2019",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:02:00",
+                "arrive_time": "12:02",
+                "depart_datetime": "2026-09-05T09:44:00",
+                "depart_time": "09:44",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1018",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "11:13",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "14:20",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "22h 53m",
+            "duration_minutes": 1373,
+            "flight_numbers": "UA 1275 / UA 433",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 978,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T17:22:00",
+                "arrive_time": "17:22",
+                "depart_datetime": "2026-09-07T14:20:00",
+                "depart_time": "14:20",
+                "destination": "LAX",
+                "duration_minutes": 302,
+                "flight_number": "1275",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-08T11:13:00",
+                "arrive_time": "11:13",
+                "depart_datetime": "2026-09-08T09:40:00",
+                "depart_time": "09:40",
+                "destination": "SFO",
+                "duration_minutes": 93,
+                "flight_number": "433",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 720.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:02",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "15h 32m",
+            "duration_minutes": 932,
+            "flight_numbers": "UA 2019 / UA 1018",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 556,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T00:28:00",
+                "arrive_time": "00:28",
+                "depart_datetime": "2026-09-04T18:30:00",
+                "depart_time": "18:30",
+                "destination": "IAH",
+                "duration_minutes": 238,
+                "flight_number": "2019",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:02:00",
+                "arrive_time": "12:02",
+                "depart_datetime": "2026-09-05T09:44:00",
+                "depart_time": "09:44",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1018",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "09:18",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "14:20",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "20h 58m",
+            "duration_minutes": 1258,
+            "flight_numbers": "UA 1275 / UA 1372",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 863,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T17:22:00",
+                "arrive_time": "17:22",
+                "depart_datetime": "2026-09-07T14:20:00",
+                "depart_time": "14:20",
+                "destination": "LAX",
+                "duration_minutes": 302,
+                "flight_number": "1275",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-08T09:18:00",
+                "arrive_time": "09:18",
+                "depart_datetime": "2026-09-08T07:45:00",
+                "depart_time": "07:45",
+                "destination": "SFO",
+                "duration_minutes": 93,
+                "flight_number": "1372",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 725.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:02",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "15h 32m",
+            "duration_minutes": 932,
+            "flight_numbers": "UA 2019 / UA 1018",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 556,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T00:28:00",
+                "arrive_time": "00:28",
+                "depart_datetime": "2026-09-04T18:30:00",
+                "depart_time": "18:30",
+                "destination": "IAH",
+                "duration_minutes": 238,
+                "flight_number": "2019",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:02:00",
+                "arrive_time": "12:02",
+                "depart_datetime": "2026-09-05T09:44:00",
+                "depart_time": "09:44",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1018",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "14:52",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "14:20",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "26h 32m",
+            "duration_minutes": 1592,
+            "flight_numbers": "UA 1275 / UA 469",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 1203,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T17:22:00",
+                "arrive_time": "17:22",
+                "depart_datetime": "2026-09-07T14:20:00",
+                "depart_time": "14:20",
+                "destination": "LAX",
+                "duration_minutes": 302,
+                "flight_number": "1275",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-08T14:52:00",
+                "arrive_time": "14:52",
+                "depart_datetime": "2026-09-08T13:25:00",
+                "depart_time": "13:25",
+                "destination": "SFO",
+                "duration_minutes": 87,
+                "flight_number": "469",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 730.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:02",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "15h 32m",
+            "duration_minutes": 932,
+            "flight_numbers": "UA 2019 / UA 1018",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 556,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T00:28:00",
+                "arrive_time": "00:28",
+                "depart_datetime": "2026-09-04T18:30:00",
+                "depart_time": "18:30",
+                "destination": "IAH",
+                "duration_minutes": 238,
+                "flight_number": "2019",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:02:00",
+                "arrive_time": "12:02",
+                "depart_datetime": "2026-09-05T09:44:00",
+                "depart_time": "09:44",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1018",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "17:42",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "14:20",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "29h 22m",
+            "duration_minutes": 1762,
+            "flight_numbers": "UA 1275 / UA 2019",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 1368,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T17:22:00",
+                "arrive_time": "17:22",
+                "depart_datetime": "2026-09-07T14:20:00",
+                "depart_time": "14:20",
+                "destination": "LAX",
+                "duration_minutes": 302,
+                "flight_number": "1275",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-08T17:42:00",
+                "arrive_time": "17:42",
+                "depart_datetime": "2026-09-08T16:10:00",
+                "depart_time": "16:10",
+                "destination": "SFO",
+                "duration_minutes": 92,
+                "flight_number": "2019",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 773.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:02",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "15h 32m",
+            "duration_minutes": 932,
+            "flight_numbers": "UA 2019 / UA 1018",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 556,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T00:28:00",
+                "arrive_time": "00:28",
+                "depart_datetime": "2026-09-04T18:30:00",
+                "depart_time": "18:30",
+                "destination": "IAH",
+                "duration_minutes": 238,
+                "flight_number": "2019",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:02:00",
+                "arrive_time": "12:02",
+                "depart_datetime": "2026-09-05T09:44:00",
+                "depart_time": "09:44",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1018",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "07:24",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "14:20",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "19h 4m",
+            "duration_minutes": 1144,
+            "flight_numbers": "UA 1275 / UA 781",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 758,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T17:22:00",
+                "arrive_time": "17:22",
+                "depart_datetime": "2026-09-07T14:20:00",
+                "depart_time": "14:20",
+                "destination": "LAX",
+                "duration_minutes": 302,
+                "flight_number": "1275",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-08T07:24:00",
+                "arrive_time": "07:24",
+                "depart_datetime": "2026-09-08T06:00:00",
+                "depart_time": "06:00",
+                "destination": "SFO",
+                "duration_minutes": 84,
+                "flight_number": "781",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 788.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:02",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "15h 32m",
+            "duration_minutes": 932,
+            "flight_numbers": "UA 2019 / UA 1018",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 556,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T00:28:00",
+                "arrive_time": "00:28",
+                "depart_datetime": "2026-09-04T18:30:00",
+                "depart_time": "18:30",
+                "destination": "IAH",
+                "duration_minutes": 238,
+                "flight_number": "2019",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:02:00",
+                "arrive_time": "12:02",
+                "depart_datetime": "2026-09-05T09:44:00",
+                "depart_time": "09:44",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1018",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "16:40",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "12:57",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "5h 43m",
+            "duration_minutes": 343,
+            "flight_numbers": "UA 1948",
+            "layovers": [],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T16:40:00",
+                "arrive_time": "16:40",
+                "depart_datetime": "2026-09-07T12:57:00",
+                "depart_time": "12:57",
+                "destination": "SFO",
+                "duration_minutes": 343,
+                "flight_number": "1948",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              }
+            ],
+            "stops": 0
+          }
+        ],
+        "price": "USD 874.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:02",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "15h 32m",
+            "duration_minutes": 932,
+            "flight_numbers": "UA 2019 / UA 1018",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 556,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T00:28:00",
+                "arrive_time": "00:28",
+                "depart_datetime": "2026-09-04T18:30:00",
+                "depart_time": "18:30",
+                "destination": "IAH",
+                "duration_minutes": 238,
+                "flight_number": "2019",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:02:00",
+                "arrive_time": "12:02",
+                "depart_datetime": "2026-09-05T09:44:00",
+                "depart_time": "09:44",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1018",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "00:27",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "07:51",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "18h 36m",
+            "duration_minutes": 1116,
+            "flight_numbers": "UA 1059 / UA 1609",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 725,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T10:15:00",
+                "arrive_time": "10:15",
+                "depart_datetime": "2026-09-07T07:51:00",
+                "depart_time": "07:51",
+                "destination": "IAH",
+                "duration_minutes": 144,
+                "flight_number": "1059",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-08T00:27:00",
+                "arrive_time": "00:27",
+                "depart_datetime": "2026-09-07T22:20:00",
+                "depart_time": "22:20",
+                "destination": "SFO",
+                "duration_minutes": 247,
+                "flight_number": "1609",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 911.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:33",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "16h 3m",
+            "duration_minutes": 963,
+            "flight_numbers": "UA 2019 / UA 1014",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 587,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T00:28:00",
+                "arrive_time": "00:28",
+                "depart_datetime": "2026-09-04T18:30:00",
+                "depart_time": "18:30",
+                "destination": "IAH",
+                "duration_minutes": 238,
+                "flight_number": "2019",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:33:00",
+                "arrive_time": "12:33",
+                "depart_datetime": "2026-09-05T10:15:00",
+                "depart_time": "10:15",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1014",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "11:13",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "14:20",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "22h 53m",
+            "duration_minutes": 1373,
+            "flight_numbers": "UA 1275 / UA 433",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 978,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T17:22:00",
+                "arrive_time": "17:22",
+                "depart_datetime": "2026-09-07T14:20:00",
+                "depart_time": "14:20",
+                "destination": "LAX",
+                "duration_minutes": 302,
+                "flight_number": "1275",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-08T11:13:00",
+                "arrive_time": "11:13",
+                "depart_datetime": "2026-09-08T09:40:00",
+                "depart_time": "09:40",
+                "destination": "SFO",
+                "duration_minutes": 93,
+                "flight_number": "433",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 720.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:33",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "16h 3m",
+            "duration_minutes": 963,
+            "flight_numbers": "UA 2019 / UA 1014",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 587,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T00:28:00",
+                "arrive_time": "00:28",
+                "depart_datetime": "2026-09-04T18:30:00",
+                "depart_time": "18:30",
+                "destination": "IAH",
+                "duration_minutes": 238,
+                "flight_number": "2019",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:33:00",
+                "arrive_time": "12:33",
+                "depart_datetime": "2026-09-05T10:15:00",
+                "depart_time": "10:15",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1014",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "09:18",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "14:20",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "20h 58m",
+            "duration_minutes": 1258,
+            "flight_numbers": "UA 1275 / UA 1372",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 863,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T17:22:00",
+                "arrive_time": "17:22",
+                "depart_datetime": "2026-09-07T14:20:00",
+                "depart_time": "14:20",
+                "destination": "LAX",
+                "duration_minutes": 302,
+                "flight_number": "1275",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-08T09:18:00",
+                "arrive_time": "09:18",
+                "depart_datetime": "2026-09-08T07:45:00",
+                "depart_time": "07:45",
+                "destination": "SFO",
+                "duration_minutes": 93,
+                "flight_number": "1372",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 725.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:33",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "16h 3m",
+            "duration_minutes": 963,
+            "flight_numbers": "UA 2019 / UA 1014",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 587,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T00:28:00",
+                "arrive_time": "00:28",
+                "depart_datetime": "2026-09-04T18:30:00",
+                "depart_time": "18:30",
+                "destination": "IAH",
+                "duration_minutes": 238,
+                "flight_number": "2019",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:33:00",
+                "arrive_time": "12:33",
+                "depart_datetime": "2026-09-05T10:15:00",
+                "depart_time": "10:15",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1014",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "14:52",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "14:20",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "26h 32m",
+            "duration_minutes": 1592,
+            "flight_numbers": "UA 1275 / UA 469",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 1203,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T17:22:00",
+                "arrive_time": "17:22",
+                "depart_datetime": "2026-09-07T14:20:00",
+                "depart_time": "14:20",
+                "destination": "LAX",
+                "duration_minutes": 302,
+                "flight_number": "1275",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-08T14:52:00",
+                "arrive_time": "14:52",
+                "depart_datetime": "2026-09-08T13:25:00",
+                "depart_time": "13:25",
+                "destination": "SFO",
+                "duration_minutes": 87,
+                "flight_number": "469",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 730.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:33",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "16h 3m",
+            "duration_minutes": 963,
+            "flight_numbers": "UA 2019 / UA 1014",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 587,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T00:28:00",
+                "arrive_time": "00:28",
+                "depart_datetime": "2026-09-04T18:30:00",
+                "depart_time": "18:30",
+                "destination": "IAH",
+                "duration_minutes": 238,
+                "flight_number": "2019",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:33:00",
+                "arrive_time": "12:33",
+                "depart_datetime": "2026-09-05T10:15:00",
+                "depart_time": "10:15",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1014",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "17:42",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "14:20",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "29h 22m",
+            "duration_minutes": 1762,
+            "flight_numbers": "UA 1275 / UA 2019",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 1368,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T17:22:00",
+                "arrive_time": "17:22",
+                "depart_datetime": "2026-09-07T14:20:00",
+                "depart_time": "14:20",
+                "destination": "LAX",
+                "duration_minutes": 302,
+                "flight_number": "1275",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-08T17:42:00",
+                "arrive_time": "17:42",
+                "depart_datetime": "2026-09-08T16:10:00",
+                "depart_time": "16:10",
+                "destination": "SFO",
+                "duration_minutes": 92,
+                "flight_number": "2019",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 773.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:33",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "16h 3m",
+            "duration_minutes": 963,
+            "flight_numbers": "UA 2019 / UA 1014",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 587,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T00:28:00",
+                "arrive_time": "00:28",
+                "depart_datetime": "2026-09-04T18:30:00",
+                "depart_time": "18:30",
+                "destination": "IAH",
+                "duration_minutes": 238,
+                "flight_number": "2019",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:33:00",
+                "arrive_time": "12:33",
+                "depart_datetime": "2026-09-05T10:15:00",
+                "depart_time": "10:15",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1014",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "07:24",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "14:20",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "19h 4m",
+            "duration_minutes": 1144,
+            "flight_numbers": "UA 1275 / UA 781",
+            "layovers": [
+              {
+                "airport": "LAX",
+                "change_of_airport": false,
+                "duration_minutes": 758,
+                "overnight": true
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T17:22:00",
+                "arrive_time": "17:22",
+                "depart_datetime": "2026-09-07T14:20:00",
+                "depart_time": "14:20",
+                "destination": "LAX",
+                "duration_minutes": 302,
+                "flight_number": "1275",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-08T07:24:00",
+                "arrive_time": "07:24",
+                "depart_datetime": "2026-09-08T06:00:00",
+                "depart_time": "06:00",
+                "destination": "SFO",
+                "duration_minutes": 84,
+                "flight_number": "781",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "LAX"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 788.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:33",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "16h 3m",
+            "duration_minutes": 963,
+            "flight_numbers": "UA 2019 / UA 1014",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 587,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T00:28:00",
+                "arrive_time": "00:28",
+                "depart_datetime": "2026-09-04T18:30:00",
+                "depart_time": "18:30",
+                "destination": "IAH",
+                "duration_minutes": 238,
+                "flight_number": "2019",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:33:00",
+                "arrive_time": "12:33",
+                "depart_datetime": "2026-09-05T10:15:00",
+                "depart_time": "10:15",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1014",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "16:40",
+            "arrival_time_ahead": "",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "12:57",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "5h 43m",
+            "duration_minutes": 343,
+            "flight_numbers": "UA 1948",
+            "layovers": [],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T16:40:00",
+                "arrive_time": "16:40",
+                "depart_datetime": "2026-09-07T12:57:00",
+                "depart_time": "12:57",
+                "destination": "SFO",
+                "duration_minutes": 343,
+                "flight_number": "1948",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              }
+            ],
+            "stops": 0
+          }
+        ],
+        "price": "USD 874.00"
+      },
+      {
+        "carriers": "UA",
+        "cash_detail_source": "fli",
+        "is_best": false,
+        "legs": [
+          {
+            "arrival": "12:33",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-04",
+            "departure": "18:30",
+            "destination": "CUN",
+            "direction": "outbound",
+            "duration": "16h 3m",
+            "duration_minutes": 963,
+            "flight_numbers": "UA 2019 / UA 1014",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 587,
+                "overnight": false
+              }
+            ],
+            "origin": "SFO",
+            "segments": [
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T00:28:00",
+                "arrive_time": "00:28",
+                "depart_datetime": "2026-09-04T18:30:00",
+                "depart_time": "18:30",
+                "destination": "IAH",
+                "duration_minutes": 238,
+                "flight_number": "2019",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "SFO"
+              },
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-05T12:33:00",
+                "arrive_time": "12:33",
+                "depart_datetime": "2026-09-05T10:15:00",
+                "depart_time": "10:15",
+                "destination": "CUN",
+                "duration_minutes": 138,
+                "flight_number": "1014",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          },
+          {
+            "arrival": "00:27",
+            "arrival_time_ahead": "+1",
+            "carrier": "UA",
+            "date": "2026-09-07",
+            "departure": "07:51",
+            "destination": "SFO",
+            "direction": "return",
+            "duration": "18h 36m",
+            "duration_minutes": 1116,
+            "flight_numbers": "UA 1059 / UA 1609",
+            "layovers": [
+              {
+                "airport": "IAH",
+                "change_of_airport": false,
+                "duration_minutes": 725,
+                "overnight": false
+              }
+            ],
+            "origin": "CUN",
+            "segments": [
+              {
+                "aircraft": "Boeing 737",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-07T10:15:00",
+                "arrive_time": "10:15",
+                "depart_datetime": "2026-09-07T07:51:00",
+                "depart_time": "07:51",
+                "destination": "IAH",
+                "duration_minutes": 144,
+                "flight_number": "1059",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "CUN"
+              },
+              {
+                "aircraft": "Boeing 737MAX 9 Passenger",
+                "airline": "UA",
+                "arrive_datetime": "2026-09-08T00:27:00",
+                "arrive_time": "00:27",
+                "depart_datetime": "2026-09-07T22:20:00",
+                "depart_time": "22:20",
+                "destination": "SFO",
+                "duration_minutes": 247,
+                "flight_number": "1609",
+                "operating_airline": "",
+                "operating_flight_number": "",
+                "origin": "IAH"
+              }
+            ],
+            "stops": 1
+          }
+        ],
+        "price": "USD 911.00"
+      }
+    ]
+  },
+  "searched_at": "2026-06-28T01:59:34.232337+00:00"
+}
