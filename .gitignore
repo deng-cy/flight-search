@@ -7,3 +7,5 @@ __pycache__/
 .DS_Store
 */.env
 config/search_preferences.local.yaml
+.claude/settings.local.json
+CLAUDE.local.md

@@ -49,6 +49,7 @@ Each module should eventually emit rows that can be joined by route/date/flight/
 - Do not make `seat_aero/` the hidden source of truth for cash behavior. If both cash and awards need a setting or helper, pull it out to the root.
 - Keep `AGENTS.md` focused on architecture, editing conventions, and code-improvement rules. Do not turn it into a runbook for executing searches.
 - Use the project-local `$flight` skill in `.codex/skills/flight/` for procedural flight-search work: starting the local API, refreshing live data, regenerating reports, and summarizing route results.
+- Shared agent skills live in `agent_skills/`. Treat `.codex/skills/` and `.claude/skills/` as generated tool copies; if a tool copy is edited, sync it back with `scripts/sync_agent_skills.py` before continuing.
 - Preserve raw and full normalized outputs. Filtering, ranking, and presentation should happen in reports, not by deleting evidence.
 - Prefer reproducible report builders over hand-assembled summaries. `scripts/build_price_summary.py` should generate markdown and HTML from normalized cash and award files.
 - Use `scripts/run_trip_search.py` for multi-airport, multi-date, return-trip comparisons. It should expand one-way award legs, one-way cash legs, and real two-leg cash itineraries, then write a traveler-facing master HTML report.
