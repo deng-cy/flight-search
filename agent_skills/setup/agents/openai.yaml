@@ -1,0 +1,4 @@
+interface:
+  display_name: "Setup"
+  short_description: "Configure this flight-search repo"
+  default_prompt: "Use $setup to configure this flight-search repository after cloning or pulling it."
