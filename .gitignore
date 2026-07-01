@@ -6,6 +6,8 @@ __pycache__/
 .ruff_cache/
 .DS_Store
 .impeccable/
+data/
+reports/
 */.env
 config/search_preferences.local.yaml
 .claude/settings.local.json

@@ -8,6 +8,18 @@ This workspace contains a three-stage flight comparison pipeline:
 
 Shared, cross-module helper code lives in `flight_search_common/`. Shared ranking preferences live in `config/search_preferences.yaml`. Keep provider-specific code and provider-owned data inside the module that owns it.
 
+## Recommended Setup
+
+If you use Codex or Claude Code, start with the repo-local `setup` skill instead of running the setup script directly. Ask the agent to use the `setup` skill for this repository; it will guide local Seats.aero credentials, traveler scoring preferences, Python environment setup, and machine-specific files without overwriting tracked defaults.
+
+For flight-search work, prefer the repo-local `flight` skill when using Codex. It knows the project workflow for starting the local API, refreshing award and cash data, and regenerating reports.
+
+The direct setup script is still available as a fallback for manual use:
+
+```bash
+python3 agent_skills/setup/scripts/setup_repo.py
+```
+
 ## Common Commands
 
 Run the award ranking from cached Seats.aero data:
