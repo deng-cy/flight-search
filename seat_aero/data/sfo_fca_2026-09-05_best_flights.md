@@ -2,7 +2,7 @@
 
 ## Ranking Rules
 
-- FX source: `cache:2026-06-11`
+- FX source: `cache:2026-06-27`
 - Score starts with effective USD, then adds 50 per stop.
 - Duration penalty: 5 per travel hour.
 - Next-day arrival penalty: 75.
@@ -15,8 +15,8 @@ Seats.aero timestamps are treated as displayed wall-clock times; no timezone con
 
 | Rank | Depart | Arrive | Flights | Program | Cabin | Stops | Seats | Miles + Taxes | Effective USD | Score | Flags | Alternates |
 |---:|---:|---:|---|---|---|---:|---:|---:|---:|---:|---|---|
-| 1 | 21:13 | 10:04 +1 | UA301, UA5476 | Air Canada Aeroplan | economy | 1 | 9 | 15,000 + CAD 54.40 | USD 204.02 | 370.27 | next_day_arrival |  |
-| 2 | 18:25 | 10:04 +1 | UA2436, UA5476 | Air Canada Aeroplan | economy | 1 | 9 | 15,000 + CAD 54.40 | USD 204.02 | 384.27 | next_day_arrival |  |
-| 3 | 17:25 | 10:04 +1 | UA1312, UA5476 | Air Canada Aeroplan | economy | 1 | 9 | 15,000 + CAD 54.40 | USD 204.02 | 389.27 | next_day_arrival |  |
-| 4 | 20:48 | 10:04 +1 | UA5753, UA5683, UA5476 | Air Canada Aeroplan | economy | 2 | 4 | 15,000 + CAD 54.40 | USD 204.02 | 432.36 | exceeds_preferred_stops, next_day_arrival |  |
-| 5 | 18:38 | 10:04 +1 | UA1958, UA2666, UA5476 | Air Canada Aeroplan | economy | 2 | 9 | 25,000 + CAD 54.40 | USD 314.02 | 543.19 | exceeds_preferred_stops, next_day_arrival |  |
+| 1 | 21:13 | 10:04 +1 | UA301, UA5476 | Air Canada Aeroplan | economy | 1 | 9 | 15,000 + CAD 54.40 | USD 203.31 | 369.56 | next_day_arrival |  |
+| 2 | 18:25 | 10:04 +1 | UA2436, UA5476 | Air Canada Aeroplan | economy | 1 | 9 | 15,000 + CAD 54.40 | USD 203.31 | 383.56 | next_day_arrival |  |
+| 3 | 17:25 | 10:04 +1 | UA1312, UA5476 | Air Canada Aeroplan | economy | 1 | 9 | 15,000 + CAD 54.40 | USD 203.31 | 388.56 | next_day_arrival |  |
+| 4 | 20:48 | 10:04 +1 | UA5753, UA5683, UA5476 | Air Canada Aeroplan | economy | 2 | 4 | 15,000 + CAD 54.40 | USD 203.31 | 431.64 | exceeds_preferred_stops, next_day_arrival |  |
+| 5 | 18:38 | 10:04 +1 | UA1958, UA2666, UA5476 | Air Canada Aeroplan | economy | 2 | 9 | 25,000 + CAD 54.40 | USD 313.31 | 542.47 | exceeds_preferred_stops, next_day_arrival |  |

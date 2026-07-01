@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AC carrier badge">
-  <rect width="64" height="64" rx="14" fill="#f8fafc"/>
-  <path d="M32 8l4 15 13-7-7 13 14 3-14 3 7 13-13-7-4 15-4-15-13 7 7-13-14-3 14-3-7-13 13 7z" fill="#e31b23" opacity=".16"/>
-  <circle cx="32" cy="32" r="25" fill="none" stroke="#e31b23" stroke-width="4"/>
-  <text x="32" y="39" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">AC</text>
-</svg>

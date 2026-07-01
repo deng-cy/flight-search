@@ -8263,7 +8263,7 @@
         "summary": {
           "best_count": 40,
           "full_count": 140,
-          "fx_source": "live:2026-06-27",
+          "fx_source": "cache:2026-06-27",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_cun_2026-09-04_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sfo_cun_2026-09-04_best_flights.json",
@@ -8286,7 +8286,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-27",
+          "fx_source": "cache:2026-06-27",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_cun_2026-09-04_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/sjc_cun_2026-09-04_best_flights.json",
@@ -8309,7 +8309,7 @@
         "summary": {
           "best_count": 11,
           "full_count": 109,
-          "fx_source": "live:2026-06-27",
+          "fx_source": "cache:2026-06-27",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/cun_sfo_2026-09-07_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/cun_sfo_2026-09-07_best_flights.json",
@@ -8332,7 +8332,7 @@
         "summary": {
           "best_count": 0,
           "full_count": 0,
-          "fx_source": "live:2026-06-27",
+          "fx_source": "cache:2026-06-27",
           "outputs": {
             "best_csv": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/cun_sjc_2026-09-07_best_flights.csv",
             "best_json": "/Users/dengcy/Library/Mobile Documents/com~apple~CloudDocs/Agent/Flight_search/seat_aero/data/cun_sjc_2026-09-07_best_flights.json",

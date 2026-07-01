@@ -2,7 +2,7 @@
 
 ## Ranking Rules
 
-- FX source: `cache:2026-06-11`
+- FX source: `cache:2026-06-27`
 - Score starts with effective USD, then adds 50 per stop.
 - Duration penalty: 5 per travel hour.
 - Next-day arrival penalty: 75.
@@ -15,10 +15,10 @@ Seats.aero timestamps are treated as displayed wall-clock times; no timezone con
 
 | Rank | Depart | Arrive | Flights | Program | Cabin | Stops | Seats | Miles + Taxes | Effective USD | Score | Flags | Alternates |
 |---:|---:|---:|---|---|---|---:|---:|---:|---:|---:|---|---|
-| 1 | 21:05 | 10:01 +1 | UA301, UA4697 | Air Canada Aeroplan | economy | 1 | 9 | 15,000 + CAD 54.40 | USD 204.02 | 370.69 | next_day_arrival |  |
-| 2 | 19:56 | 10:01 +1 | UA1145, UA4697 | Air Canada Aeroplan | economy | 1 | 9 | 15,000 + CAD 54.40 | USD 204.02 | 376.44 | next_day_arrival |  |
-| 3 | 21:05 | 13:27 +1 | UA301, UA2357 | Air Canada Aeroplan | economy | 1 | 9 | 15,000 + CAD 54.40 | USD 204.02 | 387.86 | next_day_arrival |  |
-| 4 | 22:54 | 13:27 +1 | UA1814, UA1889, UA2357 | Air Canada Aeroplan | economy | 2 | 9 | 15,000 + CAD 54.40 | USD 204.02 | 503.77 | exceeds_preferred_stops, next_day_arrival, late departure |  |
+| 1 | 21:05 | 10:01 +1 | UA301, UA4697 | Air Canada Aeroplan | economy | 1 | 9 | 15,000 + CAD 54.40 | USD 203.31 | 369.97 | next_day_arrival |  |
+| 2 | 19:56 | 10:01 +1 | UA1145, UA4697 | Air Canada Aeroplan | economy | 1 | 9 | 15,000 + CAD 54.40 | USD 203.31 | 375.72 | next_day_arrival |  |
+| 3 | 21:05 | 13:27 +1 | UA301, UA2357 | Air Canada Aeroplan | economy | 1 | 9 | 15,000 + CAD 54.40 | USD 203.31 | 387.14 | next_day_arrival |  |
+| 4 | 22:54 | 13:27 +1 | UA1814, UA1889, UA2357 | Air Canada Aeroplan | economy | 2 | 9 | 15,000 + CAD 54.40 | USD 203.31 | 503.06 | exceeds_preferred_stops, next_day_arrival, late departure |  |
 | 5 | 15:03 | 22:56 | AS1302, AS743, AS1435 | Alaska Atmos Rewards | economy | 2 | 9 | 27,500 + USD 5.60 | USD 418.10 | 534.52 | exceeds_preferred_stops |  |
 | 6 | 07:23 | 13:25 | AS1410, AS2146 | Alaska Atmos Rewards | economy | 1 | 9 | 32,500 + USD 5.60 | USD 493.10 | 550.27 |  |  |
 | 7 | 07:08 | 22:56 | AS426, AS574, AS1435 | Alaska Atmos Rewards | economy | 2 | 9 | 27,500 + USD 11.20 | USD 423.70 | 579.7 | exceeds_preferred_stops |  |
