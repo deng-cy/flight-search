@@ -5,6 +5,7 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 .DS_Store
+.impeccable/
 */.env
 config/search_preferences.local.yaml
 .claude/settings.local.json
